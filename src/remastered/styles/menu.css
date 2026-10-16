@@ -1,0 +1,22 @@
+.menu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; margin-bottom: 1rem; }
+.slots { display: grid; gap: 0.4rem; }
+.slot { display: flex; gap: 0.6rem; align-items: center; padding: 0.5rem 0.7rem; border: 1px solid var(--parch-edge); border-radius: 8px; background: rgba(255, 255, 255, 0.4); }
+.slot > div { flex: 1; }
+.keys td:first-child { white-space: nowrap; width: 12rem; }
+.glossary { display: grid; grid-template-columns: 12rem 1fr; gap: 0.5rem 1rem; margin: 0; }
+.glossary dt { font-family: var(--display); font-size: 1.05rem; }
+.glossary dd { margin: 0; }
+.help-now { margin-bottom: 1rem; background: rgba(76, 107, 47, 0.08); }
+.help-now ul { margin: 0.3rem 0 0; padding-left: 1.2rem; }
+.hint-list { display: grid; gap: 0.6rem; }
+.hint { display: flex; gap: 0.6rem; align-items: flex-start; }
+.hint > .ico { color: var(--brass-lo); width: 1.4rem; height: 1.4rem; flex: none; margin-top: 0.15rem; }
+.glossary dt.hit, .glossary dd.hit { background: rgba(199, 154, 75, 0.2); border-radius: 4px; }
+.glossary dt.hit { padding-left: 0.3rem; }
+@media (max-width: 900px) { .glossary { grid-template-columns: 1fr; } .glossary dd { margin-bottom: 0.4rem; } }
+.help-now-list { list-style: none; margin: 0.3rem 0 0; padding: 0; display: grid; gap: 0.3rem; }
+.help-now-list li { display: flex; justify-content: space-between; align-items: center; gap: 0.6rem; }
+.howto { margin: 0.2rem 0 1rem; padding-left: 1.4rem; display: grid; gap: 0.5rem; }
+.howto li b { display: block; font-family: var(--display); font-weight: 400; font-size: 1.08rem; }
+.howto li span { color: var(--ink-soft); }
+.hint-old summary { cursor: pointer; font-family: var(--display); font-size: 1.05rem; margin-bottom: 0.5rem; }

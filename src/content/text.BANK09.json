@@ -1,0 +1,96 @@
+{
+ "movie": "BANK09",
+ "origin": "assets/BANK09/",
+ "members": [
+  {
+   "castId": 66,
+   "name": "PayDate",
+   "type": "text",
+   "text": "          1         \n          3        \n         5   "
+  },
+  {
+   "castId": 126,
+   "name": "",
+   "type": "button",
+   "text": "EXIT"
+  },
+  {
+   "castId": 1000,
+   "name": "",
+   "type": "text",
+   "text": "\n\nDo you want to save your game?"
+  },
+  {
+   "castId": 1001,
+   "name": "Loans",
+   "type": "text",
+   "text": "     $100            \n     $200            \n     $300            \n     $400            \n     $500            \n     $600            \n     $700           \n    $800    "
+  },
+  {
+   "castId": 1003,
+   "name": "PayDate",
+   "type": "text",
+   "text": "            1            \n           5   "
+  },
+  {
+   "castId": 1004,
+   "name": "PayYear",
+   "type": "text",
+   "text": "1885"
+  },
+  {
+   "castId": 1005,
+   "name": "RepayDate",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1007,
+   "name": "FileNum",
+   "type": "text",
+   "text": "8062"
+  },
+  {
+   "castId": 1008,
+   "name": "BankName",
+   "type": "text",
+   "text": "Alla Lad"
+  },
+  {
+   "castId": 1009,
+   "name": "LoanInfo",
+   "type": "text",
+   "text": "$300.00"
+  },
+  {
+   "castId": 1010,
+   "name": "Return",
+   "type": "text",
+   "text": "       $50               \n       $100               \n       $200               "
+  },
+  {
+   "castId": 1011,
+   "name": "MyReturn",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1012,
+   "name": "Rec",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1013,
+   "name": "Telegram",
+   "type": "text",
+   "text": "TELEGRAM \nFROM: O'Grady Town\nTO: dfgg\n\nI have some bad news for you. On my way to O'Grady, \nI was caught in a sudden rainstorm. Part of your crop was ruined. I could only sell some of it. You can get your money from the cashier at the bank. I hope next time we'll have better luck.\n"
+  },
+  {
+   "castId": 1014,
+   "name": "Tel",
+   "type": "text",
+   "text": "TELEGRAM \nFROM: O'Grady Town\nTO: Alla Ladizinsky\n\nI have some bad news for you. On my way to O'Grady, \nI was caught in a sudden rainstorm. Part of your crop was ruined. I could only sell some of it. You can get your money from the cashier at the bank. I hope next time we'll have better luck.\n"
+  }
+ ]
+}

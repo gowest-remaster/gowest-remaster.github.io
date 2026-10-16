@@ -1,0 +1,886 @@
+{
+ "CALEND.Had2": {
+  "file": "orig/CALEND/Had2.png",
+  "x": 39,
+  "y": 13,
+  "w": 223,
+  "h": 38,
+  "regX": 111,
+  "regY": 19,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    221,
+    0
+   ],
+   [
+    193,
+    35
+   ],
+   [
+    32,
+    35
+   ]
+  ]
+ },
+ "CALEND.Had3": {
+  "file": "orig/CALEND/Had3.png",
+  "x": 16,
+  "y": 8,
+  "w": 262,
+  "h": 42,
+  "regX": 131,
+  "regY": 21,
+  "scale": 2,
+  "quad": [
+   [
+    1,
+    7
+   ],
+   [
+    261,
+    7
+   ],
+   [
+    211,
+    35
+   ],
+   [
+    51,
+    35
+   ]
+  ]
+ },
+ "CALEND.Had4": {
+  "file": "orig/CALEND/Had4.png",
+  "x": 56,
+  "y": 14,
+  "w": 192,
+  "h": 32,
+  "regX": 96,
+  "regY": 16,
+  "scale": 2,
+  "quad": [
+   [
+    1,
+    0
+   ],
+   [
+    189,
+    0
+   ],
+   [
+    190,
+    30
+   ],
+   [
+    0,
+    30
+   ]
+  ]
+ },
+ "CALEND.Had5": {
+  "file": "orig/CALEND/Had5.png",
+  "x": 19,
+  "y": 19,
+  "w": 266,
+  "h": 21,
+  "regX": 134,
+  "regY": 10,
+  "scale": 2,
+  "quad": [
+   [
+    1,
+    6
+   ],
+   [
+    265,
+    6
+   ],
+   [
+    265,
+    13
+   ],
+   [
+    1,
+    13
+   ]
+  ]
+ },
+ "CALEND.Had7": {
+  "file": "orig/CALEND/Had7.png",
+  "x": 73,
+  "y": 23,
+  "w": 154,
+  "h": 11,
+  "regX": 77,
+  "regY": 5,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    154,
+    0
+   ],
+   [
+    154,
+    11
+   ],
+   [
+    0,
+    11
+   ]
+  ]
+ },
+ "CALEND.Had9": {
+  "file": "orig/CALEND/Had9.png",
+  "x": 151,
+  "y": 17,
+  "w": 323,
+  "h": 32,
+  "regX": 161,
+  "regY": 16,
+  "scale": 2,
+  "quad": [
+   [
+    2,
+    9
+   ],
+   [
+    321,
+    9
+   ],
+   [
+    308,
+    29
+   ],
+   [
+    14,
+    29
+   ]
+  ]
+ },
+ "CALEND.SIG0": {
+  "file": "orig/CALEND/SIG0.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG1": {
+  "file": "orig/CALEND/SIG1.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG10": {
+  "file": "orig/CALEND/SIG10.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG11": {
+  "file": "orig/CALEND/SIG11.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG17": {
+  "file": "orig/CALEND/SIG17.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG18": {
+  "file": "orig/CALEND/SIG18.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG2": {
+  "file": "orig/CALEND/SIG2.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG20": {
+  "file": "orig/CALEND/SIG20.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG27": {
+  "file": "orig/CALEND/SIG27.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG35": {
+  "file": "orig/CALEND/SIG35.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG4": {
+  "file": "orig/CALEND/SIG4.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG43": {
+  "file": "orig/CALEND/SIG43.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG50": {
+  "file": "orig/CALEND/SIG50.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG6": {
+  "file": "orig/CALEND/SIG6.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG8": {
+  "file": "orig/CALEND/SIG8.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG9": {
+  "file": "orig/CALEND/SIG9.png",
+  "x": 0,
+  "y": 0,
+  "w": 89,
+  "h": 37,
+  "regX": 44,
+  "regY": 18,
+  "scale": 2,
+  "quad": [
+   [
+    0,
+    0
+   ],
+   [
+    89,
+    0
+   ],
+   [
+    89,
+    37
+   ],
+   [
+    0,
+    37
+   ]
+  ]
+ },
+ "CALEND.SIG60": {
+  "file": "orig/CALEND/SIG60.png",
+  "x": 1,
+  "y": 11,
+  "w": 87,
+  "h": 16,
+  "regX": 43,
+  "regY": 8,
+  "scale": 2,
+  "quad": [
+   [
+    8,
+    2
+   ],
+   [
+    87,
+    2
+   ],
+   [
+    80,
+    16
+   ],
+   [
+    0,
+    16
+   ]
+  ]
+ },
+ "CALEND.DBox0": {
+  "file": "orig/CALEND/DBox0.png",
+  "x": 111,
+  "y": 43,
+  "w": 379,
+  "h": 210,
+  "regX": 189,
+  "regY": 105,
+  "scale": 2
+ },
+ "CALEND.DBox1": {
+  "file": "orig/CALEND/DBox1.png",
+  "x": 33,
+  "y": 39,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox2": {
+  "file": "orig/CALEND/DBox2.png",
+  "x": 97,
+  "y": 37,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox3": {
+  "file": "orig/CALEND/DBox3.png",
+  "x": 111,
+  "y": 43,
+  "w": 391,
+  "h": 222,
+  "regX": 195,
+  "regY": 111,
+  "scale": 2
+ },
+ "CALEND.DBox4": {
+  "file": "orig/CALEND/DBox4.png",
+  "x": 55,
+  "y": 19,
+  "w": 388,
+  "h": 228,
+  "regX": 194,
+  "regY": 114,
+  "scale": 2
+ },
+ "CALEND.DBox5": {
+  "file": "orig/CALEND/DBox5.png",
+  "x": 111,
+  "y": 43,
+  "w": 387,
+  "h": 210,
+  "regX": 193,
+  "regY": 105,
+  "scale": 2
+ },
+ "CALEND.DBox6": {
+  "file": "orig/CALEND/DBox6.png",
+  "x": 76,
+  "y": 46,
+  "w": 445,
+  "h": 236,
+  "regX": 222,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox8": {
+  "file": "orig/CALEND/DBox8.png",
+  "x": 99,
+  "y": 43,
+  "w": 400,
+  "h": 244,
+  "regX": 200,
+  "regY": 115,
+  "scale": 2
+ },
+ "CALEND.DBox9": {
+  "file": "orig/CALEND/DBox9.png",
+  "x": 131,
+  "y": 152,
+  "w": 393,
+  "h": 214,
+  "regX": 196,
+  "regY": 107,
+  "scale": 2
+ },
+ "CALEND.DBox11": {
+  "file": "orig/CALEND/DBox11.png",
+  "x": 81,
+  "y": 48,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox12": {
+  "file": "orig/CALEND/DBox12.png",
+  "x": 66,
+  "y": 83,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox13": {
+  "file": "orig/CALEND/DBox13.png",
+  "x": 92,
+  "y": 39,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox19": {
+  "file": "orig/CALEND/DBox19.png",
+  "x": 66,
+  "y": 83,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox23": {
+  "file": "orig/CALEND/DBox23.png",
+  "x": 66,
+  "y": 83,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox32": {
+  "file": "orig/CALEND/DBox32.png",
+  "x": 66,
+  "y": 83,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox01": {
+  "file": "orig/CALEND/DBox01.png",
+  "x": 66,
+  "y": 83,
+  "w": 426,
+  "h": 236,
+  "regX": 213,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.DBox91": {
+  "file": "orig/CALEND/DBox91.png",
+  "x": 131,
+  "y": 152,
+  "w": 393,
+  "h": 214,
+  "regX": 196,
+  "regY": 107,
+  "scale": 2
+ },
+ "CALEND.Jessy": {
+  "file": "orig/CALEND/Jessy.png",
+  "x": 66,
+  "y": 83,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.Doctor": {
+  "file": "orig/CALEND/Doctor.png",
+  "x": 74,
+  "y": 43,
+  "w": 378,
+  "h": 259,
+  "regX": 189,
+  "regY": 129,
+  "scale": 2
+ },
+ "CALEND.Old": {
+  "file": "orig/CALEND/Old.png",
+  "x": 93,
+  "y": 43,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "CALEND.extra1": {
+  "file": "orig/CALEND/extra1.png",
+  "x": 181,
+  "y": 64,
+  "w": 278,
+  "h": 356,
+  "regX": 139,
+  "regY": 178,
+  "scale": 2
+ },
+ "CALEND.extra2": {
+  "file": "orig/CALEND/extra2.png",
+  "x": 181,
+  "y": 64,
+  "w": 278,
+  "h": 356,
+  "regX": 139,
+  "regY": 178,
+  "scale": 2
+ },
+ "FIELD.NeibO": {
+  "file": "orig/FIELD/NeibO.png",
+  "x": 45,
+  "y": 16,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ },
+ "FIELD.NeibY": {
+  "file": "orig/FIELD/NeibY.png",
+  "x": 66,
+  "y": 83,
+  "w": 425,
+  "h": 236,
+  "regX": 212,
+  "regY": 118,
+  "scale": 2
+ }
+}

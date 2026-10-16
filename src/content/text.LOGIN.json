@@ -1,0 +1,54 @@
+{
+ "movie": "LOGIN",
+ "origin": "assets/LOGIN/",
+ "members": [
+  {
+   "castId": 22,
+   "name": "psKeyboardControl",
+   "type": "text",
+   "text": "The key handling object    "
+  },
+  {
+   "castId": 23,
+   "name": "psEdunetics",
+   "type": "text",
+   "text": "2. Class: Edunetics\nThis is the root of the Edunetics class library. It is an abstract class that gives it’s offspring the following capabilities: \n· Self documentation (describe)\n· Self destruction (dispose)\n· Self name (getName)\n2.1. Cardinality: 0\n\n2.2.  Attributes:\n\n2.2.1.  Symbol psyName \nObject identity.\n2.3. Methods:\n\n2.3.1. birth\nLingo constructor\n2.3.1.1. Return Value: Object\nThe new object\n2.3.1.2. Parameters:\n2.3.1.2.1. me\nSelf pointer Lingo style\n2.3.1.2.2. Symbol syName\nThe identity of the new object\n2.3.2. vDescribe\nPrint the description text on the message window (Director)\n2.3.2.1. Return Value: Void\n<Description>\n2.3.2.2. Parameters:\n2.3.2.2.1. me\nLingo syntax.\n2.3.3. plObjectToList\nReturn the current state of the instance propeties as a property list where each property of the object is a property in the list and the same goes for values. If one of the values is an object by itself, it will be also replaced with such a property lis\n2.3.3.1. Return Value: PropertyList\nA property list with the current instance propeties' values.\n2.3.3.2. Parameters:\n2.3.3.2.1. LingoObject oMe\nLingo syntax.\n2.3.4. syListToProperties\nUpdate an instance properties value from a propety list.\n2.3.4.1. Return Value: Symbol\n#OK or #ERR_ListToProperties_PropertyNotExist:XX or #ERR_ListToProperties_WrongValue:XX\n2.3.4.2. Parameters:\n2.3.4.2.1. LingoObject oMe\nThe object to update.\n2.3.4.2.2. PropertyList plNewValues\nEach property must have a property in the object. The values will be stored in the matching property of the object.\n2.3.5. vDispose\nDo the clean-up of the object. User should assign it to the object for disposing.\n2.3.5.1. Return Value: Void\n<Description>\n2.3.5.2. Parameters:\n2.3.5.2.1. me\nLingo syntax.\nEnd of Class 'Edunetics'\n"
+  },
+  {
+   "castId": 41,
+   "name": "txtFontSample",
+   "type": "text",
+   "text": "This is the font to use."
+  },
+  {
+   "castId": 42,
+   "name": "txtUserID",
+   "type": "text",
+   "text": "defText"
+  },
+  {
+   "castId": 43,
+   "name": "txtUserName",
+   "type": "text",
+   "text": "defText"
+  },
+  {
+   "castId": 44,
+   "name": "txtUserIDCopy",
+   "type": "text",
+   "text": "defText"
+  },
+  {
+   "castId": 45,
+   "name": "txtUserFirstName",
+   "type": "text",
+   "text": "defText"
+  },
+  {
+   "castId": 46,
+   "name": "txtUserLastName",
+   "type": "text",
+   "text": "defText"
+  }
+ ]
+}

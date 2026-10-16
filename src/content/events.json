@@ -1,0 +1,2986 @@
+{
+ "note": "Scheduled events (CALEND IAllEvents = new-game copy of SHARED AllEvents) and events appended at run time by Lingo. Item numbering follows the spec (item 5 = first arg). Texts: spec 02 Appendix C.2/C.3 groups, verbatim from the text members.",
+ "types": {
+  "1": "baby",
+  "2": "donationLetter",
+  "3": "familyDecision",
+  "4": "doctor",
+  "5": "message",
+  "6": "yesNoLetter",
+  "7": "infoLetter",
+  "8": "goalChoice",
+  "9": "politicalQuestionnaire",
+  "10": "wedding",
+  "11": "mayorBudget",
+  "15": "sonLawSchool"
+ },
+ "templateSrc": {
+  "movie": "CALEND",
+  "castId": 1569,
+  "name": "IAllEvents"
+ },
+ "shippedSrc": {
+  "movie": "SHARED",
+  "castId": 3007,
+  "name": "AllEvents",
+  "identicalToTemplate": true
+ },
+ "schedule": [
+  {
+   "id": "1880-12-Baby1",
+   "year": 1880,
+   "month": 12,
+   "day": 0,
+   "type": 1,
+   "typeName": "baby",
+   "args": [
+    "Baby1",
+    "2",
+    "DBox0",
+    "Sound",
+    "name"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Baby1",
+     "movie": "CALEND",
+     "castId": 1034,
+     "memberType": "text",
+     "textId": "CALEND.Baby1"
+    },
+    {
+     "item": 7,
+     "name": "DBox0",
+     "movie": "CALEND",
+     "castId": 188,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 8,
+     "name": "Sound",
+     "unresolved": true
+    },
+    {
+     "item": 9,
+     "name": "name",
+     "movie": "CALEND",
+     "castId": 1092,
+     "memberType": "text",
+     "textId": "CALEND.Name"
+    }
+   ],
+   "raw": "1880,12,0,1,Baby1,2,DBox0,Sound,name"
+  },
+  {
+   "id": "1881-2-DL1",
+   "year": 1881,
+   "month": 2,
+   "day": 0,
+   "type": 2,
+   "typeName": "donationLetter",
+   "args": [
+    "DL1",
+    "Had4",
+    "Sig1",
+    "11",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL1",
+     "movie": "CALEND",
+     "castId": 1169,
+     "memberType": "text",
+     "textId": "CALEND.DL1"
+    },
+    {
+     "item": 6,
+     "name": "Had4",
+     "movie": "CALEND",
+     "castId": 230,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig1",
+     "movie": "CALEND",
+     "castId": 234,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1881,2,0,2,DL1,Had4,Sig1,11,0,0,0,1"
+  },
+  {
+   "id": "1881-12-Da1",
+   "year": 1881,
+   "month": 12,
+   "day": 0,
+   "type": 3,
+   "typeName": "familyDecision",
+   "args": [
+    "Da1",
+    "1",
+    "DBox2",
+    "5",
+    "5"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Da1",
+     "movie": "CALEND",
+     "castId": 1049,
+     "memberType": "text",
+     "textId": "CALEND.Da1"
+    },
+    {
+     "item": 7,
+     "name": "DBox2",
+     "movie": "CALEND",
+     "castId": 183,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1881,12,0,3,Da1,1,DBox2,5,5"
+  },
+  {
+   "id": "1882-3-Doc1",
+   "year": 1882,
+   "month": 3,
+   "day": 0,
+   "type": 4,
+   "typeName": "doctor",
+   "args": [
+    "Doc1",
+    "Doc2"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Doc1",
+     "movie": "CALEND",
+     "castId": 1019,
+     "memberType": "text",
+     "textId": "CALEND.Doc1"
+    },
+    {
+     "item": 6,
+     "name": "Doc2",
+     "movie": "CALEND",
+     "castId": 1020,
+     "memberType": "text",
+     "textId": "CALEND.Doc2"
+    }
+   ],
+   "raw": "1882,3,0,4,Doc1,Doc2"
+  },
+  {
+   "id": "1882-8-Sop1",
+   "year": 1882,
+   "month": 8,
+   "day": 0,
+   "type": 5,
+   "typeName": "message",
+   "args": [
+    "Sop1",
+    "DBox9",
+    "3",
+    "6",
+    "1890"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Sop1",
+     "movie": "CALEND",
+     "castId": 1066,
+     "memberType": "text",
+     "textId": "CALEND.Sop1"
+    },
+    {
+     "item": 6,
+     "name": "DBox9",
+     "movie": "CALEND",
+     "castId": 289,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1882,8,0,5,Sop1,DBox9,3,6,1890"
+  },
+  {
+   "id": "1883-2-AL50",
+   "year": 1883,
+   "month": 2,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL50",
+    "Had5",
+    "Sig50",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL50",
+     "movie": "CALEND",
+     "castId": 1237,
+     "memberType": "text",
+     "textId": "CALEND.AL50"
+    },
+    {
+     "item": 6,
+     "name": "Had5",
+     "movie": "CALEND",
+     "castId": 229,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig50",
+     "movie": "CALEND",
+     "castId": 245,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1883,2,0,7,AL50,Had5,Sig50,0,0,0,0"
+  },
+  {
+   "id": "1883-7-AL27",
+   "year": 1883,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL27",
+    "0",
+    "Sig27",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL27",
+     "movie": "CALEND",
+     "castId": 1222,
+     "memberType": "text",
+     "textId": "CALEND.AL27"
+    },
+    {
+     "item": 7,
+     "name": "Sig27",
+     "movie": "CALEND",
+     "castId": 241,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1883,7,0,7,AL27,0,Sig27,0,0,0,0,1"
+  },
+  {
+   "id": "1884-2-Baby2",
+   "year": 1884,
+   "month": 2,
+   "day": 0,
+   "type": 1,
+   "typeName": "baby",
+   "args": [
+    "Baby2",
+    "2",
+    "DBox0",
+    "Sound",
+    "name"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Baby2",
+     "movie": "CALEND",
+     "castId": 1035,
+     "memberType": "text",
+     "textId": "CALEND.Baby2"
+    },
+    {
+     "item": 7,
+     "name": "DBox0",
+     "movie": "CALEND",
+     "castId": 188,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 8,
+     "name": "Sound",
+     "unresolved": true
+    },
+    {
+     "item": 9,
+     "name": "name",
+     "movie": "CALEND",
+     "castId": 1092,
+     "memberType": "text",
+     "textId": "CALEND.Name"
+    }
+   ],
+   "raw": "1884,2,0,1,Baby2,2,DBox0,Sound,name"
+  },
+  {
+   "id": "1884-3-Doc3",
+   "year": 1884,
+   "month": 3,
+   "day": 0,
+   "type": 4,
+   "typeName": "doctor",
+   "args": [
+    "Doc3",
+    "Doc4"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Doc3",
+     "movie": "CALEND",
+     "castId": 1021,
+     "memberType": "text",
+     "textId": "CALEND.Doc3"
+    },
+    {
+     "item": 6,
+     "name": "Doc4",
+     "movie": "CALEND",
+     "castId": 1022,
+     "memberType": "text",
+     "textId": "CALEND.Doc4"
+    }
+   ],
+   "raw": "1884,3,0,4,Doc3,Doc4"
+  },
+  {
+   "id": "1884-6-DL8",
+   "year": 1884,
+   "month": 6,
+   "day": 0,
+   "type": 2,
+   "typeName": "donationLetter",
+   "args": [
+    "DL8",
+    "Had7",
+    "Sig8",
+    "11",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL8",
+     "movie": "CALEND",
+     "castId": 1170,
+     "memberType": "text",
+     "textId": "CALEND.DL8"
+    },
+    {
+     "item": 6,
+     "name": "Had7",
+     "movie": "CALEND",
+     "castId": 249,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig8",
+     "movie": "CALEND",
+     "castId": 247,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1884,6,0,2,DL8,Had7,Sig8,11,0,0,0,1"
+  },
+  {
+   "id": "1885-3-AL43",
+   "year": 1885,
+   "month": 3,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL43",
+    "0",
+    "Sig2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL43",
+     "movie": "CALEND",
+     "castId": 1236,
+     "memberType": "text",
+     "textId": "CALEND.AL43"
+    },
+    {
+     "item": 7,
+     "name": "Sig2",
+     "movie": "CALEND",
+     "castId": 239,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1885,3,0,7,AL43,0,Sig2,0,0,0,0,1"
+  },
+  {
+   "id": "1887-7-Sop2",
+   "year": 1887,
+   "month": 7,
+   "day": 0,
+   "type": 5,
+   "typeName": "message",
+   "args": [
+    "Sop2",
+    "DBox9",
+    "0.5",
+    "6",
+    "1898"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Sop2",
+     "movie": "CALEND",
+     "castId": 1068,
+     "memberType": "text",
+     "textId": "CALEND.Sop2"
+    },
+    {
+     "item": 6,
+     "name": "DBox9",
+     "movie": "CALEND",
+     "castId": 289,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1887,7,0,5,Sop2,DBox9,0.5,6,1898"
+  },
+  {
+   "id": "1888-3-DaW1",
+   "year": 1888,
+   "month": 3,
+   "day": 0,
+   "type": 3,
+   "typeName": "familyDecision",
+   "args": [
+    "DaW1",
+    "7",
+    "DBox2",
+    "0",
+    "-2"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DaW1",
+     "movie": "CALEND",
+     "castId": 1053,
+     "memberType": "text",
+     "textId": "CALEND.DAW1"
+    },
+    {
+     "item": 7,
+     "name": "DBox2",
+     "movie": "CALEND",
+     "castId": 183,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1888,3,0,3,DaW1,7,DBox2,0,-2"
+  },
+  {
+   "id": "1889-2-Baby3",
+   "year": 1889,
+   "month": 2,
+   "day": 0,
+   "type": 1,
+   "typeName": "baby",
+   "args": [
+    "Baby3",
+    "2",
+    "DBox0",
+    "Sound",
+    "name"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Baby3",
+     "movie": "CALEND",
+     "castId": 1036,
+     "memberType": "text",
+     "textId": "CALEND.Baby3"
+    },
+    {
+     "item": 7,
+     "name": "DBox0",
+     "movie": "CALEND",
+     "castId": 188,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 8,
+     "name": "Sound",
+     "unresolved": true
+    },
+    {
+     "item": 9,
+     "name": "name",
+     "movie": "CALEND",
+     "castId": 1092,
+     "memberType": "text",
+     "textId": "CALEND.Name"
+    }
+   ],
+   "raw": "1889,2,0,1,Baby3,2,DBox0,Sound,name"
+  },
+  {
+   "id": "1889-3-Doc5",
+   "year": 1889,
+   "month": 3,
+   "day": 0,
+   "type": 4,
+   "typeName": "doctor",
+   "args": [
+    "Doc5",
+    "Doc6"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Doc5",
+     "movie": "CALEND",
+     "castId": 1023,
+     "memberType": "text",
+     "textId": "CALEND.Doc5"
+    },
+    {
+     "item": 6,
+     "name": "Doc6",
+     "movie": "CALEND",
+     "castId": 1024,
+     "memberType": "text",
+     "textId": "CALEND.Doc6"
+    }
+   ],
+   "raw": "1889,3,0,4,Doc5,Doc6"
+  },
+  {
+   "id": "1890-2-DaW5",
+   "year": 1890,
+   "month": 2,
+   "day": 0,
+   "type": 3,
+   "typeName": "familyDecision",
+   "args": [
+    "DaW5",
+    "9",
+    "DBox13",
+    "0",
+    "2",
+    "-5"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DaW5",
+     "movie": "CALEND",
+     "castId": 1055,
+     "memberType": "text",
+     "textId": "CALEND.DAW5"
+    },
+    {
+     "item": 7,
+     "name": "DBox13",
+     "movie": "CALEND",
+     "castId": 177,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1890,2,0,3,DaW5,9,DBox13,0,2,-5"
+  },
+  {
+   "id": "1890-7-DL9",
+   "year": 1890,
+   "month": 7,
+   "day": 0,
+   "type": 2,
+   "typeName": "donationLetter",
+   "args": [
+    "DL9",
+    "Had4",
+    "Sig9",
+    "11"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL9",
+     "movie": "CALEND",
+     "castId": 1171,
+     "memberType": "text",
+     "textId": "CALEND.DL9"
+    },
+    {
+     "item": 6,
+     "name": "Had4",
+     "movie": "CALEND",
+     "castId": 230,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig9",
+     "movie": "CALEND",
+     "castId": 248,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1890,7,0,2,DL9,Had4,Sig9,11"
+  },
+  {
+   "id": "1892-3-DaW7",
+   "year": 1892,
+   "month": 3,
+   "day": 0,
+   "type": 3,
+   "typeName": "familyDecision",
+   "args": [
+    "DaW7",
+    "8",
+    "DBox32",
+    "0",
+    "-2",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DaW7",
+     "movie": "CALEND",
+     "castId": 1056,
+     "memberType": "text",
+     "textId": "CALEND.DAW7"
+    },
+    {
+     "item": 7,
+     "name": "DBox32",
+     "movie": "CALEND",
+     "castId": 291,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1892,3,0,3,DaW7,8,DBox32,0,-2,0"
+  },
+  {
+   "id": "1892-8-Sop3",
+   "year": 1892,
+   "month": 8,
+   "day": 0,
+   "type": 5,
+   "typeName": "message",
+   "args": [
+    "Sop3",
+    "DBox9",
+    "1",
+    "6",
+    "1900"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Sop3",
+     "movie": "CALEND",
+     "castId": 1067,
+     "memberType": "text",
+     "textId": "CALEND.Sop3"
+    },
+    {
+     "item": 6,
+     "name": "DBox9",
+     "movie": "CALEND",
+     "castId": 289,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1892,8,0,5,Sop3,DBox9,1,6,1900"
+  },
+  {
+   "id": "1893-6-Wed1",
+   "year": 1893,
+   "month": 6,
+   "day": 0,
+   "type": 10,
+   "typeName": "wedding",
+   "args": [
+    "Wed1",
+    "WL1",
+    "DBox13",
+    "100",
+    "200",
+    "550",
+    "3",
+    "6",
+    "14"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Wed1",
+     "movie": "CALEND",
+     "castId": 1082,
+     "memberType": "text",
+     "textId": "CALEND.Wed1"
+    },
+    {
+     "item": 6,
+     "name": "WL1",
+     "movie": "CALEND",
+     "castId": 1084,
+     "memberType": "text",
+     "textId": "CALEND.WL1"
+    },
+    {
+     "item": 7,
+     "name": "DBox13",
+     "movie": "CALEND",
+     "castId": 177,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1893,6,0,10,Wed1,WL1,DBox13,100,200,550,3,6,14"
+  },
+  {
+   "id": "1893-8-AL60",
+   "year": 1893,
+   "month": 8,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL60",
+    "Had5",
+    "Sig50",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL60",
+     "movie": "CALEND",
+     "castId": 1242,
+     "memberType": "text",
+     "textId": "CALEND.AL60"
+    },
+    {
+     "item": 6,
+     "name": "Had5",
+     "movie": "CALEND",
+     "castId": 229,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig50",
+     "movie": "CALEND",
+     "castId": 245,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1893,8,0,7,AL60,Had5,Sig50,0,0,0,0"
+  },
+  {
+   "id": "1894-7-DL10",
+   "year": 1894,
+   "month": 7,
+   "day": 0,
+   "type": 6,
+   "typeName": "yesNoLetter",
+   "args": [
+    "DL10",
+    "0",
+    "Sig10",
+    "12",
+    "-150",
+    "6",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL10",
+     "movie": "CALEND",
+     "castId": 1172,
+     "memberType": "text",
+     "textId": "CALEND.DL10"
+    },
+    {
+     "item": 7,
+     "name": "Sig10",
+     "movie": "CALEND",
+     "castId": 235,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1894,7,0,6,DL10,0,Sig10,12,-150,6,0,1"
+  },
+  {
+   "id": "1897-8-Sop4",
+   "year": 1897,
+   "month": 8,
+   "day": 0,
+   "type": 5,
+   "typeName": "message",
+   "args": [
+    "Sop4",
+    "DBox9",
+    "1",
+    "6",
+    "1907"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Sop4",
+     "movie": "CALEND",
+     "castId": 1069,
+     "memberType": "text",
+     "textId": "CALEND.Sop4"
+    },
+    {
+     "item": 6,
+     "name": "DBox9",
+     "movie": "CALEND",
+     "castId": 289,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1897,8,0,5,Sop4,DBox9,1,6,1907"
+  },
+  {
+   "id": "1898-3-DaW3",
+   "year": 1898,
+   "month": 3,
+   "day": 0,
+   "type": 3,
+   "typeName": "familyDecision",
+   "args": [
+    "DaW3",
+    "8",
+    "DBox01",
+    "0",
+    "4",
+    "-2"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DaW3",
+     "movie": "CALEND",
+     "castId": 1054,
+     "memberType": "text",
+     "textId": "CALEND.DAW3"
+    },
+    {
+     "item": 7,
+     "name": "DBox01",
+     "movie": "CALEND",
+     "castId": 292,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1898,3,0,3,DaW3,8,DBox01,0,4,-2"
+  },
+  {
+   "id": "1899-1-DL16",
+   "year": 1899,
+   "month": 1,
+   "day": 0,
+   "type": 2,
+   "typeName": "donationLetter",
+   "args": [
+    "DL16",
+    "Had4",
+    "Sig9",
+    "11"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL16",
+     "movie": "CALEND",
+     "castId": 1174,
+     "memberType": "text",
+     "textId": "CALEND.DL16"
+    },
+    {
+     "item": 6,
+     "name": "Had4",
+     "movie": "CALEND",
+     "castId": 230,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig9",
+     "movie": "CALEND",
+     "castId": 248,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1899,1,0,2,DL16,Had4,Sig9,11"
+  },
+  {
+   "id": "1900-6-DL17",
+   "year": 1900,
+   "month": 6,
+   "day": 0,
+   "type": 2,
+   "typeName": "donationLetter",
+   "args": [
+    "DL17",
+    "Had4",
+    "Sig6",
+    "11"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL17",
+     "movie": "CALEND",
+     "castId": 1175,
+     "memberType": "text",
+     "textId": "CALEND.DL17"
+    },
+    {
+     "item": 6,
+     "name": "Had4",
+     "movie": "CALEND",
+     "castId": 230,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig6",
+     "movie": "CALEND",
+     "castId": 246,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1900,6,0,2,DL17,Had4,Sig6,11"
+  },
+  {
+   "id": "1900-7-DaW8",
+   "year": 1900,
+   "month": 7,
+   "day": 0,
+   "type": 3,
+   "typeName": "familyDecision",
+   "args": [
+    "DaW8",
+    "9",
+    "DBox12",
+    "0",
+    "6",
+    "-5",
+    "-2",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DaW8",
+     "movie": "CALEND",
+     "castId": 1057,
+     "memberType": "text",
+     "textId": "CALEND.Daw8"
+    },
+    {
+     "item": 7,
+     "name": "DBox12",
+     "movie": "CALEND",
+     "castId": 286,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1900,7,0,3,DaW8,9,DBox12,0,6,-5,-2,0"
+  },
+  {
+   "id": "1901-2-DL18",
+   "year": 1901,
+   "month": 2,
+   "day": 0,
+   "type": 2,
+   "typeName": "donationLetter",
+   "args": [
+    "DL18",
+    "Had4",
+    "Sig18",
+    "11"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL18",
+     "movie": "CALEND",
+     "castId": 1176,
+     "memberType": "text",
+     "textId": "CALEND.DL18"
+    },
+    {
+     "item": 6,
+     "name": "Had4",
+     "movie": "CALEND",
+     "castId": 230,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig18",
+     "movie": "CALEND",
+     "castId": 238,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1901,2,0,2,DL18,Had4,Sig18,11"
+  },
+  {
+   "id": "1901-11-AL19",
+   "year": 1901,
+   "month": 11,
+   "day": 1,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL19",
+    "Had8",
+    "Sig11",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL19",
+     "movie": "CALEND",
+     "castId": 1219,
+     "memberType": "text",
+     "textId": "CALEND.AL19"
+    },
+    {
+     "item": 6,
+     "name": "Had8",
+     "unresolved": true
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1901,11,1,7,AL19,Had8,Sig11,0,0,0,0,1"
+  },
+  {
+   "id": "1902-6-Wed2",
+   "year": 1902,
+   "month": 6,
+   "day": 0,
+   "type": 10,
+   "typeName": "wedding",
+   "args": [
+    "Wed2",
+    "WL1",
+    "DBox01",
+    "125",
+    "225",
+    "575",
+    "3",
+    "6",
+    "14"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Wed2",
+     "movie": "CALEND",
+     "castId": 1083,
+     "memberType": "text",
+     "textId": "CALEND.Wed2"
+    },
+    {
+     "item": 6,
+     "name": "WL1",
+     "movie": "CALEND",
+     "castId": 1084,
+     "memberType": "text",
+     "textId": "CALEND.WL1"
+    },
+    {
+     "item": 7,
+     "name": "DBox01",
+     "movie": "CALEND",
+     "castId": 292,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1902,6,0,10,Wed2,WL1,DBox01,125,225,575,3,6,14"
+  },
+  {
+   "id": "1902-8-Son21",
+   "year": 1902,
+   "month": 8,
+   "day": 0,
+   "type": 5,
+   "typeName": "message",
+   "args": [
+    "Son21",
+    "DBox01",
+    "-5"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Son21",
+     "movie": "CALEND",
+     "castId": 1079,
+     "memberType": "text",
+     "textId": "CALEND.Son21"
+    },
+    {
+     "item": 6,
+     "name": "DBox01",
+     "movie": "CALEND",
+     "castId": 292,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1902,8,0,5,Son21,DBox01,-5"
+  },
+  {
+   "id": "1905-6-Dat5",
+   "year": 1905,
+   "month": 6,
+   "day": 0,
+   "type": 5,
+   "typeName": "message",
+   "args": [
+    "Dat5",
+    "DBox12",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Dat5",
+     "movie": "CALEND",
+     "castId": 1060,
+     "memberType": "text",
+     "textId": "CALEND.Dat5"
+    },
+    {
+     "item": 6,
+     "name": "DBox12",
+     "movie": "CALEND",
+     "castId": 286,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1905,6,0,5,Dat5,DBox12,0"
+  },
+  {
+   "id": "1905-7-Da3",
+   "year": 1905,
+   "month": 7,
+   "day": 0,
+   "type": 3,
+   "typeName": "familyDecision",
+   "args": [
+    "Da3",
+    "10",
+    "DBox12",
+    "480",
+    "15",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Da3",
+     "movie": "CALEND",
+     "castId": 1051,
+     "memberType": "text",
+     "textId": "CALEND.Da3"
+    },
+    {
+     "item": 7,
+     "name": "DBox12",
+     "movie": "CALEND",
+     "castId": 286,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1905,7,0,3,Da3,10,DBox12,480,15,0"
+  },
+  {
+   "id": "1906-3-DMail",
+   "year": 1906,
+   "month": 3,
+   "day": 0,
+   "type": 5,
+   "typeName": "message",
+   "args": [
+    "DMail",
+    "DBox5",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DMail",
+     "movie": "CALEND",
+     "castId": 1059,
+     "memberType": "text",
+     "textId": "CALEND.DMail"
+    },
+    {
+     "item": 6,
+     "name": "DBox5",
+     "movie": "CALEND",
+     "castId": 186,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1906,3,0,5,DMail,DBox5,0"
+  },
+  {
+   "id": "1907-6-Son1",
+   "year": 1907,
+   "month": 6,
+   "day": 0,
+   "type": 15,
+   "typeName": "sonLawSchool",
+   "args": [
+    "Son1",
+    "10",
+    "DBox23",
+    "0",
+    "0",
+    "-5"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Son1",
+     "movie": "CALEND",
+     "castId": 1076,
+     "memberType": "text",
+     "textId": "CALEND.Son1"
+    },
+    {
+     "item": 7,
+     "name": "DBox23",
+     "movie": "CALEND",
+     "castId": 294,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1907,6,0,15,Son1,10,DBox23,0,0,-5"
+  },
+  {
+   "id": "1910-3-DL24",
+   "year": 1910,
+   "month": 3,
+   "day": 0,
+   "type": 2,
+   "typeName": "donationLetter",
+   "args": [
+    "DL24",
+    "Had4",
+    "Sig18",
+    "11",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL24",
+     "movie": "CALEND",
+     "castId": 1181,
+     "memberType": "text",
+     "textId": "CALEND.DL24"
+    },
+    {
+     "item": 6,
+     "name": "Had4",
+     "movie": "CALEND",
+     "castId": 230,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig18",
+     "movie": "CALEND",
+     "castId": 238,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1910,3,0,2,DL24,Had4,Sig18,11,0,0,0,0"
+  },
+  {
+   "id": "1917-5-AL33",
+   "year": 1917,
+   "month": 5,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL33",
+    "Had9",
+    "Sig60",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL33",
+     "movie": "CALEND",
+     "castId": 1227,
+     "memberType": "text",
+     "textId": "CALEND.AL33"
+    },
+    {
+     "item": 6,
+     "name": "Had9",
+     "movie": "CALEND",
+     "castId": 219,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig60",
+     "movie": "CALEND",
+     "castId": 266,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1917,5,0,7,AL33,Had9,Sig60,0,0,0,0,1"
+  },
+  {
+   "id": "1917-7-AL34",
+   "year": 1917,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL34",
+    "0",
+    "Sig10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL34",
+     "movie": "CALEND",
+     "castId": 1228,
+     "memberType": "text",
+     "textId": "CALEND.AL34"
+    },
+    {
+     "item": 7,
+     "name": "Sig10",
+     "movie": "CALEND",
+     "castId": 235,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1917,7,0,7,AL34,0,Sig10,0,0,0,0,1"
+  },
+  {
+   "id": "1918-6-AL37",
+   "year": 1918,
+   "month": 6,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL37",
+    "0",
+    "Sig11",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL37",
+     "movie": "CALEND",
+     "castId": 1231,
+     "memberType": "text",
+     "textId": "CALEND.AL37"
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1918,6,0,7,AL37,0,Sig11,0,0,0,0,1"
+  },
+  {
+   "id": "1918-7-AL38",
+   "year": 1918,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL38",
+    "0",
+    "Sig20",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL38",
+     "movie": "CALEND",
+     "castId": 1232,
+     "memberType": "text",
+     "textId": "CALEND.AL38"
+    },
+    {
+     "item": 7,
+     "name": "Sig20",
+     "movie": "CALEND",
+     "castId": 240,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1918,7,0,7,AL38,0,Sig20,0,0,0,0,1"
+  },
+  {
+   "id": "1919-6-AL39",
+   "year": 1919,
+   "month": 6,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL39",
+    "Had9",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL39",
+     "movie": "CALEND",
+     "castId": 1233,
+     "memberType": "text",
+     "textId": "CALEND.AL39"
+    },
+    {
+     "item": 6,
+     "name": "Had9",
+     "movie": "CALEND",
+     "castId": 219,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1919,6,0,7,AL39,Had9,0,0,0,0,0,1"
+  },
+  {
+   "id": "1919-11-AL40",
+   "year": 1919,
+   "month": 11,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL40",
+    "0",
+    "Sig10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL40",
+     "movie": "CALEND",
+     "castId": 1234,
+     "memberType": "text",
+     "textId": "CALEND.AL40"
+    },
+    {
+     "item": 7,
+     "name": "Sig10",
+     "movie": "CALEND",
+     "castId": 235,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1919,11,0,7,AL40,0,Sig10,0,0,0,0,1"
+  }
+ ],
+ "dynamic": [
+  {
+   "id": "1915-6-ALM7",
+   "year": 1915,
+   "month": 6,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "ALM7",
+    "Had4",
+    "Sig6",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "ALM7",
+     "movie": "CALEND",
+     "castId": 1215,
+     "memberType": "text",
+     "textId": "CALEND.ALM7"
+    },
+    {
+     "item": 6,
+     "name": "Had4",
+     "movie": "CALEND",
+     "castId": 230,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig6",
+     "movie": "CALEND",
+     "castId": 246,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1915,6,0,7,ALM7,Had4,Sig6,0,0,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 10
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 64
+    }
+   ]
+  },
+  {
+   "id": "1916-1-List551",
+   "year": 1916,
+   "month": 1,
+   "day": 0,
+   "type": 11,
+   "typeName": "mayorBudget",
+   "args": [
+    "List551",
+    "4",
+    "2000",
+    "1500",
+    "500",
+    "150",
+    "850"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "List551",
+     "movie": "CALEND",
+     "castId": 1147,
+     "memberType": "text",
+     "textId": "CALEND.List551"
+    }
+   ],
+   "raw": "1916,1,0,11,List551,4,2000,1500,500,150,850",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 15
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 69
+    }
+   ]
+  },
+  {
+   "id": "1917-1-List552",
+   "year": 1917,
+   "month": 1,
+   "day": 0,
+   "type": 11,
+   "typeName": "mayorBudget",
+   "args": [
+    "List552",
+    "4",
+    "2300",
+    "250",
+    "1200",
+    "500",
+    "500"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "List552",
+     "movie": "CALEND",
+     "castId": 1148,
+     "memberType": "text",
+     "textId": "CALEND.List552"
+    }
+   ],
+   "raw": "1917,1,0,11,List552,4,2300,250,1200,500,500",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 16
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 70
+    }
+   ]
+  },
+  {
+   "id": "1918-1-List553",
+   "year": 1918,
+   "month": 1,
+   "day": 0,
+   "type": 11,
+   "typeName": "mayorBudget",
+   "args": [
+    "List553",
+    "4",
+    "2400",
+    "1000",
+    "500",
+    "850",
+    "1000"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "List553",
+     "movie": "CALEND",
+     "castId": 1149,
+     "memberType": "text",
+     "textId": "CALEND.List553"
+    }
+   ],
+   "raw": "1918,1,0,11,List553,4,2400,1000,500,850,1000",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 17
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 71
+    }
+   ]
+  },
+  {
+   "id": "1919-1-List554",
+   "year": 1919,
+   "month": 1,
+   "day": 0,
+   "type": 11,
+   "typeName": "mayorBudget",
+   "args": [
+    "List554",
+    "4",
+    "2600",
+    "500",
+    "400",
+    "1300",
+    "1000"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "List554",
+     "movie": "CALEND",
+     "castId": 1150,
+     "memberType": "text",
+     "textId": "CALEND.List554"
+    }
+   ],
+   "raw": "1919,1,0,11,List554,4,2600,500,400,1300,1000",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 18
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 72
+    }
+   ]
+  },
+  {
+   "id": "1915-6-ALM9",
+   "year": 1915,
+   "month": 6,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "ALM9",
+    "Had4",
+    "Sig6",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "ALM9",
+     "movie": "CALEND",
+     "castId": 1216,
+     "memberType": "text",
+     "textId": "CALEND.ALM9"
+    },
+    {
+     "item": 6,
+     "name": "Had4",
+     "movie": "CALEND",
+     "castId": 230,
+     "memberType": "bitmap"
+    },
+    {
+     "item": 7,
+     "name": "Sig6",
+     "movie": "CALEND",
+     "castId": 246,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1915,6,0,7,ALM9,Had4,Sig6,0,0,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 25
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 37",
+     "line": 79
+    }
+   ]
+  },
+  {
+   "id": "1913-3-AL25",
+   "year": 1913,
+   "month": 3,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL25",
+    "0",
+    "Sig20",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL25",
+     "movie": "CALEND",
+     "castId": 1221,
+     "memberType": "text",
+     "textId": "CALEND.AL25"
+    },
+    {
+     "item": 7,
+     "name": "Sig20",
+     "movie": "CALEND",
+     "castId": 240,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1913,3,0,7,AL25,0,Sig20,0,0,0,0,1",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 5",
+     "line": 79
+    }
+   ]
+  },
+  {
+   "id": "1907-11-DL20",
+   "year": 1907,
+   "month": 11,
+   "day": 0,
+   "type": 6,
+   "typeName": "yesNoLetter",
+   "args": [
+    "DL20",
+    "0",
+    "Sig20",
+    "4",
+    "-100",
+    "6",
+    "-5",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL20",
+     "movie": "CALEND",
+     "castId": 1178,
+     "memberType": "text",
+     "textId": "CALEND.DL20"
+    },
+    {
+     "item": 7,
+     "name": "Sig20",
+     "movie": "CALEND",
+     "castId": 240,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1907,11,0,6,DL20,0,Sig20,4,-100,6,-5,1",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 17
+    }
+   ]
+  },
+  {
+   "id": "1900-8-DaW9",
+   "year": 1900,
+   "month": 8,
+   "day": 0,
+   "type": 3,
+   "typeName": "familyDecision",
+   "args": [
+    "DaW9",
+    "9",
+    "DBox12",
+    "-2",
+    "6",
+    "-10"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DaW9",
+     "movie": "CALEND",
+     "castId": 1058,
+     "memberType": "text",
+     "textId": "CALEND.Daw9"
+    },
+    {
+     "item": 7,
+     "name": "DBox12",
+     "movie": "CALEND",
+     "castId": 286,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1900,8,0,3,DaW9,9,DBox12,-2,6,-10",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 41
+    }
+   ]
+  },
+  {
+   "id": "1908-6-DL22",
+   "year": 1908,
+   "month": 6,
+   "day": 0,
+   "type": 6,
+   "typeName": "yesNoLetter",
+   "args": [
+    "DL22",
+    "0",
+    "Sig20",
+    "6",
+    "-200",
+    "3",
+    "-12",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "DL22",
+     "movie": "CALEND",
+     "castId": 1180,
+     "memberType": "text",
+     "textId": "CALEND.DL22"
+    },
+    {
+     "item": 7,
+     "name": "Sig20",
+     "movie": "CALEND",
+     "castId": 240,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1908,6,0,6,DL22,0,Sig20,6,-200,3,-12,1",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 49
+    }
+   ]
+  },
+  {
+   "id": "1916-7-AL31",
+   "year": 1916,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL31",
+    "0",
+    "Sig11",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL31",
+     "movie": "CALEND",
+     "castId": 1225,
+     "memberType": "text",
+     "textId": "CALEND.AL31"
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1916,7,0,7,AL31,0,Sig11,0,0,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 58
+    },
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 50",
+     "line": 101
+    }
+   ]
+  },
+  {
+   "id": "1916-7-AL32",
+   "year": 1916,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL32",
+    "0",
+    "Sig11",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL32",
+     "movie": "CALEND",
+     "castId": 1226,
+     "memberType": "text",
+     "textId": "CALEND.AL32"
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1916,7,0,7,AL32,0,Sig11,0,0,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 60
+    },
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 50",
+     "line": 103
+    }
+   ]
+  },
+  {
+   "id": "1898-12-AL14",
+   "year": 1898,
+   "month": 12,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL14",
+    "0",
+    "Sig11",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL14",
+     "movie": "CALEND",
+     "castId": 1217,
+     "memberType": "text",
+     "textId": "CALEND.AL14"
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1898,12,0,7,AL14,0,Sig11,0,0,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 68
+    }
+   ]
+  },
+  {
+   "id": "1898-12-AL15",
+   "year": 1898,
+   "month": 12,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL15",
+    "0",
+    "Sig11",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL15",
+     "movie": "CALEND",
+     "castId": 1218,
+     "memberType": "text",
+     "textId": "CALEND.AL15"
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1898,12,0,7,AL15,0,Sig11,0,0,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 70
+    }
+   ]
+  },
+  {
+   "id": "1905-8-Da4",
+   "year": 1905,
+   "month": 8,
+   "day": 0,
+   "type": 5,
+   "typeName": "message",
+   "args": [
+    "Da4",
+    "DBox12",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "Da4",
+     "movie": "CALEND",
+     "castId": 1052,
+     "memberType": "text",
+     "textId": "CALEND.Da4"
+    },
+    {
+     "item": 6,
+     "name": "DBox12",
+     "movie": "CALEND",
+     "castId": 286,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1905,8,0,5,Da4,DBox12,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 80
+    }
+   ]
+  },
+  {
+   "id": "1909-7-AL51",
+   "year": 1909,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL51",
+    "0",
+    "Sig35",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL51",
+     "movie": "CALEND",
+     "castId": 1238,
+     "memberType": "text",
+     "textId": "CALEND.AL51"
+    },
+    {
+     "item": 7,
+     "name": "Sig35",
+     "movie": "CALEND",
+     "castId": 242,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1909,7,0,7,AL51,0,Sig35,0,0,0,0,1",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 81
+    }
+   ]
+  },
+  {
+   "id": "1917-11-AL52",
+   "year": 1917,
+   "month": 11,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL52",
+    "0",
+    "Sig35",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL52",
+     "movie": "CALEND",
+     "castId": 1239,
+     "memberType": "text",
+     "textId": "CALEND.AL52"
+    },
+    {
+     "item": 7,
+     "name": "Sig35",
+     "movie": "CALEND",
+     "castId": 242,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1917,11,0,7,AL52,0,Sig35,0,0,0,0,1",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 29",
+     "line": 82
+    }
+   ]
+  },
+  {
+   "id": "1908-6-AL21",
+   "year": 1908,
+   "month": 6,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL21",
+    "0",
+    "Sig20",
+    "0",
+    "100",
+    "6",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL21",
+     "movie": "CALEND",
+     "castId": 1220,
+     "memberType": "text",
+     "textId": "CALEND.AL21"
+    },
+    {
+     "item": 7,
+     "name": "Sig20",
+     "movie": "CALEND",
+     "castId": 240,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1908,6,0,7,AL21,0,Sig20,0,100,6,0,1",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 50",
+     "line": 65
+    }
+   ]
+  },
+  {
+   "id": "1916-7-AL29",
+   "year": 1916,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL29",
+    "0",
+    "Sig11",
+    "0",
+    "2000",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL29",
+     "movie": "CALEND",
+     "castId": 1223,
+     "memberType": "text",
+     "textId": "CALEND.AL29"
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1916,7,0,7,AL29,0,Sig11,0,2000,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 50",
+     "line": 71
+    }
+   ]
+  },
+  {
+   "id": "1916-7-AL30",
+   "year": 1916,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL30",
+    "0",
+    "Sig11",
+    "0",
+    "2000",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL30",
+     "movie": "CALEND",
+     "castId": 1224,
+     "memberType": "text",
+     "textId": "CALEND.AL30"
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1916,7,0,7,AL30,0,Sig11,0,2000,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 50",
+     "line": 73
+    }
+   ]
+  },
+  {
+   "id": "1898-12-AL13",
+   "year": 1898,
+   "month": 12,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL13",
+    "0",
+    "Sig11",
+    "0",
+    "200",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL13",
+     "unresolved": true
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1898,12,0,7,AL13,0,Sig11,0,200,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 50",
+     "line": 80
+    }
+   ]
+  },
+  {
+   "id": "1898-12-AL12",
+   "year": 1898,
+   "month": 12,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL12",
+    "0",
+    "Sig11",
+    "0",
+    "200",
+    "0",
+    "0"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL12",
+     "unresolved": true
+    },
+    {
+     "item": 7,
+     "name": "Sig11",
+     "movie": "CALEND",
+     "castId": 236,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1898,12,0,7,AL12,0,Sig11,0,200,0,0",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 50",
+     "line": 82
+    }
+   ]
+  },
+  {
+   "id": "1909-7-AL35",
+   "year": 1909,
+   "month": 7,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL35",
+    "0",
+    "Sig35",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL35",
+     "movie": "CALEND",
+     "castId": 1229,
+     "memberType": "text",
+     "textId": "CALEND.AL35"
+    },
+    {
+     "item": 7,
+     "name": "Sig35",
+     "movie": "CALEND",
+     "castId": 242,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1909,7,0,7,AL35,0,Sig35,0,0,0,0,1",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 55",
+     "line": 68
+    }
+   ]
+  },
+  {
+   "id": "1917-11-AL36",
+   "year": 1917,
+   "month": 11,
+   "day": 0,
+   "type": 7,
+   "typeName": "infoLetter",
+   "args": [
+    "AL36",
+    "0",
+    "Sig35",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+   ],
+   "refs": [
+    {
+     "item": 5,
+     "name": "AL36",
+     "movie": "CALEND",
+     "castId": 1230,
+     "memberType": "text",
+     "textId": "CALEND.AL36"
+    },
+    {
+     "item": 7,
+     "name": "Sig35",
+     "movie": "CALEND",
+     "castId": 242,
+     "memberType": "bitmap"
+    }
+   ],
+   "raw": "1917,11,0,7,AL36,0,Sig35,0,0,0,0,1",
+   "addedBy": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 55",
+     "line": 69
+    }
+   ]
+  }
+ ],
+ "dynamicFragments": [
+  {
+   "text": ",8,0,7,AL54,0,Sig20,0,0,-10,0,1",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 5",
+     "line": 84
+    }
+   ]
+  }
+ ],
+ "choiceLines": {
+  "id": "CALEND.Text2",
+  "movie": "CALEND",
+  "castId": 1010,
+  "name": "Text2",
+  "text": "I'll buy new shoes.\nMy baby's name is:\nWe'll have\nI'll send $100.00.\nI'll invest $500.00.\nI’ll send $200.00.\nI'll let my daughter work.\nI'll let my son work.\nI'll let my daughter leave.\nI'll pay for college.\nI will give:\nI'll send $150.00.\nI'll send $800.00.\nI'll send $75.00.\n",
+  "source": "text-member"
+ },
+ "choiceLinesAlt": {
+  "id": "CALEND.DL0",
+  "movie": "CALEND",
+  "castId": 1168,
+  "name": "DL0",
+  "text": "I'll buy new shoes.\nMy baby's name is:\nWe'll have\nI'll send $100.00.\nI'll invest $500.00.\nI’ll send $200.00.\nI'll let my daughter work.\nI'll let my son work.\nI'll let my daughter leave.\nI'll pay for college.\nI will give:\nI'll send $150.00.\nI'll send $800.00.\nI'll send $75.00.\n",
+  "source": "text-member"
+ },
+ "weddingOptions": [
+  {
+   "id": "CALEND.WL1",
+   "movie": "CALEND",
+   "castId": 1084,
+   "name": "WL1",
+   "text": "a wedding at home with just the family\n\na wedding at home and invite family \nand a few friends\n\na wedding in the town square and invite\nthe whole town\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.WL0",
+   "movie": "CALEND",
+   "castId": 1085,
+   "name": "WL0",
+   "text": "a wedding at home with just the family\n\na wedding at home and invite family \nand a few friends\n\na wedding in the town square and invite\nthe whole town\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.WLBase",
+   "movie": "CALEND",
+   "castId": 1086,
+   "name": "WLBase",
+   "text": "a wedding at home with just the family\n\na wedding at home and invite family and \na few friends\n\na wedding in the town square and invite\nthe whole town\n\n",
+   "source": "text-member"
+  }
+ ],
+ "texts": {
+  "family": [
+   {
+    "id": "CALEND.Baby1",
+    "movie": "CALEND",
+    "castId": 1034,
+    "name": "Baby1",
+    "text": "Congratulations! You have a son! Your monthly cost of living will increase by five dollars per month. ",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Baby2",
+    "movie": "CALEND",
+    "castId": 1035,
+    "name": "Baby2",
+    "text": "Congratulations! You have another daughter! Your monthly cost of living will increase by five dollars per month.\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Baby3",
+    "movie": "CALEND",
+    "castId": 1036,
+    "name": "Baby3",
+    "text": "Congratulations! You have another son! Your monthly cost of living will increase by five dollars per month. \n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Da1",
+    "movie": "CALEND",
+    "castId": 1049,
+    "name": "Da1",
+    "text": "Ouch! My feet hurt. My shoes are  too small. Will you please buy me a new pair? They cost five dollars.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Da2",
+    "movie": "CALEND",
+    "castId": 1050,
+    "name": "Da2",
+    "text": "I'll buy new shoes.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Da3",
+    "movie": "CALEND",
+    "castId": 1051,
+    "name": "Da3",
+    "text": "I have good news! I've been accepted\n to college. If you lend me $480.00 a year\n to help pay for school,\nI can go. Will you help me?",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Da4",
+    "movie": "CALEND",
+    "castId": 1052,
+    "name": "Da4",
+    "text": "I''ve been offered another chance to teach scool in town, and I'd really like to take it. I'll miss everyone, but I'm looking forward to living in a big city. My train leaves in a few days. I'll write from Boston to tell you\nhow I'm doing.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.DAW1",
+    "movie": "CALEND",
+    "castId": 1053,
+    "name": "DAW1",
+    "text": "Now that I'm older, I can help you in the fields when you're busy. I may miss some school, but you'll finish the work faster and save money.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.DAW3",
+    "movie": "CALEND",
+    "castId": 1054,
+    "name": "DAW3",
+    "text": "Now that I've finished school, I can work full-time in the fields. I can work as hard as any worker you could hire.\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.DAW5",
+    "movie": "CALEND",
+    "castId": 1055,
+    "name": "DAW5",
+    "text": "A very nice family in town wants me to live with them and work as a mother's helper. Now that I'm grown up, I want a chance to be on my own. May I take the job?",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.DAW7",
+    "movie": "CALEND",
+    "castId": 1056,
+    "name": "DAW7",
+    "text": "Now that I'm older, I can help you in the fields when you're busy. I might miss some school, but you'll finish the work faster and save money.\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Daw8",
+    "movie": "CALEND",
+    "castId": 1057,
+    "name": "Daw8",
+    "text": "I've just received my teaching certificate. \nI've been offered a teaching job in town.\nI'd really like to take it, but it would mean \nmoving to town. Will you let me leave home\nand take the job?",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Daw9",
+    "movie": "CALEND",
+    "castId": 1058,
+    "name": "Daw9",
+    "text": "I've been offered another chance to teach school in town, and I'd really like to take it. It would mean moving to town. Will you let me leave home and take the job?",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Dat5",
+    "movie": "CALEND",
+    "castId": 1060,
+    "name": "Dat5",
+    "text": "I've applied to Oberlin College, in Ohio. Maybe someday I'll be able to teach college, as some women are starting to do. Soon I'll hear whether the college has accepted me. ",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.DMail",
+    "movie": "CALEND",
+    "castId": 1059,
+    "name": "DMail",
+    "text": "Hello, neighbor. Starting this month, your mail will be delivered to your house.  Whenever there's a letter for you, the red flag on your mailbox will be raised. Your mail won't come to my store anymore, but I hope I'll still see you there often.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Sop1",
+    "movie": "CALEND",
+    "castId": 1066,
+    "name": "Sop1",
+    "text": "Hello, neighbor. I'm glad you're sending your daughter to school this fall. My daughter Katie is starting school too. By the way, school supplies will cost three dollars per term.\n\n\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Sop2",
+    "movie": "CALEND",
+    "castId": 1068,
+    "name": "Sop2",
+    "text": "Hello, neighbor. I'm glad you're sending your son to school this fall. My son Jesse is starting school too. By the way, school supplies will cost three dollars per term.\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Sop3",
+    "movie": "CALEND",
+    "castId": 1067,
+    "name": "Sop3",
+    "text": "Hello, neighbor. I'm glad you're sending your daughter to school this fall. By the way, school supplies will cost six dollars per term.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Sop4",
+    "movie": "CALEND",
+    "castId": 1069,
+    "name": "Sop4",
+    "text": "Hello, neighbor. I'm glad you're sending your son to school this fall. By the way, school supplies will cost six dollars per term.\n\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Son1",
+    "movie": "CALEND",
+    "castId": 1076,
+    "name": "Son1",
+    "text": "I have good news! I've been accepted to study law at a college back east. If you lend me $600.00 a year to help pay for school, I can go. Will you help me?",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Son3",
+    "movie": "CALEND",
+    "castId": 1077,
+    "name": "Son3",
+    "text": "Ma, Pa, I've made up my mind. I'm going to California to seek my fortune. Please don't worry about me. I'll write you as soon as I get there.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Son20",
+    "movie": "CALEND",
+    "castId": 1078,
+    "name": "Son20",
+    "text": "Now that I'm married, I've decided to take\na job working at the railroad station.\nSusie and I will live in a set \nof rented rooms in town.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Son21",
+    "movie": "CALEND",
+    "castId": 1079,
+    "name": "Son21",
+    "text": "Now that I'm married, I've decided\nto go into business in town. \nI'm buying the carriage supply store, \nand Susie and I will live \nin a small house nearby.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Son22",
+    "movie": "CALEND",
+    "castId": 1080,
+    "name": "Son22",
+    "text": "I was always happiest on the farm. \nNow that I'm married, I'm going to\ntake over the neighboring farm. \nWhenever you need help, \nI'll be right next door.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Wed1",
+    "movie": "CALEND",
+    "castId": 1082,
+    "name": "Wed1",
+    "text": "I'm so happy! My beau John has asked me to marry him. I said yes. I hope we can afford a big wedding.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Wed2",
+    "movie": "CALEND",
+    "castId": 1083,
+    "name": "Wed2",
+    "text": "I have good news! My sweetheart Susie and I are getting married. I hope we can afford a big wedding.\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.WL0",
+    "movie": "CALEND",
+    "castId": 1085,
+    "name": "WL0",
+    "text": "a wedding at home with just the family\n\na wedding at home and invite family \nand a few friends\n\na wedding in the town square and invite\nthe whole town\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.WLBase",
+    "movie": "CALEND",
+    "castId": 1086,
+    "name": "WLBase",
+    "text": "a wedding at home with just the family\n\na wedding at home and invite family and \na few friends\n\na wedding in the town square and invite\nthe whole town\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Text2",
+    "movie": "CALEND",
+    "castId": 1010,
+    "name": "Text2",
+    "text": "I'll buy new shoes.\nMy baby's name is:\nWe'll have\nI'll send $100.00.\nI'll invest $500.00.\nI’ll send $200.00.\nI'll let my daughter work.\nI'll let my son work.\nI'll let my daughter leave.\nI'll pay for college.\nI will give:\nI'll send $150.00.\nI'll send $800.00.\nI'll send $75.00.\n",
+    "source": "text-member"
+   }
+  ],
+  "doctor": [
+   {
+    "id": "CALEND.Doc0",
+    "movie": "CALEND",
+    "castId": 1018,
+    "name": "Doc0",
+    "text": "Neighbor, I suggest that you buy these items to make your home more healthful. Buy what you can afford now. You can get the rest later.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Doc1",
+    "movie": "CALEND",
+    "castId": 1019,
+    "name": "Doc1",
+    "text": "Neighbor, your daughter has a fever and chills. I'll give her medicine and she'll be better soon",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Doc2",
+    "movie": "CALEND",
+    "castId": 1020,
+    "name": "Doc2",
+    "text": "Neighbor, your daughter has a fever and chills. I'll give her medicine and she'll be better soon. Please pay me $25.00 for my visit.",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Doc3",
+    "movie": "CALEND",
+    "castId": 1021,
+    "name": "Doc3",
+    "text": "Your new baby has croup. I'll give her medicine and she'll be fine. \n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Doc4",
+    "movie": "CALEND",
+    "castId": 1022,
+    "name": "Doc4",
+    "text": "Your new baby has croup. I'll give her medicine and she'll be fine. Please pay me $25.00 for my visit.\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Doc5",
+    "movie": "CALEND",
+    "castId": 1023,
+    "name": "Doc5",
+    "text": "Your little boy is sick. I'll give him medicine and he'll be fine.\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.Doc6",
+    "movie": "CALEND",
+    "castId": 1024,
+    "name": "Doc6",
+    "text": "Your little boy is sick. I'll give him medicine and he'll be fine. Please pay me $25.00 for my visit.\n\n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.ListBase",
+    "movie": "CALEND",
+    "castId": 1026,
+    "name": "ListBase",
+    "text": "New blankets:                                      $  6.00\n    \nCooking stove:                                     $50.00\n    \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n",
+    "source": "text-member"
+   },
+   {
+    "id": "CALEND.0DocList",
+    "movie": "CALEND",
+    "castId": 1027,
+    "name": "0DocList",
+    "text": "New blankets:                                      $  6.00\n     \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n",
+    "source": "text-member"
+   }
+  ]
+ }
+}

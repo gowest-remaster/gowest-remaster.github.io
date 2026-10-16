@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- the game is printed on cream paper by design: opt out of browser auto/forced dark modes (Brave night mode, Chrome Auto Dark) -->
+    <meta name="color-scheme" content="only light" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go West! The Homesteader’s Challenge</title>
+    <link rel="preload" as="image" href="/world/title/poster.webp" />
+    <style>
+      /* Boot splash: plain HTML/CSS so it shows before any script has downloaded.
+         The app drives it with window.__gwLoad(fraction, text) and removes it with window.__gwLoadDone(). */
+      #gw-boot {
+        position: fixed; inset: 0; z-index: 9999; display: grid; place-items: end start;
+        background: #2a2118 url('/world/title/poster.webp') center / cover no-repeat;
+        color: #f4ead6; font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+        transition: opacity 0.6s ease;
+      }
+      #gw-boot::before {
+        content: ''; position: absolute; inset: 0;
+        background: linear-gradient(90deg, rgba(28, 20, 12, 0.82) 0%, rgba(28, 20, 12, 0.45) 45%, rgba(28, 20, 12, 0) 75%);
+      }
+      #gw-boot .gw-b { position: relative; padding: 0 0 12vh 8vw; max-width: 34rem; }
+      #gw-boot h1 { margin: 0; font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 600; letter-spacing: 0.01em; line-height: 1; }
+      #gw-boot .gw-sub { margin: 0.5rem 0 2.2rem; font-size: clamp(1rem, 1.6vw, 1.3rem); font-style: italic; opacity: 0.85; }
+      #gw-boot .gw-bar { height: 3px; width: min(22rem, 70vw); background: rgba(244, 234, 214, 0.22); border-radius: 2px; overflow: hidden; }
+      #gw-boot .gw-bar i { display: block; height: 100%; width: 4%; background: #e3b965; transition: width 0.4s ease; }
+      #gw-boot .gw-msg { margin-top: 0.8rem; font-size: 0.95rem; opacity: 0.75; min-height: 1.3em; }
+      #gw-boot.gw-out { opacity: 0; pointer-events: none; }
+      @media (prefers-reduced-motion: reduce) { #gw-boot, #gw-boot .gw-bar i { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <div id="gw-boot" role="status" aria-live="polite">
+      <div class="gw-b">
+        <h1>Go West!</h1>
+        <p class="gw-sub">The Homesteader’s Challenge</p>
+        <div class="gw-bar"><i></i></div>
+        <div class="gw-msg">Hitching up the wagon…</div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var boot = document.getElementById('gw-boot');
+        var bar = boot.querySelector('.gw-bar i');
+        var msg = boot.querySelector('.gw-msg');
+        var shown = 0.04;
+        window.__gwLoad = function (f, text) {
+          shown = Math.max(shown, Math.min(1, f));
+          bar.style.width = Math.round(shown * 100) + '%';
+          if (text) msg.textContent = text;
+        };
+        window.__gwLoadDone = function () {
+          window.__gwLoad(1);
+          boot.classList.add('gw-out');
+          setTimeout(function () { boot.remove(); }, 700);
+        };
+        // until the app reports in, creep forward slowly so the page never looks stuck
+        var t = setInterval(function () {
+          if (!document.body.contains(boot)) return clearInterval(t);
+          if (shown < 0.25) window.__gwLoad(shown + 0.01);
+        }, 250);
+      })();
+    </script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

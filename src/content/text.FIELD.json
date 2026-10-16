@@ -1,0 +1,474 @@
+{
+ "movie": "FIELD",
+ "origin": "assets/FIELD/",
+ "members": [
+  {
+   "castId": 997,
+   "name": "CopyPlant",
+   "type": "text",
+   "text": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+  },
+  {
+   "castId": 998,
+   "name": "",
+   "type": "text",
+   "text": "800 Series Dialog Boxes\n\n822     \"NoPlant7\"\nNeighbor Daniel:\nYou can't plant any seeds now, neighbor. You already planted all the land you plowed.\n\n\n823     \nNeighbor Daniel:\nIt's too early to harvest your crop, neighbor. Why don't you wait until it's completely ripe?\n\n\n824    \"NoPlant6\"\nNeighbor Daniel: \nIt's too early to plow or plant your fields, neighbor. The ground is still frozen. Why don't you wait until April, when the ground thaws?\n\nSummer, no rain:\n825 \"NoPlant8\"\nNeighbor Daniel: \nI wouldn't plow or plant in the middle of summer, neighbor. Seeds don't grow well in such hot, dry weather.\n\n\n826 \nNeighbor Daniel: \nNow that you've plowed, it's a shame not to plant your seeds. If you wait too long to plant, you'll have to plow again.\n\n\n830\nSystem: \nNow you are a successful homestead farmer. What do you want to do next?\n        \nI want to\nkeep farming my homestead.\nkeep farming my homestead and become successful in business.\nkeep farming my homestead and become mayor.\nlet my son take over the homestead so I can retire.\n\n\n\n831 \nSystem: \nNow you are a successful homestead farmer. What do you want to do next?\n        \nI want to\nkeep farming my homestead.\nkeep farming my homestead and become successful in business.\nlet my son take over the homestead so I can retire.\n\n\n\n832 \nSystem: \nNow you are a homestead farmer who is successful in business. What do you want to do next?\n        \nI want to\nkeep farming my homestead and remain successful in business.\nkeep farming my homestead and become mayor.\nlet my son take over the homestead so I can retire in town.\n\n\n\n833 \nSystem:\nCONGRATULATIONS! You were a homestead farmer for 40 years. You did not reach the goal you set at the beginning, but you ran a profitable farm. Any pioneer would have been proud of your achievement.\n\n\n\n\n\n834 \nSystem: \nNow you are a homestead farmer who is successful in business. What do you want to do next?\n        \nI want to\nkeep farming my homestead and remain successful in business.\nlet my son take over the homestead so I can retire in town.\n\n\n\n833 \nSystem:\nCONGRATULATIONS! You were a homestead farmer for 40 years. You did not reach the goal you set at the beginning, but you ran a profitable farm. Any pioneer would have been proud of your achievement.\n \n\n835\nHarriet\nHi, neighbor.  Welcome to the general store.  If you take a look at the catalog on the table, you'll learn all kinds of useful things or order some products.\n\n\nSummer, rain:\n836\n"
+  },
+  {
+   "castId": 999,
+   "name": "Hints",
+   "type": "text",
+   "text": "2,10,11,16,18,22\nClick on the squares you want to plow. Each square\nrepresents 20 acres. Decide how many workers to hire\nby clicking on the arrows in the Workers box. To start \nplowing, click on OK. To leave the fields without plowing,\nclick on Cancel. Tip: In the spring try to finish plowing\nyour fields by the end of May, before the heavy summer\nrains start and the ground becomes too muddy for plowing.\nIn the fall, try to finish plowing before the first frost,\nwhich comes in early October.\nOnce you have finished plowing your field, decide which \nseeds to plant. Make sure that you have bought enough \nseeds before you start planting. To plant, drag the seeds\n from the Seeds in Storage to the square you want to plant.\nTo start planting, click on OK. \nTo leave the field without planting, click on Cancel.\n\nDecide how many workers to hire by clicking on the arrows\n in the Workers box. Tip: Try to finish harvesting winter wheat \nin time to prepare your fields for planting summer crops. \nTry to finish harvesting summer crops in time to prepare\n your fields for planting winter wheat.\n"
+  },
+  {
+   "castId": 1000,
+   "name": "NoPlow1",
+   "type": "text",
+   "text": "\nThere are enough things to do here. You don't have to plow the fields twice and make extra work for yourself.\n"
+  },
+  {
+   "castId": 1001,
+   "name": "NoPlow2",
+   "type": "text",
+   "text": "\nYou planted some crops that you haven't harvested yet. If you plow now, you will destroy all your hard work."
+  },
+  {
+   "castId": 1002,
+   "name": "NoPlow3",
+   "type": "text",
+   "text": "\nThe land is frozen. If you plow now, you could break your plow. It's better to wait until spring."
+  },
+  {
+   "castId": 1003,
+   "name": "Noplow4",
+   "type": "text",
+   "text": "\nThe land is very muddy from all the rain. The plow will sink in the mud. It's better to wait until fall."
+  },
+  {
+   "castId": 1004,
+   "name": "NoPlow5",
+   "type": "text",
+   "text": " \nHello, neighbor. I'm glad to see you. It's not time to plant yet. First, you should harvest the last crop that you planted."
+  },
+  {
+   "castId": 1005,
+   "name": "NoPlow6",
+   "type": "text",
+   "text": "\nI'm waiting for you to sell me your crops. I'll give you a good price."
+  },
+  {
+   "castId": 1006,
+   "name": "FDBK7",
+   "type": "text",
+   "text": "Great. Now that you finished plowing,                 you can start planting."
+  },
+  {
+   "castId": 1007,
+   "name": "StopPlow1",
+   "type": "text",
+   "text": "\nThe summer rains started before you finished  plowing. You have to stop plowing now. Your fields are all muddy.\n"
+  },
+  {
+   "castId": 1008,
+   "name": "StopPlow2",
+   "type": "text",
+   "text": "\nThe ground froze before you finished plowing. You have to stop plowing now. It's starting to snow.\n\n\n"
+  },
+  {
+   "castId": 1009,
+   "name": "StopPlow3",
+   "type": "text",
+   "text": "Your plow broke. The land is very hard in this area. What are you going to do?\n\n      1.  Buy a new steel right away for $50.\n\n      2.  Fix the old plow for free, \n           which takes a few days.\n"
+  },
+  {
+   "castId": 1010,
+   "name": "StopPlow4",
+   "type": "text",
+   "text": "\nOne of your horses is sick. Now you can use only one horse, so your plowing will take twice as long.\n\n"
+  },
+  {
+   "castId": 1011,
+   "name": "NoMoney",
+   "type": "text",
+   "text": "\n\n     I'm sorry. You don't have enough cash\n                    to buy a new plow. \n"
+  },
+  {
+   "castId": 1012,
+   "name": "NoPlant1",
+   "type": "text",
+   "text": "\nYou don't have any seeds. Drop by the store to order some. You can look at our catalog which shows the seeds you can buy and the plants you can grow from them.\n\n\n"
+  },
+  {
+   "castId": 1013,
+   "name": "NoPlant2",
+   "type": "text",
+   "text": "\nSoon the hot summer sun will beat down on your fields and dry out your seeds. If I were you, I would plow my land before I plant those seeds."
+  },
+  {
+   "castId": 1014,
+   "name": "NoPlant3",
+   "type": "text",
+   "text": "\nIf you don't plow your land soon, the winds will scatter most of your seeds. Those seeds will grow, but not necessarily on your land.\n\n\n"
+  },
+  {
+   "castId": 1015,
+   "name": "NoPlant4",
+   "type": "text",
+   "text": "\nHello, neighbor. I'm glad to see you. It's not time to plant yet. First, you should harvest the last crop that you planted.\n"
+  },
+  {
+   "castId": 1016,
+   "name": "NoPlant5",
+   "type": "text",
+   "text": "\n\nI think the seed catalog suggested a different season for planting those seeds. If I were you, I would check the catalog.\n"
+  },
+  {
+   "castId": 1017,
+   "name": "NoHarv1",
+   "type": "text",
+   "text": "\nHave patience, my friend. Give your plants enough time to grow before you harvest them."
+  },
+  {
+   "castId": 1018,
+   "name": "NoHarv2",
+   "type": "text",
+   "text": "\nMy friend, you have to plant before you can harvest.You can't get something from nothing."
+  },
+  {
+   "castId": 1019,
+   "name": "NoHarv3",
+   "type": "text",
+   "text": "\n Hello there, neighbor. I see that you still have a bit to learn about farming. You can't harvest your fields before you've even plowed them and planted some seeds.\n"
+  },
+  {
+   "castId": 1020,
+   "name": "Tractor",
+   "type": "text",
+   "text": "\nThere aren't enough tractors for all of us. Make sure that you have a tractor for each worker you hire.\n\n"
+  },
+  {
+   "castId": 1021,
+   "name": "OneWor",
+   "type": "text",
+   "text": "\nI'm sorry. You don't have enough money to pay me. I can't work for you if you can't pay me.\n\n"
+  },
+  {
+   "castId": 1022,
+   "name": "ManyWor",
+   "type": "text",
+   "text": "\nI'm sorry. You don't have enough money to pay us. We can't work for you if you can't pay us."
+  },
+  {
+   "castId": 1023,
+   "name": "StopHarv1",
+   "type": "text",
+   "text": "\nThe summer rains started early this year. They destroyed the rest of your crops. There's no point in harvesting them now.\n"
+  },
+  {
+   "castId": 1024,
+   "name": "StopHarv2",
+   "type": "text",
+   "text": "\nWinter came early this year. The first frost killed the rest of your crops. There's no point in harvesting them now.\n"
+  },
+  {
+   "castId": 1025,
+   "name": "NoBuild",
+   "type": "text",
+   "text": "\n\nYou need more money to do this."
+  },
+  {
+   "castId": 1026,
+   "name": "NoSell",
+   "type": "text",
+   "text": "\n\nYou have nothing to sell."
+  },
+  {
+   "castId": 1027,
+   "name": "GoBank",
+   "type": "text",
+   "text": "\n\nGo to the bank to collect your money.\n"
+  },
+  {
+   "castId": 1028,
+   "name": "QText",
+   "type": "text",
+   "text": "Click on the squares you want to plow. Each square\nrepresents 20 acres. Decide how many workers to hire\nby clicking on the arrows in the Workers box. To start \nplowing, click on OK. To leave the fields without plowing,\nclick on Cancel. Tip: In the spring try to finish plowing\nyour fields by the end of May, before the heavy summer\nrains start and the ground becomes too muddy for plowing.\nIn the fall, try to finish plowing before the first frost,\nwhich comes in early October."
+  },
+  {
+   "castId": 1029,
+   "name": "FDB18",
+   "type": "text",
+   "text": "You were lucky. The summer rains started late this year. Your horse recovered and you finished plowing before the rain started. \n\n\n"
+  },
+  {
+   "castId": 1030,
+   "name": "FDBK19",
+   "type": "text",
+   "text": "You were lucky this time. The horses recovered and you finished plowing before the snow started. \n"
+  },
+  {
+   "castId": 1031,
+   "name": "NoPlant7",
+   "type": "text",
+   "text": "You can't plant any seeds now, neighbor.\nYou've already planted all the land you plowed."
+  },
+  {
+   "castId": 1032,
+   "name": "NoPlant6",
+   "type": "text",
+   "text": "It's too early to plow or plant your fields, neighbor. The ground is still frozen. Why don't you wait until April, when the ground thaws?"
+  },
+  {
+   "castId": 1033,
+   "name": "NoPlant8",
+   "type": "text",
+   "text": "I wouldn't plow or plant in the middle of summer, neighbor. The seeds won't grow well now."
+  },
+  {
+   "castId": 1034,
+   "name": "",
+   "type": "text",
+   "text": "Do you want to save your work?\n\n"
+  },
+  {
+   "castId": 1035,
+   "name": "FDBK",
+   "type": "text",
+   "text": "Your plow broke. The land is very hard in this area. What are you going to do?\n\n      1.  Buy a new steel right away for $50.\n\n      2.  Fix the old plow for free, \n           which takes a few days.\n"
+  },
+  {
+   "castId": 1041,
+   "name": "EndHarv",
+   "type": "text",
+   "text": "\nNow that you've harvested your crops, it's time to sell them. I'll make you an  offer you can't refuse."
+  },
+  {
+   "castId": 1042,
+   "name": "EndHarv1",
+   "type": "text",
+   "text": "\nNow that you've harvested your crops, it's time to sell them. I'll make you an  offer you can't refuse."
+  },
+  {
+   "castId": 1050,
+   "name": "Wor",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1051,
+   "name": "Neib",
+   "type": "text",
+   "text": "1"
+  },
+  {
+   "castId": 1114,
+   "name": "YearCal",
+   "type": "text",
+   "text": "1,0,0,0,1,0,1\n2,0,0,0,1,0,1\n3,0,0,0,1,0,1\n4,1,1,0,1,0,1\n4,1,3,0,1,0,1\n4,1,4,0,1,0,1\n5,1,0,2,1,1,2\n6,0,0,0,0,1,3\n7,0,0,0,0,1,3\n8,0,0,0,0,1,3\n9,1,2,1,1,0,4\n9,1,2,3,1,0,4\n9,1,2,4,1,0,4\n10,0,0,0,1,0,4\n11,0,0,0,0,1,0,4\n12,0,0,0,0,1,0,1\nMonth,Plow,Plant,Harvest,Frost,Sunshine,Season\n"
+  },
+  {
+   "castId": 1116,
+   "name": "SeedsPrices",
+   "type": "text",
+   "text": "Year,Plant,Seeds,GLand,VgLand,BLand"
+  },
+  {
+   "castId": 1117,
+   "name": "Seed1",
+   "type": "text",
+   "text": "500 Acres"
+  },
+  {
+   "castId": 1118,
+   "name": "Seed2",
+   "type": "text",
+   "text": "500 Acres"
+  },
+  {
+   "castId": 1119,
+   "name": "Seed3",
+   "type": "text",
+   "text": "500 Acres"
+  },
+  {
+   "castId": 1120,
+   "name": "Seed4",
+   "type": "text",
+   "text": "500 Acres"
+  },
+  {
+   "castId": 1121,
+   "name": "CurFDBK",
+   "type": "text",
+   "text": "\n\nI think the seed catalog suggested a different season for planting those seeds. If I were you, I would check the catalog.\n"
+  },
+  {
+   "castId": 1122,
+   "name": "BarnPrice",
+   "type": "text",
+   "text": "$40"
+  },
+  {
+   "castId": 1123,
+   "name": "FencePrice",
+   "type": "text",
+   "text": "$50"
+  },
+  {
+   "castId": 1124,
+   "name": "WellPrice",
+   "type": "text",
+   "text": "$20"
+  },
+  {
+   "castId": 1125,
+   "name": "WindPRice",
+   "type": "text",
+   "text": "$50"
+  },
+  {
+   "castId": 1126,
+   "name": "NumWind",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1127,
+   "name": "TotBuild",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1128,
+   "name": "MyFamily",
+   "type": "text",
+   "text": "1"
+  },
+  {
+   "castId": 1131,
+   "name": "Bush1",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 1132,
+   "name": "Bush2",
+   "type": "text",
+   "text": " 798  bushels"
+  },
+  {
+   "castId": 1133,
+   "name": "Bush3",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 1134,
+   "name": "Bush4",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 1135,
+   "name": "Dealers",
+   "type": "text",
+   "text": "1880,1,-2,1,12,98,+2,2,06,169\n1880,2,0,1,12,168,+2,2,07,169\n1881,1,0,1,12,170,+2,2,07,171\n1881,2,0,1,12,172,+3,2,07,173\n1882,1,-3,1,12,174,+3,2,08,175\n1882,2,-3,1,12,176,+3,1,16,177\n1887,2,+1,1,14,180,+3,1,18,181\n1888,1,-2,1,14,178,+2,1,18,179\n1888,2,+2,1,14,184,+4,1,20,185\n1893,2,-30,1,14,186,-40,1,20,187,-20,1,18,188\n1894,2,0,2,10,189,+4,2,18,179,+2,2,15,191\n1914,2,+2,1,15,193,+3,1,15,194,0,1,10,195\n1915,1,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1915,2,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1916,1,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1916,2,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1917,1,+5,1,14,200,+10,1,15,201,-10,1,10,202,+10,3,40,203\n1917,2,+5,1,14,200,-10,1,15,201,+10,1,10,202,+10,3,40,203\n1918,1,+5,1,14,204,+10,1,15,205,-10,1,10,206,+10,3,40,207\n1918,2,+5,1,14,204,+10,1,15,205,-10,1,10,206,+10,3,40,207\n1919,1,+2,1,14,204,-2,1,15,205,+7,1,15,206,+10,3,40,207\n1919,2,+2,1,14,204,-2,1,15,205,+7,1,15,206,+10,3,40,207\n"
+  },
+  {
+   "castId": 1136,
+   "name": "BushTotal",
+   "type": "text",
+   "text": "672"
+  },
+  {
+   "castId": 1137,
+   "name": "DealPrice",
+   "type": "text",
+   "text": "500"
+  },
+  {
+   "castId": 1138,
+   "name": "",
+   "type": "text",
+   "text": "    deafault\nSaleOffer between, X and X-6%,X and X+5%,X-7% and X+6%,X+10%\ntranspo,1,1,1,3\nT_cost between: 12c to 16c,14c to 20c,10c to 16c,40c\nsegment,178,179,192,203\nappear first time:1880,1,1880,1,1893,2,1915,1"
+  },
+  {
+   "castId": 1139,
+   "name": "Transport",
+   "type": "text",
+   "text": "Train\nWagon\nTrain and Boat"
+  },
+  {
+   "castId": 1140,
+   "name": "Total1",
+   "type": "text",
+   "text": "$626"
+  },
+  {
+   "castId": 1141,
+   "name": "Total2",
+   "type": "text",
+   "text": "$650"
+  },
+  {
+   "castId": 1142,
+   "name": "Total3",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1143,
+   "name": "Total4",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1144,
+   "name": "Trans1",
+   "type": "text",
+   "text": "Train"
+  },
+  {
+   "castId": 1145,
+   "name": "Trans2",
+   "type": "text",
+   "text": "Wagon"
+  },
+  {
+   "castId": 1146,
+   "name": "Trans3",
+   "type": "text",
+   "text": "Train"
+  },
+  {
+   "castId": 1147,
+   "name": "Trans4",
+   "type": "text",
+   "text": "Train and Boat"
+  },
+  {
+   "castId": 1148,
+   "name": "TraPr1",
+   "type": "text",
+   "text": "12"
+  },
+  {
+   "castId": 1149,
+   "name": "TraPr2",
+   "type": "text",
+   "text": "6"
+  },
+  {
+   "castId": 1150,
+   "name": "TraPr3",
+   "type": "text",
+   "text": "12"
+  },
+  {
+   "castId": 1151,
+   "name": "TraPr4",
+   "type": "text",
+   "text": "40"
+  }
+ ]
+}

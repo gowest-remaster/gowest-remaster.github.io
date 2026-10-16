@@ -1,0 +1,471 @@
+{
+ "note": "Family album. Pages 1-2 are fixed (T1/T2). Captions are ALBUM casts 1303..1345 in cast order (the order the chooser cycles). Dated captions unlock by the date encoded in the cast name T<year><month> (see spec 04 §6.5 for the quirky scan).",
+ "page1": {
+  "id": "ALBUM.T1",
+  "movie": "ALBUM",
+  "castId": 1301,
+  "name": "T1",
+  "text": "March, 1880\nWe're ready to say good-bye to city life on the East Coast.  We'll travel first by train and then by covered wagon to the High Plains of Kansas. Once we're there, we'll stake a claim for a homestead of 160 acres. Our family is ready to go west and make a new start!",
+  "source": "text-member"
+ },
+ "page2": {
+  "id": "ALBUM.T2",
+  "movie": "ALBUM",
+  "castId": 1302,
+  "name": "T2",
+  "text": "April, 1880\nWe've finally made it to Kansas!  We've found a  good spot for our homestead, not far from a creek  and a small town.  Until we build a house, we're  living in a tent made from the top of our covered wagon.  Once we get settled, we'll get ready to farm our homestead.",
+  "source": "text-member"
+ },
+ "sharedPageDefaults": [
+  {
+   "id": "SHARED.#3110",
+   "movie": "SHARED",
+   "castId": 3110,
+   "name": "",
+   "text": "March, 1880\nWe're ready to say good-bye to city life on the\nEast Coast.  We'll travel first by train and then \nby covered wagon to the High Plains of Kansas.\nOnce we're there, we'll  stake a claim for a \nhomestead of 160 acres. Our family is ready to\ngo west and make a new start!",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.#3111",
+   "movie": "SHARED",
+   "castId": 3111,
+   "name": "",
+   "text": "March, 1880\nWe're ready to say good-bye to city life on the\nEast Coast.  We'll travel first by train and then \nby covered wagon to the High Plains of Kansas.\nOnce we're there, we'll  stake a claim for a \nhomestead of 160 acres. Our family is ready to\ngo west and make a new start!",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.MyText",
+   "movie": "SHARED",
+   "castId": 3112,
+   "name": "MyText",
+   "text": "March, 1880\nWe're ready to say good-bye to city life on the East Coast.  We'll travel first by train and then by covered wagon to the High Plains of Kansas. Once we're there, we'll stake a claim for a homestead of 160 acres. Our family is ready to go west and make a new start!",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.#3113",
+   "movie": "SHARED",
+   "castId": 3113,
+   "name": "",
+   "text": "April, 1880\nWe've finally made it to Kansas!  We've found a  good spot for our homestead, not far from a creek  and a small town.  Until we build a house, we're  living in a tent made from the top of our covered wagon.  Once we get settled, we'll get ready to farm our homestead.",
+   "source": "text-member"
+  }
+ ],
+ "generalCaptions": [
+  {
+   "id": "ALBUM.ATexts",
+   "movie": "ALBUM",
+   "castId": 1303,
+   "name": "ATexts",
+   "text": "We're so proud of our youngest daughter.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1304",
+   "movie": "ALBUM",
+   "castId": 1304,
+   "name": "",
+   "text": "We're so proud of our eldest son.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1305",
+   "movie": "ALBUM",
+   "castId": 1305,
+   "name": "",
+   "text": "Our neighbors helped us build this sod house in just one day!",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1306",
+   "movie": "ALBUM",
+   "castId": 1306,
+   "name": "",
+   "text": "We finally covered our sod walls with wooden planks. Now it feels like a real house.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1307",
+   "movie": "ALBUM",
+   "castId": 1307,
+   "name": "",
+   "text": "Things have been going very well on the homestead.  Now we live in this new house instead of our old one.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1308",
+   "movie": "ALBUM",
+   "castId": 1308,
+   "name": "",
+   "text": "We've been living on the homestead for five years now. According to the Homestead Act, now the land is really ours!",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1309",
+   "movie": "ALBUM",
+   "castId": 1309,
+   "name": "",
+   "text": "Before we built our well, we had to carry pails of water from the creek every day.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1310",
+   "movie": "ALBUM",
+   "castId": 1310,
+   "name": "",
+   "text": "Our team of horses sure have a good appetite at the end of a day's work in the fields.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1311",
+   "movie": "ALBUM",
+   "castId": 1311,
+   "name": "",
+   "text": "Some folks use oxen instead of horses to pull their hay wagon.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1312",
+   "movie": "ALBUM",
+   "castId": 1312,
+   "name": "",
+   "text": "We finally had enough money to buy some furniture from the store.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1313",
+   "movie": "ALBUM",
+   "castId": 1313,
+   "name": "",
+   "text": "Farming is much easier with a big  steam-engine tractor.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1314",
+   "movie": "ALBUM",
+   "castId": 1314,
+   "name": "",
+   "text": "The general store sells just about anything you'd want to buy.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1315",
+   "movie": "ALBUM",
+   "castId": 1315,
+   "name": "",
+   "text": "Plowing this hard, dry soil is not easy.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1316",
+   "movie": "ALBUM",
+   "castId": 1316,
+   "name": "",
+   "text": "Our windmill pumps water from deep underground.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1317",
+   "movie": "ALBUM",
+   "castId": 1317,
+   "name": "",
+   "text": "Out here, a town can be built in just a day or two.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1318",
+   "movie": "ALBUM",
+   "castId": 1318,
+   "name": "",
+   "text": "We're just starting out, so we made nearly  everything we own with our own hands.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1319",
+   "movie": "ALBUM",
+   "castId": 1319,
+   "name": "",
+   "text": "There's nothing as exciting as watching the 12:05 roar into town.  Who knows which letters, packages, or visitors will be on board?",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1320",
+   "movie": "ALBUM",
+   "castId": 1320,
+   "name": "",
+   "text": "There's plenty of open space on the Great Plains for farmers, cowboys, and their herds of cattle.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1321",
+   "movie": "ALBUM",
+   "castId": 1321,
+   "name": "",
+   "text": "This winter there's plenty of hay for our horses and cows.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1322",
+   "movie": "ALBUM",
+   "castId": 1322,
+   "name": "",
+   "text": "This year, three generations of our family sat down to a big Thanks giving dinner.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1323",
+   "movie": "ALBUM",
+   "castId": 1323,
+   "name": "",
+   "text": "We miss our eldest daughter, who lives with her husband in Detroit.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1324",
+   "movie": "ALBUM",
+   "castId": 1324,
+   "name": "",
+   "text": "This year, our first son was born!",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1325",
+   "movie": "ALBUM",
+   "castId": 1325,
+   "name": "",
+   "text": "This year, our second son was born!",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1326",
+   "movie": "ALBUM",
+   "castId": 1326,
+   "name": "",
+   "text": "This year, our second daughter was born!",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.ATextsE",
+   "movie": "ALBUM",
+   "castId": 1327,
+   "name": "ATextsE",
+   "text": "We're so proud of our younger son.",
+   "source": "text-member"
+  }
+ ],
+ "datedCaptions": [
+  {
+   "id": "ALBUM.T18834",
+   "movie": "ALBUM",
+   "castId": 1328,
+   "name": "T18834",
+   "text": "The Brooklyn Bridge in New York City is finally ready. If our creek were as wide as New York's East River, we'd have all the water we need.",
+   "source": "text-member",
+   "unlockYear": 1883,
+   "unlockMonth": 4
+  },
+  {
+   "id": "ALBUM.T18858",
+   "movie": "ALBUM",
+   "castId": 1329,
+   "name": "T18858",
+   "text": "August, 1885\nBuffalo Bill's Wild West show came to town. Someone threw a playing card in the air and Annie Oakley shot it ten times.  What a show!",
+   "source": "text-member",
+   "unlockYear": 1885,
+   "unlockMonth": 8
+  },
+  {
+   "id": "ALBUM.T188612",
+   "movie": "ALBUM",
+   "castId": 1330,
+   "name": "T188612",
+   "text": "December, 1886\nThe snowstorms started early this year, and they sure are fierce. I think we're in for a long, cold winter.",
+   "source": "text-member",
+   "unlockYear": 1886,
+   "unlockMonth": 12
+  },
+  {
+   "id": "ALBUM.T189012",
+   "movie": "ALBUM",
+   "castId": 1331,
+   "name": "T189012",
+   "text": "December, 1890\nIn Wounded Knee, South Dakota, the U.S. Calvary killed about 200 Sioux Indians who had no weapons. Why did this tragedy happen?",
+   "source": "text-member",
+   "unlockYear": 1890,
+   "unlockMonth": 12
+  },
+  {
+   "id": "ALBUM.T189412",
+   "movie": "ALBUM",
+   "castId": 1332,
+   "name": "T189412",
+   "text": "December, 1894\nThe railroad strikes had me worried.  I thought I wouldn't be able to send my crops to the dealer. Luckily,  the strike was over by harvest time.",
+   "source": "text-member",
+   "unlockYear": 1894,
+   "unlockMonth": 12
+  },
+  {
+   "id": "ALBUM.T189612",
+   "movie": "ALBUM",
+   "castId": 1333,
+   "name": "T189612",
+   "text": "December, 1896\nThere's another gold rush. This time it's up in Canada, near the Klondike River.  Cousin George went up there, but we stayed here in Kansas.",
+   "source": "text-member",
+   "unlockYear": 1896,
+   "unlockMonth": 12
+  },
+  {
+   "id": "ALBUM.T18988",
+   "movie": "ALBUM",
+   "castId": 1334,
+   "name": "T18988",
+   "text": "August, 1898\nIn faraway Cuba, Teddy Roosevelt's Rough Riders charged up San Juan Hill.  We won Cuba from the Spanish, but we won't keep it.",
+   "source": "text-member",
+   "unlockYear": 1898,
+   "unlockMonth": 8
+  },
+  {
+   "id": "ALBUM.T18974",
+   "movie": "ALBUM",
+   "castId": 1335,
+   "name": "T18974",
+   "text": "April, 1897\nImmigrants from Russia brought a new kind of wheat to plant here.  It's called \"Turkey Red,\" and it grows well in dry soil like ours.",
+   "source": "text-member",
+   "unlockYear": 1897,
+   "unlockMonth": 4
+  },
+  {
+   "id": "ALBUM.T190312",
+   "movie": "ALBUM",
+   "castId": 1336,
+   "name": "T190312",
+   "text": "December, 1903\nThe Wright brothers went up in their flying machine in Kitty Hawk, North Carolina. The only flying machine in Kansas is a tractor in a tornado!",
+   "source": "text-member",
+   "unlockYear": 1903,
+   "unlockMonth": 12
+  },
+  {
+   "id": "ALBUM.T190511",
+   "movie": "ALBUM",
+   "castId": 1337,
+   "name": "T190511",
+   "text": "Novermber, 1905\nWe've put Teddy Roosevelt back in the White House. He understands the farmers in the Great Plains. He wants to help us find more water.",
+   "source": "text-member",
+   "unlockYear": 1905,
+   "unlockMonth": 11
+  },
+  {
+   "id": "ALBUM.T19065",
+   "movie": "ALBUM",
+   "castId": 1338,
+   "name": "T19065",
+   "text": "May, 1906\nCousin George was in San Francisco last  month for the big earthquake. He was so scared that he's moving back to Kansas!",
+   "source": "text-member",
+   "unlockYear": 1906,
+   "unlockMonth": 5
+  },
+  {
+   "id": "ALBUM.T19084",
+   "movie": "ALBUM",
+   "castId": 1339,
+   "name": "T19084",
+   "text": "April, 1908\nThe Ford Company put out a new car, the Model T. It's a good, solid car. Some folks are even using it to pull their plows!",
+   "source": "text-member",
+   "unlockYear": 1908,
+   "unlockMonth": 4
+  },
+  {
+   "id": "ALBUM.T19098",
+   "movie": "ALBUM",
+   "castId": 1340,
+   "name": "T19098",
+   "text": "August, 1909\nWe were glad when Congress passed the Enlarged Homestead Act, but most of our friends think that a 320-acre farm is still too small!",
+   "source": "text-member",
+   "unlockYear": 1909,
+   "unlockMonth": 8
+  },
+  {
+   "id": "ALBUM.T19114",
+   "movie": "ALBUM",
+   "castId": 1341,
+   "name": "T19114",
+   "text": "April, 1911\nThe F.W. Woolworth Company Inc. opened a \"5-and-dime\" store in town.  There are over 1,000 Woolworth stores across the country.",
+   "source": "text-member",
+   "unlockYear": 1911,
+   "unlockMonth": 4
+  },
+  {
+   "id": "ALBUM.T19125",
+   "movie": "ALBUM",
+   "castId": 1342,
+   "name": "T19125",
+   "text": "May, 1912\nLast month, the Titanic sank.  More than 1,000 people drowned, including a few millionaires. It just goes to show that money isn't everything.",
+   "source": "text-member",
+   "unlockYear": 1912,
+   "unlockMonth": 5
+  },
+  {
+   "id": "ALBUM.T191311",
+   "movie": "ALBUM",
+   "castId": 1343,
+   "name": "T191311",
+   "text": "November, 1913\nCongress passed the 16th Amendment. Now we have to pay income tax. I don't mind, as long as I don't have to fill out a lot of long forms.",
+   "source": "text-member",
+   "unlockYear": 1913,
+   "unlockMonth": 11
+  },
+  {
+   "id": "ALBUM.T19164",
+   "movie": "ALBUM",
+   "castId": 1344,
+   "name": "T19164",
+   "text": "April, 1916\nGermany has been threatening our ships. People say that we're about to enter the Great War.",
+   "source": "text-member",
+   "unlockYear": 1916,
+   "unlockMonth": 4
+  },
+  {
+   "id": "ALBUM.T191812",
+   "movie": "ALBUM",
+   "castId": 1345,
+   "name": "T191812",
+   "text": "December, 1918\nThe war is over, and Cousin George is coming home from France. He kept his head down during the shooting, but he's getting a medal.",
+   "source": "text-member",
+   "unlockYear": 1918,
+   "unlockMonth": 12
+  }
+ ],
+ "printDialog": [
+  {
+   "id": "ALBUM.#134",
+   "movie": "ALBUM",
+   "castId": 134,
+   "name": "",
+   "text": "                       Print Menu\n\n             Current page (         )\n\n             All Pages (           -          )\n\n             Range of pages\n\n           FROM              TO\n",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.TT",
+   "movie": "ALBUM",
+   "castId": 145,
+   "name": "TT",
+   "text": "Please, type the number of the first page you want to print in the \"FROM\" box. Type the number of the last page You want to print in the \"TO\" box.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.NoPrint1",
+   "movie": "ALBUM",
+   "castId": 146,
+   "name": "NoPrint1",
+   "text": "Please, type the number of the first page you want to print in the \"FROM\" box. Type the number of the last page You want to print in the \"TO\" box.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.NoPrint2",
+   "movie": "ALBUM",
+   "castId": 147,
+   "name": "NoPrint2",
+   "text": "You can't print more pages then you actualy wrote.The last page you wrote in the family album is",
+   "source": "text-member"
+  }
+ ]
+}

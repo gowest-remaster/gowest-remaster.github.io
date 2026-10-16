@@ -1,0 +1,234 @@
+{
+ "movie": "HOUSE3",
+ "origin": "assets/HOUSE3/",
+ "members": [
+  {
+   "castId": 7,
+   "name": "",
+   "type": "text",
+   "text": "Do you want to save your game?\n\n"
+  },
+  {
+   "castId": 1000,
+   "name": "Hints",
+   "type": "text",
+   "text": "2,5,7,11,13,14,16,19\nThe logbook is a record of everything you do.\n Open the logbook whenever you want to see what \nyou have done so far. You can write in the logbook \nin the Notes column.\n\nThere is plenty of useful information in the newspapers.\n Sometimes, this can help you earn a big profit.\nWhen you need more information to make an important\n decision,  look in the newspapers. Tip: Answers to some\n trivia-card  questions are in the newspapers.\n\nYou can keep diary of your life in the family album and \nchoose pictures to add to it. You can print out the album.\n\nOne of your goals is to save enough money to fulfill your\n dreams. Banks did not have personal savings accounts \nat this time. To save money,\nhide it in this secret place at home. \n"
+  },
+  {
+   "castId": 1001,
+   "name": "DateT1",
+   "type": "text",
+   "text": "APR. 24 , 1880"
+  },
+  {
+   "castId": 1002,
+   "name": "LocT1",
+   "type": "text",
+   "text": "Fields"
+  },
+  {
+   "castId": 1003,
+   "name": "ActT1",
+   "type": "text",
+   "text": "  Buy"
+  },
+  {
+   "castId": 1004,
+   "name": "ExpT1",
+   "type": "text",
+   "text": "$80.00"
+  },
+  {
+   "castId": 1005,
+   "name": "IncT1",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1006,
+   "name": "TotT1",
+   "type": "text",
+   "text": "$420.00"
+  },
+  {
+   "castId": 1007,
+   "name": "NotesT1",
+   "type": "text",
+   "text": "\n\n"
+  },
+  {
+   "castId": 1008,
+   "name": "DateT2",
+   "type": "text",
+   "text": "DEC. 7 , 1880"
+  },
+  {
+   "castId": 1009,
+   "name": "LocT2",
+   "type": "text",
+   "text": "Dealer"
+  },
+  {
+   "castId": 1010,
+   "name": "ActT2",
+   "type": "text",
+   "text": " Trivia"
+  },
+  {
+   "castId": 1011,
+   "name": "ExpT2",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1012,
+   "name": "IncT2",
+   "type": "text",
+   "text": "$20.00"
+  },
+  {
+   "castId": 1013,
+   "name": "TotT2",
+   "type": "text",
+   "text": "$4,860.00"
+  },
+  {
+   "castId": 1014,
+   "name": "NotesT2",
+   "type": "text",
+   "text": "\n\n"
+  },
+  {
+   "castId": 1015,
+   "name": "DateT3",
+   "type": "text",
+   "text": "APR. 11 , 1881"
+  },
+  {
+   "castId": 1016,
+   "name": "LocT3",
+   "type": "text",
+   "text": "Dealer"
+  },
+  {
+   "castId": 1017,
+   "name": "ActT3",
+   "type": "text",
+   "text": "Put Away"
+  },
+  {
+   "castId": 1018,
+   "name": "ExpT3",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1019,
+   "name": "IncT3",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1020,
+   "name": "TotT3",
+   "type": "text",
+   "text": "$4,760.00"
+  },
+  {
+   "castId": 1021,
+   "name": "NotesT3",
+   "type": "text",
+   "text": "\n\n"
+  },
+  {
+   "castId": 1050,
+   "name": "Text0",
+   "type": "text",
+   "text": "ererererere\nerewrerer\ncvcvcvcvfdfd\nfdfdfdf\ndfdfdfd\ndfdfdfd\ndfdfdf\ndfdfdf\ndfd\nfdfd\nfdf\ndsfdf\nfdfd\nfd"
+  },
+  {
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "type": "text",
+   "text": "  Date        Location     Action      Cost       Income     Balance        Notes"
+  },
+  {
+   "castId": 1052,
+   "name": "HeadSavings",
+   "type": "text",
+   "text": "        Date               Action            Ammount         Total Savings "
+  },
+  {
+   "castId": 1053,
+   "name": "HeadInfo",
+   "type": "text",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n"
+  },
+  {
+   "castId": 1054,
+   "name": "QText",
+   "type": "text",
+   "text": "There is plenty of useful information in the newspapers.\n Sometimes, this can help you earn a big profit.\nWhen you need more information to make an important\n decision,  look in the newspapers. Tip: Answers to some\n trivia-card  questions are in the newspapers."
+  },
+  {
+   "castId": 1055,
+   "name": "CurrentPage",
+   "type": "text",
+   "text": "9"
+  },
+  {
+   "castId": 1056,
+   "name": "Name1",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1057,
+   "name": "Name2",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1058,
+   "name": "PicText",
+   "type": "text",
+   "text": "1879\n1880\n1881\n1882\n1887\n1888\n1890\n1891\n1893\n1894\n1909\n1910\n1914\n1915\n1917\n1919\n"
+  },
+  {
+   "castId": 1059,
+   "name": "InOut",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1060,
+   "name": "In",
+   "type": "text",
+   "text": "You have $2,040.00 in cash. How much money do you want to put away in your box?"
+  },
+  {
+   "castId": 1061,
+   "name": "Out",
+   "type": "text",
+   "text": "How much money do you want to take out of the box?"
+  },
+  {
+   "castId": 1062,
+   "name": "",
+   "type": "text",
+   "text": "You don't have enough money \n            to do this."
+  },
+  {
+   "castId": 1063,
+   "name": "",
+   "type": "text",
+   "text": "Amount of savings"
+  },
+  {
+   "castId": 1064,
+   "name": "MySavings",
+   "type": "text",
+   "text": "$423"
+  }
+ ]
+}

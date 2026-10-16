@@ -1,0 +1,76 @@
+/* Prompt layer: letters, speech cards, certificates, disaster "what happened" cards. */
+.rm-prompt .pwrap { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: auto; padding: 4rem 1rem calc(var(--hud-h) + 1rem); }
+.rm-prompt .pwrap[hidden] { display: none; }
+.pbackdrop { position: absolute; inset: 0; background: radial-gradient(100% 80% at 50% 45%, rgba(20, 10, 2, 0.35), rgba(10, 5, 0, 0.7)); }
+.pcard {
+  position: relative; width: min(40rem, 94vw); max-height: 100%; overflow: auto; color: var(--ink);
+  background: radial-gradient(140% 100% at 30% 0%, #fffaf0, transparent 60%), linear-gradient(170deg, #fbf3df, #efe0bb 70%, #e7d4a8);
+  border: 1px solid var(--parch-edge); border-radius: 6px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 60px rgba(160, 110, 40, 0.18);
+  padding: 1.4rem 1.7rem 1.2rem;
+}
+.pcard::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .3 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E"); mix-blend-mode: multiply; border-radius: inherit; }
+.pcard > * { position: relative; }
+.pcard-letter { width: min(38rem, 94vw); }
+.pcard-disaster { border-top: 6px solid var(--red); }
+.pcard-certificate { border: 3px double var(--brass-lo); outline: 1px solid var(--parch-edge); outline-offset: -9px; }
+.pc-eyebrow { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-soft); text-align: center; }
+.pc-title { font-family: var(--display); font-weight: 400; font-size: 2rem; margin: 0.15rem 0 0.6rem; text-align: center; line-height: 1.1; }
+.pc-body { display: grid; gap: 0.8rem; margin-top: 0.5rem; }
+.pc-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.1rem; justify-content: center; align-items: flex-start; }
+.pc-actions .opt { display: grid; gap: 0.35rem; justify-items: center; }
+.pc-actions .opt-wide { width: 100%; justify-content: flex-start; text-align: left; }
+.peek { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.2rem 0.6rem; margin-top: 0.9rem; padding-top: 0.6rem; border-top: 1px dashed var(--parch-edge); font-size: 0.85rem; }
+.peek .btn-link { font-size: 0.85rem; }
+
+.speech.big { gap: 1.1rem; align-items: center; }
+.speech.big .portrait.lg { width: 6.5rem; height: 6.5rem; }
+.speech-text { flex: 1; min-width: 0; font-size: 1.08rem; line-height: 1.55; }
+.speech-text .who { margin-bottom: 0.2rem; }
+
+.paper-letter { display: grid; gap: 0.6rem; justify-items: center; }
+.paper-letter .lh { max-width: 70%; mix-blend-mode: multiply; image-rendering: auto; filter: contrast(1.1) sepia(0.4); }
+.paper-letter .lh-rule { width: 40%; height: 4px; border-top: 1px solid var(--parch-edge); border-bottom: 1px solid var(--parch-edge); }
+.letter-text { justify-self: stretch; font-size: 1.08rem; line-height: 1.6; padding: 0 0.4rem; }
+.letter-text .lines > div { min-height: 0.2em; }
+.paper-letter .sig { justify-self: end; max-height: 4rem; mix-blend-mode: multiply; filter: sepia(0.6) hue-rotate(180deg) saturate(2.2) contrast(1.15); margin-right: 1rem; }
+.purse { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.6rem 0.8rem; background: rgba(255, 255, 255, 0.45); border: 1px solid var(--parch-edge); border-radius: 8px; font-size: 1.05rem; }
+.bands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.35rem; }
+.bands > div { border: 1px solid var(--parch-edge); border-radius: 6px; padding: 0.35rem 0.5rem; text-align: center; display: grid; font-size: 0.82rem; background: rgba(255, 255, 255, 0.35); transition: background 0.2s; }
+.bands > div b { font-family: var(--display); font-weight: 400; font-size: 1.05rem; }
+.bands > div.on { background: var(--green); color: #fff8e6; border-color: var(--green); }
+.chips.story .chip span:empty { display: none; }
+.chips.story .chip { padding: 0.3rem; }
+.name-row { display: flex; gap: 0.6rem; align-items: center; font-size: 1.05rem; }
+.name-row input { flex: 1; font-family: var(--display); font-size: 1.4rem !important; }
+.name-chip { cursor: pointer; font: inherit; font-size: 0.85rem; }
+.name-chip:hover { background: #fff; }
+.vignettes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; }
+.vignette { font: inherit; display: grid; gap: 0.35rem; justify-items: center; text-align: center; padding: 0.8rem 0.6rem; border: 1px solid var(--parch-edge); border-radius: 10px; background: rgba(255, 255, 255, 0.45); cursor: pointer; color: var(--ink); transition: transform 0.12s, box-shadow 0.12s; }
+.vignette:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(60, 30, 0, 0.18); background: #fffaf0; }
+.vignette:disabled { opacity: 0.55; cursor: not-allowed; }
+.vig-ico { width: 2rem; height: 2rem; color: var(--brass-lo); }
+.vig-t { font-size: 0.9rem; min-height: 2.6em; }
+.envelope { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; font-size: 1.2rem; }
+.envelope .ico { width: 4.5rem; height: 4.5rem; color: var(--brass-lo); }
+.dis-ico { display: grid; place-items: center; }
+.dis-ico .ico { width: 3rem; height: 3rem; color: var(--red); }
+.budget-meter { height: 0.8rem; }
+
+.letter-dock {
+  position: absolute; top: 0.8rem; left: 50%; transform: translateX(-50%); pointer-events: auto; font: inherit; cursor: pointer;
+  display: flex; align-items: center; gap: 0.6rem; padding: 0.4rem 0.5rem 0.4rem 0.9rem; border-radius: 999px;
+  background: linear-gradient(#fbf3df, #ecdcb4); color: var(--ink); border: 1px solid var(--brass-lo); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: dock-nudge 3s ease-in-out infinite;
+}
+.letter-dock .ico { width: 1.4rem; height: 1.4rem; color: var(--red); }
+.dock-cta { background: var(--green); color: #fff8e6; border-radius: 999px; padding: 0.2rem 0.75rem; }
+@keyframes dock-nudge { 0%, 80%, 100% { transform: translateX(-50%); } 85% { transform: translateX(-50%) rotate(-2deg); } 90% { transform: translateX(-50%) rotate(2deg); } }
+.rm-app.has-sheet .letter-dock { z-index: 1; }
+.opt-wide .btn-label { display: grid; text-align: left; }
+.opt-wide .opt-sub { font-size: 0.78rem; opacity: 0.8; }
+/* "What happened": the squares a disaster took, on a little map of the field */
+.loss { display: flex; gap: 0.7rem; align-items: flex-start; margin-top: 0.5rem; font-size: 0.92rem; }
+.loss-map { display: grid; grid-template-columns: repeat(4, 1rem); gap: 2px; flex: none; margin-top: 0.15rem; }
+.loss-map i { width: 1rem; height: 0.7rem; border-radius: 2px; background: #8aa556; }
+.loss-map i.lost { background: #2e1d12; box-shadow: 0 0 0 1px #c0392b; }

@@ -1,0 +1,602 @@
+{
+ "note": "Letters (spec 02 Appendix C.4) and politician/goal letters (C.5). Placeholders (FIRSTNAME, son2, First last…) are substituted at run time by BuildLetter. signatureY from SHARED Coord.",
+ "letters": [
+  {
+   "id": "CALEND.DL1",
+   "movie": "CALEND",
+   "castId": 1169,
+   "name": "DL1",
+   "text": "Dear Neighbor, \n\nWe are asking everyone in this district of Buffalo County to \ndonate money for building a schoolhouse for our children. \n\nThank you so much for your help.\n \n\n\nEd Ducatur\nSuperintendent\n\n\n\n",
+   "source": "text-member",
+   "signatureY": 206
+  },
+  {
+   "id": "CALEND.DL8",
+   "movie": "CALEND",
+   "castId": 1170,
+   "name": "DL8",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in this district of Buffalo County\nto donate money for building a new church. \nWe also want to buy a bell for the belfry. Will you help us?  \n\nThank you so much.\n\nFaithfully yours,\n\n\nReverend Stowell\n\n\n\n",
+   "source": "text-member",
+   "signatureY": 248
+  },
+  {
+   "id": "CALEND.DL9",
+   "movie": "CALEND",
+   "castId": 1171,
+   "name": "DL9",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in this district of Buffalo County\nto donate money for fixing up our schoolhouse. \nThe building is old and needs many repairs.\n\nThank you so much for your help.\n\n\nT. Chair\nSuperintendent\n\n\n\n",
+   "source": "text-member",
+   "signatureY": 213
+  },
+  {
+   "id": "CALEND.DL10",
+   "movie": "CALEND",
+   "castId": 1172,
+   "name": "DL10",
+   "text": "Dear Ma and Pa,\n\nIt's been a year since the beautiful wedding you made for us. \nWe finally reached Detroit. Living in a city is a big change, and I                                             already miss everyone back home.  John is looking forward to                                                   starting his job at the mill.In the meantime, we're stretching our                                                    dollars as much as we can.\nWould you be able to help us?\nJohn says that we don't need more than $150. \nCan you spare it? We promise to pay you back.\nPlease give my love to everyone.\n\nYour loving daughter,\n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.DL11",
+   "movie": "CALEND",
+   "castId": 1173,
+   "name": "DL11",
+   "text": "Dear FIRSTNAME,\nHow are you? I'm writing from way up north on the Klondike River.\nI'm in Canada, just a few miles shy of the border with Alaska.\n\nThey've found gold in these parts, and I aim to find some myself.\nSince your family was always good to me, I thought I would let \nyou in on the loot.\nIf you lend me $75, I can set up camp here and start gold hunting.\nI promise to give you ten percent of all the gold I find.\n\nWhat do you say, cousin? Will you take a chance?\n\nYour cousin,\n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.DL16",
+   "movie": "CALEND",
+   "castId": 1174,
+   "name": "DL16",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in this district of Buffalo County\nto donate money for building an addition to our\nschoolhouse. There is simply no room in the current \nbuilding for all our students.\n\nThank you so much for your help.\n\n\n\nT. Chair\nSuperintendent\n\n\n\n",
+   "source": "text-member",
+   "signatureY": 246
+  },
+  {
+   "id": "CALEND.DL17",
+   "movie": "CALEND",
+   "castId": 1175,
+   "name": "DL17",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in this district of Buffalo County\nto donate money for the big Fourth of July celebration we are\nplanning this year.It will be an especially big celebration because         we are also celebrating the turn of the century. We want to show everyone how proud we are to be Americans.\nThank you so much for your help.\n\nYours sincerely,\n\n\nCharles Cane\nMayor\n\n\n",
+   "source": "text-member",
+   "signatureY": 266
+  },
+  {
+   "id": "CALEND.DL18",
+   "movie": "CALEND",
+   "castId": 1176,
+   "name": "DL18",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in the town of Longview and\nthe surrounding area to donate money for repairing our roads.  \nAs we all know, Main Street is full of holes. Route 28,\nwhich runs from north to south through Longview, is also in             terrible condition. Taxes alone will not cover the cost of these repairs. \n\nThank you for doing your part.\n\n\nBill Dozer\nLongview Town Improvement Committee\n\n\n\n",
+   "source": "text-member",
+   "signatureY": 244
+  },
+  {
+   "id": "CALEND.DL19",
+   "movie": "CALEND",
+   "castId": 1177,
+   "name": "DL19",
+   "text": "Dear Cousin, \n\nI hope you are doing well on your homestead on the range.\n\nWe are still living in New York City and working at the same jobs.\n\nWe have another chance to start a business with some friends. \nOnce again, are you interested in investing $500.00\nin our business?\nIf you invest, you'll get five percent of the profits.\n\nI hope that you will write me soon.\n\nYours,\n\n",
+   "source": "text-member",
+   "signatureY": 309
+  },
+  {
+   "id": "CALEND.DL20",
+   "movie": "CALEND",
+   "castId": 1178,
+   "name": "DL20",
+   "text": "Dear Ma and Pa,\n\nI am writing you from sunny California. I arrived two weeks ago, \nafter many adventures along the way.\n\nIn a few months I'll be able to find work in the citrus groves.\nIn the meantime, it's hard to live. Could you please send \n$100.00 to tide me over until harvest time?\n\nYour loving son,\n",
+   "source": "text-member",
+   "signatureY": 248
+  },
+  {
+   "id": "CALEND.DL21",
+   "movie": "CALEND",
+   "castId": 1179,
+   "name": "DL21",
+   "text": "Dear Ma and Pa,\n\nI'm sorry that it's taken so long for me to write. It took                                                                                                           me a long time to find a job. Before I found work, I ran                                                                                                      out of money and went into debt. Now I'm working\nto pay off my debts, and I don't have a penny  to spare                                                                                                         at the end of the week.\n\nI want to come back to the farm, where I belong, but I                                                                                                         need  your help. If you send me $200.00, I can pay off                                                                                                           my  debts and come home.\n\nYour loving son,\n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.DL22",
+   "movie": "CALEND",
+   "castId": 1180,
+   "name": "DL22",
+   "text": "Dear Ma and Pa,\n\nI'm sorry that it's taken so long for me to write. It took                                                                             me a long time to find a job. Before I found work, I ran                                                                            out of money and went into debt. Now I'm working\nto pay off my debts, and I don't have a penny to spare \nat the end of the week.\n\nI want to come back to the farm, where I belong, but \nI need your help. If you send me $200.00, I can pay off                                                                          my debts and come home.\n\nYour loving son,\n",
+   "source": "text-member",
+   "signatureY": 296
+  },
+  {
+   "id": "CALEND.DL24",
+   "movie": "CALEND",
+   "castId": 1181,
+   "name": "DL24",
+   "text": "Dear Neighbor,\n\nWe've all noticed something new in our town lately.\nIt seems that everyone is driving automobiles, \nespecially the Model T Ford.  \nFor the past year, folks have been complaining that our roads \nshould be paved. Instead of raising taxes to pay for the work, \nwe are asking everyone in the town of Longview and\nthe nearby area to help as much as they can.  \nI hope that you are willing to pitch in.\n\n\n\nBill Dozer\nLongview Town Improvement Committee\n",
+   "source": "text-member",
+   "signatureY": 258
+  },
+  {
+   "id": "CALEND.DL28",
+   "movie": "CALEND",
+   "castId": 1182,
+   "name": "DL28",
+   "text": "Dear FIRSTNAME,\n\nIt's been a long time since we've been in touch. I've been                                                                                         working my way east from the West Coast, buying and \nselling properties on the way. Now I'm nearby, in the town                                                                                              of  Wichita, Kansas. Not far from here, some folks have                                                                                               struck oil.  I'm buying up land in the neighborhood so that                                                                                              I can strike it rich too! I thought I'd give you the first shot at                                                                                        investing in the well we're digging.  It will only cost you $800.                                                                                       You will get  20 percent of our profit.  If we strike oil, we could                                                                                      make millions!  Are you willing to take a chance?\n\nYours Cousin George.\n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.AL14",
+   "movie": "CALEND",
+   "castId": 1217,
+   "name": "AL14",
+   "text": "Dear [FIRSTNAME],\n\nI'm writing this letter while I ride the rails back east.\n\nI'm sorry I never heard back from you last year. I managed to                                                                                 scrape together the money I needed from other friends and                                                                                         relatives. I worked day and night on the Klondike River, and                                                                                     found $2,000 worth of gold. All's well that ends well, as they say.\n\nPlease give my regards to the family. Tell them I'm on my way to                                                                            New York.   I want to get in touch with our relatives there. Maybe                                                                                    I can do business with them.\n\nYour cousin George\n",
+   "source": "text-member",
+   "signatureY": 304
+  },
+  {
+   "id": "CALEND.AL15",
+   "movie": "CALEND",
+   "castId": 1218,
+   "name": "AL15",
+   "text": "Dear [FIRSTNAME],\n\nI'm writing this letter while I ride the rails back east.  I was sorry                                                                                I never heard back from you last year. I managed to scrape together                                                              the money I needed from other friends and relatives. I worked day                                                                     and night on the Klondike River, but I didn't find any gold. At least I                                                                     didn't starve or freeze to death. All's well that ends well, as they say.\n\nPlease give my regards to the family.  Tell them I'm on my way to                                                                       New York. I want to get in touch with our relatives there. Maybe I can                                                                    do business with them.\n\nYour cousin George\n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.AL19",
+   "movie": "CALEND",
+   "castId": 1219,
+   "name": "AL19",
+   "text": "October 14, 1901\n\nHi, folks! This is your cousin George writing from Buffalo,                                                                                         New York. Last month I visited the Pan-American exposition                                                                                        here. Your eyes would have \"lit up\" if you had seen the Electric                                                                                      Tower! It's a 375-foot-tall building that shows how electric                                                                                         inventions will make our lives easier someday.\n\nEveryone at the exposition was sad when the president                                                                                              was shot here.  \n  \nLately, I've been making plans to travel west again. I'm thinking                                                                                          of going to San Francisco to try out the fishing business.\n\nFondly yours,\n",
+   "source": "text-member",
+   "signatureY": 343
+  },
+  {
+   "id": "CALEND.AL21",
+   "movie": "CALEND",
+   "castId": 1220,
+   "name": "AL21",
+   "text": "Dear Ma and Pa,\n\nI'm sorry that it's taken me so long to write. I've been busy \nworking. Thanks to your help, I made it through the off-season. \nThen I worked very hard and saved my money.\n\nIn this letter I am returning the $100 that you lent me. You will \nsee me by the by the end of the year. I want to come back to \nLongview, where I belong. I will not I will not be a burden to you \nthere. I will live and work in town.\n\nYour loving son,\n",
+   "source": "text-member",
+   "signatureY": 257
+  },
+  {
+   "id": "CALEND.AL25",
+   "movie": "CALEND",
+   "castId": 1221,
+   "name": "AL25",
+   "text": "Dear Ma and Pa,\n\nI have great news! I'm coming back to Kansas.\nI've been offered a job at the Juste and Kase law firm. \nTheir office is in Longview! I believe you know them.\n\nI look forward to seeing you soon.\n\nYour loving son,\n\n\n\nP.S. Next year I will start paying you back for the money \nyou spent sending me to college.\n",
+   "source": "text-member",
+   "signatureY": 221
+  },
+  {
+   "id": "CALEND.AL27",
+   "movie": "CALEND",
+   "castId": 1222,
+   "name": "AL27",
+   "text": "Dear Cousin, \n\nI am writing to tell you that our grandfather Benjamin passed \naway in Chicago last week. He went peacefully, in his sleep.                                                                                       The doctor says he died of natural causes. This isn't surprising.                                                                                     He was very old.\n\nGrandpa left you $150 in his will. I have asked his lawyer to send                                                                                    it to the bank in your town.The money should be waiting for you there.\n\nMy son George and I send our love to you and your family.\n\nYours fondly,\n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.AL29",
+   "movie": "CALEND",
+   "castId": 1223,
+   "name": "AL29",
+   "text": "Dear FIRSTNAME,\n\nAfter a year of hard work, I have good news for you. We've struck oil! \nWe've been pumping for about six months now, and the well is\nfinally dry. Your share of the profit is $2,500.00. I have sent it directly\nto your bank.\n\nThank you for your help, partner!\n\nYours,\n",
+   "source": "text-member",
+   "signatureY": 241
+  },
+  {
+   "id": "CALEND.AL30",
+   "movie": "CALEND",
+   "castId": 1224,
+   "name": "AL30",
+   "text": "Dear FIRSTNAME,\n\nAfter a year of hard work, I'm afraid I don't have good news. It seems\nthat we picked a piece of land without any oil underneath it.\n\nI'm sorry about the money you lost. I'm sure you'll make it up soon, \nselling wheat and corn.\n\nThank you for your help anyway.\n\nYours,\n",
+   "source": "text-member",
+   "signatureY": 259
+  },
+  {
+   "id": "CALEND.AL31",
+   "movie": "CALEND",
+   "castId": 1225,
+   "name": "AL31",
+   "text": "Dear FIRSTNAME,\n\nAfter a year of hard work, I finally have a chance to write and tell you\nmy good news. We've struck oil! We've been pumping for about six \nmonths now, and the well is finally dry. My partners and I made a profit\nof $12,500 from this well.\n\nI hope next time we can work together.\n\nYours,\n",
+   "source": "text-member",
+   "signatureY": 241
+  },
+  {
+   "id": "CALEND.AL32",
+   "movie": "CALEND",
+   "castId": 1226,
+   "name": "AL32",
+   "text": "Dear FIRSTNAME,\n\nAfter a year of hard work, I'm afraid I don't have good news. \nIt seems that I picked a piece of land without any oil underneath it.\n\nIt's just as well you didn't invest in this well. If I hear of a better deal,\nI'll be sure to let you know.\n\n\nYours,\n",
+   "source": "text-member",
+   "signatureY": 241
+  },
+  {
+   "id": "CALEND.AL33",
+   "movie": "CALEND",
+   "castId": 1227,
+   "name": "AL33",
+   "text": "Official Enlistment Notice\naccording to the Selective Service Act of 1917\n\nson2 lastname\n\nYou have been drafted by the United States Army.\nYou must register at the Longview Post Office,\nBuffalo County, Kansas, by June 20, 1917.\n \n\n\nRecruitment Office\n",
+   "source": "text-member",
+   "signatureY": 221
+  },
+  {
+   "id": "CALEND.AL34",
+   "movie": "CALEND",
+   "castId": 1228,
+   "name": "AL34",
+   "text": "Dear Ma and Pa,\n\nOur greatest fear has come true. Our sons are going off to fight \nin the war.  I hope they meet their Uncle Son2 over there,\nso he can look out for them. \nBilly and Davey are only 19 and 21 years old.\n\nPlease let me know if you hear any news from Son2.\nI've heard that he's going to a place in France where the most\nimportant battles are being fought.\n\nJohn sends his love.\n\nYour loving daughter, \n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.AL35",
+   "movie": "CALEND",
+   "castId": 1229,
+   "name": "AL35",
+   "text": "Dear Ma and Pa,\n\nI'm proud to be the first member of our family to earn \na college degree.\n\nI have decided to use my education to teach at a new school\nfor young women in Boston. I hope to help in the struggle \nto win the right for women to vote.\nIn Boston I'm sure I will meet others involved in this struggle.\n\nI am also happy to tell you that I have saved up enough money \nto pay you back for my first year of college.  I have sent $480.00\nto your account at the bank in Longview.\n\nYour loving daughter, \n\n",
+   "source": "text-member",
+   "signatureY": 319
+  },
+  {
+   "id": "CALEND.AL36",
+   "movie": "CALEND",
+   "castId": 1230,
+   "name": "AL36",
+   "text": "Dear Ma and Pa,\n\nPlease let me know if you hear any news from brother. \nWhere is he in France?\n\nI have some news of my own. I am leaving my job at the school. \nI am going to work for the National American \nWoman Suffrage Association (NAWSA).\nI will be an assistant to Carrie Chapman Catt, its president.\nWe will be working hard to make sure that Congress \npasses the 19th Amendment next year. \n\nYour loving daughter, \n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.AL37",
+   "movie": "CALEND",
+   "castId": 1231,
+   "name": "AL37",
+   "text": "Somewhere in France\n\nThis is the saddest letter I've ever had to write you. I received a \nletter telling me that my beloved mother, Marilla, your first cousin,                                                                     died of the Spanish influenza.  Everyone I know has lost someone                                                                        in their family to this  terrible disease.  Mother was 76 years old,                                                                          but she had always been healthy and strong. She wanted you to                                                                    remember her that way.\n\nBy the way, she left you $300 in her will. I am sending a check for                                                                       that amount with this letter.\n\nYours,\n",
+   "source": "text-member",
+   "signatureY": 289
+  },
+  {
+   "id": "CALEND.AL38",
+   "movie": "CALEND",
+   "castId": 1232,
+   "name": "AL38",
+   "text": "Somewhere in France\n\nDear Ma and Pa,\n\nI'm not in Kansas anymore! I can't tell you much except that \nI've learned how to dig a trench faster than I used to plow a                                                                            row of dry Kansas soil. I never have quite enough food to eat \nor time to sleep, but the boys I'm with are the best friends\na fellow could ever want.\n\nTell all the folks back home that we're going to win this war soon.  \nI've been on my own for a few years now, but I could sure use a\ngood, home-cooked meal now!\n\nUntil then, your homesick son,\n",
+   "source": "text-member",
+   "signatureY": 317
+  },
+  {
+   "id": "CALEND.AL39",
+   "movie": "CALEND",
+   "castId": 1233,
+   "name": "AL39",
+   "text": "The United States Army is proud to present the Medal\nof Honor to Son2 Lastname for service beyond the call\nof duty during  the Battle of Chateau-Thierry in July 1918.\n\nSon2 should present himself at the ceremonies on\nJuly 4 in Longview, Kansas, to receive the medal.\n\nThe office of General Pershing",
+   "source": "text-member",
+   "signatureY": 209
+  },
+  {
+   "id": "CALEND.AL40",
+   "movie": "CALEND",
+   "castId": 1234,
+   "name": "AL40",
+   "text": "Dear Ma and Pa,\n\nI'm thrilled to hear that Son2 was awarded the Medal of Honor.\nI wish I had been in Longview for the ceremony.  \n\nI'm still waiting for Billy to come back from France. He wrote                                                                                     that his leg is healing nicely, and there will hardly be a scar. \n\nEver since Davey came back, he's been applying to colleges. \nHe seems in a big hurry to put the war behind him and get \non with his life.\n\nPlease send our love to everyone.\n\nYour loving daughter, \n",
+   "source": "text-member",
+   "signatureY": 318
+  },
+  {
+   "id": "CALEND.AL41",
+   "movie": "CALEND",
+   "castId": 1235,
+   "name": "AL41",
+   "text": "Dear Ma and Pa,\n\nVictory is very close. Last spring, Congress passed the\n19th Amendment. Now we must wait and see how many \nstates vote for it. It looks hopeful. I am having the time \nof my life working at NAWSA for a cause in which I believe.\n\nI have other good news. A lawyer named Frederick Fields has \nhelped me a lot in my work. We have become quite good friends \nduring the past year. He has asked me to marry him, and I have                                                                  accepted. He is from Colorado, so we will surely come back                                                                                 west for the wedding.\n\nYour loving daughter, \n",
+   "source": "text-member",
+   "signatureY": 318
+  },
+  {
+   "id": "CALEND.AL43",
+   "movie": "CALEND",
+   "castId": 1236,
+   "name": "AL43",
+   "text": "On April 8th, 1885, First last  will have met the \nrequirements of the Homestead Act of 1862. \nFirst last paid twenty dollars to the                                                                                                                                         United States government and settled and farmed                                                                                                             160 acres of land for five years.\n\nThe United States government will transfer section 9474\nin Buffalo County, Kansas, to First last.\nFirst last will be the legal owner of this property.\n\nSigned and sealed,\n\n\nRobert Evans\nLand Registry Clerk\n",
+   "source": "text-member",
+   "signatureY": 244
+  },
+  {
+   "id": "CALEND.AL50",
+   "movie": "CALEND",
+   "castId": 1237,
+   "name": "AL50",
+   "text": "Dear  \nThank you for joining the Buffalo County Farmers' Alliance.  \n\nBig business is getting rich from the work of poor farmers.\nThis must stop. We will pressure the federal government to take \nover the railroads and end high shipping prices.\n\nWe will be strong if we work together. Thank you for your support.\n\nYours sincerely,\n\n\nJ.W. Paton\nPresident\n\n",
+   "source": "text-member",
+   "signatureY": 260
+  },
+  {
+   "id": "CALEND.AL51",
+   "movie": "CALEND",
+   "castId": 1238,
+   "name": "AL51",
+   "text": "Dear Ma and Pa,\n\nI have wonderful news. I'm getting married! Bob Conway                                                                            moved to this country from Ireland 4 years ago. He works                                                                                at the front desk of the nicest hotel in Boston. We will live                                                                                in a small apartment in the North End. I will continue teaching                                                                     English to immigrants.\n\nIn my spare time, I have become involved in the struggle for \nwomen's suffrage. Bob also believes that women should be                                                                      allowed to vote. Wish me luck!\n\nYour loving daughter,\n",
+   "source": "text-member",
+   "signatureY": 290
+  },
+  {
+   "id": "CALEND.AL52",
+   "movie": "CALEND",
+   "castId": 1239,
+   "name": "AL52",
+   "text": "Dear Ma and Pa,\n\nPlease let me know if you hear any news from broth2. \nWhere is he in France?\n\nI got a letter from Bob today. He is still somewhere in France. \nHe doesn't  write much, except to say that he's homesick. \nIt's very hard for us here without him. I'm teaching seven \nextra students to make ends meet.\n\nBobby Jr. and little Mary send their love.\n\nYour daughter,\n",
+   "source": "text-member",
+   "signatureY": 290
+  },
+  {
+   "id": "CALEND.AL53",
+   "movie": "CALEND",
+   "castId": 1240,
+   "name": "AL53",
+   "text": "Dear Ma and Pa,\n\nBob returned safely from France and sends his love. \nBobby Jr., Mary, and little Harry are well.\n\nLast spring, Congress passed the 19th Amendment,\nwhich would give women the vote. For the past six months,\nI've been doing volunteer work a few hours a week with the \nNational American Woman Suffrage Association (NAWSA). \nWe're trying to convince people to vote for this amendment.\nIt looks as though the amendment will be ratified. I'm so excited!\n\nYour daughter,\n",
+   "source": "text-member",
+   "signatureY": 290
+  },
+  {
+   "id": "CALEND.AL54",
+   "movie": "CALEND",
+   "castId": 1241,
+   "name": "AL54",
+   "text": "Dear Ma and Pa,\n\nI have great news! I'm coming back to Kansas. I've been                                                                                                offered a job at the Juste and Kase law firm. Their office                                                                                                     is in Longview! I believe you know them.\n\nI look forward to seeing you soon.\n\nYour loving son,\n\n\n\nP.S. Next year I will start paying you back for the money\nyou spent sending me to college.\n",
+   "source": "text-member",
+   "signatureY": 225
+  },
+  {
+   "id": "CALEND.AL60",
+   "movie": "CALEND",
+   "castId": 1242,
+   "name": "AL60",
+   "text": "Dear Loyal Supporter,\nWe hope you are doing well during this difficult time. \nOur grain prices continue to drop while railroad shipping\nprices remain high. We are writing to ask you to support the \nPeople's Party. Last year the Populist candidate for president, \nJames B. Weaver, received over one million votes. The Populists \nand the Farmers' Alliance have the same goals. Both\norganizations want the government to control the railroads. We\nalso want the government to print more money. We believe that if\nthere is more money, then prices will rise.  This means that prices\nfor farm products will rise too. Thank you for your continued support.\nYours sincerely,\n\n\nJ.W. Paton\nPresident\n",
+   "source": "text-member",
+   "signatureY": 298
+  },
+  {
+   "id": "CALEND.AL62",
+   "movie": "CALEND",
+   "castId": 1243,
+   "name": "AL62",
+   "text": "Dear Cousin,\n\nI have some bad news for you. Our biscuit company has gone \nout of business. We have lost a lot of money in the \npast three years, and we owe too much money to continue.\nI have sent a final check to your bank. \n\nWe will be fine. My sons and I have found work in factories \nin the city. When we save up enough money, we will try to \nstart another business.\n\nThank you so much for your help in the past.\nFondly,\n\n",
+   "source": "text-member",
+   "signatureY": 289
+  }
+ ],
+ "politics": [
+  {
+   "id": "CALEND.ALM1",
+   "movie": "CALEND",
+   "castId": 1209,
+   "name": "ALM1",
+   "text": "Dear \n\nWe are pleased to tell you that you have been elected to\nrepresent the Longview branch of the Farmers' Alliance.\nWe will be honored to see you at all our county meetings.\n\nCongratulations!\n\n\nJ.W. Paton\nPresident\n",
+   "source": "text-member",
+   "signatureY": 195
+  },
+  {
+   "id": "CALEND.ALM2",
+   "movie": "CALEND",
+   "castId": 1210,
+   "name": "ALM2",
+   "text": "Dear \n\nI am very pleased to tell you that you have been elected\nto the Longview School Board. You are a well-respected \nmember of our community, and we believe you will be a \nvaluable addition to our board.\n\nWe look forward to seeing you at our meetings!\n\nYours sincerely,\n\n\nEd Ducatur\nSuperintendent\n",
+   "source": "text-member",
+   "signatureY": 244
+  },
+  {
+   "id": "CALEND.ALM3",
+   "movie": "CALEND",
+   "castId": 1211,
+   "name": "ALM3",
+   "text": "Dear \n\nCongratulations! You have been elected president of the\nLongview School Board. \nEveryone appreciates your fine work in the community.\n\nBest wishes, \n\n\nEd Ducatur\nSuperintendent\n",
+   "source": "text-member",
+   "signatureY": 195
+  },
+  {
+   "id": "CALEND.ALM4",
+   "movie": "CALEND",
+   "castId": 1212,
+   "name": "ALM4",
+   "text": "Dear \n\nCongratulations! You have been elected to the \nLongview Chamber of Commerce. \nYou are a fine and honorable citizen, and we believe \nyou will help strengthen our business community.\n\nBest wishes, \n\n\n\nHarold Potter\nPresident\n",
+   "source": "text-member",
+   "signatureY": 227
+  },
+  {
+   "id": "CALEND.ALM5",
+   "movie": "CALEND",
+   "castId": 1213,
+   "name": "ALM5",
+   "text": "Dear \n\nAfter 25 years as president of the Chamber of Commerce,\nI have finally decided to retire. Congratulations! \nYou have been elected to be the new president. \nI am sure you will do a great job.\n\nGood luck, \n\n\nHarold Potter\nPast President\n",
+   "source": "text-member",
+   "signatureY": 211
+  },
+  {
+   "id": "CALEND.ALM6",
+   "movie": "CALEND",
+   "castId": 1214,
+   "name": "ALM6",
+   "text": "Dear \n\nCongratulations! You have been elected to the \nLongview Town Council. Everyone in town\nknows and respects you.\n\nI know that I can depend on you to work to improve the town.\n\nYours sincerely,\n\n\n\nCharles Cane\nMayor\n",
+   "source": "text-member",
+   "signatureY": 241
+  },
+  {
+   "id": "CALEND.ALM7",
+   "movie": "CALEND",
+   "castId": 1215,
+   "name": "ALM7",
+   "text": "Dear \n\nEveryone on the town council supports your decision                                                                                              to run for mayor.  \n\nBefore I leave for Kansas City to start my new career \nas a newspaper publisher, I want to offer you my support.\nI think you will make a great mayor.\n\nGood luck in July!\n\nYours sincerely,\n\n\nCharles Cane\nMayor\n",
+   "source": "text-member",
+   "signatureY": 260
+  },
+  {
+   "id": "CALEND.ALM9",
+   "movie": "CALEND",
+   "castId": 1216,
+   "name": "ALM9",
+   "text": "Dear \n\nBefore I leave for Kansas City to start my new career as a \nnewspaper publisher, I want to ask you to support Jerry Mander                                                                                           for Mayor in the election this November. Jerry has been very                                                                                            committed to the community for many years.Everyone on the                                                                                               town council thinks he will make a great mayor.However, Jerry                                                                                            is not young, and he probably will not run again in 1920. I suggest                                                                                 that you consider running for mayor at that time.\n\nYours sincerely,\n\n\nCharles Cane\nMayor\n",
+   "source": "text-member",
+   "signatureY": 250
+  },
+  {
+   "id": "CALEND.Goal1",
+   "movie": "CALEND",
+   "castId": 1141,
+   "name": "Goal1",
+   "text": "Now you are a successful homestead farmer. What do you\n want to do next?\n    \n       I want to\n\n       keep farming my homestead.\n\n       keep farming my homestead and become \n       successful in business.\n\n       keep farming my homestead and become mayor.\n\n       let my son take over the homestead so I can retire.",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.Goal2",
+   "movie": "CALEND",
+   "castId": 1142,
+   "name": "Goal2",
+   "text": "Now you are a successful homestead farmer. What do you\n want to do next?\n    \n       I want to\n\n       keep farming my homestead.\n\n       keep farming my homestead and become \n       successful in  business.\n\n       let my son take over the homestead so I can retire.",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.Goal3",
+   "movie": "CALEND",
+   "castId": 1144,
+   "name": "Goal3",
+   "text": "Now you are a homestead farmer who is successful\nin business. What do you want to do next?\n    \n       I want to\n\n       keep farming my homestead and remain \n       successful in business.\n\n       keep farming my homestead and become mayor.\n\n       let my son take over the homestead so I can \n       retire in town.\n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.Goal4",
+   "movie": "CALEND",
+   "castId": 1145,
+   "name": "Goal4",
+   "text": "Now you are a homestead farmer who is successful\nin business. What do you want to do next?\n    \n       I want to\n\n       keep farming my homestead and remain \n       successful in  business.\n\n       let my son take over the homestead so I can\n       retire in town.\n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.Goal01",
+   "movie": "CALEND",
+   "castId": 1143,
+   "name": "Goal01",
+   "text": "CONGRATULATIONS! You were a homestead farmer for 40 years. You did not reach the goal you set at the beginning, but you ran a profitable farm. Any pioneer would have been proud of your achievement.",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.Goal02",
+   "movie": "CALEND",
+   "castId": 1146,
+   "name": "Goal02",
+   "text": "CONGRATULATIONS! You were a homestead farmer for 40 years. You did not reach the goal you set at the beginning, but you ran a profitable farm. Any pioneer would have been proud of your achievement.\n ",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.G1",
+   "movie": "CALEND",
+   "castId": 1156,
+   "name": "G1",
+   "text": "Follow these guidelines to achieve your goal:\n\n* Remember that your family's health and education \n  are of the greatest importance.\n\n* Try to make an impact on your town's growth and progress.\n \n* Acquire the following assets by 1902:\n    · $1,000 in cash\n    · one tractor\n\n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.G2",
+   "movie": "CALEND",
+   "castId": 1157,
+   "name": "G2",
+   "text": "Follow these guidelines to achieve your goal:\n\n* Remember that your family's health and education are \n  of the greatest importance.\n\n* Try to make an impact on your town's growth and progress.\n\n* Acquire the following assets by 1909:\n   · $2,000 in cash\n   · two tractors\n   · two fields\n   · three properties in town\n   · one car\n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.G3",
+   "movie": "CALEND",
+   "castId": 1158,
+   "name": "G3",
+   "text": "Follow these guidelines to achieve your goal:\n\n* Remember that your family's health and education are \n   of the greatest importance.\n\n* Try to make an impact on your town's growth and progress.\n\n* Acquire the following assets by 1915:\n   · $3,000 in cash\n   · one tractor\n   · one property in town \n   · one car\n\n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.ListM8",
+   "movie": "CALEND",
+   "castId": 1140,
+   "name": "ListM8",
+   "text": "                                                   TOWN OF LONGVIEW\n                                             BUFFALO COUNTY, KANSAS\n\n The people of Longview want to know where you stand.\n Click on the issues you support :\n\n        America should get involved in the war in Europe.\n       \n        All women in America should be allowed to vote.\n     \n        Kansas should remain a \"dry\" state.    \n         \n        The federal government should own and operate the railroads.\n       \n        Ranchers should be put in jail for grazing their cattle on farmland. \n       \n        Citizens under 18 years of age should be allowed to carry pistols in town.   \n     \n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.List551",
+   "movie": "CALEND",
+   "castId": 1147,
+   "name": "List551",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1916:  $2,000.00\nLONGVIEW PROJECTS FOR 1916:\n\n        Hire two more schoolteachers.\n        $1,500.00\n\n        Put indoor plumbing in all public buildings.\n        $500\n\n        Bring the Kansas Symphony Orchestra to play in Longview.\n        $150.00\n\n        Build a public library.\n        $850.00\n\nTOTAL:  $________   \n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.List552",
+   "movie": "CALEND",
+   "castId": 1148,
+   "name": "List552",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1917:  $2,300.00\nLONGVIEW PROJECTS FOR 1917:\n\n        Build a park.\n        $250.00\n\n        Build a new town hall.\n        $1,200.00\n\n        Repave Main Street.\n        $500.00\n\n        Put in concrete sidewalks on Main Street.\n        $500.00\n\nTOTAL:  $________   ",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.List553",
+   "movie": "CALEND",
+   "castId": 1149,
+   "name": "List553",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1918:  $2,400.00\nLONGVIEW PROJECTS FOR 1918:\n\n        Buy a fire engine.\n        $1,000.00\n\n        Pave all the side streets.\n        $500.00\n\n        Build a new city jail on the other side of the tracks.\n        $850.00\n\n        Hire a deputy sheriff.\n        $1,000.00\n\nTOTAL:  $________   \n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.List554",
+   "movie": "CALEND",
+   "castId": 1150,
+   "name": "List554",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1919:  $2,600.00\nLONGVIEW PROJECTS FOR 1919:\n\n        Build a war memorial in memory of the fallen soldiers of Longview.\n        $500.00\n\n        Build a baseball diamond and park.\n        $400.00\n\n        Build a new courthouse.\n        $1,300.00\n        \n        Build a new post office.\n        $1,000.00\n\nTOTAL:  $________   \n",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.Sys836",
+   "movie": "CALEND",
+   "castId": 1151,
+   "name": "Sys836",
+   "text": "\n\n     Your plans for this year cost too much. \n  Try to stick to this year's town budget.",
+   "source": "text-member",
+   "signatureY": null
+  },
+  {
+   "id": "CALEND.ListInfo",
+   "movie": "CALEND",
+   "castId": 1152,
+   "name": "ListInfo",
+   "text": "4,2000,1500,500,150,850\n4,2300,150,950,300,350\n2,2600,900,500\n2,300,500,3500",
+   "source": "text-member",
+   "signatureY": null
+  }
+ ],
+ "templates": [
+  {
+   "id": "CALEND.DLL",
+   "movie": "CALEND",
+   "castId": 1167,
+   "name": "DLL",
+   "text": "Dear Ma and Pa,\n\nOur greatest fear has come true. Our sons are going off to fight \nin the war.  I hope they meet their Uncle Igorkggfgjgjfgfgf over there,\nso he an look out for them. \nBilly and Davey are only 19 and 21 years old.\n\nPlease let me know if you hear any news from Igorkggfgjgjfgfgf.\nI've heard that he's going to a place in France where the most\nimportant battles are being fought.\n\nJohn sends his love.\n\nYour loving daughter, \n",
+   "source": "text-member"
+  }
+ ]
+}

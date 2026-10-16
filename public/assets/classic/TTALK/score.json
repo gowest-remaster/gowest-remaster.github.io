@@ -1,0 +1,5102 @@
+{
+ "movie": "TTALK",
+ "source": "TTALK.DIR",
+ "stage": {
+  "w": 640,
+  "h": 480,
+  "rect": {
+   "top": 0,
+   "left": 0,
+   "bottom": 480,
+   "right": 640
+  },
+  "bgColor": 255,
+  "tempo": 6,
+  "palette": {
+   "id": 100,
+   "name": "TTalk",
+   "file": "TTALK/100-TTalk.palette.json",
+   "extractorResolved": "member:100:TTalk"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 2080,
+  "changedBy": "Alla - Edunetics",
+  "createdBy": "Alla - Edunetics",
+  "origDirectory": "P:\\SECO\\QC\\",
+  "preload": 0
+ },
+ "castLibs": [
+  "TTALK",
+  "SHARED"
+ ],
+ "castArray": [
+  1,
+  1001
+ ],
+ "scoreHeader": {
+  "streamSize": 4918,
+  "frame1Offset": 20,
+  "framesVersion": 4,
+  "spriteRecordSize": 20,
+  "numChannels": 50
+ },
+ "labels": {
+  "P6": 2,
+  "P0": 3,
+  "P66": 4,
+  "P1": 6,
+  "PP1": 7,
+  "P2": 9,
+  "PP2": 10,
+  "P3": 12,
+  "PP3": 13,
+  "P4": 15,
+  "PP4": 16,
+  "P5": 18,
+  "PP5": 19,
+  "Papers": 22,
+  "BigArticle": 27
+ },
+ "frameCount": 28,
+ "frames": [
+  {
+   "n": 1,
+   "sprites": []
+  },
+  {
+   "n": 2,
+   "transition": {
+    "type": 10,
+    "name": "edgesInSquare",
+    "durationMs": 0,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "script": {
+    "castId": 1,
+    "castName": ""
+   },
+   "palette": {
+    "id": 100,
+    "name": "TTalk",
+    "file": "TTALK/100-TTalk.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 1001,
+     "castName": "",
+     "type": "text",
+     "file": "TTALK/1001.txt",
+     "x": 6,
+     "y": 381,
+     "w": 541,
+     "h": 115,
+     "loc": [
+      6,
+      381
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 13,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 0,
+     "y": 0,
+     "w": 639,
+     "h": 432,
+     "loc": [
+      0,
+      0
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 20,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 15,
+     "castId": 91,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/91.png",
+     "x": 554,
+     "y": 435,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      591,
+      452
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "script": {
+    "castId": 22,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 1001,
+     "castName": "",
+     "type": "text",
+     "file": "TTALK/1001.txt",
+     "x": 6,
+     "y": 381,
+     "w": 541,
+     "h": 115,
+     "loc": [
+      6,
+      381
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 13,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 0,
+     "y": 0,
+     "w": 639,
+     "h": 432,
+     "loc": [
+      0,
+      0
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 20,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 15,
+     "castId": 91,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/91.png",
+     "x": 554,
+     "y": 435,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      591,
+      452
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 95,
+     "castName": "Sing",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "script": {
+    "castId": 19,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 1001,
+     "castName": "",
+     "type": "text",
+     "file": "TTALK/1001.txt",
+     "x": 6,
+     "y": 381,
+     "w": 541,
+     "h": 115,
+     "loc": [
+      6,
+      381
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 13,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 0,
+     "y": 0,
+     "w": 639,
+     "h": 432,
+     "loc": [
+      0,
+      0
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 20,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 15,
+     "castId": 91,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/91.png",
+     "x": 554,
+     "y": 435,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      591,
+      452
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 95,
+     "castName": "Sing",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "sprites": []
+  },
+  {
+   "n": 6,
+   "transition": {
+    "type": 10,
+    "name": "edgesInSquare",
+    "durationMs": 0,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "script": {
+    "castId": 1,
+    "castName": ""
+   },
+   "palette": {
+    "id": 100,
+    "name": "TTalk",
+    "file": "TTALK/100-TTalk.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 102,
+     "castName": "1-1",
+     "type": "bitmap",
+     "file": "TTALK/102-1-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 104,
+     "castName": "1-2",
+     "type": "bitmap",
+     "file": "TTALK/104-1-2.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 110,
+     "castName": "1-5",
+     "type": "bitmap",
+     "file": "TTALK/110-1-5.png",
+     "x": 346,
+     "y": 1180,
+     "w": 99,
+     "h": 231,
+     "loc": [
+      401,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 116,
+     "castName": "1-8",
+     "type": "bitmap",
+     "file": "TTALK/116-1-8.png",
+     "x": 539,
+     "y": 268,
+     "w": 82,
+     "h": 115,
+     "loc": [
+      580,
+      325
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 118,
+     "castName": "1-9",
+     "type": "bitmap",
+     "file": "TTALK/118-1-9.png",
+     "x": 577,
+     "y": 271,
+     "w": 44,
+     "h": 94,
+     "loc": [
+      591,
+      315
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "1-7",
+     "type": "bitmap",
+     "file": "TTALK/113-1-7.png",
+     "x": 447,
+     "y": 1218,
+     "w": 104,
+     "h": 195,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 7,
+     "castName": "No1-9",
+     "type": "shape",
+     "x": 577,
+     "y": 271,
+     "w": 44,
+     "h": 94,
+     "loc": [
+      577,
+      271
+     ],
+     "ink": 7,
+     "inkName": "notGhost",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 2
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 102,
+     "castName": "1-1",
+     "type": "bitmap",
+     "file": "TTALK/102-1-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 104,
+     "castName": "1-2",
+     "type": "bitmap",
+     "file": "TTALK/104-1-2.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 110,
+     "castName": "1-5",
+     "type": "bitmap",
+     "file": "TTALK/110-1-5.png",
+     "x": 346,
+     "y": 1180,
+     "w": 99,
+     "h": 231,
+     "loc": [
+      401,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 116,
+     "castName": "1-8",
+     "type": "bitmap",
+     "file": "TTALK/116-1-8.png",
+     "x": 539,
+     "y": 268,
+     "w": 82,
+     "h": 115,
+     "loc": [
+      580,
+      325
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 118,
+     "castName": "1-9",
+     "type": "bitmap",
+     "file": "TTALK/118-1-9.png",
+     "x": 577,
+     "y": 271,
+     "w": 44,
+     "h": 94,
+     "loc": [
+      591,
+      315
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "1-7",
+     "type": "bitmap",
+     "file": "TTALK/113-1-7.png",
+     "x": 447,
+     "y": 1218,
+     "w": 104,
+     "h": 195,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 7,
+     "castName": "No1-9",
+     "type": "shape",
+     "x": 577,
+     "y": 271,
+     "w": 44,
+     "h": 94,
+     "loc": [
+      577,
+      271
+     ],
+     "ink": 7,
+     "inkName": "notGhost",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 2
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "sprites": []
+  },
+  {
+   "n": 9,
+   "transition": {
+    "type": 10,
+    "name": "edgesInSquare",
+    "durationMs": 0,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "script": {
+    "castId": 1,
+    "castName": ""
+   },
+   "palette": {
+    "id": 100,
+    "name": "TTalk",
+    "file": "TTALK/100-TTalk.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 102,
+     "castName": "1-1",
+     "type": "bitmap",
+     "file": "TTALK/102-1-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 104,
+     "castName": "1-2",
+     "type": "bitmap",
+     "file": "TTALK/104-1-2.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 110,
+     "castName": "1-5",
+     "type": "bitmap",
+     "file": "TTALK/110-1-5.png",
+     "x": 346,
+     "y": 1180,
+     "w": 99,
+     "h": 231,
+     "loc": [
+      401,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 117,
+     "castName": "2-8",
+     "type": "bitmap",
+     "file": "TTALK/117-2-8.png",
+     "x": 213,
+     "y": 229,
+     "w": 78,
+     "h": 190,
+     "loc": [
+      252,
+      324
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 119,
+     "castName": "2-9",
+     "type": "bitmap",
+     "file": "TTALK/119-2-9.png",
+     "x": 545,
+     "y": 206,
+     "w": 87,
+     "h": 205,
+     "loc": [
+      588,
+      308
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "1-7",
+     "type": "bitmap",
+     "file": "TTALK/113-1-7.png",
+     "x": 447,
+     "y": 1218,
+     "w": 104,
+     "h": 195,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 102,
+     "castName": "1-1",
+     "type": "bitmap",
+     "file": "TTALK/102-1-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 104,
+     "castName": "1-2",
+     "type": "bitmap",
+     "file": "TTALK/104-1-2.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 110,
+     "castName": "1-5",
+     "type": "bitmap",
+     "file": "TTALK/110-1-5.png",
+     "x": 346,
+     "y": 1180,
+     "w": 99,
+     "h": 231,
+     "loc": [
+      401,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 117,
+     "castName": "2-8",
+     "type": "bitmap",
+     "file": "TTALK/117-2-8.png",
+     "x": 213,
+     "y": 229,
+     "w": 78,
+     "h": 190,
+     "loc": [
+      252,
+      324
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 119,
+     "castName": "2-9",
+     "type": "bitmap",
+     "file": "TTALK/119-2-9.png",
+     "x": 545,
+     "y": 206,
+     "w": 87,
+     "h": 205,
+     "loc": [
+      588,
+      308
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "1-7",
+     "type": "bitmap",
+     "file": "TTALK/113-1-7.png",
+     "x": 447,
+     "y": 1218,
+     "w": 104,
+     "h": 195,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "sprites": []
+  },
+  {
+   "n": 12,
+   "transition": {
+    "type": 10,
+    "name": "edgesInSquare",
+    "durationMs": 0,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "script": {
+    "castId": 1,
+    "castName": ""
+   },
+   "palette": {
+    "id": 100,
+    "name": "TTalk",
+    "file": "TTALK/100-TTalk.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 102,
+     "castName": "1-1",
+     "type": "bitmap",
+     "file": "TTALK/102-1-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 104,
+     "castName": "1-2",
+     "type": "bitmap",
+     "file": "TTALK/104-1-2.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 110,
+     "castName": "1-5",
+     "type": "bitmap",
+     "file": "TTALK/110-1-5.png",
+     "x": 346,
+     "y": 1180,
+     "w": 99,
+     "h": 231,
+     "loc": [
+      401,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 119,
+     "castName": "2-9",
+     "type": "bitmap",
+     "file": "TTALK/119-2-9.png",
+     "x": 545,
+     "y": 206,
+     "w": 87,
+     "h": 205,
+     "loc": [
+      588,
+      308
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "1-7",
+     "type": "bitmap",
+     "file": "TTALK/113-1-7.png",
+     "x": 447,
+     "y": 1218,
+     "w": 104,
+     "h": 195,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 102,
+     "castName": "1-1",
+     "type": "bitmap",
+     "file": "TTALK/102-1-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 104,
+     "castName": "1-2",
+     "type": "bitmap",
+     "file": "TTALK/104-1-2.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 110,
+     "castName": "1-5",
+     "type": "bitmap",
+     "file": "TTALK/110-1-5.png",
+     "x": 346,
+     "y": 1180,
+     "w": 99,
+     "h": 231,
+     "loc": [
+      401,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 119,
+     "castName": "2-9",
+     "type": "bitmap",
+     "file": "TTALK/119-2-9.png",
+     "x": 545,
+     "y": 206,
+     "w": 87,
+     "h": 205,
+     "loc": [
+      588,
+      308
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "1-7",
+     "type": "bitmap",
+     "file": "TTALK/113-1-7.png",
+     "x": 447,
+     "y": 1218,
+     "w": 104,
+     "h": 195,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "sprites": []
+  },
+  {
+   "n": 15,
+   "transition": {
+    "type": 10,
+    "name": "edgesInSquare",
+    "durationMs": 0,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "script": {
+    "castId": 1,
+    "castName": ""
+   },
+   "palette": {
+    "id": 100,
+    "name": "TTalk",
+    "file": "TTALK/100-TTalk.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 1178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 1213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 1178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 1213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "sprites": []
+  },
+  {
+   "n": 18,
+   "transition": {
+    "type": 10,
+    "name": "edgesInSquare",
+    "durationMs": 0,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "script": {
+    "castId": 1,
+    "castName": ""
+   },
+   "palette": {
+    "id": 100,
+    "name": "TTalk",
+    "file": "TTALK/100-TTalk.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 102,
+     "castName": "1-1",
+     "type": "bitmap",
+     "file": "TTALK/102-1-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 104,
+     "castName": "1-2",
+     "type": "bitmap",
+     "file": "TTALK/104-1-2.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 110,
+     "castName": "1-5",
+     "type": "bitmap",
+     "file": "TTALK/110-1-5.png",
+     "x": 346,
+     "y": 1180,
+     "w": 99,
+     "h": 231,
+     "loc": [
+      401,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 117,
+     "castName": "2-8",
+     "type": "bitmap",
+     "file": "TTALK/117-2-8.png",
+     "x": 213,
+     "y": 229,
+     "w": 78,
+     "h": 190,
+     "loc": [
+      252,
+      324
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "1-7",
+     "type": "bitmap",
+     "file": "TTALK/113-1-7.png",
+     "x": 447,
+     "y": 1218,
+     "w": 104,
+     "h": 195,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 102,
+     "castName": "1-1",
+     "type": "bitmap",
+     "file": "TTALK/102-1-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 104,
+     "castName": "1-2",
+     "type": "bitmap",
+     "file": "TTALK/104-1-2.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 110,
+     "castName": "1-5",
+     "type": "bitmap",
+     "file": "TTALK/110-1-5.png",
+     "x": 346,
+     "y": 1180,
+     "w": 99,
+     "h": 231,
+     "loc": [
+      401,
+      1294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 117,
+     "castName": "2-8",
+     "type": "bitmap",
+     "file": "TTALK/117-2-8.png",
+     "x": 213,
+     "y": 229,
+     "w": 78,
+     "h": 190,
+     "loc": [
+      252,
+      324
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "1-7",
+     "type": "bitmap",
+     "file": "TTALK/113-1-7.png",
+     "x": 447,
+     "y": 1218,
+     "w": 104,
+     "h": 195,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "TTALK/93.png",
+     "x": 282,
+     "y": 1366,
+     "w": 72,
+     "h": 51,
+     "loc": [
+      318,
+      1391
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "to": 21,
+   "sprites": []
+  },
+  {
+   "n": 22,
+   "script": {
+    "castId": 15,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 117,
+     "castName": "2-8",
+     "type": "bitmap",
+     "file": "TTALK/117-2-8.png",
+     "x": 213,
+     "y": 1229,
+     "w": 78,
+     "h": 190,
+     "loc": [
+      252,
+      1324
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 119,
+     "castName": "2-9",
+     "type": "bitmap",
+     "file": "TTALK/119-2-9.png",
+     "x": 545,
+     "y": 1206,
+     "w": 87,
+     "h": 205,
+     "loc": [
+      588,
+      1308
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 1213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 3532,
+     "castName": "Gazet1",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3532-Gazet1.png",
+     "x": 181,
+     "y": 1062,
+     "w": 278,
+     "h": 356,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 3516,
+     "castName": "1880",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3516-1880.png",
+     "x": 181,
+     "y": 1062,
+     "w": 278,
+     "h": 356,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 3540,
+     "castName": "Year1",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3540-Year1.txt",
+     "x": 291,
+     "y": 1064,
+     "w": 58,
+     "h": 16,
+     "loc": [
+      291,
+      1064
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 30,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 194,
+     "y": 1124,
+     "w": 167,
+     "h": 93,
+     "loc": [
+      194,
+      1124
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 31,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 362,
+     "y": 1125,
+     "w": 83,
+     "h": 93,
+     "loc": [
+      362,
+      1125
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 32,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 194,
+     "y": 1216,
+     "w": 82,
+     "h": 97,
+     "loc": [
+      194,
+      1216
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 33,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 284,
+     "y": 1216,
+     "w": 161,
+     "h": 98,
+     "loc": [
+      284,
+      1216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 34,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 194,
+     "y": 1316,
+     "w": 166,
+     "h": 98,
+     "loc": [
+      194,
+      1316
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 35,
+     "castId": 3497,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3497.png",
+     "x": 220,
+     "y": 1190,
+     "w": 200,
+     "h": 100,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 36,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 16,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "script": {
+    "castId": 14,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 117,
+     "castName": "2-8",
+     "type": "bitmap",
+     "file": "TTALK/117-2-8.png",
+     "x": 213,
+     "y": 1229,
+     "w": 78,
+     "h": 190,
+     "loc": [
+      252,
+      1324
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 119,
+     "castName": "2-9",
+     "type": "bitmap",
+     "file": "TTALK/119-2-9.png",
+     "x": 545,
+     "y": 1206,
+     "w": 87,
+     "h": 205,
+     "loc": [
+      588,
+      1308
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 1213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 3532,
+     "castName": "Gazet1",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3532-Gazet1.png",
+     "x": 181,
+     "y": 1062,
+     "w": 278,
+     "h": 356,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 3516,
+     "castName": "1880",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3516-1880.png",
+     "x": 181,
+     "y": 1062,
+     "w": 278,
+     "h": 356,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 3540,
+     "castName": "Year1",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3540-Year1.txt",
+     "x": 291,
+     "y": 1064,
+     "w": 58,
+     "h": 16,
+     "loc": [
+      291,
+      1064
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 30,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 209,
+     "y": 1124,
+     "w": 168,
+     "h": 93,
+     "loc": [
+      209,
+      1124
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 31,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 369,
+     "y": 1125,
+     "w": 85,
+     "h": 93,
+     "loc": [
+      369,
+      1125
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 32,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 196,
+     "y": 1216,
+     "w": 85,
+     "h": 97,
+     "loc": [
+      196,
+      1216
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 33,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 287,
+     "y": 1216,
+     "w": 164,
+     "h": 98,
+     "loc": [
+      287,
+      1216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 34,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 199,
+     "y": 1316,
+     "w": 166,
+     "h": 98,
+     "loc": [
+      199,
+      1316
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 35,
+     "castId": 3497,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3497.png",
+     "x": 220,
+     "y": 1190,
+     "w": 200,
+     "h": 100,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 36,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 16,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "to": 26,
+   "sprites": []
+  },
+  {
+   "n": 27,
+   "script": {
+    "castId": 11,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 117,
+     "castName": "2-8",
+     "type": "bitmap",
+     "file": "TTALK/117-2-8.png",
+     "x": 213,
+     "y": 1229,
+     "w": 78,
+     "h": 190,
+     "loc": [
+      252,
+      1324
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 119,
+     "castName": "2-9",
+     "type": "bitmap",
+     "file": "TTALK/119-2-9.png",
+     "x": 545,
+     "y": 1206,
+     "w": 87,
+     "h": 205,
+     "loc": [
+      588,
+      1308
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 1213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 3529,
+     "castName": "Pic",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3529-Pic.png",
+     "x": 182,
+     "y": 1075,
+     "w": 274,
+     "h": 330,
+     "loc": [
+      258,
+      1165
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 18,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "script": {
+    "castId": 17,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "TT.PCT",
+     "type": "bitmap",
+     "file": "TTALK/101-TT.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "2-1",
+     "type": "bitmap",
+     "file": "TTALK/103-2-1.png",
+     "x": 418,
+     "y": 140,
+     "w": 103,
+     "h": 178,
+     "loc": [
+      469,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 106,
+     "castName": "1-3",
+     "type": "bitmap",
+     "file": "TTALK/106-1-3.png",
+     "x": 182,
+     "y": 93,
+     "w": 100,
+     "h": 217,
+     "loc": [
+      232,
+      201
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 105,
+     "castName": "1-0",
+     "type": "bitmap",
+     "file": "TTALK/105-1-0.png",
+     "x": 46,
+     "y": 142,
+     "w": 189,
+     "h": 175,
+     "loc": [
+      140,
+      229
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 108,
+     "castName": "1-4",
+     "type": "bitmap",
+     "file": "TTALK/108-1-4.png",
+     "x": 285,
+     "y": 132,
+     "w": 90,
+     "h": 212,
+     "loc": [
+      330,
+      238
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 111,
+     "castName": "2-5",
+     "type": "bitmap",
+     "file": "TTALK/111-2-5.png",
+     "x": 347,
+     "y": 178,
+     "w": 99,
+     "h": 233,
+     "loc": [
+      402,
+      294
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 112,
+     "castName": "1-6",
+     "type": "bitmap",
+     "file": "TTALK/112-1-6.png",
+     "x": 24,
+     "y": 230,
+     "w": 146,
+     "h": 215,
+     "loc": [
+      97,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 117,
+     "castName": "2-8",
+     "type": "bitmap",
+     "file": "TTALK/117-2-8.png",
+     "x": 213,
+     "y": 1229,
+     "w": 78,
+     "h": 190,
+     "loc": [
+      252,
+      1324
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 119,
+     "castName": "2-9",
+     "type": "bitmap",
+     "file": "TTALK/119-2-9.png",
+     "x": 545,
+     "y": 1206,
+     "w": 87,
+     "h": 205,
+     "loc": [
+      588,
+      1308
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 115,
+     "castName": "2-7",
+     "type": "bitmap",
+     "file": "TTALK/115-2-7.png",
+     "x": 447,
+     "y": 1213,
+     "w": 104,
+     "h": 200,
+     "loc": [
+      499,
+      1313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 3529,
+     "castName": "Pic",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3529-Pic.png",
+     "x": 182,
+     "y": 1075,
+     "w": 274,
+     "h": 330,
+     "loc": [
+      258,
+      1165
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 120,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "TTALK/120-H1.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 18,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  }
+ ]
+}

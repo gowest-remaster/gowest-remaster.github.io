@@ -1,0 +1,1331 @@
+{
+ "movie": "LOGIN",
+ "source": "LOGIN.DIR",
+ "stage": {
+  "w": 320,
+  "h": 200,
+  "rect": {
+   "top": 140,
+   "left": 160,
+   "bottom": 340,
+   "right": 480
+  },
+  "bgColor": 255,
+  "tempo": 15,
+  "palette": {
+   "id": -101,
+   "builtin": "systemWin",
+   "extractorResolved": "builtin:systemWin"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 2048,
+  "changedBy": "Director user - Edunetics",
+  "createdBy": "Director user - Edunetics",
+  "origDirectory": "N:\\DIRECTOR.LIB\\BOOKMARK\\",
+  "preload": 0
+ },
+ "castLibs": [
+  "LOGIN",
+  "SHARED"
+ ],
+ "castArray": [
+  1,
+  136
+ ],
+ "scoreHeader": {
+  "streamSize": 2246,
+  "frame1Offset": 20,
+  "framesVersion": 4,
+  "spriteRecordSize": 20,
+  "numChannels": 50
+ },
+ "labels": {
+  "login": 2,
+  "confirm": 7,
+  "wrongUserId": 12,
+  "AddNewUser": 20,
+  "NewUserSummary": 25,
+  "exitConfirm": 37,
+  "end": 41
+ },
+ "frameCount": 37,
+ "frames": [
+  {
+   "n": 1,
+   "palette": {
+    "id": 81,
+    "name": "pltLogin",
+    "file": "LOGIN/81-pltLogin.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 82,
+     "castName": "bmpLoginBackground",
+     "type": "bitmap",
+     "file": "LOGIN/82-bmpLoginBackground.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 200,
+     "loc": [
+      160,
+      100
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 4
+    },
+    {
+     "ch": 2,
+     "castId": 83,
+     "castName": "bmpWelcomTitle",
+     "type": "bitmap",
+     "file": "LOGIN/83-bmpWelcomTitle.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 43,
+     "loc": [
+      160,
+      21
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 82,
+     "castName": "bmpLoginBackground",
+     "type": "bitmap",
+     "file": "LOGIN/82-bmpLoginBackground.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 200,
+     "loc": [
+      160,
+      100
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 4
+    },
+    {
+     "ch": 2,
+     "castId": 83,
+     "castName": "bmpWelcomTitle",
+     "type": "bitmap",
+     "file": "LOGIN/83-bmpWelcomTitle.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 43,
+     "loc": [
+      160,
+      21
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 89,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/89.png",
+     "x": 44,
+     "y": 67,
+     "w": 197,
+     "h": 23,
+     "loc": [
+      142,
+      78
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 90,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/90.png",
+     "x": 48,
+     "y": 92,
+     "w": 227,
+     "h": 26,
+     "loc": [
+      161,
+      105
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 2
+    },
+    {
+     "ch": 5,
+     "castId": 42,
+     "castName": "txtUserID",
+     "type": "text",
+     "file": "LOGIN/42-txtUserID.txt",
+     "x": 53,
+     "y": 98,
+     "w": 214,
+     "h": 14,
+     "loc": [
+      53,
+      98
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 21,
+      "castName": "scLoginEditField"
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 14,
+     "castId": 135,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/135.png",
+     "x": 133,
+     "y": 163,
+     "w": 53,
+     "h": 32,
+     "loc": [
+      159,
+      179
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 16,
+     "blend": 204
+    },
+    {
+     "ch": 15,
+     "castId": 129,
+     "castName": "btn ok,up",
+     "type": "bitmap",
+     "file": "LOGIN/129-btn ok,up.png",
+     "x": 141,
+     "y": 167,
+     "w": 38,
+     "h": 25,
+     "loc": [
+      160,
+      179
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 10,
+      "castName": "scBtnLoginOk"
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 133,
+     "castName": "btn exit,up",
+     "type": "bitmap",
+     "file": "LOGIN/133-btn exit,up.png",
+     "x": 283,
+     "y": 162,
+     "w": 23,
+     "h": 33,
+     "loc": [
+      293,
+      177
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 11,
+      "castName": "scBtnExit"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "to": 6,
+   "sprites": []
+  },
+  {
+   "n": 7,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 82,
+     "castName": "bmpLoginBackground",
+     "type": "bitmap",
+     "file": "LOGIN/82-bmpLoginBackground.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 200,
+     "loc": [
+      160,
+      100
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 4
+    },
+    {
+     "ch": 2,
+     "castId": 84,
+     "castName": "bmpCheckingTitle",
+     "type": "bitmap",
+     "file": "LOGIN/84-bmpCheckingTitle.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 43,
+     "loc": [
+      160,
+      21
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 91,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/91.png",
+     "x": 31,
+     "y": 64,
+     "w": 267,
+     "h": 28,
+     "loc": [
+      164,
+      78
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 43,
+     "castName": "txtUserName",
+     "type": "text",
+     "file": "LOGIN/43-txtUserName.txt",
+     "x": 36,
+     "y": 71,
+     "w": 254,
+     "h": 14,
+     "loc": [
+      36,
+      71
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 92,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/92.png",
+     "x": 0,
+     "y": 106,
+     "w": 320,
+     "h": 24,
+     "loc": [
+      160,
+      118
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 135,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/135.png",
+     "x": 105,
+     "y": 157,
+     "w": 53,
+     "h": 32,
+     "loc": [
+      131,
+      173
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 16,
+     "blend": 204
+    },
+    {
+     "ch": 15,
+     "castId": 125,
+     "castName": "btn yes,up",
+     "type": "bitmap",
+     "file": "LOGIN/125-btn yes,up.png",
+     "x": 107,
+     "y": 164,
+     "w": 48,
+     "h": 19,
+     "loc": [
+      131,
+      173
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 12,
+      "castName": "scBtnConfirmYes"
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 127,
+     "castName": "btn no,up",
+     "type": "bitmap",
+     "file": "LOGIN/127-btn no,up.png",
+     "x": 184,
+     "y": 163,
+     "w": 31,
+     "h": 20,
+     "loc": [
+      199,
+      173
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 14,
+      "castName": "scBtnRetry"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "to": 11,
+   "sprites": []
+  },
+  {
+   "n": 12,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 82,
+     "castName": "bmpLoginBackground",
+     "type": "bitmap",
+     "file": "LOGIN/82-bmpLoginBackground.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 200,
+     "loc": [
+      160,
+      100
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 4
+    },
+    {
+     "ch": 2,
+     "castId": 85,
+     "castName": "bmpOopsTitle",
+     "type": "bitmap",
+     "file": "LOGIN/85-bmpOopsTitle.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 43,
+     "loc": [
+      160,
+      21
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 93,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/93.png",
+     "x": 0,
+     "y": 45,
+     "w": 320,
+     "h": 105,
+     "loc": [
+      160,
+      97
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 136,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/136.png",
+     "x": 55,
+     "y": 165,
+     "w": 101,
+     "h": 26,
+     "loc": [
+      105,
+      178
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 14,
+     "flags": [],
+     "thickness": 16,
+     "blend": 204
+    },
+    {
+     "ch": 15,
+     "castId": 121,
+     "castName": "btn tryAgain,up",
+     "type": "bitmap",
+     "file": "LOGIN/121-btn tryAgain,up.png",
+     "x": 59,
+     "y": 168,
+     "w": 93,
+     "h": 20,
+     "loc": [
+      105,
+      178
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 14,
+      "castName": "scBtnRetry"
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 123,
+     "castName": "btn newUser,up",
+     "type": "bitmap",
+     "file": "LOGIN/123-btn newUser,up.png",
+     "x": 163,
+     "y": 168,
+     "w": 93,
+     "h": 20,
+     "loc": [
+      209,
+      178
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 15,
+      "castName": "scBtnAddNewUser"
+     },
+     "flags": []
+    },
+    {
+     "ch": 17,
+     "castId": 133,
+     "castName": "btn exit,up",
+     "type": "bitmap",
+     "file": "LOGIN/133-btn exit,up.png",
+     "x": 283,
+     "y": 162,
+     "w": 23,
+     "h": 33,
+     "loc": [
+      293,
+      177
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 11,
+      "castName": "scBtnExit"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "to": 19,
+   "sprites": []
+  },
+  {
+   "n": 20,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 82,
+     "castName": "bmpLoginBackground",
+     "type": "bitmap",
+     "file": "LOGIN/82-bmpLoginBackground.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 200,
+     "loc": [
+      160,
+      100
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 4
+    },
+    {
+     "ch": 2,
+     "castId": 86,
+     "castName": "bmpNewUserTitle",
+     "type": "bitmap",
+     "file": "LOGIN/86-bmpNewUserTitle.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 43,
+     "loc": [
+      160,
+      21
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 94,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/94.png",
+     "x": 0,
+     "y": 47,
+     "w": 320,
+     "h": 25,
+     "loc": [
+      160,
+      59
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 95,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/95.png",
+     "x": 0,
+     "y": 80,
+     "w": 115,
+     "h": 25,
+     "loc": [
+      57,
+      92
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 97,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/97.png",
+     "x": 114,
+     "y": 83,
+     "w": 173,
+     "h": 27,
+     "loc": [
+      200,
+      96
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 2
+    },
+    {
+     "ch": 8,
+     "castId": 45,
+     "castName": "txtUserFirstName",
+     "type": "text",
+     "file": "LOGIN/45-txtUserFirstName.txt",
+     "x": 121,
+     "y": 89,
+     "w": 159,
+     "h": 16,
+     "loc": [
+      121,
+      89
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 24,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 9,
+     "castId": 96,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/96.png",
+     "x": 0,
+     "y": 123,
+     "w": 115,
+     "h": 24,
+     "loc": [
+      57,
+      135
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 98,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/98.png",
+     "x": 114,
+     "y": 120,
+     "w": 173,
+     "h": 27,
+     "loc": [
+      200,
+      133
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 2
+    },
+    {
+     "ch": 11,
+     "castId": 46,
+     "castName": "txtUserLastName",
+     "type": "text",
+     "file": "LOGIN/46-txtUserLastName.txt",
+     "x": 120,
+     "y": 128,
+     "w": 159,
+     "h": 16,
+     "loc": [
+      120,
+      128
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 24,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 14,
+     "castId": 135,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/135.png",
+     "x": 102,
+     "y": 167,
+     "w": 53,
+     "h": 32,
+     "loc": [
+      128,
+      183
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 16,
+     "blend": 204
+    },
+    {
+     "ch": 15,
+     "castId": 129,
+     "castName": "btn ok,up",
+     "type": "bitmap",
+     "file": "LOGIN/129-btn ok,up.png",
+     "x": 109,
+     "y": 170,
+     "w": 38,
+     "h": 25,
+     "loc": [
+      128,
+      182
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 16,
+      "castName": "scBtnAddNewUserOk"
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 131,
+     "castName": "btn cancel,up",
+     "type": "bitmap",
+     "file": "LOGIN/131-btn cancel,up.png",
+     "x": 176,
+     "y": 169,
+     "w": 25,
+     "h": 25,
+     "loc": [
+      188,
+      181
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 14,
+      "castName": "scBtnRetry"
+     },
+     "flags": []
+    },
+    {
+     "ch": 17,
+     "castId": 133,
+     "castName": "btn exit,up",
+     "type": "bitmap",
+     "file": "LOGIN/133-btn exit,up.png",
+     "x": 283,
+     "y": 162,
+     "w": 23,
+     "h": 33,
+     "loc": [
+      293,
+      177
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 17,
+      "castName": "scBtnAddNewUserQuit"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "to": 24,
+   "sprites": []
+  },
+  {
+   "n": 25,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 82,
+     "castName": "bmpLoginBackground",
+     "type": "bitmap",
+     "file": "LOGIN/82-bmpLoginBackground.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 200,
+     "loc": [
+      160,
+      100
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 4
+    },
+    {
+     "ch": 2,
+     "castId": 87,
+     "castName": "bmpNewUserSummnerTitle",
+     "type": "bitmap",
+     "file": "LOGIN/87-bmpNewUserSummnerTitle.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 43,
+     "loc": [
+      160,
+      21
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 99,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/99.png",
+     "x": 0,
+     "y": 53,
+     "w": 320,
+     "h": 27,
+     "loc": [
+      160,
+      66
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 100,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/100.png",
+     "x": 85,
+     "y": 84,
+     "w": 154,
+     "h": 26,
+     "loc": [
+      162,
+      97
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 44,
+     "castName": "txtUserIDCopy",
+     "type": "text",
+     "file": "LOGIN/44-txtUserIDCopy.txt",
+     "x": 89,
+     "y": 90,
+     "w": 148,
+     "h": 14,
+     "loc": [
+      89,
+      90
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 101,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/101.png",
+     "x": 0,
+     "y": 117,
+     "w": 320,
+     "h": 42,
+     "loc": [
+      160,
+      138
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 135,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/135.png",
+     "x": 133,
+     "y": 163,
+     "w": 53,
+     "h": 32,
+     "loc": [
+      159,
+      179
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 16,
+     "blend": 204
+    },
+    {
+     "ch": 15,
+     "castId": 129,
+     "castName": "btn ok,up",
+     "type": "bitmap",
+     "file": "LOGIN/129-btn ok,up.png",
+     "x": 141,
+     "y": 167,
+     "w": 38,
+     "h": 25,
+     "loc": [
+      160,
+      179
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 12,
+      "castName": "scBtnConfirmYes"
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 133,
+     "castName": "btn exit,up",
+     "type": "bitmap",
+     "file": "LOGIN/133-btn exit,up.png",
+     "x": 283,
+     "y": 162,
+     "w": 23,
+     "h": 33,
+     "loc": [
+      293,
+      177
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 11,
+      "castName": "scBtnExit"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "to": 36,
+   "sprites": []
+  },
+  {
+   "n": 37,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 82,
+     "castName": "bmpLoginBackground",
+     "type": "bitmap",
+     "file": "LOGIN/82-bmpLoginBackground.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 200,
+     "loc": [
+      160,
+      100
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 4
+    },
+    {
+     "ch": 2,
+     "castId": 88,
+     "castName": "bmpExitTitle",
+     "type": "bitmap",
+     "file": "LOGIN/88-bmpExitTitle.png",
+     "x": 0,
+     "y": 0,
+     "w": 320,
+     "h": 43,
+     "loc": [
+      160,
+      21
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 102,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/102.png",
+     "x": 0,
+     "y": 65,
+     "w": 320,
+     "h": 51,
+     "loc": [
+      160,
+      90
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 135,
+     "castName": "",
+     "type": "bitmap",
+     "file": "LOGIN/135.png",
+     "x": 105,
+     "y": 157,
+     "w": 53,
+     "h": 32,
+     "loc": [
+      131,
+      173
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 16,
+     "blend": 204
+    },
+    {
+     "ch": 15,
+     "castId": 125,
+     "castName": "btn yes,up",
+     "type": "bitmap",
+     "file": "LOGIN/125-btn yes,up.png",
+     "x": 107,
+     "y": 164,
+     "w": 48,
+     "h": 19,
+     "loc": [
+      131,
+      173
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 18,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 127,
+     "castName": "btn no,up",
+     "type": "bitmap",
+     "file": "LOGIN/127-btn no,up.png",
+     "x": 184,
+     "y": 163,
+     "w": 31,
+     "h": 20,
+     "loc": [
+      199,
+      173
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 19,
+      "castName": ""
+     },
+     "flags": []
+    }
+   ]
+  }
+ ]
+}

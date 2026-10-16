@@ -1,0 +1,425 @@
+{
+ "note": "Hint (\"?\") texts. Line 1 of each Hints field is a list of [start,end] line pairs (1-based) per hotspot; ranges[] applies it. Sprite order per screen is in the spec (e.g. TSTREET1 g_ListofSprites).",
+ "hints": [
+  {
+   "id": "CALEND.Hints",
+   "movie": "CALEND",
+   "castId": 998,
+   "name": "Hints",
+   "text": "2,4,6,8,10,13,10,13,15,19,20,24,26,28,30,31,33,34,35,36,38,39,41,44,46,47,48,49\nThe general store, the bank and the grain elevator are\nin the town. You can learn about new business\nopportunities there.\n\nIn your house, you can read the newspapers, \nhide your savings,\nand keep a record of your life.\n\nYou can earn money by working in the fields. \nTry to make good decisions about plowing your fields, \nplanting your seeds,\nand harvesting and selling your crops.\n\nThe calendar shows the passage of time.\nWhen the button on top of the calendar is green, \nthe calendar is running. Click on it to stop time from passing.\nWhen the button on top of the calendar is red,\nthe calendar is stopped. Click on it to start running it again.\nWhen you hear the trumpet, choose a trivia card.\nIf you answer  the question on the card correctly, \nyou will win some money.  Tip: You can find answers\nto the trivia questions by reading the  newspapers\nand listening to the conversations in town.\n\nClick here to see what you have achieved \nso far in the game. You can see how much money you have,\nwhat you own, and how close you are to your goal.\n\nWhen the red flag on the mailbox is raised, the mailman\nhas delivered a letter for you. Click on the mailbox to read the letter.\n\nClick here to start over, save your work, \nsee the introduction, or exit.\nClick here to visit with some of your neighbors.\nThey always have something interesting to say.\n\nEach spring you can go to the livestock fair\nto buy and sell animals.\n\nClick on the hammer when you want to build things.\nTo survive, you need a house, a barn, and a well with\na windmill, so build them as soon as you can. You can\nalso build a fence to protect your crops from animals.\n\nThis is how much money you have in cash.\n\nThis is how much money you have in your savings box.\n\n",
+   "source": "text-member",
+   "ranges": [
+    {
+     "index": 1,
+     "lines": [
+      2,
+      4
+     ],
+     "text": "The general store, the bank and the grain elevator are\nin the town. You can learn about new business\nopportunities there."
+    },
+    {
+     "index": 2,
+     "lines": [
+      6,
+      8
+     ],
+     "text": "In your house, you can read the newspapers, \nhide your savings,\nand keep a record of your life."
+    },
+    {
+     "index": 3,
+     "lines": [
+      10,
+      13
+     ],
+     "text": "You can earn money by working in the fields. \nTry to make good decisions about plowing your fields, \nplanting your seeds,\nand harvesting and selling your crops."
+    },
+    {
+     "index": 4,
+     "lines": [
+      10,
+      13
+     ],
+     "text": "You can earn money by working in the fields. \nTry to make good decisions about plowing your fields, \nplanting your seeds,\nand harvesting and selling your crops."
+    },
+    {
+     "index": 5,
+     "lines": [
+      15,
+      19
+     ],
+     "text": "The calendar shows the passage of time.\nWhen the button on top of the calendar is green, \nthe calendar is running. Click on it to stop time from passing.\nWhen the button on top of the calendar is red,\nthe calendar is stopped. Click on it to start running it again."
+    },
+    {
+     "index": 6,
+     "lines": [
+      20,
+      24
+     ],
+     "text": "When you hear the trumpet, choose a trivia card.\nIf you answer  the question on the card correctly, \nyou will win some money.  Tip: You can find answers\nto the trivia questions by reading the  newspapers\nand listening to the conversations in town."
+    },
+    {
+     "index": 7,
+     "lines": [
+      26,
+      28
+     ],
+     "text": "Click here to see what you have achieved \nso far in the game. You can see how much money you have,\nwhat you own, and how close you are to your goal."
+    },
+    {
+     "index": 8,
+     "lines": [
+      30,
+      31
+     ],
+     "text": "When the red flag on the mailbox is raised, the mailman\nhas delivered a letter for you. Click on the mailbox to read the letter."
+    },
+    {
+     "index": 9,
+     "lines": [
+      33,
+      34
+     ],
+     "text": "Click here to start over, save your work, \nsee the introduction, or exit."
+    },
+    {
+     "index": 10,
+     "lines": [
+      35,
+      36
+     ],
+     "text": "Click here to visit with some of your neighbors.\nThey always have something interesting to say."
+    },
+    {
+     "index": 11,
+     "lines": [
+      38,
+      39
+     ],
+     "text": "Each spring you can go to the livestock fair\nto buy and sell animals."
+    },
+    {
+     "index": 12,
+     "lines": [
+      41,
+      44
+     ],
+     "text": "Click on the hammer when you want to build things.\nTo survive, you need a house, a barn, and a well with\na windmill, so build them as soon as you can. You can\nalso build a fence to protect your crops from animals."
+    },
+    {
+     "index": 13,
+     "lines": [
+      46,
+      47
+     ],
+     "text": "This is how much money you have in cash.\n"
+    },
+    {
+     "index": 14,
+     "lines": [
+      48,
+      49
+     ],
+     "text": "This is how much money you have in your savings box.\n"
+    }
+   ]
+  },
+  {
+   "id": "CALEND.Hints1",
+   "movie": "CALEND",
+   "castId": 997,
+   "name": "Hints1",
+   "text": "2,10,12,16,18,26,30,33,30,33,35,37,39,42,44,47,49,50,52,54,55,55,57,67\nClick here to build a sod house. \nOn the Great Plains,  there were no forests, \nso it was difficult and expensive  to build \nwooden houses. People cut the layer of grass \nand soil that forms the surface of the ground,\ncalled sod,  into strips. After the strips of sod \ndried in the sun,  they were used as bricks to\nbuild houses. You need a house to survive\nthe cold Kansas winters.\n\nClick here to build a barn and a wooden fence \naround the barn. The barn has stalls where\nthe animals live and a dry place  to store their food.\nThe animals need a barn to survive\nthe cold Kansas winters.\n\nClick here to dig a well and build a windmill. \nThere were few water sources on the Great Plains. \nMany people dug wells to find water that \nwas deep underground.  They used windmills to \npump water out of the ground. \nWind power turns propellers on a windmill.\nWhen the propellers turn, a pump pushes the water\nup to a small pool on the land surface.  You need \nwater to keep your family and your animals alive.\n\nClick here to build a wooden fence around the field. \n\nClick here to build a barbed-wire fence around the field.\nA barbed-wire fence is better than a wooden fence\nfor keeping  animals out of the field.\nIts sharp pieces hurt animals that touch the fence.\n\nClick here to see which family members can help you.\nDifferent people are available at different times. \nDecide how many family members you want to help you.\n\nClick here to see which neighbors can help you. \nNeighbors are usually happy to help you when \nyou are ready to help them. Decide how many neighbors \nyou want to help you.\n\nClick here to hire workers to help you. \nWorkers are paid by the day. \nDecide how many workers you want to hire. \nWhen their work is done, it is time to pay them.\n\nThis shows how many days it will take to finish\nthe job with the number of helpers you chose.\n\nThis shows how much you will pay for the material\nyou need and the workers you hired for this building job.\n\nClick here if you are sure you want to build.\n\nClick here if you decide not to build. \n \n\n\n",
+   "source": "text-member",
+   "ranges": [
+    {
+     "index": 1,
+     "lines": [
+      2,
+      10
+     ],
+     "text": "Click here to build a sod house. \nOn the Great Plains,  there were no forests, \nso it was difficult and expensive  to build \nwooden houses. People cut the layer of grass \nand soil that forms the surface of the ground,\ncalled sod,  into strips. After the strips of sod \ndried in the sun,  they were used as bricks to\nbuild houses. You need a house to survive\nthe cold Kansas winters."
+    },
+    {
+     "index": 2,
+     "lines": [
+      12,
+      16
+     ],
+     "text": "Click here to build a barn and a wooden fence \naround the barn. The barn has stalls where\nthe animals live and a dry place  to store their food.\nThe animals need a barn to survive\nthe cold Kansas winters."
+    },
+    {
+     "index": 3,
+     "lines": [
+      18,
+      26
+     ],
+     "text": "Click here to dig a well and build a windmill. \nThere were few water sources on the Great Plains. \nMany people dug wells to find water that \nwas deep underground.  They used windmills to \npump water out of the ground. \nWind power turns propellers on a windmill.\nWhen the propellers turn, a pump pushes the water\nup to a small pool on the land surface.  You need \nwater to keep your family and your animals alive."
+    },
+    {
+     "index": 4,
+     "lines": [
+      30,
+      33
+     ],
+     "text": "Click here to build a barbed-wire fence around the field.\nA barbed-wire fence is better than a wooden fence\nfor keeping  animals out of the field.\nIts sharp pieces hurt animals that touch the fence."
+    },
+    {
+     "index": 5,
+     "lines": [
+      30,
+      33
+     ],
+     "text": "Click here to build a barbed-wire fence around the field.\nA barbed-wire fence is better than a wooden fence\nfor keeping  animals out of the field.\nIts sharp pieces hurt animals that touch the fence."
+    },
+    {
+     "index": 6,
+     "lines": [
+      35,
+      37
+     ],
+     "text": "Click here to see which family members can help you.\nDifferent people are available at different times. \nDecide how many family members you want to help you."
+    },
+    {
+     "index": 7,
+     "lines": [
+      39,
+      42
+     ],
+     "text": "Click here to see which neighbors can help you. \nNeighbors are usually happy to help you when \nyou are ready to help them. Decide how many neighbors \nyou want to help you."
+    },
+    {
+     "index": 8,
+     "lines": [
+      44,
+      47
+     ],
+     "text": "Click here to hire workers to help you. \nWorkers are paid by the day. \nDecide how many workers you want to hire. \nWhen their work is done, it is time to pay them."
+    },
+    {
+     "index": 9,
+     "lines": [
+      49,
+      50
+     ],
+     "text": "This shows how many days it will take to finish\nthe job with the number of helpers you chose."
+    },
+    {
+     "index": 10,
+     "lines": [
+      52,
+      54
+     ],
+     "text": "This shows how much you will pay for the material\nyou need and the workers you hired for this building job.\n"
+    },
+    {
+     "index": 11,
+     "lines": [
+      55,
+      55
+     ],
+     "text": "Click here if you are sure you want to build."
+    },
+    {
+     "index": 12,
+     "lines": [
+      57,
+      67
+     ],
+     "text": "Click here if you decide not to build. \n \n\n\n"
+    }
+   ]
+  },
+  {
+   "id": "FIELD.Hints",
+   "movie": "FIELD",
+   "castId": 999,
+   "name": "Hints",
+   "text": "2,10,11,16,18,22\nClick on the squares you want to plow. Each square\nrepresents 20 acres. Decide how many workers to hire\nby clicking on the arrows in the Workers box. To start \nplowing, click on OK. To leave the fields without plowing,\nclick on Cancel. Tip: In the spring try to finish plowing\nyour fields by the end of May, before the heavy summer\nrains start and the ground becomes too muddy for plowing.\nIn the fall, try to finish plowing before the first frost,\nwhich comes in early October.\nOnce you have finished plowing your field, decide which \nseeds to plant. Make sure that you have bought enough \nseeds before you start planting. To plant, drag the seeds\n from the Seeds in Storage to the square you want to plant.\nTo start planting, click on OK. \nTo leave the field without planting, click on Cancel.\n\nDecide how many workers to hire by clicking on the arrows\n in the Workers box. Tip: Try to finish harvesting winter wheat \nin time to prepare your fields for planting summer crops. \nTry to finish harvesting summer crops in time to prepare\n your fields for planting winter wheat.\n",
+   "source": "text-member",
+   "ranges": [
+    {
+     "index": 1,
+     "lines": [
+      2,
+      10
+     ],
+     "text": "Click on the squares you want to plow. Each square\nrepresents 20 acres. Decide how many workers to hire\nby clicking on the arrows in the Workers box. To start \nplowing, click on OK. To leave the fields without plowing,\nclick on Cancel. Tip: In the spring try to finish plowing\nyour fields by the end of May, before the heavy summer\nrains start and the ground becomes too muddy for plowing.\nIn the fall, try to finish plowing before the first frost,\nwhich comes in early October."
+    },
+    {
+     "index": 2,
+     "lines": [
+      11,
+      16
+     ],
+     "text": "Once you have finished plowing your field, decide which \nseeds to plant. Make sure that you have bought enough \nseeds before you start planting. To plant, drag the seeds\n from the Seeds in Storage to the square you want to plant.\nTo start planting, click on OK. \nTo leave the field without planting, click on Cancel."
+    },
+    {
+     "index": 3,
+     "lines": [
+      18,
+      22
+     ],
+     "text": "Decide how many workers to hire by clicking on the arrows\n in the Workers box. Tip: Try to finish harvesting winter wheat \nin time to prepare your fields for planting summer crops. \nTry to finish harvesting summer crops in time to prepare\n your fields for planting winter wheat."
+    }
+   ]
+  },
+  {
+   "id": "TSTREET1.Hints",
+   "movie": "TSTREET1",
+   "castId": 1011,
+   "name": "Hints",
+   "text": "2,3,5,6,8,11,13,16,13,16,18,21,18,21,18,21,18,21,18,21\nAt the general store you can order products\nfrom the catalog or buy seeds.\n\nAt the bank you can receive money you earned or\ninherited. You can also borrow money from the bank.\n\nClick here to sell  your crops.\n\n\n\n\nYou can sell your crops to a grain elevator dealer in another\ntown. Sometimes prices are higher, but you must pay to\nship your crops out of town. Compare prices carefully\nbefore you decide where to sell your crops.\n\nThis business is for sale. Click on the sign to find out\nthe price and the expected monthly income. \nClick on OK to buy the business.\nClick on X to cancel the sale.\n\n",
+   "source": "text-member",
+   "ranges": [
+    {
+     "index": 1,
+     "lines": [
+      2,
+      3
+     ],
+     "text": "At the general store you can order products\nfrom the catalog or buy seeds."
+    },
+    {
+     "index": 2,
+     "lines": [
+      5,
+      6
+     ],
+     "text": "At the bank you can receive money you earned or\ninherited. You can also borrow money from the bank."
+    },
+    {
+     "index": 3,
+     "lines": [
+      8,
+      11
+     ],
+     "text": "Click here to sell  your crops.\n\n\n"
+    },
+    {
+     "index": 4,
+     "lines": [
+      13,
+      16
+     ],
+     "text": "You can sell your crops to a grain elevator dealer in another\ntown. Sometimes prices are higher, but you must pay to\nship your crops out of town. Compare prices carefully\nbefore you decide where to sell your crops."
+    },
+    {
+     "index": 5,
+     "lines": [
+      13,
+      16
+     ],
+     "text": "You can sell your crops to a grain elevator dealer in another\ntown. Sometimes prices are higher, but you must pay to\nship your crops out of town. Compare prices carefully\nbefore you decide where to sell your crops."
+    },
+    {
+     "index": 6,
+     "lines": [
+      18,
+      21
+     ],
+     "text": "This business is for sale. Click on the sign to find out\nthe price and the expected monthly income. \nClick on OK to buy the business.\nClick on X to cancel the sale."
+    },
+    {
+     "index": 7,
+     "lines": [
+      18,
+      21
+     ],
+     "text": "This business is for sale. Click on the sign to find out\nthe price and the expected monthly income. \nClick on OK to buy the business.\nClick on X to cancel the sale."
+    },
+    {
+     "index": 8,
+     "lines": [
+      18,
+      21
+     ],
+     "text": "This business is for sale. Click on the sign to find out\nthe price and the expected monthly income. \nClick on OK to buy the business.\nClick on X to cancel the sale."
+    },
+    {
+     "index": 9,
+     "lines": [
+      18,
+      21
+     ],
+     "text": "This business is for sale. Click on the sign to find out\nthe price and the expected monthly income. \nClick on OK to buy the business.\nClick on X to cancel the sale."
+    },
+    {
+     "index": 10,
+     "lines": [
+      18,
+      21
+     ],
+     "text": "This business is for sale. Click on the sign to find out\nthe price and the expected monthly income. \nClick on OK to buy the business.\nClick on X to cancel the sale."
+    }
+   ]
+  },
+  {
+   "id": "HOUSE1.Hints",
+   "movie": "HOUSE1",
+   "castId": 1000,
+   "name": "Hints",
+   "text": "2,5,7,11,13,14,16,19\nThe logbook is a record of everything you do.\n Open the logbook whenever you want to see what \nyou have done so far. You can write in the logbook \nin the Notes column.\n\nThere is plenty of useful information in the newspapers.\n Sometimes, this can help you earn a big profit.\nWhen you need more information to make an important\n decision,  look in the newspapers. Tip: Answers to some\n trivia-card  questions are in the newspapers.\n\nYou can keep diary of your life in the family album and \nchoose pictures to add to it. You can print out the album.\n\nOne of your goals is to save enough money to fulfill your\n dreams. Banks did not have personal savings accounts \nat this time. To save money,\nhide it in this secret place at home. \n",
+   "source": "text-member",
+   "ranges": [
+    {
+     "index": 1,
+     "lines": [
+      2,
+      5
+     ],
+     "text": "The logbook is a record of everything you do.\n Open the logbook whenever you want to see what \nyou have done so far. You can write in the logbook \nin the Notes column."
+    },
+    {
+     "index": 2,
+     "lines": [
+      7,
+      11
+     ],
+     "text": "There is plenty of useful information in the newspapers.\n Sometimes, this can help you earn a big profit.\nWhen you need more information to make an important\n decision,  look in the newspapers. Tip: Answers to some\n trivia-card  questions are in the newspapers."
+    },
+    {
+     "index": 3,
+     "lines": [
+      13,
+      14
+     ],
+     "text": "You can keep diary of your life in the family album and \nchoose pictures to add to it. You can print out the album."
+    },
+    {
+     "index": 4,
+     "lines": [
+      16,
+      19
+     ],
+     "text": "One of your goals is to save enough money to fulfill your\n dreams. Banks did not have personal savings accounts \nat this time. To save money,\nhide it in this secret place at home. "
+    }
+   ]
+  }
+ ],
+ "qtexts": [
+  {
+   "id": "CALEND.QText",
+   "movie": "CALEND",
+   "castId": 1002,
+   "name": "QText",
+   "text": "The general store, the bank and the grain elevator are\nin the town. You can learn about new business\nopportunities there.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.QText",
+   "movie": "FIELD",
+   "castId": 1028,
+   "name": "QText",
+   "text": "Click on the squares you want to plow. Each square\nrepresents 20 acres. Decide how many workers to hire\nby clicking on the arrows in the Workers box. To start \nplowing, click on OK. To leave the fields without plowing,\nclick on Cancel. Tip: In the spring try to finish plowing\nyour fields by the end of May, before the heavy summer\nrains start and the ground becomes too muddy for plowing.\nIn the fall, try to finish plowing before the first frost,\nwhich comes in early October.",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.QText",
+   "movie": "HOUSE1",
+   "castId": 1054,
+   "name": "QText",
+   "text": "There is plenty of useful information in the newspapers.\n Sometimes, this can help you earn a big profit.\nWhen you need more information to make an important\n decision,  look in the newspapers. Tip: Answers to some\n trivia-card  questions are in the newspapers.",
+   "source": "text-member"
+  }
+ ]
+}

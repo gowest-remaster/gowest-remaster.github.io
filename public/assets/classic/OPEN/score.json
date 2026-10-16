@@ -1,0 +1,290 @@
+{
+ "movie": "OPEN",
+ "source": "OPEN.DIR",
+ "stage": {
+  "w": 640,
+  "h": 480,
+  "rect": {
+   "top": 60,
+   "left": 80,
+   "bottom": 540,
+   "right": 720
+  },
+  "bgColor": 255,
+  "tempo": 15,
+  "palette": {
+   "id": 2,
+   "name": "openning palette",
+   "file": "OPEN/2-openning palette.palette.json",
+   "extractorResolved": "member:2:openning palette"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 2080,
+  "changedBy": "Video Station - Edunetics",
+  "createdBy": "Director user - Edunetics",
+  "origDirectory": "M:\\SVIVOT\\SECO\\QC\\",
+  "preload": 0
+ },
+ "castLibs": [
+  "OPEN",
+  "SHARED"
+ ],
+ "castArray": [
+  1,
+  14
+ ],
+ "scoreHeader": {
+  "streamSize": 230,
+  "frame1Offset": 20,
+  "framesVersion": 4,
+  "spriteRecordSize": 20,
+  "numChannels": 50
+ },
+ "labels": {
+  "end": 6
+ },
+ "frameCount": 9,
+ "frames": [
+  {
+   "n": 1,
+   "palette": {
+    "id": -101,
+    "builtin": "systemWin",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": []
+  },
+  {
+   "n": 2,
+   "palette": {
+    "id": 2,
+    "name": "openning palette",
+    "file": "OPEN/2-openning palette.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 8,
+     "castName": "",
+     "type": "shape",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      0,
+      0
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 2
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "script": {
+    "castId": 5,
+    "castName": "start the video"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3,
+     "castName": "POSTER3.PCT",
+     "type": "bitmap",
+     "file": "OPEN/3-POSTER3.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "script": {
+    "castId": 6,
+    "castName": "while the video is running"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3,
+     "castName": "POSTER3.PCT",
+     "type": "bitmap",
+     "file": "OPEN/3-POSTER3.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 4,
+     "castName": "openningVideo",
+     "type": "digitalVideo",
+     "x": 155,
+     "y": 190,
+     "w": 320,
+     "h": 200,
+     "loc": [
+      315,
+      290
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "script": {
+    "castId": 8,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3,
+     "castName": "POSTER3.PCT",
+     "type": "bitmap",
+     "file": "OPEN/3-POSTER3.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "script": {
+    "castId": 10,
+    "castName": "startMovie clone"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3,
+     "castName": "POSTER3.PCT",
+     "type": "bitmap",
+     "file": "OPEN/3-POSTER3.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "script": {
+    "castId": 11,
+    "castName": "startMovie clone (cont.)"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3,
+     "castName": "POSTER3.PCT",
+     "type": "bitmap",
+     "file": "OPEN/3-POSTER3.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "transition": {
+    "type": 10,
+    "name": "edgesInSquare",
+    "durationMs": 2000,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "sprites": []
+  },
+  {
+   "n": 9,
+   "script": {
+    "castId": 7,
+    "castName": "leave the openning movie"
+   },
+   "sprites": []
+  }
+ ]
+}

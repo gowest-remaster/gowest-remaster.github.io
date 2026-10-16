@@ -1,0 +1,83 @@
+/* Shared panel layouts: place drawers, sheets (books over the world), floating cards.
+   Panel-specific styles live next to the panel (styles/*.css). */
+
+/* ---------------------------------------------------------------- place drawers */
+.drawer {
+  position: absolute; top: 4.2rem; bottom: calc(var(--hud-h) + 0.9rem); right: 1rem; width: min(27rem, 42vw);
+  display: flex; flex-direction: column; overflow: hidden; padding: 0;
+}
+.drawer.left { right: auto; left: 1rem; top: calc(3.9rem + var(--obj-h, 0px)); transition: top 0.2s ease; }
+.drawer.wide { width: min(46rem, 62vw); }
+.drawer > .drawer-head { padding: 0.9rem 1.1rem 0.4rem; border-bottom: 1px solid var(--parch-shade); }
+.drawer > .drawer-body { padding: 0.8rem 1.1rem 1rem; overflow: auto; flex: 1; min-height: 0; }
+.drawer > .drawer-foot { padding: 0.7rem 1.1rem 0.9rem; border-top: 1px solid var(--parch-shade); background: rgba(255, 255, 255, 0.25); }
+.drawer-title { font-family: var(--display); font-size: 1.45rem; margin: 0; line-height: 1.1; }
+.float { position: absolute; }
+.float.tl { top: calc(3.9rem + var(--obj-h, 0px)); left: 1rem; transition: top 0.2s ease; }
+.float.tr { top: 4.2rem; right: 1rem; }
+.float.tc { top: 0.8rem; left: 50%; transform: translateX(-50%); }
+.float.bl { bottom: calc(var(--hud-h) + 0.9rem); left: 1rem; }
+.float.br { bottom: calc(var(--hud-h) + 0.9rem); right: 1rem; }
+
+/* ---------------------------------------------------------------- sheets */
+.rm-sheet-wrap { position: absolute; inset: 0; pointer-events: auto; }
+.rm-sheet-backdrop { position: absolute; inset: 0; background: radial-gradient(120% 90% at 50% 40%, rgba(20, 10, 2, 0.45), rgba(10, 5, 0, 0.72)); }
+.rm-sheet { position: absolute; left: 50%; top: 3.9rem; bottom: calc(var(--hud-h) + 0.7rem); transform: translateX(-50%); width: min(70rem, 96vw); display: flex; }
+.rm-sheet.size-md { width: min(44rem, 96vw); }
+.rm-sheet.size-xl { width: min(84rem, 97vw); }
+.rm-sheet.size-full { width: calc(100vw - 2rem); }
+.sheet-card { flex: 1; display: flex; flex-direction: column; padding: 0; overflow: hidden; min-width: 0; }
+.sheet-head { display: flex; align-items: flex-end; gap: 1rem; padding: 1rem 1.4rem 0; }
+.sheet-head .titles { flex: 1; min-width: 0; }
+.sheet-title { font-family: var(--display); font-weight: 400; font-size: 2rem; margin: 0; line-height: 1.05; }
+.sheet-sub { color: var(--ink-soft); font-style: italic; font-size: 0.95rem; }
+.sheet-close { width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid var(--parch-edge); background: rgba(255, 255, 255, 0.5); cursor: pointer; padding: 0.55rem; color: var(--ink); align-self: flex-start; }
+.sheet-close svg { width: 100%; height: 100%; }
+.sheet-tabs { padding: 0.6rem 1.4rem 0; }
+.sheet-tabs .tabs { margin-bottom: 0; }
+.sheet-body { flex: 1; overflow: auto; padding: 1rem 1.4rem 1.4rem; min-height: 0; }
+.sheet-foot { padding: 0.7rem 1.4rem; border-top: 1px solid var(--parch-shade); display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
+/* book: two-page spread with a gutter shadow */
+.book { background: linear-gradient(90deg, var(--parch) 0, var(--parch-hi) 48%, #e6d3a8 50%, var(--parch-hi) 52%, var(--parch) 100%); }
+
+/* ---------------------------------------------------------------- common bits */
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 0.25rem 0.9rem; font-size: 0.93rem; }
+.kv dt { color: var(--ink-soft); }
+.kv dd { margin: 0; text-align: right; }
+.empty { color: var(--ink-faint); font-style: italic; text-align: center; padding: 1.5rem 0.5rem; }
+.pill { display: inline-block; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.08rem 0.45rem; border-radius: 4px; background: var(--green); color: #fff8e6; vertical-align: 2px; }
+.pill.red { background: var(--red); }
+.pill.brass { background: var(--brass-lo); }
+.pill.blue { background: var(--blue); }
+.stamp { display: inline-block; font-family: var(--engraved); color: var(--red); border: 2px solid var(--red); border-radius: 4px; padding: 0.05rem 0.5rem; transform: rotate(-6deg); letter-spacing: 0.08em; opacity: 0.85; }
+.icon-row { display: flex; gap: 0.5rem; align-items: center; }
+.icon-row > .ico { color: var(--brass-lo); width: 1.3rem; height: 1.3rem; }
+.lore { display: flex; gap: 0.5rem; align-items: flex-start; font-style: italic; color: var(--ink-soft); font-size: 0.9rem; }
+.lore .ico { color: var(--brass-lo); margin-top: 0.15rem; }
+.list-total { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: space-between; margin-top: 0.6rem; font-family: var(--display); font-size: 1.15rem; }
+.checklist { display: grid; gap: 0.35rem; }
+.check-row { display: grid; grid-template-columns: auto 1fr auto; gap: 0.6rem; align-items: center; padding: 0.45rem 0.6rem; border: 1px solid var(--parch-edge); border-radius: 8px; background: rgba(255, 255, 255, 0.4); cursor: pointer; }
+.check-row:hover { background: rgba(255, 255, 255, 0.7); }
+.check-row:has(input:checked) { border-color: var(--green); background: color-mix(in srgb, var(--green) 8%, white); }
+.check-row .price { font-family: var(--display); }
+
+/* charts */
+.chart { width: 100%; display: block; overflow: visible; }
+.chart text { font-family: var(--serif); fill: var(--ink-soft); font-size: 11px; }
+.chart .axis { stroke: var(--parch-edge); }
+.chart .grid { stroke: var(--parch-shade); }
+.legend { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; font-size: 0.82rem; color: var(--ink-soft); }
+.legend i { display: inline-block; width: 0.9rem; height: 0.25rem; border-radius: 2px; margin-right: 0.35rem; vertical-align: middle; }
+
+@media (max-width: 900px) {
+  .drawer { width: min(27rem, 94vw); left: auto; right: 0.5rem; }
+  .drawer.left { left: 0.5rem; }
+  .drawer.wide { width: calc(100vw - 1rem); }
+}
+
+/* calm-ui §6: books open beside the scene (docked right), not over it; click outside or Esc closes */
+.rm-sheet { left: auto; right: 1rem; transform: none; width: min(60rem, calc(100vw - 2rem)); }
+.rm-sheet.size-md { width: min(40rem, calc(100vw - 2rem)); }
+.rm-sheet.size-xl { width: min(70rem, calc(100vw - 2rem)); }
+.rm-sheet.size-full { width: calc(100vw - 2rem); }
+.rm-sheet-backdrop { background: linear-gradient(90deg, rgba(10, 5, 0, 0.05), rgba(10, 5, 0, 0.35) 55%, rgba(10, 5, 0, 0.45)); }

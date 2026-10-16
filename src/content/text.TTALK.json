@@ -1,0 +1,30 @@
+{
+ "movie": "TTALK",
+ "origin": "assets/TTALK/",
+ "members": [
+  {
+   "castId": 998,
+   "name": "FBytes",
+   "type": "text",
+   "text": "freeBlock   8634"
+  },
+  {
+   "castId": 999,
+   "name": "FBlock",
+   "type": "text",
+   "text": "freeBytes   8634"
+  },
+  {
+   "castId": 1000,
+   "name": "MSize",
+   "type": "text",
+   "text": "memorySize   14555"
+  },
+  {
+   "castId": 1001,
+   "name": "",
+   "type": "text",
+   "text": "Well, neighbor, you made it! You built a home in the new world with hard work and a dream. As a bright, new era begins for America, you can look back on your four decades in Longview, \nKansas and feel mighty proud.\n"
+  }
+ ]
+}

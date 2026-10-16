@@ -1,0 +1,1534 @@
+{
+ "version": 1,
+ "view": "elevator",
+ "camera": {
+  "pos": [
+   -766,
+   2.6,
+   -1392
+  ],
+  "look": [
+   -792,
+   9,
+   -1432
+  ],
+  "up": [
+   0,
+   1,
+   0
+  ],
+  "fovY": 67.60000000000001,
+  "aspect": 1.7777777777777777,
+  "near": 0.3,
+  "far": 9000
+ },
+ "overscan": 1.3,
+ "size": [
+  2560,
+  1440
+ ],
+ "encoding": {
+  "beauty": "RGBM",
+  "range": 8,
+  "linear": true,
+  "fogBaked": true
+ },
+ "live": [
+  "crops",
+  "fieldSquares",
+  "people",
+  "animals",
+  "windmillWheel",
+  "smoke",
+  "weather"
+ ],
+ "shadowMatte": {
+  "strength": 0.8,
+  "maxDistance": 60
+ },
+ "layers": [
+  {
+   "id": "freight_office",
+   "when": {
+    "freightOffice": true
+   },
+   "bbox": [
+    0,
+    755,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     748,
+     2560,
+     1440
+    ],
+    "morning": [
+     684,
+     748,
+     2472,
+     1380
+    ],
+    "overcast": [
+     664,
+     748,
+     2472,
+     1440
+    ],
+    "snow": [
+     804,
+     748,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "town_0p00-0p10",
+   "when": {
+    "townGrowthMin": 0,
+    "townGrowthBelow": 0.15
+   },
+   "bbox": [
+    0,
+    884,
+    2498,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p00-0p15",
+   "when": {
+    "townGrowthMin": 0,
+    "townGrowthBelow": 0.2
+   },
+   "bbox": [
+    17,
+    882,
+    2482,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p00-0p25",
+   "when": {
+    "townGrowthMin": 0,
+    "townGrowthBelow": 0.3
+   },
+   "bbox": [
+    0,
+    879,
+    2538,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p00-0p30",
+   "when": {
+    "townGrowthMin": 0,
+    "townGrowthBelow": 0.35
+   },
+   "bbox": null,
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p00-0p35",
+   "when": {
+    "townGrowthMin": 0,
+    "townGrowthBelow": 0.4
+   },
+   "bbox": [
+    1323,
+    888,
+    2114,
+    1362
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p00-0p70",
+   "when": {
+    "townGrowthMin": 0,
+    "townGrowthBelow": 0.75
+   },
+   "bbox": [
+    0,
+    275,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     280,
+     2560,
+     1440
+    ],
+    "morning": [
+     412,
+     280,
+     2472,
+     1440
+    ],
+    "overcast": [
+     0,
+     280,
+     2560,
+     1440
+    ],
+    "snow": [
+     0,
+     280,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "town_0p10-1p00",
+   "when": {
+    "townGrowthMin": 0.1
+   },
+   "bbox": [
+    0,
+    885,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     1364
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     2080,
+     1344,
+     2100,
+     1380
+    ]
+   }
+  },
+  {
+   "id": "town_0p15-1p00",
+   "when": {
+    "townGrowthMin": 0.15
+   },
+   "bbox": [
+    0,
+    882,
+    2559,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p20-0p40",
+   "when": {
+    "townGrowthMin": 0.2,
+    "townGrowthBelow": 0.45
+   },
+   "bbox": [
+    0,
+    878,
+    2496,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p20-1p00",
+   "when": {
+    "townGrowthMin": 0.2
+   },
+   "bbox": [
+    9,
+    883,
+    2555,
+    1439
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p25-1p00",
+   "when": {
+    "townGrowthMin": 0.25
+   },
+   "bbox": [
+    0,
+    884,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     232,
+     848,
+     2472,
+     1440
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     1440
+    ],
+    "overcast": [
+     148,
+     848,
+     2472,
+     1440
+    ],
+    "snow": [
+     844,
+     1168,
+     2172,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "town_0p30-0p65",
+   "when": {
+    "townGrowthMin": 0.3,
+    "townGrowthBelow": 0.7
+   },
+   "bbox": [
+    0,
+    884,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p30-1p00",
+   "when": {
+    "townGrowthMin": 0.3
+   },
+   "bbox": [
+    0,
+    879,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     668,
+     848,
+     2472,
+     1424
+    ],
+    "morning": [
+     684,
+     848,
+     2536,
+     1364
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     1424
+    ],
+    "snow": [
+     2032,
+     1196,
+     2136,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "town_0p35-1p00",
+   "when": {
+    "townGrowthMin": 0.35
+   },
+   "bbox": [
+    0,
+    880,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     1368
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p40-1p00",
+   "when": {
+    "townGrowthMin": 0.4
+   },
+   "bbox": [
+    0,
+    886,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     1144
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     1364
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     1368
+    ],
+    "snow": [
+     1536,
+     1276,
+     2132,
+     1308
+    ]
+   }
+  },
+  {
+   "id": "town_0p45-1p00",
+   "when": {
+    "townGrowthMin": 0.45
+   },
+   "bbox": [
+    0,
+    878,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p50-1p00",
+   "when": {
+    "townGrowthMin": 0.5
+   },
+   "bbox": null,
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p55-1p00",
+   "when": {
+    "townGrowthMin": 0.55
+   },
+   "bbox": [
+    5,
+    1053,
+    2136,
+    1418
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p60-1p00",
+   "when": {
+    "townGrowthMin": 0.6
+   },
+   "bbox": [
+    28,
+    1067,
+    1752,
+    1376
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p65-1p00",
+   "when": {
+    "townGrowthMin": 0.65
+   },
+   "bbox": [
+    0,
+    403,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     404,
+     2560,
+     1440
+    ],
+    "morning": [
+     212,
+     404,
+     2472,
+     1440
+    ],
+    "overcast": [
+     0,
+     404,
+     2516,
+     1440
+    ],
+    "snow": [
+     0,
+     404,
+     2500,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "town_0p70-1p00",
+   "when": {
+    "townGrowthMin": 0.7
+   },
+   "bbox": [
+    0,
+    883,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     1364
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p75-1p00",
+   "when": {
+    "townGrowthMin": 0.75
+   },
+   "bbox": [
+    0,
+    275,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     280,
+     2560,
+     1440
+    ],
+    "morning": [
+     24,
+     280,
+     2504,
+     1440
+    ],
+    "overcast": [
+     0,
+     280,
+     2560,
+     1440
+    ],
+    "snow": [
+     0,
+     280,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "town_0p80-1p00",
+   "when": {
+    "townGrowthMin": 0.8
+   },
+   "bbox": [
+    0,
+    882,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     24,
+     848,
+     2560,
+     1440
+    ],
+    "morning": [
+     20,
+     848,
+     2504,
+     1440
+    ],
+    "overcast": [
+     0,
+     848,
+     2488,
+     1440
+    ],
+    "snow": [
+     0,
+     952,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "town_0p85-1p00",
+   "when": {
+    "townGrowthMin": 0.85
+   },
+   "bbox": [
+    0,
+    880,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_0p95-1p00",
+   "when": {
+    "townGrowthMin": 0.95
+   },
+   "bbox": [
+    0,
+    880,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     1380
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_b0_0p00-1p00_or_0p40-1p00",
+   "when": {
+    "any": [
+     {
+      "business0": true,
+      "townGrowthMin": 0
+     },
+     {
+      "townGrowthMin": 0.4
+     }
+    ]
+   },
+   "bbox": [
+    0,
+    884,
+    2559,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_b1_0p00-1p00_or_0p50-1p00",
+   "when": {
+    "any": [
+     {
+      "business1": true,
+      "townGrowthMin": 0
+     },
+     {
+      "townGrowthMin": 0.5
+     }
+    ]
+   },
+   "bbox": [
+    0,
+    882,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     1368
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_b2_0p00-0p80_or_0p60-0p80",
+   "when": {
+    "any": [
+     {
+      "business2": true,
+      "townGrowthMin": 0,
+      "townGrowthBelow": 0.85
+     },
+     {
+      "townGrowthMin": 0.6,
+      "townGrowthBelow": 0.85
+     }
+    ]
+   },
+   "bbox": [
+    3,
+    880,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_b2_0p00-1p00_or_0p60-1p00",
+   "when": {
+    "any": [
+     {
+      "business2": true,
+      "townGrowthMin": 0
+     },
+     {
+      "townGrowthMin": 0.6
+     }
+    ]
+   },
+   "bbox": [
+    891,
+    1067,
+    1491,
+    1309
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_b3_0p00-0p90_or_0p25-0p90",
+   "when": {
+    "any": [
+     {
+      "business3": true,
+      "townGrowthMin": 0,
+      "townGrowthBelow": 0.95
+     },
+     {
+      "townGrowthMin": 0.25,
+      "townGrowthBelow": 0.95
+     }
+    ]
+   },
+   "bbox": [
+    0,
+    880,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_b3_0p00-1p00_or_0p25-1p00",
+   "when": {
+    "any": [
+     {
+      "business3": true,
+      "townGrowthMin": 0
+     },
+     {
+      "townGrowthMin": 0.25
+     }
+    ]
+   },
+   "bbox": [
+    855,
+    1049,
+    1549,
+    1439
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_b3_0p10-1p00_or_0p25-1p00",
+   "when": {
+    "any": [
+     {
+      "business3": true,
+      "townGrowthMin": 0.1
+     },
+     {
+      "townGrowthMin": 0.25
+     }
+    ]
+   },
+   "bbox": [
+    98,
+    1027,
+    2498,
+    1438
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "town_nb3_0p00-0p20",
+   "when": {
+    "business3": false,
+    "townGrowthMin": 0,
+    "townGrowthBelow": 0.25
+   },
+   "bbox": [
+    0,
+    884,
+    2551,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "morning": [
+     684,
+     848,
+     2472,
+     900
+    ],
+    "overcast": [
+     664,
+     848,
+     2472,
+     900
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  }
+ ],
+ "keys": {
+  "golden": {
+   "sunDir": [
+    -0.92,
+    0.389,
+    0.013
+   ],
+   "sunColor": [
+    1,
+    0.8,
+    0.6
+   ],
+   "sunIntensity": 6.499999999999999,
+   "ambient": [
+    0.08913683373994488,
+    0.09750431756872338,
+    0.09420805400859586
+   ],
+   "ambientUp": [
+    0.49950268059242453,
+    0.6189784935297526,
+    0.7354637841870474
+   ],
+   "ambientDown": [
+    0.2086958764493023,
+    0.22781200651927477,
+    0.2464496530244419
+   ],
+   "exposure": 0.7460399926228267,
+   "hdri": "golden",
+   "units": "sunIntensity is three.js DirectionalLight intensity (white Lambert = I/pi * NdotL); ambient* are white-Lambert outputs"
+  },
+  "morning": {
+   "sunDir": [
+    0.7283325213098806,
+    0.684190641468831,
+    0.037615216719588666
+   ],
+   "sunColor": [
+    1,
+    0.9662871432652467,
+    0.9466053618419065
+   ],
+   "sunIntensity": 9.000000000000002,
+   "ambient": [
+    0.45066319599842664,
+    0.48398191992069084,
+    0.5879274617253383
+   ],
+   "ambientUp": [
+    0.7743365564589006,
+    0.8970474794643432,
+    1.305831031640386
+   ],
+   "ambientDown": [
+    0.43750373814152427,
+    0.45713748582239505,
+    0.5225428541705619
+   ],
+   "exposure": 0.62,
+   "hdri": "clear",
+   "units": "sunIntensity is three.js DirectionalLight intensity (white Lambert = I/pi * NdotL); ambient* are white-Lambert outputs"
+  },
+  "overcast": {
+   "sunDir": [
+    -0.2549167475848553,
+    0.6368518610617878,
+    0.7276243253650172
+   ],
+   "sunColor": [
+    1,
+    1,
+    1
+   ],
+   "sunIntensity": 0,
+   "ambient": [
+    0.5510935817384409,
+    0.5881565051509079,
+    0.6608922190250469
+   ],
+   "ambientUp": [
+    2.0070559978606997,
+    2.1777554507956083,
+    2.565272370141737
+   ],
+   "ambientDown": [
+    0.32112895965771193,
+    0.34844087212729735,
+    0.41044357922267793
+   ],
+   "exposure": 1.1170675307294606,
+   "hdri": "overcast",
+   "units": "sunIntensity is three.js DirectionalLight intensity (white Lambert = I/pi * NdotL); ambient* are white-Lambert outputs"
+  },
+  "snow": {
+   "sunDir": [
+    0.24131632900631628,
+    0.47978577838438335,
+    0.8435472934074335
+   ],
+   "sunColor": [
+    1,
+    1,
+    1
+   ],
+   "sunIntensity": 0,
+   "ambient": [
+    1.9024960570200515,
+    1.9003944436099687,
+    1.8386341086066935
+   ],
+   "ambientUp": [
+    1.5522018223052032,
+    1.522501129464213,
+    1.5132004904852911
+   ],
+   "ambientDown": [
+    0.2483522915688325,
+    0.24360018071427408,
+    0.2421120784776466
+   ],
+   "exposure": 1.0262630537811415,
+   "hdri": "snow",
+   "units": "sunIntensity is three.js DirectionalLight intensity (white Lambert = I/pi * NdotL); ambient* are white-Lambert outputs"
+  }
+ },
+ "data": "logdepth8",
+ "dataDepth": {
+  "d0": 0.25,
+  "lnRange": 12.468436909997665
+ }
+}

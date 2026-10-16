@@ -1,0 +1,2576 @@
+{
+ "movie": "ALBUM",
+ "source": "ALBUM.DIR",
+ "stage": {
+  "w": 640,
+  "h": 480,
+  "rect": {
+   "top": 0,
+   "left": 0,
+   "bottom": 480,
+   "right": 640
+  },
+  "bgColor": 0,
+  "tempo": 15,
+  "palette": {
+   "id": 105,
+   "name": "HouseNew",
+   "file": "ALBUM/105-HouseNew.palette.json",
+   "extractorResolved": "member:105:HouseNew"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 32,
+  "changedBy": "Alla - ",
+  "createdBy": "Alla - Edunetics",
+  "origDirectory": "P:\\SECO\\QC\\",
+  "preload": 0
+ },
+ "castLibs": [
+  "ALBUM",
+  "SHARED"
+ ],
+ "castArray": [
+  2,
+  1353
+ ],
+ "scoreHeader": {
+  "streamSize": 1918,
+  "frame1Offset": 20,
+  "framesVersion": 4,
+  "spriteRecordSize": 20,
+  "numChannels": 50
+ },
+ "labels": {
+  "Album": 2,
+  "Alb1": 4,
+  "Alb2": 5,
+  "AlbBig": 7,
+  "Print": 11,
+  "NoPrint": 12
+ },
+ "frameCount": 12,
+ "frames": [
+  {
+   "n": 1,
+   "transition": {
+    "type": 9,
+    "name": "centerOutSquare",
+    "durationMs": 2000,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "palette": {
+    "id": 105,
+    "name": "HouseNew",
+    "file": "ALBUM/105-HouseNew.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 104,
+     "castName": "Main",
+     "type": "bitmap",
+     "file": "ALBUM/104-Main.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 33,
+     "castId": 133,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/133.png",
+     "x": 0,
+     "y": 424,
+     "w": 195,
+     "h": 54,
+     "loc": [
+      97,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 108,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      108,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "script": {
+    "castId": 5,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 104,
+     "castName": "Main",
+     "type": "bitmap",
+     "file": "ALBUM/104-Main.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 110,
+     "castName": "",
+     "type": "shape",
+     "x": 4,
+     "y": 423,
+     "w": 633,
+     "h": 56,
+     "loc": [
+      4,
+      423
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 3,
+     "castId": 110,
+     "castName": "",
+     "type": "shape",
+     "x": 150,
+     "y": 48,
+     "w": 420,
+     "h": 367,
+     "loc": [
+      150,
+      48
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 10,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 33,
+     "castId": 133,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/133.png",
+     "x": 0,
+     "y": 424,
+     "w": 195,
+     "h": 54,
+     "loc": [
+      97,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 108,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      108,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "script": {
+    "castId": 6,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 104,
+     "castName": "Main",
+     "type": "bitmap",
+     "file": "ALBUM/104-Main.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 110,
+     "castName": "",
+     "type": "shape",
+     "x": 150,
+     "y": 48,
+     "w": 420,
+     "h": 367,
+     "loc": [
+      150,
+      48
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 10,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 33,
+     "castId": 133,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/133.png",
+     "x": 0,
+     "y": 424,
+     "w": 195,
+     "h": 54,
+     "loc": [
+      97,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 108,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      108,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "script": {
+    "castId": 12,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 117,
+     "castName": "NUALB1",
+     "type": "bitmap",
+     "file": "ALBUM/117-NUALB1.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 368,
+     "castName": "PicS",
+     "type": "bitmap",
+     "file": "ALBUM/368-PicS.png",
+     "x": 1056,
+     "y": 60,
+     "w": 239,
+     "h": 227,
+     "loc": [
+      1175,
+      173
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 110,
+     "castName": "",
+     "type": "shape",
+     "x": 58,
+     "y": 62,
+     "w": 234,
+     "h": 223,
+     "loc": [
+      58,
+      62
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 5,
+     "castId": 1055,
+     "castName": "CurrentPage",
+     "type": "text",
+     "file": "ALBUM/1055-CurrentPage.txt",
+     "x": 450,
+     "y": 32,
+     "w": 24,
+     "h": 21,
+     "loc": [
+      450,
+      32
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 100,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/100.png",
+     "x": 157,
+     "y": 1296,
+     "w": 13,
+     "h": 21,
+     "loc": [
+      158,
+      1307
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 19,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 102,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/102.png",
+     "x": 182,
+     "y": 1296,
+     "w": 12,
+     "h": 21,
+     "loc": [
+      188,
+      1306
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 20,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 1050,
+     "castName": "Text0",
+     "type": "text",
+     "file": "ALBUM/1050-Text0.txt",
+     "x": 366,
+     "y": 86,
+     "w": 198,
+     "h": 236,
+     "loc": [
+      366,
+      86
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 11,
+     "castId": 100,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/100.png",
+     "x": 32,
+     "y": 1355,
+     "w": 13,
+     "h": 21,
+     "loc": [
+      33,
+      1366
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 102,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/102.png",
+     "x": 591,
+     "y": 1356,
+     "w": 12,
+     "h": 21,
+     "loc": [
+      597,
+      1366
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 108,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/108.png",
+     "x": 553,
+     "y": 439,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      590,
+      456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 18,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 14,
+     "castId": 106,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/106.png",
+     "x": 474,
+     "y": 1439,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      511,
+      1456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 7,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 15,
+     "castId": 3556,
+     "castName": "A-CALL1.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3556-A-CALL1.PCT.png",
+     "x": 1,
+     "y": 1349,
+     "w": 80,
+     "h": 43,
+     "loc": [
+      41,
+      1370
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 114,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/114.png",
+     "x": 395,
+     "y": 1439,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      433,
+      1442
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 124,
+     "castName": "TTT",
+     "type": "bitmap",
+     "file": "ALBUM/124-TTT.png",
+     "x": 153,
+     "y": 1144,
+     "w": 334,
+     "h": 199,
+     "loc": [
+      320,
+      1243
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 21,
+     "castId": 1299,
+     "castName": "AT",
+     "type": "text",
+     "file": "ALBUM/1299-AT.txt",
+     "x": 199,
+     "y": 1202,
+     "w": 251,
+     "h": 48,
+     "loc": [
+      199,
+      1202
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 22,
+     "castId": 129,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/129.png",
+     "x": 393,
+     "y": 1306,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      407,
+      1316
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 131,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/131.png",
+     "x": 429,
+     "y": 1306,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      443,
+      1317
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 125,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/125.png",
+     "x": 299,
+     "y": 1307,
+     "w": 13,
+     "h": 21,
+     "loc": [
+      300,
+      1318
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 127,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/127.png",
+     "x": 319,
+     "y": 1307,
+     "w": 12,
+     "h": 21,
+     "loc": [
+      325,
+      1317
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 33,
+     "castId": 133,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/133.png",
+     "x": 0,
+     "y": 424,
+     "w": 195,
+     "h": 54,
+     "loc": [
+      97,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 108,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      108,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "script": {
+    "castId": 4,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 117,
+     "castName": "NUALB1",
+     "type": "bitmap",
+     "file": "ALBUM/117-NUALB1.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 368,
+     "castName": "PicS",
+     "type": "bitmap",
+     "file": "ALBUM/368-PicS.png",
+     "x": 1056,
+     "y": 60,
+     "w": 239,
+     "h": 227,
+     "loc": [
+      1175,
+      173
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 110,
+     "castName": "",
+     "type": "shape",
+     "x": 60,
+     "y": 63,
+     "w": 234,
+     "h": 223,
+     "loc": [
+      60,
+      63
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 5,
+     "castId": 1055,
+     "castName": "CurrentPage",
+     "type": "text",
+     "file": "ALBUM/1055-CurrentPage.txt",
+     "x": 450,
+     "y": 32,
+     "w": 24,
+     "h": 21,
+     "loc": [
+      450,
+      32
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 100,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/100.png",
+     "x": 157,
+     "y": 1296,
+     "w": 13,
+     "h": 21,
+     "loc": [
+      158,
+      1307
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 19,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 102,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/102.png",
+     "x": 182,
+     "y": 1296,
+     "w": 12,
+     "h": 21,
+     "loc": [
+      188,
+      1306
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 20,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 1050,
+     "castName": "Text0",
+     "type": "text",
+     "file": "ALBUM/1050-Text0.txt",
+     "x": 366,
+     "y": 86,
+     "w": 201,
+     "h": 236,
+     "loc": [
+      366,
+      86
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 11,
+     "castId": 100,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/100.png",
+     "x": 32,
+     "y": 1355,
+     "w": 13,
+     "h": 21,
+     "loc": [
+      33,
+      1366
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 102,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/102.png",
+     "x": 591,
+     "y": 1356,
+     "w": 12,
+     "h": 21,
+     "loc": [
+      597,
+      1366
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 108,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/108.png",
+     "x": 553,
+     "y": 439,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      590,
+      456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 18,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 14,
+     "castId": 106,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/106.png",
+     "x": 474,
+     "y": 1439,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      511,
+      1456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 7,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 15,
+     "castId": 3556,
+     "castName": "A-CALL1.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3556-A-CALL1.PCT.png",
+     "x": 244,
+     "y": 1041,
+     "w": 80,
+     "h": 43,
+     "loc": [
+      284,
+      1062
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 114,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/114.png",
+     "x": 395,
+     "y": 1439,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      433,
+      1442
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 124,
+     "castName": "TTT",
+     "type": "bitmap",
+     "file": "ALBUM/124-TTT.png",
+     "x": 153,
+     "y": 1144,
+     "w": 334,
+     "h": 199,
+     "loc": [
+      320,
+      1243
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 21,
+     "castId": 1299,
+     "castName": "AT",
+     "type": "text",
+     "file": "ALBUM/1299-AT.txt",
+     "x": 199,
+     "y": 1202,
+     "w": 251,
+     "h": 48,
+     "loc": [
+      199,
+      1202
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 22,
+     "castId": 129,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/129.png",
+     "x": 393,
+     "y": 1306,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      407,
+      1316
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 22,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 131,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/131.png",
+     "x": 429,
+     "y": 1306,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      443,
+      1317
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 23,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 125,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/125.png",
+     "x": 299,
+     "y": 1307,
+     "w": 13,
+     "h": 21,
+     "loc": [
+      300,
+      1318
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 24,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 127,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/127.png",
+     "x": 319,
+     "y": 1307,
+     "w": 12,
+     "h": 21,
+     "loc": [
+      325,
+      1317
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 25,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 33,
+     "castId": 133,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/133.png",
+     "x": 0,
+     "y": 424,
+     "w": 195,
+     "h": 54,
+     "loc": [
+      97,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 108,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      108,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "sprites": []
+  },
+  {
+   "n": 7,
+   "script": {
+    "castId": 14,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 333,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/333.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 334,
+     "castName": "PicB",
+     "type": "bitmap",
+     "file": "ALBUM/334-PicB.png",
+     "x": 108,
+     "y": 1046,
+     "w": 424,
+     "h": 389,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 108,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/108.png",
+     "x": 544,
+     "y": 425,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      581,
+      442
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "script": {
+    "castId": 16,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 333,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/333.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 334,
+     "castName": "PicB",
+     "type": "bitmap",
+     "file": "ALBUM/334-PicB.png",
+     "x": 108,
+     "y": 1046,
+     "w": 424,
+     "h": 389,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 108,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/108.png",
+     "x": 544,
+     "y": 425,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      581,
+      442
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 15,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "to": 10,
+   "sprites": []
+  },
+  {
+   "n": 11,
+   "script": {
+    "castId": 3,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 117,
+     "castName": "NUALB1",
+     "type": "bitmap",
+     "file": "ALBUM/117-NUALB1.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 368,
+     "castName": "PicS",
+     "type": "bitmap",
+     "file": "ALBUM/368-PicS.png",
+     "x": 1056,
+     "y": 60,
+     "w": 239,
+     "h": 227,
+     "loc": [
+      1175,
+      173
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 1055,
+     "castName": "CurrentPage",
+     "type": "text",
+     "file": "ALBUM/1055-CurrentPage.txt",
+     "x": 450,
+     "y": 32,
+     "w": 24,
+     "h": 21,
+     "loc": [
+      450,
+      32
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 1050,
+     "castName": "Text0",
+     "type": "text",
+     "file": "ALBUM/1050-Text0.txt",
+     "x": 366,
+     "y": 86,
+     "w": 198,
+     "h": 236,
+     "loc": [
+      366,
+      86
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 11,
+     "castId": 123,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/123.png",
+     "x": 148,
+     "y": 163,
+     "w": 334,
+     "h": 199,
+     "loc": [
+      315,
+      262
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 134,
+     "castName": "",
+     "type": "text",
+     "file": "ALBUM/134.txt",
+     "x": 213,
+     "y": 172,
+     "w": 211,
+     "h": 102,
+     "loc": [
+      213,
+      172
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 13,
+     "castId": 135,
+     "castName": "NN",
+     "type": "bitmap",
+     "file": "ALBUM/135-NN.png",
+     "x": 241,
+     "y": 208,
+     "w": 16,
+     "h": 16,
+     "loc": [
+      249,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 30,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 135,
+     "castName": "NN",
+     "type": "bitmap",
+     "file": "ALBUM/135-NN.png",
+     "x": 241,
+     "y": 243,
+     "w": 16,
+     "h": 16,
+     "loc": [
+      249,
+      251
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 30,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 15,
+     "castId": 135,
+     "castName": "NN",
+     "type": "bitmap",
+     "file": "ALBUM/135-NN.png",
+     "x": 241,
+     "y": 277,
+     "w": 16,
+     "h": 16,
+     "loc": [
+      249,
+      285
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 30,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 129,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/129.png",
+     "x": 285,
+     "y": 332,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      299,
+      342
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 29,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 17,
+     "castId": 131,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/131.png",
+     "x": 317,
+     "y": 332,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      331,
+      343
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 29,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 18,
+     "castId": 137,
+     "castName": "PPage",
+     "type": "text",
+     "file": "ALBUM/137-PPage.txt",
+     "x": 359,
+     "y": 208,
+     "w": 33,
+     "h": 16,
+     "loc": [
+      359,
+      208
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 19,
+     "castId": 138,
+     "castName": "PPMin",
+     "type": "text",
+     "file": "ALBUM/138-PPMin.txt",
+     "x": 334,
+     "y": 242,
+     "w": 41,
+     "h": 16,
+     "loc": [
+      334,
+      242
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 20,
+     "castId": 139,
+     "castName": "PPMax",
+     "type": "text",
+     "file": "ALBUM/139-PPMax.txt",
+     "x": 383,
+     "y": 242,
+     "w": 39,
+     "h": 16,
+     "loc": [
+      383,
+      242
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 21,
+     "castId": 142,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/142.png",
+     "x": 305,
+     "y": 303,
+     "w": 33,
+     "h": 24,
+     "loc": [
+      321,
+      315
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 142,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/142.png",
+     "x": 386,
+     "y": 303,
+     "w": 33,
+     "h": 24,
+     "loc": [
+      402,
+      315
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 140,
+     "castName": "PPage1",
+     "type": "text",
+     "file": "ALBUM/140-PPage1.txt",
+     "x": 311,
+     "y": 307,
+     "w": 19,
+     "h": 16,
+     "loc": [
+      311,
+      307
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": [
+      "stretch",
+      "editable"
+     ]
+    },
+    {
+     "ch": 24,
+     "castId": 141,
+     "castName": "PPage2",
+     "type": "text",
+     "file": "ALBUM/141-PPage2.txt",
+     "x": 394,
+     "y": 307,
+     "w": 17,
+     "h": 16,
+     "loc": [
+      394,
+      307
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": [
+      "stretch",
+      "editable"
+     ]
+    },
+    {
+     "ch": 33,
+     "castId": 133,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/133.png",
+     "x": 0,
+     "y": 424,
+     "w": 195,
+     "h": 54,
+     "loc": [
+      97,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 108,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      108,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "script": {
+    "castId": 34,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 117,
+     "castName": "NUALB1",
+     "type": "bitmap",
+     "file": "ALBUM/117-NUALB1.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 368,
+     "castName": "PicS",
+     "type": "bitmap",
+     "file": "ALBUM/368-PicS.png",
+     "x": 1056,
+     "y": 60,
+     "w": 239,
+     "h": 227,
+     "loc": [
+      1175,
+      173
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 1055,
+     "castName": "CurrentPage",
+     "type": "text",
+     "file": "ALBUM/1055-CurrentPage.txt",
+     "x": 450,
+     "y": 32,
+     "w": 24,
+     "h": 21,
+     "loc": [
+      450,
+      32
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 1050,
+     "castName": "Text0",
+     "type": "text",
+     "file": "ALBUM/1050-Text0.txt",
+     "x": 366,
+     "y": 86,
+     "w": 198,
+     "h": 236,
+     "loc": [
+      366,
+      86
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 11,
+     "castId": 123,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/123.png",
+     "x": 148,
+     "y": 163,
+     "w": 334,
+     "h": 199,
+     "loc": [
+      315,
+      262
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 134,
+     "castName": "",
+     "type": "text",
+     "file": "ALBUM/134.txt",
+     "x": 213,
+     "y": 172,
+     "w": 211,
+     "h": 102,
+     "loc": [
+      213,
+      172
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 13,
+     "castId": 135,
+     "castName": "NN",
+     "type": "bitmap",
+     "file": "ALBUM/135-NN.png",
+     "x": 241,
+     "y": 208,
+     "w": 16,
+     "h": 16,
+     "loc": [
+      249,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 135,
+     "castName": "NN",
+     "type": "bitmap",
+     "file": "ALBUM/135-NN.png",
+     "x": 241,
+     "y": 243,
+     "w": 16,
+     "h": 16,
+     "loc": [
+      249,
+      251
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 15,
+     "castId": 135,
+     "castName": "NN",
+     "type": "bitmap",
+     "file": "ALBUM/135-NN.png",
+     "x": 241,
+     "y": 277,
+     "w": 16,
+     "h": 16,
+     "loc": [
+      249,
+      285
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 18,
+     "castId": 137,
+     "castName": "PPage",
+     "type": "text",
+     "file": "ALBUM/137-PPage.txt",
+     "x": 360,
+     "y": 212,
+     "w": 33,
+     "h": 16,
+     "loc": [
+      360,
+      212
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 19,
+     "castId": 138,
+     "castName": "PPMin",
+     "type": "text",
+     "file": "ALBUM/138-PPMin.txt",
+     "x": 334,
+     "y": 245,
+     "w": 41,
+     "h": 16,
+     "loc": [
+      334,
+      245
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 20,
+     "castId": 139,
+     "castName": "PPMax",
+     "type": "text",
+     "file": "ALBUM/139-PPMax.txt",
+     "x": 383,
+     "y": 244,
+     "w": 39,
+     "h": 16,
+     "loc": [
+      383,
+      244
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 21,
+     "castId": 142,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/142.png",
+     "x": 305,
+     "y": 303,
+     "w": 33,
+     "h": 24,
+     "loc": [
+      321,
+      315
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 142,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/142.png",
+     "x": 386,
+     "y": 303,
+     "w": 33,
+     "h": 24,
+     "loc": [
+      402,
+      315
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 140,
+     "castName": "PPage1",
+     "type": "text",
+     "file": "ALBUM/140-PPage1.txt",
+     "x": 311,
+     "y": 307,
+     "w": 19,
+     "h": 16,
+     "loc": [
+      311,
+      307
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 24,
+     "castId": 141,
+     "castName": "PPage2",
+     "type": "text",
+     "file": "ALBUM/141-PPage2.txt",
+     "x": 394,
+     "y": 307,
+     "w": 17,
+     "h": 16,
+     "loc": [
+      394,
+      307
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 25,
+     "castId": 123,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/123.png",
+     "x": 148,
+     "y": 163,
+     "w": 334,
+     "h": 199,
+     "loc": [
+      315,
+      262
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 26,
+     "castId": 145,
+     "castName": "TT",
+     "type": "text",
+     "file": "ALBUM/145-TT.txt",
+     "x": 194,
+     "y": 206,
+     "w": 238,
+     "h": 48,
+     "loc": [
+      194,
+      206
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 27,
+     "castId": 129,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/129.png",
+     "x": 307,
+     "y": 331,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      321,
+      341
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 33,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 33,
+     "castId": 133,
+     "castName": "",
+     "type": "bitmap",
+     "file": "ALBUM/133.png",
+     "x": 0,
+     "y": 424,
+     "w": 195,
+     "h": 54,
+     "loc": [
+      97,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 108,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      108,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  }
+ ]
+}

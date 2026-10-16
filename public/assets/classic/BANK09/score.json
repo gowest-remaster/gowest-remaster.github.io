@@ -1,0 +1,6416 @@
+{
+ "movie": "BANK09",
+ "source": "BANK09.DIR",
+ "stage": {
+  "w": 640,
+  "h": 480,
+  "rect": {
+   "top": 0,
+   "left": 0,
+   "bottom": 480,
+   "right": 640
+  },
+  "bgColor": 255,
+  "tempo": 6,
+  "palette": {
+   "id": 100,
+   "name": "Bank1",
+   "file": "BANK09/100-Bank1.palette.json",
+   "extractorResolved": "member:100:Bank1"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 32,
+  "changedBy": "Alla - ",
+  "createdBy": "alicia - edunetics",
+  "origDirectory": "Q:\\ECOSIM\\MOV_BACK\\",
+  "preload": 0
+ },
+ "castLibs": [
+  "BANK09",
+  "SHARED"
+ ],
+ "castArray": [
+  1,
+  1014
+ ],
+ "scoreHeader": {
+  "streamSize": 8118,
+  "frame1Offset": 20,
+  "framesVersion": 4,
+  "spriteRecordSize": 20,
+  "numChannels": 50
+ },
+ "labels": {
+  "Mmenu": 2,
+  "Exit": 4,
+  "EE": 5,
+  "Credits": 6,
+  "Tel": 8,
+  "Loans0": 10,
+  "Loans": 11,
+  "3ReceiveT": 18,
+  "4TakeL": 24,
+  "5ReturnL": 31,
+  "6InfoL": 37,
+  "3Print": 55,
+  "4Print": 60,
+  "5Print": 65,
+  "6Print": 70,
+  "Rate": 74,
+  "NoR": 85
+ },
+ "frameCount": 105,
+ "frames": [
+  {
+   "n": 1,
+   "transition": {
+    "type": 9,
+    "name": "centerOutSquare",
+    "durationMs": 2000,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "palette": {
+    "id": 100,
+    "name": "Bank1",
+    "file": "BANK09/100-Bank1.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "NUBANK01.PCT",
+     "type": "bitmap",
+     "file": "BANK09/101-NUBANK01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 312,
+     "y": 198,
+     "w": 72,
+     "h": 90,
+     "loc": [
+      312,
+      198
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 3,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 404,
+     "y": 190,
+     "w": 72,
+     "h": 106,
+     "loc": [
+      404,
+      190
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 184,
+     "y": 204,
+     "w": 67,
+     "h": 75,
+     "loc": [
+      184,
+      204
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 5,
+     "castId": 3440,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3440.png",
+     "x": 4,
+     "y": 4,
+     "w": 20,
+     "h": 19,
+     "loc": [
+      14,
+      13
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 47,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 48,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "script": {
+    "castId": 69,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "NUBANK01.PCT",
+     "type": "bitmap",
+     "file": "BANK09/101-NUBANK01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 312,
+     "y": 198,
+     "w": 72,
+     "h": 90,
+     "loc": [
+      312,
+      198
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 3,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 404,
+     "y": 190,
+     "w": 72,
+     "h": 106,
+     "loc": [
+      404,
+      190
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 184,
+     "y": 204,
+     "w": 67,
+     "h": 75,
+     "loc": [
+      184,
+      204
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 5,
+     "castId": 3440,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3440.png",
+     "x": 4,
+     "y": 4,
+     "w": 20,
+     "h": 19,
+     "loc": [
+      14,
+      13
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 191,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/191.png",
+     "x": -1,
+     "y": 1424,
+     "w": 640,
+     "h": 54,
+     "loc": [
+      319,
+      1451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 21,
+     "castId": 178,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/178.png",
+     "x": 214,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      238,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 182,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/182.png",
+     "x": 266,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      290,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 184,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/184.png",
+     "x": 318,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      342,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 161,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/161.png",
+     "x": 370,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      394,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 186,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/186.png",
+     "x": 422,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      446,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 47,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 48,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "script": {
+    "castId": 5,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "NUBANK01.PCT",
+     "type": "bitmap",
+     "file": "BANK09/101-NUBANK01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 314,
+     "y": 197,
+     "w": 72,
+     "h": 90,
+     "loc": [
+      314,
+      197
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 7,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 3,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 404,
+     "y": 190,
+     "w": 72,
+     "h": 106,
+     "loc": [
+      404,
+      190
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 6,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 184,
+     "y": 204,
+     "w": 67,
+     "h": 75,
+     "loc": [
+      184,
+      204
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 34,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 5,
+     "castId": 3440,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3440.png",
+     "x": 4,
+     "y": 4,
+     "w": 20,
+     "h": 19,
+     "loc": [
+      14,
+      13
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3221,
+      "castName": "71",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 191,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/191.png",
+     "x": -1,
+     "y": 1424,
+     "w": 640,
+     "h": 54,
+     "loc": [
+      319,
+      1451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 21,
+     "castId": 178,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/178.png",
+     "x": 214,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      238,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 182,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/182.png",
+     "x": 266,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      290,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 184,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/184.png",
+     "x": 318,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      342,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 161,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/161.png",
+     "x": 370,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      394,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 186,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/186.png",
+     "x": 422,
+     "y": 1433,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      446,
+      1451
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 67,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 47,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 48,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 0,
+     "h": 0,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "script": {
+    "castId": 68,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "NUBANK01.PCT",
+     "type": "bitmap",
+     "file": "BANK09/101-NUBANK01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 47,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 48,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 0,
+     "h": 0,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "script": {
+    "castId": 3213,
+    "castName": "23",
+    "castLib": "SHARED"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "NUBANK01.PCT",
+     "type": "bitmap",
+     "file": "BANK09/101-NUBANK01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 3450,
+     "castName": "CREDIT04.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3450-CREDIT04.PCT.png",
+     "x": 280,
+     "y": 1157,
+     "w": 132,
+     "h": 230,
+     "loc": [
+      346,
+      1272
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 30,
+     "castId": 3428,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3428.png",
+     "x": 99,
+     "y": 166,
+     "w": 443,
+     "h": 149,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 31,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 32,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 0,
+     "h": 0,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 33,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 217,
+     "y": 185,
+     "w": 110,
+     "h": 37,
+     "loc": [
+      217,
+      185
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 34,
+     "castId": 3429,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3429.png",
+     "x": 1232,
+     "y": 191,
+     "w": 10,
+     "h": 26,
+     "loc": [
+      1237,
+      204
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3220,
+      "castName": "72",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 141,
+     "y": 184,
+     "w": 40,
+     "h": 53,
+     "loc": [
+      141,
+      184
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 3272,
+      "castName": "16",
+      "castLib": "SHARED"
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 36,
+     "castId": 3437,
+     "castName": "OnYes",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3437-OnYes.png",
+     "x": 345,
+     "y": 185,
+     "w": 40,
+     "h": 37,
+     "loc": [
+      365,
+      203
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3215,
+      "castName": "41",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 37,
+     "castId": 3438,
+     "castName": "OffNo",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3438-OffNo.png",
+     "x": 387,
+     "y": 185,
+     "w": 40,
+     "h": 37,
+     "loc": [
+      407,
+      203
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3216,
+      "castName": "43",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 38,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 463,
+     "y": 185,
+     "w": 37,
+     "h": 52,
+     "loc": [
+      463,
+      185
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 3217,
+      "castName": "45",
+      "castLib": "SHARED"
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 39,
+     "castId": 3430,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3430.png",
+     "x": 304,
+     "y": 274,
+     "w": 36,
+     "h": 28,
+     "loc": [
+      322,
+      288
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3214,
+      "castName": "27",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 40,
+     "castId": 3432,
+     "castName": "W1",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3432-W1.png",
+     "x": 126,
+     "y": 241,
+     "w": 74,
+     "h": 13,
+     "loc": [
+      163,
+      247
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 41,
+     "castId": 3433,
+     "castName": "W2",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3433-W2.png",
+     "x": 238,
+     "y": 227,
+     "w": 69,
+     "h": 13,
+     "loc": [
+      272,
+      233
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 42,
+     "castId": 3434,
+     "castName": "W3",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3434-W3.png",
+     "x": 362,
+     "y": 227,
+     "w": 54,
+     "h": 13,
+     "loc": [
+      389,
+      233
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 43,
+     "castId": 3435,
+     "castName": "W4",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3435-W4.png",
+     "x": 461,
+     "y": 240,
+     "w": 41,
+     "h": 13,
+     "loc": [
+      481,
+      246
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 44,
+     "castId": 106,
+     "castName": "DBox0",
+     "type": "bitmap",
+     "file": "BANK09/106-DBox0.png",
+     "x": 130,
+     "y": 1138,
+     "w": 379,
+     "h": 210,
+     "loc": [
+      319,
+      1243
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 45,
+     "castId": 1000,
+     "castName": "",
+     "type": "text",
+     "file": "BANK09/1000.txt",
+     "x": 162,
+     "y": 1189,
+     "w": 324,
+     "h": 48,
+     "loc": [
+      162,
+      1189
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 46,
+     "castId": 194,
+     "castName": "Yes",
+     "type": "bitmap",
+     "file": "BANK09/194-Yes.png",
+     "x": 284,
+     "y": 1308,
+     "w": 36,
+     "h": 22,
+     "loc": [
+      302,
+      1319
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3219,
+      "castName": "48",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 47,
+     "castId": 196,
+     "castName": "No",
+     "type": "bitmap",
+     "file": "BANK09/196-No.png",
+     "x": 323,
+     "y": 1308,
+     "w": 36,
+     "h": 22,
+     "loc": [
+      341,
+      1319
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3218,
+      "castName": "47",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 48,
+     "castId": 198,
+     "castName": "Cans",
+     "type": "bitmap",
+     "file": "BANK09/198-Cans.png",
+     "x": 362,
+     "y": 1308,
+     "w": 36,
+     "h": 22,
+     "loc": [
+      380,
+      1319
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3218,
+      "castName": "47",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "script": {
+    "castId": 3271,
+    "castName": "15",
+    "castLib": "SHARED"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "NUBANK01.PCT",
+     "type": "bitmap",
+     "file": "BANK09/101-NUBANK01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 3449,
+     "castName": "ActivCR",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3449-ActivCR.txt",
+     "x": 207,
+     "y": 123,
+     "w": 273,
+     "h": 301,
+     "loc": [
+      207,
+      123
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 3447,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3447.png",
+     "x": 192,
+     "y": 26,
+     "w": 302,
+     "h": 407,
+     "loc": [
+      343,
+      229
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 119,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/119.png",
+     "x": 438,
+     "y": 389,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      452,
+      400
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3273,
+      "castName": "17",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 3450,
+     "castName": "CREDIT04.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3450-CREDIT04.PCT.png",
+     "x": 280,
+     "y": 1157,
+     "w": 132,
+     "h": 230,
+     "loc": [
+      346,
+      1272
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 31,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 32,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 0,
+     "h": 0,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "sprites": []
+  },
+  {
+   "n": 8,
+   "script": {
+    "castId": 49,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "NUBANK01.PCT",
+     "type": "bitmap",
+     "file": "BANK09/101-NUBANK01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 124,
+     "castName": "TWNMAP57.PCT",
+     "type": "bitmap",
+     "file": "BANK09/124-TWNMAP57.PCT.png",
+     "x": 98,
+     "y": 36,
+     "w": 444,
+     "h": 355,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 1014,
+     "castName": "Tel",
+     "type": "text",
+     "file": "BANK09/1014-Tel.txt",
+     "x": 149,
+     "y": 67,
+     "w": 324,
+     "h": 176,
+     "loc": [
+      149,
+      67
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 119,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/119.png",
+     "x": 500,
+     "y": 360,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      514,
+      371
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 51,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 47,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 48,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "sprites": []
+  },
+  {
+   "n": 10,
+   "script": {
+    "castId": 11,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 200,
+     "castName": "Loan",
+     "type": "bitmap",
+     "file": "BANK09/200-Loan.png",
+     "x": 215,
+     "y": 218,
+     "w": 81,
+     "h": 80,
+     "loc": [
+      255,
+      258
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "script": {
+    "castId": 44,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 155,
+     "castName": "H-ICNBK4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/155-H-ICNBK4.PCT.png",
+     "x": 303,
+     "y": 1421,
+     "w": 93,
+     "h": 31,
+     "loc": [
+      349,
+      1436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "script": {
+    "castId": 16,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 200,
+     "castName": "Loan",
+     "type": "bitmap",
+     "file": "BANK09/200-Loan.png",
+     "x": 215,
+     "y": 218,
+     "w": 81,
+     "h": 80,
+     "loc": [
+      255,
+      258
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 0,
+     "y": 450,
+     "w": 640,
+     "h": 32,
+     "loc": [
+      0,
+      450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 22,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 5,
+     "castId": 149,
+     "castName": "LOANBUT0.PCT",
+     "type": "bitmap",
+     "file": "BANK09/149-LOANBUT0.PCT.png",
+     "x": 206,
+     "y": 421,
+     "w": 70,
+     "h": 31,
+     "loc": [
+      241,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 155,
+     "castName": "H-ICNBK4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/155-H-ICNBK4.PCT.png",
+     "x": 303,
+     "y": 1421,
+     "w": 93,
+     "h": 31,
+     "loc": [
+      349,
+      1436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 9,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 153,
+     "castName": "LOANBUT4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/153-LOANBUT4.PCT.png",
+     "x": 418,
+     "y": 422,
+     "w": 69,
+     "h": 31,
+     "loc": [
+      452,
+      437
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 10,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "to": 15,
+   "sprites": []
+  },
+  {
+   "n": 16,
+   "sprites": [
+    {
+     "ch": 22,
+     "castId": 104,
+     "castName": "",
+     "type": "shape",
+     "x": 645,
+     "y": 387,
+     "w": 2,
+     "h": 3,
+     "loc": [
+      645,
+      387
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 52,
+     "back": 0,
+     "flags": [
+      "trails",
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 23,
+     "castId": 168,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/168.png",
+     "x": 116,
+     "y": 381,
+     "w": 325,
+     "h": 61,
+     "loc": [
+      278,
+      411
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 165,
+     "castName": "MySave3",
+     "type": "bitmap",
+     "file": "BANK09/165-MySave3.png",
+     "x": 116,
+     "y": 381,
+     "w": 325,
+     "h": 61,
+     "loc": [
+      278,
+      411
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "sprites": []
+  },
+  {
+   "n": 18,
+   "script": {
+    "castId": 61,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 137,
+     "castName": "NUBANK21.PCT",
+     "type": "bitmap",
+     "file": "BANK09/137-NUBANK21.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 1,
+     "y": 423,
+     "w": 638,
+     "h": 55,
+     "loc": [
+      1,
+      423
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 22,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 5,
+     "castId": 138,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/138.png",
+     "x": 218,
+     "y": 189,
+     "w": 150,
+     "h": 236,
+     "loc": [
+      293,
+      307
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 62,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 6,
+     "castId": 225,
+     "castName": "C",
+     "type": "bitmap",
+     "file": "BANK09/225-C.png",
+     "x": 253,
+     "y": 253,
+     "w": 82,
+     "h": 56,
+     "loc": [
+      294,
+      281
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "script": {
+    "castId": 56,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 137,
+     "castName": "NUBANK21.PCT",
+     "type": "bitmap",
+     "file": "BANK09/137-NUBANK21.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 217,
+     "castName": "Cash",
+     "type": "bitmap",
+     "file": "BANK09/217-Cash.png",
+     "x": 174,
+     "y": 186,
+     "w": 194,
+     "h": 282,
+     "loc": [
+      271,
+      327
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "sound1": {
+    "castId": 319,
+    "castName": "SignRecete",
+    "kind": "cast"
+   },
+   "script": {
+    "castId": 1,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 137,
+     "castName": "NUBANK21.PCT",
+     "type": "bitmap",
+     "file": "BANK09/137-NUBANK21.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 86,
+     "castName": "NUBANK06.PCT",
+     "type": "bitmap",
+     "file": "BANK09/86-NUBANK06.PCT.png",
+     "x": 83,
+     "y": 7,
+     "w": 414,
+     "h": 463,
+     "loc": [
+      290,
+      238
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 3000,
+     "castName": "CurrentDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3000-CurrentDate.txt",
+     "x": 174,
+     "y": 234,
+     "w": 109,
+     "h": 16,
+     "loc": [
+      174,
+      234
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/113-BNKBUTN.PCT.png",
+     "x": 546,
+     "y": 352,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      583,
+      369
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 14,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 115,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/115-BNKBUTN.PCT.png",
+     "x": 546,
+     "y": 1436,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      583,
+      1453
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 117,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/117-BNKBUTN.PCT.png",
+     "x": 544,
+     "y": 394,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      581,
+      411
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 57,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 102,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/102.png",
+     "x": 357,
+     "y": 330,
+     "w": 101,
+     "h": 22,
+     "loc": [
+      406,
+      340
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 20,
+     "castId": 1012,
+     "castName": "Rec",
+     "type": "text",
+     "file": "BANK09/1012-Rec.txt",
+     "x": 218,
+     "y": 267,
+     "w": 106,
+     "h": 16,
+     "loc": [
+      218,
+      267
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 21,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 127,
+     "y": 384,
+     "w": 308,
+     "h": 49,
+     "loc": [
+      127,
+      384
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 33,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 24,
+     "castId": 144,
+     "castName": "H-ICNBK1.PCT",
+     "type": "bitmap",
+     "file": "BANK09/144-H-ICNBK1.PCT.png",
+     "x": 448,
+     "y": 414,
+     "w": 28,
+     "h": 23,
+     "loc": [
+      462,
+      425
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "to": 22,
+   "sprites": []
+  },
+  {
+   "n": 23,
+   "sprites": [
+    {
+     "ch": 22,
+     "castId": 104,
+     "castName": "",
+     "type": "shape",
+     "x": 645,
+     "y": 387,
+     "w": 2,
+     "h": 3,
+     "loc": [
+      645,
+      387
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 52,
+     "back": 0,
+     "flags": [
+      "trails",
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 23,
+     "castId": 146,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/146.png",
+     "x": 300,
+     "y": 391,
+     "w": 217,
+     "h": 72,
+     "loc": [
+      408,
+      427
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 25,
+     "castId": 166,
+     "castName": "MySave4",
+     "type": "bitmap",
+     "file": "BANK09/166-MySave4.png",
+     "x": 300,
+     "y": 391,
+     "w": 217,
+     "h": 72,
+     "loc": [
+      408,
+      427
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "script": {
+    "castId": 65,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 210,
+     "castName": "LA",
+     "type": "bitmap",
+     "file": "BANK09/210-LA.png",
+     "x": 206,
+     "y": 160,
+     "w": 265,
+     "h": 222,
+     "loc": [
+      338,
+      271
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 149,
+     "castName": "LOANBUT0.PCT",
+     "type": "bitmap",
+     "file": "BANK09/149-LOANBUT0.PCT.png",
+     "x": 206,
+     "y": 421,
+     "w": 70,
+     "h": 31,
+     "loc": [
+      241,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 155,
+     "castName": "H-ICNBK4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/155-H-ICNBK4.PCT.png",
+     "x": 303,
+     "y": 421,
+     "w": 93,
+     "h": 31,
+     "loc": [
+      349,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 153,
+     "castName": "LOANBUT4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/153-LOANBUT4.PCT.png",
+     "x": 418,
+     "y": 422,
+     "w": 69,
+     "h": 31,
+     "loc": [
+      452,
+      437
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 31,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "script": {
+    "castId": 35,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 210,
+     "castName": "LA",
+     "type": "bitmap",
+     "file": "BANK09/210-LA.png",
+     "x": 206,
+     "y": 160,
+     "w": 265,
+     "h": 222,
+     "loc": [
+      338,
+      271
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 149,
+     "castName": "LOANBUT0.PCT",
+     "type": "bitmap",
+     "file": "BANK09/149-LOANBUT0.PCT.png",
+     "x": 206,
+     "y": 421,
+     "w": 70,
+     "h": 31,
+     "loc": [
+      241,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 155,
+     "castName": "H-ICNBK4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/155-H-ICNBK4.PCT.png",
+     "x": 303,
+     "y": 421,
+     "w": 93,
+     "h": 31,
+     "loc": [
+      349,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 153,
+     "castName": "LOANBUT4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/153-LOANBUT4.PCT.png",
+     "x": 418,
+     "y": 422,
+     "w": 69,
+     "h": 31,
+     "loc": [
+      452,
+      437
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 31,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "sound1": {
+    "castId": 322,
+    "castName": "TakeLoan",
+    "kind": "cast"
+   },
+   "script": {
+    "castId": 42,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 216,
+     "castName": "LAE",
+     "type": "bitmap",
+     "file": "BANK09/216-LAE.png",
+     "x": 206,
+     "y": 160,
+     "w": 265,
+     "h": 222,
+     "loc": [
+      338,
+      271
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 149,
+     "castName": "LOANBUT0.PCT",
+     "type": "bitmap",
+     "file": "BANK09/149-LOANBUT0.PCT.png",
+     "x": 206,
+     "y": 421,
+     "w": 70,
+     "h": 31,
+     "loc": [
+      241,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 155,
+     "castName": "H-ICNBK4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/155-H-ICNBK4.PCT.png",
+     "x": 303,
+     "y": 421,
+     "w": 93,
+     "h": 31,
+     "loc": [
+      349,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 153,
+     "castName": "LOANBUT4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/153-LOANBUT4.PCT.png",
+     "x": 418,
+     "y": 422,
+     "w": 69,
+     "h": 31,
+     "loc": [
+      452,
+      437
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 31,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "script": {
+    "castId": 74,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 312,
+     "y": 403,
+     "w": 191,
+     "h": 47,
+     "loc": [
+      312,
+      403
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 66,
+      "castName": "PayDate"
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 3,
+     "castId": 84,
+     "castName": "NUBANK12.PCT",
+     "type": "bitmap",
+     "file": "BANK09/84-NUBANK12.PCT.png",
+     "x": 58,
+     "y": 3,
+     "w": 467,
+     "h": 471,
+     "loc": [
+      291,
+      238
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 3028,
+     "castName": "MyLoan",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3028-MyLoan.txt",
+     "x": 230,
+     "y": 244,
+     "w": 27,
+     "h": 17,
+     "loc": [
+      230,
+      244
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 55,
+      "castName": ""
+     },
+     "flags": [
+      "stretch",
+      "editable"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 3029,
+     "castName": "MyDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3029-MyDate.txt",
+     "x": 184,
+     "y": 292,
+     "w": 55,
+     "h": 18,
+     "loc": [
+      184,
+      292
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 111,
+     "castName": "BNKARROW.PCT",
+     "type": "bitmap",
+     "file": "BANK09/111-BNKARROW.PCT.png",
+     "x": 229,
+     "y": 296,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      237,
+      300
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 25,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 63,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/63.png",
+     "x": 183,
+     "y": 1311,
+     "w": 64,
+     "h": 48,
+     "loc": [
+      215,
+      1333
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 64,
+     "castName": "",
+     "type": "shape",
+     "x": 182,
+     "y": 1311,
+     "w": 66,
+     "h": 49,
+     "loc": [
+      182,
+      1311
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 17,
+     "back": 17,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 2
+    },
+    {
+     "ch": 11,
+     "castId": 66,
+     "castName": "PayDate",
+     "type": "text",
+     "file": "BANK09/66-PayDate.txt",
+     "x": 183,
+     "y": 1311,
+     "w": 65,
+     "h": 48,
+     "loc": [
+      183,
+      1311
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 29,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 12,
+     "castId": 1005,
+     "castName": "RepayDate",
+     "type": "text",
+     "file": "BANK09/1005-RepayDate.txt",
+     "x": 262,
+     "y": 319,
+     "w": 92,
+     "h": 16,
+     "loc": [
+      262,
+      319
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 13,
+     "castId": 1011,
+     "castName": "MyReturn",
+     "type": "text",
+     "file": "BANK09/1011-MyReturn.txt",
+     "x": 264,
+     "y": 344,
+     "w": 91,
+     "h": 18,
+     "loc": [
+      264,
+      344
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 14,
+     "castId": 3032,
+     "castName": "Interest",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3032-Interest.txt",
+     "x": 287,
+     "y": 369,
+     "w": 25,
+     "h": 17,
+     "loc": [
+      287,
+      369
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 15,
+     "castId": 1008,
+     "castName": "BankName",
+     "type": "text",
+     "file": "BANK09/1008-BankName.txt",
+     "x": 357,
+     "y": 212,
+     "w": 164,
+     "h": 16,
+     "loc": [
+      357,
+      212
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 31,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 16,
+     "castId": 3000,
+     "castName": "CurrentDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3000-CurrentDate.txt",
+     "x": 409,
+     "y": 152,
+     "w": 101,
+     "h": 16,
+     "loc": [
+      409,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 17,
+     "castId": 113,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/113-BNKBUTN.PCT.png",
+     "x": 549,
+     "y": 355,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      586,
+      372
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 12,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 18,
+     "castId": 115,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/115-BNKBUTN.PCT.png",
+     "x": 550,
+     "y": 1439,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      587,
+      1456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 117,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/117-BNKBUTN.PCT.png",
+     "x": 547,
+     "y": 396,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      584,
+      413
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 2,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 1007,
+     "castName": "FileNum",
+     "type": "text",
+     "file": "BANK09/1007-FileNum.txt",
+     "x": 140,
+     "y": 152,
+     "w": 34,
+     "h": 16,
+     "loc": [
+      140,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 21,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 311,
+     "y": 402,
+     "w": 191,
+     "h": 48,
+     "loc": [
+      311,
+      402
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 33,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 24,
+     "castId": 144,
+     "castName": "H-ICNBK1.PCT",
+     "type": "bitmap",
+     "file": "BANK09/144-H-ICNBK1.PCT.png",
+     "x": 273,
+     "y": 428,
+     "w": 28,
+     "h": 23,
+     "loc": [
+      287,
+      439
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "to": 29,
+   "sprites": []
+  },
+  {
+   "n": 30,
+   "sprites": [
+    {
+     "ch": 22,
+     "castId": 104,
+     "castName": "",
+     "type": "shape",
+     "x": 635,
+     "y": 387,
+     "w": 2,
+     "h": 3,
+     "loc": [
+      635,
+      387
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 52,
+     "back": 0,
+     "flags": [
+      "trails",
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 23,
+     "castId": 163,
+     "castName": "MySave1",
+     "type": "bitmap",
+     "file": "BANK09/163-MySave1.png",
+     "x": 50,
+     "y": 405,
+     "w": 325,
+     "h": 61,
+     "loc": [
+      212,
+      435
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 25,
+     "castId": 167,
+     "castName": "MySave5",
+     "type": "bitmap",
+     "file": "BANK09/167-MySave5.png",
+     "x": 50,
+     "y": 405,
+     "w": 325,
+     "h": 61,
+     "loc": [
+      212,
+      435
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "script": {
+    "castId": 46,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 149,
+     "castName": "LOANBUT0.PCT",
+     "type": "bitmap",
+     "file": "BANK09/149-LOANBUT0.PCT.png",
+     "x": 206,
+     "y": 421,
+     "w": 70,
+     "h": 31,
+     "loc": [
+      241,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 155,
+     "castName": "H-ICNBK4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/155-H-ICNBK4.PCT.png",
+     "x": 303,
+     "y": 421,
+     "w": 93,
+     "h": 31,
+     "loc": [
+      349,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 153,
+     "castName": "LOANBUT4.PCT",
+     "type": "bitmap",
+     "file": "BANK09/153-LOANBUT4.PCT.png",
+     "x": 418,
+     "y": 422,
+     "w": 69,
+     "h": 31,
+     "loc": [
+      452,
+      437
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 31,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "script": {
+    "castId": 17,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 88,
+     "castName": "NUBANK11.PCT",
+     "type": "bitmap",
+     "file": "BANK09/88-NUBANK11.PCT.png",
+     "x": 32,
+     "y": 29,
+     "w": 485,
+     "h": 443,
+     "loc": [
+      274,
+      250
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 111,
+     "castName": "BNKARROW.PCT",
+     "type": "bitmap",
+     "file": "BANK09/111-BNKARROW.PCT.png",
+     "x": 377,
+     "y": 336,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      385,
+      340
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 21,
+     "castId": 88,
+     "castName": "NUBANK11.PCT",
+     "type": "bitmap",
+     "file": "BANK09/88-NUBANK11.PCT.png",
+     "x": 32,
+     "y": 29,
+     "w": 485,
+     "h": 443,
+     "loc": [
+      274,
+      250
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "script": {
+    "castId": 1,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 88,
+     "castName": "NUBANK11.PCT",
+     "type": "bitmap",
+     "file": "BANK09/88-NUBANK11.PCT.png",
+     "x": 32,
+     "y": 29,
+     "w": 485,
+     "h": 443,
+     "loc": [
+      274,
+      250
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 1011,
+     "castName": "MyReturn",
+     "type": "text",
+     "file": "BANK09/1011-MyReturn.txt",
+     "x": 304,
+     "y": 332,
+     "w": 91,
+     "h": 18,
+     "loc": [
+      304,
+      332
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 3030,
+     "castName": "MyName",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3030-MyName.txt",
+     "x": 187,
+     "y": 296,
+     "w": 242,
+     "h": 16,
+     "loc": [
+      187,
+      296
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 9,
+     "castId": 3000,
+     "castName": "CurrentDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3000-CurrentDate.txt",
+     "x": 377,
+     "y": 263,
+     "w": 56,
+     "h": 16,
+     "loc": [
+      377,
+      263
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/113-BNKBUTN.PCT.png",
+     "x": 548,
+     "y": 350,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      585,
+      367
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 50,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 115,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/115-BNKBUTN.PCT.png",
+     "x": 549,
+     "y": 1433,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      586,
+      1450
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 117,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/117-BNKBUTN.PCT.png",
+     "x": 547,
+     "y": 389,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      584,
+      406
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 2,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 1007,
+     "castName": "FileNum",
+     "type": "text",
+     "file": "BANK09/1007-FileNum.txt",
+     "x": 149,
+     "y": 264,
+     "w": 34,
+     "h": 16,
+     "loc": [
+      149,
+      264
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 21,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 67,
+     "y": 411,
+     "w": 308,
+     "h": 49,
+     "loc": [
+      67,
+      411
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 33,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 24,
+     "castId": 144,
+     "castName": "H-ICNBK1.PCT",
+     "type": "bitmap",
+     "file": "BANK09/144-H-ICNBK1.PCT.png",
+     "x": 453,
+     "y": 434,
+     "w": 28,
+     "h": 23,
+     "loc": [
+      467,
+      445
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "sprites": [
+    {
+     "ch": 5,
+     "castId": 111,
+     "castName": "BNKARROW.PCT",
+     "type": "bitmap",
+     "file": "BANK09/111-BNKARROW.PCT.png",
+     "x": 377,
+     "y": 336,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      385,
+      340
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 13,
+     "castId": 147,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/147.png",
+     "x": 303,
+     "y": 353,
+     "w": 95,
+     "h": 51,
+     "loc": [
+      350,
+      377
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 14,
+     "castId": 148,
+     "castName": "",
+     "type": "shape",
+     "x": 304,
+     "y": 353,
+     "w": 94,
+     "h": 53,
+     "loc": [
+      304,
+      353
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 17,
+     "back": 17,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 2
+    },
+    {
+     "ch": 15,
+     "castId": 1010,
+     "castName": "Return",
+     "type": "text",
+     "file": "BANK09/1010-Return.txt",
+     "x": 305,
+     "y": 355,
+     "w": 96,
+     "h": 48,
+     "loc": [
+      305,
+      355
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 37,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "to": 36,
+   "sprites": []
+  },
+  {
+   "n": 37,
+   "script": {
+    "castId": 19,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 31,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 36,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 105,
+     "y": 457,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      105,
+      457
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "sound1": {
+    "castId": 328,
+    "castName": "LookInfo",
+    "kind": "cast"
+   },
+   "script": {
+    "castId": 73,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 143,
+     "castName": "H-BKLOAN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/143-H-BKLOAN.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 90,
+     "castName": "NUBANK13.PCT",
+     "type": "bitmap",
+     "file": "BANK09/90-NUBANK13.PCT.png",
+     "x": 19,
+     "y": 25,
+     "w": 482,
+     "h": 450,
+     "loc": [
+      260,
+      250
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 1009,
+     "castName": "LoanInfo",
+     "type": "text",
+     "file": "BANK09/1009-LoanInfo.txt",
+     "x": 263,
+     "y": 330,
+     "w": 76,
+     "h": 16,
+     "loc": [
+      263,
+      330
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 3029,
+     "castName": "MyDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3029-MyDate.txt",
+     "x": 234,
+     "y": 354,
+     "w": 68,
+     "h": 18,
+     "loc": [
+      234,
+      354
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 3030,
+     "castName": "MyName",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3030-MyName.txt",
+     "x": 137,
+     "y": 302,
+     "w": 299,
+     "h": 16,
+     "loc": [
+      137,
+      302
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 9,
+     "castId": 1004,
+     "castName": "PayYear",
+     "type": "text",
+     "file": "BANK09/1004-PayYear.txt",
+     "x": 161,
+     "y": 381,
+     "w": 109,
+     "h": 17,
+     "loc": [
+      161,
+      381
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 113,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/113-BNKBUTN.PCT.png",
+     "x": 550,
+     "y": 398,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      587,
+      415
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 59,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 115,
+     "castName": "BNKBUTN.PCT",
+     "type": "bitmap",
+     "file": "BANK09/115-BNKBUTN.PCT.png",
+     "x": 552,
+     "y": 1480,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      589,
+      1497
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 1007,
+     "castName": "FileNum",
+     "type": "text",
+     "file": "BANK09/1007-FileNum.txt",
+     "x": 147,
+     "y": 256,
+     "w": 52,
+     "h": 17,
+     "loc": [
+      147,
+      256
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 21,
+     "castId": 3032,
+     "castName": "Interest",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3032-Interest.txt",
+     "x": 258,
+     "y": 407,
+     "w": 37,
+     "h": 16,
+     "loc": [
+      258,
+      407
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "to": 54,
+   "sprites": []
+  },
+  {
+   "n": 55,
+   "script": {
+    "castId": 36,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 2,
+     "castId": 86,
+     "castName": "NUBANK06.PCT",
+     "type": "bitmap",
+     "file": "BANK09/86-NUBANK06.PCT.png",
+     "x": 85,
+     "y": 1,
+     "w": 414,
+     "h": 463,
+     "loc": [
+      292,
+      232
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 3000,
+     "castName": "CurrentDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3000-CurrentDate.txt",
+     "x": 183,
+     "y": 233,
+     "w": 79,
+     "h": 17,
+     "loc": [
+      183,
+      233
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 102,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/102.png",
+     "x": 357,
+     "y": 330,
+     "w": 101,
+     "h": 22,
+     "loc": [
+      406,
+      340
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 3031,
+     "castName": "MyRecieve",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3031-MyRecieve.txt",
+     "x": 261,
+     "y": 264,
+     "w": 36,
+     "h": 17,
+     "loc": [
+      261,
+      264
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 20,
+     "castId": 165,
+     "castName": "MySave3",
+     "type": "bitmap",
+     "file": "BANK09/165-MySave3.png",
+     "x": 115,
+     "y": 378,
+     "w": 325,
+     "h": 61,
+     "loc": [
+      277,
+      408
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 56,
+   "to": 59,
+   "sprites": []
+  },
+  {
+   "n": 60,
+   "script": {
+    "castId": 36,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 2,
+     "castId": 89,
+     "castName": "NUBANK12.PCT",
+     "type": "bitmap",
+     "file": "BANK09/89-NUBANK12.PCT.png",
+     "x": 55,
+     "y": 4,
+     "w": 467,
+     "h": 471,
+     "loc": [
+      288,
+      239
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 3028,
+     "castName": "MyLoan",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3028-MyLoan.txt",
+     "x": 219,
+     "y": 245,
+     "w": 61,
+     "h": 19,
+     "loc": [
+      219,
+      245
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 3029,
+     "castName": "MyDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3029-MyDate.txt",
+     "x": 222,
+     "y": 270,
+     "w": 61,
+     "h": 18,
+     "loc": [
+      222,
+      270
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 3030,
+     "castName": "MyName",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3030-MyName.txt",
+     "x": 390,
+     "y": 211,
+     "w": 94,
+     "h": 17,
+     "loc": [
+      390,
+      211
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 31,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 3000,
+     "castName": "CurrentDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3000-CurrentDate.txt",
+     "x": 416,
+     "y": 152,
+     "w": 79,
+     "h": 17,
+     "loc": [
+      416,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 9,
+     "castId": 103,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/103.png",
+     "x": 123,
+     "y": 417,
+     "w": 90,
+     "h": 19,
+     "loc": [
+      166,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 19,
+     "castId": 1007,
+     "castName": "FileNum",
+     "type": "text",
+     "file": "BANK09/1007-FileNum.txt",
+     "x": 140,
+     "y": 152,
+     "w": 34,
+     "h": 16,
+     "loc": [
+      140,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 20,
+     "castId": 166,
+     "castName": "MySave4",
+     "type": "bitmap",
+     "file": "BANK09/166-MySave4.png",
+     "x": 301,
+     "y": 392,
+     "w": 217,
+     "h": 72,
+     "loc": [
+      409,
+      428
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 61,
+   "to": 63,
+   "sprites": []
+  },
+  {
+   "n": 64,
+   "sprites": [
+    {
+     "ch": 2,
+     "castId": 88,
+     "castName": "NUBANK11.PCT",
+     "type": "bitmap",
+     "file": "BANK09/88-NUBANK11.PCT.png",
+     "x": 51,
+     "y": 31,
+     "w": 485,
+     "h": 443,
+     "loc": [
+      293,
+      252
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 1011,
+     "castName": "MyReturn",
+     "type": "text",
+     "file": "BANK09/1011-MyReturn.txt",
+     "x": 313,
+     "y": 335,
+     "w": 61,
+     "h": 18,
+     "loc": [
+      313,
+      335
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 34,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 3030,
+     "castName": "MyName",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3030-MyName.txt",
+     "x": 253,
+     "y": 297,
+     "w": 94,
+     "h": 16,
+     "loc": [
+      253,
+      297
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 3000,
+     "castName": "CurrentDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3000-CurrentDate.txt",
+     "x": 377,
+     "y": 263,
+     "w": 56,
+     "h": 16,
+     "loc": [
+      377,
+      263
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 22,
+     "castId": 167,
+     "castName": "MySave5",
+     "type": "bitmap",
+     "file": "BANK09/167-MySave5.png",
+     "x": 50,
+     "y": 406,
+     "w": 325,
+     "h": 61,
+     "loc": [
+      212,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 65,
+   "script": {
+    "castId": 36,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 2,
+     "castId": 88,
+     "castName": "NUBANK11.PCT",
+     "type": "bitmap",
+     "file": "BANK09/88-NUBANK11.PCT.png",
+     "x": 51,
+     "y": 31,
+     "w": 485,
+     "h": 443,
+     "loc": [
+      293,
+      252
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 1011,
+     "castName": "MyReturn",
+     "type": "text",
+     "file": "BANK09/1011-MyReturn.txt",
+     "x": 313,
+     "y": 335,
+     "w": 61,
+     "h": 18,
+     "loc": [
+      313,
+      335
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 34,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 3030,
+     "castName": "MyName",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3030-MyName.txt",
+     "x": 253,
+     "y": 297,
+     "w": 94,
+     "h": 16,
+     "loc": [
+      253,
+      297
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 3000,
+     "castName": "CurrentDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3000-CurrentDate.txt",
+     "x": 377,
+     "y": 263,
+     "w": 56,
+     "h": 16,
+     "loc": [
+      377,
+      263
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 22,
+     "castId": 167,
+     "castName": "MySave5",
+     "type": "bitmap",
+     "file": "BANK09/167-MySave5.png",
+     "x": 50,
+     "y": 406,
+     "w": 325,
+     "h": 61,
+     "loc": [
+      212,
+      436
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 66,
+   "to": 69,
+   "sprites": []
+  },
+  {
+   "n": 70,
+   "script": {
+    "castId": 31,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 2,
+     "castId": 90,
+     "castName": "NUBANK13.PCT",
+     "type": "bitmap",
+     "file": "BANK09/90-NUBANK13.PCT.png",
+     "x": -2,
+     "y": 26,
+     "w": 482,
+     "h": 450,
+     "loc": [
+      239,
+      251
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 3028,
+     "castName": "MyLoan",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3028-MyLoan.txt",
+     "x": 188,
+     "y": 330,
+     "w": 61,
+     "h": 19,
+     "loc": [
+      188,
+      330
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 3029,
+     "castName": "MyDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3029-MyDate.txt",
+     "x": 184,
+     "y": 355,
+     "w": 61,
+     "h": 18,
+     "loc": [
+      184,
+      355
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 3030,
+     "castName": "MyName",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3030-MyName.txt",
+     "x": 103,
+     "y": 302,
+     "w": 94,
+     "h": 17,
+     "loc": [
+      103,
+      302
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 19,
+     "castId": 1007,
+     "castName": "FileNum",
+     "type": "text",
+     "file": "BANK09/1007-FileNum.txt",
+     "x": 128,
+     "y": 256,
+     "w": 52,
+     "h": 17,
+     "loc": [
+      128,
+      256
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 20,
+     "castId": 3032,
+     "castName": "Interest",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3032-Interest.txt",
+     "x": 235,
+     "y": 408,
+     "w": 37,
+     "h": 16,
+     "loc": [
+      235,
+      408
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 71,
+   "to": 73,
+   "sprites": []
+  },
+  {
+   "n": 74,
+   "script": {
+    "castId": 40,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 127,
+     "castName": "NUBANK25.PCT",
+     "type": "bitmap",
+     "file": "BANK09/127-NUBANK25.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 130,
+     "castName": "BankI3",
+     "type": "bitmap",
+     "file": "BANK09/130-BankI3.png",
+     "x": 639,
+     "y": 459,
+     "w": 38,
+     "h": 20,
+     "loc": [
+      658,
+      469
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 38,
+      "castName": ""
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 75,
+   "script": {
+    "castId": 16,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 127,
+     "castName": "NUBANK25.PCT",
+     "type": "bitmap",
+     "file": "BANK09/127-NUBANK25.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 1,
+     "y": 392,
+     "w": 637,
+     "h": 86,
+     "loc": [
+      1,
+      392
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 39,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 3,
+     "castId": 130,
+     "castName": "BankI3",
+     "type": "bitmap",
+     "file": "BANK09/130-BankI3.png",
+     "x": 639,
+     "y": 459,
+     "w": 38,
+     "h": 20,
+     "loc": [
+      658,
+      469
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 38,
+      "castName": ""
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 76,
+   "to": 84,
+   "sprites": []
+  },
+  {
+   "n": 85,
+   "script": {
+    "castId": 53,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 136,
+     "castName": null,
+     "castMissing": true,
+     "x": 320,
+     "y": 240,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 371,
+     "y": 185,
+     "w": 122,
+     "h": 246,
+     "loc": [
+      371,
+      185
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 52,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 1,
+     "y": 392,
+     "w": 637,
+     "h": 86,
+     "loc": [
+      1,
+      392
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 52,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 27,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 128,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      128,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 86,
+   "sound1": {
+    "castId": 334,
+    "castName": null,
+    "castMissing": true,
+    "kind": "cast"
+   },
+   "script": {
+    "castId": 21,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 136,
+     "castName": null,
+     "castMissing": true,
+     "x": 320,
+     "y": 240,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 174,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/174.png",
+     "x": 373,
+     "y": 188,
+     "w": 103,
+     "h": 126,
+     "loc": [
+      424,
+      251
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 371,
+     "y": 185,
+     "w": 122,
+     "h": 246,
+     "loc": [
+      371,
+      185
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 52,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 108,
+     "castName": "",
+     "type": "shape",
+     "x": 1,
+     "y": 392,
+     "w": 637,
+     "h": 86,
+     "loc": [
+      1,
+      392
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 58,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 27,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "BANK09/192.png",
+     "x": -1,
+     "y": 424,
+     "w": 198,
+     "h": 54,
+     "loc": [
+      98,
+      451
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 24,
+     "y": 427,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      24,
+      427
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 128,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      128,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 87,
+   "to": 104,
+   "sprites": []
+  },
+  {
+   "n": 105,
+   "sprites": [
+    {
+     "ch": 2,
+     "castId": 123,
+     "castName": null,
+     "castMissing": true,
+     "x": 320,
+     "y": 240,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 124,
+     "castName": "TWNMAP57.PCT",
+     "type": "bitmap",
+     "file": "BANK09/124-TWNMAP57.PCT.png",
+     "x": 98,
+     "y": 36,
+     "w": 444,
+     "h": 355,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 4,
+     "castName": "",
+     "type": "shape",
+     "x": 171,
+     "y": 188,
+     "w": 330,
+     "h": 262,
+     "loc": [
+      171,
+      188
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 6,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 5,
+     "castId": 125,
+     "castName": "H-BKLOA2.PCT",
+     "type": "bitmap",
+     "file": "BANK09/125-H-BKLOA2.PCT.png",
+     "x": -81,
+     "y": 123,
+     "w": 330,
+     "h": 263,
+     "loc": [
+      171,
+      188
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 6,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  }
+ ]
+}

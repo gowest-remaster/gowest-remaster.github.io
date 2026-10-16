@@ -1,0 +1,126 @@
+{
+ "movie": "STORE",
+ "origin": "assets/STORE/",
+ "members": [
+  {
+   "castId": 39,
+   "name": "linked picts list",
+   "type": "text",
+   "text": "[173: \"CATALG00.PCT\", 174: \"CATALG01.PCT\", 175: \"CATALG02.PCT\", 176: \"CATALG03.PCT\", 177: \"CATALG04.PCT\", 178: \"CATALG05.PCT\", 179: \"CATALG06.PCT\", 180: \"CATALG07.PCT\", 181: \"CATALG08.PCT\", 182: \"CATALG09.PCT\", 183: \"CATALG10.PCT\", 184: \"CATALG11.PCT\", 185: \"CATALG12.PCT\", 186: \"CATALG13.PCT\", 187: \"CATALG14.PCT\"]"
+  },
+  {
+   "castId": 40,
+   "name": "backup of defCatalogItems",
+   "type": "text",
+   "text": "[#type: #seedsMenu, #name: #seedsMenu, #year: 0, #month: 0, #cast: \"seeds menu\", #loc: point(329, 203)], [#type: #seeds, #name: #winterWheat, #year: 0, #month: 0, #cast: \"winter wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #springWheat, #year: 0, #month: 0, #cast: \"spring wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #oats, #year: 0, #month: 0, #cast: \"oats\", #loc: point(329, 203)], [#type: #seeds, #name: #corn, #year: 0, #month: 0, #cast: \"corn\", #loc: point(329, 203)], [#type: #products, #name: #windMill, #year: 0, #month: 0, #cast: \"windmill\", #loc: point(328, 143), #num: 3, #price: 80], [#type: #products, #name: #woodenFence, #year: 0, #month: 0, #cast: \"wooden fence\", #loc: point(328, 143), #num: 1, #price: 200], [#type: #products, #name: #wireFence, #year: 1883, #month: 4, #cast: \"wire fence\", #loc: point(328, 143), #num: 1, #price: 100], [#type: #products, #name: #kodakCamera, #year: 1888, #month: 4, #cast: \"kodak camera\", #loc: point(328, 143), #num: 1, #price: 25], [#type: #products, #name: #tractor, #year: 1890, #month: 4, #cast: \"tractor\", #loc: point(328, 143), #num: 3, #price: 400], [#type: #products, #name: #car, #year: 1908, #month: 4, #cast: \"car\", #loc: point(328, 143), #num: 1, #price: 2000]"
+  },
+  {
+   "castId": 42,
+   "name": "",
+   "type": "text",
+   "text": "Do you want to save your game?\n\n"
+  },
+  {
+   "castId": 44,
+   "name": "psSpritesHandlerByColor",
+   "type": "text",
+   "text": "Sprites handler parent script"
+  },
+  {
+   "castId": 107,
+   "name": "NumOfProductsInStock",
+   "type": "text",
+   "text": "2"
+  },
+  {
+   "castId": 108,
+   "name": "productPrice",
+   "type": "text",
+   "text": "$80.00"
+  },
+  {
+   "castId": 109,
+   "name": "dummyNum",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 110,
+   "name": "dummyPrice",
+   "type": "text",
+   "text": "$80.00"
+  },
+  {
+   "castId": 112,
+   "name": "SeedsName",
+   "type": "text",
+   "text": "Winter wheat"
+  },
+  {
+   "castId": 131,
+   "name": "AcresToPlant",
+   "type": "text",
+   "text": "10"
+  },
+  {
+   "castId": 132,
+   "name": "PriceOfSeedsPerAcre",
+   "type": "text",
+   "text": "$1.32"
+  },
+  {
+   "castId": 133,
+   "name": "Total",
+   "type": "text",
+   "text": "13.20"
+  },
+  {
+   "castId": 135,
+   "name": "seed price 1",
+   "type": "text",
+   "text": "$26.36"
+  },
+  {
+   "castId": 136,
+   "name": "",
+   "type": "text",
+   "text": "$26.36"
+  },
+  {
+   "castId": 137,
+   "name": "",
+   "type": "text",
+   "text": "$50.94"
+  },
+  {
+   "castId": 138,
+   "name": "",
+   "type": "text",
+   "text": "$54.58"
+  },
+  {
+   "castId": 167,
+   "name": "NumOfProducts",
+   "type": "text",
+   "text": "1"
+  },
+  {
+   "castId": 168,
+   "name": "productPrice2",
+   "type": "text",
+   "text": "$80.00"
+  },
+  {
+   "castId": 169,
+   "name": "productsTotalPrice",
+   "type": "text",
+   "text": "$80.00"
+  },
+  {
+   "castId": 1000,
+   "name": "Info",
+   "type": "text",
+   "text": ""
+  }
+ ]
+}

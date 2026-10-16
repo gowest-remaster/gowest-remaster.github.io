@@ -1,0 +1,180 @@
+{
+ "movie": "TSTREET1",
+ "origin": "assets/TSTREET1/",
+ "members": [
+  {
+   "castId": 33,
+   "name": "",
+   "type": "text",
+   "text": "Do you want to save your game?\n\n"
+  },
+  {
+   "castId": 999,
+   "name": "D",
+   "type": "text",
+   "text": "1880,1,-2,1,12,98,+2,2,06,169\n1880,2,0,1,12,98,+2,2,07,169\n1881,2,0,1,12,172,+3,2,07,173\n1882,1,-3,1,12,174,+3,2,08,175\n1882,2,-3,1,12,176,+3,1,16,177\n1887,2,+1,1,14,180,+3,1,18,181\n1888,1,-2,1,14,178,+2,1,18,179\n1888,2,+2,1,14,184,+4,1,20,185\n1893,2,-30,1,14,184,-40,1,20,185,-20,1,18,188\n1894,2,0,0,0,189,+4,1,10,190,+2,1,15,191\n1914,2,+2,1,15,193,+3,1,15,194,0,1,10,195\n1915,1,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1915,2,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1916,1,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1916,2,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1917,1,+5,1,14,200,+10,1,15,201,-10,1,10,202,+10,3,40,203\n1917,2,+5,1,14,200,+10,1,15,201,-10,1,10,202,+10,3,40,203\n1918,1,+5,1,14,200,+10,1,15,201,-10,1,10,202,+10,3,40,203\n1918,2,+5,1,14,200,+10,1,15,201,-10,1,10,202,+10,3,40,203\n1919,1,+2,1,14,204,-2,1,15,206,+7,1,15,202,+10,3,40,207\n"
+  },
+  {
+   "castId": 1000,
+   "name": "Price",
+   "type": "text",
+   "text": "3000"
+  },
+  {
+   "castId": 1001,
+   "name": "BUisness",
+   "type": "text",
+   "text": "800,40,10\n1000,30,12\n2000,50,14\n3000,75,16\n20,0,0"
+  },
+  {
+   "castId": 1002,
+   "name": "Dealers",
+   "type": "text",
+   "text": "1880,1880,-2,700,702,0,0,0,0\n1881,1885,-3,700,706,0,0,0,0\n1886,1886,-3,700,706,0,713,714,715\n1887,1890,+1,707,708,0,707,712,716\n1891,1893,-30,700,706,0,713,714,715\n1894,1894,+4,700,706,0,713,714,715\n1895,1914,+10,700,706,0,713,714,715\n1915,1920,+3,709,706,0,711,712,715\n6,7,0,720\n8,8,+4,721,722\n\n"
+  },
+  {
+   "castId": 1003,
+   "name": "NoM",
+   "type": "text",
+   "text": "\n\n  You don't have enough money to do this."
+  },
+  {
+   "castId": 1004,
+   "name": "BuyLand",
+   "type": "text",
+   "text": "You don't have enough money to do this."
+  },
+  {
+   "castId": 1006,
+   "name": "Date",
+   "type": "text",
+   "text": "MAR. 4, 1909"
+  },
+  {
+   "castId": 1007,
+   "name": "",
+   "type": "text",
+   "text": " \n       Crops         Bushels          Price          Total\n                                         per bushel\n______________________________________________\n Winter wheat:    88888    x    $15.40   =   $8888888\n Spring wheat:                 x                 =\n Corn:                             x               =\n Oats:                              x               =  \n_______________________________________________\n \n                                     Total payment : \n"
+  },
+  {
+   "castId": 1008,
+   "name": "Deal2",
+   "type": "text",
+   "text": "The O'Grady grain elevator is offering 19 cents\nmore per bushel than the Longview elevator.\nI will haul your crops to O'Grady for $74.00. \n"
+  },
+  {
+   "castId": 1009,
+   "name": "CurFDBK",
+   "type": "text",
+   "text": "\n\nYou have nothing to sell."
+  },
+  {
+   "castId": 1010,
+   "name": "NoSale",
+   "type": "text",
+   "text": "\n\nYou have nothing to sell."
+  },
+  {
+   "castId": 1011,
+   "name": "Hints",
+   "type": "text",
+   "text": "2,3,5,6,8,11,13,16,13,16,18,21,18,21,18,21,18,21,18,21\nAt the general store you can order products\nfrom the catalog or buy seeds.\n\nAt the bank you can receive money you earned or\ninherited. You can also borrow money from the bank.\n\nClick here to sell  your crops.\n\n\n\n\nYou can sell your crops to a grain elevator dealer in another\ntown. Sometimes prices are higher, but you must pay to\nship your crops out of town. Compare prices carefully\nbefore you decide where to sell your crops.\n\nThis business is for sale. Click on the sign to find out\nthe price and the expected monthly income. \nClick on OK to buy the business.\nClick on X to cancel the sale.\n\n"
+  },
+  {
+   "castId": 1012,
+   "name": "No1894",
+   "type": "text",
+   "text": "Hi there, neighbor. I have bad news for you.\nMy grain elevator is full, so I can't buy your grain. Because of the railroad strike, I can't ship the grain\nback east. Come back when the strike is finished.\n"
+  },
+  {
+   "castId": 1025,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1027,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1050,
+   "name": "B1",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1051,
+   "name": "B2",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1052,
+   "name": "B3",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1053,
+   "name": "B4",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1054,
+   "name": "P1",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1055,
+   "name": "P2",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1056,
+   "name": "P3",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1057,
+   "name": "P4",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1058,
+   "name": "PT1",
+   "type": "text",
+   "text": "$0.30"
+  },
+  {
+   "castId": 1059,
+   "name": "PT2",
+   "type": "text",
+   "text": "$0.49"
+  },
+  {
+   "castId": 1060,
+   "name": "PT3",
+   "type": "text",
+   "text": "$0.58"
+  },
+  {
+   "castId": 1061,
+   "name": "PT4",
+   "type": "text",
+   "text": "$0.25"
+  },
+  {
+   "castId": 1062,
+   "name": "TotalPrice",
+   "type": "text",
+   "text": "$0.00"
+  }
+ ]
+}

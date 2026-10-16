@@ -1,0 +1,209 @@
+{
+  "note": "CC-BY credits that must appear in the game credits. Add entries per kit; keep this file valid JSON.",
+  "life": [
+    {
+      "title": "Realistic Holstein Cow - Game Ready Asset",
+      "author": "3Dima",
+      "url": "https://sketchfab.com/3d-models/realistic-holstein-cow-game-ready-asset-0bd2f1c0c79a4b5b9d36e67f0f700c5e",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/life/cow.glb",
+        "world/assets/life/cow_hereford.glb"
+      ]
+    },
+    {
+      "title": "Brown Cow 3d model",
+      "author": "iRahulRajput",
+      "url": "https://sketchfab.com/3d-models/brown-cow-3d-model-14a5bf64cd93490682e841292b318d1b",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/life/cow_brown.glb"
+      ]
+    },
+    {
+      "title": "Horse free download",
+      "author": "pgonarg",
+      "url": "https://sketchfab.com/3d-models/horse-free-download-9b77bb7542354b10bb7b4c6a25866724",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/life/horse_bay.glb"
+      ]
+    },
+    {
+      "title": "Realistic Horse - Low Poly Game Ready Asset",
+      "author": "3Dima",
+      "url": "https://sketchfab.com/3d-models/realistic-horse-low-poly-game-ready-asset-37a3c3237aba43d5970fb25fc022bbb3",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/life/horse_grey.glb"
+      ]
+    },
+    {
+      "title": "Pig",
+      "author": "bokadigimon",
+      "url": "https://sketchfab.com/3d-models/6d78fe9cec03483ba6d3e4ff30dc6265",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/life/pig.glb"
+      ]
+    },
+    {
+      "title": "GA Free_201_Village Hen \u2013 Speckled Farm Chicken",
+      "author": "Galaxy Abundant",
+      "url": "https://sketchfab.com/3d-models/ga-free-201-village-hen-speckled-farm-chicken-0fc6e7dce1e1453c8811a93082fd1d61",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/life/hen.glb"
+      ]
+    },
+    {
+      "title": "Realistic Rooster",
+      "author": "Jungle Jim",
+      "url": "https://sketchfab.com/3d-models/realistic-rooster-6f6b31816ac245aa8b849be2ed299fb8",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/life/rooster.glb"
+      ]
+    },
+    {
+      "title": "Realistic Terrier Dog - Game Ready Asset",
+      "author": "3Dima",
+      "url": "https://sketchfab.com/3d-models/realistic-terrier-dog-game-ready-asset-51f498df96c049cbb9e600b0a88c5838",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/life/dog.glb"
+      ]
+    },
+    {
+      "title": "CMU Graphics Lab Motion Capture Database",
+      "author": "Carnegie Mellon University",
+      "url": "http://mocap.cs.cmu.edu/",
+      "license": "free for commercial use (credit requested)",
+      "credit": "The data used in this project was obtained from mocap.cs.cmu.edu. The database was created with funding from NSF EIA-0196217.",
+      "usedIn": [
+        "world/assets/life/people/*.glb"
+      ]
+    }
+  ],
+  "town": [
+    {
+      "title": "Jupiter",
+      "author": "lordvencar",
+      "url": "https://sketchfab.com/3d-models/jupiter-3c026c9d0a324f0aba296589a96378da",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/town/civic/locomotive.glb"
+      ]
+    },
+    {
+      "title": "Antique Luggage Carts Type A",
+      "author": "Mad_Lobster_Workshop",
+      "url": "https://sketchfab.com/3d-models/antique-luggage-carts-type-a-141b8b0b1e43437a9ec53ca039af1bbc",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/town/civic/luggage_cart.glb"
+      ]
+    },
+    {
+      "title": "Rural Free Delivery wagon",
+      "author": "Aldemona",
+      "url": "https://sketchfab.com/3d-models/rural-free-delivery-wagon-73c59f9eded94cdea8cc1237ecde53c8",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/town/props/rfd_wagon.glb"
+      ]
+    },
+    {
+      "title": "Antique Balance Scale with Brass Weights",
+      "author": "Azura_SQ",
+      "url": "https://sketchfab.com/3d-models/antique-balance-scale-with-brass-weights-4335983d5596469ebcd75595a8adbe16",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/town/interiors/store.glb"
+      ]
+    },
+    {
+      "title": "Antique National Cash Register",
+      "author": "jasu86",
+      "url": "https://sketchfab.com/3d-models/antique-national-cash-register-f898629093ad432dadab11702025d98c",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/town/interiors/store.glb"
+      ]
+    },
+    {
+      "title": "Antique Iron Safe",
+      "author": "Calipo",
+      "url": "https://sketchfab.com/3d-models/antique-iron-safe-7f4dba8e860e468cadbf69e178f4d8f8",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/town/interiors/bank.glb"
+      ]
+    }
+  ],
+  "homestead": [
+    {
+      "title": "Old-fashioned butter churn",
+      "author": "denijulie",
+      "url": "https://sketchfab.com/3d-models/old-fashioned-butter-churn-fea0a35127c64d8e925a4cbc2aeb8c3c",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/homestead/interior_props.glb"
+      ]
+    },
+    {
+      "title": "Pitcher Pump",
+      "author": "User65535",
+      "url": "https://sketchfab.com/3d-models/pitcher-pump-dc90b877fc8e41a6ba99615c6e8e7e2b",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/homestead/pump.glb"
+      ]
+    },
+    {
+      "title": "\"Star 6\" Cast Iron Stove from Sukeek's Cabin",
+      "author": "Jefferson Patterson Park and Museum",
+      "url": "https://sketchfab.com/3d-models/star-6-cast-iron-stove-from-sukeeks-cabin-da4bd868e0c04fc59678391b0128ede8",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/homestead/interior_props.glb"
+      ]
+    },
+    {
+      "title": "Wagon",
+      "author": "Jefferson Patterson Park and Museum",
+      "url": "https://sketchfab.com/3d-models/wagon-9d16272fefb74fc8afb20867b020ccd7",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/homestead/wagon.glb",
+        "world/assets/homestead/camp (via wagon.glb)"
+      ]
+    },
+    {
+      "title": "Walking plow from Simcoe County Museum",
+      "author": "SteveBenoit",
+      "url": "https://sketchfab.com/3d-models/walking-plow-from-simcoe-county-museum-32b5eabfd52042aca5d59c25846b3765",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/homestead/plow.glb",
+        "world/assets/homestead/implement_plow.glb"
+      ]
+    }
+  ],
+  "nature": [
+    {
+      "title": "Realistic HD Black poplar (35/105)",
+      "author": "PlantCatalog",
+      "url": "https://sketchfab.com/3d-models/realistic-hd-black-poplar-35105-57829a4e7b3149fa8bd4b44f1a5f533a",
+      "license": "CC-BY-4.0",
+      "usedIn": [
+        "world/assets/nature/trees/cottonwood.glb",
+        "world/assets/nature/trees/cottonwood_leaf.webp",
+        "world/assets/nature/trees/cottonwood_leaf_n.webp",
+        "world/assets/nature/trees/cottonwood_far.webp",
+        "world/assets/nature/trees/cottonwood_far_n.webp"
+      ],
+      "notes": "Re-processed: decimated branch LODs, leaf-cluster cards and impostors rendered from the model's leaves; used as the Plains cottonwood."
+    }
+  ]
+}

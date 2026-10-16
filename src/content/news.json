@@ -1,0 +1,879 @@
+{
+ "note": "The Longview Gazette. Issue years/dates/town-talk links from SHARED MovieScript 3269 (g_aYears, g_aDate, g_WhatN). Article text exists only as PICT art in the original; it is parsed from the transcription in docs/spec/03-town.md Appendix B (source:\"transcribed\"; [illegible] marks unreadable pixels). Paragraph breaks are the transcriber's.",
+ "issues": [
+  {
+   "index": 1,
+   "year": 1880,
+   "month": 8,
+   "day": 1,
+   "dateText": "Aug. 1, 1880",
+   "openedFromTownTalk": [
+    102
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS1/1880.png",
+    "sharedCast": 3516,
+    "layoutNotes": "**Front page layout** (278x356 thumbnail of the full page; body text too small to read in full, so the article text is transcribed from the detail images 18801–18805).\n- **Masthead:** THE LONGVIEW GAZETTE (bold serif caps, double rule underneath). No date is printed on the page.\n- **Top, full width:** WHO WILL BE THE NEXT PRESIDENT? (two columns, oval portrait captioned \"James A. Garfield / Republican Candidate / President\" in the right column) = 18801\n- **Top right column:** MORE MILLIONAIRES = 18802\n- **Middle left:** LET THERE BE LIGHT! (light bulb drawing, caption \"Edison's Incandescent Lamp\") = 18803\n- **Middle right, two columns:** ONE MILLION NEW IMMIGRANTS = 18804\n- **Bottom left, two columns:** U.S. WHEAT PRODUCTION UP (wheat-sheaf chart, x labels 1866 1873 1880) = 18805\n- **Bottom right advertisement box** (very low resolution, best reading):\n  - \"Professional Cards\"\n  - \"C. [illegible, possibly Marshall]\" with a drop-cap \"F\" and two lines of [illegible] bold text\n  - \"W[illegible] Murphy  Harry E. [illegible, possibly Gryllon]\"\n  - \"Murphy & [illegible, possibly Gryllon]\"\n  - drop-cap \"A\" + \"[illegible, likely TTORNEYS AT LAW]\"\n  - \"[illegible] County, [illegible]\"\n  - \"[illegible, likely MONEY TO LOAN]\" (large bold)\n  - \"To loan on Warehouse Receipt for Grain and Provisions\"",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "18801",
+     "n": 1,
+     "headline": "WHO WILL BE THE NEXT PRESIDENT?",
+     "headlineOnFrontPage": "WHO WILL BE THE NEXT PRESIDENT?",
+     "text": "New York—Last night, General Winfield S. Hancock became the Democratic candidate for President. He will run against Republican James A. Garfield.\n\nMr. Garfield promised to give government jobs to people who are good workers. Today, some people in the government give jobs to their friends.\n\nMr. Hancock has pledged to make the Constitution stronger.",
+     "caption": "James A. Garfield / Republican Candidate / President [oval engraved portrait of a bearded man]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18801.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18802",
+     "n": 2,
+     "headline": "MORE MILLIONAIRES",
+     "headlineOnFrontPage": "MORE MILLIONAIRES",
+     "text": "Topeka—There are more than 100 millionaires in America. Just 40 years ago, there were only 20 millionaires in the country.\n\nTwo of America's richest men are Andrew Carnegie, who owns many large steel companies, and John D. Rockefeller, who owns 90 percent of the nation's oil refineries.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18802.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18803",
+     "n": 3,
+     "headline": "LET THERE BE LIGHT!",
+     "headlineOnFrontPage": "LET THERE BE LIGHT!",
+     "text": "New Jersey—Thomas Alva Edison has patented the best incandescent lamp ever. It uses a bamboo fiber sealed in a vacuum. It gives off light for 40 hours!",
+     "caption": "Edison's Incandescent Lamp [line drawing of an early light bulb with a threaded base]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18803.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18804",
+     "n": 4,
+     "headline": "ONE MILLION NEW IMMIGRANTS",
+     "headlineOnFrontPage": "ONE MILLION NEW IMMIGRANTS",
+     "text": "New York — Immigrants from the British and Emerald Isles are flooding onto our shores.\n\nNearly 550,000 British subjects and about 440,000 Irish citizens have moved to America in the past year.\n\nMost of the newcomers live and work in big cities on the East Coast.\n\nOther new Americans are trying their luck out west. Some are building the railroads that spread from coast to coast. Others are plowing their homesteads in the Great Plains.\n\nThere is plenty of room for all of them here. America welcomes her cousins from across the ocean!",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18804.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18805",
+     "n": 5,
+     "headline": "U.S. WHEAT PRODUCTION UP",
+     "headlineOnFrontPage": "U.S. WHEAT PRODUCTION UP",
+     "text": "Topeka — Mr. John W. Paton of the Kansas Farming Society reported that U.S. farmers harvested 500 million bushels of wheat this year.\n\nMr. Paton said that the new machine cutters have increased the harvest by 221 percent in the past 14 years.\n\n\"Farmers cut 80 percent of this year's wheat crop by machine. Only 20 percent of the crop was cut by hand.\"\n\n\"Unfortunately, wheat prices have dropped 27 percent since 1866.\"",
+     "caption": "[pictogram chart: three wheat sheaves of increasing size on an axis; y-axis label \"500 million\"; x-axis labels \"1866\", \"1873\", \"1880\"]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18805.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "year": 1881,
+   "month": 9,
+   "day": 20,
+   "dateText": "Sept. 20, 1881",
+   "openedFromTownTalk": [
+    105
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS1/1881.png",
+    "sharedCast": 3517,
+    "layoutNotes": "**Front page layout** (thumbnail; article text transcribed from 18811–18815).\n- **Masthead:** THE LONGVIEW GAZETTE. No date printed.\n- **Top, full width two columns:** PRESIDENT GARFIELD IS DEAD! (oval portrait captioned \"The Late President James A. Garfield\") = 18811\n- **Top right column:** MURDERER'S STORY = 18812\n- **Middle left:** DEAF MAN \"HEARS\" = 18813\n- **Middle right, two columns:** ALMOST ONE MILLION PEOPLE IN KANSAS (bar chart \"Population in Thousands\") = 18814\n- **Bottom left, two columns:** ANGRY FARMERS DEMAND CHANGES = 18815\n- **Bottom right advertisement box** (low resolution):\n  - \"The [illegible] [illegible]\" (bold heading, possibly a hotel/restaurant name)\n  - \"Fine [illegible] Food / and Drink / Right in the Center / of Topeka\" beside [small drawing of a standing man, possibly a waiter or cowboy]\n  - \"[illegible]\" (bold bar)\n  - separator rule\n  - \"[illegible, possibly H. W. [name]]\" (bold)\n  - drop-cap \"A\" + \"TTORNEY AT LAW\"\n  - \"[illegible]\" (bold bar)",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "18811",
+     "n": 1,
+     "headline": "PRESIDENT GARFIELD IS DEAD!",
+     "headlineOnFrontPage": "PRESIDENT GARFIELD IS DEAD!",
+     "text": "Washington, D.C.—Two months after he was shot by Charles Jules Guiteau, President James Garfield passed away.\n\nThe president's doctors said he had fought bravely for his life, but an infection from the bullet in his back took his life.\n\nPresident Garfield, a Republican, had been president for less than a year. He was forty-nine years old.\n\nToday at noon, Vice-President Chester Arthur will be sworn in as the nation's 21st president.",
+     "caption": "The Late President / James A. Garfield [oval engraved portrait of a bearded man]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18811.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18812",
+     "n": 2,
+     "headline": "MURDERER'S STORY",
+     "headlineOnFrontPage": "MURDERER'S STORY",
+     "text": "Charles Guiteau said he shot the president to get people's attention. He believes the government usually gives jobs to people with personal connections.\n\nMr. Guiteau claimed that he was turned down for the job of U.S. consul in Paris \"because I didn't know the right people.\"\n\nIf Mr. Guiteau is convicted, he will probably be executed.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18812.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18813",
+     "n": 3,
+     "headline": "DEAF MAN \"HEARS\"",
+     "headlineOnFrontPage": "DEAF MAN \"HEARS\"",
+     "text": "Wichita — Bob Taylor, a carpenter, was born deaf. Today, he has a new way of communicating with people.\n\nThe photophone was invented last year by Alexander Graham Bell. It turns the human voice into flashes of light that Mr. Taylor can read.\n\n\"Finally, anyone can talk to me,\" Mr. Taylor said, after receiving his first message.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18813.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18814",
+     "n": 4,
+     "headline": "ALMOST ONE MILLION PEOPLE IN KANSAS",
+     "headlineOnFrontPage": "ALMOST ONE MILLION PEOPLE IN KANSAS",
+     "text": "Kansas City—There are 632,100 more people in Kansas today than there were ten years ago.\n\nAccording to the census, the state's population has climbed to 996,100.\n\nRain in the late 1870s was heavier than usual. The rain proved that Kansas is not a desert. This brought many farmers to our plains.\n\nBanks helped farmers buy farms, tools, and seeds.\n\nNew barbed-wire fences kept cattle out of the fields.\n\nThanks to our farmers, Kansas is almost one million people strong.",
+     "caption": "Population in Thousands [bar chart with three gray bars: 107 (1860), 364 (1870), 996 (1880)]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18814.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18815",
+     "n": 5,
+     "headline": "ANGRY FARMERS DEMAND CHANGES",
+     "headlineOnFrontPage": "ANGRY FARMERS DEMAND CHANGES",
+     "text": "Kansas City—The Buffalo County Farmers' Alliance met here this week. Farmers from the Plains states formed the Alliance last year.\n\nAlliance president John W. Paton said that the railroad companies charge the farmers too much to ship their grain.\n\n\"People back East are getting rich, but farmers in Kansas can't buy shoes for their children,\" Paton claimed.\n\nAlliance members want the federal government to take over the railroads and the grain warehouses from the railroad companies.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18815.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "year": 1887,
+   "month": 2,
+   "day": 5,
+   "dateText": "Feb. 5, 1887",
+   "openedFromTownTalk": [
+    107
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS1/1887.png",
+    "sharedCast": 3518,
+    "layoutNotes": "**Front page layout** (thumbnail; article text transcribed from 18871–18875).\n- **Masthead:** THE LONGVIEW GAZETTE. No date printed.\n- **Top, full width two columns:** THE START OF A KANSAS DROUGHT? (windmill/farm drawing captioned \"Mr. Shaker's Farm\") = 18871\n- **Top right column:** ORANGE YOU GLAD = 18872\n- **Middle left:** SIX HORSES IN ONE = 18873\n- **Middle right, two columns:** ACT TO REGULATE COMMERCE IS LAW! = 18874 (note: on the front-page thumbnail the end of the right column reads \"Congress also created a new agency, the Interstate Commerce Commission. / This agency will make sure that the railroads obey\" — slightly different wording from the detail image, cut off at the box edge)\n- **Bottom left, two columns:** RANCHERS WIPED OUT BY WINTER STORMS (cattle drawing captioned \"Heavy Snow Covers the Grasslands\") = 18875\n- **Bottom right advertisement box** (low resolution; same ads as 1880 page):\n  - \"C. [illegible, possibly Marshall]\" with drop-cap \"F\" and two lines of [illegible] bold text, then \"[illegible] Street, [illegible] City\" (bold)\n  - separator rule\n  - \"W[illegible] Murphy  Harry E. [illegible, possibly Gryllon]\"\n  - \"Murphy & [illegible, possibly Gryllon]\"\n  - drop-cap \"A\" + \"[illegible, likely TTORNEYS AT LAW]\"\n  - \"[illegible] County, [illegible]\"\n  - separator rule\n  - \"[illegible, likely MONEY TO LOAN]\" (large bold)\n  - \"To loan on Warehouse Receipt for Grain and Provisions\"",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "18871",
+     "n": 1,
+     "headline": "THE START OF A KANSAS DROUGHT?",
+     "headlineOnFrontPage": "THE START OF A KANSAS DROUGHT?",
+     "text": "Salinas — Weather experts reported last week that the western Plains states may be in the first stages of a drought.\n\nEven January's blizzard did not make up for last year's very dry summer.\n\nThis year, the spring rains were light and ended early. Two or more dry summers in a row usually means the start of a drought.\n\n\"I remember the heavy rains of 1878 and 1879,\" said Kansas farmer, Ben Shaker.\n\n\"Next, we had a few dry years. I would have starved if I hadn't had a windmill to water my vegetable garden.\"",
+     "caption": "Mr. Shaker's Farm [line drawing of a farm windmill beside a low farmhouse/barn]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18871.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18872",
+     "n": 2,
+     "headline": "ORANGE YOU GLAD",
+     "headlineOnFrontPage": "ORANGE YOU GLAD",
+     "text": "Last year, oranges were sent from Los Angeles, California, to the East Coast in refrigerated train cars for the first time.\n\nThe Atchison, Topeka, and the Santa Fe railway line has plans to use \"cold cars\" to ship Kansas crops across the country. Don't forget, you read it here first!",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18872.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18873",
+     "n": 3,
+     "headline": "SIX HORSES IN ONE",
+     "headlineOnFrontPage": "SIX HORSES IN ONE",
+     "text": "Scott City — Some farmers have put a new kind of animal in front of their plows. This animal is made of steel. It is made by the Case Company.\n\nThe Case steam engine tractor has the power of six horses. The tractor easily plows even the hardest soil.\n\nTractors are rare today. Yet one day, they may put the plow horse out of business.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18873.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18874",
+     "n": 4,
+     "headline": "ACT TO REGULATE COMMERCE IS LAW!",
+     "headlineOnFrontPage": "ACT TO REGULATE COMMERCE IS LAW!",
+     "text": "Washington — Yesterday, Congress passed the Act to Regulate Commerce. This law should stop railroad companies from charging unfair prices.\n\nThe law says that prices for shipping by train must be \"reasonable and just.\" Special rates for certain customers are not allowed.\n\nThe Act does not allow the railroads to charge more for short trips than for long ones.\n\n\"It looks like the folks in Washington are finally listening to us,\" said Mr. John W. Paton, president of the Buffalo County Farmers' Alliance.\n\nCongress created a new agency, the Interstate Commerce Commission (ICC).\n\nThe ICC is the first federal agency to regulate businesses. It will make sure that the railroads obey the new law.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18874.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18875",
+     "n": 5,
+     "headline": "RANCHERS WIPED OUT BY WINTER STORMS",
+     "headlineOnFrontPage": "RANCHERS WIPED OUT BY WINTER STORMS",
+     "text": "Scott City — Farmers and ranchers in Kansas are still estimating how much damage was caused by January's blizzards.\n\nThousands of cattle died, forcing many ranchers to give up their ranches. Farmers have begun to take over the old grazing grounds.\n\nFarmers also suffered from the storms. Whole families froze or starved to death in their cabins and dugouts.",
+     "caption": "Heavy Snow Covers the Grasslands [silhouette drawing of two cattle standing in snow on a horizon line]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18875.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "year": 1888,
+   "month": 8,
+   "day": 1,
+   "dateText": "Aug. 1, 1888",
+   "openedFromTownTalk": [
+    109
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS1/1888.png",
+    "sharedCast": 3519,
+    "layoutNotes": "**Front page layout** (thumbnail; article text transcribed from 18881–18885).\n- **Masthead:** THE LONGVIEW GAZETTE. No date printed.\n- **Top, full width two columns:** PRESIDENT SPEAKS AGAINST TARIFF (oval portrait captioned \"President Grover Cleveland\") = 18881\n- **Top right column:** DRYING UP KANSAS = 18882\n- **Middle left:** DROUGHT CONTINUES = 18883\n- **Middle right, two columns:** NEW CAMERA IS \"NUMBER ONE\" (camera drawing captioned \"The Kodak 'Number One'\") = 18884\n- **Bottom left, two columns:** ARE CATTLE DRIVES PAST THEIR PEAK? (herd drawing captioned \"Cattle Grazing\") = 18885\n- **Bottom right advertisement box** (low resolution):\n  - \"[illegible, possibly H. W. (name) & (name)]\" (bold)\n  - drop-cap \"A\" + \"[illegible, likely TTORNEYS AT LAW]\" + one line of [illegible] small bold text\n  - separator rule\n  - \"[illegible, possibly BILLY'S LAUNDRY SERVICE]\" (bold heading)\n  - [drawing of a man crouching/scrubbing, possibly at a washtub] beside: \"FAST / CLEAN / RELIABLE / At reasonable / rates\"\n  - \"Wichita, by the train depot\"",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "18881",
+     "n": 1,
+     "headline": "PRESIDENT SPEAKS AGAINST TARIFF",
+     "headlineOnFrontPage": "PRESIDENT SPEAKS AGAINST TARIFF",
+     "text": "Washington, D.C.—Last week, President Cleveland told Congress why he is against the tariff.\n\nThe tariff is a tax that Americans must pay on all products made overseas.\n\nThe President explained that the tariff has made extra money for our government. The government does not spend this extra money.\n\n\"The U.S. government is not in the business of making a profit,\" the president said.\n\nBenjamin Harrison, the Republican candidate for president, said that he would keep the tariff if he is elected.",
+     "caption": "President Grover Cleveland [oval engraved portrait of a heavy-set mustached man]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18881.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18882",
+     "n": 2,
+     "headline": "DRYING UP KANSAS",
+     "headlineOnFrontPage": "DRYING UP KANSAS",
+     "text": "Longview — \"If Kansans can drink wet, they are willing to vote dry. We've got to shut down those saloons!\" declared Muriel Gale, president of the local chapter of the Women's Christian Temperence Union, last week.\n\nAn 1880 state law forbids the production and sale of alcohol in Kansas, but liquor is still easy to get here.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18882.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18883",
+     "n": 3,
+     "headline": "DROUGHT CONTINUES",
+     "headlineOnFrontPage": "DROUGHT CONTINUES",
+     "text": "Salinas — Farmers, keep praying for rain! The weather forecasters say there is no sign that the drought will end soon.\n\nBetween 10 and 20 inches of rain usually fall in western Kansas each year. In the past 2 years, only 7 to 9 inches of rain have fallen each year.\n\nMany crops have been lost. Wells cannot pump enough water to save them.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18883.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18884",
+     "n": 4,
+     "headline": "NEW CAMERA IS \"NUMBER ONE\"",
+     "headlineOnFrontPage": "NEW CAMERA IS \"NUMBER ONE\"",
+     "text": "New York — Now that George Eastman has invented the \"Number One\" Kodak Camera, the days of the heavy camera and tripod are gone.\n\nThis camera is light enough for anyone to use, and it is well worth its $25 price tag.\n\nWhen its owners finish a roll of film, they send it to the Kodak Company.\n\nFor $10, Kodak develops the pictures and sends the camera and the pictures back to their owner.\n\nThe camera is easy to use. As Mr. Eastman says, \"You press the button, we do the rest.\"",
+     "caption": "The Kodak \"Number One\" [line drawing of a small box camera]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18884.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18885",
+     "n": 5,
+     "headline": "ARE CATTLE DRIVES PAST THEIR PEAK?",
+     "headlineOnFrontPage": "ARE CATTLE DRIVES PAST THEIR PEAK?",
+     "text": "Dodge City—In the past 20 years, about 10 million head of cattle were driven north from Texas to Missouri and Kansas. Yet, ranching experts say that fewer cattle will be brought north each year.\n\nThere are 3 reasons for this: First, farmers and sheep ranchers have fenced off miles of open range. There is less room for the cattle to graze.\n\nSecondly, refrigerated rail cars enable cows to be butchered farther away from the marketplace.\n\nFinally, many cattle died in blizzards in the last two years.",
+     "caption": "Cattle Grazing [small silhouette drawing of a herd of cattle on a horizon line]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18885.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "year": 1890,
+   "month": 7,
+   "day": 15,
+   "dateText": "July 15, 1890",
+   "openedFromTownTalk": [],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS1/1890.png",
+    "sharedCast": 3520,
+    "layoutNotes": "**Front page layout** (image 280x357, very low resolution; body text under the headlines is generic placeholder copy reused on every front page, not the article text; it is only partly legible)\n- **Masthead:** THE LONGVIEW GAZETTE (heavy black serif, between two horizontal rules). **No date is printed** anywhere on the page.\n- **Top banner headline (full width):** TWO NEW STATES IN THE UNION (detail image 18901 reads \"JOIN THE UNION\")\n- **Top-right column headline:** NO MORE FRONTIER?\n- **Middle-left column headline:** TWO NEW PARKS\n- **Middle-right headline (spanning two columns):** TRUST BUSTING IN THE UNITED STATES (no hyphen on front page; detail image 18904 reads \"TRUST-BUSTING\")\n- **Bottom-left advertisement (spanning two columns):** \"The Garden of the West, FOR SALE! / THE RAILROAD LINE OF THE / ATCHINSON, TOPEKA & SANTA FE / IS SELLING 12,000,000 ACRES OF THE BEST / FARMELAND IN KANSAS AND COLORADO. / Cheaper in price, better terms than anywhere else. / Close to new towns on the railroad line. / ONLY $7.00 PER ACRE / FREE RAIL PASSES TO BUYERS OF LAND\" (note: front-page thumbnail reads \"FARMELAND\"; the detail image 18905 reads \"FARMLAND\")\n- **Bottom-right box:** \"Professional Cards\" followed by decorative business-card style ads, mostly illegible: \"C. [illegible]\" / \"F[illegible] [illegible]\" / \"W.M. Murphy  Harry E. [illegible]\" / \"Murphy & [illegible]\" / \"A[TTORNEYS AT LAW]\" / \"[illegible] County, [illegible]\" / \"[MONEY TO LOAN]\" (heavy black type, illegible) / \"[illegible] on Warehouse Receipt / on Grain and Provisions\"",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "18901",
+     "n": 1,
+     "headline": "TWO NEW STATES JOIN THE UNION",
+     "headlineOnFrontPage": "TWO NEW STATES JOIN THE UNION",
+     "text": "Cheyenne — On July 3, Wyoming became a state.  On July 10, Idaho became a state.\n\nA territory must have at least 60,000 residents to apply for statehood.\n\nIdaho has 89,000 residents.  It has an average of 1.1 people per square mile.\n\nOnly 63,000 people live in the state of Wyoming.  They are spread out at 0.6 people per square mile.\n\nWyoming is a state that does things its own way.  In this new state, women are allowed to vote.\n\nThe state of Kansas welcomes the 43rd and the 44th states into the United States of America.",
+     "caption": "(no caption) [Map of the continental United States in gray with Idaho and Wyoming filled in black; one state in the southwest shown in white]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18901.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18902",
+     "n": 2,
+     "headline": "NO MORE FRONTIER?",
+     "headlineOnFrontPage": "NO MORE FRONTIER?",
+     "text": "Washington — The U.S. Census Bureau reports that the national population has reached 63,056,000.\n\nAccording to the Bureau, there is so much settlement in the West that there is no longer a \"frontier line.\"\n\nThose living in sparsely settled parts of Wyoming or the Oklahoma territory would surely disagree.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18902.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18903",
+     "n": 3,
+     "headline": "TWO NEW PARKS",
+     "headlineOnFrontPage": "TWO NEW PARKS",
+     "text": "Los Angeles — Washington announced that two natural wonders in California will now be national parks.\n\nYosemite Park has beautiful cliffs and waterfalls carved from ancient glaciers.\n\nIn Sequoia Park, huge Redwood trees make people look as tiny as ants.\n\nBoth of these national parks are worth the trip!",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18903.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18904",
+     "n": 4,
+     "headline": "TRUST-BUSTING IN THE UNITED STATES",
+     "headlineOnFrontPage": "TRUST-BUSTING IN THE UNITED STATES",
+     "text": "Washington — Earlier this year, Congress passed the Sherman Anti-Trust Act.  A trust is a group of companies that work together to control a product or service, such as oil or steel.\n\nSome farmers in the South and the Middle West think this law will not stop trusts.  They started a new political party, the People's Party.\n\nThe People's Party wants to break up trusts.\n\nIt wants the government to take over the telephone lines and railroads.\n\nMembers of the People's Party are called Populists.  They say that their party represents most Americans.\n\nHowever, many Americans are afraid of the changes that the Populists want to make.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18904.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18905",
+     "n": 5,
+     "headline": "The Garden of the West, FOR SALE!",
+     "headlineOnFrontPage": "The Garden of the West, FOR SALE!",
+     "text": "THE RAILROAD LINE OF THE\nATCHINSON, TOPEKA & THE SANTA FE\nIS SELLING 12,000,000 ACRES OF THE BEST\nFARMLAND IN KANSAS AND COLORADO\nCheaper in price, Better terms than anywhere else.\nClose to new towns on the railroad line.\nONLY $7.00 PER ACRE\nFREE RAIL PASSES TO BUYERS OF LAND",
+     "caption": "none (advertisement, text only; mixed condensed/old-style display fonts, lines centered)",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18905.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "year": 1893,
+   "month": 9,
+   "day": 17,
+   "dateText": "Sept. 17, 1893",
+   "openedFromTownTalk": [
+    111
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS1/1893.png",
+    "sharedCast": 3521,
+    "layoutNotes": "**Front page layout** (640x480 screen, page centered; body text is the same generic placeholder copy as on the 1890 front page, only partly legible)\n- **Masthead:** THE LONGVIEW GAZETTE. **No date printed.**\n- **Top banner headline:** ECONOMIC CRASH CONTINUES\n- **Top-right column headline:** \"HIGHWAY ROBBERY\"\n- **Middle-left box (ad):** BE YOUR OWN SEAMSTRESS! [Sears, Roebuck \"Consumers Guide\" catalog cover engraving] then small print, mostly illegible: \"1ST YEAR IN THE BUSINESS / 1ST IN THE BUSINESS / For only $1.00, you can buy a sewing machine\" (wording on thumbnail differs from detail image 18933)\n- **Middle-right headline (two columns):** THOUSANDS GO TO CHICAGO FAIR\n- **Bottom headline (two columns):** A WILD OKLAHOMA LAND RUSH\n- **Bottom-right box:** \"Professional Cards\" business-card ads, same as 1890 front page, mostly illegible (\"C. [illegible]\" / \"W.M. Murphy  Harry E. [illegible]\" / \"Murphy & [illegible]\" / \"A[TTORNEYS AT LAW]\" / \"[MONEY TO LOAN]\" / \"[illegible] on Warehouse Receipt / on Grain and Provisions\").",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "18931",
+     "n": 1,
+     "headline": "ECONOMIC CRASH CONTINUES",
+     "headlineOnFrontPage": "ECONOMIC CRASH CONTINUES",
+     "text": "Washington — The economic crash that started in February is getting worse.\n\nThe crash began when farmers decided to grow fewer crops because they were offered low prices.  At the same time, factories chose to make fewer products.\n\nPeople became worried about the future.  They bought fewer things to save money.\n\nSoon many companies went out of business, because not enough people wanted to buy their products.  Everyone at these companies lost their jobs.\n\nSince February, over 15,000 companies and 500 banks have closed.  Also, 71 railroad companies have gone broke.\n\nExperts say the economy may recover in 2 or 3 years.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18931.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18932",
+     "n": 2,
+     "headline": "\"HIGHWAY ROBBERY\"",
+     "headlineOnFrontPage": "\"HIGHWAY ROBBERY\"",
+     "text": "Topeka — Farming leader J. W. Paton spoke out against the railroad companies.\n\n\"The railroads are highway robbers,\" Mr. Paton said. \"The farmer gets 10 cents a bushel for his crops.  Then the railroad hires dealers who resell the crops for 65 cents a bushel.\"\n\nMr. Paton, like other Populists, has called for laws against unfair prices.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18932.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18933",
+     "n": 3,
+     "headline": "BE YOUR OWN SEAMSTRESS!",
+     "headlineOnFrontPage": "BE YOUR OWN SEAMSTRESS!",
+     "text": "For only one dollar, you can buy a sewing machine.\nSEARS, ROEBUCK AND CO.\nBY CATALOG\n1ST YEAR IN BUSINESS\n1ST IN THE BUSINESS",
+     "caption": "none. [Advertisement. Below the headline: engraved catalog cover reading \"CONSUMERS GUIDE / SEARS, ROEBUCK & Co.\" with a tiny illegible line beneath (\"CHEAPEST SUPPLY HOUSE ON EARTH\" style tagline, [illegible]). \"SEARS, ROEBUCK AND CO.\" is set in a decorative Western font; the last three lines in a monospace typewriter font.]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18933.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18934",
+     "n": 4,
+     "headline": "THOUSANDS GO TO CHICAGO FAIR",
+     "headlineOnFrontPage": "THOUSANDS GO TO CHICAGO FAIR",
+     "text": "Chicago — Thousands are visiting the World's Columbian Exposition in Chicago.\n\nThis giant fair features a Pullman train car, a phonograph, and a house where everything runs on electricity.\n\nAdventurous visitors can ride on the big revolving wheel invented by George Ferris.\n\nMany people are talking about the beautiful buildings at the fair, especially Daniel Burham's \"White City.\"\n\nFair officials say that even though the economy is not good right now, they think that the fair will make a profit.",
+     "caption": "(no caption) [Black-and-white engraving of the Ferris wheel with crowds at its base]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18934.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18935",
+     "n": 5,
+     "headline": "A WILD OKLAHOMA LAND RUSH",
+     "headlineOnFrontPage": "A WILD OKLAHOMA LAND RUSH",
+     "text": "Coffeyville — Yesterday, the gunshot rang out at high noon.\n\nThis was not a horse race.  It was the second Oklahoma land rush.  The Cherokee Outlet area was opened to settlers.  The first land rush in Oklahoma was in 1889.\n\nThe settlers rushed across the starting line on their horses and mules.  Each family staked out a good spot to start a homestead.\n\nShopkeepers set up tents in a central place to sell goods and tools to the new settlers. Later, they will build stores there.\n\nIn a few hours, a new town was born, and hundreds of new neighbors met for the first time.",
+     "caption": "The Land Rush [Black-and-white photo of a crowd of settlers in covered wagons and on horseback racing forward]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS1/18935.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "year": 1894,
+   "month": 5,
+   "day": 15,
+   "dateText": "May 15, 1894",
+   "openedFromTownTalk": [
+    112
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS2/1894.png",
+    "sharedCast": 3522,
+    "layoutNotes": "**Front page layout** (640x480 screen, page centered; body text is the same generic placeholder copy as other front pages, only partly legible)\n- **Masthead:** THE LONGVIEW GAZETTE. **No date printed.**\n- **Top banner headline:** PULLMAN WORKERS SAY \"ENOUGH\" (thumbnail shows no \"!\"; detail image 18941 has \"ENOUGH!\")\n- **Top-right column headline:** JOBLESS MARCH\n- **Middle-left column headline:** A NEW BALL GAME\n- **Middle-right headline (two columns):** POPULIST MEETING DRAWS A CROWD\n- **Bottom headline (two columns):** THE LAST OF THE BUFFALOES?\n- **Bottom-right box (ads, mostly illegible):** \"The [illegible]\" (bold) / \"First Class [illegible] Food and Drink / Right in the Center of Topeka\" with a small figure of a standing man; a black bar of illegible text; then a rule and \"[illegible name]\" / \"ATTORNEY AT LAW\" / [illegible black bar].",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "18941",
+     "n": 1,
+     "headline": "PULLMAN WORKERS SAY \"ENOUGH!\"",
+     "headlineOnFrontPage": "PULLMAN WORKERS SAY \"ENOUGH!\"",
+     "text": "Pullman, Illinois — On May 1, workers at the Pullman Car Company went on strike.\n\nThe Pullman Company makes and services luxury passenger train cars.\n\nThe company cut its workers' wages by 28 percent because of last year's financial crash.\n\nHowever, it kept charging its employees the same amount of money for rent and food.\n\nThe Pullman Company owns and runs nearly everything in this town.\n\nAt present, the strike affects only passenger trains, as Pullman employees refuse to service their company's cars.\n\nHowever, a speaker for the American Railway Union (A.R.U.) said it may join the strike in June.  That would freeze railway shipping across the country.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/18941.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18942",
+     "n": 2,
+     "headline": "JOBLESS MARCH",
+     "headlineOnFrontPage": "JOBLESS MARCH",
+     "text": "Washington — Hundreds of jobless Americans marched through the city on May 1st.\n\nA group of marchers called \"Coxey's Army,\" led by Populist Jacob Coxey, were arrested for marching on the Capitol lawn.\n\nMany people lost their jobs when companies closed in last year's economic crash. They marched to demand that the government find work for them.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/18942.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18943",
+     "n": 3,
+     "headline": "A NEW BALL GAME",
+     "headlineOnFrontPage": "A NEW BALL GAME",
+     "text": "Dodge City — Lately, boys in Dodge City have been throwing balls at a basket nailed to a wall.\n\nThey are playing a new game, called basketball.  It was invented three years ago by Dr. James Naismith, a teacher in Springfield, Massachusetts.\n\n\"It's lots of fun,\" said 10-year-old Harry Jackson. \"You have to run a lot!\"",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/18943.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18944",
+     "n": 4,
+     "headline": "POPULIST MEETING DRAWS A CROWD",
+     "headlineOnFrontPage": "POPULIST MEETING DRAWS A CROWD",
+     "text": "Wichita — Over 200 people cheered the speech of Populist leader John W. Paton at a rally here last week.\n\n\"Four years ago, Congress passed the Sherman Anti-Trust Act,\" said Mr. Paton.\n\n\"This law was supposed to protect us from those big companies who get together and set high prices for things we need.\"\n\nMr. Paton claimed that the Sherman Anti-Trust Act does not work.\n\n\"Nearly every time someone sues the railroads for controlling prices, the railroads won. Now let's see what happens with this Pullman strike.\"\n\nNext week, \"Sockless\" Jerry Simpson will speak at another Populist rally here.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/18944.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "18945",
+     "n": 5,
+     "headline": "THE LAST OF THE BUFFALOES?",
+     "headlineOnFrontPage": "THE LAST OF THE BUFFALOES?",
+     "text": "Kansas City — A recent report claims that there are fewer than 1,000 buffaloes left in the country.\n\nGreat herds of buffaloes once roamed freely across the Wild West.\n\nIndians and white trappers killed only as many buffaloes as they could eat.\n\nThen, railroads were built across the Great Plains.\n\nPeople came west to shoot great numbers of buffaloes for sport.\n\nNow, there are only a few of these large beasts left on the plains.  The Indians, who once relied on them for food, were forced to move to reservations.",
+     "caption": "A buffalo of the Great Plains [Black-and-white engraving of a shaggy buffalo standing, side view]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/18945.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "year": 1909,
+   "month": 4,
+   "day": 8,
+   "dateText": "Apr. 8, 1909",
+   "openedFromTownTalk": [
+    115
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS2/1909.png",
+    "sharedCast": 3523,
+    "layoutNotes": "**Front page layout** (640x480 screen, page centered; body text is the same generic placeholder copy as other front pages, only partly legible)\n- **Masthead:** THE LONGVIEW GAZETTE. **No date printed.**\n- **Top banner headline:** THE ENLARGED HOMESTEAD ACT IS PASSED\n- **Top-right column headline:** ONLY THE MODEL T\n- **Middle-left column headline:** WILL THE ARMY FLY?\n- **Middle-right headline (two columns):** PEARY AND HIS TEAM REACH NORTH POLE (thumbnail omits \"THE\"; detail image 19094 has \"REACH THE NORTH POLE\")\n- **Bottom headline (two columns):** WILLIAM TAFT - A \"SURE THING\" FOR PRESIDENT\n- **Bottom-right box (ads):** identical to 1894 front page (\"The [illegible]\" / \"First Class [illegible] Food and Drink / Right in the Center of Topeka\" with small standing-man figure / \"[illegible name]\" / \"ATTORNEY AT LAW\").",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "19091",
+     "n": 1,
+     "headline": "THE ENLARGED HOMESTEAD ACT IS PASSED",
+     "headlineOnFrontPage": "THE ENLARGED HOMESTEAD ACT IS PASSED",
+     "text": "Washington — The U.S. government has doubled the amount of land that it gives to homesteaders.\n\nCongress passed the Enlarged Homestead Act, which allows farmers to claim 320 acres of land.\n\nThe Homestead Act of 1862 gave farmers 160 acres.\n\nPlains farmers have wanted this change for many years.\n\n\"It's just impossible for a farmer to squeeze a living out of only 160 dry, hard acres,\" said Kansas farmer Larry Finster.  \"There's not enough water here!\"\n\nMany homesteaders have already found ways to enlarge their farms, sometimes not exactly according to the law.\n\nNow, they can add to their farms legally.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19091.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19092",
+     "n": 2,
+     "headline": "ONLY THE MODEL T",
+     "headlineOnFrontPage": "ONLY THE MODEL T",
+     "text": "Detroit — The Ford Motor Company has announced that its factory will produce only the Model T car.\n\nThe Model T is a sturdy car that is popular with the average American.  Some farmers even use Model T's to pull their tractors.\n\nThe Ford company said that as production costs drop, it will reduce the $850 price tag on the Model T.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19092.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19093",
+     "n": 3,
+     "headline": "WILL THE ARMY FLY?",
+     "headlineOnFrontPage": "WILL THE ARMY FLY?",
+     "text": "Wichita — The U.S. Army has bought a flying machine from Orville and Wilbur Wright.\n\nOn December 17, 1903, the brothers made their first successful flight at Kitty Hawk, North Carolina.\n\nSince then, they have been working hard to improve their flying machine, which runs on gas.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19093.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19094",
+     "n": 4,
+     "headline": "PEARY AND HIS TEAM REACH THE NORTH POLE",
+     "headlineOnFrontPage": "PEARY AND HIS TEAM REACH THE NORTH POLE",
+     "text": "Kansas City — On April 6, the dream of a lifetime came true for explorer Robert E. Peary.  He reached the North Pole.\n\nPeary traveled with his Negro assistant, Matthew Henson, and four Eskimos. The team made their journey in a sled that was pulled by dogs.\n\nMr. Peary has been on many trips to the Arctic in the past 20 years.  When he finally reached the North Pole he wrote, \"I cannot bring myself to realize it.\"",
+     "caption": "Ice caves near the North Pole [Grayscale photo of large ice formations with cave-like arches]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19094.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19095",
+     "n": 5,
+     "headline": "WILLIAM TAFT — A \"SURE THING\" FOR PRESIDENT",
+     "headlineOnFrontPage": "WILLIAM TAFT — A \"SURE THING\" FOR PRESIDENT",
+     "text": "Washington — Last year, President Roosevelt let everyone know that he wanted William Howard Taft to be the next president. Since then, people have been saying that Taft's election is a \"sure thing.\"\n\nMr. Taft started out as a very respected federal judge. Next, he was the governor of the Philippines.  Then he became Secretary of War.\n\nMany people say that Mr. Taft won the Republican nomination because of President Roosevelt.\n\nKansans tend to vote mostly Republican. However, many Populists in Kansas may vote for William Jennings Bryan, the \"free silver\" Democratic candidate.\n\n\n# Newspaper transcriptions — 1914, 1915, 1917, 1919",
+     "caption": "William H. Taft [Oval engraved portrait of Taft]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19095.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "year": 1914,
+   "month": 8,
+   "day": 5,
+   "dateText": "Aug. 5, 1914",
+   "openedFromTownTalk": [
+    116
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS2/1914.png",
+    "sharedCast": 3524,
+    "layoutNotes": "**Layout:** A paper-coloured page centred on a white 640x480 screen.\n- Masthead: **THE LONGVIEW GAZETTE** (bold serif, between horizontal rules). No date is visible.\n- Lead headline across the full width: **BRITAIN DECLARES WAR ON GERMANY**. Below it, filler text in two columns (left and middle). The middle column has a small map of the North Sea, Holland, Belgium, Germany and France (the same map as 19141).\n- Top right: **COUNTRIES AT WAR** (filler text).\n- Middle left: **FIRST YEAR OF NEW TAX** (filler text).\n- Middle centre-right, two columns wide: **HOW THE WAR IN EUROPE STARTED** (filler text).\n- Bottom left, two columns wide: **THE PANAMA CANAL IS OPEN FOR BUSINESS** (filler text).\n- Bottom right: an advertisement box for a hotel or restaurant. Its name is [illegible] in blackletter, then \"First [illegible] Food and Drink Right in the Centre of Topeka\", with a small figure of a standing man and a black bar. Below a rule there is a second ad: \"[illegible name, e.g. H.W. ...]\" / \"A TTORNEY AT LAW\" (with a large initial \"A\"), then a black bar.",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "19141",
+     "n": 1,
+     "headline": "BRITAIN DECLARES WAR ON GERMANY",
+     "headlineOnFrontPage": "BRITAIN DECLARES WAR ON GERMANY",
+     "text": "London, ENGLAND — Last night, Great Britain declared war on Germany.\nThis followed Germany's threat to send its troops through Belgium on their way to attack France.\nBelgium wanted to stay neutral in the war in Europe. However, Belgium refused to let German troops cross its border.\nYesterday, Germany began bombing the Belgian countryside as part of its invasion of that small country.\nExperts predict that the war will harm European livestock and crops.",
+     "caption": "(no caption) [A map with these labels: North Sea, Holland, England, Belgium, Germany (written vertically), France. England and the sea are shaded grey.]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19141.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19142",
+     "n": 2,
+     "headline": "COUNTRIES AT WAR",
+     "headlineOnFrontPage": "COUNTRIES AT WAR",
+     "text": "Paris, FRANCE — Eight nations are now fighting in Europe.\nGermany and Austria-Hungary are at war against England, Belgium, France, Russia, Serbia, and Montenegro.\nItaly, Switzerland, and Holland are preparing their troops for war, although they say they will remain neutral.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19142.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19143",
+     "n": 3,
+     "headline": "FIRST YEAR OF NEW TAX",
+     "headlineOnFrontPage": "FIRST YEAR OF NEW TAX",
+     "text": "Kansas City — Kansas citizens have sent in their forms to pay taxes on the money they earned in 1913.\nLast year, the 16th Amendment was ratified. That gave the government the right to tax our income.\nMost people will pay tax on one percent of their income. People who make more than $20,000 a year will pay up to six percent income tax.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19143.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19144",
+     "n": 4,
+     "headline": "HOW THE WAR IN EUROPE STARTED",
+     "headlineOnFrontPage": "HOW THE WAR IN EUROPE STARTED",
+     "text": "London, ENGLAND — For the past 25 years, many European nations have been in conflict without actually being at war.\nThese nations compete against each other to set up new colonies in Africa and the Middle East.\nSome nations have signed treaties. If one nation in a treaty is attacked, the other nations must defend it.\nIn the southern part of Austria-Hungary, there are many Serbs who want their land to be part of Serbia.\nOn June 28, one of these Serbs killed the Archduke of Austria-Hungary and his wife. Later, Austria-Hungary declared war on Serbia.\nBecause of the treaties between European countries, many nations have become involved in the war.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19144.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19145",
+     "n": 5,
+     "headline": "THE PANAMA CANAL IS OPEN FOR BUSINESS",
+     "headlineOnFrontPage": "THE PANAMA CANAL IS OPEN FOR BUSINESS",
+     "text": "Panama City, PANAMA — After ten years of hard work, the Panama Canal is ready for its first customer.\nNext week the S.S. Ancon will sail from the Atlantic to the Pacific through the new canal.\nThe canal cuts through the narrowest part of Panama, and connects the Atlantic and Pacific oceans.\nThe country of Panama is a narrow strip of land that connects North America and South America.\nSoon cargo and passenger ships will travel between the oceans without going around the tip of South America. This was a 13,000-mile trip.\nSoon it will be easier for the U.S. Navy to protect our islands in the Pacific Ocean.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19145.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "year": 1915,
+   "month": 6,
+   "day": 1,
+   "dateText": "June 1, 1915",
+   "openedFromTownTalk": [],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS2/1915.png",
+    "sharedCast": 3525,
+    "layoutNotes": "**Layout:** The same page template as 1914, on a 640x480 screen.\n- Masthead: **THE LONGVIEW GAZETTE**. No date is visible.\n- Lead headline across the full width: **THE PRESIDENT: \"TOO PROUD TO FIGHT\"**. Below it, filler text in two columns.\n- Top right: **INNOCENT VICTIMS**, with a dithered grey map of Ireland and England (the same as 19152).\n- Middle left: **ITALY JOINS THE FIGHT!** (filler text).\n- Middle centre-right, two columns wide: **RUSH TO PUMP BLACK GOLD IN WICHITA** (filler text).\n- Bottom left, two columns wide: **NATIONAL TREASURES OF THE WILD WEST** (filler text), with a dithered photo of a mountain range.\n- Bottom right: the same hotel ad as 1914 (\"[illegible] / First [illegible] Food and Drink Right in the Centre of Topeka\", with a man figure) and the \"[illegible] / A TTORNEY AT LAW\" ad.",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "19151",
+     "n": 1,
+     "headline": "THE PRESIDENT: \"TOO PROUD TO FIGHT\"",
+     "headlineOnFrontPage": "THE PRESIDENT: \"TOO PROUD TO FIGHT\"",
+     "text": "Washington — In response to calls to declare war, President Wilson said, \"We are too proud to fight.\"\nEmotions are running high as details of the attack on the Lusitania become known.\nThe Lusitania was on its way from the United States to England when the Germans sank it in May. More than 100 Americans died.\nMany people want the president to declare war on Germany.\nThe president continues to protest to the German government. Former president Theodore Roosevelt and Secretary of State Bryan say that protests will not stop the Germans from sinking more ships. They say protests will not keep us out of the war.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19151.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19152",
+     "n": 2,
+     "headline": "INNOCENT VICTIMS",
+     "headlineOnFrontPage": "INNOCENT VICTIMS",
+     "text": "London, ENGLAND—There were 1,919 people on board the Lusitania when a German U-boat torpedoed the ship.\nMost passengers on this unarmed British ship were American or British. On May 17, the cold Atlantic claimed 1,198 innocent lives.",
+     "caption": "Where the ship went down [A dithered grey map with the labels IRELAND and ENGLAND. An arrow points to an X off the southern coast of Ireland.]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19152.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19153",
+     "n": 3,
+     "headline": "ITALY JOINS THE FIGHT!",
+     "headlineOnFrontPage": "ITALY JOINS THE FIGHT!",
+     "text": "Rome — On May 23, Italy declared war on Austria-Hungary. It has broken its partnership with that nation and with Germany.\nItaly joined France, England, and other nations in the fight against Germany and Austria-Hungary.\nMany farmers in Europe cannot work their fields. If the war continues, many Europeans may go hungry.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19153.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19154",
+     "n": 4,
+     "headline": "RUSH TO PUMP BLACK GOLD IN WICHITA",
+     "headlineOnFrontPage": "RUSH TO PUMP BLACK GOLD IN WICHITA",
+     "text": "Wichita — Prospectors have struck oil in nearby fields.\nNow, more prospectors are making their way to Wichita. They are buying drilling equipment and starting to drill for oil.\nWichita has been a lively town for some time. The Chisholm Trail and the railroad have increased the population.\n\"I don't care if these prospectors find oil,\" said Robert \"Rail\" Stone, owner of the Wichita General Store. \"I'm just glad they buy their gear in my store.\"\nMr. Stone first came to Wichita many years ago when he worked on the railroad.\nNow he is thought of as an \"old-timer\" by the new oil seekers in Wichita.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19154.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19155",
+     "n": 5,
+     "headline": "NATIONAL TREASURES OF THE WILD WEST",
+     "headlineOnFrontPage": "NATIONAL TREASURES OF THE WILD WEST",
+     "text": "Denver — The federal government has set aside the most scenic part of the Rocky Mountains as the Rocky Mountain National Park.\nMany years ago, glaciers carved beautiful mountains out of the rocks. The highest mountain is Longs Peak, which is 14,256 feet tall.\nNow that this area is a national park, it will be preserved.\nIn central Arizona, ancient Pueblo Indian cliff houses will be preserved in the new Walnut Canyon National Monument. The Pueblo Indians lived there about 1,000 years ago.",
+     "caption": "A Colorado mountain range [A dithered black-and-white photo of a rocky mountain peak.]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19155.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "year": 1917,
+   "month": 4,
+   "day": 6,
+   "dateText": "Apr. 6, 1917",
+   "openedFromTownTalk": [
+    117
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS2/1917.png",
+    "sharedCast": 3526,
+    "layoutNotes": "**Layout:** The same page template, on a 640x480 screen.\n- Masthead: **THE LONGVIEW GAZETTE**. No date is visible.\n- Lead headline across the full width: **AMERICA DECLARES WAR ON GERMANY!** Below it, filler text in two columns. The middle column has an oval portrait of President Wilson.\n- Top right: **ARMY CALL-UP SOON** (filler text).\n- Middle left: **ESCAPE FROM RUSSIA** (filler text).\n- Middle centre-right, two columns wide: **KANSAS FARMERS TO HELP WAR EFFORT** (filler text).\n- Bottom left, two columns wide: **A VERY SPECIAL TOWN IN NEBRASKA** (filler text).\n- Bottom right: a stack of small ads, mostly [illegible]. The first reads \"C. [illegible]\" with a large initial \"F\" and two lines [illegible]. Then a line \"[illegible] Kansas City\" and \"With Murphy, Harry E. Fry[illegible]\". Next, a large initial \"A\" with \"Murphy & Gry[illegible]\" and \"ATTORNEYS AT LAW\" in blackletter, plus \"[illegible] Court, [illegible]\". Last, a black bar of heavy blackletter text [illegible] and \"To [illegible] Warehouse Receipt\".",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "19171",
+     "n": 1,
+     "headline": "AMERICA DECLARES WAR ON GERMANY!",
+     "headlineOnFrontPage": "AMERICA DECLARES WAR ON GERMANY!",
+     "text": "Washington — Congress voted today to declare war on Germany. Apparently, our senators and representatives agree with President Wilson. He said, \"The world must be made safe for democracy.\"\nOn April 2, the president asked Congress to declare war on Germany.\nThe president said that Germany is already at war with the United States.\nGerman U-boats have been sinking unarmed Allied ships for the past three years. Over 200 Americans have died in these attacks.\nNow America will start fighting back!",
+     "caption": "President Wilson [An oval engraved portrait of Woodrow Wilson in a suit, head and shoulders.]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19171.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19172",
+     "n": 2,
+     "headline": "ARMY CALL-UP SOON",
+     "headlineOnFrontPage": "ARMY CALL-UP SOON",
+     "text": "Washington — War has just been declared, and Americans are already talking about who will fight.\nThe government is expected to begin a call-up of men between the ages of 21 and 30 shortly. The enlisted men will receive a short but practical training course.\nThen, our soldiers will be on their way to Europe to win the war.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19172.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19173",
+     "n": 3,
+     "headline": "ESCAPE FROM RUSSIA",
+     "headlineOnFrontPage": "ESCAPE FROM RUSSIA",
+     "text": "Topeka — Kansan Tom Graham has finally come home from Moscow. Mr. Graham is an agent for the U.S. government, which is selling grain to the Russians.\nIn March, there was an uprising against the Russian czar. As a result, it took one month for Mr. Graham to get out of the country.\n\"I hope I can go back when it's safer,\" he said. \"The Russians still need our grain.\"",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19173.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19174",
+     "n": 4,
+     "headline": "KANSAS FARMERS TO HELP WAR EFFORT",
+     "headlineOnFrontPage": "KANSAS FARMERS TO HELP WAR EFFORT",
+     "text": "Kansas City — \"Kansas will be an important source of wheat for our hungry allies in war-torn Europe,\" said Mr. Paul Paton, a representative of the Buffalo County Farmers' Alliance.\nMr. Paton's father, John, was Alliance president and a People's Party member until the party collapsed in 1908.\n\"If we don't send our grain to France and Belgium soon, people there will starve,\" Paul Paton said. \"Americans need to buckle down, work hard, and make sacrifices.\"\nToday's declaration of war by Congress makes it more important than ever to help the war effort. Folks in Kansas will do their best!",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19174.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19175",
+     "n": 5,
+     "headline": "A VERY SPECIAL TOWN IN NEBRASKA",
+     "headlineOnFrontPage": "A VERY SPECIAL TOWN IN NEBRASKA",
+     "text": "Omaha — A new village has been founded on about 1700 acres of farmland in eastern Nebraska.\nThe village is Boys Town, where homeless boys between the ages of 10 and 18 are given a new start in life.\nFather Edward Joseph Flanagan, a Catholic priest, founded Boys Town.\nHe wanted to change the lives of boys who had lost hope in their future.\nAt Boys Town, former gang members learn to be responsible leaders. Boys who have dropped out of school receive an education.\nThe boys run the town themselves, under the watchful eye of Father Flanagan.",
+     "caption": "none. The image has stray dot artifacts near \"themselves,\" and \"the\".",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19175.png",
+     "source": "transcribed"
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "year": 1919,
+   "month": 1,
+   "day": 7,
+   "dateText": "Jan. 7, 1919",
+   "openedFromTownTalk": [
+    119
+   ],
+   "frontPage": {
+    "image": "assets/external/DATA/PICT/NEWS/NEWS2/1919.png",
+    "sharedCast": 3527,
+    "layoutNotes": "**Layout:** The same page template, drawn smaller and centred on a 1024x768 screen. This image is a different size from the other front pages.\n- Masthead: **THE LONGVIEW GAZETTE**. No date is visible.\n- Lead headline across the full width: **WILSON AT PEACE CONFERENCE**. Below it, filler text in two columns.\n- Top right: **POSTWAR RELIEF BILL** (filler text).\n- Middle left: **WILL THE U.S. GO DRY?** (filler text).\n- Middle centre-right, two columns wide: **TEDDY ROOSEVELT – THE LIGHT IS OUT** (filler text).\n- Bottom left, two columns wide: **WHEN WILL JOHN MARCH HOME AGAIN?** (filler text), with a small dithered photo of two men (the same as 19195).\n- Bottom right: the same ad stack as 1917 (\"C. [illegible]\", \"F\" initial, \"With Murphy, Harry E. Fry[illegible]\", \"Murphy & Gry[illegible] / A[TTORNEYS AT LAW]\", \"To [illegible] Warehouse Receipt\").",
+    "source": "transcribed"
+   },
+   "articles": [
+    {
+     "id": "19191",
+     "n": 1,
+     "headline": "WILSON AT PEACE CONFERENCE",
+     "headlineOnFrontPage": "WILSON AT PEACE CONFERENCE",
+     "text": "Paris, FRANCE — On January 18, President Wilson will attend the Paris Peace Conference.\nAt the conference, the 32 Allied nations will prepare a peace treaty for Germany to sign.\nThe Germans want the Allies to base the treaty on a 14-point peace plan that President Wilson published on January 8.\nThe plan includes creating a League of Nations to keep world peace.\nHowever, the other Allied leaders do not support the plan. They want a treaty that will punish Germany for having started the war. They think this will stop Germany from starting another war.\nThe president hopes to persuade the Allied leaders to accept at least part of his plan.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19191.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19192",
+     "n": 2,
+     "headline": "POSTWAR RELIEF BILL",
+     "headlineOnFrontPage": "POSTWAR RELIEF BILL",
+     "text": "Washington — Congress has approved the spending of $100,000,000 for relief work in Europe.\nThe money will help rebuild destroyed cities and supply basic goods and medicines.\nThe United States will give free food to whoever cannot pay because of the war.\nAmerica will continue to rescue her European allies!",
+     "caption": "none",
+     "transcriberNotes": [
+      "(Only one file exists. It came from the NEWS2 source and overwrote the NEWS1 file with the same name. This image is a small 242x313 crop with no surrounding screen.)"
+     ],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19192.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19193",
+     "n": 3,
+     "headline": "WILL THE U.S. GO DRY?",
+     "headlineOnFrontPage": "WILL THE U.S. GO DRY?",
+     "text": "Topeka — Prohibitionists are hoping to celebrate with a sip of soda water, not champagne.\nIn a few days, the states will finish voting on the Eighteenth Amendment. If the amendment is passed, it will be illegal to sell alcohol everywhere in America.\nIn some states, it is already against the law to sell alcohol. Kansas was one of the first states to pass prohibition laws, back in 1880.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19193.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19194",
+     "n": 4,
+     "headline": "TEDDY ROOSEVELT -- THE LIGHT IS OUT",
+     "headlineOnFrontPage": "TEDDY ROOSEVELT -- THE LIGHT IS OUT",
+     "text": "Oyster Bay, N.Y. — \"Put out the light, please,\" were Theodore Roosevelt's last words before he passed away early yesterday.\nThe popular former president had been ill for some time. He never fully recovered from the tropical fevers he caught during a 1914 trip to the jungles of Brazil.\nThe war death of his son, Quentin, in 1918, was also very difficult for him.\nLouis J. Wilde, the mayor of San Diego, said, \"All the world loved 'Teddy.'\"\nOur beloved President Roosevelt improved our country and got things done.\nHe will be buried in a nearby cemetery, without a large ceremony.",
+     "caption": "none",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19194.png",
+     "source": "transcribed"
+    },
+    {
+     "id": "19195",
+     "n": 5,
+     "headline": "WHEN WILL JOHN MARCH HOME AGAIN?",
+     "headlineOnFrontPage": "WHEN WILL JOHN MARCH HOME AGAIN?",
+     "text": "Abilene — \"When will my boy come home?\" Abilene native Harriet Driver asked.\nMrs. Driver is still waiting for her only son, John, to return home from the war.\nMrs. Driver runs her 320-acre farm with only hired help. Her husband died in last year's Spanish Influenza epidemic that took nearly half a million American lives.\nMrs. Driver's brother, Frank, died in 1912. He was a passenger aboard the ship, the Titanic, which struck an iceberg and sank.\nOfficials in Washington say it will be months before all the soldiers return home.\n\n---",
+     "caption": "John Driver and his late father, in 1912 [A small dithered photo of two men, head and shoulders. One wears a cap.]",
+     "transcriberNotes": [],
+     "image": "assets/external/DATA/PICT/NEWS/NEWS2/19195.png",
+     "source": "transcribed"
+    }
+   ]
+  }
+ ]
+}

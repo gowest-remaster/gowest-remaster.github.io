@@ -1,0 +1,1491 @@
+{
+ "movie": "NEWS",
+ "source": "NEWS.DIR",
+ "stage": {
+  "w": 640,
+  "h": 480,
+  "rect": {
+   "top": 0,
+   "left": 0,
+   "bottom": 480,
+   "right": 640
+  },
+  "bgColor": 255,
+  "tempo": 6,
+  "palette": {
+   "id": 3513,
+   "name": "House1",
+   "file": "SHARED/3513-House1.palette.json",
+   "lib": "SHARED",
+   "extractorResolved": "SHARED.DIR:member:3513:House1"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 32,
+  "changedBy": "Alla - ",
+  "createdBy": "Alla - Edunetics",
+  "origDirectory": "P:\\SECO\\QC\\",
+  "preload": 0
+ },
+ "castLibs": [
+  "NEWS",
+  "SHARED"
+ ],
+ "castArray": [
+  1,
+  1064
+ ],
+ "scoreHeader": {
+  "streamSize": 1320,
+  "frame1Offset": 20,
+  "framesVersion": 4,
+  "spriteRecordSize": 20,
+  "numChannels": 50
+ },
+ "labels": {
+  "News1": 2,
+  "News2": 5,
+  "News3": 8,
+  "Article": 13,
+  "BigArticle": 18
+ },
+ "frameCount": 19,
+ "frames": [
+  {
+   "n": 1,
+   "sprites": []
+  },
+  {
+   "n": 2,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "palette": {
+    "id": 3513,
+    "idLib": "SHARED",
+    "name": "House1",
+    "lib": "SHARED",
+    "file": "SHARED/3513-House1.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3514,
+     "castName": "HOUSE1-6.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3514-HOUSE1-6.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "shape",
+     "x": 165,
+     "y": 34,
+     "w": 237,
+     "h": 277,
+     "loc": [
+      165,
+      34
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 5,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3514,
+     "castName": "HOUSE1-6.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3514-HOUSE1-6.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "shape",
+     "x": 165,
+     "y": 34,
+     "w": 237,
+     "h": 277,
+     "loc": [
+      165,
+      34
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 5,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "sprites": []
+  },
+  {
+   "n": 5,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "palette": {
+    "id": 3511,
+    "idLib": "SHARED",
+    "name": "House2",
+    "lib": "SHARED",
+    "file": "SHARED/3511-House2.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3512,
+     "castName": "House2",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3512-House2.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "shape",
+     "x": 232,
+     "y": 134,
+     "w": 222,
+     "h": 277,
+     "loc": [
+      232,
+      134
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 5,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3512,
+     "castName": "House2",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3512-House2.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "shape",
+     "x": 232,
+     "y": 134,
+     "w": 222,
+     "h": 277,
+     "loc": [
+      232,
+      134
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 5,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "sprites": []
+  },
+  {
+   "n": 8,
+   "script": {
+    "castId": 9,
+    "castName": ""
+   },
+   "palette": {
+    "id": 3509,
+    "idLib": "SHARED",
+    "name": "House3",
+    "lib": "SHARED",
+    "file": "SHARED/3509-House3.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3510,
+     "castName": "HOUSE3",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3510-HOUSE3.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "shape",
+     "x": 232,
+     "y": 134,
+     "w": 222,
+     "h": 277,
+     "loc": [
+      232,
+      134
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 5,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3510,
+     "castName": "HOUSE3",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3510-HOUSE3.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "shape",
+     "x": 232,
+     "y": 134,
+     "w": 222,
+     "h": 277,
+     "loc": [
+      232,
+      134
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 5,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "to": 12,
+   "sprites": []
+  },
+  {
+   "n": 13,
+   "script": {
+    "castId": 17,
+    "castName": "startArticle"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3512,
+     "castName": "House2",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3512-House2.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 3532,
+     "castName": "Gazet1",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3532-Gazet1.png",
+     "x": 181,
+     "y": 1062,
+     "w": 278,
+     "h": 356,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 3516,
+     "castName": "1880",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3516-1880.png",
+     "x": 181,
+     "y": 1062,
+     "w": 278,
+     "h": 356,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 3540,
+     "castName": "Year1",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3540-Year1.txt",
+     "x": 291,
+     "y": 1061,
+     "w": 114,
+     "h": 32,
+     "loc": [
+      291,
+      1061
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 3541,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3541.txt",
+     "x": 300,
+     "y": 1078,
+     "w": 101,
+     "h": 32,
+     "loc": [
+      300,
+      1078
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 3542,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3542.txt",
+     "x": 286,
+     "y": 1063,
+     "w": 58,
+     "h": 16,
+     "loc": [
+      286,
+      1063
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 3543,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3543.txt",
+     "x": 272,
+     "y": 1048,
+     "w": 121,
+     "h": 32,
+     "loc": [
+      272,
+      1048
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 3536,
+     "castName": "H-NEWS2.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3536-H-NEWS2.PCT.png",
+     "x": 205,
+     "y": 1067,
+     "w": 20,
+     "h": 11,
+     "loc": [
+      216,
+      1073
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 16,
+      "castName": "PageUpDownInArticle"
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 3538,
+     "castName": "H-NEWS2.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3538-H-NEWS2.PCT.png",
+     "x": 205,
+     "y": 1081,
+     "w": 20,
+     "h": 10,
+     "loc": [
+      216,
+      1087
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 16,
+      "castName": "PageUpDownInArticle"
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 185,
+     "y": 1124,
+     "w": 170,
+     "h": 93,
+     "loc": [
+      185,
+      1124
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 11,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 356,
+     "y": 1126,
+     "w": 94,
+     "h": 91,
+     "loc": [
+      356,
+      1126
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 12,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 185,
+     "y": 1216,
+     "w": 90,
+     "h": 100,
+     "loc": [
+      185,
+      1216
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 13,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 294,
+     "y": 1232,
+     "w": 166,
+     "h": 100,
+     "loc": [
+      294,
+      1232
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 14,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 207,
+     "y": 1331,
+     "w": 166,
+     "h": 93,
+     "loc": [
+      207,
+      1331
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 15,
+     "castId": 3497,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3497.png",
+     "x": 220,
+     "y": 1190,
+     "w": 200,
+     "h": 100,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 108,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "NEWS/108-H1.png",
+     "x": 560,
+     "y": 1441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      597,
+      1458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 11,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 17,
+     "castId": 3556,
+     "castName": "A-CALL1.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3556-A-CALL1.PCT.png",
+     "x": 280,
+     "y": 1219,
+     "w": 80,
+     "h": 43,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "script": {
+    "castId": 20,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3512,
+     "castName": "House2",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3512-House2.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 3532,
+     "castName": "Gazet1",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3532-Gazet1.png",
+     "x": 181,
+     "y": 1062,
+     "w": 278,
+     "h": 356,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 3516,
+     "castName": "1880",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3516-1880.png",
+     "x": 181,
+     "y": 1062,
+     "w": 278,
+     "h": 356,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 3540,
+     "castName": "Year1",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3540-Year1.txt",
+     "x": 291,
+     "y": 1061,
+     "w": 114,
+     "h": 32,
+     "loc": [
+      291,
+      1061
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 3541,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3541.txt",
+     "x": 300,
+     "y": 1078,
+     "w": 101,
+     "h": 32,
+     "loc": [
+      300,
+      1078
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 3542,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3542.txt",
+     "x": 286,
+     "y": 1063,
+     "w": 116,
+     "h": 32,
+     "loc": [
+      286,
+      1063
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 3543,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3543.txt",
+     "x": 272,
+     "y": 1048,
+     "w": 121,
+     "h": 32,
+     "loc": [
+      272,
+      1048
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 3536,
+     "castName": "H-NEWS2.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3536-H-NEWS2.PCT.png",
+     "x": 205,
+     "y": 1067,
+     "w": 20,
+     "h": 11,
+     "loc": [
+      216,
+      1073
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 16,
+      "castName": "PageUpDownInArticle"
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 3538,
+     "castName": "H-NEWS2.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3538-H-NEWS2.PCT.png",
+     "x": 205,
+     "y": 1081,
+     "w": 20,
+     "h": 10,
+     "loc": [
+      216,
+      1087
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 16,
+      "castName": "PageUpDownInArticle"
+     },
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 185,
+     "y": 1124,
+     "w": 170,
+     "h": 93,
+     "loc": [
+      185,
+      1124
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 11,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 356,
+     "y": 1126,
+     "w": 94,
+     "h": 91,
+     "loc": [
+      356,
+      1126
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 12,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 185,
+     "y": 1216,
+     "w": 90,
+     "h": 100,
+     "loc": [
+      185,
+      1216
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 13,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 294,
+     "y": 1232,
+     "w": 166,
+     "h": 100,
+     "loc": [
+      294,
+      1232
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 14,
+     "castId": 3498,
+     "castName": "attachForArticles",
+     "castLib": "SHARED",
+     "type": "shape",
+     "x": 207,
+     "y": 1331,
+     "w": 166,
+     "h": 93,
+     "loc": [
+      207,
+      1331
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 21,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 15,
+     "castId": 3497,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3497.png",
+     "x": 220,
+     "y": 1190,
+     "w": 200,
+     "h": 100,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 108,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "NEWS/108-H1.png",
+     "x": 560,
+     "y": 1441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      597,
+      1458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 11,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 17,
+     "castId": 3556,
+     "castName": "A-CALL1.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3556-A-CALL1.PCT.png",
+     "x": 280,
+     "y": 1219,
+     "w": 80,
+     "h": 43,
+     "loc": [
+      320,
+      1240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "to": 17,
+   "sprites": []
+  },
+  {
+   "n": 18,
+   "script": {
+    "castId": 19,
+    "castName": "startBigArticle"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3512,
+     "castName": "House2",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3512-House2.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 3529,
+     "castName": "Pic",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3529-Pic.png",
+     "x": 182,
+     "y": 1075,
+     "w": 274,
+     "h": 330,
+     "loc": [
+      258,
+      1165
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 108,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "NEWS/108-H1.png",
+     "x": 560,
+     "y": 1441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      597,
+      1458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 18,
+      "castName": "backToFromBigArticle"
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 3589,
+     "castName": "A-CALL4.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3589-A-CALL4.PCT.png",
+     "x": 540,
+     "y": 388,
+     "w": 80,
+     "h": 43,
+     "loc": [
+      580,
+      409
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "script": {
+    "castId": 4,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 3512,
+     "castName": "House2",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3512-House2.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 3529,
+     "castName": "Pic",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3529-Pic.png",
+     "x": 182,
+     "y": 1075,
+     "w": 274,
+     "h": 330,
+     "loc": [
+      258,
+      1165
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 108,
+     "castName": "H1",
+     "type": "bitmap",
+     "file": "NEWS/108-H1.png",
+     "x": 560,
+     "y": 1441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      597,
+      1458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 18,
+      "castName": "backToFromBigArticle"
+     },
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 3589,
+     "castName": "A-CALL4.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3589-A-CALL4.PCT.png",
+     "x": 540,
+     "y": 388,
+     "w": 80,
+     "h": 43,
+     "loc": [
+      580,
+      409
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  }
+ ]
+}

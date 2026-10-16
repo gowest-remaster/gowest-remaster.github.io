@@ -1,0 +1,5557 @@
+{
+ "movie": "INTRO",
+ "source": "INTRO.DIR",
+ "stage": {
+  "w": 640,
+  "h": 480,
+  "rect": {
+   "top": 0,
+   "left": 0,
+   "bottom": 480,
+   "right": 640
+  },
+  "bgColor": 255,
+  "tempo": 15,
+  "palette": {
+   "id": 3,
+   "name": "PLT introduction",
+   "file": "INTRO/3-PLT introduction.palette.json",
+   "extractorResolved": "member:3:PLT introduction"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 2080,
+  "changedBy": "Bennys - ",
+  "createdBy": "Director user - Edunetics",
+  "origDirectory": "M:\\SVIVOT\\SECO\\QC\\",
+  "preload": 0
+ },
+ "castLibs": [
+  "INTRO",
+  "SHARED"
+ ],
+ "castArray": [
+  1,
+  123
+ ],
+ "scoreHeader": {
+  "streamSize": 2456,
+  "frame1Offset": 20,
+  "framesVersion": 4,
+  "spriteRecordSize": 20,
+  "numChannels": 50
+ },
+ "labels": {
+  "q0": 1,
+  "q1": 2,
+  "q2": 3,
+  "q3": 4,
+  "q4": 5,
+  "q5": 6,
+  "q6": 7,
+  "q7": 8,
+  "q8": 9,
+  "q9": 10,
+  "q10": 11,
+  "q11": 12,
+  "q12": 13,
+  "q13": 14,
+  "q14,loopOneFrame": 15,
+  "q15": 17,
+  "q16": 18,
+  "q17": 19,
+  "q18": 20,
+  "q19": 21,
+  "q20": 22,
+  "q21": 23,
+  "q22": 24,
+  "q23": 25,
+  "q24": 26,
+  "q25": 27,
+  "q26": 28,
+  "q27": 29,
+  "q28": 30,
+  "q29": 31,
+  "q30": 32,
+  "q31": 33,
+  "q32": 34,
+  "q33": 35,
+  "q33a": 38,
+  "q34": 39,
+  "q35": 40,
+  "q36": 41,
+  "q36a": 42,
+  "q37": 45,
+  "q38,loopOneFrame": 46,
+  "q39": 51,
+  "q40": 52,
+  "q41": 53,
+  "end": 56
+ },
+ "frameCount": 55,
+ "frames": [
+  {
+   "n": 1,
+   "palette": {
+    "id": 3,
+    "name": "PLT introduction",
+    "file": "INTRO/3-PLT introduction.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": []
+  },
+  {
+   "n": 2,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 5,
+     "castName": "INTRO02.PCT",
+     "type": "bitmap",
+     "file": "INTRO/5-INTRO02.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 6,
+     "castName": "INTRO03.PCT",
+     "type": "bitmap",
+     "file": "INTRO/6-INTRO03.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 7,
+     "castName": "INTRO11.PCT",
+     "type": "bitmap",
+     "file": "INTRO/7-INTRO11.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 8,
+     "castName": "INTRO27.PCT",
+     "type": "bitmap",
+     "file": "INTRO/8-INTRO27.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 8,
+     "castName": "INTRO27.PCT",
+     "type": "bitmap",
+     "file": "INTRO/8-INTRO27.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 9,
+     "castName": "INTRO28.PCT",
+     "type": "bitmap",
+     "file": "INTRO/9-INTRO28.PCT.png",
+     "x": 56,
+     "y": 51,
+     "w": 284,
+     "h": 203,
+     "loc": [
+      198,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 8,
+     "castName": "INTRO27.PCT",
+     "type": "bitmap",
+     "file": "INTRO/8-INTRO27.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 9,
+     "castName": "INTRO28.PCT",
+     "type": "bitmap",
+     "file": "INTRO/9-INTRO28.PCT.png",
+     "x": 56,
+     "y": 51,
+     "w": 284,
+     "h": 203,
+     "loc": [
+      198,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 10,
+     "castName": "INTRO29.PCT",
+     "type": "bitmap",
+     "file": "INTRO/10-INTRO29.PCT.png",
+     "x": 186,
+     "y": 141,
+     "w": 284,
+     "h": 206,
+     "loc": [
+      328,
+      244
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 8,
+     "castName": "INTRO27.PCT",
+     "type": "bitmap",
+     "file": "INTRO/8-INTRO27.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 9,
+     "castName": "INTRO28.PCT",
+     "type": "bitmap",
+     "file": "INTRO/9-INTRO28.PCT.png",
+     "x": 56,
+     "y": 51,
+     "w": 284,
+     "h": 203,
+     "loc": [
+      198,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 10,
+     "castName": "INTRO29.PCT",
+     "type": "bitmap",
+     "file": "INTRO/10-INTRO29.PCT.png",
+     "x": 186,
+     "y": 141,
+     "w": 284,
+     "h": 206,
+     "loc": [
+      328,
+      244
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 11,
+     "castName": "INTRO30.PCT",
+     "type": "bitmap",
+     "file": "INTRO/11-INTRO30.PCT.png",
+     "x": 304,
+     "y": 225,
+     "w": 283,
+     "h": 206,
+     "loc": [
+      445,
+      328
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 12,
+     "castName": "INTRO08.PCT",
+     "type": "bitmap",
+     "file": "INTRO/12-INTRO08.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 13,
+     "castName": "INTRO10.PCT",
+     "type": "bitmap",
+     "file": "INTRO/13-INTRO10.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 14,
+     "castName": "INTRO09.PCT",
+     "type": "bitmap",
+     "file": "INTRO/14-INTRO09.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 15,
+     "castName": "INTRO05.PCT",
+     "type": "bitmap",
+     "file": "INTRO/15-INTRO05.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "transition": {
+    "type": 43,
+    "name": "stripsRightBuildDown",
+    "durationMs": 3000,
+    "chunkSize": 5,
+    "area": "stage"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "to": 16,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 20,
+     "castName": "INTRO16.PCT",
+     "type": "bitmap",
+     "file": "INTRO/20-INTRO16.PCT.png",
+     "x": 515,
+     "y": 187,
+     "w": 69,
+     "h": 53,
+     "loc": [
+      549,
+      213
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 20,
+     "castName": "INTRO16.PCT",
+     "type": "bitmap",
+     "file": "INTRO/20-INTRO16.PCT.png",
+     "x": 515,
+     "y": 187,
+     "w": 69,
+     "h": 53,
+     "loc": [
+      549,
+      213
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 21,
+     "castName": "INTRO17.PCT",
+     "type": "bitmap",
+     "file": "INTRO/21-INTRO17.PCT.png",
+     "x": 431,
+     "y": 191,
+     "w": 69,
+     "h": 54,
+     "loc": [
+      465,
+      218
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "script": {
+    "castId": 23,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 20,
+     "castName": "INTRO16.PCT",
+     "type": "bitmap",
+     "file": "INTRO/20-INTRO16.PCT.png",
+     "x": 515,
+     "y": 187,
+     "w": 69,
+     "h": 53,
+     "loc": [
+      549,
+      213
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 21,
+     "castName": "INTRO17.PCT",
+     "type": "bitmap",
+     "file": "INTRO/21-INTRO17.PCT.png",
+     "x": 431,
+     "y": 191,
+     "w": 69,
+     "h": 54,
+     "loc": [
+      465,
+      218
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 22,
+     "castName": "",
+     "type": "shape",
+     "x": 26,
+     "y": 59,
+     "w": 301,
+     "h": 228,
+     "loc": [
+      26,
+      59
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 21,
+     "castName": "INTRO17.PCT",
+     "type": "bitmap",
+     "file": "INTRO/21-INTRO17.PCT.png",
+     "x": 431,
+     "y": 191,
+     "w": 69,
+     "h": 54,
+     "loc": [
+      465,
+      218
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 24,
+     "castName": "INTRO14.PCT",
+     "type": "bitmap",
+     "file": "INTRO/24-INTRO14.PCT.png",
+     "x": 27,
+     "y": 60,
+     "w": 300,
+     "h": 225,
+     "loc": [
+      177,
+      172
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "script": {
+    "castId": 25,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 21,
+     "castName": "INTRO17.PCT",
+     "type": "bitmap",
+     "file": "INTRO/21-INTRO17.PCT.png",
+     "x": 431,
+     "y": 191,
+     "w": 69,
+     "h": 54,
+     "loc": [
+      465,
+      218
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 24,
+     "castName": "INTRO14.PCT",
+     "type": "bitmap",
+     "file": "INTRO/24-INTRO14.PCT.png",
+     "x": 27,
+     "y": 60,
+     "w": 300,
+     "h": 225,
+     "loc": [
+      177,
+      172
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 20,
+     "castName": "INTRO16.PCT",
+     "type": "bitmap",
+     "file": "INTRO/20-INTRO16.PCT.png",
+     "x": 515,
+     "y": 187,
+     "w": 69,
+     "h": 53,
+     "loc": [
+      549,
+      213
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 21,
+     "castName": "INTRO17.PCT",
+     "type": "bitmap",
+     "file": "INTRO/21-INTRO17.PCT.png",
+     "x": 431,
+     "y": 191,
+     "w": 69,
+     "h": 54,
+     "loc": [
+      465,
+      218
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "script": {
+    "castId": 26,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 20,
+     "castName": "INTRO16.PCT",
+     "type": "bitmap",
+     "file": "INTRO/20-INTRO16.PCT.png",
+     "x": 515,
+     "y": 187,
+     "w": 69,
+     "h": 53,
+     "loc": [
+      549,
+      213
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 21,
+     "castName": "INTRO17.PCT",
+     "type": "bitmap",
+     "file": "INTRO/21-INTRO17.PCT.png",
+     "x": 431,
+     "y": 191,
+     "w": 69,
+     "h": 54,
+     "loc": [
+      465,
+      218
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 20,
+     "castName": "INTRO16.PCT",
+     "type": "bitmap",
+     "file": "INTRO/20-INTRO16.PCT.png",
+     "x": 515,
+     "y": 187,
+     "w": 69,
+     "h": 53,
+     "loc": [
+      549,
+      213
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 9,
+     "castId": 27,
+     "castName": "INTRO15.PCT",
+     "type": "bitmap",
+     "file": "INTRO/27-INTRO15.PCT.png",
+     "x": 27,
+     "y": 60,
+     "w": 300,
+     "h": 225,
+     "loc": [
+      177,
+      172
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "script": {
+    "castId": 28,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 20,
+     "castName": "INTRO16.PCT",
+     "type": "bitmap",
+     "file": "INTRO/20-INTRO16.PCT.png",
+     "x": 515,
+     "y": 187,
+     "w": 69,
+     "h": 53,
+     "loc": [
+      549,
+      213
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 9,
+     "castId": 27,
+     "castName": "INTRO15.PCT",
+     "type": "bitmap",
+     "file": "INTRO/27-INTRO15.PCT.png",
+     "x": 27,
+     "y": 60,
+     "w": 300,
+     "h": 225,
+     "loc": [
+      177,
+      172
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 16,
+     "castName": "INTRO33.PCT",
+     "type": "bitmap",
+     "file": "INTRO/16-INTRO33.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 18,
+     "castName": "INTRO31.PCT",
+     "type": "bitmap",
+     "file": "INTRO/18-INTRO31.PCT.png",
+     "x": 72,
+     "y": 32,
+     "w": 563,
+     "h": 368,
+     "loc": [
+      353,
+      216
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 442,
+     "y": 105,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      448,
+      111
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 557,
+     "y": 153,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      563,
+      159
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 19,
+     "castName": "INTRO32.PCT",
+     "type": "bitmap",
+     "file": "INTRO/19-INTRO32.PCT.png",
+     "x": 550,
+     "y": 273,
+     "w": 13,
+     "h": 13,
+     "loc": [
+      556,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 20,
+     "castName": "INTRO16.PCT",
+     "type": "bitmap",
+     "file": "INTRO/20-INTRO16.PCT.png",
+     "x": 515,
+     "y": 187,
+     "w": 69,
+     "h": 53,
+     "loc": [
+      549,
+      213
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 21,
+     "castName": "INTRO17.PCT",
+     "type": "bitmap",
+     "file": "INTRO/21-INTRO17.PCT.png",
+     "x": 431,
+     "y": 191,
+     "w": 69,
+     "h": 54,
+     "loc": [
+      465,
+      218
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 15,
+     "castName": "INTRO05.PCT",
+     "type": "bitmap",
+     "file": "INTRO/15-INTRO05.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 29,
+     "castName": "INTRO12.PCT",
+     "type": "bitmap",
+     "file": "INTRO/29-INTRO12.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 29,
+     "castName": "INTRO12.PCT",
+     "type": "bitmap",
+     "file": "INTRO/29-INTRO12.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 30,
+     "castName": "INTRO13.PCT",
+     "type": "bitmap",
+     "file": "INTRO/30-INTRO13.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 31,
+     "castName": "INTRO20.PCT",
+     "type": "bitmap",
+     "file": "INTRO/31-INTRO20.PCT.png",
+     "x": 148,
+     "y": 43,
+     "w": 315,
+     "h": 114,
+     "loc": [
+      305,
+      100
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 32,
+     "castName": "farmerBaloon",
+     "type": "bitmap",
+     "file": "INTRO/32-farmerBaloon.png",
+     "x": 146,
+     "y": 4,
+     "w": 308,
+     "h": 138,
+     "loc": [
+      300,
+      73
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 29,
+     "castName": "INTRO12.PCT",
+     "type": "bitmap",
+     "file": "INTRO/29-INTRO12.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 30,
+     "castName": "INTRO13.PCT",
+     "type": "bitmap",
+     "file": "INTRO/30-INTRO13.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 31,
+     "castName": "INTRO20.PCT",
+     "type": "bitmap",
+     "file": "INTRO/31-INTRO20.PCT.png",
+     "x": 148,
+     "y": 43,
+     "w": 315,
+     "h": 114,
+     "loc": [
+      305,
+      100
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 32,
+     "castName": "farmerBaloon",
+     "type": "bitmap",
+     "file": "INTRO/32-farmerBaloon.png",
+     "x": 146,
+     "y": 4,
+     "w": 308,
+     "h": 138,
+     "loc": [
+      300,
+      73
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 33,
+     "castName": "INTRO26.PCT",
+     "type": "bitmap",
+     "file": "INTRO/33-INTRO26.PCT.png",
+     "x": 384,
+     "y": 213,
+     "w": 237,
+     "h": 195,
+     "loc": [
+      502,
+      310
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 34,
+     "castName": "businessBaloon",
+     "type": "bitmap",
+     "file": "INTRO/34-businessBaloon.png",
+     "x": 378,
+     "y": 208,
+     "w": 233,
+     "h": 184,
+     "loc": [
+      494,
+      300
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "script": {
+    "castId": 37,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 29,
+     "castName": "INTRO12.PCT",
+     "type": "bitmap",
+     "file": "INTRO/29-INTRO12.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 30,
+     "castName": "INTRO13.PCT",
+     "type": "bitmap",
+     "file": "INTRO/30-INTRO13.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 31,
+     "castName": "INTRO20.PCT",
+     "type": "bitmap",
+     "file": "INTRO/31-INTRO20.PCT.png",
+     "x": 148,
+     "y": 43,
+     "w": 315,
+     "h": 114,
+     "loc": [
+      305,
+      100
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 32,
+     "castName": "farmerBaloon",
+     "type": "bitmap",
+     "file": "INTRO/32-farmerBaloon.png",
+     "x": 146,
+     "y": 4,
+     "w": 308,
+     "h": 138,
+     "loc": [
+      300,
+      73
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 33,
+     "castName": "INTRO26.PCT",
+     "type": "bitmap",
+     "file": "INTRO/33-INTRO26.PCT.png",
+     "x": 384,
+     "y": 213,
+     "w": 237,
+     "h": 195,
+     "loc": [
+      502,
+      310
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 34,
+     "castName": "businessBaloon",
+     "type": "bitmap",
+     "file": "INTRO/34-businessBaloon.png",
+     "x": 378,
+     "y": 208,
+     "w": 233,
+     "h": 184,
+     "loc": [
+      494,
+      300
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 35,
+     "castName": "INTRO23.PCT",
+     "type": "bitmap",
+     "file": "INTRO/35-INTRO23.PCT.png",
+     "x": 31,
+     "y": 256,
+     "w": 275,
+     "h": 137,
+     "loc": [
+      168,
+      324
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 36,
+     "castName": "politicsBaloon",
+     "type": "bitmap",
+     "file": "INTRO/36-politicsBaloon.png",
+     "x": 14,
+     "y": 248,
+     "w": 291,
+     "h": 131,
+     "loc": [
+      159,
+      313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "script": {
+    "castId": 43,
+    "castName": "selecting goal score script"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 1,
+     "castName": "INTRO1.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 29,
+     "castName": "INTRO12.PCT",
+     "type": "bitmap",
+     "file": "INTRO/29-INTRO12.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 30,
+     "castName": "INTRO13.PCT",
+     "type": "bitmap",
+     "file": "INTRO/30-INTRO13.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 31,
+     "castName": "INTRO20.PCT",
+     "type": "bitmap",
+     "file": "INTRO/31-INTRO20.PCT.png",
+     "x": 148,
+     "y": 43,
+     "w": 315,
+     "h": 114,
+     "loc": [
+      305,
+      100
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 32,
+     "castName": "farmerBaloon",
+     "type": "bitmap",
+     "file": "INTRO/32-farmerBaloon.png",
+     "x": 146,
+     "y": 4,
+     "w": 308,
+     "h": 138,
+     "loc": [
+      300,
+      73
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 38,
+      "castName": "the ballons scripts"
+     },
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 7,
+     "castId": 33,
+     "castName": "INTRO26.PCT",
+     "type": "bitmap",
+     "file": "INTRO/33-INTRO26.PCT.png",
+     "x": 384,
+     "y": 213,
+     "w": 237,
+     "h": 195,
+     "loc": [
+      502,
+      310
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 8,
+     "castId": 34,
+     "castName": "businessBaloon",
+     "type": "bitmap",
+     "file": "INTRO/34-businessBaloon.png",
+     "x": 378,
+     "y": 208,
+     "w": 233,
+     "h": 184,
+     "loc": [
+      494,
+      300
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 38,
+      "castName": "the ballons scripts"
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 35,
+     "castName": "INTRO23.PCT",
+     "type": "bitmap",
+     "file": "INTRO/35-INTRO23.PCT.png",
+     "x": 31,
+     "y": 256,
+     "w": 275,
+     "h": 137,
+     "loc": [
+      168,
+      324
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 3,
+     "flags": []
+    },
+    {
+     "ch": 10,
+     "castId": 36,
+     "castName": "politicsBaloon",
+     "type": "bitmap",
+     "file": "INTRO/36-politicsBaloon.png",
+     "x": 14,
+     "y": 248,
+     "w": 291,
+     "h": 131,
+     "loc": [
+      159,
+      313
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 38,
+      "castName": "the ballons scripts"
+     },
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 39,
+     "castName": "INTROO1X.PCT",
+     "type": "bitmap",
+     "file": "INTRO/39-INTROO1X.PCT.png",
+     "x": 206,
+     "y": 412,
+     "w": 241,
+     "h": 53,
+     "loc": [
+      326,
+      438
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 40,
+     "castName": "INTRO36.PCT",
+     "type": "bitmap",
+     "file": "INTRO/40-INTRO36.PCT.png",
+     "x": 1195,
+     "y": 412,
+     "w": 260,
+     "h": 68,
+     "loc": [
+      1325,
+      446
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 41,
+     "castName": "INTRO37.PCT",
+     "type": "bitmap",
+     "file": "INTRO/41-INTRO37.PCT.png",
+     "x": 1403,
+     "y": 431,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      1417,
+      442
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 38,
+      "castName": "the ballons scripts"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "to": 37,
+   "sprites": []
+  },
+  {
+   "n": 38,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 44,
+     "castName": "INTRO2.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 29,
+     "castName": "INTRO12.PCT",
+     "type": "bitmap",
+     "file": "INTRO/29-INTRO12.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 45,
+      "castName": ""
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 44,
+     "castName": "INTRO2.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 46,
+     "castName": "INTRO35.PCT",
+     "type": "bitmap",
+     "file": "INTRO/46-INTRO35.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 47,
+      "castName": ""
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 44,
+     "castName": "INTRO2.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 2,
+     "castName": "INTRO01.PCT",
+     "type": "bitmap",
+     "file": "INTRO/2-INTRO01.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 48,
+     "castName": "INTRO06.PCT",
+     "type": "bitmap",
+     "file": "INTRO/48-INTRO06.PCT.png",
+     "x": 75,
+     "y": 68,
+     "w": 492,
+     "h": 344,
+     "loc": [
+      321,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 41,
+   "script": {
+    "castId": 45,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 44,
+     "castName": "INTRO2.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 49,
+     "castName": "INTRO07.PCT",
+     "type": "bitmap",
+     "file": "INTRO/49-INTRO07.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 50,
+     "castName": "form's FirstName",
+     "type": "text",
+     "file": "INTRO/50-form's FirstName.txt",
+     "x": 305,
+     "y": 144,
+     "w": 73,
+     "h": 16,
+     "loc": [
+      305,
+      144
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 89,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 51,
+     "castName": "form's LastName",
+     "type": "text",
+     "file": "INTRO/51-form's LastName.txt",
+     "x": 398,
+     "y": 144,
+     "w": 94,
+     "h": 16,
+     "loc": [
+      398,
+      144
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 89,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 52,
+     "castName": "signeture hotspot area.",
+     "type": "shape",
+     "x": 367,
+     "y": 371,
+     "w": 145,
+     "h": 59,
+     "loc": [
+      367,
+      371
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 53,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 7,
+     "castId": 54,
+     "castName": "btn clear,up",
+     "type": "bitmap",
+     "file": "INTRO/54-btn clear,up.png",
+     "x": 515,
+     "y": 383,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      529,
+      394
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 110,
+     "castName": "btn OK,up",
+     "type": "bitmap",
+     "file": "INTRO/110-btn OK,up.png",
+     "x": 1515,
+     "y": 412,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      1529,
+      423
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "script": {
+    "castId": 61,
+    "castName": "claim form score script"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 49,
+     "castName": "INTRO07.PCT",
+     "type": "bitmap",
+     "file": "INTRO/49-INTRO07.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 22,
+     "castName": "",
+     "type": "shape",
+     "x": 291,
+     "y": 254,
+     "w": 301,
+     "h": 228,
+     "loc": [
+      291,
+      254
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 50,
+     "castName": "form's FirstName",
+     "type": "text",
+     "file": "INTRO/50-form's FirstName.txt",
+     "x": 305,
+     "y": 144,
+     "w": 73,
+     "h": 16,
+     "loc": [
+      305,
+      144
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 89,
+     "spriteType": "text",
+     "script": {
+      "castId": 58,
+      "castName": "the script of the name fields"
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 51,
+     "castName": "form's LastName",
+     "type": "text",
+     "file": "INTRO/51-form's LastName.txt",
+     "x": 398,
+     "y": 144,
+     "w": 94,
+     "h": 16,
+     "loc": [
+      398,
+      144
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 89,
+     "spriteType": "text",
+     "script": {
+      "castId": 58,
+      "castName": "the script of the name fields"
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 52,
+     "castName": "signeture hotspot area.",
+     "type": "shape",
+     "x": 367,
+     "y": 371,
+     "w": 145,
+     "h": 59,
+     "loc": [
+      367,
+      371
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 53,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 7,
+     "castId": 54,
+     "castName": "btn clear,up",
+     "type": "bitmap",
+     "file": "INTRO/54-btn clear,up.png",
+     "x": 515,
+     "y": 383,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      529,
+      394
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 59,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 110,
+     "castName": "btn OK,up",
+     "type": "bitmap",
+     "file": "INTRO/110-btn OK,up.png",
+     "x": 1515,
+     "y": 412,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      1529,
+      423
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 60,
+      "castName": "form btns script"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 43,
+   "to": 44,
+   "sprites": []
+  },
+  {
+   "n": 45,
+   "script": {
+    "castId": 56,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 49,
+     "castName": "INTRO07.PCT",
+     "type": "bitmap",
+     "file": "INTRO/49-INTRO07.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 22,
+     "castName": "",
+     "type": "shape",
+     "x": 291,
+     "y": 254,
+     "w": 301,
+     "h": 228,
+     "loc": [
+      291,
+      254
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 50,
+     "castName": "form's FirstName",
+     "type": "text",
+     "file": "INTRO/50-form's FirstName.txt",
+     "x": 305,
+     "y": 144,
+     "w": 73,
+     "h": 16,
+     "loc": [
+      305,
+      144
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 89,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 51,
+     "castName": "form's LastName",
+     "type": "text",
+     "file": "INTRO/51-form's LastName.txt",
+     "x": 398,
+     "y": 144,
+     "w": 94,
+     "h": 16,
+     "loc": [
+      398,
+      144
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 89,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 52,
+     "castName": "signeture hotspot area.",
+     "type": "shape",
+     "x": 367,
+     "y": 371,
+     "w": 145,
+     "h": 59,
+     "loc": [
+      367,
+      371
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 46,
+   "script": {
+    "castId": 56,
+    "castName": ""
+   },
+   "palette": {
+    "id": 64,
+    "name": "black palette for transition",
+    "file": "INTRO/64-black palette for transition.palette.json",
+    "speed": 25,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 63,
+     "castName": "",
+     "type": "shape",
+     "x": -3,
+     "y": -1,
+     "w": 644,
+     "h": 484,
+     "loc": [
+      -3,
+      -1
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 2
+    },
+    {
+     "ch": 3,
+     "castId": 22,
+     "castName": "",
+     "type": "shape",
+     "x": 291,
+     "y": 254,
+     "w": 301,
+     "h": 228,
+     "loc": [
+      291,
+      254
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 1
+    },
+    {
+     "ch": 6,
+     "castId": 52,
+     "castName": "signeture hotspot area.",
+     "type": "shape",
+     "x": 367,
+     "y": 371,
+     "w": 145,
+     "h": 59,
+     "loc": [
+      367,
+      371
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    }
+   ]
+  },
+  {
+   "n": 47,
+   "script": {
+    "castId": 123,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 65,
+     "castName": "INTRO34.PCT",
+     "type": "bitmap",
+     "file": "INTRO/65-INTRO34.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 66,
+     "castName": "AN driverTalk,start",
+     "type": "bitmap",
+     "file": "INTRO/66-AN driverTalk,start.png",
+     "x": 446,
+     "y": 52,
+     "w": 78,
+     "h": 77,
+     "loc": [
+      485,
+      90
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 72,
+     "castName": "AN driverHand,start",
+     "type": "bitmap",
+     "file": "INTRO/72-AN driverHand,start.png",
+     "x": 362,
+     "y": 95,
+     "w": 93,
+     "h": 90,
+     "loc": [
+      408,
+      140
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 48,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 65,
+     "castName": "INTRO34.PCT",
+     "type": "bitmap",
+     "file": "INTRO/65-INTRO34.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 66,
+     "castName": "AN driverTalk,start",
+     "type": "bitmap",
+     "file": "INTRO/66-AN driverTalk,start.png",
+     "x": 446,
+     "y": 52,
+     "w": 78,
+     "h": 77,
+     "loc": [
+      485,
+      90
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 72,
+     "castName": "AN driverHand,start",
+     "type": "bitmap",
+     "file": "INTRO/72-AN driverHand,start.png",
+     "x": 362,
+     "y": 95,
+     "w": 93,
+     "h": 90,
+     "loc": [
+      408,
+      140
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 49,
+   "palette": {
+    "id": 79,
+    "name": "introduction's second part palette",
+    "file": "INTRO/79-introduction's second part palette.palette.json",
+    "speed": 20,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 65,
+     "castName": "INTRO34.PCT",
+     "type": "bitmap",
+     "file": "INTRO/65-INTRO34.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 66,
+     "castName": "AN driverTalk,start",
+     "type": "bitmap",
+     "file": "INTRO/66-AN driverTalk,start.png",
+     "x": 446,
+     "y": 52,
+     "w": 78,
+     "h": 77,
+     "loc": [
+      485,
+      90
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 72,
+     "castName": "AN driverHand,start",
+     "type": "bitmap",
+     "file": "INTRO/72-AN driverHand,start.png",
+     "x": 362,
+     "y": 95,
+     "w": 93,
+     "h": 90,
+     "loc": [
+      408,
+      140
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "to": 51,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 65,
+     "castName": "INTRO34.PCT",
+     "type": "bitmap",
+     "file": "INTRO/65-INTRO34.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 66,
+     "castName": "AN driverTalk,start",
+     "type": "bitmap",
+     "file": "INTRO/66-AN driverTalk,start.png",
+     "x": 446,
+     "y": 52,
+     "w": 78,
+     "h": 77,
+     "loc": [
+      485,
+      90
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 72,
+     "castName": "AN driverHand,start",
+     "type": "bitmap",
+     "file": "INTRO/72-AN driverHand,start.png",
+     "x": 362,
+     "y": 95,
+     "w": 93,
+     "h": 90,
+     "loc": [
+      408,
+      140
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 52,
+   "script": {
+    "castId": 121,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 65,
+     "castName": "INTRO34.PCT",
+     "type": "bitmap",
+     "file": "INTRO/65-INTRO34.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 66,
+     "castName": "AN driverTalk,start",
+     "type": "bitmap",
+     "file": "INTRO/66-AN driverTalk,start.png",
+     "x": 446,
+     "y": 52,
+     "w": 78,
+     "h": 77,
+     "loc": [
+      485,
+      90
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 72,
+     "castName": "AN driverHand,start",
+     "type": "bitmap",
+     "file": "INTRO/72-AN driverHand,start.png",
+     "x": 362,
+     "y": 95,
+     "w": 93,
+     "h": 90,
+     "loc": [
+      408,
+      140
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 53,
+   "to": 54,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 65,
+     "castName": "INTRO34.PCT",
+     "type": "bitmap",
+     "file": "INTRO/65-INTRO34.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 66,
+     "castName": "AN driverTalk,start",
+     "type": "bitmap",
+     "file": "INTRO/66-AN driverTalk,start.png",
+     "x": 446,
+     "y": 52,
+     "w": 78,
+     "h": 77,
+     "loc": [
+      485,
+      90
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 72,
+     "castName": "AN driverHand,start",
+     "type": "bitmap",
+     "file": "INTRO/72-AN driverHand,start.png",
+     "x": 362,
+     "y": 95,
+     "w": 93,
+     "h": 90,
+     "loc": [
+      408,
+      140
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 55,
+   "script": {
+    "castId": 119,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 57,
+     "castName": "INTRO3.MOV",
+     "type": "digitalVideo",
+     "x": 400,
+     "y": 232,
+     "w": 160,
+     "h": 1,
+     "loc": [
+      480,
+      232
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 65,
+     "castName": "INTRO34.PCT",
+     "type": "bitmap",
+     "file": "INTRO/65-INTRO34.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 66,
+     "castName": "AN driverTalk,start",
+     "type": "bitmap",
+     "file": "INTRO/66-AN driverTalk,start.png",
+     "x": 446,
+     "y": 52,
+     "w": 78,
+     "h": 77,
+     "loc": [
+      485,
+      90
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 72,
+     "castName": "AN driverHand,start",
+     "type": "bitmap",
+     "file": "INTRO/72-AN driverHand,start.png",
+     "x": 362,
+     "y": 95,
+     "w": 93,
+     "h": 90,
+     "loc": [
+      408,
+      140
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  }
+ ]
+}

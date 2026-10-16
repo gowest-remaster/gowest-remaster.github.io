@@ -1,0 +1,560 @@
+{
+ "2": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO02.PCT"
+  ]
+ },
+ "3": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO03.PCT"
+  ]
+ },
+ "4": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO11.PCT"
+  ]
+ },
+ "5": {
+  "framed": true,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO27.PCT"
+  ]
+ },
+ "6": {
+  "framed": true,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO27.PCT",
+   "INTRO28.PCT"
+  ]
+ },
+ "7": {
+  "framed": true,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO27.PCT",
+   "INTRO28.PCT",
+   "INTRO29.PCT"
+  ]
+ },
+ "8": {
+  "framed": true,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO27.PCT",
+   "INTRO28.PCT",
+   "INTRO29.PCT",
+   "INTRO30.PCT"
+  ]
+ },
+ "9": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO08.PCT"
+  ]
+ },
+ "10": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO10.PCT"
+  ]
+ },
+ "11": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO09.PCT"
+  ]
+ },
+ "12": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO05.PCT"
+  ]
+ },
+ "13": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT"
+  ]
+ },
+ "14": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT"
+  ]
+ },
+ "15": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT"
+  ]
+ },
+ "16": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT"
+  ]
+ },
+ "17": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT"
+  ]
+ },
+ "18": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT"
+  ]
+ },
+ "19": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT"
+  ]
+ },
+ "20": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO16.PCT"
+  ]
+ },
+ "21": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO16.PCT",
+   "INTRO17.PCT"
+  ]
+ },
+ "22": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO16.PCT",
+   "INTRO17.PCT",
+   22
+  ]
+ },
+ "23": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO17.PCT",
+   "INTRO14.PCT"
+  ]
+ },
+ "24": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO17.PCT",
+   "INTRO14.PCT"
+  ]
+ },
+ "25": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO16.PCT",
+   "INTRO17.PCT"
+  ]
+ },
+ "26": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO16.PCT",
+   "INTRO17.PCT"
+  ]
+ },
+ "27": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO16.PCT",
+   "INTRO15.PCT"
+  ]
+ },
+ "28": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO16.PCT",
+   "INTRO15.PCT"
+  ]
+ },
+ "29": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO33.PCT",
+   "INTRO31.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO32.PCT",
+   "INTRO16.PCT",
+   "INTRO17.PCT"
+  ]
+ },
+ "30": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO05.PCT"
+  ]
+ },
+ "31": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO12.PCT"
+  ]
+ },
+ "32": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO01.PCT",
+   "INTRO12.PCT",
+   "INTRO13.PCT",
+   "INTRO20.PCT",
+   "farmerBaloon"
+  ]
+ },
+ "33": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO01.PCT",
+   "INTRO12.PCT",
+   "INTRO13.PCT",
+   "INTRO20.PCT",
+   "farmerBaloon",
+   "INTRO26.PCT",
+   "businessBaloon"
+  ]
+ },
+ "34": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO01.PCT",
+   "INTRO12.PCT",
+   "INTRO13.PCT",
+   "INTRO20.PCT",
+   "farmerBaloon",
+   "INTRO26.PCT",
+   "businessBaloon",
+   "INTRO23.PCT",
+   "politicsBaloon"
+  ]
+ },
+ "38": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO12.PCT"
+  ]
+ },
+ "39": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO35.PCT"
+  ]
+ },
+ "40": {
+  "framed": true,
+  "box": [
+   75,
+   68,
+   567,
+   412
+  ],
+  "sprites": [
+   "INTRO06.PCT"
+  ]
+ },
+ "51": {
+  "framed": false,
+  "box": [
+   0,
+   0,
+   640,
+   480
+  ],
+  "sprites": [
+   "INTRO34.PCT",
+   "AN driverTalk,start",
+   "AN driverHand,start"
+  ]
+ },
+ "anim": {
+  "talk": {
+   "x": 446,
+   "y": 52,
+   "w": 78,
+   "h": 77,
+   "frames": 6
+  },
+  "hand": {
+   "x": 362,
+   "y": 95,
+   "w": 93,
+   "h": 90,
+   "frames": 6
+  }
+ }
+}

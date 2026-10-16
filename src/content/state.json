@@ -1,0 +1,391 @@
+{
+ "note": "New-game templates (CALEND I* fields, copied into SHARED by NewStart) and the shipped SHARED state fields. Raw text; see docs/spec/01-framework.md §3 and 02 §1 for field layouts.",
+ "templates": [
+  {
+   "id": "CALEND.INPUT",
+   "movie": "CALEND",
+   "castId": 1006,
+   "name": "INPUT",
+   "text": "Dudu",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.INPUT1",
+   "movie": "CALEND",
+   "castId": 1007,
+   "name": "INPUT1",
+   "text": "",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.ICurrentDate",
+   "movie": "CALEND",
+   "castId": 1562,
+   "name": "ICurrentDate",
+   "text": "APR. 12, 1880",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.IDateGB",
+   "movie": "CALEND",
+   "castId": 1563,
+   "name": "IDateGB",
+   "text": "APR 12, 1880",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.ICurSeason",
+   "movie": "CALEND",
+   "castId": 1564,
+   "name": "ICurSeason",
+   "text": "APR. 12,1880,4,12,4",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.IPropet",
+   "movie": "CALEND",
+   "castId": 1565,
+   "name": "IPropet",
+   "text": "0,Tractors,0,0,0\n2,2,1,Horses,Pigs,Cows\n1,Plows,0\n20,LifePrice\n1,Number of Fields\n0,0,0,0,0,seeds\n7,0,0,0,0,0,Barn,Fence,WindWell,house\n8,1,1700,Land\n9,0,0,loan,Yearreturn\n10,500,500,0,Total,Cash,Save\n11,0,0,0,car,video,oven\n12,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,Variables\n13,0,Score\n14,1,a,a,a,Family\n15,0,0,0,0,0,0,0,0,0,0,Ach.file\n16,0,0,0,0,Check plot\n17,1,0,0,1,Barn,Fence,WindWell,House(Shopping)\n18,0,0,0,0,0,Buisness\n0,0,0,0",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.ICurSituation",
+   "movie": "CALEND",
+   "castId": 1566,
+   "name": "ICurSituation",
+   "text": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6-7-Bush-Price-tot,9-Church\n0,0,Year,Month\n0,0,Neighb,Family\n0,0,0,NCount,NCicle,NWor\n0,0,0,0,Bush\n0,0,0,0,Price\n0,0,0,0\n0,0,Reserv\n0,FirstHarv",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.IBegin",
+   "movie": "CALEND",
+   "castId": 1567,
+   "name": "IBegin",
+   "text": "1,Prev Game\n0,Begin\n0,Inside\n0,1000,2000,3000,Goals",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.IRelFlow",
+   "movie": "CALEND",
+   "castId": 1568,
+   "name": "IRelFlow",
+   "text": "1883,DL2,8,100\n1884,DL5,8,500,AL7,10\n1885,DL6,6,500,AL7,5\n1886,DL6,6,500,AL7,5\nNO\n1884,DL3,6,100\n1111,DL4,6,100\n2222,DL19,6,500,AL7,5\n1883,1,0,6,DL2,0,Sign1,DL01,-100,8\n1883,2,0,7,AL50,Had2,Sign1,0\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.IAllEvents",
+   "movie": "CALEND",
+   "castId": 1569,
+   "name": "IAllEvents",
+   "text": "1880,12,0,1,Baby1,2,DBox0,Sound,name\n1881,2,0,2,DL1,Had4,Sig1,11,0,0,0,1\n1881,12,0,3,Da1,1,DBox2,5,5\n1882,3,0,4,Doc1,Doc2\n1882,8,0,5,Sop1,DBox9,3,6,1890\n1883,2,0,7,AL50,Had5,Sig50,0,0,0,0\n1883,7,0,7,AL27,0,Sig27,0,0,0,0,1\n1884,2,0,1,Baby2,2,DBox0,Sound,name\n1884,3,0,4,Doc3,Doc4\n1884,6,0,2,DL8,Had7,Sig8,11,0,0,0,1\n1885,3,0,7,AL43,0,Sig2,0,0,0,0,1\n1887,7,0,5,Sop2,DBox9,0.5,6,1898\n1888,3,0,3,DaW1,7,DBox2,0,-2\n1889,2,0,1,Baby3,2,DBox0,Sound,name\n1889,3,0,4,Doc5,Doc6\n1890,2,0,3,DaW5,9,DBox13,0,2,-5\n1890,7,0,2,DL9,Had4,Sig9,11\n1892,3,0,3,DaW7,8,DBox32,0,-2,0\n1892,8,0,5,Sop3,DBox9,1,6,1900\n1893,6,0,10,Wed1,WL1,DBox13,100,200,550,3,6,14\n1893,8,0,7,AL60,Had5,Sig50,0,0,0,0\n1894,7,0,6,DL10,0,Sig10,12,-150,6,0,1\n1897,8,0,5,Sop4,DBox9,1,6,1907\n1898,3,0,3,DaW3,8,DBox01,0,4,-2\n1899,1,0,2,DL16,Had4,Sig9,11\n1900,6,0,2,DL17,Had4,Sig6,11\n1900,7,0,3,DaW8,9,DBox12,0,6,-5,-2,0\n1901,2,0,2,DL18,Had4,Sig18,11\n1901,11,1,7,AL19,Had8,Sig11,0,0,0,0,1\n1902,6,0,10,Wed2,WL1,DBox01,125,225,575,3,6,14\n1902,8,0,5,Son21,DBox01,-5\n1905,6,0,5,Dat5,DBox12,0\n1905,7,0,3,Da3,10,DBox12,480,15,0\n1906,3,0,5,DMail,DBox5,0\n1907,6,0,15,Son1,10,DBox23,0,0,-5\n1910,3,0,2,DL24,Had4,Sig18,11,0,0,0,0\n1917,5,0,7,AL33,Had9,Sig60,0,0,0,0,1\n1917,7,0,7,AL34,0,Sig10,0,0,0,0,1\n1918,6,0,7,AL37,0,Sig11,0,0,0,0,1\n1918,7,0,7,AL38,0,Sig20,0,0,0,0,1\n1919,6,0,7,AL39,Had9,0,0,0,0,0,1\n1919,11,0,7,AL40,0,Sig10,0,0,0,0,1",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.IRandom",
+   "movie": "CALEND",
+   "castId": 1570,
+   "name": "IRandom",
+   "text": "10,17,Winter,month,day\n5,22,Summer\n19,74,Cents/Bush,TransPrice\n1,2,3,4,5,6,7,9,10,11,12,13,14,15,16",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.ITTalk",
+   "movie": "CALEND",
+   "castId": 1571,
+   "name": "ITTalk",
+   "text": "[[1880, 4, 0, 101, \"TTalk1\"], [1880, 9, 0, 102, \"TTalk1\"], [1881, 4, 0, 103, \"TTalk1\"], [1881, 9, 0, 104, \"TTalk2\"], [1882, 4, 0, 105, \"TTalk2\"], [1882, 9, 0, 106, \"TTalk2\"], [1887, 4, 0, 107, \"TTalk2\"], [1887, 9, 0, 108, \"TTalk3\"], [1888, 9, 0, 109, \"TTalk3\"], [1890, 4, 0, 110, \"TTalk3\"], [1893, 9, 17, 111, \"TTalk3\"], [1894, 6, 0, 112, \"TTalk4\"], [1895, 4, 0, 113, \"TTalk4\"], [1905, 6, 0, 114, \"TTalk4\"], [1909, 4, 8, 115, \"TTalk4\"], [1914, 8, 5, 116, \"TTalk5\"], [1917, 4, 6, 117, \"TTalk5\"], [1918, 11, 11, 118, \"TTalk5\"], [1919, 4, 0, 119, \"TTalk5\"],[1919, 12, 0, 120, \"TTalk6\"], [1886, 4, 0, 121, \"TTalk6\"]]",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.ISeasons",
+   "movie": "CALEND",
+   "castId": 1572,
+   "name": "ISeasons",
+   "text": "1111,2,1,1,3,5,6,6,6,8,8,1,1\n1886,2,1,1,3,5,6,6,6,8,8,2,2\n1887,2,2,2,3,5,7,7,7,7,8,2,2\n1888,2,2,2,3,5,7,7,7,7,8,1,1",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.IMainPic",
+   "movie": "CALEND",
+   "castId": 1573,
+   "name": "IMainPic",
+   "text": "3,0,0,0,0,0,0,0,0,0,0,0,0",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.IAll",
+   "movie": "CALEND",
+   "castId": 1574,
+   "name": "IAll",
+   "text": "[188012 ,18812 ,188112 ,18823 ,18828 ,18832 ,18837 ,18842 ,18843 ,18846 ,18853 ,18877 ,18883 ,18892 ,18893 ,18902 ,18907 ,18923 ,18928 ,18936 ,18938 ,18947 ,18978 ,18983 ,18991 ,19006 ,19007 ,19012 ,190111 ,19026 ,19028 ,19056 ,19057 ,19063 ,19076 ,19103 ,19175 ,19177 ,19186 ,19187 ,19196 ,191911 ]  ",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.ICatalog",
+   "movie": "CALEND",
+   "castId": 1575,
+   "name": "ICatalog",
+   "text": "[#type: #seedsMenu, #name: #seedsMenu, #year: 0, #month: 0, #cast: \"seeds menu\", #loc: point(329, 203)], [#type: #seeds, #name: #winterWheat, #year: 0, #month: 0, #cast: \"winter wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #springWheat, #year: 0, #month: 0, #cast: \"spring wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #oats, #year: 0, #month: 0, #cast: \"oats\", #loc: point(329, 203)], [#type: #seeds, #name: #corn, #year: 0, #month: 0, #cast: \"corn\", #loc: point(329, 203)], [#type: #products, #name: #windMill, #year: 0, #month: 0, #cast: \"windmill\", #loc: point(328, 143), #num: 3, #price: 80], [#type: #products, #name: #wireFence, #year: 1883, #month: 4, #cast: \"wire fence\", #loc: point(328, 143), #num: 0, #price: 100], [#type: #products, #name: #kodakCamera, #year: 1888, #month: 4, #cast: \"kodak camera\", #loc: point(328, 143), #num: 1, #price: 25], [#type: #products, #name: #tractor, #year: 1887, #month: 4, #cast: \"tractor\", #loc: point(328, 143), #num: 2, #price: 400], [#type: #products, #name: #car, #year: 1909, #month: 4, #cast: \"car\", #loc: point(328, 143), #num: 1, #price: 900]",
+   "source": "text-member"
+  }
+ ],
+ "shared": [
+  {
+   "id": "SHARED.CurrentDate",
+   "movie": "SHARED",
+   "castId": 3000,
+   "name": "CurrentDate",
+   "text": "APR. 12, 1880",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NewDate",
+   "movie": "SHARED",
+   "castId": 3001,
+   "name": "NewDate",
+   "text": "APR.\n12\n1880",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.CurSeason",
+   "movie": "SHARED",
+   "castId": 3002,
+   "name": "CurSeason",
+   "text": "APR. 12,1880,4,12,4",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.Propet",
+   "movie": "SHARED",
+   "castId": 3003,
+   "name": "Propet",
+   "text": "0,Tractors,0,0,0\n2,2,1,Horses,Pigs,Cows\n1,Plows,0\n20,LifePrice\n1,Number of Fields\n0,0,0,0,0,seeds\n7,0,0,0,0,0,Barn,Fence,WindWell,house\n8,1,1700,Land\n9,0,0,loan,Yearreturn\n10,500,500,0,Total,Cash,Save\n11,0,0,0,car,video,oven\n12,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,Variables\n13,0,Score\n14,1,a,a,a,Family\n15,0,0,0,0,0,0,0,0,0,0,Ach.file\n16,0,0,0,0,Check plot\n17,1,0,0,1,Barn,Fence,WindWell,House(Shopping)\n18,0,0,0,0,0,Buisness\n0,0,0,0",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.CurSituation",
+   "movie": "SHARED",
+   "castId": 3004,
+   "name": "CurSituation",
+   "text": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6-7-Bush-Price-tot,9-Church\n0,0,Year,Month\n0,0,Neighb,Family\n0,0,0,NCount,NCicle,NWor\n0,0,0,0,Bush\n0,0,0,0,Price\n0,0,0,0\n0,0,Reserv\n0,FirstHarv",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.Begin",
+   "movie": "SHARED",
+   "castId": 3005,
+   "name": "Begin",
+   "text": "1,Prev Game\n0,Begin\n0,Inside\n0,1000,2000,3000,Goals",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.AllEvents",
+   "movie": "SHARED",
+   "castId": 3007,
+   "name": "AllEvents",
+   "text": "1880,12,0,1,Baby1,2,DBox0,Sound,name\n1881,2,0,2,DL1,Had4,Sig1,11,0,0,0,1\n1881,12,0,3,Da1,1,DBox2,5,5\n1882,3,0,4,Doc1,Doc2\n1882,8,0,5,Sop1,DBox9,3,6,1890\n1883,2,0,7,AL50,Had5,Sig50,0,0,0,0\n1883,7,0,7,AL27,0,Sig27,0,0,0,0,1\n1884,2,0,1,Baby2,2,DBox0,Sound,name\n1884,3,0,4,Doc3,Doc4\n1884,6,0,2,DL8,Had7,Sig8,11,0,0,0,1\n1885,3,0,7,AL43,0,Sig2,0,0,0,0,1\n1887,7,0,5,Sop2,DBox9,0.5,6,1898\n1888,3,0,3,DaW1,7,DBox2,0,-2\n1889,2,0,1,Baby3,2,DBox0,Sound,name\n1889,3,0,4,Doc5,Doc6\n1890,2,0,3,DaW5,9,DBox13,0,2,-5\n1890,7,0,2,DL9,Had4,Sig9,11\n1892,3,0,3,DaW7,8,DBox32,0,-2,0\n1892,8,0,5,Sop3,DBox9,1,6,1900\n1893,6,0,10,Wed1,WL1,DBox13,100,200,550,3,6,14\n1893,8,0,7,AL60,Had5,Sig50,0,0,0,0\n1894,7,0,6,DL10,0,Sig10,12,-150,6,0,1\n1897,8,0,5,Sop4,DBox9,1,6,1907\n1898,3,0,3,DaW3,8,DBox01,0,4,-2\n1899,1,0,2,DL16,Had4,Sig9,11\n1900,6,0,2,DL17,Had4,Sig6,11\n1900,7,0,3,DaW8,9,DBox12,0,6,-5,-2,0\n1901,2,0,2,DL18,Had4,Sig18,11\n1901,11,1,7,AL19,Had8,Sig11,0,0,0,0,1\n1902,6,0,10,Wed2,WL1,DBox01,125,225,575,3,6,14\n1902,8,0,5,Son21,DBox01,-5\n1905,6,0,5,Dat5,DBox12,0\n1905,7,0,3,Da3,10,DBox12,480,15,0\n1906,3,0,5,DMail,DBox5,0\n1907,6,0,15,Son1,10,DBox23,0,0,-5\n1910,3,0,2,DL24,Had4,Sig18,11,0,0,0,0\n1917,5,0,7,AL33,Had9,Sig60,0,0,0,0,1\n1917,7,0,7,AL34,0,Sig10,0,0,0,0,1\n1918,6,0,7,AL37,0,Sig11,0,0,0,0,1\n1918,7,0,7,AL38,0,Sig20,0,0,0,0,1\n1919,6,0,7,AL39,Had9,0,0,0,0,0,1\n1919,11,0,7,AL40,0,Sig10,0,0,0,0,1",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.Random",
+   "movie": "SHARED",
+   "castId": 3008,
+   "name": "Random",
+   "text": "10,17,Winter,month,day\n5,22,Summer\n19,74,Cents/Bush,TransPrice\n15,8,3,13,4,2,16,1,9,12,10,14,6,11,5,7",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.TTalk",
+   "movie": "SHARED",
+   "castId": 3011,
+   "name": "TTalk",
+   "text": "[[1880, 4, 0, 101, \"TTalk1\"], [1880, 9, 0, 102, \"TTalk1\"], [1881, 4, 0, 103, \"TTalk1\"], [1881, 9, 0, 104, \"TTalk2\"], [1882, 4, 0, 105, \"TTalk2\"], [1882, 9, 0, 106, \"TTalk2\"], [1887, 4, 0, 107, \"TTalk2\"], [1887, 9, 0, 108, \"TTalk3\"], [1888, 9, 0, 109, \"TTalk3\"], [1890, 4, 0, 110, \"TTalk3\"], [1893, 9, 17, 111, \"TTalk3\"], [1894, 6, 0, 112, \"TTalk4\"], [1895, 4, 0, 113, \"TTalk4\"], [1905, 6, 0, 114, \"TTalk4\"], [1909, 4, 8, 115, \"TTalk4\"], [1914, 8, 5, 116, \"TTalk5\"], [1917, 4, 6, 117, \"TTalk5\"], [1918, 11, 11, 118, \"TTalk5\"], [1919, 4, 0, 119, \"TTalk5\"],[1919, 12, 0, 120, \"TTalk6\"], [1886, 4, 0, 121, \"TTalk6\"]]",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.LocDate",
+   "movie": "SHARED",
+   "castId": 3012,
+   "name": "LocDate",
+   "text": "APR.\n12\n1880",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.MyGoal",
+   "movie": "SHARED",
+   "castId": 3013,
+   "name": "MyGoal",
+   "text": "To be a successful farmer.",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.defCatalogItems",
+   "movie": "SHARED",
+   "castId": 3014,
+   "name": "defCatalogItems",
+   "text": "[#type: #seedsMenu, #name: #seedsMenu, #year: 0, #month: 0, #cast: \"seeds menu\", #loc: point(329, 203)], [#type: #seeds, #name: #winterWheat, #year: 0, #month: 0, #cast: \"winter wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #springWheat, #year: 0, #month: 0, #cast: \"spring wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #oats, #year: 0, #month: 0, #cast: \"oats\", #loc: point(329, 203)], [#type: #seeds, #name: #corn, #year: 0, #month: 0, #cast: \"corn\", #loc: point(329, 203)], [#type: #products, #name: #windMill, #year: 0, #month: 0, #cast: \"windmill\", #loc: point(328, 143), #num: 3, #price: 80], [#type: #products, #name: #wireFence, #year: 1883, #month: 4, #cast: \"wire fence\", #loc: point(328, 143), #num: 1, #price: 100], [#type: #products, #name: #kodakCamera, #year: 1888, #month: 4, #cast: \"kodak camera\", #loc: point(328, 143), #num: 1, #price: 25], [#type: #products, #name: #tractor, #year: 1887, #month: 4, #cast: \"tractor\", #loc: point(328, 143), #num: 3, #price: 400], [#type: #products, #name: #car, #year: 1909, #month: 4, #cast: \"car\", #loc: point(328, 143), #num: 1, #price: 900]",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.STTalks",
+   "movie": "SHARED",
+   "castId": 3015,
+   "name": "STTalks",
+   "text": "[#102 :[#7 : [8],#DEF : [8]], #103 :[#2 : [5],#9 : [7,8],#DEF : [5,7,8]], #104 :[#2 : [5],#6:[8,7],#DEF : [3,5,8,7,9]],#105 :[#1 : [3],#2 : [5],#8 : [7],#DEF : [3,5,7]],#106 :[#1 : [5,2],#9 : [7,8],#DEF : [2,5,7,8]],#107 :[#1 : [5],#7 : [8],#DEF : [5,8]],#108 :[#3 : [2,6,5],#8 : [7],#4 : [9],#DEF : [2,9,6,5,7]],#109 :[#1 : [5],#2 : [4],#7 : [8],#DEF : [5,4,8]],#110 :[#4 : [9],#7 : [8],#DEF : [1,5,6,9,8]],#111 :[#6 : [9],#7 : [8],#DEF : [8,9]],#113 :[#2 : [4],#DEF : [3,4]],#116 :[#2 : [6],#DEF : [6]],#119 :[#2 : [4,9],#DEF : [4,9]],#301 :[#1 : [2],#5 : [4],#6 : [9],#DEF : [2,4,9]],#303 :[#9 : [2],#5 : [4],#DEF : [2,4]],#121 :[#5 : [1,6],#DEF : [2,3,4,1,6,7,8,9]]]",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.All",
+   "movie": "SHARED",
+   "castId": 3017,
+   "name": "All",
+   "text": "[188012 ,18812 ,188112 ,18823 ,18828 ,18832 ,18837 ,18842 ,18843 ,18846 ,18853 ,18877 ,18883 ,18892 ,18893 ,18902 ,18907 ,18923 ,18928 ,18936 ,18938 ,18947 ,18978 ,18983 ,18991 ,19006 ,19007 ,19012 ,190111 ,19026 ,19028 ,19056 ,19057 ,19063 ,19076 ,19103 ,19175 ,19177 ,19186 ,19187 ,19196 ,191911 ]  ",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.SaveIt",
+   "movie": "SHARED",
+   "castId": 3018,
+   "name": "SaveIt",
+   "text": "[[3000, 3005], 3007,  3008,  3011,  3013, 3014, 3017, [3026, 3038], 3063, 3065, [3112, 3166]]",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.Savings",
+   "movie": "SHARED",
+   "castId": 3034,
+   "name": "Savings",
+   "text": "\"\"Apr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\"\"",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.MyCash",
+   "movie": "SHARED",
+   "castId": 3036,
+   "name": "MyCash",
+   "text": "$500.00",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.HireWor",
+   "movie": "SHARED",
+   "castId": 3050,
+   "name": "HireWor",
+   "text": "APR. 7, 1910",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NumbPage",
+   "movie": "SHARED",
+   "castId": 3065,
+   "name": "NumbPage",
+   "text": "2,2\n8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.AllNotes",
+   "movie": "SHARED",
+   "castId": 3063,
+   "name": "AllNotes",
+   "text": "\n\n\n \n\n\n \n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.LogBook",
+   "movie": "SHARED",
+   "castId": 3026,
+   "name": "LogBook",
+   "text": " ",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.LogBank",
+   "movie": "SHARED",
+   "castId": 3027,
+   "name": "LogBank",
+   "text": "",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.MyLoan",
+   "movie": "SHARED",
+   "castId": 3028,
+   "name": "MyLoan",
+   "text": "0",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.MyDate",
+   "movie": "SHARED",
+   "castId": 3029,
+   "name": "MyDate",
+   "text": "0",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.MyName",
+   "movie": "SHARED",
+   "castId": 3030,
+   "name": "MyName",
+   "text": " ",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.MyRecieve",
+   "movie": "SHARED",
+   "castId": 3031,
+   "name": "MyRecieve",
+   "text": "0",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.Interest",
+   "movie": "SHARED",
+   "castId": 3032,
+   "name": "Interest",
+   "text": "7%",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.MyReturn",
+   "movie": "SHARED",
+   "castId": 3033,
+   "name": "MyReturn",
+   "text": "0",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.Save",
+   "movie": "SHARED",
+   "castId": 3035,
+   "name": "Save",
+   "text": "0",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.FirstName",
+   "movie": "SHARED",
+   "castId": 3037,
+   "name": "FirstName",
+   "text": " ",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.LastName",
+   "movie": "SHARED",
+   "castId": 3038,
+   "name": "LastName",
+   "text": " ",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.Year1",
+   "movie": "SHARED",
+   "castId": 3540,
+   "name": "Year1",
+   "text": "Feb. 5, 1887",
+   "source": "text-member"
+  }
+ ]
+}

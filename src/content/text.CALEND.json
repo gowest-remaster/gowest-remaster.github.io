@@ -1,0 +1,1800 @@
+{
+ "movie": "CALEND",
+ "origin": "assets/CALEND/",
+ "members": [
+  {
+   "castId": 128,
+   "name": "",
+   "type": "text",
+   "text": "Do you want to save your game?\n\n"
+  },
+  {
+   "castId": 997,
+   "name": "Hints1",
+   "type": "text",
+   "text": "2,10,12,16,18,26,30,33,30,33,35,37,39,42,44,47,49,50,52,54,55,55,57,67\nClick here to build a sod house. \nOn the Great Plains,  there were no forests, \nso it was difficult and expensive  to build \nwooden houses. People cut the layer of grass \nand soil that forms the surface of the ground,\ncalled sod,  into strips. After the strips of sod \ndried in the sun,  they were used as bricks to\nbuild houses. You need a house to survive\nthe cold Kansas winters.\n\nClick here to build a barn and a wooden fence \naround the barn. The barn has stalls where\nthe animals live and a dry place  to store their food.\nThe animals need a barn to survive\nthe cold Kansas winters.\n\nClick here to dig a well and build a windmill. \nThere were few water sources on the Great Plains. \nMany people dug wells to find water that \nwas deep underground.  They used windmills to \npump water out of the ground. \nWind power turns propellers on a windmill.\nWhen the propellers turn, a pump pushes the water\nup to a small pool on the land surface.  You need \nwater to keep your family and your animals alive.\n\nClick here to build a wooden fence around the field. \n\nClick here to build a barbed-wire fence around the field.\nA barbed-wire fence is better than a wooden fence\nfor keeping  animals out of the field.\nIts sharp pieces hurt animals that touch the fence.\n\nClick here to see which family members can help you.\nDifferent people are available at different times. \nDecide how many family members you want to help you.\n\nClick here to see which neighbors can help you. \nNeighbors are usually happy to help you when \nyou are ready to help them. Decide how many neighbors \nyou want to help you.\n\nClick here to hire workers to help you. \nWorkers are paid by the day. \nDecide how many workers you want to hire. \nWhen their work is done, it is time to pay them.\n\nThis shows how many days it will take to finish\nthe job with the number of helpers you chose.\n\nThis shows how much you will pay for the material\nyou need and the workers you hired for this building job.\n\nClick here if you are sure you want to build.\n\nClick here if you decide not to build. \n \n\n\n"
+  },
+  {
+   "castId": 998,
+   "name": "Hints",
+   "type": "text",
+   "text": "2,4,6,8,10,13,10,13,15,19,20,24,26,28,30,31,33,34,35,36,38,39,41,44,46,47,48,49\nThe general store, the bank and the grain elevator are\nin the town. You can learn about new business\nopportunities there.\n\nIn your house, you can read the newspapers, \nhide your savings,\nand keep a record of your life.\n\nYou can earn money by working in the fields. \nTry to make good decisions about plowing your fields, \nplanting your seeds,\nand harvesting and selling your crops.\n\nThe calendar shows the passage of time.\nWhen the button on top of the calendar is green, \nthe calendar is running. Click on it to stop time from passing.\nWhen the button on top of the calendar is red,\nthe calendar is stopped. Click on it to start running it again.\nWhen you hear the trumpet, choose a trivia card.\nIf you answer  the question on the card correctly, \nyou will win some money.  Tip: You can find answers\nto the trivia questions by reading the  newspapers\nand listening to the conversations in town.\n\nClick here to see what you have achieved \nso far in the game. You can see how much money you have,\nwhat you own, and how close you are to your goal.\n\nWhen the red flag on the mailbox is raised, the mailman\nhas delivered a letter for you. Click on the mailbox to read the letter.\n\nClick here to start over, save your work, \nsee the introduction, or exit.\nClick here to visit with some of your neighbors.\nThey always have something interesting to say.\n\nEach spring you can go to the livestock fair\nto buy and sell animals.\n\nClick on the hammer when you want to build things.\nTo survive, you need a house, a barn, and a well with\na windmill, so build them as soon as you can. You can\nalso build a fence to protect your crops from animals.\n\nThis is how much money you have in cash.\n\nThis is how much money you have in your savings box.\n\n"
+  },
+  {
+   "castId": 1000,
+   "name": "OldDate",
+   "type": "text",
+   "text": "APR.\n\n1887"
+  },
+  {
+   "castId": 1001,
+   "name": "Testtime",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1002,
+   "name": "QText",
+   "type": "text",
+   "text": "The general store, the bank and the grain elevator are\nin the town. You can learn about new business\nopportunities there."
+  },
+  {
+   "castId": 1003,
+   "name": "CurFDBK",
+   "type": "text",
+   "text": "Hello, neighbor. I see that you still have no well or windmill. If you buy a windmill, I'll help you build it and dig a well. \n\n"
+  },
+  {
+   "castId": 1004,
+   "name": "DDate",
+   "type": "text",
+   "text": "JUNE"
+  },
+  {
+   "castId": 1005,
+   "name": "MYINPUT",
+   "type": "text",
+   "text": "2200"
+  },
+  {
+   "castId": 1006,
+   "name": "INPUT",
+   "type": "text",
+   "text": "Dudu"
+  },
+  {
+   "castId": 1007,
+   "name": "INPUT1",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1008,
+   "name": "CurF2",
+   "type": "text",
+   "text": "I will give:"
+  },
+  {
+   "castId": 1009,
+   "name": "CurFDBK1",
+   "type": "text",
+   "text": "Now you are a homestead farmer who is successful\nin business. What do you want to do next?\n    \n       I want to\n\n       keep farming my homestead and remain \n       successful in business.\n\n       keep farming my homestead and become mayor.\n\n       let my son take over the homestead so I can \n       retire in town.\n"
+  },
+  {
+   "castId": 1010,
+   "name": "Text2",
+   "type": "text",
+   "text": "I'll buy new shoes.\nMy baby's name is:\nWe'll have\nI'll send $100.00.\nI'll invest $500.00.\nI’ll send $200.00.\nI'll let my daughter work.\nI'll let my son work.\nI'll let my daughter leave.\nI'll pay for college.\nI will give:\nI'll send $150.00.\nI'll send $800.00.\nI'll send $75.00.\n"
+  },
+  {
+   "castId": 1011,
+   "name": "NothToB",
+   "type": "text",
+   "text": "\n\n\n    You have nothing to build."
+  },
+  {
+   "castId": 1016,
+   "name": "Base",
+   "type": "text",
+   "text": "New blankets:                                      $  6.00\n    \nCooking stove:                                     $50.00\n    \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n"
+  },
+  {
+   "castId": 1017,
+   "name": "LoanRet",
+   "type": "text",
+   "text": "Time has come to repay your loan. Make sure to come to the bank to repay your loan by the end of the month."
+  },
+  {
+   "castId": 1018,
+   "name": "Doc0",
+   "type": "text",
+   "text": "Neighbor, I suggest that you buy these items to make your home more healthful. Buy what you can afford now. You can get the rest later."
+  },
+  {
+   "castId": 1019,
+   "name": "Doc1",
+   "type": "text",
+   "text": "Neighbor, your daughter has a fever and chills. I'll give her medicine and she'll be better soon"
+  },
+  {
+   "castId": 1020,
+   "name": "Doc2",
+   "type": "text",
+   "text": "Neighbor, your daughter has a fever and chills. I'll give her medicine and she'll be better soon. Please pay me $25.00 for my visit."
+  },
+  {
+   "castId": 1021,
+   "name": "Doc3",
+   "type": "text",
+   "text": "Your new baby has croup. I'll give her medicine and she'll be fine. \n\n"
+  },
+  {
+   "castId": 1022,
+   "name": "Doc4",
+   "type": "text",
+   "text": "Your new baby has croup. I'll give her medicine and she'll be fine. Please pay me $25.00 for my visit.\n\n"
+  },
+  {
+   "castId": 1023,
+   "name": "Doc5",
+   "type": "text",
+   "text": "Your little boy is sick. I'll give him medicine and he'll be fine.\n\n"
+  },
+  {
+   "castId": 1024,
+   "name": "Doc6",
+   "type": "text",
+   "text": "Your little boy is sick. I'll give him medicine and he'll be fine. Please pay me $25.00 for my visit.\n\n"
+  },
+  {
+   "castId": 1025,
+   "name": "DocList",
+   "type": "text",
+   "text": "New blankets:                                      $  6.00\n     \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n"
+  },
+  {
+   "castId": 1026,
+   "name": "ListBase",
+   "type": "text",
+   "text": "New blankets:                                      $  6.00\n    \nCooking stove:                                     $50.00\n    \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n"
+  },
+  {
+   "castId": 1027,
+   "name": "0DocList",
+   "type": "text",
+   "text": "New blankets:                                      $  6.00\n     \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n"
+  },
+  {
+   "castId": 1028,
+   "name": "NoM",
+   "type": "text",
+   "text": "You don't have enough money to do this."
+  },
+  {
+   "castId": 1029,
+   "name": "LoanEnd",
+   "type": "text",
+   "text": "You didn't repay your loan on time, so the bank is taking over your farm. I'm sorry to hear you'll be heading back east.\n I hope you'll come back soon and start over again."
+  },
+  {
+   "castId": 1030,
+   "name": "NoFence1",
+   "type": "text",
+   "text": "A herd of cattle trampled some of your crops. In the old country, you could have built a wooden fence around your field, but you won't find much wood around here!\n I've heard about a new kind of fence, but it's not in the general store's catalog yet."
+  },
+  {
+   "castId": 1031,
+   "name": "NoFence2",
+   "type": "text",
+   "text": "A herd of cattle trampled some of your crops. You need a good fence around your field. I've heard that neighbor Daniel built a fence out of something new, called barbed wire. Maybe it's in the general store's catalog.\n"
+  },
+  {
+   "castId": 1032,
+   "name": "NoFence3",
+   "type": "text",
+   "text": "A few cattle broke down your wooden fence. They destroyed some of your crops. If you go to the general store and look at the catalog, I think you'll find exactly what you need.\n"
+  },
+  {
+   "castId": 1034,
+   "name": "Baby1",
+   "type": "text",
+   "text": "Congratulations! You have a son! Your monthly cost of living will increase by five dollars per month. "
+  },
+  {
+   "castId": 1035,
+   "name": "Baby2",
+   "type": "text",
+   "text": "Congratulations! You have another daughter! Your monthly cost of living will increase by five dollars per month.\n"
+  },
+  {
+   "castId": 1036,
+   "name": "Baby3",
+   "type": "text",
+   "text": "Congratulations! You have another son! Your monthly cost of living will increase by five dollars per month. \n"
+  },
+  {
+   "castId": 1037,
+   "name": "T623",
+   "type": "text",
+   "text": "I hope you’re happy with your new sod house, neighbor. We built it quickly because we worked together. That's what neighbors do."
+  },
+  {
+   "castId": 1038,
+   "name": "Rep",
+   "type": "text",
+   "text": "That was some tornado, neighbor.\nIf I were you, I'd fix everything that was\ndamaged as soon as possible. \nIn another month or two, it will be too cold\nto work outside. Anyway, your animals won't \nmake it through the winter without a barn."
+  },
+  {
+   "castId": 1039,
+   "name": "CantBuild",
+   "type": "text",
+   "text": "It's too cold to build anything right now.\nYou need to wait until early spring."
+  },
+  {
+   "castId": 1040,
+   "name": "NoBuild",
+   "type": "text",
+   "text": "Neighbor, please let me and some\nother folks help you build a barn.\nYour animals need some shade and\nprotection from the rain. \nYou should also dig a well soon.\nBy July, the creek will be almost dry. "
+  },
+  {
+   "castId": 1041,
+   "name": "NoWM",
+   "type": "text",
+   "text": "It's very difficult to carry water in pails all the way from the creek. Now the creek is nearly dry. Our neighbors say that if we buy a windmill, they’ll help us build it and dig a well.\n\n"
+  },
+  {
+   "castId": 1042,
+   "name": "OnlyBuild",
+   "type": "text",
+   "text": "I'm tired of carrying water from the creek far away. Can we please build the windmill you've bought?\n\n"
+  },
+  {
+   "castId": 1043,
+   "name": "NoBarn",
+   "type": "text",
+   "text": "Neighbor, please let me and some other folks help you build a barn. Your animals need some shade and protection from rain."
+  },
+  {
+   "castId": 1044,
+   "name": "WMEOG",
+   "type": "text",
+   "text": "Hello, neighbor. I see that you still have no well or windmill. If you buy a windmill, I'll help you build it and dig a well. \n\n"
+  },
+  {
+   "castId": 1045,
+   "name": "AnimD",
+   "type": "text",
+   "text": "The cold weather killed all your animals. Since you don't have a dairy cow, it will cost $10 dollars a month to buy milk from a neighbor.\n\n\n"
+  },
+  {
+   "castId": 1046,
+   "name": "NoHouse",
+   "type": "text",
+   "text": "Can you hear those folks in town talking? They'd like to meet you. Why don't you come by and say hello?\n\n\n\n"
+  },
+  {
+   "castId": 1047,
+   "name": "YesHouse",
+   "type": "text",
+   "text": "Congratulations! You have another son! Your monthly cost of living will increase by five dollars per month. \n\nMy baby's name is:\n\n\n\n"
+  },
+  {
+   "castId": 1048,
+   "name": "AfterTorn",
+   "type": "text",
+   "text": "Hello, neighbor. Looks like the tornado left your farm in pretty bad shape! If you need help repairing  things, just ask  for it! \n"
+  },
+  {
+   "castId": 1049,
+   "name": "Da1",
+   "type": "text",
+   "text": "Ouch! My feet hurt. My shoes are  too small. Will you please buy me a new pair? They cost five dollars."
+  },
+  {
+   "castId": 1050,
+   "name": "Da2",
+   "type": "text",
+   "text": "I'll buy new shoes."
+  },
+  {
+   "castId": 1051,
+   "name": "Da3",
+   "type": "text",
+   "text": "I have good news! I've been accepted\n to college. If you lend me $480.00 a year\n to help pay for school,\nI can go. Will you help me?"
+  },
+  {
+   "castId": 1052,
+   "name": "Da4",
+   "type": "text",
+   "text": "I''ve been offered another chance to teach scool in town, and I'd really like to take it. I'll miss everyone, but I'm looking forward to living in a big city. My train leaves in a few days. I'll write from Boston to tell you\nhow I'm doing."
+  },
+  {
+   "castId": 1053,
+   "name": "DAW1",
+   "type": "text",
+   "text": "Now that I'm older, I can help you in the fields when you're busy. I may miss some school, but you'll finish the work faster and save money."
+  },
+  {
+   "castId": 1054,
+   "name": "DAW3",
+   "type": "text",
+   "text": "Now that I've finished school, I can work full-time in the fields. I can work as hard as any worker you could hire.\n"
+  },
+  {
+   "castId": 1055,
+   "name": "DAW5",
+   "type": "text",
+   "text": "A very nice family in town wants me to live with them and work as a mother's helper. Now that I'm grown up, I want a chance to be on my own. May I take the job?"
+  },
+  {
+   "castId": 1056,
+   "name": "DAW7",
+   "type": "text",
+   "text": "Now that I'm older, I can help you in the fields when you're busy. I might miss some school, but you'll finish the work faster and save money.\n\n"
+  },
+  {
+   "castId": 1057,
+   "name": "Daw8",
+   "type": "text",
+   "text": "I've just received my teaching certificate. \nI've been offered a teaching job in town.\nI'd really like to take it, but it would mean \nmoving to town. Will you let me leave home\nand take the job?"
+  },
+  {
+   "castId": 1058,
+   "name": "Daw9",
+   "type": "text",
+   "text": "I've been offered another chance to teach school in town, and I'd really like to take it. It would mean moving to town. Will you let me leave home and take the job?"
+  },
+  {
+   "castId": 1059,
+   "name": "DMail",
+   "type": "text",
+   "text": "Hello, neighbor. Starting this month, your mail will be delivered to your house.  Whenever there's a letter for you, the red flag on your mailbox will be raised. Your mail won't come to my store anymore, but I hope I'll still see you there often."
+  },
+  {
+   "castId": 1060,
+   "name": "Dat5",
+   "type": "text",
+   "text": "I've applied to Oberlin College, in Ohio. Maybe someday I'll be able to teach college, as some women are starting to do. Soon I'll hear whether the college has accepted me. "
+  },
+  {
+   "castId": 1061,
+   "name": "MyHelp",
+   "type": "text",
+   "text": "I need your help to finish the work in my field on time. "
+  },
+  {
+   "castId": 1062,
+   "name": "BuildFence",
+   "type": "text",
+   "text": "You need to build fence."
+  },
+  {
+   "castId": 1063,
+   "name": "NoBuy",
+   "type": "text",
+   "text": "You don't have enough money to buy this."
+  },
+  {
+   "castId": 1066,
+   "name": "Sop1",
+   "type": "text",
+   "text": "Hello, neighbor. I'm glad you're sending your daughter to school this fall. My daughter Katie is starting school too. By the way, school supplies will cost three dollars per term.\n\n\n\n"
+  },
+  {
+   "castId": 1067,
+   "name": "Sop3",
+   "type": "text",
+   "text": "Hello, neighbor. I'm glad you're sending your daughter to school this fall. By the way, school supplies will cost six dollars per term."
+  },
+  {
+   "castId": 1068,
+   "name": "Sop2",
+   "type": "text",
+   "text": "Hello, neighbor. I'm glad you're sending your son to school this fall. My son Jesse is starting school too. By the way, school supplies will cost three dollars per term.\n\n"
+  },
+  {
+   "castId": 1069,
+   "name": "Sop4",
+   "type": "text",
+   "text": "Hello, neighbor. I'm glad you're sending your son to school this fall. By the way, school supplies will cost six dollars per term.\n\n\n"
+  },
+  {
+   "castId": 1076,
+   "name": "Son1",
+   "type": "text",
+   "text": "I have good news! I've been accepted to study law at a college back east. If you lend me $600.00 a year to help pay for school, I can go. Will you help me?"
+  },
+  {
+   "castId": 1077,
+   "name": "Son3",
+   "type": "text",
+   "text": "Ma, Pa, I've made up my mind. I'm going to California to seek my fortune. Please don't worry about me. I'll write you as soon as I get there."
+  },
+  {
+   "castId": 1078,
+   "name": "Son20",
+   "type": "text",
+   "text": "Now that I'm married, I've decided to take\na job working at the railroad station.\nSusie and I will live in a set \nof rented rooms in town."
+  },
+  {
+   "castId": 1079,
+   "name": "Son21",
+   "type": "text",
+   "text": "Now that I'm married, I've decided\nto go into business in town. \nI'm buying the carriage supply store, \nand Susie and I will live \nin a small house nearby."
+  },
+  {
+   "castId": 1080,
+   "name": "Son22",
+   "type": "text",
+   "text": "I was always happiest on the farm. \nNow that I'm married, I'm going to\ntake over the neighboring farm. \nWhenever you need help, \nI'll be right next door."
+  },
+  {
+   "castId": 1082,
+   "name": "Wed1",
+   "type": "text",
+   "text": "I'm so happy! My beau John has asked me to marry him. I said yes. I hope we can afford a big wedding."
+  },
+  {
+   "castId": 1083,
+   "name": "Wed2",
+   "type": "text",
+   "text": "I have good news! My sweetheart Susie and I are getting married. I hope we can afford a big wedding.\n"
+  },
+  {
+   "castId": 1084,
+   "name": "WL1",
+   "type": "text",
+   "text": "a wedding at home with just the family\n\na wedding at home and invite family \nand a few friends\n\na wedding in the town square and invite\nthe whole town\n\n"
+  },
+  {
+   "castId": 1085,
+   "name": "WL0",
+   "type": "text",
+   "text": "a wedding at home with just the family\n\na wedding at home and invite family \nand a few friends\n\na wedding in the town square and invite\nthe whole town\n\n"
+  },
+  {
+   "castId": 1086,
+   "name": "WLBase",
+   "type": "text",
+   "text": "a wedding at home with just the family\n\na wedding at home and invite family and \na few friends\n\na wedding in the town square and invite\nthe whole town\n\n"
+  },
+  {
+   "castId": 1091,
+   "name": "ExName",
+   "type": "text",
+   "text": "Alla Lad "
+  },
+  {
+   "castId": 1092,
+   "name": "Name",
+   "type": "text",
+   "text": "Andrea"
+  },
+  {
+   "castId": 1093,
+   "name": "Wor",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1094,
+   "name": "Fam",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1095,
+   "name": "Neib",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1096,
+   "name": "Days",
+   "type": "text",
+   "text": "5"
+  },
+  {
+   "castId": 1097,
+   "name": "Cost",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 1098,
+   "name": "",
+   "type": "text",
+   "text": "TOTAL:                                                   \n"
+  },
+  {
+   "castId": 1099,
+   "name": "LifeGB",
+   "type": "text",
+   "text": "$20.00"
+  },
+  {
+   "castId": 1100,
+   "name": "CashGB",
+   "type": "text",
+   "text": "$40,980.00"
+  },
+  {
+   "castId": 1101,
+   "name": "SaveGB",
+   "type": "text",
+   "text": "$0.00"
+  },
+  {
+   "castId": 1102,
+   "name": "TotalGB",
+   "type": "text",
+   "text": "$9,275.00"
+  },
+  {
+   "castId": 1103,
+   "name": "TotalFarmValue",
+   "type": "text",
+   "text": "$1,894.09"
+  },
+  {
+   "castId": 1104,
+   "name": "SizeF",
+   "type": "text",
+   "text": "160 acres"
+  },
+  {
+   "castId": 1105,
+   "name": "ValueF",
+   "type": "text",
+   "text": "$1,700.00"
+  },
+  {
+   "castId": 1106,
+   "name": "CornF",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 1107,
+   "name": "WWeatF",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 1108,
+   "name": "SWeatF",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 1109,
+   "name": "OatsF",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 1110,
+   "name": "Anim1",
+   "type": "text",
+   "text": "1"
+  },
+  {
+   "castId": 1111,
+   "name": "Anim2",
+   "type": "text",
+   "text": "2"
+  },
+  {
+   "castId": 1112,
+   "name": "Anim3",
+   "type": "text",
+   "text": "1"
+  },
+  {
+   "castId": 1113,
+   "name": "AnimV1",
+   "type": "text",
+   "text": "$190.00"
+  },
+  {
+   "castId": 1114,
+   "name": "AnimV2",
+   "type": "text",
+   "text": "$13.00"
+  },
+  {
+   "castId": 1115,
+   "name": "AnimV3",
+   "type": "text",
+   "text": "$22.00"
+  },
+  {
+   "castId": 1116,
+   "name": "TotV",
+   "type": "text",
+   "text": "$163.00"
+  },
+  {
+   "castId": 1117,
+   "name": "PlowF",
+   "type": "text",
+   "text": "1"
+  },
+  {
+   "castId": 1118,
+   "name": "TractorF",
+   "type": "text",
+   "text": "1"
+  },
+  {
+   "castId": 1119,
+   "name": "PlowVF",
+   "type": "text",
+   "text": "$50.00"
+  },
+  {
+   "castId": 1120,
+   "name": "TractorVF",
+   "type": "text",
+   "text": "$400.00"
+  },
+  {
+   "castId": 1121,
+   "name": "TotV1",
+   "type": "text",
+   "text": "$450.00"
+  },
+  {
+   "castId": 1122,
+   "name": "TotAV1",
+   "type": "text",
+   "text": "$59.00"
+  },
+  {
+   "castId": 1123,
+   "name": "TotAV2",
+   "type": "text",
+   "text": "$12.00"
+  },
+  {
+   "castId": 1124,
+   "name": "TotAV3",
+   "type": "text",
+   "text": "$21.00"
+  },
+  {
+   "castId": 1125,
+   "name": "MyTotal",
+   "type": "text",
+   "text": "$92.00"
+  },
+  {
+   "castId": 1126,
+   "name": "LifePrice",
+   "type": "text",
+   "text": "$30"
+  },
+  {
+   "castId": 1127,
+   "name": "PayLoan",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1128,
+   "name": "YearPrice",
+   "type": "text",
+   "text": "$360"
+  },
+  {
+   "castId": 1129,
+   "name": "WedPr1",
+   "type": "text",
+   "text": "$125.00"
+  },
+  {
+   "castId": 1130,
+   "name": "WedPr2",
+   "type": "text",
+   "text": "$225.00"
+  },
+  {
+   "castId": 1131,
+   "name": "WedPr3",
+   "type": "text",
+   "text": "$575.00"
+  },
+  {
+   "castId": 1132,
+   "name": "Score",
+   "type": "text",
+   "text": "SCORE :  0"
+  },
+  {
+   "castId": 1136,
+   "name": "Startover",
+   "type": "text",
+   "text": "Be careful! If you start over all your work will be erased."
+  },
+  {
+   "castId": 1137,
+   "name": "Fire",
+   "type": "text",
+   "text": "My crops were destroyed in the prairie fire, too.  We'll have to plow and plant again, if there's enough time."
+  },
+  {
+   "castId": 1138,
+   "name": "GrH",
+   "type": "text",
+   "text": "Oh no, all our crops were eaten! Now we'll have to plow and plant again, if there's enough time."
+  },
+  {
+   "castId": 1140,
+   "name": "ListM8",
+   "type": "text",
+   "text": "                                                   TOWN OF LONGVIEW\n                                             BUFFALO COUNTY, KANSAS\n\n The people of Longview want to know where you stand.\n Click on the issues you support :\n\n        America should get involved in the war in Europe.\n       \n        All women in America should be allowed to vote.\n     \n        Kansas should remain a \"dry\" state.    \n         \n        The federal government should own and operate the railroads.\n       \n        Ranchers should be put in jail for grazing their cattle on farmland. \n       \n        Citizens under 18 years of age should be allowed to carry pistols in town.   \n     \n"
+  },
+  {
+   "castId": 1141,
+   "name": "Goal1",
+   "type": "text",
+   "text": "Now you are a successful homestead farmer. What do you\n want to do next?\n    \n       I want to\n\n       keep farming my homestead.\n\n       keep farming my homestead and become \n       successful in business.\n\n       keep farming my homestead and become mayor.\n\n       let my son take over the homestead so I can retire."
+  },
+  {
+   "castId": 1142,
+   "name": "Goal2",
+   "type": "text",
+   "text": "Now you are a successful homestead farmer. What do you\n want to do next?\n    \n       I want to\n\n       keep farming my homestead.\n\n       keep farming my homestead and become \n       successful in  business.\n\n       let my son take over the homestead so I can retire."
+  },
+  {
+   "castId": 1143,
+   "name": "Goal01",
+   "type": "text",
+   "text": "CONGRATULATIONS! You were a homestead farmer for 40 years. You did not reach the goal you set at the beginning, but you ran a profitable farm. Any pioneer would have been proud of your achievement."
+  },
+  {
+   "castId": 1144,
+   "name": "Goal3",
+   "type": "text",
+   "text": "Now you are a homestead farmer who is successful\nin business. What do you want to do next?\n    \n       I want to\n\n       keep farming my homestead and remain \n       successful in business.\n\n       keep farming my homestead and become mayor.\n\n       let my son take over the homestead so I can \n       retire in town.\n"
+  },
+  {
+   "castId": 1145,
+   "name": "Goal4",
+   "type": "text",
+   "text": "Now you are a homestead farmer who is successful\nin business. What do you want to do next?\n    \n       I want to\n\n       keep farming my homestead and remain \n       successful in  business.\n\n       let my son take over the homestead so I can\n       retire in town.\n"
+  },
+  {
+   "castId": 1146,
+   "name": "Goal02",
+   "type": "text",
+   "text": "CONGRATULATIONS! You were a homestead farmer for 40 years. You did not reach the goal you set at the beginning, but you ran a profitable farm. Any pioneer would have been proud of your achievement.\n "
+  },
+  {
+   "castId": 1147,
+   "name": "List551",
+   "type": "text",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1916:  $2,000.00\nLONGVIEW PROJECTS FOR 1916:\n\n        Hire two more schoolteachers.\n        $1,500.00\n\n        Put indoor plumbing in all public buildings.\n        $500\n\n        Bring the Kansas Symphony Orchestra to play in Longview.\n        $150.00\n\n        Build a public library.\n        $850.00\n\nTOTAL:  $________   \n"
+  },
+  {
+   "castId": 1148,
+   "name": "List552",
+   "type": "text",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1917:  $2,300.00\nLONGVIEW PROJECTS FOR 1917:\n\n        Build a park.\n        $250.00\n\n        Build a new town hall.\n        $1,200.00\n\n        Repave Main Street.\n        $500.00\n\n        Put in concrete sidewalks on Main Street.\n        $500.00\n\nTOTAL:  $________   "
+  },
+  {
+   "castId": 1149,
+   "name": "List553",
+   "type": "text",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1918:  $2,400.00\nLONGVIEW PROJECTS FOR 1918:\n\n        Buy a fire engine.\n        $1,000.00\n\n        Pave all the side streets.\n        $500.00\n\n        Build a new city jail on the other side of the tracks.\n        $850.00\n\n        Hire a deputy sheriff.\n        $1,000.00\n\nTOTAL:  $________   \n"
+  },
+  {
+   "castId": 1150,
+   "name": "List554",
+   "type": "text",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1919:  $2,600.00\nLONGVIEW PROJECTS FOR 1919:\n\n        Build a war memorial in memory of the fallen soldiers of Longview.\n        $500.00\n\n        Build a baseball diamond and park.\n        $400.00\n\n        Build a new courthouse.\n        $1,300.00\n        \n        Build a new post office.\n        $1,000.00\n\nTOTAL:  $________   \n"
+  },
+  {
+   "castId": 1151,
+   "name": "Sys836",
+   "type": "text",
+   "text": "\n\n     Your plans for this year cost too much. \n  Try to stick to this year's town budget."
+  },
+  {
+   "castId": 1152,
+   "name": "ListInfo",
+   "type": "text",
+   "text": "4,2000,1500,500,150,850\n4,2300,150,950,300,350\n2,2600,900,500\n2,300,500,3500"
+  },
+  {
+   "castId": 1156,
+   "name": "G1",
+   "type": "text",
+   "text": "Follow these guidelines to achieve your goal:\n\n* Remember that your family's health and education \n  are of the greatest importance.\n\n* Try to make an impact on your town's growth and progress.\n \n* Acquire the following assets by 1902:\n    · $1,000 in cash\n    · one tractor\n\n"
+  },
+  {
+   "castId": 1157,
+   "name": "G2",
+   "type": "text",
+   "text": "Follow these guidelines to achieve your goal:\n\n* Remember that your family's health and education are \n  of the greatest importance.\n\n* Try to make an impact on your town's growth and progress.\n\n* Acquire the following assets by 1909:\n   · $2,000 in cash\n   · two tractors\n   · two fields\n   · three properties in town\n   · one car\n"
+  },
+  {
+   "castId": 1158,
+   "name": "G3",
+   "type": "text",
+   "text": "Follow these guidelines to achieve your goal:\n\n* Remember that your family's health and education are \n   of the greatest importance.\n\n* Try to make an impact on your town's growth and progress.\n\n* Acquire the following assets by 1915:\n   · $3,000 in cash\n   · one tractor\n   · one property in town \n   · one car\n\n"
+  },
+  {
+   "castId": 1159,
+   "name": "lll",
+   "type": "text",
+   "text": "1,3,4,2,7"
+  },
+  {
+   "castId": 1167,
+   "name": "DLL",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nOur greatest fear has come true. Our sons are going off to fight \nin the war.  I hope they meet their Uncle Igorkggfgjgjfgfgf over there,\nso he an look out for them. \nBilly and Davey are only 19 and 21 years old.\n\nPlease let me know if you hear any news from Igorkggfgjgjfgfgf.\nI've heard that he's going to a place in France where the most\nimportant battles are being fought.\n\nJohn sends his love.\n\nYour loving daughter, \n"
+  },
+  {
+   "castId": 1168,
+   "name": "DL0",
+   "type": "text",
+   "text": "I'll buy new shoes.\nMy baby's name is:\nWe'll have\nI'll send $100.00.\nI'll invest $500.00.\nI’ll send $200.00.\nI'll let my daughter work.\nI'll let my son work.\nI'll let my daughter leave.\nI'll pay for college.\nI will give:\nI'll send $150.00.\nI'll send $800.00.\nI'll send $75.00.\n"
+  },
+  {
+   "castId": 1169,
+   "name": "DL1",
+   "type": "text",
+   "text": "Dear Neighbor, \n\nWe are asking everyone in this district of Buffalo County to \ndonate money for building a schoolhouse for our children. \n\nThank you so much for your help.\n \n\n\nEd Ducatur\nSuperintendent\n\n\n\n"
+  },
+  {
+   "castId": 1170,
+   "name": "DL8",
+   "type": "text",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in this district of Buffalo County\nto donate money for building a new church. \nWe also want to buy a bell for the belfry. Will you help us?  \n\nThank you so much.\n\nFaithfully yours,\n\n\nReverend Stowell\n\n\n\n"
+  },
+  {
+   "castId": 1171,
+   "name": "DL9",
+   "type": "text",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in this district of Buffalo County\nto donate money for fixing up our schoolhouse. \nThe building is old and needs many repairs.\n\nThank you so much for your help.\n\n\nT. Chair\nSuperintendent\n\n\n\n"
+  },
+  {
+   "castId": 1172,
+   "name": "DL10",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nIt's been a year since the beautiful wedding you made for us. \nWe finally reached Detroit. Living in a city is a big change, and I                                             already miss everyone back home.  John is looking forward to                                                   starting his job at the mill.In the meantime, we're stretching our                                                    dollars as much as we can.\nWould you be able to help us?\nJohn says that we don't need more than $150. \nCan you spare it? We promise to pay you back.\nPlease give my love to everyone.\n\nYour loving daughter,\n"
+  },
+  {
+   "castId": 1173,
+   "name": "DL11",
+   "type": "text",
+   "text": "Dear FIRSTNAME,\nHow are you? I'm writing from way up north on the Klondike River.\nI'm in Canada, just a few miles shy of the border with Alaska.\n\nThey've found gold in these parts, and I aim to find some myself.\nSince your family was always good to me, I thought I would let \nyou in on the loot.\nIf you lend me $75, I can set up camp here and start gold hunting.\nI promise to give you ten percent of all the gold I find.\n\nWhat do you say, cousin? Will you take a chance?\n\nYour cousin,\n"
+  },
+  {
+   "castId": 1174,
+   "name": "DL16",
+   "type": "text",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in this district of Buffalo County\nto donate money for building an addition to our\nschoolhouse. There is simply no room in the current \nbuilding for all our students.\n\nThank you so much for your help.\n\n\n\nT. Chair\nSuperintendent\n\n\n\n"
+  },
+  {
+   "castId": 1175,
+   "name": "DL17",
+   "type": "text",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in this district of Buffalo County\nto donate money for the big Fourth of July celebration we are\nplanning this year.It will be an especially big celebration because         we are also celebrating the turn of the century. We want to show everyone how proud we are to be Americans.\nThank you so much for your help.\n\nYours sincerely,\n\n\nCharles Cane\nMayor\n\n\n"
+  },
+  {
+   "castId": 1176,
+   "name": "DL18",
+   "type": "text",
+   "text": "Dear Neighbor,\n\nWe are asking everyone in the town of Longview and\nthe surrounding area to donate money for repairing our roads.  \nAs we all know, Main Street is full of holes. Route 28,\nwhich runs from north to south through Longview, is also in             terrible condition. Taxes alone will not cover the cost of these repairs. \n\nThank you for doing your part.\n\n\nBill Dozer\nLongview Town Improvement Committee\n\n\n\n"
+  },
+  {
+   "castId": 1177,
+   "name": "DL19",
+   "type": "text",
+   "text": "Dear Cousin, \n\nI hope you are doing well on your homestead on the range.\n\nWe are still living in New York City and working at the same jobs.\n\nWe have another chance to start a business with some friends. \nOnce again, are you interested in investing $500.00\nin our business?\nIf you invest, you'll get five percent of the profits.\n\nI hope that you will write me soon.\n\nYours,\n\n"
+  },
+  {
+   "castId": 1178,
+   "name": "DL20",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI am writing you from sunny California. I arrived two weeks ago, \nafter many adventures along the way.\n\nIn a few months I'll be able to find work in the citrus groves.\nIn the meantime, it's hard to live. Could you please send \n$100.00 to tide me over until harvest time?\n\nYour loving son,\n"
+  },
+  {
+   "castId": 1179,
+   "name": "DL21",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI'm sorry that it's taken so long for me to write. It took                                                                                                           me a long time to find a job. Before I found work, I ran                                                                                                      out of money and went into debt. Now I'm working\nto pay off my debts, and I don't have a penny  to spare                                                                                                         at the end of the week.\n\nI want to come back to the farm, where I belong, but I                                                                                                         need  your help. If you send me $200.00, I can pay off                                                                                                           my  debts and come home.\n\nYour loving son,\n"
+  },
+  {
+   "castId": 1180,
+   "name": "DL22",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI'm sorry that it's taken so long for me to write. It took                                                                             me a long time to find a job. Before I found work, I ran                                                                            out of money and went into debt. Now I'm working\nto pay off my debts, and I don't have a penny to spare \nat the end of the week.\n\nI want to come back to the farm, where I belong, but \nI need your help. If you send me $200.00, I can pay off                                                                          my debts and come home.\n\nYour loving son,\n"
+  },
+  {
+   "castId": 1181,
+   "name": "DL24",
+   "type": "text",
+   "text": "Dear Neighbor,\n\nWe've all noticed something new in our town lately.\nIt seems that everyone is driving automobiles, \nespecially the Model T Ford.  \nFor the past year, folks have been complaining that our roads \nshould be paved. Instead of raising taxes to pay for the work, \nwe are asking everyone in the town of Longview and\nthe nearby area to help as much as they can.  \nI hope that you are willing to pitch in.\n\n\n\nBill Dozer\nLongview Town Improvement Committee\n"
+  },
+  {
+   "castId": 1182,
+   "name": "DL28",
+   "type": "text",
+   "text": "Dear FIRSTNAME,\n\nIt's been a long time since we've been in touch. I've been                                                                                         working my way east from the West Coast, buying and \nselling properties on the way. Now I'm nearby, in the town                                                                                              of  Wichita, Kansas. Not far from here, some folks have                                                                                               struck oil.  I'm buying up land in the neighborhood so that                                                                                              I can strike it rich too! I thought I'd give you the first shot at                                                                                        investing in the well we're digging.  It will only cost you $800.                                                                                       You will get  20 percent of our profit.  If we strike oil, we could                                                                                      make millions!  Are you willing to take a chance?\n\nYours Cousin George.\n"
+  },
+  {
+   "castId": 1209,
+   "name": "ALM1",
+   "type": "text",
+   "text": "Dear \n\nWe are pleased to tell you that you have been elected to\nrepresent the Longview branch of the Farmers' Alliance.\nWe will be honored to see you at all our county meetings.\n\nCongratulations!\n\n\nJ.W. Paton\nPresident\n"
+  },
+  {
+   "castId": 1210,
+   "name": "ALM2",
+   "type": "text",
+   "text": "Dear \n\nI am very pleased to tell you that you have been elected\nto the Longview School Board. You are a well-respected \nmember of our community, and we believe you will be a \nvaluable addition to our board.\n\nWe look forward to seeing you at our meetings!\n\nYours sincerely,\n\n\nEd Ducatur\nSuperintendent\n"
+  },
+  {
+   "castId": 1211,
+   "name": "ALM3",
+   "type": "text",
+   "text": "Dear \n\nCongratulations! You have been elected president of the\nLongview School Board. \nEveryone appreciates your fine work in the community.\n\nBest wishes, \n\n\nEd Ducatur\nSuperintendent\n"
+  },
+  {
+   "castId": 1212,
+   "name": "ALM4",
+   "type": "text",
+   "text": "Dear \n\nCongratulations! You have been elected to the \nLongview Chamber of Commerce. \nYou are a fine and honorable citizen, and we believe \nyou will help strengthen our business community.\n\nBest wishes, \n\n\n\nHarold Potter\nPresident\n"
+  },
+  {
+   "castId": 1213,
+   "name": "ALM5",
+   "type": "text",
+   "text": "Dear \n\nAfter 25 years as president of the Chamber of Commerce,\nI have finally decided to retire. Congratulations! \nYou have been elected to be the new president. \nI am sure you will do a great job.\n\nGood luck, \n\n\nHarold Potter\nPast President\n"
+  },
+  {
+   "castId": 1214,
+   "name": "ALM6",
+   "type": "text",
+   "text": "Dear \n\nCongratulations! You have been elected to the \nLongview Town Council. Everyone in town\nknows and respects you.\n\nI know that I can depend on you to work to improve the town.\n\nYours sincerely,\n\n\n\nCharles Cane\nMayor\n"
+  },
+  {
+   "castId": 1215,
+   "name": "ALM7",
+   "type": "text",
+   "text": "Dear \n\nEveryone on the town council supports your decision                                                                                              to run for mayor.  \n\nBefore I leave for Kansas City to start my new career \nas a newspaper publisher, I want to offer you my support.\nI think you will make a great mayor.\n\nGood luck in July!\n\nYours sincerely,\n\n\nCharles Cane\nMayor\n"
+  },
+  {
+   "castId": 1216,
+   "name": "ALM9",
+   "type": "text",
+   "text": "Dear \n\nBefore I leave for Kansas City to start my new career as a \nnewspaper publisher, I want to ask you to support Jerry Mander                                                                                           for Mayor in the election this November. Jerry has been very                                                                                            committed to the community for many years.Everyone on the                                                                                               town council thinks he will make a great mayor.However, Jerry                                                                                            is not young, and he probably will not run again in 1920. I suggest                                                                                 that you consider running for mayor at that time.\n\nYours sincerely,\n\n\nCharles Cane\nMayor\n"
+  },
+  {
+   "castId": 1217,
+   "name": "AL14",
+   "type": "text",
+   "text": "Dear [FIRSTNAME],\n\nI'm writing this letter while I ride the rails back east.\n\nI'm sorry I never heard back from you last year. I managed to                                                                                 scrape together the money I needed from other friends and                                                                                         relatives. I worked day and night on the Klondike River, and                                                                                     found $2,000 worth of gold. All's well that ends well, as they say.\n\nPlease give my regards to the family. Tell them I'm on my way to                                                                            New York.   I want to get in touch with our relatives there. Maybe                                                                                    I can do business with them.\n\nYour cousin George\n"
+  },
+  {
+   "castId": 1218,
+   "name": "AL15",
+   "type": "text",
+   "text": "Dear [FIRSTNAME],\n\nI'm writing this letter while I ride the rails back east.  I was sorry                                                                                I never heard back from you last year. I managed to scrape together                                                              the money I needed from other friends and relatives. I worked day                                                                     and night on the Klondike River, but I didn't find any gold. At least I                                                                     didn't starve or freeze to death. All's well that ends well, as they say.\n\nPlease give my regards to the family.  Tell them I'm on my way to                                                                       New York. I want to get in touch with our relatives there. Maybe I can                                                                    do business with them.\n\nYour cousin George\n"
+  },
+  {
+   "castId": 1219,
+   "name": "AL19",
+   "type": "text",
+   "text": "October 14, 1901\n\nHi, folks! This is your cousin George writing from Buffalo,                                                                                         New York. Last month I visited the Pan-American exposition                                                                                        here. Your eyes would have \"lit up\" if you had seen the Electric                                                                                      Tower! It's a 375-foot-tall building that shows how electric                                                                                         inventions will make our lives easier someday.\n\nEveryone at the exposition was sad when the president                                                                                              was shot here.  \n  \nLately, I've been making plans to travel west again. I'm thinking                                                                                          of going to San Francisco to try out the fishing business.\n\nFondly yours,\n"
+  },
+  {
+   "castId": 1220,
+   "name": "AL21",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI'm sorry that it's taken me so long to write. I've been busy \nworking. Thanks to your help, I made it through the off-season. \nThen I worked very hard and saved my money.\n\nIn this letter I am returning the $100 that you lent me. You will \nsee me by the by the end of the year. I want to come back to \nLongview, where I belong. I will not I will not be a burden to you \nthere. I will live and work in town.\n\nYour loving son,\n"
+  },
+  {
+   "castId": 1221,
+   "name": "AL25",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI have great news! I'm coming back to Kansas.\nI've been offered a job at the Juste and Kase law firm. \nTheir office is in Longview! I believe you know them.\n\nI look forward to seeing you soon.\n\nYour loving son,\n\n\n\nP.S. Next year I will start paying you back for the money \nyou spent sending me to college.\n"
+  },
+  {
+   "castId": 1222,
+   "name": "AL27",
+   "type": "text",
+   "text": "Dear Cousin, \n\nI am writing to tell you that our grandfather Benjamin passed \naway in Chicago last week. He went peacefully, in his sleep.                                                                                       The doctor says he died of natural causes. This isn't surprising.                                                                                     He was very old.\n\nGrandpa left you $150 in his will. I have asked his lawyer to send                                                                                    it to the bank in your town.The money should be waiting for you there.\n\nMy son George and I send our love to you and your family.\n\nYours fondly,\n"
+  },
+  {
+   "castId": 1223,
+   "name": "AL29",
+   "type": "text",
+   "text": "Dear FIRSTNAME,\n\nAfter a year of hard work, I have good news for you. We've struck oil! \nWe've been pumping for about six months now, and the well is\nfinally dry. Your share of the profit is $2,500.00. I have sent it directly\nto your bank.\n\nThank you for your help, partner!\n\nYours,\n"
+  },
+  {
+   "castId": 1224,
+   "name": "AL30",
+   "type": "text",
+   "text": "Dear FIRSTNAME,\n\nAfter a year of hard work, I'm afraid I don't have good news. It seems\nthat we picked a piece of land without any oil underneath it.\n\nI'm sorry about the money you lost. I'm sure you'll make it up soon, \nselling wheat and corn.\n\nThank you for your help anyway.\n\nYours,\n"
+  },
+  {
+   "castId": 1225,
+   "name": "AL31",
+   "type": "text",
+   "text": "Dear FIRSTNAME,\n\nAfter a year of hard work, I finally have a chance to write and tell you\nmy good news. We've struck oil! We've been pumping for about six \nmonths now, and the well is finally dry. My partners and I made a profit\nof $12,500 from this well.\n\nI hope next time we can work together.\n\nYours,\n"
+  },
+  {
+   "castId": 1226,
+   "name": "AL32",
+   "type": "text",
+   "text": "Dear FIRSTNAME,\n\nAfter a year of hard work, I'm afraid I don't have good news. \nIt seems that I picked a piece of land without any oil underneath it.\n\nIt's just as well you didn't invest in this well. If I hear of a better deal,\nI'll be sure to let you know.\n\n\nYours,\n"
+  },
+  {
+   "castId": 1227,
+   "name": "AL33",
+   "type": "text",
+   "text": "Official Enlistment Notice\naccording to the Selective Service Act of 1917\n\nson2 lastname\n\nYou have been drafted by the United States Army.\nYou must register at the Longview Post Office,\nBuffalo County, Kansas, by June 20, 1917.\n \n\n\nRecruitment Office\n"
+  },
+  {
+   "castId": 1228,
+   "name": "AL34",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nOur greatest fear has come true. Our sons are going off to fight \nin the war.  I hope they meet their Uncle Son2 over there,\nso he can look out for them. \nBilly and Davey are only 19 and 21 years old.\n\nPlease let me know if you hear any news from Son2.\nI've heard that he's going to a place in France where the most\nimportant battles are being fought.\n\nJohn sends his love.\n\nYour loving daughter, \n"
+  },
+  {
+   "castId": 1229,
+   "name": "AL35",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI'm proud to be the first member of our family to earn \na college degree.\n\nI have decided to use my education to teach at a new school\nfor young women in Boston. I hope to help in the struggle \nto win the right for women to vote.\nIn Boston I'm sure I will meet others involved in this struggle.\n\nI am also happy to tell you that I have saved up enough money \nto pay you back for my first year of college.  I have sent $480.00\nto your account at the bank in Longview.\n\nYour loving daughter, \n\n"
+  },
+  {
+   "castId": 1230,
+   "name": "AL36",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nPlease let me know if you hear any news from brother. \nWhere is he in France?\n\nI have some news of my own. I am leaving my job at the school. \nI am going to work for the National American \nWoman Suffrage Association (NAWSA).\nI will be an assistant to Carrie Chapman Catt, its president.\nWe will be working hard to make sure that Congress \npasses the 19th Amendment next year. \n\nYour loving daughter, \n"
+  },
+  {
+   "castId": 1231,
+   "name": "AL37",
+   "type": "text",
+   "text": "Somewhere in France\n\nThis is the saddest letter I've ever had to write you. I received a \nletter telling me that my beloved mother, Marilla, your first cousin,                                                                     died of the Spanish influenza.  Everyone I know has lost someone                                                                        in their family to this  terrible disease.  Mother was 76 years old,                                                                          but she had always been healthy and strong. She wanted you to                                                                    remember her that way.\n\nBy the way, she left you $300 in her will. I am sending a check for                                                                       that amount with this letter.\n\nYours,\n"
+  },
+  {
+   "castId": 1232,
+   "name": "AL38",
+   "type": "text",
+   "text": "Somewhere in France\n\nDear Ma and Pa,\n\nI'm not in Kansas anymore! I can't tell you much except that \nI've learned how to dig a trench faster than I used to plow a                                                                            row of dry Kansas soil. I never have quite enough food to eat \nor time to sleep, but the boys I'm with are the best friends\na fellow could ever want.\n\nTell all the folks back home that we're going to win this war soon.  \nI've been on my own for a few years now, but I could sure use a\ngood, home-cooked meal now!\n\nUntil then, your homesick son,\n"
+  },
+  {
+   "castId": 1233,
+   "name": "AL39",
+   "type": "text",
+   "text": "The United States Army is proud to present the Medal\nof Honor to Son2 Lastname for service beyond the call\nof duty during  the Battle of Chateau-Thierry in July 1918.\n\nSon2 should present himself at the ceremonies on\nJuly 4 in Longview, Kansas, to receive the medal.\n\nThe office of General Pershing"
+  },
+  {
+   "castId": 1234,
+   "name": "AL40",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI'm thrilled to hear that Son2 was awarded the Medal of Honor.\nI wish I had been in Longview for the ceremony.  \n\nI'm still waiting for Billy to come back from France. He wrote                                                                                     that his leg is healing nicely, and there will hardly be a scar. \n\nEver since Davey came back, he's been applying to colleges. \nHe seems in a big hurry to put the war behind him and get \non with his life.\n\nPlease send our love to everyone.\n\nYour loving daughter, \n"
+  },
+  {
+   "castId": 1235,
+   "name": "AL41",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nVictory is very close. Last spring, Congress passed the\n19th Amendment. Now we must wait and see how many \nstates vote for it. It looks hopeful. I am having the time \nof my life working at NAWSA for a cause in which I believe.\n\nI have other good news. A lawyer named Frederick Fields has \nhelped me a lot in my work. We have become quite good friends \nduring the past year. He has asked me to marry him, and I have                                                                  accepted. He is from Colorado, so we will surely come back                                                                                 west for the wedding.\n\nYour loving daughter, \n"
+  },
+  {
+   "castId": 1236,
+   "name": "AL43",
+   "type": "text",
+   "text": "On April 8th, 1885, First last  will have met the \nrequirements of the Homestead Act of 1862. \nFirst last paid twenty dollars to the                                                                                                                                         United States government and settled and farmed                                                                                                             160 acres of land for five years.\n\nThe United States government will transfer section 9474\nin Buffalo County, Kansas, to First last.\nFirst last will be the legal owner of this property.\n\nSigned and sealed,\n\n\nRobert Evans\nLand Registry Clerk\n"
+  },
+  {
+   "castId": 1237,
+   "name": "AL50",
+   "type": "text",
+   "text": "Dear  \nThank you for joining the Buffalo County Farmers' Alliance.  \n\nBig business is getting rich from the work of poor farmers.\nThis must stop. We will pressure the federal government to take \nover the railroads and end high shipping prices.\n\nWe will be strong if we work together. Thank you for your support.\n\nYours sincerely,\n\n\nJ.W. Paton\nPresident\n\n"
+  },
+  {
+   "castId": 1238,
+   "name": "AL51",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI have wonderful news. I'm getting married! Bob Conway                                                                            moved to this country from Ireland 4 years ago. He works                                                                                at the front desk of the nicest hotel in Boston. We will live                                                                                in a small apartment in the North End. I will continue teaching                                                                     English to immigrants.\n\nIn my spare time, I have become involved in the struggle for \nwomen's suffrage. Bob also believes that women should be                                                                      allowed to vote. Wish me luck!\n\nYour loving daughter,\n"
+  },
+  {
+   "castId": 1239,
+   "name": "AL52",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nPlease let me know if you hear any news from broth2. \nWhere is he in France?\n\nI got a letter from Bob today. He is still somewhere in France. \nHe doesn't  write much, except to say that he's homesick. \nIt's very hard for us here without him. I'm teaching seven \nextra students to make ends meet.\n\nBobby Jr. and little Mary send their love.\n\nYour daughter,\n"
+  },
+  {
+   "castId": 1240,
+   "name": "AL53",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nBob returned safely from France and sends his love. \nBobby Jr., Mary, and little Harry are well.\n\nLast spring, Congress passed the 19th Amendment,\nwhich would give women the vote. For the past six months,\nI've been doing volunteer work a few hours a week with the \nNational American Woman Suffrage Association (NAWSA). \nWe're trying to convince people to vote for this amendment.\nIt looks as though the amendment will be ratified. I'm so excited!\n\nYour daughter,\n"
+  },
+  {
+   "castId": 1241,
+   "name": "AL54",
+   "type": "text",
+   "text": "Dear Ma and Pa,\n\nI have great news! I'm coming back to Kansas. I've been                                                                                                offered a job at the Juste and Kase law firm. Their office                                                                                                     is in Longview! I believe you know them.\n\nI look forward to seeing you soon.\n\nYour loving son,\n\n\n\nP.S. Next year I will start paying you back for the money\nyou spent sending me to college.\n"
+  },
+  {
+   "castId": 1242,
+   "name": "AL60",
+   "type": "text",
+   "text": "Dear Loyal Supporter,\nWe hope you are doing well during this difficult time. \nOur grain prices continue to drop while railroad shipping\nprices remain high. We are writing to ask you to support the \nPeople's Party. Last year the Populist candidate for president, \nJames B. Weaver, received over one million votes. The Populists \nand the Farmers' Alliance have the same goals. Both\norganizations want the government to control the railroads. We\nalso want the government to print more money. We believe that if\nthere is more money, then prices will rise.  This means that prices\nfor farm products will rise too. Thank you for your continued support.\nYours sincerely,\n\n\nJ.W. Paton\nPresident\n"
+  },
+  {
+   "castId": 1243,
+   "name": "AL62",
+   "type": "text",
+   "text": "Dear Cousin,\n\nI have some bad news for you. Our biscuit company has gone \nout of business. We have lost a lot of money in the \npast three years, and we owe too much money to continue.\nI have sent a final check to your bank. \n\nWe will be fine. My sons and I have found work in factories \nin the city. When we save up enough money, we will try to \nstart another business.\n\nThank you so much for your help in the past.\nFondly,\n\n"
+  },
+  {
+   "castId": 1301,
+   "name": "right1",
+   "type": "text",
+   "text": "Between 1880 and 1950, farmers in the Great Plains states faced all these natural disasters. "
+  },
+  {
+   "castId": 1302,
+   "name": "right2",
+   "type": "text",
+   "text": "The French gave the Statue of Liberty to the Americans in 1886, to celebrate America's 100th birthday. It is a larger copy of a statue that stands on the bank \nof the Seine River in Paris.  \nFrederic Auguste Bartholdi created the nine-foot original.  The New York  version is a copper and steel structure created \nby Gustave Eiffel (the builder of the Eiffel Tower). The 152-foot-tall Statue of Liberty stands on Liberty Island in New York harbor.  In her left hand, Liberty holds a book that symbolizes the Declaration of Independence.  In her right hand, she holds the torch of freedom."
+  },
+  {
+   "castId": 1303,
+   "name": "right3",
+   "type": "text",
+   "text": "In 1884, Theodore Roosevelt left the New York Legislature and moved to North Dakota to be a farmer.  Unfortunately, the Great Plains were suffering from terrible droughts that killed most of the cattle there.  In 1886, Theodore Roosevelt gave up his farm and returned to his political career in New York."
+  },
+  {
+   "castId": 1304,
+   "name": "right4",
+   "type": "text",
+   "text": "In 1889, the U.S. government opened part of the Oklahoma territory to homestead settlement.  Thousands of homesteaders rushed to stake out land for themselves.  This was called \"The Oklahoma Land Rush.\"  This land had originally been promised to Native American tribes who had hoped for their own state. "
+  },
+  {
+   "castId": 1305,
+   "name": "right5",
+   "type": "text",
+   "text": "In 1889, the state of Washington joined the United States.  \nNamed in honor of  George Washington, it is the only state named after a president."
+  },
+  {
+   "castId": 1306,
+   "name": "right6",
+   "type": "text",
+   "text": "In 1891, Whitcomb L. Judson invented the zipper when he decided that laces, hooks and eyes, and buttons took too long to fasten and unfasten.  Unfortunately, the zipper that Judson invented often came apart without warning.  In 1912, a Swedish engineer named Widen Sundback improved and patented the zipper, making it a popular fastener for clothing.\n"
+  },
+  {
+   "castId": 1307,
+   "name": "right7",
+   "type": "text",
+   "text": "Dr. James Naismith, born in Canada, was a physical education professor at the YMCA college in Springfield, Massachusetts.  He invented the game of basketball in December 1891.  Professional basketball games began in New York City in 1896."
+  },
+  {
+   "castId": 1308,
+   "name": "right8",
+   "type": "text",
+   "text": "Andrew Carnegie (1835-1919) founded the Carnegie Steel Company in 1892.  Carnegie was born in Scotland and came to America in 1848.  He was very poor and earned only $1.20 per week at his first job in America. He became very successful. In 1901, his steel company was bought by J. P. Morgan for $480 million, making Carnegie the richest man in the world.  Morgan combined Carnegie's company with other steel properties \nto create the United States Steel Company, which controlled 65 percent of all U.S. steel manufacturing."
+  },
+  {
+   "castId": 1309,
+   "name": "right9",
+   "type": "text",
+   "text": "President William McKinley was \nshot and killed at the Pan-American Exposition in Buffalo, New York, \nin 1901.  He was the 24th president \nof the United States.  \nHe was a Republican. "
+  },
+  {
+   "castId": 1310,
+   "name": "right10",
+   "type": "text",
+   "text": "Wilbur and Orville Wright were the pilots of this plane, the Wright Flyer.  They became interested in flying by watching how flying birds twist their wing tips to balance.  For many years, they built flying machines that could fly without engines.  On December 17, 1903, in North Carolina, they made the first piloted flight in an airplane with a motor.  This flight changed the world.  The flight lasted 12 seconds, and the airplane flew nearly 200 feet.  Only nine days earlier, the New York Times had said that man would not fly for 1,000 years."
+  },
+  {
+   "castId": 1311,
+   "name": "right11",
+   "type": "text",
+   "text": "This Model T was introduced by Henry Ford (1863-1947) in 1908.  \nIt was the first automobile that was successfully mass-produced for the ordinary citizen.  In 1913, Ford built 1,000 Model T cars each day."
+  },
+  {
+   "castId": 1312,
+   "name": "right12",
+   "type": "text",
+   "text": "All these products were available in 1908, but only peanuts and Cracker Jacks were mentioned in the song. "
+  },
+  {
+   "castId": 1313,
+   "name": "right13",
+   "type": "text",
+   "text": "There was very little rainfall in the Great Plains states.  A farm of 160 acres could not raise enough crops to support a homestead family.  In addition, ranchers needed bigger grazing areas.  The Homestead Enlargement Act of 1909 doubled the amount of land that Congress had given the farmers in the Homestead Act of 1862.  This was still not enough land for many farmers.  They continued to \nstruggle for survival."
+  },
+  {
+   "castId": 1314,
+   "name": "right14",
+   "type": "text",
+   "text": "This was the Titanic, a British luxury cruise ship.  In 1912, on its first trip from England to New York, it sank.  Of the 2,224 people on board, 1,513 drowned.  This was the worst sea disaster ever.\n"
+  },
+  {
+   "castId": 1315,
+   "name": "right15",
+   "type": "text",
+   "text": "The Panama Canal was completed in 1914.  It connects the Atlantic and Pacific Oceans.  Ships can use the canal to go from one ocean to the other, without traveling around the \ntip of South America.  The canal \nwas built by the United States, \nwhich still owns it.  According to an agreement that was signed in 1978, the country of Panama will take \nover full control of the canal in 1999."
+  },
+  {
+   "castId": 1316,
+   "name": "triv1",
+   "type": "text",
+   "text": "Which area often suffered from droughts, blizzards, hail, and grasshoppers?"
+  },
+  {
+   "castId": 1317,
+   "name": "triv2",
+   "type": "text",
+   "text": "Who gave the Statue of Liberty to the Americans?"
+  },
+  {
+   "castId": 1318,
+   "name": "triv3",
+   "type": "text",
+   "text": "What caused Teddy Roosevelt to return to politics in New York?"
+  },
+  {
+   "castId": 1319,
+   "name": "triv4",
+   "type": "text",
+   "text": "In 1889, homesteaders rushed to stake out land that the government was giving away.  What was this called?"
+  },
+  {
+   "castId": 1320,
+   "name": "triv5",
+   "type": "text",
+   "text": "How many states are named after American presidents?"
+  },
+  {
+   "castId": 1321,
+   "name": "triv6",
+   "type": "text",
+   "text": "What did  Whitcomb L. Judson invent \nin 1891 that made  wearing trousers easier?"
+  },
+  {
+   "castId": 1322,
+   "name": "triv7",
+   "type": "text",
+   "text": "Who invented the game of basketball?"
+  },
+  {
+   "castId": 1323,
+   "name": "triv8",
+   "type": "text",
+   "text": "Who set up the first large steel company in America?"
+  },
+  {
+   "castId": 1324,
+   "name": "triv9",
+   "type": "text",
+   "text": "Which American president was killed in 1901 at the Pan-American Exposition, \nin Buffalo, New York?"
+  },
+  {
+   "castId": 1325,
+   "name": "triv10",
+   "type": "text",
+   "text": "Who piloted the first flight of this motorized airplane in 1903?"
+  },
+  {
+   "castId": 1326,
+   "name": "triv11",
+   "type": "text",
+   "text": "What kind of car is this?"
+  },
+  {
+   "castId": 1327,
+   "name": "triv12",
+   "type": "text",
+   "text": "Which products did the 1908 song, \"Take Me Out to the Ball Game,\" promote?"
+  },
+  {
+   "castId": 1328,
+   "name": "triv13",
+   "type": "text",
+   "text": "Which problem did the Homestead Enlargement Act of 1909 try to solve?"
+  },
+  {
+   "castId": 1329,
+   "name": "triv14",
+   "type": "text",
+   "text": "This ship sank in April 1912.  \nWhat is its name?"
+  },
+  {
+   "castId": 1330,
+   "name": "triv15",
+   "type": "text",
+   "text": "This canal opened in 1914. \nWhat is it called?"
+  },
+  {
+   "castId": 1331,
+   "name": "ans11",
+   "type": "text",
+   "text": "A. the New England states"
+  },
+  {
+   "castId": 1332,
+   "name": "ans12",
+   "type": "text",
+   "text": "B. the Ohio Valley"
+  },
+  {
+   "castId": 1333,
+   "name": "ans13",
+   "type": "text",
+   "text": "C. the Great Plains states"
+  },
+  {
+   "castId": 1334,
+   "name": "ans14",
+   "type": "text",
+   "text": "D. the San Joaquin Valley"
+  },
+  {
+   "castId": 1335,
+   "name": "ans21",
+   "type": "text",
+   "text": "A. the Germans"
+  },
+  {
+   "castId": 1336,
+   "name": "ans22",
+   "type": "text",
+   "text": "B. the Italians"
+  },
+  {
+   "castId": 1337,
+   "name": "ans23",
+   "type": "text",
+   "text": "C. the English"
+  },
+  {
+   "castId": 1338,
+   "name": "ans24",
+   "type": "text",
+   "text": "D. the French"
+  },
+  {
+   "castId": 1339,
+   "name": "ans31",
+   "type": "text",
+   "text": "A. the start of the Civil War"
+  },
+  {
+   "castId": 1340,
+   "name": "ans32",
+   "type": "text",
+   "text": "B. droughts and blizzards on \n      the Great Plains"
+  },
+  {
+   "castId": 1341,
+   "name": "ans33",
+   "type": "text",
+   "text": "C. opposition to the Jim Crow laws"
+  },
+  {
+   "castId": 1342,
+   "name": "ans34",
+   "type": "text",
+   "text": "D. the failure of his family business"
+  },
+  {
+   "castId": 1343,
+   "name": "ans41",
+   "type": "text",
+   "text": "A. The Gold Rush"
+  },
+  {
+   "castId": 1344,
+   "name": "ans42",
+   "type": "text",
+   "text": "B. Taxation without Representation"
+  },
+  {
+   "castId": 1345,
+   "name": "ans43",
+   "type": "text",
+   "text": "C. The Land Rush"
+  },
+  {
+   "castId": 1346,
+   "name": "ans44",
+   "type": "text",
+   "text": "D. Reconstruction"
+  },
+  {
+   "castId": 1347,
+   "name": "ans51",
+   "type": "text",
+   "text": "A. none"
+  },
+  {
+   "castId": 1348,
+   "name": "ans52",
+   "type": "text",
+   "text": "B. three"
+  },
+  {
+   "castId": 1349,
+   "name": "ans53",
+   "type": "text",
+   "text": "C. one"
+  },
+  {
+   "castId": 1350,
+   "name": "ans54",
+   "type": "text",
+   "text": "D. five"
+  },
+  {
+   "castId": 1351,
+   "name": "ans61",
+   "type": "text",
+   "text": "A. denim"
+  },
+  {
+   "castId": 1352,
+   "name": "ans62",
+   "type": "text",
+   "text": "B. pockets"
+  },
+  {
+   "castId": 1353,
+   "name": "ans63",
+   "type": "text",
+   "text": "C. zippers"
+  },
+  {
+   "castId": 1354,
+   "name": "ans64",
+   "type": "text",
+   "text": "D. knickers"
+  },
+  {
+   "castId": 1355,
+   "name": "ans71",
+   "type": "text",
+   "text": "A. Christy Mathewson"
+  },
+  {
+   "castId": 1356,
+   "name": "ans72",
+   "type": "text",
+   "text": "B. Dr. James Naismith"
+  },
+  {
+   "castId": 1357,
+   "name": "ans73",
+   "type": "text",
+   "text": "C. Hannes Schneider"
+  },
+  {
+   "castId": 1358,
+   "name": "ans74",
+   "type": "text",
+   "text": "D. Jack Johnson"
+  },
+  {
+   "castId": 1359,
+   "name": "ans81",
+   "type": "text",
+   "text": "A. Andrew Carnegie"
+  },
+  {
+   "castId": 1360,
+   "name": "ans82",
+   "type": "text",
+   "text": "B. John D. Rockefeller"
+  },
+  {
+   "castId": 1361,
+   "name": "ans83",
+   "type": "text",
+   "text": "C. J. P. Morgan"
+  },
+  {
+   "castId": 1362,
+   "name": "ans84",
+   "type": "text",
+   "text": "D. Edward H. Harriman"
+  },
+  {
+   "castId": 1363,
+   "name": "ans91",
+   "type": "text",
+   "text": "A. President William McKinley"
+  },
+  {
+   "castId": 1364,
+   "name": "ans92",
+   "type": "text",
+   "text": "B. President John Fitzgerald Kennedy"
+  },
+  {
+   "castId": 1365,
+   "name": "ans93",
+   "type": "text",
+   "text": "C. President George Washington"
+  },
+  {
+   "castId": 1366,
+   "name": "ans94",
+   "type": "text",
+   "text": "D. President Millard Fillmore"
+  },
+  {
+   "castId": 1367,
+   "name": "ans101",
+   "type": "text",
+   "text": "A. Neil Armstrong"
+  },
+  {
+   "castId": 1368,
+   "name": "ans102",
+   "type": "text",
+   "text": "B. The Wright brothers"
+  },
+  {
+   "castId": 1369,
+   "name": "ans103",
+   "type": "text",
+   "text": "C. The Blues brothers"
+  },
+  {
+   "castId": 1370,
+   "name": "ans104",
+   "type": "text",
+   "text": "D. Charles A. Lindbergh"
+  },
+  {
+   "castId": 1371,
+   "name": "ans111",
+   "type": "text",
+   "text": "A. a Ferrari"
+  },
+  {
+   "castId": 1372,
+   "name": "ans112",
+   "type": "text",
+   "text": "B. the first Toyota"
+  },
+  {
+   "castId": 1373,
+   "name": "ans113",
+   "type": "text",
+   "text": "C. the Model T"
+  },
+  {
+   "castId": 1374,
+   "name": "ans114",
+   "type": "text",
+   "text": "D. a bumper car"
+  },
+  {
+   "castId": 1375,
+   "name": "ans121",
+   "type": "text",
+   "text": "A. Welch's Grape Juice and Pepsi-Cola"
+  },
+  {
+   "castId": 1376,
+   "name": "ans122",
+   "type": "text",
+   "text": "B. Coca-Cola and Dr. Pepper"
+  },
+  {
+   "castId": 1377,
+   "name": "ans123",
+   "type": "text",
+   "text": "C. Planter's Peanuts and Cracker Jacks"
+  },
+  {
+   "castId": 1378,
+   "name": "ans124",
+   "type": "text",
+   "text": "D. Hershey's Chocolate and Tootsie\n      Rolls"
+  },
+  {
+   "castId": 1379,
+   "name": "ans131",
+   "type": "text",
+   "text": "A. Native Americans were being forced\n     onto reservations."
+  },
+  {
+   "castId": 1380,
+   "name": "ans132",
+   "type": "text",
+   "text": "B. African Americans had few rights."
+  },
+  {
+   "castId": 1381,
+   "name": "ans133",
+   "type": "text",
+   "text": "C. A 160-acre farm  was not large\n      enough to grow a decent crop."
+  },
+  {
+   "castId": 1382,
+   "name": "ans134",
+   "type": "text",
+   "text": "D. Women were not allowed to vote."
+  },
+  {
+   "castId": 1383,
+   "name": "ans141",
+   "type": "text",
+   "text": "A. The Santa Maria"
+  },
+  {
+   "castId": 1384,
+   "name": "ans142",
+   "type": "text",
+   "text": "B. The Love Boat"
+  },
+  {
+   "castId": 1385,
+   "name": "ans143",
+   "type": "text",
+   "text": "C. The Spirit of St. Louis"
+  },
+  {
+   "castId": 1386,
+   "name": "ans144",
+   "type": "text",
+   "text": "D. The Titanic"
+  },
+  {
+   "castId": 1387,
+   "name": "ans151",
+   "type": "text",
+   "text": "A. The Love Canal"
+  },
+  {
+   "castId": 1388,
+   "name": "ans152",
+   "type": "text",
+   "text": "B. The Erie Canal"
+  },
+  {
+   "castId": 1389,
+   "name": "ans153",
+   "type": "text",
+   "text": "C. The Panama Canal"
+  },
+  {
+   "castId": 1390,
+   "name": "ans154",
+   "type": "text",
+   "text": "D. The Suez Canal"
+  },
+  {
+   "castId": 1391,
+   "name": "triv16",
+   "type": "text",
+   "text": "Which ray was discovered by Wilhelm Roentgen in 1895?"
+  },
+  {
+   "castId": 1392,
+   "name": "ans161",
+   "type": "text",
+   "text": "A. the ultraviolet ray"
+  },
+  {
+   "castId": 1393,
+   "name": "ans162",
+   "type": "text",
+   "text": "B. the X ray"
+  },
+  {
+   "castId": 1394,
+   "name": "ans163",
+   "type": "text",
+   "text": "C. the medullary ray"
+  },
+  {
+   "castId": 1395,
+   "name": "ans164",
+   "type": "text",
+   "text": "D. the vascular ray"
+  },
+  {
+   "castId": 1396,
+   "name": "right16",
+   "type": "text",
+   "text": "Wilhelm C. Roentgen, a German scientist, discovered the X ray in 1895. It is a powerful ray of light that can pass through things that ordinary rays of light cannot enter.  X rays are used to take pictures of parts of the body that cannot be seen from the outside, such as organs and bones.  Roentgen called these rays X rays because he did not completely understand them.\n"
+  },
+  {
+   "castId": 1562,
+   "name": "ICurrentDate",
+   "type": "text",
+   "text": "APR. 12, 1880"
+  },
+  {
+   "castId": 1563,
+   "name": "IDateGB",
+   "type": "text",
+   "text": "APR 12, 1880"
+  },
+  {
+   "castId": 1564,
+   "name": "ICurSeason",
+   "type": "text",
+   "text": "APR. 12,1880,4,12,4"
+  },
+  {
+   "castId": 1565,
+   "name": "IPropet",
+   "type": "text",
+   "text": "0,Tractors,0,0,0\n2,2,1,Horses,Pigs,Cows\n1,Plows,0\n20,LifePrice\n1,Number of Fields\n0,0,0,0,0,seeds\n7,0,0,0,0,0,Barn,Fence,WindWell,house\n8,1,1700,Land\n9,0,0,loan,Yearreturn\n10,500,500,0,Total,Cash,Save\n11,0,0,0,car,video,oven\n12,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,Variables\n13,0,Score\n14,1,a,a,a,Family\n15,0,0,0,0,0,0,0,0,0,0,Ach.file\n16,0,0,0,0,Check plot\n17,1,0,0,1,Barn,Fence,WindWell,House(Shopping)\n18,0,0,0,0,0,Buisness\n0,0,0,0"
+  },
+  {
+   "castId": 1566,
+   "name": "ICurSituation",
+   "type": "text",
+   "text": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6-7-Bush-Price-tot,9-Church\n0,0,Year,Month\n0,0,Neighb,Family\n0,0,0,NCount,NCicle,NWor\n0,0,0,0,Bush\n0,0,0,0,Price\n0,0,0,0\n0,0,Reserv\n0,FirstHarv"
+  },
+  {
+   "castId": 1567,
+   "name": "IBegin",
+   "type": "text",
+   "text": "1,Prev Game\n0,Begin\n0,Inside\n0,1000,2000,3000,Goals"
+  },
+  {
+   "castId": 1568,
+   "name": "IRelFlow",
+   "type": "text",
+   "text": "1883,DL2,8,100\n1884,DL5,8,500,AL7,10\n1885,DL6,6,500,AL7,5\n1886,DL6,6,500,AL7,5\nNO\n1884,DL3,6,100\n1111,DL4,6,100\n2222,DL19,6,500,AL7,5\n1883,1,0,6,DL2,0,Sign1,DL01,-100,8\n1883,2,0,7,AL50,Had2,Sign1,0\n\n"
+  },
+  {
+   "castId": 1569,
+   "name": "IAllEvents",
+   "type": "text",
+   "text": "1880,12,0,1,Baby1,2,DBox0,Sound,name\n1881,2,0,2,DL1,Had4,Sig1,11,0,0,0,1\n1881,12,0,3,Da1,1,DBox2,5,5\n1882,3,0,4,Doc1,Doc2\n1882,8,0,5,Sop1,DBox9,3,6,1890\n1883,2,0,7,AL50,Had5,Sig50,0,0,0,0\n1883,7,0,7,AL27,0,Sig27,0,0,0,0,1\n1884,2,0,1,Baby2,2,DBox0,Sound,name\n1884,3,0,4,Doc3,Doc4\n1884,6,0,2,DL8,Had7,Sig8,11,0,0,0,1\n1885,3,0,7,AL43,0,Sig2,0,0,0,0,1\n1887,7,0,5,Sop2,DBox9,0.5,6,1898\n1888,3,0,3,DaW1,7,DBox2,0,-2\n1889,2,0,1,Baby3,2,DBox0,Sound,name\n1889,3,0,4,Doc5,Doc6\n1890,2,0,3,DaW5,9,DBox13,0,2,-5\n1890,7,0,2,DL9,Had4,Sig9,11\n1892,3,0,3,DaW7,8,DBox32,0,-2,0\n1892,8,0,5,Sop3,DBox9,1,6,1900\n1893,6,0,10,Wed1,WL1,DBox13,100,200,550,3,6,14\n1893,8,0,7,AL60,Had5,Sig50,0,0,0,0\n1894,7,0,6,DL10,0,Sig10,12,-150,6,0,1\n1897,8,0,5,Sop4,DBox9,1,6,1907\n1898,3,0,3,DaW3,8,DBox01,0,4,-2\n1899,1,0,2,DL16,Had4,Sig9,11\n1900,6,0,2,DL17,Had4,Sig6,11\n1900,7,0,3,DaW8,9,DBox12,0,6,-5,-2,0\n1901,2,0,2,DL18,Had4,Sig18,11\n1901,11,1,7,AL19,Had8,Sig11,0,0,0,0,1\n1902,6,0,10,Wed2,WL1,DBox01,125,225,575,3,6,14\n1902,8,0,5,Son21,DBox01,-5\n1905,6,0,5,Dat5,DBox12,0\n1905,7,0,3,Da3,10,DBox12,480,15,0\n1906,3,0,5,DMail,DBox5,0\n1907,6,0,15,Son1,10,DBox23,0,0,-5\n1910,3,0,2,DL24,Had4,Sig18,11,0,0,0,0\n1917,5,0,7,AL33,Had9,Sig60,0,0,0,0,1\n1917,7,0,7,AL34,0,Sig10,0,0,0,0,1\n1918,6,0,7,AL37,0,Sig11,0,0,0,0,1\n1918,7,0,7,AL38,0,Sig20,0,0,0,0,1\n1919,6,0,7,AL39,Had9,0,0,0,0,0,1\n1919,11,0,7,AL40,0,Sig10,0,0,0,0,1"
+  },
+  {
+   "castId": 1570,
+   "name": "IRandom",
+   "type": "text",
+   "text": "10,17,Winter,month,day\n5,22,Summer\n19,74,Cents/Bush,TransPrice\n1,2,3,4,5,6,7,9,10,11,12,13,14,15,16"
+  },
+  {
+   "castId": 1571,
+   "name": "ITTalk",
+   "type": "text",
+   "text": "[[1880, 4, 0, 101, \"TTalk1\"], [1880, 9, 0, 102, \"TTalk1\"], [1881, 4, 0, 103, \"TTalk1\"], [1881, 9, 0, 104, \"TTalk2\"], [1882, 4, 0, 105, \"TTalk2\"], [1882, 9, 0, 106, \"TTalk2\"], [1887, 4, 0, 107, \"TTalk2\"], [1887, 9, 0, 108, \"TTalk3\"], [1888, 9, 0, 109, \"TTalk3\"], [1890, 4, 0, 110, \"TTalk3\"], [1893, 9, 17, 111, \"TTalk3\"], [1894, 6, 0, 112, \"TTalk4\"], [1895, 4, 0, 113, \"TTalk4\"], [1905, 6, 0, 114, \"TTalk4\"], [1909, 4, 8, 115, \"TTalk4\"], [1914, 8, 5, 116, \"TTalk5\"], [1917, 4, 6, 117, \"TTalk5\"], [1918, 11, 11, 118, \"TTalk5\"], [1919, 4, 0, 119, \"TTalk5\"],[1919, 12, 0, 120, \"TTalk6\"], [1886, 4, 0, 121, \"TTalk6\"]]"
+  },
+  {
+   "castId": 1572,
+   "name": "ISeasons",
+   "type": "text",
+   "text": "1111,2,1,1,3,5,6,6,6,8,8,1,1\n1886,2,1,1,3,5,6,6,6,8,8,2,2\n1887,2,2,2,3,5,7,7,7,7,8,2,2\n1888,2,2,2,3,5,7,7,7,7,8,1,1"
+  },
+  {
+   "castId": 1573,
+   "name": "IMainPic",
+   "type": "text",
+   "text": "3,0,0,0,0,0,0,0,0,0,0,0,0"
+  },
+  {
+   "castId": 1574,
+   "name": "IAll",
+   "type": "text",
+   "text": "[188012 ,18812 ,188112 ,18823 ,18828 ,18832 ,18837 ,18842 ,18843 ,18846 ,18853 ,18877 ,18883 ,18892 ,18893 ,18902 ,18907 ,18923 ,18928 ,18936 ,18938 ,18947 ,18978 ,18983 ,18991 ,19006 ,19007 ,19012 ,190111 ,19026 ,19028 ,19056 ,19057 ,19063 ,19076 ,19103 ,19175 ,19177 ,19186 ,19187 ,19196 ,191911 ]  "
+  },
+  {
+   "castId": 1575,
+   "name": "ICatalog",
+   "type": "text",
+   "text": "[#type: #seedsMenu, #name: #seedsMenu, #year: 0, #month: 0, #cast: \"seeds menu\", #loc: point(329, 203)], [#type: #seeds, #name: #winterWheat, #year: 0, #month: 0, #cast: \"winter wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #springWheat, #year: 0, #month: 0, #cast: \"spring wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #oats, #year: 0, #month: 0, #cast: \"oats\", #loc: point(329, 203)], [#type: #seeds, #name: #corn, #year: 0, #month: 0, #cast: \"corn\", #loc: point(329, 203)], [#type: #products, #name: #windMill, #year: 0, #month: 0, #cast: \"windmill\", #loc: point(328, 143), #num: 3, #price: 80], [#type: #products, #name: #wireFence, #year: 1883, #month: 4, #cast: \"wire fence\", #loc: point(328, 143), #num: 0, #price: 100], [#type: #products, #name: #kodakCamera, #year: 1888, #month: 4, #cast: \"kodak camera\", #loc: point(328, 143), #num: 1, #price: 25], [#type: #products, #name: #tractor, #year: 1887, #month: 4, #cast: \"tractor\", #loc: point(328, 143), #num: 2, #price: 400], [#type: #products, #name: #car, #year: 1909, #month: 4, #cast: \"car\", #loc: point(328, 143), #num: 1, #price: 900]"
+  }
+ ]
+}

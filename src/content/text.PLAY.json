@@ -1,0 +1,18 @@
+{
+ "movie": "PLAY",
+ "origin": "assets/PLAY/",
+ "members": [
+  {
+   "castId": 1025,
+   "name": "",
+   "type": "text",
+   "text": "New blankets:                                      $  6.00\n    \nCooking stove:                                     $50.00\n    \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n"
+  },
+  {
+   "castId": 1027,
+   "name": "",
+   "type": "text",
+   "text": "New blankets:                                      $  6.00\n    \nCooking stove:                                     $50.00\n    \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n"
+  }
+ ]
+}

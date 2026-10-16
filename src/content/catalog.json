@@ -1,0 +1,462 @@
+{
+ "note": "General-store catalogue (SHARED defCatalogItems; CALEND ICatalog is the new-game template; STORE keeps an older backup). Seed prices per acre come from tables.json BuAc* (store uses B/A x 0.1). Item names are cast names of the catalogue page bitmaps (STORE).",
+ "items": [
+  {
+   "type": "seedsMenu",
+   "name": "seedsMenu",
+   "year": 0,
+   "month": 0,
+   "cast": "seeds menu",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "winterWheat",
+   "year": 0,
+   "month": 0,
+   "cast": "winter wheat",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "springWheat",
+   "year": 0,
+   "month": 0,
+   "cast": "spring wheat",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "oats",
+   "year": 0,
+   "month": 0,
+   "cast": "oats",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "corn",
+   "year": 0,
+   "month": 0,
+   "cast": "corn",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "products",
+   "name": "windMill",
+   "year": 0,
+   "month": 0,
+   "cast": "windmill",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 3,
+   "price": 80
+  },
+  {
+   "type": "products",
+   "name": "wireFence",
+   "year": 1883,
+   "month": 4,
+   "cast": "wire fence",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 100
+  },
+  {
+   "type": "products",
+   "name": "kodakCamera",
+   "year": 1888,
+   "month": 4,
+   "cast": "kodak camera",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 25
+  },
+  {
+   "type": "products",
+   "name": "tractor",
+   "year": 1887,
+   "month": 4,
+   "cast": "tractor",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 3,
+   "price": 400
+  },
+  {
+   "type": "products",
+   "name": "car",
+   "year": 1909,
+   "month": 4,
+   "cast": "car",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 900
+  }
+ ],
+ "template": [
+  {
+   "type": "seedsMenu",
+   "name": "seedsMenu",
+   "year": 0,
+   "month": 0,
+   "cast": "seeds menu",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "winterWheat",
+   "year": 0,
+   "month": 0,
+   "cast": "winter wheat",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "springWheat",
+   "year": 0,
+   "month": 0,
+   "cast": "spring wheat",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "oats",
+   "year": 0,
+   "month": 0,
+   "cast": "oats",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "corn",
+   "year": 0,
+   "month": 0,
+   "cast": "corn",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "products",
+   "name": "windMill",
+   "year": 0,
+   "month": 0,
+   "cast": "windmill",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 3,
+   "price": 80
+  },
+  {
+   "type": "products",
+   "name": "wireFence",
+   "year": 1883,
+   "month": 4,
+   "cast": "wire fence",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 0,
+   "price": 100
+  },
+  {
+   "type": "products",
+   "name": "kodakCamera",
+   "year": 1888,
+   "month": 4,
+   "cast": "kodak camera",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 25
+  },
+  {
+   "type": "products",
+   "name": "tractor",
+   "year": 1887,
+   "month": 4,
+   "cast": "tractor",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 2,
+   "price": 400
+  },
+  {
+   "type": "products",
+   "name": "car",
+   "year": 1909,
+   "month": 4,
+   "cast": "car",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 900
+  }
+ ],
+ "storeBackup": [
+  {
+   "type": "seedsMenu",
+   "name": "seedsMenu",
+   "year": 0,
+   "month": 0,
+   "cast": "seeds menu",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "winterWheat",
+   "year": 0,
+   "month": 0,
+   "cast": "winter wheat",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "springWheat",
+   "year": 0,
+   "month": 0,
+   "cast": "spring wheat",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "oats",
+   "year": 0,
+   "month": 0,
+   "cast": "oats",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "seeds",
+   "name": "corn",
+   "year": 0,
+   "month": 0,
+   "cast": "corn",
+   "loc": {
+    "point": [
+     329,
+     203
+    ]
+   }
+  },
+  {
+   "type": "products",
+   "name": "windMill",
+   "year": 0,
+   "month": 0,
+   "cast": "windmill",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 3,
+   "price": 80
+  },
+  {
+   "type": "products",
+   "name": "woodenFence",
+   "year": 0,
+   "month": 0,
+   "cast": "wooden fence",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 200
+  },
+  {
+   "type": "products",
+   "name": "wireFence",
+   "year": 1883,
+   "month": 4,
+   "cast": "wire fence",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 100
+  },
+  {
+   "type": "products",
+   "name": "kodakCamera",
+   "year": 1888,
+   "month": 4,
+   "cast": "kodak camera",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 25
+  },
+  {
+   "type": "products",
+   "name": "tractor",
+   "year": 1890,
+   "month": 4,
+   "cast": "tractor",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 3,
+   "price": 400
+  },
+  {
+   "type": "products",
+   "name": "car",
+   "year": 1908,
+   "month": 4,
+   "cast": "car",
+   "loc": {
+    "point": [
+     328,
+     143
+    ]
+   },
+   "num": 1,
+   "price": 2000
+  }
+ ],
+ "seedPrices": [
+  {
+   "id": "STORE.seed price 1",
+   "movie": "STORE",
+   "castId": 135,
+   "name": "seed price 1",
+   "text": "$26.36",
+   "source": "text-member"
+  }
+ ],
+ "seedsNameField": {
+  "id": "STORE.SeedsName",
+  "movie": "STORE",
+  "castId": 112,
+  "name": "SeedsName",
+  "text": "Winter wheat",
+  "source": "text-member"
+ }
+}

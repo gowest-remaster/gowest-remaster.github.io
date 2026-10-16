@@ -1,0 +1,268 @@
+{
+ "version": 1,
+ "beds": {
+  "wind_light": {
+   "files": {
+    "ogg": "ambience/wind_light.ogg",
+    "m4a": "ambience/wind_light.m4a"
+   },
+   "duration": 48.5,
+   "loopStart": 0.25,
+   "loopEnd": 48.25,
+   "lufs": -26.02,
+   "truePeak": -9.79,
+   "gainDb": 0,
+   "tags": [
+    "wind",
+    "outdoor",
+    "day",
+    "night"
+   ],
+   "desc": "Prairie breeze: soft low-mid air with slow gusts. Crossfade with wind_strong by wind level."
+  },
+  "wind_strong": {
+   "files": {
+    "ogg": "ambience/wind_strong.ogg",
+    "m4a": "ambience/wind_strong.m4a"
+   },
+   "duration": 48.5,
+   "loopStart": 0.25,
+   "loopEnd": 48.25,
+   "lufs": -26.02,
+   "truePeak": -11.08,
+   "gainDb": 0,
+   "tags": [
+    "wind",
+    "outdoor",
+    "storm"
+   ],
+   "desc": "Strong prairie wind with gust sweeps and a faint eave whistle."
+  },
+  "grass_rustle": {
+   "files": {
+    "ogg": "ambience/grass_rustle.ogg",
+    "m4a": "ambience/grass_rustle.m4a"
+   },
+   "duration": 40.5,
+   "loopStart": 0.25,
+   "loopEnd": 40.25,
+   "lufs": -26.02,
+   "truePeak": -5.09,
+   "gainDb": -6,
+   "tags": [
+    "wind",
+    "outdoor",
+    "summer"
+   ],
+   "desc": "Tall-grass rustle that follows gusts; layer with wind_light in summer and autumn."
+  },
+  "birds_morning": {
+   "files": {
+    "ogg": "ambience/birds_morning.ogg",
+    "m4a": "ambience/birds_morning.m4a"
+   },
+   "duration": 60.5,
+   "loopStart": 0.25,
+   "loopEnd": 60.25,
+   "lufs": -26.04,
+   "truePeak": -13.91,
+   "gainDb": -3,
+   "tags": [
+    "birds",
+    "morning",
+    "spring",
+    "summer"
+   ],
+   "desc": "Meadowlarks singing at a distance with sparse small-bird chirps."
+  },
+  "crickets_night": {
+   "files": {
+    "ogg": "ambience/crickets_night.ogg",
+    "m4a": "ambience/crickets_night.m4a"
+   },
+   "duration": 40.5,
+   "loopStart": 0.25,
+   "loopEnd": 40.25,
+   "lufs": -25.98,
+   "truePeak": -10.53,
+   "gainDb": -5,
+   "tags": [
+    "night",
+    "summer",
+    "autumn"
+   ],
+   "desc": "Field crickets at several distances, a faint tree-cricket chorus and soft night air."
+  },
+  "rain": {
+   "files": {
+    "ogg": "ambience/rain.ogg",
+    "m4a": "ambience/rain.m4a"
+   },
+   "duration": 40.5,
+   "loopStart": 0.25,
+   "loopEnd": 40.25,
+   "lufs": -26.01,
+   "truePeak": -8.7,
+   "gainDb": 0,
+   "tags": [
+    "rain",
+    "weather"
+   ],
+   "desc": "Steady prairie rain with drips off the eaves."
+  },
+  "snow_wind": {
+   "files": {
+    "ogg": "ambience/snow_wind.ogg",
+    "m4a": "ambience/snow_wind.m4a"
+   },
+   "duration": 48.5,
+   "loopStart": 0.25,
+   "loopEnd": 48.25,
+   "lufs": -26.02,
+   "truePeak": -10.02,
+   "gainDb": -2,
+   "tags": [
+    "winter",
+    "wind",
+    "snow"
+   ],
+   "desc": "Cold, softly whistling winter wind."
+  },
+  "town_bustle": {
+   "files": {
+    "ogg": "ambience/town_bustle.ogg",
+    "m4a": "ambience/town_bustle.m4a"
+   },
+   "duration": 60.5,
+   "loopStart": 0.25,
+   "loopEnd": 60.25,
+   "lufs": -26.02,
+   "truePeak": -11.33,
+   "gainDb": 0,
+   "tags": [
+    "town",
+    "day"
+   ],
+   "desc": "Main Street: wordless distant chatter, horses and a wagon passing, a blacksmith and a carpenter."
+  },
+  "hearth": {
+   "files": {
+    "ogg": "ambience/hearth.ogg",
+    "m4a": "ambience/hearth.m4a"
+   },
+   "duration": 40.5,
+   "loopStart": 0.25,
+   "loopEnd": 40.25,
+   "lufs": -26.0,
+   "truePeak": -7.28,
+   "gainDb": -2,
+   "tags": [
+    "interior",
+    "house",
+    "evening",
+    "winter"
+   ],
+   "desc": "Fireplace: soft roar with irregular crackles and an occasional knot pop."
+  },
+  "clock_tick": {
+   "files": {
+    "ogg": "ambience/clock_tick.ogg",
+    "m4a": "ambience/clock_tick.m4a"
+   },
+   "duration": 30.5,
+   "loopStart": 0.25,
+   "loopEnd": 30.25,
+   "lufs": -27.04,
+   "truePeak": -3.0,
+   "gainDb": -10,
+   "tags": [
+    "interior",
+    "house"
+   ],
+   "desc": "Wooden pendulum clock, one beat per second."
+  },
+  "windmill_creak": {
+   "files": {
+    "ogg": "ambience/windmill_creak.ogg",
+    "m4a": "ambience/windmill_creak.m4a"
+   },
+   "duration": 48.5,
+   "loopStart": 0.25,
+   "loopEnd": 48.25,
+   "lufs": -26.01,
+   "truePeak": -5.31,
+   "gainDb": -8,
+   "tags": [
+    "homestead",
+    "outdoor"
+   ],
+   "desc": "Farm windmill turning (3 s per revolution): pump-rod creak and clunk, blade whoosh."
+  },
+  "farm_animals": {
+   "files": {
+    "ogg": "ambience/farm_animals.ogg",
+    "m4a": "ambience/farm_animals.m4a"
+   },
+   "duration": 60.5,
+   "loopStart": 0.25,
+   "loopEnd": 60.25,
+   "lufs": -26.03,
+   "truePeak": -5.26,
+   "gainDb": -7,
+   "tags": [
+    "homestead",
+    "outdoor",
+    "day"
+   ],
+   "desc": "Very sparse distant cattle and chickens over a light breeze."
+  }
+ },
+ "oneshots": {
+  "thunder_1": {
+   "files": {
+    "ogg": "ambience/thunder_1.ogg",
+    "m4a": "ambience/thunder_1.m4a"
+   },
+   "duration": 9.0,
+   "lufs": -22.0,
+   "truePeak": -5.14,
+   "gainDb": -2,
+   "tags": [
+    "thunder",
+    "storm"
+   ],
+   "desc": "Distant rolling thunder (one-shot)."
+  },
+  "thunder_2": {
+   "files": {
+    "ogg": "ambience/thunder_2.ogg",
+    "m4a": "ambience/thunder_2.m4a"
+   },
+   "duration": 11.0,
+   "lufs": -21.93,
+   "truePeak": -5.46,
+   "gainDb": -2,
+   "tags": [
+    "thunder",
+    "storm"
+   ],
+   "desc": "Distant rolling thunder (one-shot)."
+  },
+  "thunder_3": {
+   "files": {
+    "ogg": "ambience/thunder_3.ogg",
+    "m4a": "ambience/thunder_3.m4a"
+   },
+   "duration": 12.5,
+   "lufs": -22.0,
+   "truePeak": -4.42,
+   "gainDb": -2,
+   "tags": [
+    "thunder",
+    "storm"
+   ],
+   "desc": "Distant rolling thunder (one-shot)."
+  }
+ },
+ "note": "Procedurally synthesized by tools/audio/ambience.py. Beds loop between loopStart and loopEnd (the file has 0.25 s of periodic pre-roll and tail so codec priming offsets stay seamless). Beds are mastered to about -26 LUFS; gainDb is the suggested mix offset."
+}

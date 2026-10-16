@@ -1,0 +1,4860 @@
+{
+ "movie": "STORE",
+ "source": "STORE.DIR",
+ "stage": {
+  "w": 640,
+  "h": 480,
+  "rect": {
+   "top": 60,
+   "left": 80,
+   "bottom": 540,
+   "right": 720
+  },
+  "bgColor": 255,
+  "tempo": 15,
+  "palette": {
+   "id": 100,
+   "name": "Palette 103",
+   "file": "STORE/100-Palette 103.palette.json",
+   "extractorResolved": "member:100:Palette 103"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 2080,
+  "changedBy": "Alla - ",
+  "createdBy": "Alla - Edunetics",
+  "origDirectory": "P:\\SECO\\QC\\",
+  "preload": 0
+ },
+ "castLibs": [
+  "STORE",
+  "SHARED"
+ ],
+ "castArray": [
+  1,
+  1000
+ ],
+ "scoreHeader": {
+  "streamSize": 4432,
+  "frame1Offset": 20,
+  "framesVersion": 4,
+  "spriteRecordSize": 20,
+  "numChannels": 50
+ },
+ "labels": {
+  "store": 2,
+  "EE": 4,
+  "Credits": 5,
+  "catalogue": 11,
+  "seeds": 25,
+  "buy": 34,
+  "leave buy": 36
+ },
+ "frameCount": 44,
+ "frames": [
+  {
+   "n": 1,
+   "transition": {
+    "type": 5,
+    "name": "centerOutHorizontal",
+    "durationMs": 2000,
+    "chunkSize": 4,
+    "area": "stage"
+   },
+   "palette": {
+    "id": 100,
+    "name": "Palette 103",
+    "file": "STORE/100-Palette 103.palette.json",
+    "speed": 30,
+    "frameCount": 1,
+    "cycleCount": 1,
+    "fade": 0,
+    "delay": 0,
+    "style": 0,
+    "transition": "normal"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "H-STOR1X.PCT",
+     "type": "bitmap",
+     "file": "STORE/101-H-STOR1X.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/103.png",
+     "x": 420,
+     "y": 329,
+     "w": 157,
+     "h": 74,
+     "loc": [
+      498,
+      366
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": "ClickOnTheCatalogueOrOnTheSeeds"
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 3440,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3440.png",
+     "x": 4,
+     "y": 4,
+     "w": 20,
+     "h": 19,
+     "loc": [
+      14,
+      13
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3221,
+      "castName": "71",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "script": {
+    "castId": 7,
+    "castName": "startStore"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "H-STOR1X.PCT",
+     "type": "bitmap",
+     "file": "STORE/101-H-STOR1X.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/103.png",
+     "x": 420,
+     "y": 329,
+     "w": 157,
+     "h": 74,
+     "loc": [
+      498,
+      366
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": "ClickOnTheCatalogueOrOnTheSeeds"
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 104,
+     "castName": "attach",
+     "type": "shape",
+     "x": 129,
+     "y": 226,
+     "w": 350,
+     "h": 68,
+     "loc": [
+      129,
+      226
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": "ClickOnTheCatalogueOrOnTheSeeds"
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 4,
+     "castId": 3440,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3440.png",
+     "x": 4,
+     "y": 4,
+     "w": 20,
+     "h": 19,
+     "loc": [
+      14,
+      13
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3221,
+      "castName": "71",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 3637,
+     "castName": "A-CALL83.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3637-A-CALL83.PCT.png",
+     "x": 806,
+     "y": 808,
+     "w": 80,
+     "h": 43,
+     "loc": [
+      846,
+      829
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/192.png",
+     "x": 0,
+     "y": 1423,
+     "w": 640,
+     "h": 54,
+     "loc": [
+      320,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 21,
+     "castId": 152,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/152.png",
+     "x": 214,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      238,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 154,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/154.png",
+     "x": 266,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      290,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 158,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/158.png",
+     "x": 318,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      342,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 171,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/171.png",
+     "x": 370,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      394,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 160,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/160.png",
+     "x": 422,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      446,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "script": {
+    "castId": 20,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "H-STOR1X.PCT",
+     "type": "bitmap",
+     "file": "STORE/101-H-STOR1X.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/103.png",
+     "x": 420,
+     "y": 329,
+     "w": 157,
+     "h": 74,
+     "loc": [
+      498,
+      366
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": "ClickOnTheCatalogueOrOnTheSeeds"
+     },
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 104,
+     "castName": "attach",
+     "type": "shape",
+     "x": 129,
+     "y": 226,
+     "w": 350,
+     "h": 68,
+     "loc": [
+      129,
+      226
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3,
+      "castName": "ClickOnTheCatalogueOrOnTheSeeds"
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 129
+    },
+    {
+     "ch": 4,
+     "castId": 3440,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3440.png",
+     "x": 4,
+     "y": 4,
+     "w": 20,
+     "h": 19,
+     "loc": [
+      14,
+      13
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3221,
+      "castName": "71",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 3637,
+     "castName": "A-CALL83.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3637-A-CALL83.PCT.png",
+     "x": 1000,
+     "y": 1000,
+     "w": 80,
+     "h": 43,
+     "loc": [
+      1040,
+      1021
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 128
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 192,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/192.png",
+     "x": 0,
+     "y": 1423,
+     "w": 640,
+     "h": 54,
+     "loc": [
+      320,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 21,
+     "castId": 152,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/152.png",
+     "x": 214,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      238,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 154,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/154.png",
+     "x": 266,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      290,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 158,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/158.png",
+     "x": 318,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      342,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 171,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/171.png",
+     "x": 370,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      394,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 160,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/160.png",
+     "x": 422,
+     "y": 1432,
+     "w": 49,
+     "h": 37,
+     "loc": [
+      446,
+      1450
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 26,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "script": {
+    "castId": 3213,
+    "castName": "23",
+    "castLib": "SHARED"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "H-STOR1X.PCT",
+     "type": "bitmap",
+     "file": "STORE/101-H-STOR1X.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/103.png",
+     "x": 420,
+     "y": 329,
+     "w": 157,
+     "h": 74,
+     "loc": [
+      498,
+      366
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 3450,
+     "castName": "CREDIT04.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3450-CREDIT04.PCT.png",
+     "x": 280,
+     "y": 1157,
+     "w": 132,
+     "h": 230,
+     "loc": [
+      346,
+      1272
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 32,
+     "castId": 3428,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3428.png",
+     "x": 99,
+     "y": 166,
+     "w": 443,
+     "h": 149,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 33,
+     "castId": 41,
+     "castName": "",
+     "type": "shape",
+     "x": 217,
+     "y": 185,
+     "w": 110,
+     "h": 37,
+     "loc": [
+      217,
+      185
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 34,
+     "castId": 3429,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3429.png",
+     "x": 1232,
+     "y": 191,
+     "w": 10,
+     "h": 26,
+     "loc": [
+      1237,
+      204
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3220,
+      "castName": "72",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 35,
+     "castId": 41,
+     "castName": "",
+     "type": "shape",
+     "x": 141,
+     "y": 184,
+     "w": 40,
+     "h": 53,
+     "loc": [
+      141,
+      184
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 3272,
+      "castName": "16",
+      "castLib": "SHARED"
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 36,
+     "castId": 3437,
+     "castName": "OnYes",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3437-OnYes.png",
+     "x": 345,
+     "y": 185,
+     "w": 40,
+     "h": 37,
+     "loc": [
+      365,
+      203
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3215,
+      "castName": "41",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 37,
+     "castId": 3438,
+     "castName": "OffNo",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3438-OffNo.png",
+     "x": 387,
+     "y": 185,
+     "w": 40,
+     "h": 37,
+     "loc": [
+      407,
+      203
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3216,
+      "castName": "43",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 38,
+     "castId": 41,
+     "castName": "",
+     "type": "shape",
+     "x": 463,
+     "y": 185,
+     "w": 37,
+     "h": 52,
+     "loc": [
+      463,
+      185
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 3,
+     "script": {
+      "castId": 3217,
+      "castName": "45",
+      "castLib": "SHARED"
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 1
+    },
+    {
+     "ch": 39,
+     "castId": 3430,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3430.png",
+     "x": 304,
+     "y": 274,
+     "w": 36,
+     "h": 28,
+     "loc": [
+      322,
+      288
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3214,
+      "castName": "27",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 40,
+     "castId": 3432,
+     "castName": "W1",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3432-W1.png",
+     "x": 126,
+     "y": 241,
+     "w": 74,
+     "h": 13,
+     "loc": [
+      163,
+      247
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 41,
+     "castId": 3433,
+     "castName": "W2",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3433-W2.png",
+     "x": 238,
+     "y": 227,
+     "w": 69,
+     "h": 13,
+     "loc": [
+      272,
+      233
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 42,
+     "castId": 3434,
+     "castName": "W3",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3434-W3.png",
+     "x": 362,
+     "y": 227,
+     "w": 54,
+     "h": 13,
+     "loc": [
+      389,
+      233
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 43,
+     "castId": 3435,
+     "castName": "W4",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3435-W4.png",
+     "x": 461,
+     "y": 240,
+     "w": 41,
+     "h": 13,
+     "loc": [
+      481,
+      246
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 44,
+     "castId": 91,
+     "castName": "H-FIE115.PCT",
+     "type": "bitmap",
+     "file": "STORE/91-H-FIE115.PCT.png",
+     "x": 117,
+     "y": 1136,
+     "w": 403,
+     "h": 197,
+     "loc": [
+      318,
+      1234
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 45,
+     "castId": 42,
+     "castName": "",
+     "type": "text",
+     "file": "STORE/42.txt",
+     "x": 186,
+     "y": 1193,
+     "w": 263,
+     "h": 48,
+     "loc": [
+      186,
+      1193
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 46,
+     "castId": 92,
+     "castName": "Yes",
+     "type": "bitmap",
+     "file": "STORE/92-Yes.png",
+     "x": 266,
+     "y": 1300,
+     "w": 36,
+     "h": 22,
+     "loc": [
+      284,
+      1311
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3219,
+      "castName": "48",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 47,
+     "castId": 94,
+     "castName": "No",
+     "type": "bitmap",
+     "file": "STORE/94-No.png",
+     "x": 305,
+     "y": 1300,
+     "w": 36,
+     "h": 22,
+     "loc": [
+      323,
+      1311
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3218,
+      "castName": "47",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 48,
+     "castId": 123,
+     "castName": "Cans",
+     "type": "bitmap",
+     "file": "STORE/123-Cans.png",
+     "x": 344,
+     "y": 1300,
+     "w": 36,
+     "h": 22,
+     "loc": [
+      362,
+      1311
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3218,
+      "castName": "47",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "script": {
+    "castId": 3271,
+    "castName": "15",
+    "castLib": "SHARED"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "H-STOR1X.PCT",
+     "type": "bitmap",
+     "file": "STORE/101-H-STOR1X.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 103,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/103.png",
+     "x": 420,
+     "y": 329,
+     "w": 157,
+     "h": 74,
+     "loc": [
+      498,
+      366
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 18,
+     "castId": 3449,
+     "castName": "ActivCR",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3449-ActivCR.txt",
+     "x": 207,
+     "y": 123,
+     "w": 273,
+     "h": 301,
+     "loc": [
+      207,
+      123
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 19,
+     "castId": 3447,
+     "castName": "",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3447.png",
+     "x": 192,
+     "y": 26,
+     "w": 302,
+     "h": 407,
+     "loc": [
+      343,
+      229
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 117,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/117-A-CATA10.PCT.png",
+     "x": 459,
+     "y": 407,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      473,
+      418
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 3273,
+      "castName": "17",
+      "castLib": "SHARED"
+     },
+     "flags": []
+    },
+    {
+     "ch": 23,
+     "castId": 3450,
+     "castName": "CREDIT04.PCT",
+     "castLib": "SHARED",
+     "type": "bitmap",
+     "file": "SHARED/3450-CREDIT04.PCT.png",
+     "x": 280,
+     "y": 1157,
+     "w": 132,
+     "h": 230,
+     "loc": [
+      346,
+      1272
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "to": 10,
+   "sprites": []
+  },
+  {
+   "n": 11,
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "H-STOR1X.PCT",
+     "type": "bitmap",
+     "file": "STORE/101-H-STOR1X.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 27,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 31,
+     "castId": 173,
+     "castName": "Catalog book",
+     "type": "bitmap",
+     "file": "STORE/173-Catalog book.png",
+     "x": 28,
+     "y": 18,
+     "w": 590,
+     "h": 368,
+     "loc": [
+      323,
+      202
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 32,
+     "castId": 176,
+     "castName": "catalog main cover title",
+     "type": "bitmap",
+     "file": "STORE/176-catalog main cover title.png",
+     "x": 106,
+     "y": 78,
+     "w": 447,
+     "h": 251,
+     "loc": [
+      329,
+      203
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 33,
+     "castId": 188,
+     "castName": "SeedsLabelUp",
+     "type": "bitmap",
+     "file": "STORE/188-SeedsLabelUp.png",
+     "x": 128,
+     "y": 361,
+     "w": 123,
+     "h": 41,
+     "loc": [
+      189,
+      381
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 190,
+     "castName": "ProductsLabelDown",
+     "type": "bitmap",
+     "file": "STORE/190-ProductsLabelDown.png",
+     "x": 251,
+     "y": 362,
+     "w": 101,
+     "h": 38,
+     "loc": [
+      293,
+      381
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 33,
+      "castName": ""
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "script": {
+    "castId": 5,
+    "castName": "startCatalogue"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "H-STOR1X.PCT",
+     "type": "bitmap",
+     "file": "STORE/101-H-STOR1X.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 173,
+     "castName": "Catalog book",
+     "type": "bitmap",
+     "file": "STORE/173-Catalog book.png",
+     "x": 28,
+     "y": 18,
+     "w": 590,
+     "h": 368,
+     "loc": [
+      323,
+      202
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 176,
+     "castName": "catalog main cover title",
+     "type": "bitmap",
+     "file": "STORE/176-catalog main cover title.png",
+     "x": 106,
+     "y": 78,
+     "w": 447,
+     "h": 251,
+     "loc": [
+      329,
+      203
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 176,
+     "castName": "catalog main cover title",
+     "type": "bitmap",
+     "file": "STORE/176-catalog main cover title.png",
+     "x": 106,
+     "y": 78,
+     "w": 447,
+     "h": 251,
+     "loc": [
+      329,
+      203
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 115,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/115-A-CATA10.PCT.png",
+     "x": 54,
+     "y": 320,
+     "w": 35,
+     "h": 20,
+     "loc": [
+      71,
+      330
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 31,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 113,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/113-A-CATA10.PCT.png",
+     "x": 54,
+     "y": 343,
+     "w": 35,
+     "h": 19,
+     "loc": [
+      71,
+      352
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 4,
+      "castName": "inTheCatalogueClickOnOneOfTheIcons"
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 188,
+     "castName": "SeedsLabelUp",
+     "type": "bitmap",
+     "file": "STORE/188-SeedsLabelUp.png",
+     "x": 128,
+     "y": 361,
+     "w": 123,
+     "h": 41,
+     "loc": [
+      189,
+      381
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 190,
+     "castName": "ProductsLabelDown",
+     "type": "bitmap",
+     "file": "STORE/190-ProductsLabelDown.png",
+     "x": 251,
+     "y": 362,
+     "w": 101,
+     "h": 38,
+     "loc": [
+      293,
+      381
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 33,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 194,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/194.png",
+     "x": 560,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      597,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 24,
+      "castName": "back to store"
+     },
+     "flags": [],
+     "thickness": 2
+    },
+    {
+     "ch": 10,
+     "castId": 135,
+     "castName": "seed price 1",
+     "type": "text",
+     "file": "STORE/135-seed price 1.txt",
+     "x": 383,
+     "y": 152,
+     "w": 119,
+     "h": 14,
+     "loc": [
+      383,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 136,
+     "castName": "",
+     "type": "text",
+     "file": "STORE/136.txt",
+     "x": 383,
+     "y": 199,
+     "w": 119,
+     "h": 14,
+     "loc": [
+      383,
+      199
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 137,
+     "castName": "",
+     "type": "text",
+     "file": "STORE/137.txt",
+     "x": 383,
+     "y": 246,
+     "w": 119,
+     "h": 14,
+     "loc": [
+      383,
+      246
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 138,
+     "castName": "",
+     "type": "text",
+     "file": "STORE/138.txt",
+     "x": 383,
+     "y": 293,
+     "w": 119,
+     "h": 14,
+     "loc": [
+      383,
+      293
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 108,
+     "castName": "productPrice",
+     "type": "text",
+     "file": "STORE/108-productPrice.txt",
+     "x": 297,
+     "y": 281,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      297,
+      281
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 15,
+     "castId": 125,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/125.png",
+     "x": 309,
+     "y": 342,
+     "w": 36,
+     "h": 22,
+     "loc": [
+      327,
+      353
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 45,
+      "castName": "ProductsBuyBtn"
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 106,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/106.png",
+     "x": 159,
+     "y": 246,
+     "w": 154,
+     "h": 66,
+     "loc": [
+      236,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 17,
+     "castId": 46,
+     "castName": "catalog btns hider",
+     "type": "shape",
+     "x": 51,
+     "y": 307,
+     "w": 315,
+     "h": 102,
+     "loc": [
+      51,
+      307
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "script": {
+      "castId": 47,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 3
+    },
+    {
+     "ch": 18,
+     "castId": 111,
+     "castName": "bmpProductsOrderForm",
+     "type": "bitmap",
+     "file": "STORE/111-bmpProductsOrderForm.png",
+     "x": 117,
+     "y": 212,
+     "w": 425,
+     "h": 169,
+     "loc": [
+      329,
+      296
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 96,
+     "castName": "bmpOrdrDlgTxtForMany",
+     "type": "bitmap",
+     "file": "STORE/96-bmpOrdrDlgTxtForMany.png",
+     "x": 171,
+     "y": 264,
+     "w": 317,
+     "h": 13,
+     "loc": [
+      329,
+      270
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 119,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/119-A-CATA10.PCT.png",
+     "x": 349,
+     "y": 353,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      363,
+      364
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 34,
+      "castName": "productsCancelBtn"
+     },
+     "flags": []
+    },
+    {
+     "ch": 21,
+     "castId": 117,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/117-A-CATA10.PCT.png",
+     "x": 285,
+     "y": 353,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      299,
+      364
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 35,
+      "castName": "productsOkBtn"
+     },
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 167,
+     "castName": "NumOfProducts",
+     "type": "text",
+     "file": "STORE/167-NumOfProducts.txt",
+     "x": 164,
+     "y": 293,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      164,
+      293
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 23,
+     "castId": 168,
+     "castName": "productPrice2",
+     "type": "text",
+     "file": "STORE/168-productPrice2.txt",
+     "x": 298,
+     "y": 293,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      298,
+      293
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 169,
+     "castName": "productsTotalPrice",
+     "type": "text",
+     "file": "STORE/169-productsTotalPrice.txt",
+     "x": 428,
+     "y": 293,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      428,
+      293
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 149,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/149-A-CATA10.PCT.png",
+     "x": 218,
+     "y": 291,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      226,
+      295
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 37,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 26,
+     "castId": 121,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/121-A-CATA10.PCT.png",
+     "x": 218,
+     "y": 301,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      226,
+      305
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 36,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 27,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 31,
+     "castId": 173,
+     "castName": "Catalog book",
+     "type": "bitmap",
+     "file": "STORE/173-Catalog book.png",
+     "x": 28,
+     "y": 18,
+     "w": 590,
+     "h": 368,
+     "loc": [
+      323,
+      202
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 32,
+     "castId": 176,
+     "castName": "catalog main cover title",
+     "type": "bitmap",
+     "file": "STORE/176-catalog main cover title.png",
+     "x": 106,
+     "y": 78,
+     "w": 447,
+     "h": 251,
+     "loc": [
+      329,
+      203
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 33,
+     "castId": 188,
+     "castName": "SeedsLabelUp",
+     "type": "bitmap",
+     "file": "STORE/188-SeedsLabelUp.png",
+     "x": 128,
+     "y": 361,
+     "w": 123,
+     "h": 41,
+     "loc": [
+      189,
+      381
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 34,
+     "castId": 190,
+     "castName": "ProductsLabelDown",
+     "type": "bitmap",
+     "file": "STORE/190-ProductsLabelDown.png",
+     "x": 251,
+     "y": 362,
+     "w": 101,
+     "h": 38,
+     "loc": [
+      293,
+      381
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 33,
+      "castName": ""
+     },
+     "flags": []
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "script": {
+    "castId": 22,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 101,
+     "castName": "H-STOR1X.PCT",
+     "type": "bitmap",
+     "file": "STORE/101-H-STOR1X.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 173,
+     "castName": "Catalog book",
+     "type": "bitmap",
+     "file": "STORE/173-Catalog book.png",
+     "x": 28,
+     "y": 18,
+     "w": 590,
+     "h": 368,
+     "loc": [
+      323,
+      202
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 176,
+     "castName": "catalog main cover title",
+     "type": "bitmap",
+     "file": "STORE/176-catalog main cover title.png",
+     "x": 106,
+     "y": 78,
+     "w": 447,
+     "h": 251,
+     "loc": [
+      329,
+      203
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 176,
+     "castName": "catalog main cover title",
+     "type": "bitmap",
+     "file": "STORE/176-catalog main cover title.png",
+     "x": 106,
+     "y": 78,
+     "w": 447,
+     "h": 251,
+     "loc": [
+      329,
+      203
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 115,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/115-A-CATA10.PCT.png",
+     "x": 54,
+     "y": 320,
+     "w": 35,
+     "h": 20,
+     "loc": [
+      71,
+      330
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 31,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 113,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/113-A-CATA10.PCT.png",
+     "x": 54,
+     "y": 343,
+     "w": 35,
+     "h": 19,
+     "loc": [
+      71,
+      352
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 4,
+      "castName": "inTheCatalogueClickOnOneOfTheIcons"
+     },
+     "flags": []
+    },
+    {
+     "ch": 7,
+     "castId": 188,
+     "castName": "SeedsLabelUp",
+     "type": "bitmap",
+     "file": "STORE/188-SeedsLabelUp.png",
+     "x": 128,
+     "y": 361,
+     "w": 123,
+     "h": 41,
+     "loc": [
+      189,
+      381
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 32,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 8,
+     "castId": 190,
+     "castName": "ProductsLabelDown",
+     "type": "bitmap",
+     "file": "STORE/190-ProductsLabelDown.png",
+     "x": 251,
+     "y": 362,
+     "w": 101,
+     "h": 38,
+     "loc": [
+      293,
+      381
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 33,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 9,
+     "castId": 194,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/194.png",
+     "x": 560,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      597,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 249,
+     "back": 0,
+     "script": {
+      "castId": 24,
+      "castName": "back to store"
+     },
+     "flags": [],
+     "thickness": 2
+    },
+    {
+     "ch": 10,
+     "castId": 135,
+     "castName": "seed price 1",
+     "type": "text",
+     "file": "STORE/135-seed price 1.txt",
+     "x": 383,
+     "y": 152,
+     "w": 119,
+     "h": 14,
+     "loc": [
+      383,
+      152
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 136,
+     "castName": "",
+     "type": "text",
+     "file": "STORE/136.txt",
+     "x": 383,
+     "y": 199,
+     "w": 119,
+     "h": 14,
+     "loc": [
+      383,
+      199
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 137,
+     "castName": "",
+     "type": "text",
+     "file": "STORE/137.txt",
+     "x": 383,
+     "y": 246,
+     "w": 119,
+     "h": 14,
+     "loc": [
+      383,
+      246
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 138,
+     "castName": "",
+     "type": "text",
+     "file": "STORE/138.txt",
+     "x": 383,
+     "y": 293,
+     "w": 119,
+     "h": 14,
+     "loc": [
+      383,
+      293
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 108,
+     "castName": "productPrice",
+     "type": "text",
+     "file": "STORE/108-productPrice.txt",
+     "x": 297,
+     "y": 281,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      297,
+      281
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 15,
+     "castId": 125,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/125.png",
+     "x": 309,
+     "y": 342,
+     "w": 36,
+     "h": 22,
+     "loc": [
+      327,
+      353
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 45,
+      "castName": "ProductsBuyBtn"
+     },
+     "flags": []
+    },
+    {
+     "ch": 16,
+     "castId": 106,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/106.png",
+     "x": 159,
+     "y": 246,
+     "w": 154,
+     "h": 66,
+     "loc": [
+      236,
+      279
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 17,
+     "castId": 46,
+     "castName": "catalog btns hider",
+     "type": "shape",
+     "x": 51,
+     "y": 307,
+     "w": 315,
+     "h": 102,
+     "loc": [
+      51,
+      307
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "script": {
+      "castId": 47,
+      "castName": ""
+     },
+     "flags": [
+      "stretch"
+     ],
+     "thickness": 131
+    },
+    {
+     "ch": 18,
+     "castId": 111,
+     "castName": "bmpProductsOrderForm",
+     "type": "bitmap",
+     "file": "STORE/111-bmpProductsOrderForm.png",
+     "x": 117,
+     "y": 212,
+     "w": 425,
+     "h": 169,
+     "loc": [
+      329,
+      296
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 19,
+     "castId": 96,
+     "castName": "bmpOrdrDlgTxtForMany",
+     "type": "bitmap",
+     "file": "STORE/96-bmpOrdrDlgTxtForMany.png",
+     "x": 171,
+     "y": 264,
+     "w": 317,
+     "h": 13,
+     "loc": [
+      329,
+      270
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 20,
+     "castId": 119,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/119-A-CATA10.PCT.png",
+     "x": 349,
+     "y": 353,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      363,
+      364
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 34,
+      "castName": "productsCancelBtn"
+     },
+     "flags": []
+    },
+    {
+     "ch": 21,
+     "castId": 117,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/117-A-CATA10.PCT.png",
+     "x": 285,
+     "y": 353,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      299,
+      364
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 35,
+      "castName": "productsOkBtn"
+     },
+     "flags": []
+    },
+    {
+     "ch": 22,
+     "castId": 167,
+     "castName": "NumOfProducts",
+     "type": "text",
+     "file": "STORE/167-NumOfProducts.txt",
+     "x": 164,
+     "y": 293,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      164,
+      293
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 23,
+     "castId": 168,
+     "castName": "productPrice2",
+     "type": "text",
+     "file": "STORE/168-productPrice2.txt",
+     "x": 298,
+     "y": 293,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      298,
+      293
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 24,
+     "castId": 169,
+     "castName": "productsTotalPrice",
+     "type": "text",
+     "file": "STORE/169-productsTotalPrice.txt",
+     "x": 428,
+     "y": 293,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      428,
+      293
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": []
+    },
+    {
+     "ch": 25,
+     "castId": 149,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/149-A-CATA10.PCT.png",
+     "x": 218,
+     "y": 291,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      226,
+      295
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 37,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 26,
+     "castId": 121,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/121-A-CATA10.PCT.png",
+     "x": 218,
+     "y": 301,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      226,
+      305
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 36,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 27,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "to": 24,
+   "sprites": []
+  },
+  {
+   "n": 25,
+   "script": {
+    "castId": 10,
+    "castName": "startSeeds"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 102,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/102-H-STORE2.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 143,
+     "castName": "H-STORE3.PCT",
+     "type": "bitmap",
+     "file": "STORE/143-H-STORE3.PCT.png",
+     "x": 86,
+     "y": 276,
+     "w": 96,
+     "h": 22,
+     "loc": [
+      134,
+      287
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": "chooseSeeds"
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 144,
+     "castName": "H-STORE3.PCT",
+     "type": "bitmap",
+     "file": "STORE/144-H-STORE3.PCT.png",
+     "x": 198,
+     "y": 276,
+     "w": 96,
+     "h": 22,
+     "loc": [
+      246,
+      287
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": "chooseSeeds"
+     },
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 145,
+     "castName": "H-STORE3.PCT",
+     "type": "bitmap",
+     "file": "STORE/145-H-STORE3.PCT.png",
+     "x": 310,
+     "y": 276,
+     "w": 96,
+     "h": 22,
+     "loc": [
+      358,
+      287
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": "chooseSeeds"
+     },
+     "flags": []
+    },
+    {
+     "ch": 5,
+     "castId": 146,
+     "castName": "H-STORE3.PCT",
+     "type": "bitmap",
+     "file": "STORE/146-H-STORE3.PCT.png",
+     "x": 421,
+     "y": 276,
+     "w": 96,
+     "h": 22,
+     "loc": [
+      469,
+      287
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": "chooseSeeds"
+     },
+     "flags": []
+    },
+    {
+     "ch": 6,
+     "castId": 194,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/194.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 16,
+      "castName": "clickToGoBackToStore"
+     },
+     "flags": [],
+     "thickness": 2
+    },
+    {
+     "ch": 13,
+     "castId": 134,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/134-H-STORE2.PCT.png",
+     "x": 208,
+     "y": 87,
+     "w": 140,
+     "h": 188,
+     "loc": [
+      278,
+      181
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 17,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 127,
+     "castName": "AN woman,start",
+     "type": "bitmap",
+     "file": "STORE/127-AN woman,start.png",
+     "x": 256,
+     "y": 149,
+     "w": 38,
+     "h": 35,
+     "loc": [
+      275,
+      166
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "script": {
+    "castId": 21,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 102,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/102-H-STORE2.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 143,
+     "castName": "H-STORE3.PCT",
+     "type": "bitmap",
+     "file": "STORE/143-H-STORE3.PCT.png",
+     "x": 86,
+     "y": 276,
+     "w": 96,
+     "h": 22,
+     "loc": [
+      134,
+      287
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": "chooseSeeds"
+     },
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 144,
+     "castName": "H-STORE3.PCT",
+     "type": "bitmap",
+     "file": "STORE/144-H-STORE3.PCT.png",
+     "x": 198,
+     "y": 276,
+     "w": 96,
+     "h": 22,
+     "loc": [
+      246,
+      287
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": "chooseSeeds"
+     },
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 4,
+     "castId": 145,
+     "castName": "H-STORE3.PCT",
+     "type": "bitmap",
+     "file": "STORE/145-H-STORE3.PCT.png",
+     "x": 310,
+     "y": 276,
+     "w": 96,
+     "h": 22,
+     "loc": [
+      358,
+      287
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": "chooseSeeds"
+     },
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 5,
+     "castId": 146,
+     "castName": "H-STORE3.PCT",
+     "type": "bitmap",
+     "file": "STORE/146-H-STORE3.PCT.png",
+     "x": 421,
+     "y": 276,
+     "w": 96,
+     "h": 22,
+     "loc": [
+      469,
+      287
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 8,
+      "castName": "chooseSeeds"
+     },
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 6,
+     "castId": 194,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/194.png",
+     "x": 561,
+     "y": 441,
+     "w": 75,
+     "h": 35,
+     "loc": [
+      598,
+      458
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 16,
+      "castName": "clickToGoBackToStore"
+     },
+     "flags": [],
+     "thickness": 130
+    },
+    {
+     "ch": 13,
+     "castId": 134,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/134-H-STORE2.PCT.png",
+     "x": 208,
+     "y": 87,
+     "w": 140,
+     "h": 188,
+     "loc": [
+      278,
+      181
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 17,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 14,
+     "castId": 127,
+     "castName": "AN woman,start",
+     "type": "bitmap",
+     "file": "STORE/127-AN woman,start.png",
+     "x": 256,
+     "y": 149,
+     "w": 38,
+     "h": 35,
+     "loc": [
+      275,
+      166
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "to": 33,
+   "sprites": []
+  },
+  {
+   "n": 34,
+   "script": {
+    "castId": 11,
+    "castName": "startBuy"
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 102,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/102-H-STORE2.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 2,
+     "castId": 134,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/134-H-STORE2.PCT.png",
+     "x": 208,
+     "y": 87,
+     "w": 140,
+     "h": 188,
+     "loc": [
+      278,
+      181
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 17,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 3,
+     "castId": 105,
+     "castName": "A-CATA8.PCT",
+     "type": "bitmap",
+     "file": "STORE/105-A-CATA8.PCT.png",
+     "x": 205,
+     "y": 198,
+     "w": 427,
+     "h": 279,
+     "loc": [
+      418,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 131,
+     "castName": "AcresToPlant",
+     "type": "text",
+     "file": "STORE/131-AcresToPlant.txt",
+     "x": 326,
+     "y": 301,
+     "w": 46,
+     "h": 15,
+     "loc": [
+      326,
+      301
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 18,
+      "castName": "getStringAcres"
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 112,
+     "castName": "SeedsName",
+     "type": "text",
+     "file": "STORE/112-SeedsName.txt",
+     "x": 488,
+     "y": 301,
+     "w": 101,
+     "h": 16,
+     "loc": [
+      488,
+      301
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 131,
+     "castName": "AcresToPlant",
+     "type": "text",
+     "file": "STORE/131-AcresToPlant.txt",
+     "x": 256,
+     "y": 388,
+     "w": 73,
+     "h": 16,
+     "loc": [
+      256,
+      388
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 132,
+     "castName": "PriceOfSeedsPerAcre",
+     "type": "text",
+     "file": "STORE/132-PriceOfSeedsPerAcre.txt",
+     "x": 390,
+     "y": 388,
+     "w": 65,
+     "h": 16,
+     "loc": [
+      390,
+      388
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 133,
+     "castName": "Total",
+     "type": "text",
+     "file": "STORE/133-Total.txt",
+     "x": 521,
+     "y": 387,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      521,
+      387
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 14,
+      "castName": "getStringTotal"
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 119,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/119-A-CATA10.PCT.png",
+     "x": 436,
+     "y": 445,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      450,
+      456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 15,
+      "castName": "clickOnTheIconsOnTheSeedsForm"
+     },
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 117,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/117-A-CATA10.PCT.png",
+     "x": 372,
+     "y": 445,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      386,
+      456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 15,
+      "castName": "clickOnTheIconsOnTheSeedsForm"
+     },
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 121,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/121-A-CATA10.PCT.png",
+     "x": 377,
+     "y": 310,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      385,
+      314
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": "clickOnTheArrowInTheSeedsOrderForm"
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 149,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/149-A-CATA10.PCT.png",
+     "x": 377,
+     "y": 300,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      385,
+      304
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 23,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 127,
+     "castName": "AN woman,start",
+     "type": "bitmap",
+     "file": "STORE/127-AN woman,start.png",
+     "x": 256,
+     "y": 149,
+     "w": 38,
+     "h": 35,
+     "loc": [
+      275,
+      166
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "script": {
+    "castId": 2,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 102,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/102-H-STORE2.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 134,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/134-H-STORE2.PCT.png",
+     "x": 208,
+     "y": 87,
+     "w": 140,
+     "h": 188,
+     "loc": [
+      278,
+      181
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 17,
+      "castName": ""
+     },
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 105,
+     "castName": "A-CATA8.PCT",
+     "type": "bitmap",
+     "file": "STORE/105-A-CATA8.PCT.png",
+     "x": 205,
+     "y": 198,
+     "w": 427,
+     "h": 279,
+     "loc": [
+      418,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 131,
+     "castName": "AcresToPlant",
+     "type": "text",
+     "file": "STORE/131-AcresToPlant.txt",
+     "x": 326,
+     "y": 301,
+     "w": 46,
+     "h": 15,
+     "loc": [
+      326,
+      301
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 18,
+      "castName": "getStringAcres"
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 112,
+     "castName": "SeedsName",
+     "type": "text",
+     "file": "STORE/112-SeedsName.txt",
+     "x": 488,
+     "y": 301,
+     "w": 101,
+     "h": 16,
+     "loc": [
+      488,
+      301
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 131,
+     "castName": "AcresToPlant",
+     "type": "text",
+     "file": "STORE/131-AcresToPlant.txt",
+     "x": 256,
+     "y": 388,
+     "w": 73,
+     "h": 16,
+     "loc": [
+      256,
+      388
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 132,
+     "castName": "PriceOfSeedsPerAcre",
+     "type": "text",
+     "file": "STORE/132-PriceOfSeedsPerAcre.txt",
+     "x": 390,
+     "y": 388,
+     "w": 65,
+     "h": 16,
+     "loc": [
+      390,
+      388
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 133,
+     "castName": "Total",
+     "type": "text",
+     "file": "STORE/133-Total.txt",
+     "x": 521,
+     "y": 387,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      521,
+      387
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "script": {
+      "castId": 14,
+      "castName": "getStringTotal"
+     },
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 119,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/119-A-CATA10.PCT.png",
+     "x": 436,
+     "y": 445,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      450,
+      456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 15,
+      "castName": "clickOnTheIconsOnTheSeedsForm"
+     },
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 117,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/117-A-CATA10.PCT.png",
+     "x": 372,
+     "y": 445,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      386,
+      456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 15,
+      "castName": "clickOnTheIconsOnTheSeedsForm"
+     },
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 121,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/121-A-CATA10.PCT.png",
+     "x": 377,
+     "y": 310,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      385,
+      314
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 13,
+      "castName": "clickOnTheArrowInTheSeedsOrderForm"
+     },
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 149,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/149-A-CATA10.PCT.png",
+     "x": 377,
+     "y": 300,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      385,
+      304
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 23,
+      "castName": ""
+     },
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 127,
+     "castName": "AN woman,start",
+     "type": "bitmap",
+     "file": "STORE/127-AN woman,start.png",
+     "x": 256,
+     "y": 149,
+     "w": 38,
+     "h": 35,
+     "loc": [
+      275,
+      166
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "script": {
+    "castId": 25,
+    "castName": ""
+   },
+   "sprites": [
+    {
+     "ch": 1,
+     "castId": 102,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/102-H-STORE2.PCT.png",
+     "x": 0,
+     "y": 0,
+     "w": 640,
+     "h": 480,
+     "loc": [
+      320,
+      240
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 2,
+     "castId": 134,
+     "castName": "H-STORE2.PCT",
+     "type": "bitmap",
+     "file": "STORE/134-H-STORE2.PCT.png",
+     "x": 208,
+     "y": 87,
+     "w": 140,
+     "h": 188,
+     "loc": [
+      278,
+      181
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 3,
+     "castId": 105,
+     "castName": "A-CATA8.PCT",
+     "type": "bitmap",
+     "file": "STORE/105-A-CATA8.PCT.png",
+     "x": 205,
+     "y": 198,
+     "w": 427,
+     "h": 279,
+     "loc": [
+      418,
+      337
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 4,
+     "castId": 131,
+     "castName": "AcresToPlant",
+     "type": "text",
+     "file": "STORE/131-AcresToPlant.txt",
+     "x": 326,
+     "y": 301,
+     "w": 46,
+     "h": 15,
+     "loc": [
+      326,
+      301
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 5,
+     "castId": 112,
+     "castName": "SeedsName",
+     "type": "text",
+     "file": "STORE/112-SeedsName.txt",
+     "x": 488,
+     "y": 301,
+     "w": 101,
+     "h": 16,
+     "loc": [
+      488,
+      301
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 6,
+     "castId": 131,
+     "castName": "AcresToPlant",
+     "type": "text",
+     "file": "STORE/131-AcresToPlant.txt",
+     "x": 256,
+     "y": 388,
+     "w": 73,
+     "h": 16,
+     "loc": [
+      256,
+      388
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 7,
+     "castId": 132,
+     "castName": "PriceOfSeedsPerAcre",
+     "type": "text",
+     "file": "STORE/132-PriceOfSeedsPerAcre.txt",
+     "x": 390,
+     "y": 388,
+     "w": 65,
+     "h": 16,
+     "loc": [
+      390,
+      388
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 8,
+     "castId": 133,
+     "castName": "Total",
+     "type": "text",
+     "file": "STORE/133-Total.txt",
+     "x": 521,
+     "y": 387,
+     "w": 67,
+     "h": 16,
+     "loc": [
+      521,
+      387
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 0,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 10,
+     "castId": 119,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/119-A-CATA10.PCT.png",
+     "x": 436,
+     "y": 445,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      450,
+      456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 11,
+     "castId": 117,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/117-A-CATA10.PCT.png",
+     "x": 372,
+     "y": 445,
+     "w": 28,
+     "h": 22,
+     "loc": [
+      386,
+      456
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "script": {
+      "castId": 48,
+      "castName": null,
+      "castMissing": true
+     },
+     "flags": []
+    },
+    {
+     "ch": 12,
+     "castId": 121,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/121-A-CATA10.PCT.png",
+     "x": 377,
+     "y": 310,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      385,
+      314
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 13,
+     "castId": 149,
+     "castName": "A-CATA10.PCT",
+     "type": "bitmap",
+     "file": "STORE/149-A-CATA10.PCT.png",
+     "x": 377,
+     "y": 300,
+     "w": 16,
+     "h": 9,
+     "loc": [
+      385,
+      304
+     ],
+     "ink": 8,
+     "inkName": "matte",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 14,
+     "castId": 127,
+     "castName": "AN woman,start",
+     "type": "bitmap",
+     "file": "STORE/127-AN woman,start.png",
+     "x": 256,
+     "y": 149,
+     "w": 38,
+     "h": 35,
+     "loc": [
+      275,
+      166
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": [],
+     "thickness": 128
+    },
+    {
+     "ch": 17,
+     "castId": 193,
+     "castName": "",
+     "type": "bitmap",
+     "file": "STORE/193.png",
+     "x": 0,
+     "y": 423,
+     "w": 197,
+     "h": 54,
+     "loc": [
+      98,
+      450
+     ],
+     "ink": 0,
+     "inkName": "copy",
+     "fore": 255,
+     "back": 0,
+     "flags": []
+    },
+    {
+     "ch": 28,
+     "castId": 3012,
+     "castName": "LocDate",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3012-LocDate.txt",
+     "x": 25,
+     "y": 426,
+     "w": 84,
+     "h": 16,
+     "loc": [
+      25,
+      426
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    },
+    {
+     "ch": 29,
+     "castId": 3036,
+     "castName": "MyCash",
+     "castLib": "SHARED",
+     "type": "text",
+     "file": "SHARED/3036-MyCash.txt",
+     "x": 107,
+     "y": 456,
+     "w": 81,
+     "h": 16,
+     "loc": [
+      107,
+      456
+     ],
+     "ink": 36,
+     "inkName": "backgroundTransparent",
+     "fore": 255,
+     "back": 0,
+     "spriteType": "text",
+     "flags": [
+      "stretch"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "to": 43,
+   "sprites": []
+  },
+  {
+   "n": 44,
+   "script": {
+    "castId": 44,
+    "castName": "psSpritesHandlerByColor"
+   },
+   "sprites": []
+  }
+ ]
+}

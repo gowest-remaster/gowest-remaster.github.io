@@ -1,0 +1,74 @@
+/* Homestead hub: season ribbon, Today card, trivia card, build drawer. */
+.hub-ribbon { top: 0.8rem; width: min(40rem, calc(100vw - 58rem)); min-width: 26rem; }
+.ribbon { padding: 0.55rem 0.9rem 0.6rem; }
+.ribbon .eyebrow { margin: 0; }
+.rb-collapse { width: 1.6rem; height: 1.6rem; }
+.rb-months { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; margin-top: 0.3rem; font-size: 0.66rem; letter-spacing: 0.08em; text-align: center; color: var(--ink-soft); }
+.rb-m { padding: 0.12rem 0; border-radius: 3px; }
+.rb-m.st-1 { background: rgba(61, 95, 134, 0.1); }
+.rb-m.st-2 { background: rgba(199, 154, 75, 0.14); }
+.rb-m.st-3 { background: linear-gradient(90deg, rgba(76, 107, 47, 0.12), rgba(199, 154, 75, 0.14)); }
+.rb-m.now { background: var(--ink); color: var(--parch); }
+.rb-bands { position: relative; height: 2.95rem; margin-top: 0.25rem; }
+.rb-band { position: absolute; height: 0.85rem; border-radius: 999px; font-size: 0.64rem; line-height: 0.85rem; cursor: help; color: #fff8e6; padding: 0 0.45rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rb-band.plow { top: 0; background: linear-gradient(90deg, #8a6a3a 75%, rgba(138, 106, 58, 0)); }
+.rb-band.harv { top: 1rem; background: #8f6118; }
+.rb-band.harv.w { top: 1rem; background: #9a5a30; }
+.rb-band.ripe { top: 2rem; background: repeating-linear-gradient(90deg, #5b7733 0 6px, #4d672b 6px 12px); }
+.rb-now { position: absolute; top: -0.2rem; bottom: -0.2rem; width: 2px; background: var(--red); border-radius: 2px; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6); }
+.rb-pins { display: flex; flex-wrap: wrap; gap: 0.2rem 0.9rem; margin-top: 0.3rem; font-size: 0.8rem; }
+.rb-pins span { display: inline-flex; align-items: center; gap: 0.25rem; }
+.rb-pins .ico { width: 0.9rem; height: 0.9rem; color: var(--brass-lo); }
+.rb-pins .urgent { color: var(--bad); }
+.rb-pins .urgent .ico { color: var(--bad); }
+.ribbon-mini { font: inherit; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; padding: 0.4rem 0.9rem; font-size: 0.85rem; }
+.ribbon-mini .ico { color: var(--brass-lo); }
+
+.today { top: 4.4rem; width: min(23rem, 32vw); padding: 0.8rem 0.95rem 0.6rem; max-height: calc(100vh - var(--hud-h) - 6rem); overflow: auto; }
+.today.collapsed { width: auto; padding: 0.2rem 0.6rem; }
+.today-list { list-style: none; margin: 0.3rem 0 0.4rem; padding: 0; display: grid; gap: 0.35rem; }
+.today-list li { display: flex; gap: 0.6rem; align-items: center; justify-content: space-between; padding: 0.35rem 0.5rem; border-radius: 8px; background: rgba(255, 255, 255, 0.4); border: 1px solid var(--parch-shade); font-size: 0.93rem; }
+.today-list li .btn { flex: none; }
+.today-foot { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+.arrival { margin: 0.2rem 0 0.5rem; padding: 0.5rem 0.6rem; border-radius: 8px; background: rgba(199, 154, 75, 0.12); border: 1px dashed var(--brass); }
+.arrival ol { list-style: none; margin: 0.25rem 0 0; padding: 0; display: grid; gap: 0.2rem; font-size: 0.88rem; }
+.arrival li { display: flex; align-items: center; gap: 0.4rem; color: var(--ink-faint); }
+.arrival li > span:not(.ico) { flex: 1; }
+.arrival li .ico { width: 1rem; height: 1rem; }
+.arrival li.done { color: var(--good); text-decoration: line-through; text-decoration-color: rgba(76, 107, 47, 0.5); }
+.arrival li.next { color: var(--ink); font-weight: 700; }
+.arrival li.next .ico { color: var(--red); }
+
+.trivia-host { top: 4.2rem; }
+.trivia { width: min(22rem, 34vw); border-top: 4px solid var(--gold); transform: rotate(-1deg); }
+.trivia.right { border-top-color: var(--good); }
+.trivia.wrong { border-top-color: var(--warn); }
+.trivia-q { font-size: 1.02rem; margin: 0.3rem 0 0.6rem; }
+.trivia-a { display: grid; gap: 0.35rem; }
+.trivia-btn { justify-content: flex-start; text-align: left; font-size: 0.9rem; }
+
+.build-host .drawer { width: min(24rem, 38vw); }
+.build-hero { display: flex; gap: 0.8rem; align-items: center; margin-bottom: 0.4rem; }
+.build-ico { width: 3rem; height: 3rem; color: var(--brass-lo); flex: none; }
+.build-hero p { margin: 0; font-size: 0.92rem; }
+.crew-you { color: var(--ink-soft); }
+.crew-note { color: var(--warn); min-height: 1.2em; }
+.est { display: grid; gap: 0.2rem; margin-top: 0.5rem; }
+.hub-ribbon:has(.ribbon-mini) { min-width: 0; width: auto; }
+
+/* calm-ui: the year strip is a thin ribbon of months; the rest unfolds on hover or focus */
+.hub-ribbon .ribbon { padding: 0.3rem 0.7rem 0.35rem; transition: box-shadow 0.2s; }
+.hub-ribbon .ribbon:not(:hover):not(:focus-within) > .spread,
+.hub-ribbon .ribbon:not(:hover):not(:focus-within) > .rb-bands,
+.hub-ribbon .ribbon:not(:hover):not(:focus-within) > .rb-pins { display: none; }
+.hub-ribbon .ribbon:not(:hover):not(:focus-within) .rb-months { margin-top: 0; }
+.hub-ribbon .ribbon { cursor: default; }
+/* folded, the strip is just the twelve initials (J F M A …) so it never crowds the corners */
+.hub-ribbon:not(:hover):not(:focus-within) { width: auto; min-width: 0; }
+.hub-ribbon .ribbon:not(:hover):not(:focus-within) .rb-m { font-size: 0; width: 1.35rem; }
+.hub-ribbon .ribbon:not(:hover):not(:focus-within) .rb-m::before { content: attr(data-l); font-size: 0.7rem; }
+.trivia-host { top: 4.2rem; right: 1rem; }
+.trivia-tab { font: inherit; display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.3rem 0.4rem 0.3rem 0.7rem; border-radius: 999px; cursor: pointer; background: linear-gradient(var(--parch-hi), var(--parch)); color: var(--ink); border: 1px solid var(--brass); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); }
+.trivia-tab > .ico { width: 1.1rem; height: 1.1rem; color: var(--brass-lo); }
+.trivia-open { font-size: 0.78rem; font-weight: 600; padding: 0.15rem 0.55rem; border-radius: 999px; background: var(--ink); color: var(--parch); }
+.trivia-tab:hover { filter: brightness(1.05); }

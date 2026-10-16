@@ -1,0 +1,762 @@
+{
+ "movie": "ALBUM",
+ "origin": "assets/ALBUM/",
+ "members": [
+  {
+   "castId": 134,
+   "name": "",
+   "type": "text",
+   "text": "                       Print Menu\n\n             Current page (         )\n\n             All Pages (           -          )\n\n             Range of pages\n\n           FROM              TO\n"
+  },
+  {
+   "castId": 137,
+   "name": "PPage",
+   "type": "text",
+   "text": "2"
+  },
+  {
+   "castId": 138,
+   "name": "PPMin",
+   "type": "text",
+   "text": "1"
+  },
+  {
+   "castId": 139,
+   "name": "PPMax",
+   "type": "text",
+   "text": "50"
+  },
+  {
+   "castId": 140,
+   "name": "PPage1",
+   "type": "text",
+   "text": "2"
+  },
+  {
+   "castId": 141,
+   "name": "PPage2",
+   "type": "text",
+   "text": "2"
+  },
+  {
+   "castId": 145,
+   "name": "TT",
+   "type": "text",
+   "text": "Please, type the number of the first page you want to print in the \"FROM\" box. Type the number of the last page You want to print in the \"TO\" box."
+  },
+  {
+   "castId": 146,
+   "name": "NoPrint1",
+   "type": "text",
+   "text": "Please, type the number of the first page you want to print in the \"FROM\" box. Type the number of the last page You want to print in the \"TO\" box."
+  },
+  {
+   "castId": 147,
+   "name": "NoPrint2",
+   "type": "text",
+   "text": "You can't print more pages then you actualy wrote.The last page you wrote in the family album is"
+  },
+  {
+   "castId": 1001,
+   "name": "DateT1",
+   "type": "text",
+   "text": "Oct.  1, 1880"
+  },
+  {
+   "castId": 1002,
+   "name": "LocT1",
+   "type": "text",
+   "text": "Bank"
+  },
+  {
+   "castId": 1003,
+   "name": "ActT1",
+   "type": "text",
+   "text": " Receive"
+  },
+  {
+   "castId": 1004,
+   "name": "ExpT1",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1005,
+   "name": "IncT1",
+   "type": "text",
+   "text": "$1091"
+  },
+  {
+   "castId": 1006,
+   "name": "TotT1",
+   "type": "text",
+   "text": "$1091"
+  },
+  {
+   "castId": 1007,
+   "name": "NotesT1",
+   "type": "text",
+   "text": "\n\n\n\n\n\n\n\n21\n22\n23\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+   "castId": 1008,
+   "name": "DateT2",
+   "type": "text",
+   "text": "Oct.  1, 1880"
+  },
+  {
+   "castId": 1009,
+   "name": "LocT2",
+   "type": "text",
+   "text": "Store"
+  },
+  {
+   "castId": 1010,
+   "name": "ActT2",
+   "type": "text",
+   "text": "  Buy"
+  },
+  {
+   "castId": 1011,
+   "name": "ExpT2",
+   "type": "text",
+   "text": "$104"
+  },
+  {
+   "castId": 1012,
+   "name": "IncT2",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1013,
+   "name": "TotT2",
+   "type": "text",
+   "text": "$987"
+  },
+  {
+   "castId": 1014,
+   "name": "NotesT2",
+   "type": "text",
+   "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+   "castId": 1015,
+   "name": "DateT3",
+   "type": "text",
+   "text": "Oct.  1, 1880"
+  },
+  {
+   "castId": 1016,
+   "name": "LocT3",
+   "type": "text",
+   "text": "Fields"
+  },
+  {
+   "castId": 1017,
+   "name": "ActT3",
+   "type": "text",
+   "text": "  Build"
+  },
+  {
+   "castId": 1018,
+   "name": "ExpT3",
+   "type": "text",
+   "text": "$83"
+  },
+  {
+   "castId": 1019,
+   "name": "IncT3",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1020,
+   "name": "TotT3",
+   "type": "text",
+   "text": "$904"
+  },
+  {
+   "castId": 1021,
+   "name": "NotesT3",
+   "type": "text",
+   "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+   "castId": 1022,
+   "name": "DateT4",
+   "type": "text",
+   "text": "April 6,  1881"
+  },
+  {
+   "castId": 1023,
+   "name": "LocT4",
+   "type": "text",
+   "text": "$4"
+  },
+  {
+   "castId": 1024,
+   "name": "ActT4",
+   "type": "text",
+   "text": "$1"
+  },
+  {
+   "castId": 1025,
+   "name": "ExpT4",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1026,
+   "name": "IncT4",
+   "type": "text",
+   "text": "$525"
+  },
+  {
+   "castId": 1027,
+   "name": "TotT4",
+   "type": "text",
+   "text": "$4"
+  },
+  {
+   "castId": 1028,
+   "name": "NotesT4",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1029,
+   "name": "DateT5",
+   "type": "text",
+   "text": "April 6,  1881"
+  },
+  {
+   "castId": 1030,
+   "name": "LocT5",
+   "type": "text",
+   "text": "$5"
+  },
+  {
+   "castId": 1031,
+   "name": "ActT5",
+   "type": "text",
+   "text": "$2"
+  },
+  {
+   "castId": 1032,
+   "name": "ExpT5",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1033,
+   "name": "IncT5",
+   "type": "text",
+   "text": "$6000"
+  },
+  {
+   "castId": 1034,
+   "name": "TotT5",
+   "type": "text",
+   "text": "$5"
+  },
+  {
+   "castId": 1035,
+   "name": "NotesT5",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1036,
+   "name": "DateT6",
+   "type": "text",
+   "text": "April 6,  1881"
+  },
+  {
+   "castId": 1037,
+   "name": "LocT6",
+   "type": "text",
+   "text": "$6"
+  },
+  {
+   "castId": 1038,
+   "name": "ActT6",
+   "type": "text",
+   "text": "$3"
+  },
+  {
+   "castId": 1039,
+   "name": "ExpT6",
+   "type": "text",
+   "text": "$4000"
+  },
+  {
+   "castId": 1040,
+   "name": "IncT6",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1041,
+   "name": "TotT6",
+   "type": "text",
+   "text": "$6"
+  },
+  {
+   "castId": 1042,
+   "name": "NotesT6",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1043,
+   "name": "DateT7",
+   "type": "text",
+   "text": "April 6,  1881"
+  },
+  {
+   "castId": 1044,
+   "name": "LocT7",
+   "type": "text",
+   "text": "$2"
+  },
+  {
+   "castId": 1045,
+   "name": "ActT7",
+   "type": "text",
+   "text": "$1"
+  },
+  {
+   "castId": 1046,
+   "name": "ExpT7",
+   "type": "text",
+   "text": "$0"
+  },
+  {
+   "castId": 1047,
+   "name": "IncT7",
+   "type": "text",
+   "text": "$525"
+  },
+  {
+   "castId": 1048,
+   "name": "TotT7",
+   "type": "text",
+   "text": "$7"
+  },
+  {
+   "castId": 1049,
+   "name": "NotesT7",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1050,
+   "name": "Text0",
+   "type": "text",
+   "text": "We're so proud of our youngest daughter."
+  },
+  {
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "type": "text",
+   "text": "  Date    Location  Action   Costs  Income  Balance      Notes"
+  },
+  {
+   "castId": 1052,
+   "name": "HeadSavings",
+   "type": "text",
+   "text": "        Date               Action            Ammount         Total Savings "
+  },
+  {
+   "castId": 1053,
+   "name": "HeadInfo",
+   "type": "text",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n"
+  },
+  {
+   "castId": 1055,
+   "name": "CurrentPage",
+   "type": "text",
+   "text": "3"
+  },
+  {
+   "castId": 1056,
+   "name": "Name1",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1057,
+   "name": "Name2",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1058,
+   "name": "PicText",
+   "type": "text",
+   "text": "1879\n1880\n1881\n1882\n1887\n1888\n1890\n1891\n1893\n1894\n1909\n1910\n1914\n1915\n1917\n1919\n"
+  },
+  {
+   "castId": 1059,
+   "name": "InOut",
+   "type": "text",
+   "text": "5"
+  },
+  {
+   "castId": 1060,
+   "name": "In",
+   "type": "text",
+   "text": "You have $904 in cash.  How much money do you want to put into your box?"
+  },
+  {
+   "castId": 1061,
+   "name": "Out",
+   "type": "text",
+   "text": "How much money do you want to take out of the box?"
+  },
+  {
+   "castId": 1062,
+   "name": "",
+   "type": "text",
+   "text": "You don't have enough money \n            to do this."
+  },
+  {
+   "castId": 1063,
+   "name": "",
+   "type": "text",
+   "text": "Amount of savings"
+  },
+  {
+   "castId": 1064,
+   "name": "MySavings",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1299,
+   "name": "AT",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1301,
+   "name": "T1",
+   "type": "text",
+   "text": "March, 1880\nWe're ready to say good-bye to city life on the East Coast.  We'll travel first by train and then by covered wagon to the High Plains of Kansas. Once we're there, we'll stake a claim for a homestead of 160 acres. Our family is ready to go west and make a new start!"
+  },
+  {
+   "castId": 1302,
+   "name": "T2",
+   "type": "text",
+   "text": "April, 1880\nWe've finally made it to Kansas!  We've found a  good spot for our homestead, not far from a creek  and a small town.  Until we build a house, we're  living in a tent made from the top of our covered wagon.  Once we get settled, we'll get ready to farm our homestead."
+  },
+  {
+   "castId": 1303,
+   "name": "ATexts",
+   "type": "text",
+   "text": "We're so proud of our youngest daughter."
+  },
+  {
+   "castId": 1304,
+   "name": "",
+   "type": "text",
+   "text": "We're so proud of our eldest son."
+  },
+  {
+   "castId": 1305,
+   "name": "",
+   "type": "text",
+   "text": "Our neighbors helped us build this sod house in just one day!"
+  },
+  {
+   "castId": 1306,
+   "name": "",
+   "type": "text",
+   "text": "We finally covered our sod walls with wooden planks. Now it feels like a real house."
+  },
+  {
+   "castId": 1307,
+   "name": "",
+   "type": "text",
+   "text": "Things have been going very well on the homestead.  Now we live in this new house instead of our old one."
+  },
+  {
+   "castId": 1308,
+   "name": "",
+   "type": "text",
+   "text": "We've been living on the homestead for five years now. According to the Homestead Act, now the land is really ours!"
+  },
+  {
+   "castId": 1309,
+   "name": "",
+   "type": "text",
+   "text": "Before we built our well, we had to carry pails of water from the creek every day."
+  },
+  {
+   "castId": 1310,
+   "name": "",
+   "type": "text",
+   "text": "Our team of horses sure have a good appetite at the end of a day's work in the fields."
+  },
+  {
+   "castId": 1311,
+   "name": "",
+   "type": "text",
+   "text": "Some folks use oxen instead of horses to pull their hay wagon."
+  },
+  {
+   "castId": 1312,
+   "name": "",
+   "type": "text",
+   "text": "We finally had enough money to buy some furniture from the store."
+  },
+  {
+   "castId": 1313,
+   "name": "",
+   "type": "text",
+   "text": "Farming is much easier with a big  steam-engine tractor."
+  },
+  {
+   "castId": 1314,
+   "name": "",
+   "type": "text",
+   "text": "The general store sells just about anything you'd want to buy."
+  },
+  {
+   "castId": 1315,
+   "name": "",
+   "type": "text",
+   "text": "Plowing this hard, dry soil is not easy."
+  },
+  {
+   "castId": 1316,
+   "name": "",
+   "type": "text",
+   "text": "Our windmill pumps water from deep underground."
+  },
+  {
+   "castId": 1317,
+   "name": "",
+   "type": "text",
+   "text": "Out here, a town can be built in just a day or two."
+  },
+  {
+   "castId": 1318,
+   "name": "",
+   "type": "text",
+   "text": "We're just starting out, so we made nearly  everything we own with our own hands."
+  },
+  {
+   "castId": 1319,
+   "name": "",
+   "type": "text",
+   "text": "There's nothing as exciting as watching the 12:05 roar into town.  Who knows which letters, packages, or visitors will be on board?"
+  },
+  {
+   "castId": 1320,
+   "name": "",
+   "type": "text",
+   "text": "There's plenty of open space on the Great Plains for farmers, cowboys, and their herds of cattle."
+  },
+  {
+   "castId": 1321,
+   "name": "",
+   "type": "text",
+   "text": "This winter there's plenty of hay for our horses and cows."
+  },
+  {
+   "castId": 1322,
+   "name": "",
+   "type": "text",
+   "text": "This year, three generations of our family sat down to a big Thanks giving dinner."
+  },
+  {
+   "castId": 1323,
+   "name": "",
+   "type": "text",
+   "text": "We miss our eldest daughter, who lives with her husband in Detroit."
+  },
+  {
+   "castId": 1324,
+   "name": "",
+   "type": "text",
+   "text": "This year, our first son was born!"
+  },
+  {
+   "castId": 1325,
+   "name": "",
+   "type": "text",
+   "text": "This year, our second son was born!"
+  },
+  {
+   "castId": 1326,
+   "name": "",
+   "type": "text",
+   "text": "This year, our second daughter was born!"
+  },
+  {
+   "castId": 1327,
+   "name": "ATextsE",
+   "type": "text",
+   "text": "We're so proud of our younger son."
+  },
+  {
+   "castId": 1328,
+   "name": "T18834",
+   "type": "text",
+   "text": "The Brooklyn Bridge in New York City is finally ready. If our creek were as wide as New York's East River, we'd have all the water we need."
+  },
+  {
+   "castId": 1329,
+   "name": "T18858",
+   "type": "text",
+   "text": "August, 1885\nBuffalo Bill's Wild West show came to town. Someone threw a playing card in the air and Annie Oakley shot it ten times.  What a show!"
+  },
+  {
+   "castId": 1330,
+   "name": "T188612",
+   "type": "text",
+   "text": "December, 1886\nThe snowstorms started early this year, and they sure are fierce. I think we're in for a long, cold winter."
+  },
+  {
+   "castId": 1331,
+   "name": "T189012",
+   "type": "text",
+   "text": "December, 1890\nIn Wounded Knee, South Dakota, the U.S. Calvary killed about 200 Sioux Indians who had no weapons. Why did this tragedy happen?"
+  },
+  {
+   "castId": 1332,
+   "name": "T189412",
+   "type": "text",
+   "text": "December, 1894\nThe railroad strikes had me worried.  I thought I wouldn't be able to send my crops to the dealer. Luckily,  the strike was over by harvest time."
+  },
+  {
+   "castId": 1333,
+   "name": "T189612",
+   "type": "text",
+   "text": "December, 1896\nThere's another gold rush. This time it's up in Canada, near the Klondike River.  Cousin George went up there, but we stayed here in Kansas."
+  },
+  {
+   "castId": 1334,
+   "name": "T18988",
+   "type": "text",
+   "text": "August, 1898\nIn faraway Cuba, Teddy Roosevelt's Rough Riders charged up San Juan Hill.  We won Cuba from the Spanish, but we won't keep it."
+  },
+  {
+   "castId": 1335,
+   "name": "T18974",
+   "type": "text",
+   "text": "April, 1897\nImmigrants from Russia brought a new kind of wheat to plant here.  It's called \"Turkey Red,\" and it grows well in dry soil like ours."
+  },
+  {
+   "castId": 1336,
+   "name": "T190312",
+   "type": "text",
+   "text": "December, 1903\nThe Wright brothers went up in their flying machine in Kitty Hawk, North Carolina. The only flying machine in Kansas is a tractor in a tornado!"
+  },
+  {
+   "castId": 1337,
+   "name": "T190511",
+   "type": "text",
+   "text": "Novermber, 1905\nWe've put Teddy Roosevelt back in the White House. He understands the farmers in the Great Plains. He wants to help us find more water."
+  },
+  {
+   "castId": 1338,
+   "name": "T19065",
+   "type": "text",
+   "text": "May, 1906\nCousin George was in San Francisco last  month for the big earthquake. He was so scared that he's moving back to Kansas!"
+  },
+  {
+   "castId": 1339,
+   "name": "T19084",
+   "type": "text",
+   "text": "April, 1908\nThe Ford Company put out a new car, the Model T. It's a good, solid car. Some folks are even using it to pull their plows!"
+  },
+  {
+   "castId": 1340,
+   "name": "T19098",
+   "type": "text",
+   "text": "August, 1909\nWe were glad when Congress passed the Enlarged Homestead Act, but most of our friends think that a 320-acre farm is still too small!"
+  },
+  {
+   "castId": 1341,
+   "name": "T19114",
+   "type": "text",
+   "text": "April, 1911\nThe F.W. Woolworth Company Inc. opened a \"5-and-dime\" store in town.  There are over 1,000 Woolworth stores across the country."
+  },
+  {
+   "castId": 1342,
+   "name": "T19125",
+   "type": "text",
+   "text": "May, 1912\nLast month, the Titanic sank.  More than 1,000 people drowned, including a few millionaires. It just goes to show that money isn't everything."
+  },
+  {
+   "castId": 1343,
+   "name": "T191311",
+   "type": "text",
+   "text": "November, 1913\nCongress passed the 16th Amendment. Now we have to pay income tax. I don't mind, as long as I don't have to fill out a lot of long forms."
+  },
+  {
+   "castId": 1344,
+   "name": "T19164",
+   "type": "text",
+   "text": "April, 1916\nGermany has been threatening our ships. People say that we're about to enter the Great War."
+  },
+  {
+   "castId": 1345,
+   "name": "T191812",
+   "type": "text",
+   "text": "December, 1918\nThe war is over, and Cousin George is coming home from France. He kept his head down during the shooting, but he's getting a medal."
+  },
+  {
+   "castId": 1346,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1347,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1348,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1349,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1350,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1351,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1352,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 1353,
+   "name": "",
+   "type": "text",
+   "text": ""
+  }
+ ]
+}

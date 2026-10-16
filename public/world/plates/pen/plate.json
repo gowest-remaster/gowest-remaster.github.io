@@ -1,0 +1,584 @@
+{
+ "version": 1,
+ "view": "pen",
+ "camera": {
+  "pos": [
+   22,
+   2.2190980789150183,
+   -9
+  ],
+  "look": [
+   33,
+   1.0005680623566187,
+   -25
+  ],
+  "up": [
+   0,
+   1,
+   0
+  ],
+  "fovY": 59.800000000000004,
+  "aspect": 1.7777777777777777,
+  "near": 0.3,
+  "far": 9000
+ },
+ "overscan": 1.3,
+ "size": [
+  2560,
+  1440
+ ],
+ "encoding": {
+  "beauty": "RGBM",
+  "range": 8,
+  "linear": true,
+  "fogBaked": true
+ },
+ "live": [
+  "crops",
+  "fieldSquares",
+  "people",
+  "animals",
+  "windmillWheel",
+  "smoke",
+  "weather"
+ ],
+ "shadowMatte": {
+  "strength": 0.8,
+  "maxDistance": 60
+ },
+ "keys": {
+  "golden": {
+   "sunDir": [
+    -0.92,
+    0.389,
+    0.013
+   ],
+   "sunColor": [
+    1,
+    0.8,
+    0.6
+   ],
+   "sunIntensity": 6.499999999999999,
+   "ambient": [
+    0.08913683373994488,
+    0.09750431756872338,
+    0.09420805400859586
+   ],
+   "ambientUp": [
+    0.26213795517837485,
+    0.3249346708501002,
+    0.3861347842159909
+   ],
+   "ambientDown": [
+    0.17071752038305435,
+    0.18076499489053038,
+    0.19055701302907288
+   ],
+   "exposure": 0.7460399926228267,
+   "hdri": "golden",
+   "units": "sunIntensity is three.js DirectionalLight intensity (white Lambert = I/pi * NdotL); ambient* are white-Lambert outputs"
+  },
+  "morning": {
+   "sunDir": [
+    0.7283325213098806,
+    0.684190641468831,
+    0.037615216719588666
+   ],
+   "sunColor": [
+    1,
+    0.9662871432652467,
+    0.9466053618419065
+   ],
+   "sunIntensity": 9.000000000000002,
+   "ambient": [
+    0.45066319599842664,
+    0.48398191992069084,
+    0.5879274617253383
+   ],
+   "ambientUp": [
+    0.40712804915458056,
+    0.4716863112138875,
+    0.6866096175674467
+   ],
+   "ambientDown": [
+    0.37875037697283304,
+    0.3890796989023221,
+    0.4234674279188916
+   ],
+   "exposure": 0.62,
+   "hdri": "clear",
+   "units": "sunIntensity is three.js DirectionalLight intensity (white Lambert = I/pi * NdotL); ambient* are white-Lambert outputs"
+  },
+  "overcast": {
+   "sunDir": [
+    -0.2549167475848553,
+    0.6368518610617878,
+    0.7276243253650172
+   ],
+   "sunColor": [
+    1,
+    1,
+    1
+   ],
+   "sunIntensity": 0,
+   "ambient": [
+    0.5510935817384409,
+    0.5881565051509079,
+    0.6608922190250469
+   ],
+   "ambientUp": [
+    1.0526608544606104,
+    1.142486362178974,
+    1.3464582135257532
+   ],
+   "ambientDown": [
+    0.16842573671369768,
+    0.18279781794863584,
+    0.2154333141641205
+   ],
+   "exposure": 1.1170675307294606,
+   "hdri": "overcast",
+   "units": "sunIntensity is three.js DirectionalLight intensity (white Lambert = I/pi * NdotL); ambient* are white-Lambert outputs"
+  },
+  "snow": {
+   "sunDir": [
+    0.24131632900631628,
+    0.47978577838438335,
+    0.8435472934074335
+   ],
+   "sunColor": [
+    1,
+    1,
+    1
+   ],
+   "sunIntensity": 0,
+   "ambient": [
+    1.9024960570200515,
+    1.9003944436099687,
+    1.8386341086066935
+   ],
+   "ambientUp": [
+    1.349740715048003,
+    1.3239140256210549,
+    1.3158265134654707
+   ],
+   "ambientDown": [
+    0.2159585144076805,
+    0.2118262440993688,
+    0.21053224215447533
+   ],
+   "exposure": 1.0262630537811415,
+   "hdri": "snow",
+   "units": "sunIntensity is three.js DirectionalLight intensity (white Lambert = I/pi * NdotL); ambient* are white-Lambert outputs"
+  }
+ },
+ "layers": [
+  {
+   "id": "barn",
+   "when": {
+    "barn": true
+   },
+   "bbox": [
+    0,
+    322,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     316,
+     2560,
+     1440
+    ],
+    "morning": [
+     0,
+     312,
+     2560,
+     1440
+    ],
+    "overcast": [
+     0,
+     312,
+     2560,
+     1440
+    ],
+    "snow": [
+     0,
+     316,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "house_frame",
+   "when": {
+    "house": [
+     "frame"
+    ]
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "snow": [
+     0,
+     828,
+     2556,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "house_sod",
+   "when": {
+    "house": [
+     "sod"
+    ]
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "snow": [
+     0,
+     828,
+     2484,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "house_sodFurnished",
+   "when": {
+    "house": [
+     "sodFurnished"
+    ]
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "snow": [
+     0,
+     828,
+     2484,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "house_wagon",
+   "when": {
+    "house": [
+     "wagon",
+     "none"
+    ]
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     832
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     700
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     700
+    ],
+    "snow": [
+     0,
+     1224,
+     364,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "pen",
+   "when": {
+    "any": [
+     {
+      "fenceMin": 1
+     },
+     {
+      "barn": true
+     }
+    ]
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     1424
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "snow": [
+     0,
+     672,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "stock_tank",
+   "when": {
+    "windmill": true
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     700
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     700
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     700
+    ],
+    "snow": [
+     0,
+     0,
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "id": "windmill_aermotor",
+   "when": {
+    "windmill": true,
+    "yearMin": 1888
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     700
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     1336
+    ],
+    "snow": [
+     368,
+     1140,
+     716,
+     1432
+    ]
+   }
+  },
+  {
+   "id": "windmill_halladay",
+   "when": {
+    "windmill": true,
+    "yearMax": 1887
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     700
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "snow": [
+     12,
+     968,
+     1928,
+     1440
+    ]
+   }
+  },
+  {
+   "id": "yard",
+   "when": {
+    "house": [
+     "sod",
+     "sodFurnished",
+     "frame"
+    ]
+   },
+   "bbox": [
+    0,
+    645,
+    2560,
+    1440
+   ],
+   "cropByKey": {
+    "golden": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "morning": [
+     0,
+     468,
+     2560,
+     996
+    ],
+    "overcast": [
+     0,
+     468,
+     2560,
+     1440
+    ],
+    "snow": [
+     0,
+     652,
+     2468,
+     1440
+    ]
+   }
+  }
+ ],
+ "data": "logdepth8",
+ "dataDepth": {
+  "d0": 0.25,
+  "lnRange": 12.468436909997665
+ }
+}

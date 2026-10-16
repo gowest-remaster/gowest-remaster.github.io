@@ -1,0 +1,1618 @@
+{
+ "note": "Message boxes and UI text. calendar/moneyCrisis/field = spec 02 Appendix C.1/C.7/C.8 groups; other keys are curated per screen. Fields marked runtimeFieldDefaults are display fields whose shipped text is leftover authoring content.",
+ "calendar": [
+  {
+   "id": "CALEND.T623",
+   "movie": "CALEND",
+   "castId": 1037,
+   "name": "T623",
+   "text": "I hope you’re happy with your new sod house, neighbor. We built it quickly because we worked together. That's what neighbors do.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoBuild",
+   "movie": "CALEND",
+   "castId": 1040,
+   "name": "NoBuild",
+   "text": "Neighbor, please let me and some\nother folks help you build a barn.\nYour animals need some shade and\nprotection from the rain. \nYou should also dig a well soon.\nBy July, the creek will be almost dry. ",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoWM",
+   "movie": "CALEND",
+   "castId": 1041,
+   "name": "NoWM",
+   "text": "It's very difficult to carry water in pails all the way from the creek. Now the creek is nearly dry. Our neighbors say that if we buy a windmill, they’ll help us build it and dig a well.\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.OnlyBuild",
+   "movie": "CALEND",
+   "castId": 1042,
+   "name": "OnlyBuild",
+   "text": "I'm tired of carrying water from the creek far away. Can we please build the windmill you've bought?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoBarn",
+   "movie": "CALEND",
+   "castId": 1043,
+   "name": "NoBarn",
+   "text": "Neighbor, please let me and some other folks help you build a barn. Your animals need some shade and protection from rain.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.WMEOG",
+   "movie": "CALEND",
+   "castId": 1044,
+   "name": "WMEOG",
+   "text": "Hello, neighbor. I see that you still have no well or windmill. If you buy a windmill, I'll help you build it and dig a well. \n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.AnimD",
+   "movie": "CALEND",
+   "castId": 1045,
+   "name": "AnimD",
+   "text": "The cold weather killed all your animals. Since you don't have a dairy cow, it will cost $10 dollars a month to buy milk from a neighbor.\n\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.AfterTorn",
+   "movie": "CALEND",
+   "castId": 1048,
+   "name": "AfterTorn",
+   "text": "Hello, neighbor. Looks like the tornado left your farm in pretty bad shape! If you need help repairing  things, just ask  for it! \n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.BuildFence",
+   "movie": "CALEND",
+   "castId": 1062,
+   "name": "BuildFence",
+   "text": "You need to build fence.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.Rep",
+   "movie": "CALEND",
+   "castId": 1038,
+   "name": "Rep",
+   "text": "That was some tornado, neighbor.\nIf I were you, I'd fix everything that was\ndamaged as soon as possible. \nIn another month or two, it will be too cold\nto work outside. Anyway, your animals won't \nmake it through the winter without a barn.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.Fire",
+   "movie": "CALEND",
+   "castId": 1137,
+   "name": "Fire",
+   "text": "My crops were destroyed in the prairie fire, too.  We'll have to plow and plant again, if there's enough time.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.GrH",
+   "movie": "CALEND",
+   "castId": 1138,
+   "name": "GrH",
+   "text": "Oh no, all our crops were eaten! Now we'll have to plow and plant again, if there's enough time.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoFence1",
+   "movie": "CALEND",
+   "castId": 1030,
+   "name": "NoFence1",
+   "text": "A herd of cattle trampled some of your crops. In the old country, you could have built a wooden fence around your field, but you won't find much wood around here!\n I've heard about a new kind of fence, but it's not in the general store's catalog yet.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoFence2",
+   "movie": "CALEND",
+   "castId": 1031,
+   "name": "NoFence2",
+   "text": "A herd of cattle trampled some of your crops. You need a good fence around your field. I've heard that neighbor Daniel built a fence out of something new, called barbed wire. Maybe it's in the general store's catalog.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoFence3",
+   "movie": "CALEND",
+   "castId": 1032,
+   "name": "NoFence3",
+   "text": "A few cattle broke down your wooden fence. They destroyed some of your crops. If you go to the general store and look at the catalog, I think you'll find exactly what you need.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.CantBuild",
+   "movie": "CALEND",
+   "castId": 1039,
+   "name": "CantBuild",
+   "text": "It's too cold to build anything right now.\nYou need to wait until early spring.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NothToB",
+   "movie": "CALEND",
+   "castId": 1011,
+   "name": "NothToB",
+   "text": "\n\n\n    You have nothing to build.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoM",
+   "movie": "CALEND",
+   "castId": 1028,
+   "name": "NoM",
+   "text": "You don't have enough money to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoBuy",
+   "movie": "CALEND",
+   "castId": 1063,
+   "name": "NoBuy",
+   "text": "You don't have enough money to buy this.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.LoanRet",
+   "movie": "CALEND",
+   "castId": 1017,
+   "name": "LoanRet",
+   "text": "Time has come to repay your loan. Make sure to come to the bank to repay your loan by the end of the month.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.LoanEnd",
+   "movie": "CALEND",
+   "castId": 1029,
+   "name": "LoanEnd",
+   "text": "You didn't repay your loan on time, so the bank is taking over your farm. I'm sorry to hear you'll be heading back east.\n I hope you'll come back soon and start over again.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.MyHelp",
+   "movie": "CALEND",
+   "castId": 1061,
+   "name": "MyHelp",
+   "text": "I need your help to finish the work in my field on time. ",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.Startover",
+   "movie": "CALEND",
+   "castId": 1136,
+   "name": "Startover",
+   "text": "Be careful! If you start over all your work will be erased.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.NoHouse",
+   "movie": "CALEND",
+   "castId": 1046,
+   "name": "NoHouse",
+   "text": "Can you hear those folks in town talking? They'd like to meet you. Why don't you come by and say hello?\n\n\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.YesHouse",
+   "movie": "CALEND",
+   "castId": 1047,
+   "name": "YesHouse",
+   "text": "Congratulations! You have another son! Your monthly cost of living will increase by five dollars per month. \n\nMy baby's name is:\n\n\n\n",
+   "source": "text-member"
+  }
+ ],
+ "moneyCrisis": [
+  {
+   "id": "SHARED.NOM1",
+   "movie": "SHARED",
+   "castId": 3080,
+   "name": "NOM1",
+   "text": "\nYou folks are very brave, but no one can survive out here without money to buy food and supplies. I collected $100.00 from your neighbors to help you through the winter. I'm sure you would do the same for us.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NoM2",
+   "movie": "SHARED",
+   "castId": 3081,
+   "name": "NoM2",
+   "text": "\nTake money out of the box under your bed.",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NoM3",
+   "movie": "SHARED",
+   "castId": 3082,
+   "name": "NoM3",
+   "text": " \nAfter all your hard work, it's a shame not to sell your crops. It's no wonder that you ran out of money. I think you should sell your crops right away.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NoM4",
+   "movie": "SHARED",
+   "castId": 3083,
+   "name": "NoM4",
+   "text": "Hello, neighbor. You look as though you could use some advice. You can use your homestead claim as security to borrow money from the bank.\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NOM5",
+   "movie": "SHARED",
+   "castId": 3084,
+   "name": "NOM5",
+   "text": "\nI'm sorry to hear that you're heading back east. We heard that you ran out of money. I collected $50.00 from your neighbors to help pay for your journey. I hope you'll come back next year and try again. ",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NOM6",
+   "movie": "SHARED",
+   "castId": 3085,
+   "name": "NOM6",
+   "text": "\nI'm sorry to hear that you're heading back east. We heard that you ran out of money. I hope you'll come back next year and try again. ",
+   "source": "text-member"
+  }
+ ],
+ "field": [
+  {
+   "id": "FIELD.NoPlow1",
+   "movie": "FIELD",
+   "castId": 1000,
+   "name": "NoPlow1",
+   "text": "\nThere are enough things to do here. You don't have to plow the fields twice and make extra work for yourself.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlow2",
+   "movie": "FIELD",
+   "castId": 1001,
+   "name": "NoPlow2",
+   "text": "\nYou planted some crops that you haven't harvested yet. If you plow now, you will destroy all your hard work.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlow3",
+   "movie": "FIELD",
+   "castId": 1002,
+   "name": "NoPlow3",
+   "text": "\nThe land is frozen. If you plow now, you could break your plow. It's better to wait until spring.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.Noplow4",
+   "movie": "FIELD",
+   "castId": 1003,
+   "name": "Noplow4",
+   "text": "\nThe land is very muddy from all the rain. The plow will sink in the mud. It's better to wait until fall.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlow5",
+   "movie": "FIELD",
+   "castId": 1004,
+   "name": "NoPlow5",
+   "text": " \nHello, neighbor. I'm glad to see you. It's not time to plant yet. First, you should harvest the last crop that you planted.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlow6",
+   "movie": "FIELD",
+   "castId": 1005,
+   "name": "NoPlow6",
+   "text": "\nI'm waiting for you to sell me your crops. I'll give you a good price.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.FDBK7",
+   "movie": "FIELD",
+   "castId": 1006,
+   "name": "FDBK7",
+   "text": "Great. Now that you finished plowing,                 you can start planting.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.StopPlow1",
+   "movie": "FIELD",
+   "castId": 1007,
+   "name": "StopPlow1",
+   "text": "\nThe summer rains started before you finished  plowing. You have to stop plowing now. Your fields are all muddy.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.StopPlow2",
+   "movie": "FIELD",
+   "castId": 1008,
+   "name": "StopPlow2",
+   "text": "\nThe ground froze before you finished plowing. You have to stop plowing now. It's starting to snow.\n\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.StopPlow3",
+   "movie": "FIELD",
+   "castId": 1009,
+   "name": "StopPlow3",
+   "text": "Your plow broke. The land is very hard in this area. What are you going to do?\n\n      1.  Buy a new steel right away for $50.\n\n      2.  Fix the old plow for free, \n           which takes a few days.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.StopPlow4",
+   "movie": "FIELD",
+   "castId": 1010,
+   "name": "StopPlow4",
+   "text": "\nOne of your horses is sick. Now you can use only one horse, so your plowing will take twice as long.\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoMoney",
+   "movie": "FIELD",
+   "castId": 1011,
+   "name": "NoMoney",
+   "text": "\n\n     I'm sorry. You don't have enough cash\n                    to buy a new plow. \n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlant1",
+   "movie": "FIELD",
+   "castId": 1012,
+   "name": "NoPlant1",
+   "text": "\nYou don't have any seeds. Drop by the store to order some. You can look at our catalog which shows the seeds you can buy and the plants you can grow from them.\n\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlant2",
+   "movie": "FIELD",
+   "castId": 1013,
+   "name": "NoPlant2",
+   "text": "\nSoon the hot summer sun will beat down on your fields and dry out your seeds. If I were you, I would plow my land before I plant those seeds.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlant3",
+   "movie": "FIELD",
+   "castId": 1014,
+   "name": "NoPlant3",
+   "text": "\nIf you don't plow your land soon, the winds will scatter most of your seeds. Those seeds will grow, but not necessarily on your land.\n\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlant4",
+   "movie": "FIELD",
+   "castId": 1015,
+   "name": "NoPlant4",
+   "text": "\nHello, neighbor. I'm glad to see you. It's not time to plant yet. First, you should harvest the last crop that you planted.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlant5",
+   "movie": "FIELD",
+   "castId": 1016,
+   "name": "NoPlant5",
+   "text": "\n\nI think the seed catalog suggested a different season for planting those seeds. If I were you, I would check the catalog.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlant6",
+   "movie": "FIELD",
+   "castId": 1032,
+   "name": "NoPlant6",
+   "text": "It's too early to plow or plant your fields, neighbor. The ground is still frozen. Why don't you wait until April, when the ground thaws?",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlant7",
+   "movie": "FIELD",
+   "castId": 1031,
+   "name": "NoPlant7",
+   "text": "You can't plant any seeds now, neighbor.\nYou've already planted all the land you plowed.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoPlant8",
+   "movie": "FIELD",
+   "castId": 1033,
+   "name": "NoPlant8",
+   "text": "I wouldn't plow or plant in the middle of summer, neighbor. The seeds won't grow well now.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoHarv1",
+   "movie": "FIELD",
+   "castId": 1017,
+   "name": "NoHarv1",
+   "text": "\nHave patience, my friend. Give your plants enough time to grow before you harvest them.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoHarv2",
+   "movie": "FIELD",
+   "castId": 1018,
+   "name": "NoHarv2",
+   "text": "\nMy friend, you have to plant before you can harvest.You can't get something from nothing.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoHarv3",
+   "movie": "FIELD",
+   "castId": 1019,
+   "name": "NoHarv3",
+   "text": "\n Hello there, neighbor. I see that you still have a bit to learn about farming. You can't harvest your fields before you've even plowed them and planted some seeds.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.StopHarv1",
+   "movie": "FIELD",
+   "castId": 1023,
+   "name": "StopHarv1",
+   "text": "\nThe summer rains started early this year. They destroyed the rest of your crops. There's no point in harvesting them now.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.StopHarv2",
+   "movie": "FIELD",
+   "castId": 1024,
+   "name": "StopHarv2",
+   "text": "\nWinter came early this year. The first frost killed the rest of your crops. There's no point in harvesting them now.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.OneWor",
+   "movie": "FIELD",
+   "castId": 1021,
+   "name": "OneWor",
+   "text": "\nI'm sorry. You don't have enough money to pay me. I can't work for you if you can't pay me.\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.ManyWor",
+   "movie": "FIELD",
+   "castId": 1022,
+   "name": "ManyWor",
+   "text": "\nI'm sorry. You don't have enough money to pay us. We can't work for you if you can't pay us.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.EndHarv",
+   "movie": "FIELD",
+   "castId": 1041,
+   "name": "EndHarv",
+   "text": "\nNow that you've harvested your crops, it's time to sell them. I'll make you an  offer you can't refuse.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.Tractor",
+   "movie": "FIELD",
+   "castId": 1020,
+   "name": "Tractor",
+   "text": "\nThere aren't enough tractors for all of us. Make sure that you have a tractor for each worker you hire.\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.FDB18",
+   "movie": "FIELD",
+   "castId": 1029,
+   "name": "FDB18",
+   "text": "You were lucky. The summer rains started late this year. Your horse recovered and you finished plowing before the rain started. \n\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.FDBK19",
+   "movie": "FIELD",
+   "castId": 1030,
+   "name": "FDBK19",
+   "text": "You were lucky this time. The horses recovered and you finished plowing before the snow started. \n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoBuild",
+   "movie": "FIELD",
+   "castId": 1025,
+   "name": "NoBuild",
+   "text": "\n\nYou need more money to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.NoSell",
+   "movie": "FIELD",
+   "castId": 1026,
+   "name": "NoSell",
+   "text": "\n\nYou have nothing to sell.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.GoBank",
+   "movie": "FIELD",
+   "castId": 1027,
+   "name": "GoBank",
+   "text": "\n\nGo to the bank to collect your money.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.Hints",
+   "movie": "FIELD",
+   "castId": 999,
+   "name": "Hints",
+   "text": "2,10,11,16,18,22\nClick on the squares you want to plow. Each square\nrepresents 20 acres. Decide how many workers to hire\nby clicking on the arrows in the Workers box. To start \nplowing, click on OK. To leave the fields without plowing,\nclick on Cancel. Tip: In the spring try to finish plowing\nyour fields by the end of May, before the heavy summer\nrains start and the ground becomes too muddy for plowing.\nIn the fall, try to finish plowing before the first frost,\nwhich comes in early October.\nOnce you have finished plowing your field, decide which \nseeds to plant. Make sure that you have bought enough \nseeds before you start planting. To plant, drag the seeds\n from the Seeds in Storage to the square you want to plant.\nTo start planting, click on OK. \nTo leave the field without planting, click on Cancel.\n\nDecide how many workers to hire by clicking on the arrows\n in the Workers box. Tip: Try to finish harvesting winter wheat \nin time to prepare your fields for planting summer crops. \nTry to finish harvesting summer crops in time to prepare\n your fields for planting winter wheat.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.YearCal",
+   "movie": "FIELD",
+   "castId": 1114,
+   "name": "YearCal",
+   "text": "1,0,0,0,1,0,1\n2,0,0,0,1,0,1\n3,0,0,0,1,0,1\n4,1,1,0,1,0,1\n4,1,3,0,1,0,1\n4,1,4,0,1,0,1\n5,1,0,2,1,1,2\n6,0,0,0,0,1,3\n7,0,0,0,0,1,3\n8,0,0,0,0,1,3\n9,1,2,1,1,0,4\n9,1,2,3,1,0,4\n9,1,2,4,1,0,4\n10,0,0,0,1,0,4\n11,0,0,0,0,1,0,4\n12,0,0,0,0,1,0,1\nMonth,Plow,Plant,Harvest,Frost,Sunshine,Season\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.Dealers",
+   "movie": "FIELD",
+   "castId": 1135,
+   "name": "Dealers",
+   "text": "1880,1,-2,1,12,98,+2,2,06,169\n1880,2,0,1,12,168,+2,2,07,169\n1881,1,0,1,12,170,+2,2,07,171\n1881,2,0,1,12,172,+3,2,07,173\n1882,1,-3,1,12,174,+3,2,08,175\n1882,2,-3,1,12,176,+3,1,16,177\n1887,2,+1,1,14,180,+3,1,18,181\n1888,1,-2,1,14,178,+2,1,18,179\n1888,2,+2,1,14,184,+4,1,20,185\n1893,2,-30,1,14,186,-40,1,20,187,-20,1,18,188\n1894,2,0,2,10,189,+4,2,18,179,+2,2,15,191\n1914,2,+2,1,15,193,+3,1,15,194,0,1,10,195\n1915,1,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1915,2,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1916,1,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1916,2,+2,1,14,196,+7,1,15,197,0,1,10,198,+10,3,40,199\n1917,1,+5,1,14,200,+10,1,15,201,-10,1,10,202,+10,3,40,203\n1917,2,+5,1,14,200,-10,1,15,201,+10,1,10,202,+10,3,40,203\n1918,1,+5,1,14,204,+10,1,15,205,-10,1,10,206,+10,3,40,207\n1918,2,+5,1,14,204,+10,1,15,205,-10,1,10,206,+10,3,40,207\n1919,1,+2,1,14,204,-2,1,15,205,+7,1,15,206,+10,3,40,207\n1919,2,+2,1,14,204,-2,1,15,205,+7,1,15,206,+10,3,40,207\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.Transport",
+   "movie": "FIELD",
+   "castId": 1139,
+   "name": "Transport",
+   "text": "Train\nWagon\nTrain and Boat",
+   "source": "text-member"
+  }
+ ],
+ "calendarExtra": [
+  {
+   "id": "CALEND.CurFDBK1",
+   "movie": "CALEND",
+   "castId": 1009,
+   "name": "CurFDBK1",
+   "text": "Now you are a homestead farmer who is successful\nin business. What do you want to do next?\n    \n       I want to\n\n       keep farming my homestead and remain \n       successful in business.\n\n       keep farming my homestead and become mayor.\n\n       let my son take over the homestead so I can \n       retire in town.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.Startover",
+   "movie": "CALEND",
+   "castId": 1136,
+   "name": "Startover",
+   "text": "Be careful! If you start over all your work will be erased.",
+   "source": "text-member"
+  }
+ ],
+ "goalLists": [
+  {
+   "id": "CALEND.ListM8",
+   "movie": "CALEND",
+   "castId": 1140,
+   "name": "ListM8",
+   "text": "                                                   TOWN OF LONGVIEW\n                                             BUFFALO COUNTY, KANSAS\n\n The people of Longview want to know where you stand.\n Click on the issues you support :\n\n        America should get involved in the war in Europe.\n       \n        All women in America should be allowed to vote.\n     \n        Kansas should remain a \"dry\" state.    \n         \n        The federal government should own and operate the railroads.\n       \n        Ranchers should be put in jail for grazing their cattle on farmland. \n       \n        Citizens under 18 years of age should be allowed to carry pistols in town.   \n     \n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.List551",
+   "movie": "CALEND",
+   "castId": 1147,
+   "name": "List551",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1916:  $2,000.00\nLONGVIEW PROJECTS FOR 1916:\n\n        Hire two more schoolteachers.\n        $1,500.00\n\n        Put indoor plumbing in all public buildings.\n        $500\n\n        Bring the Kansas Symphony Orchestra to play in Longview.\n        $150.00\n\n        Build a public library.\n        $850.00\n\nTOTAL:  $________   \n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.List552",
+   "movie": "CALEND",
+   "castId": 1148,
+   "name": "List552",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1917:  $2,300.00\nLONGVIEW PROJECTS FOR 1917:\n\n        Build a park.\n        $250.00\n\n        Build a new town hall.\n        $1,200.00\n\n        Repave Main Street.\n        $500.00\n\n        Put in concrete sidewalks on Main Street.\n        $500.00\n\nTOTAL:  $________   ",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.List553",
+   "movie": "CALEND",
+   "castId": 1149,
+   "name": "List553",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1918:  $2,400.00\nLONGVIEW PROJECTS FOR 1918:\n\n        Buy a fire engine.\n        $1,000.00\n\n        Pave all the side streets.\n        $500.00\n\n        Build a new city jail on the other side of the tracks.\n        $850.00\n\n        Hire a deputy sheriff.\n        $1,000.00\n\nTOTAL:  $________   \n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.List554",
+   "movie": "CALEND",
+   "castId": 1150,
+   "name": "List554",
+   "text": "As mayor, you choose the town council's goals for this year. \nWhat will you do this year?\nLONGVIEW PROJECT BUDGET FOR 1919:  $2,600.00\nLONGVIEW PROJECTS FOR 1919:\n\n        Build a war memorial in memory of the fallen soldiers of Longview.\n        $500.00\n\n        Build a baseball diamond and park.\n        $400.00\n\n        Build a new courthouse.\n        $1,300.00\n        \n        Build a new post office.\n        $1,000.00\n\nTOTAL:  $________   \n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.Sys836",
+   "movie": "CALEND",
+   "castId": 1151,
+   "name": "Sys836",
+   "text": "\n\n     Your plans for this year cost too much. \n  Try to stick to this year's town budget.",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.ListInfo",
+   "movie": "CALEND",
+   "castId": 1152,
+   "name": "ListInfo",
+   "text": "4,2000,1500,500,150,850\n4,2300,150,950,300,350\n2,2600,900,500\n2,300,500,3500",
+   "source": "text-member"
+  }
+ ],
+ "fieldExtra": [
+  {
+   "id": "FIELD.#998",
+   "movie": "FIELD",
+   "castId": 998,
+   "name": "",
+   "text": "800 Series Dialog Boxes\n\n822     \"NoPlant7\"\nNeighbor Daniel:\nYou can't plant any seeds now, neighbor. You already planted all the land you plowed.\n\n\n823     \nNeighbor Daniel:\nIt's too early to harvest your crop, neighbor. Why don't you wait until it's completely ripe?\n\n\n824    \"NoPlant6\"\nNeighbor Daniel: \nIt's too early to plow or plant your fields, neighbor. The ground is still frozen. Why don't you wait until April, when the ground thaws?\n\nSummer, no rain:\n825 \"NoPlant8\"\nNeighbor Daniel: \nI wouldn't plow or plant in the middle of summer, neighbor. Seeds don't grow well in such hot, dry weather.\n\n\n826 \nNeighbor Daniel: \nNow that you've plowed, it's a shame not to plant your seeds. If you wait too long to plant, you'll have to plow again.\n\n\n830\nSystem: \nNow you are a successful homestead farmer. What do you want to do next?\n        \nI want to\nkeep farming my homestead.\nkeep farming my homestead and become successful in business.\nkeep farming my homestead and become mayor.\nlet my son take over the homestead so I can retire.\n\n\n\n831 \nSystem: \nNow you are a successful homestead farmer. What do you want to do next?\n        \nI want to\nkeep farming my homestead.\nkeep farming my homestead and become successful in business.\nlet my son take over the homestead so I can retire.\n\n\n\n832 \nSystem: \nNow you are a homestead farmer who is successful in business. What do you want to do next?\n        \nI want to\nkeep farming my homestead and remain successful in business.\nkeep farming my homestead and become mayor.\nlet my son take over the homestead so I can retire in town.\n\n\n\n833 \nSystem:\nCONGRATULATIONS! You were a homestead farmer for 40 years. You did not reach the goal you set at the beginning, but you ran a profitable farm. Any pioneer would have been proud of your achievement.\n\n\n\n\n\n834 \nSystem: \nNow you are a homestead farmer who is successful in business. What do you want to do next?\n        \nI want to\nkeep farming my homestead and remain successful in business.\nlet my son take over the homestead so I can retire in town.\n\n\n\n833 \nSystem:\nCONGRATULATIONS! You were a homestead farmer for 40 years. You did not reach the goal you set at the beginning, but you ran a profitable farm. Any pioneer would have been proud of your achievement.\n \n\n835\nHarriet\nHi, neighbor.  Welcome to the general store.  If you take a look at the catalog on the table, you'll learn all kinds of useful things or order some products.\n\n\nSummer, rain:\n836\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.FDBK",
+   "movie": "FIELD",
+   "castId": 1035,
+   "name": "FDBK",
+   "text": "Your plow broke. The land is very hard in this area. What are you going to do?\n\n      1.  Buy a new steel right away for $50.\n\n      2.  Fix the old plow for free, \n           which takes a few days.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.#1138",
+   "movie": "FIELD",
+   "castId": 1138,
+   "name": "",
+   "text": "    deafault\nSaleOffer between, X and X-6%,X and X+5%,X-7% and X+6%,X+10%\ntranspo,1,1,1,3\nT_cost between: 12c to 16c,14c to 20c,10c to 16c,40c\nsegment,178,179,192,203\nappear first time:1880,1,1880,1,1893,2,1915,1",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.EndHarv1",
+   "movie": "FIELD",
+   "castId": 1042,
+   "name": "EndHarv1",
+   "text": "\nNow that you've harvested your crops, it's time to sell them. I'll make you an  offer you can't refuse.",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.CopyPlant",
+   "movie": "FIELD",
+   "castId": 997,
+   "name": "CopyPlant",
+   "text": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+   "source": "text-member"
+  }
+ ],
+ "street": [
+  {
+   "id": "TSTREET1.NoM",
+   "movie": "TSTREET1",
+   "castId": 1003,
+   "name": "NoM",
+   "text": "\n\n  You don't have enough money to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "TSTREET1.BuyLand",
+   "movie": "TSTREET1",
+   "castId": 1004,
+   "name": "BuyLand",
+   "text": "You don't have enough money to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "TSTREET1.Deal2",
+   "movie": "TSTREET1",
+   "castId": 1008,
+   "name": "Deal2",
+   "text": "The O'Grady grain elevator is offering 19 cents\nmore per bushel than the Longview elevator.\nI will haul your crops to O'Grady for $74.00. \n",
+   "source": "text-member"
+  },
+  {
+   "id": "TSTREET1.NoSale",
+   "movie": "TSTREET1",
+   "castId": 1010,
+   "name": "NoSale",
+   "text": "\n\nYou have nothing to sell.",
+   "source": "text-member"
+  },
+  {
+   "id": "TSTREET1.No1894",
+   "movie": "TSTREET1",
+   "castId": 1012,
+   "name": "No1894",
+   "text": "Hi there, neighbor. I have bad news for you.\nMy grain elevator is full, so I can't buy your grain. Because of the railroad strike, I can't ship the grain\nback east. Come back when the strike is finished.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "TSTREET1.CurFDBK",
+   "movie": "TSTREET1",
+   "castId": 1009,
+   "name": "CurFDBK",
+   "text": "\n\nYou have nothing to sell.",
+   "source": "text-member"
+  },
+  {
+   "id": "TSTREET1.#1007",
+   "movie": "TSTREET1",
+   "castId": 1007,
+   "name": "",
+   "text": " \n       Crops         Bushels          Price          Total\n                                         per bushel\n______________________________________________\n Winter wheat:    88888    x    $15.40   =   $8888888\n Spring wheat:                 x                 =\n Corn:                             x               =\n Oats:                              x               =  \n_______________________________________________\n \n                                     Total payment : \n",
+   "source": "text-member"
+  }
+ ],
+ "bank": [
+  {
+   "id": "BANK09.Telegram",
+   "movie": "BANK09",
+   "castId": 1013,
+   "name": "Telegram",
+   "text": "TELEGRAM \nFROM: O'Grady Town\nTO: dfgg\n\nI have some bad news for you. On my way to O'Grady, \nI was caught in a sudden rainstorm. Part of your crop was ruined. I could only sell some of it. You can get your money from the cashier at the bank. I hope next time we'll have better luck.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "BANK09.Tel",
+   "movie": "BANK09",
+   "castId": 1014,
+   "name": "Tel",
+   "text": "TELEGRAM \nFROM: O'Grady Town\nTO: Alla Ladizinsky\n\nI have some bad news for you. On my way to O'Grady, \nI was caught in a sudden rainstorm. Part of your crop was ruined. I could only sell some of it. You can get your money from the cashier at the bank. I hope next time we'll have better luck.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "BANK09.Loans",
+   "movie": "BANK09",
+   "castId": 1001,
+   "name": "Loans",
+   "text": "     $100            \n     $200            \n     $300            \n     $400            \n     $500            \n     $600            \n     $700           \n    $800    ",
+   "source": "text-member"
+  },
+  {
+   "id": "BANK09.Return",
+   "movie": "BANK09",
+   "castId": 1010,
+   "name": "Return",
+   "text": "       $50               \n       $100               \n       $200               ",
+   "source": "text-member"
+  }
+ ],
+ "bankPayDate": [
+  {
+   "id": "BANK09.PayDate",
+   "movie": "BANK09",
+   "castId": 66,
+   "name": "PayDate",
+   "text": "          1         \n          3        \n         5   ",
+   "source": "text-member"
+  },
+  {
+   "id": "BANK09.PayDate",
+   "movie": "BANK09",
+   "castId": 1003,
+   "name": "PayDate",
+   "text": "            1            \n           5   ",
+   "source": "text-member"
+  }
+ ],
+ "house": [
+  {
+   "id": "SHARED.NH1",
+   "movie": "SHARED",
+   "castId": 3263,
+   "name": "NH1",
+   "text": "Hi, neighbor. Did you know that you can afford some new furniture for your house? It will help make even the plainest sod house prettier. New furniture costs $200.00. Would you like to buy it?\n",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NH2",
+   "movie": "SHARED",
+   "castId": 3264,
+   "name": "NH2",
+   "text": "Hi, neighbor. Did you know that you can afford a ready-made wooden house? It is more comfortable and spacious than a sod house. A ready-made wooden house costs $1,000.00. Would you like to buy it?\n",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.NewHouse",
+   "movie": "SHARED",
+   "castId": 3257,
+   "name": "NewHouse",
+   "text": "Hi, neighbor. Did you know that you can afford some new furniture for your house? It will help make even the plainest sod house prettier. New furniture costs $200.00. Would you like to buy it?\n",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.PutIn",
+   "movie": "SHARED",
+   "castId": 3265,
+   "name": "PutIn",
+   "text": "You have $0.00\nin your savings box.\nHow much money \ndo you want to put in?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "SHARED.TakeOut",
+   "movie": "SHARED",
+   "castId": 3266,
+   "name": "TakeOut",
+   "text": "You have $0.00\nin your savings box.\n How much money \ndo you want to take out?\n",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.In",
+   "movie": "HOUSE1",
+   "castId": 1060,
+   "name": "In",
+   "text": "You have $2,040.00 in cash. How much money do you want to put away in your box?",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.Out",
+   "movie": "HOUSE1",
+   "castId": 1061,
+   "name": "Out",
+   "text": "How much money do you want to take out of the box?",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.#1062",
+   "movie": "HOUSE1",
+   "castId": 1062,
+   "name": "",
+   "text": "You don't have enough money \n            to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.#1063",
+   "movie": "HOUSE1",
+   "castId": 1063,
+   "name": "",
+   "text": "Amount of savings",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.HeadLobBook",
+   "movie": "HOUSE1",
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "text": "  Date        Location     Action      Cost       Income     Balance        Notes",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.HeadSavings",
+   "movie": "HOUSE1",
+   "castId": 1052,
+   "name": "HeadSavings",
+   "text": "        Date               Action            Ammount         Total Savings ",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.HeadInfo",
+   "movie": "HOUSE1",
+   "castId": 1053,
+   "name": "HeadInfo",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n",
+   "source": "text-member"
+  }
+ ],
+ "exitDialog": {
+  "id": "HOUSE1.#6",
+  "movie": "HOUSE1",
+  "castId": 6,
+  "name": "",
+  "text": "Do you want to save your game?\n\n",
+  "source": "text-member"
+ },
+ "perMovieCopies": [
+  {
+   "id": "ALBUM.HeadLobBook",
+   "movie": "ALBUM",
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "text": "  Date    Location  Action   Costs  Income  Balance      Notes",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.HeadSavings",
+   "movie": "ALBUM",
+   "castId": 1052,
+   "name": "HeadSavings",
+   "text": "        Date               Action            Ammount         Total Savings ",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.HeadInfo",
+   "movie": "ALBUM",
+   "castId": 1053,
+   "name": "HeadInfo",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.In",
+   "movie": "ALBUM",
+   "castId": 1060,
+   "name": "In",
+   "text": "You have $904 in cash.  How much money do you want to put into your box?",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.Out",
+   "movie": "ALBUM",
+   "castId": 1061,
+   "name": "Out",
+   "text": "How much money do you want to take out of the box?",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1062",
+   "movie": "ALBUM",
+   "castId": 1062,
+   "name": "",
+   "text": "You don't have enough money \n            to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "ALBUM.#1063",
+   "movie": "ALBUM",
+   "castId": 1063,
+   "name": "",
+   "text": "Amount of savings",
+   "source": "text-member"
+  },
+  {
+   "id": "BANK09.#1000",
+   "movie": "BANK09",
+   "castId": 1000,
+   "name": "",
+   "text": "\n\nDo you want to save your game?",
+   "source": "text-member"
+  },
+  {
+   "id": "BHOUSE1.#6",
+   "movie": "BHOUSE1",
+   "castId": 6,
+   "name": "",
+   "text": "Do you want to save your game?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "BHOUSE1.HeadLobBook",
+   "movie": "BHOUSE1",
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "text": "  Date        Location     Action      Cost       Income     Balance        Notes",
+   "source": "text-member"
+  },
+  {
+   "id": "BHOUSE1.HeadSavings",
+   "movie": "BHOUSE1",
+   "castId": 1052,
+   "name": "HeadSavings",
+   "text": "        Date               Action            Ammount         Total Savings ",
+   "source": "text-member"
+  },
+  {
+   "id": "BHOUSE1.HeadInfo",
+   "movie": "BHOUSE1",
+   "castId": 1053,
+   "name": "HeadInfo",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n",
+   "source": "text-member"
+  },
+  {
+   "id": "BHOUSE1.In",
+   "movie": "BHOUSE1",
+   "castId": 1060,
+   "name": "In",
+   "text": "You have $2,040.00 in cash. How much money do you want to put away in your box?",
+   "source": "text-member"
+  },
+  {
+   "id": "BHOUSE1.Out",
+   "movie": "BHOUSE1",
+   "castId": 1061,
+   "name": "Out",
+   "text": "How much money do you want to take out of the box?",
+   "source": "text-member"
+  },
+  {
+   "id": "BHOUSE1.#1062",
+   "movie": "BHOUSE1",
+   "castId": 1062,
+   "name": "",
+   "text": "You don't have enough money \n            to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "BHOUSE1.#1063",
+   "movie": "BHOUSE1",
+   "castId": 1063,
+   "name": "",
+   "text": "Amount of savings",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.#128",
+   "movie": "CALEND",
+   "castId": 128,
+   "name": "",
+   "text": "Do you want to save your game?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.#1034",
+   "movie": "FIELD",
+   "castId": 1034,
+   "name": "",
+   "text": "Do you want to save your work?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.#6",
+   "movie": "HOUSE1",
+   "castId": 6,
+   "name": "",
+   "text": "Do you want to save your game?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.HeadLobBook",
+   "movie": "HOUSE1",
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "text": "  Date        Location     Action      Cost       Income     Balance        Notes",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.HeadSavings",
+   "movie": "HOUSE1",
+   "castId": 1052,
+   "name": "HeadSavings",
+   "text": "        Date               Action            Ammount         Total Savings ",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.HeadInfo",
+   "movie": "HOUSE1",
+   "castId": 1053,
+   "name": "HeadInfo",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.In",
+   "movie": "HOUSE1",
+   "castId": 1060,
+   "name": "In",
+   "text": "You have $2,040.00 in cash. How much money do you want to put away in your box?",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.Out",
+   "movie": "HOUSE1",
+   "castId": 1061,
+   "name": "Out",
+   "text": "How much money do you want to take out of the box?",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.#1062",
+   "movie": "HOUSE1",
+   "castId": 1062,
+   "name": "",
+   "text": "You don't have enough money \n            to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE1.#1063",
+   "movie": "HOUSE1",
+   "castId": 1063,
+   "name": "",
+   "text": "Amount of savings",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE2.#6",
+   "movie": "HOUSE2",
+   "castId": 6,
+   "name": "",
+   "text": "Do you want to save your game?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE2.HeadLobBook",
+   "movie": "HOUSE2",
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "text": "  Date        Location     Action      Cost       Income     Balance        Notes",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE2.HeadSavings",
+   "movie": "HOUSE2",
+   "castId": 1052,
+   "name": "HeadSavings",
+   "text": "        Date               Action            Ammount         Total Savings ",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE2.HeadInfo",
+   "movie": "HOUSE2",
+   "castId": 1053,
+   "name": "HeadInfo",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE2.In",
+   "movie": "HOUSE2",
+   "castId": 1060,
+   "name": "In",
+   "text": "You have $2,040.00 in cash. How much money do you want to put away in your box?",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE2.Out",
+   "movie": "HOUSE2",
+   "castId": 1061,
+   "name": "Out",
+   "text": "How much money do you want to take out of the box?",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE2.#1062",
+   "movie": "HOUSE2",
+   "castId": 1062,
+   "name": "",
+   "text": "You don't have enough money \n            to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE2.#1063",
+   "movie": "HOUSE2",
+   "castId": 1063,
+   "name": "",
+   "text": "Amount of savings",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE3.#7",
+   "movie": "HOUSE3",
+   "castId": 7,
+   "name": "",
+   "text": "Do you want to save your game?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE3.HeadLobBook",
+   "movie": "HOUSE3",
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "text": "  Date        Location     Action      Cost       Income     Balance        Notes",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE3.HeadSavings",
+   "movie": "HOUSE3",
+   "castId": 1052,
+   "name": "HeadSavings",
+   "text": "        Date               Action            Ammount         Total Savings ",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE3.HeadInfo",
+   "movie": "HOUSE3",
+   "castId": 1053,
+   "name": "HeadInfo",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE3.In",
+   "movie": "HOUSE3",
+   "castId": 1060,
+   "name": "In",
+   "text": "You have $2,040.00 in cash. How much money do you want to put away in your box?",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE3.Out",
+   "movie": "HOUSE3",
+   "castId": 1061,
+   "name": "Out",
+   "text": "How much money do you want to take out of the box?",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE3.#1062",
+   "movie": "HOUSE3",
+   "castId": 1062,
+   "name": "",
+   "text": "You don't have enough money \n            to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "HOUSE3.#1063",
+   "movie": "HOUSE3",
+   "castId": 1063,
+   "name": "",
+   "text": "Amount of savings",
+   "source": "text-member"
+  },
+  {
+   "id": "NEWS.HeadLobBook",
+   "movie": "NEWS",
+   "castId": 1051,
+   "name": "HeadLobBook",
+   "text": "  Date    Location  Action   Costs  Income  Balance      Notes",
+   "source": "text-member"
+  },
+  {
+   "id": "NEWS.HeadSavings",
+   "movie": "NEWS",
+   "castId": 1052,
+   "name": "HeadSavings",
+   "text": "        Date               Action            Ammount         Total Savings ",
+   "source": "text-member"
+  },
+  {
+   "id": "NEWS.HeadInfo",
+   "movie": "NEWS",
+   "castId": 1053,
+   "name": "HeadInfo",
+   "text": "6,Product,Quantity,Name of Dealer,Price\n8,Seeds,Number of Acres\n9,Type of plant,Bushers\n10,Barn,Fence,Well and Windmill\n11,Action,Number of Workers,Time Period\n14,Action,Product,Number,Price\n15,Action,Product,Number,Price\n16,Savings Box,Savings Put Away in Box,Total Savings in Box\n17,Savings Box,Savings Take Out in Box,Total Savings in Box\n18,Product,Price,Ammount\n",
+   "source": "text-member"
+  },
+  {
+   "id": "NEWS.In",
+   "movie": "NEWS",
+   "castId": 1060,
+   "name": "In",
+   "text": "You have $300 in your cash.  How much money do you want to put away in your box?",
+   "source": "text-member"
+  },
+  {
+   "id": "NEWS.Out",
+   "movie": "NEWS",
+   "castId": 1061,
+   "name": "Out",
+   "text": "How much money do you want to take out of the box?",
+   "source": "text-member"
+  },
+  {
+   "id": "NEWS.#1062",
+   "movie": "NEWS",
+   "castId": 1062,
+   "name": "",
+   "text": "You don't have enough money \n            to do this.",
+   "source": "text-member"
+  },
+  {
+   "id": "NEWS.#1063",
+   "movie": "NEWS",
+   "castId": 1063,
+   "name": "",
+   "text": "Amount of savings",
+   "source": "text-member"
+  },
+  {
+   "id": "STORE.#42",
+   "movie": "STORE",
+   "castId": 42,
+   "name": "",
+   "text": "Do you want to save your game?\n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "TSTREET1.#33",
+   "movie": "TSTREET1",
+   "castId": 33,
+   "name": "",
+   "text": "Do you want to save your game?\n\n",
+   "source": "text-member"
+  }
+ ],
+ "runtimeFieldDefaults": [
+  {
+   "id": "CALEND.CurFDBK",
+   "movie": "CALEND",
+   "castId": 1003,
+   "name": "CurFDBK",
+   "text": "Hello, neighbor. I see that you still have no well or windmill. If you buy a windmill, I'll help you build it and dig a well. \n\n",
+   "source": "text-member"
+  },
+  {
+   "id": "FIELD.CurFDBK",
+   "movie": "FIELD",
+   "castId": 1121,
+   "name": "CurFDBK",
+   "text": "\n\nI think the seed catalog suggested a different season for planting those seeds. If I were you, I would check the catalog.\n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.Base",
+   "movie": "CALEND",
+   "castId": 1016,
+   "name": "Base",
+   "text": "New blankets:                                      $  6.00\n    \nCooking stove:                                     $50.00\n    \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n",
+   "source": "text-member"
+  },
+  {
+   "id": "CALEND.DocList",
+   "movie": "CALEND",
+   "castId": 1025,
+   "name": "DocList",
+   "text": "New blankets:                                      $  6.00\n     \nGlass window panes:                         $10.00\n    \nCloth for sewing warmer clothes:     $16.00\n   \n",
+   "source": "text-member"
+  }
+ ],
+ "goals": {
+  "id": "SHARED.Goals",
+  "movie": "SHARED",
+  "castId": 3019,
+  "name": "Goals",
+  "text": "To be a successful farmer.\nTo be a successful businessperson.\nTo be a successful politician.\n\n",
+  "source": "text-member"
+ },
+ "myGoal": {
+  "id": "SHARED.MyGoal",
+  "movie": "SHARED",
+  "castId": 3013,
+  "name": "MyGoal",
+  "text": "To be a successful farmer.",
+  "source": "text-member"
+ },
+ "startupChecks": [
+  {
+   "id": "GOWEST.txtColorDepth",
+   "movie": "GOWEST",
+   "castId": 60,
+   "name": "txtColorDepth",
+   "text": "Your video card is set to 256 colors. In order ro run this program, it must be set to 16 colors. For further details, please refer to Windows setup instructions or your video card guide.",
+   "source": "text-member"
+  },
+  {
+   "id": "GOWEST.txtNoSound",
+   "movie": "GOWEST",
+   "castId": 61,
+   "name": "txtNoSound",
+   "text": "You cannot run this program because you do not have an audio card installed.",
+   "source": "text-member"
+  },
+  {
+   "id": "GOWEST.txtNoVideoForWindows",
+   "movie": "GOWEST",
+   "castId": 62,
+   "name": "txtNoVideoForWindows",
+   "text": "No Video for Windows driver was found. Please install the Video for Windows driver from this application's CD. For further details, please refer to the installation guide.",
+   "source": "text-member"
+  },
+  {
+   "id": "GOWEST.txtOldVideoForWindows",
+   "movie": "GOWEST",
+   "castId": 63,
+   "name": "txtOldVideoForWindows",
+   "text": "An earlier version of the Video for Windows driver is installed. You can install a newer version of the Video for Windows driver from this application's CD. For further details, refer the installation guide.",
+   "source": "text-member"
+  },
+  {
+   "id": "GOWEST.txtNoQuickTime",
+   "movie": "GOWEST",
+   "castId": 64,
+   "name": "txtNoQuickTime",
+   "text": "No QuickTime driver was found. Please install the QuickTime driver from this application's CD. For further details, please refer to the installation guide.",
+   "source": "text-member"
+  },
+  {
+   "id": "GOWEST.txtOldQuicktime",
+   "movie": "GOWEST",
+   "castId": 65,
+   "name": "txtOldQuicktime",
+   "text": "An earlier version of the QuickTime driver is installed. You can install a newer version of the QuickTime driver from this application's CD. For further details, refer the installation guide.",
+   "source": "text-member"
+  },
+  {
+   "id": "GOWEST.txtNoMidi",
+   "movie": "GOWEST",
+   "castId": 66,
+   "name": "txtNoMidi",
+   "text": "Your MIDI driver is disabled or not installed, so you cannot run this program. Please consult your audio card guide for details.",
+   "source": "text-member"
+  },
+  {
+   "id": "GOWEST.txtColorDepthOriginal",
+   "movie": "GOWEST",
+   "castId": 73,
+   "name": "txtColorDepthOriginal",
+   "text": "Your video card is set to %_ colors. In order ro run this program, it must be set to %_ colors. For further details, please refer to Windows setup instructions or your video card guide.",
+   "source": "text-member"
+  },
+  {
+   "id": "GOWEST.chkboxDontDisplayMessage",
+   "movie": "GOWEST",
+   "castId": 74,
+   "name": "chkboxDontDisplayMessage",
+   "text": "Don't show this message again.",
+   "source": "text-member"
+  }
+ ],
+ "lingo": [
+  {
+   "text": "Do you want to save your game?",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 57",
+     "line": 18
+    },
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 80",
+     "line": 34
+    }
+   ]
+  },
+  {
+   "text": "There's a letter in your mailbox.",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 42",
+     "line": 35
+    }
+   ]
+  },
+  {
+   "text": "Your game is over.",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 8",
+     "line": 46
+    }
+   ]
+  },
+  {
+   "text": "Please wait. Printing...",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 7
+    }
+   ]
+  },
+  {
+   "text": "All rights reserved to the Library of Congress.",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 36
+    }
+   ]
+  },
+  {
+   "text": "There is not enough memory to run this movie.",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 4
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 5
+    }
+   ]
+  },
+  {
+   "text": "You don't have the midi device. You can play without background music.",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 27
+    }
+   ]
+  },
+  {
+   "text": "You don't have the QuickTime device",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 20
+    }
+   ]
+  },
+  {
+   "text": "This version of the product can't save or load your work.",
+   "source": "lingo-literal",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3274 - INI files handaling for BookMarking -- written by Raz Yalov. Last updated  23-4-96",
+     "line": 83
+    }
+   ]
+  }
+ ],
+ "bitmapText": {
+  "note": "Text that is bitmap art in the original, as transcribed in docs/spec/01-framework.md (source:\"transcribed\").",
+  "login": [
+   {
+    "screen": "login",
+    "title": "\"Welcome to Edunetics\"",
+    "body": "\"Please type in a user ID.\" + edit field txtUserID (sprite 5, at 53,98)",
+    "buttons": "OK (vLoginOKBtn), Exit (vExitBtn)",
+    "keys": "Enter/Return = OK (only if field non-empty); Esc or Option+E = Exit",
+    "source": "transcribed"
+   },
+   {
+    "screen": "confirm",
+    "title": "\"Checking Your Name\"",
+    "body": "field txtUserName = \"First Last\"; \"Is this your name?\"",
+    "buttons": "Yes (vConfirmYesBtn), No (wired to vTryAgainBtn)",
+    "keys": "Enter/Return/Y = Yes; Esc/N = vConfirmNoBtn",
+    "source": "transcribed"
+   },
+   {
+    "screen": "wrongUserId",
+    "title": "\"Oops!\"",
+    "body": "\"The user ID you typed does not exist.\\nPlease try again.\\n\\nIf you are a new user,\\nclick on \"New User.\"\"",
+    "buttons": "Try Again, New User, Exit",
+    "keys": "Enter/Return/T = Try Again; Esc/E = Exit; N = New User",
+    "source": "transcribed"
+   },
+   {
+    "screen": "AddNewUser",
+    "title": "\"Welcome, New User\"",
+    "body": "\"Please type in your name.\" / \"First Name:\" [txtUserFirstName] / \"Last Name:\" [txtUserLastName]",
+    "buttons": "OK (vNewUserOKBtn), Cancel (vTryAgainBtn), Exit",
+    "keys": "Enter/Return = OK; Esc or Option+C = Cancel; Tab = proper-case both fields then move focus; Option+E = Exit",
+    "source": "transcribed"
+   },
+   {
+    "screen": "NewUserSummary",
+    "title": "\"Your Edunetics User ID\"",
+    "body": "\"This is your Edunetics user ID:\" [txtUserIDCopy] \"Use it whenever you work\\nat this computer.\"",
+    "buttons": "OK (vConfirmYesBtn), Exit",
+    "keys": "Enter/Return/C = OK; Esc/E = Exit",
+    "source": "transcribed"
+   },
+   {
+    "screen": "exitConfirm",
+    "title": "\"Exit\"",
+    "body": "\"Are you sure you want\\nto exit now?\"",
+    "buttons": "Yes (quit app), No (do(gsBackToHandler), i.e. return to the screen you came from)",
+    "keys": "Enter/Return/Y = Yes; Esc/N = No",
+    "source": "transcribed"
+   }
+  ],
+  "optionsPanel": [
+   "CREDITS",
+   "VOLUME",
+   "MUSIC",
+   "ON",
+   "OFF",
+   "EXIT",
+   "OK",
+   "Do you want to save your game?"
+  ],
+  "claimForm": {
+   "text": "STATE OF KANSAS / This Certifies that [First Name] [Last Name] has paid ten dollars and filed a claim for 160 acres in Buffalo County, registered as LOT NUMBER 9474. According to the Homestead Act of 1862, whoever files a claim on public land to establish a homestead must be: • an American citizen or planning to become one • the head of a household • at least 21 years old. A claim filer who lives on and works this land for at least 5 years will become its owner. The claim filer must build a place to live and find a source of water. If the claim filer does not meet these conditions, the government may take away the land. [signature] Signature of Land Officer — APRIL 1, 1880 Date — Signature of Claim Filer",
+   "bitmap": "INTRO07",
+   "source": "transcribed"
+  },
+  "introPoster": {
+   "text": "HOMESTEADERS: GO WEST! to KANSAS — Breadbasket of the World — Room for a Million Farmers — THOUSANDS OF ACRES OF GOVERNMENT LANDS IN THE HIGH PLAINS STILL UNTAKEN!!",
+   "bitmap": "INTRO10",
+   "source": "transcribed"
+  },
+  "goalPanel": {
+   "text": "PLEASE CLICK ON THE GOAL OF YOUR CHOICE",
+   "bitmap": "INTROO1X / INTRO36",
+   "source": "transcribed"
+  }
+ }
+}

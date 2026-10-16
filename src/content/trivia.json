@@ -1,0 +1,885 @@
+{
+ "note": "CALEND triv<n> / ans<n><k> / right<n>; correct answer index and $ bonus from CALEND MovieScript 700 (g_aRightAns, g_aBonus).",
+ "questions": [
+  {
+   "n": 1,
+   "question": {
+    "id": "CALEND.triv1",
+    "movie": "CALEND",
+    "castId": 1316,
+    "name": "triv1",
+    "text": "Which area often suffered from droughts, blizzards, hail, and grasshoppers?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans11",
+     "movie": "CALEND",
+     "castId": 1331,
+     "name": "ans11",
+     "text": "A. the New England states",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans12",
+     "movie": "CALEND",
+     "castId": 1332,
+     "name": "ans12",
+     "text": "B. the Ohio Valley",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans13",
+     "movie": "CALEND",
+     "castId": 1333,
+     "name": "ans13",
+     "text": "C. the Great Plains states",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans14",
+     "movie": "CALEND",
+     "castId": 1334,
+     "name": "ans14",
+     "text": "D. the San Joaquin Valley",
+     "source": "text-member"
+    }
+   ],
+   "correct": 3,
+   "bonus": 20,
+   "explanation": {
+    "id": "CALEND.right1",
+    "movie": "CALEND",
+    "castId": 1301,
+    "name": "right1",
+    "text": "Between 1880 and 1950, farmers in the Great Plains states faced all these natural disasters. ",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 2,
+   "question": {
+    "id": "CALEND.triv2",
+    "movie": "CALEND",
+    "castId": 1317,
+    "name": "triv2",
+    "text": "Who gave the Statue of Liberty to the Americans?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans21",
+     "movie": "CALEND",
+     "castId": 1335,
+     "name": "ans21",
+     "text": "A. the Germans",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans22",
+     "movie": "CALEND",
+     "castId": 1336,
+     "name": "ans22",
+     "text": "B. the Italians",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans23",
+     "movie": "CALEND",
+     "castId": 1337,
+     "name": "ans23",
+     "text": "C. the English",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans24",
+     "movie": "CALEND",
+     "castId": 1338,
+     "name": "ans24",
+     "text": "D. the French",
+     "source": "text-member"
+    }
+   ],
+   "correct": 4,
+   "bonus": 20,
+   "explanation": {
+    "id": "CALEND.right2",
+    "movie": "CALEND",
+    "castId": 1302,
+    "name": "right2",
+    "text": "The French gave the Statue of Liberty to the Americans in 1886, to celebrate America's 100th birthday. It is a larger copy of a statue that stands on the bank \nof the Seine River in Paris.  \nFrederic Auguste Bartholdi created the nine-foot original.  The New York  version is a copper and steel structure created \nby Gustave Eiffel (the builder of the Eiffel Tower). The 152-foot-tall Statue of Liberty stands on Liberty Island in New York harbor.  In her left hand, Liberty holds a book that symbolizes the Declaration of Independence.  In her right hand, she holds the torch of freedom.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 3,
+   "question": {
+    "id": "CALEND.triv3",
+    "movie": "CALEND",
+    "castId": 1318,
+    "name": "triv3",
+    "text": "What caused Teddy Roosevelt to return to politics in New York?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans31",
+     "movie": "CALEND",
+     "castId": 1339,
+     "name": "ans31",
+     "text": "A. the start of the Civil War",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans32",
+     "movie": "CALEND",
+     "castId": 1340,
+     "name": "ans32",
+     "text": "B. droughts and blizzards on \n      the Great Plains",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans33",
+     "movie": "CALEND",
+     "castId": 1341,
+     "name": "ans33",
+     "text": "C. opposition to the Jim Crow laws",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans34",
+     "movie": "CALEND",
+     "castId": 1342,
+     "name": "ans34",
+     "text": "D. the failure of his family business",
+     "source": "text-member"
+    }
+   ],
+   "correct": 2,
+   "bonus": 30,
+   "explanation": {
+    "id": "CALEND.right3",
+    "movie": "CALEND",
+    "castId": 1303,
+    "name": "right3",
+    "text": "In 1884, Theodore Roosevelt left the New York Legislature and moved to North Dakota to be a farmer.  Unfortunately, the Great Plains were suffering from terrible droughts that killed most of the cattle there.  In 1886, Theodore Roosevelt gave up his farm and returned to his political career in New York.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 4,
+   "question": {
+    "id": "CALEND.triv4",
+    "movie": "CALEND",
+    "castId": 1319,
+    "name": "triv4",
+    "text": "In 1889, homesteaders rushed to stake out land that the government was giving away.  What was this called?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans41",
+     "movie": "CALEND",
+     "castId": 1343,
+     "name": "ans41",
+     "text": "A. The Gold Rush",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans42",
+     "movie": "CALEND",
+     "castId": 1344,
+     "name": "ans42",
+     "text": "B. Taxation without Representation",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans43",
+     "movie": "CALEND",
+     "castId": 1345,
+     "name": "ans43",
+     "text": "C. The Land Rush",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans44",
+     "movie": "CALEND",
+     "castId": 1346,
+     "name": "ans44",
+     "text": "D. Reconstruction",
+     "source": "text-member"
+    }
+   ],
+   "correct": 3,
+   "bonus": 10,
+   "explanation": {
+    "id": "CALEND.right4",
+    "movie": "CALEND",
+    "castId": 1304,
+    "name": "right4",
+    "text": "In 1889, the U.S. government opened part of the Oklahoma territory to homestead settlement.  Thousands of homesteaders rushed to stake out land for themselves.  This was called \"The Oklahoma Land Rush.\"  This land had originally been promised to Native American tribes who had hoped for their own state. ",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 5,
+   "question": {
+    "id": "CALEND.triv5",
+    "movie": "CALEND",
+    "castId": 1320,
+    "name": "triv5",
+    "text": "How many states are named after American presidents?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans51",
+     "movie": "CALEND",
+     "castId": 1347,
+     "name": "ans51",
+     "text": "A. none",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans52",
+     "movie": "CALEND",
+     "castId": 1348,
+     "name": "ans52",
+     "text": "B. three",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans53",
+     "movie": "CALEND",
+     "castId": 1349,
+     "name": "ans53",
+     "text": "C. one",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans54",
+     "movie": "CALEND",
+     "castId": 1350,
+     "name": "ans54",
+     "text": "D. five",
+     "source": "text-member"
+    }
+   ],
+   "correct": 3,
+   "bonus": 10,
+   "explanation": {
+    "id": "CALEND.right5",
+    "movie": "CALEND",
+    "castId": 1305,
+    "name": "right5",
+    "text": "In 1889, the state of Washington joined the United States.  \nNamed in honor of  George Washington, it is the only state named after a president.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 6,
+   "question": {
+    "id": "CALEND.triv6",
+    "movie": "CALEND",
+    "castId": 1321,
+    "name": "triv6",
+    "text": "What did  Whitcomb L. Judson invent \nin 1891 that made  wearing trousers easier?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans61",
+     "movie": "CALEND",
+     "castId": 1351,
+     "name": "ans61",
+     "text": "A. denim",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans62",
+     "movie": "CALEND",
+     "castId": 1352,
+     "name": "ans62",
+     "text": "B. pockets",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans63",
+     "movie": "CALEND",
+     "castId": 1353,
+     "name": "ans63",
+     "text": "C. zippers",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans64",
+     "movie": "CALEND",
+     "castId": 1354,
+     "name": "ans64",
+     "text": "D. knickers",
+     "source": "text-member"
+    }
+   ],
+   "correct": 3,
+   "bonus": 20,
+   "explanation": {
+    "id": "CALEND.right6",
+    "movie": "CALEND",
+    "castId": 1306,
+    "name": "right6",
+    "text": "In 1891, Whitcomb L. Judson invented the zipper when he decided that laces, hooks and eyes, and buttons took too long to fasten and unfasten.  Unfortunately, the zipper that Judson invented often came apart without warning.  In 1912, a Swedish engineer named Widen Sundback improved and patented the zipper, making it a popular fastener for clothing.\n",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 7,
+   "question": {
+    "id": "CALEND.triv7",
+    "movie": "CALEND",
+    "castId": 1322,
+    "name": "triv7",
+    "text": "Who invented the game of basketball?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans71",
+     "movie": "CALEND",
+     "castId": 1355,
+     "name": "ans71",
+     "text": "A. Christy Mathewson",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans72",
+     "movie": "CALEND",
+     "castId": 1356,
+     "name": "ans72",
+     "text": "B. Dr. James Naismith",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans73",
+     "movie": "CALEND",
+     "castId": 1357,
+     "name": "ans73",
+     "text": "C. Hannes Schneider",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans74",
+     "movie": "CALEND",
+     "castId": 1358,
+     "name": "ans74",
+     "text": "D. Jack Johnson",
+     "source": "text-member"
+    }
+   ],
+   "correct": 2,
+   "bonus": 30,
+   "explanation": {
+    "id": "CALEND.right7",
+    "movie": "CALEND",
+    "castId": 1307,
+    "name": "right7",
+    "text": "Dr. James Naismith, born in Canada, was a physical education professor at the YMCA college in Springfield, Massachusetts.  He invented the game of basketball in December 1891.  Professional basketball games began in New York City in 1896.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 8,
+   "question": {
+    "id": "CALEND.triv8",
+    "movie": "CALEND",
+    "castId": 1323,
+    "name": "triv8",
+    "text": "Who set up the first large steel company in America?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans81",
+     "movie": "CALEND",
+     "castId": 1359,
+     "name": "ans81",
+     "text": "A. Andrew Carnegie",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans82",
+     "movie": "CALEND",
+     "castId": 1360,
+     "name": "ans82",
+     "text": "B. John D. Rockefeller",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans83",
+     "movie": "CALEND",
+     "castId": 1361,
+     "name": "ans83",
+     "text": "C. J. P. Morgan",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans84",
+     "movie": "CALEND",
+     "castId": 1362,
+     "name": "ans84",
+     "text": "D. Edward H. Harriman",
+     "source": "text-member"
+    }
+   ],
+   "correct": 1,
+   "bonus": 30,
+   "explanation": {
+    "id": "CALEND.right8",
+    "movie": "CALEND",
+    "castId": 1308,
+    "name": "right8",
+    "text": "Andrew Carnegie (1835-1919) founded the Carnegie Steel Company in 1892.  Carnegie was born in Scotland and came to America in 1848.  He was very poor and earned only $1.20 per week at his first job in America. He became very successful. In 1901, his steel company was bought by J. P. Morgan for $480 million, making Carnegie the richest man in the world.  Morgan combined Carnegie's company with other steel properties \nto create the United States Steel Company, which controlled 65 percent of all U.S. steel manufacturing.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 9,
+   "question": {
+    "id": "CALEND.triv9",
+    "movie": "CALEND",
+    "castId": 1324,
+    "name": "triv9",
+    "text": "Which American president was killed in 1901 at the Pan-American Exposition, \nin Buffalo, New York?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans91",
+     "movie": "CALEND",
+     "castId": 1363,
+     "name": "ans91",
+     "text": "A. President William McKinley",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans92",
+     "movie": "CALEND",
+     "castId": 1364,
+     "name": "ans92",
+     "text": "B. President John Fitzgerald Kennedy",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans93",
+     "movie": "CALEND",
+     "castId": 1365,
+     "name": "ans93",
+     "text": "C. President George Washington",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans94",
+     "movie": "CALEND",
+     "castId": 1366,
+     "name": "ans94",
+     "text": "D. President Millard Fillmore",
+     "source": "text-member"
+    }
+   ],
+   "correct": 1,
+   "bonus": 30,
+   "explanation": {
+    "id": "CALEND.right9",
+    "movie": "CALEND",
+    "castId": 1309,
+    "name": "right9",
+    "text": "President William McKinley was \nshot and killed at the Pan-American Exposition in Buffalo, New York, \nin 1901.  He was the 24th president \nof the United States.  \nHe was a Republican. ",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 10,
+   "question": {
+    "id": "CALEND.triv10",
+    "movie": "CALEND",
+    "castId": 1325,
+    "name": "triv10",
+    "text": "Who piloted the first flight of this motorized airplane in 1903?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans101",
+     "movie": "CALEND",
+     "castId": 1367,
+     "name": "ans101",
+     "text": "A. Neil Armstrong",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans102",
+     "movie": "CALEND",
+     "castId": 1368,
+     "name": "ans102",
+     "text": "B. The Wright brothers",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans103",
+     "movie": "CALEND",
+     "castId": 1369,
+     "name": "ans103",
+     "text": "C. The Blues brothers",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans104",
+     "movie": "CALEND",
+     "castId": 1370,
+     "name": "ans104",
+     "text": "D. Charles A. Lindbergh",
+     "source": "text-member"
+    }
+   ],
+   "correct": 2,
+   "bonus": 20,
+   "explanation": {
+    "id": "CALEND.right10",
+    "movie": "CALEND",
+    "castId": 1310,
+    "name": "right10",
+    "text": "Wilbur and Orville Wright were the pilots of this plane, the Wright Flyer.  They became interested in flying by watching how flying birds twist their wing tips to balance.  For many years, they built flying machines that could fly without engines.  On December 17, 1903, in North Carolina, they made the first piloted flight in an airplane with a motor.  This flight changed the world.  The flight lasted 12 seconds, and the airplane flew nearly 200 feet.  Only nine days earlier, the New York Times had said that man would not fly for 1,000 years.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 11,
+   "question": {
+    "id": "CALEND.triv11",
+    "movie": "CALEND",
+    "castId": 1326,
+    "name": "triv11",
+    "text": "What kind of car is this?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans111",
+     "movie": "CALEND",
+     "castId": 1371,
+     "name": "ans111",
+     "text": "A. a Ferrari",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans112",
+     "movie": "CALEND",
+     "castId": 1372,
+     "name": "ans112",
+     "text": "B. the first Toyota",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans113",
+     "movie": "CALEND",
+     "castId": 1373,
+     "name": "ans113",
+     "text": "C. the Model T",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans114",
+     "movie": "CALEND",
+     "castId": 1374,
+     "name": "ans114",
+     "text": "D. a bumper car",
+     "source": "text-member"
+    }
+   ],
+   "correct": 3,
+   "bonus": 10,
+   "explanation": {
+    "id": "CALEND.right11",
+    "movie": "CALEND",
+    "castId": 1311,
+    "name": "right11",
+    "text": "This Model T was introduced by Henry Ford (1863-1947) in 1908.  \nIt was the first automobile that was successfully mass-produced for the ordinary citizen.  In 1913, Ford built 1,000 Model T cars each day.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 12,
+   "question": {
+    "id": "CALEND.triv12",
+    "movie": "CALEND",
+    "castId": 1327,
+    "name": "triv12",
+    "text": "Which products did the 1908 song, \"Take Me Out to the Ball Game,\" promote?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans121",
+     "movie": "CALEND",
+     "castId": 1375,
+     "name": "ans121",
+     "text": "A. Welch's Grape Juice and Pepsi-Cola",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans122",
+     "movie": "CALEND",
+     "castId": 1376,
+     "name": "ans122",
+     "text": "B. Coca-Cola and Dr. Pepper",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans123",
+     "movie": "CALEND",
+     "castId": 1377,
+     "name": "ans123",
+     "text": "C. Planter's Peanuts and Cracker Jacks",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans124",
+     "movie": "CALEND",
+     "castId": 1378,
+     "name": "ans124",
+     "text": "D. Hershey's Chocolate and Tootsie\n      Rolls",
+     "source": "text-member"
+    }
+   ],
+   "correct": 3,
+   "bonus": 10,
+   "explanation": {
+    "id": "CALEND.right12",
+    "movie": "CALEND",
+    "castId": 1312,
+    "name": "right12",
+    "text": "All these products were available in 1908, but only peanuts and Cracker Jacks were mentioned in the song. ",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 13,
+   "question": {
+    "id": "CALEND.triv13",
+    "movie": "CALEND",
+    "castId": 1328,
+    "name": "triv13",
+    "text": "Which problem did the Homestead Enlargement Act of 1909 try to solve?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans131",
+     "movie": "CALEND",
+     "castId": 1379,
+     "name": "ans131",
+     "text": "A. Native Americans were being forced\n     onto reservations.",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans132",
+     "movie": "CALEND",
+     "castId": 1380,
+     "name": "ans132",
+     "text": "B. African Americans had few rights.",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans133",
+     "movie": "CALEND",
+     "castId": 1381,
+     "name": "ans133",
+     "text": "C. A 160-acre farm  was not large\n      enough to grow a decent crop.",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans134",
+     "movie": "CALEND",
+     "castId": 1382,
+     "name": "ans134",
+     "text": "D. Women were not allowed to vote.",
+     "source": "text-member"
+    }
+   ],
+   "correct": 3,
+   "bonus": 20,
+   "explanation": {
+    "id": "CALEND.right13",
+    "movie": "CALEND",
+    "castId": 1313,
+    "name": "right13",
+    "text": "There was very little rainfall in the Great Plains states.  A farm of 160 acres could not raise enough crops to support a homestead family.  In addition, ranchers needed bigger grazing areas.  The Homestead Enlargement Act of 1909 doubled the amount of land that Congress had given the farmers in the Homestead Act of 1862.  This was still not enough land for many farmers.  They continued to \nstruggle for survival.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 14,
+   "question": {
+    "id": "CALEND.triv14",
+    "movie": "CALEND",
+    "castId": 1329,
+    "name": "triv14",
+    "text": "This ship sank in April 1912.  \nWhat is its name?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans141",
+     "movie": "CALEND",
+     "castId": 1383,
+     "name": "ans141",
+     "text": "A. The Santa Maria",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans142",
+     "movie": "CALEND",
+     "castId": 1384,
+     "name": "ans142",
+     "text": "B. The Love Boat",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans143",
+     "movie": "CALEND",
+     "castId": 1385,
+     "name": "ans143",
+     "text": "C. The Spirit of St. Louis",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans144",
+     "movie": "CALEND",
+     "castId": 1386,
+     "name": "ans144",
+     "text": "D. The Titanic",
+     "source": "text-member"
+    }
+   ],
+   "correct": 4,
+   "bonus": 20,
+   "explanation": {
+    "id": "CALEND.right14",
+    "movie": "CALEND",
+    "castId": 1314,
+    "name": "right14",
+    "text": "This was the Titanic, a British luxury cruise ship.  In 1912, on its first trip from England to New York, it sank.  Of the 2,224 people on board, 1,513 drowned.  This was the worst sea disaster ever.\n",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 15,
+   "question": {
+    "id": "CALEND.triv15",
+    "movie": "CALEND",
+    "castId": 1330,
+    "name": "triv15",
+    "text": "This canal opened in 1914. \nWhat is it called?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans151",
+     "movie": "CALEND",
+     "castId": 1387,
+     "name": "ans151",
+     "text": "A. The Love Canal",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans152",
+     "movie": "CALEND",
+     "castId": 1388,
+     "name": "ans152",
+     "text": "B. The Erie Canal",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans153",
+     "movie": "CALEND",
+     "castId": 1389,
+     "name": "ans153",
+     "text": "C. The Panama Canal",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans154",
+     "movie": "CALEND",
+     "castId": 1390,
+     "name": "ans154",
+     "text": "D. The Suez Canal",
+     "source": "text-member"
+    }
+   ],
+   "correct": 3,
+   "bonus": 30,
+   "explanation": {
+    "id": "CALEND.right15",
+    "movie": "CALEND",
+    "castId": 1315,
+    "name": "right15",
+    "text": "The Panama Canal was completed in 1914.  It connects the Atlantic and Pacific Oceans.  Ships can use the canal to go from one ocean to the other, without traveling around the \ntip of South America.  The canal \nwas built by the United States, \nwhich still owns it.  According to an agreement that was signed in 1978, the country of Panama will take \nover full control of the canal in 1999.",
+    "source": "text-member"
+   }
+  },
+  {
+   "n": 16,
+   "question": {
+    "id": "CALEND.triv16",
+    "movie": "CALEND",
+    "castId": 1391,
+    "name": "triv16",
+    "text": "Which ray was discovered by Wilhelm Roentgen in 1895?",
+    "source": "text-member"
+   },
+   "answers": [
+    {
+     "id": "CALEND.ans161",
+     "movie": "CALEND",
+     "castId": 1392,
+     "name": "ans161",
+     "text": "A. the ultraviolet ray",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans162",
+     "movie": "CALEND",
+     "castId": 1393,
+     "name": "ans162",
+     "text": "B. the X ray",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans163",
+     "movie": "CALEND",
+     "castId": 1394,
+     "name": "ans163",
+     "text": "C. the medullary ray",
+     "source": "text-member"
+    },
+    {
+     "id": "CALEND.ans164",
+     "movie": "CALEND",
+     "castId": 1395,
+     "name": "ans164",
+     "text": "D. the vascular ray",
+     "source": "text-member"
+    }
+   ],
+   "correct": 2,
+   "bonus": 30,
+   "explanation": {
+    "id": "CALEND.right16",
+    "movie": "CALEND",
+    "castId": 1396,
+    "name": "right16",
+    "text": "Wilhelm C. Roentgen, a German scientist, discovered the X ray in 1895. It is a powerful ray of light that can pass through things that ordinary rays of light cannot enter.  X rays are used to take pictures of parts of the body that cannot be seen from the outside, such as organs and bones.  Roentgen called these rays X rays because he did not completely understand them.\n",
+    "source": "text-member"
+   }
+  }
+ ]
+}

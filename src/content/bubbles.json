@@ -1,0 +1,1006 @@
+{
+ "note": "Roll-over callout bubbles (bitmaps A-CALLn.PCT, SHARED 3556-3648). The words are bitmap art, read off the images in spec 01 §6.1. There is no A-CALL89; A-CALL92 has a stray space in its cast name.",
+ "bubbles": [
+  {
+   "n": 1,
+   "text": "YES",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3556,
+    "name": "A-CALL1.PCT",
+    "file": "assets/SHARED/3556-A-CALL1.PCT.png"
+   }
+  },
+  {
+   "n": 2,
+   "text": "NO",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3567,
+    "name": "A-CALL2.PCT",
+    "file": "assets/SHARED/3567-A-CALL2.PCT.png"
+   }
+  },
+  {
+   "n": 3,
+   "text": "OK",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3578,
+    "name": "A-CALL3.PCT",
+    "file": "assets/SHARED/3578-A-CALL3.PCT.png"
+   }
+  },
+  {
+   "n": 4,
+   "text": "GO BACK",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3589,
+    "name": "A-CALL4.PCT",
+    "file": "assets/SHARED/3589-A-CALL4.PCT.png"
+   }
+  },
+  {
+   "n": 5,
+   "text": "EXIT GAME",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3600,
+    "name": "A-CALL5.PCT",
+    "file": "assets/SHARED/3600-A-CALL5.PCT.png"
+   }
+  },
+  {
+   "n": 6,
+   "text": "BANK",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3611,
+    "name": "A-CALL6.PCT",
+    "file": "assets/SHARED/3611-A-CALL6.PCT.png"
+   }
+  },
+  {
+   "n": 7,
+   "text": "FARM",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3622,
+    "name": "A-CALL7.PCT",
+    "file": "assets/SHARED/3622-A-CALL7.PCT.png"
+   }
+  },
+  {
+   "n": 8,
+   "text": "HOUSE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3633,
+    "name": "A-CALL8.PCT",
+    "file": "assets/SHARED/3633-A-CALL8.PCT.png"
+   }
+  },
+  {
+   "n": 9,
+   "text": "STORE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3643,
+    "name": "A-CALL9.PCT",
+    "file": "assets/SHARED/3643-A-CALL9.PCT.png"
+   }
+  },
+  {
+   "n": 10,
+   "text": "TRIVIA CARDS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3557,
+    "name": "A-CALL10.PCT",
+    "file": "assets/SHARED/3557-A-CALL10.PCT.png"
+   }
+  },
+  {
+   "n": 11,
+   "text": "CALENDAR",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3558,
+    "name": "A-CALL11.PCT",
+    "file": "assets/SHARED/3558-A-CALL11.PCT.png"
+   }
+  },
+  {
+   "n": 12,
+   "text": "RULES",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3559,
+    "name": "A-CALL12.PCT",
+    "file": "assets/SHARED/3559-A-CALL12.PCT.png"
+   }
+  },
+  {
+   "n": 13,
+   "text": "HINTS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3560,
+    "name": "A-CALL13.PCT",
+    "file": "assets/SHARED/3560-A-CALL13.PCT.png"
+   }
+  },
+  {
+   "n": 14,
+   "text": "ASSETS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3561,
+    "name": "A-CALL14.PCT",
+    "file": "assets/SHARED/3561-A-CALL14.PCT.png"
+   }
+  },
+  {
+   "n": 15,
+   "text": "CAPITAL",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3562,
+    "name": "A-CALL15.PCT",
+    "file": "assets/SHARED/3562-A-CALL15.PCT.png"
+   }
+  },
+  {
+   "n": 16,
+   "text": "UNEXPECTED",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3563,
+    "name": "A-CALL16.PCT",
+    "file": "assets/SHARED/3563-A-CALL16.PCT.png"
+   }
+  },
+  {
+   "n": 17,
+   "text": "BUY",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3564,
+    "name": "A-CALL17.PCT",
+    "file": "assets/SHARED/3564-A-CALL17.PCT.png"
+   }
+  },
+  {
+   "n": 18,
+   "text": "SELL",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3565,
+    "name": "A-CALL18.PCT",
+    "file": "assets/SHARED/3565-A-CALL18.PCT.png"
+   }
+  },
+  {
+   "n": 19,
+   "text": "NOT INTERESTED",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3566,
+    "name": "A-CALL19.PCT",
+    "file": "assets/SHARED/3566-A-CALL19.PCT.png"
+   }
+  },
+  {
+   "n": 20,
+   "text": "THANK YOU",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3568,
+    "name": "A-CALL20.PCT",
+    "file": "assets/SHARED/3568-A-CALL20.PCT.png"
+   }
+  },
+  {
+   "n": 21,
+   "text": "BUY TRACTOR",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3569,
+    "name": "A-CALL21.PCT",
+    "file": "assets/SHARED/3569-A-CALL21.PCT.png"
+   }
+  },
+  {
+   "n": 22,
+   "text": "BACK",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3570,
+    "name": "A-CALL22.PCT",
+    "file": "assets/SHARED/3570-A-CALL22.PCT.png"
+   }
+  },
+  {
+   "n": 23,
+   "text": "ANSWER",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3571,
+    "name": "A-CALL23.PCT",
+    "file": "assets/SHARED/3571-A-CALL23.PCT.png"
+   }
+  },
+  {
+   "n": 24,
+   "text": "LOAN RATES",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3572,
+    "name": "A-CALL24.PCT",
+    "file": "assets/SHARED/3572-A-CALL24.PCT.png"
+   }
+  },
+  {
+   "n": 25,
+   "text": "LOANS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3573,
+    "name": "A-CALL25.PCT",
+    "file": "assets/SHARED/3573-A-CALL25.PCT.png"
+   }
+  },
+  {
+   "n": 26,
+   "text": "TELLER",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3574,
+    "name": "A-CALL26.PCT",
+    "file": "assets/SHARED/3574-A-CALL26.PCT.png"
+   }
+  },
+  {
+   "n": 27,
+   "text": "GAME BOARD",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3575,
+    "name": "A-CALL27.PCT",
+    "file": "assets/SHARED/3575-A-CALL27.PCT.png"
+   }
+  },
+  {
+   "n": 28,
+   "text": "BORROW",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3576,
+    "name": "A-CALL28.PCT",
+    "file": "assets/SHARED/3576-A-CALL28.PCT.png"
+   }
+  },
+  {
+   "n": 29,
+   "text": "REPAY",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3577,
+    "name": "A-CALL29.PCT",
+    "file": "assets/SHARED/3577-A-CALL29.PCT.png"
+   }
+  },
+  {
+   "n": 30,
+   "text": "INFO",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3579,
+    "name": "A-CALL30.PCT",
+    "file": "assets/SHARED/3579-A-CALL30.PCT.png"
+   }
+  },
+  {
+   "n": 31,
+   "text": "PRINT",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3580,
+    "name": "A-CALL31.PCT",
+    "file": "assets/SHARED/3580-A-CALL31.PCT.png"
+   }
+  },
+  {
+   "n": 32,
+   "text": "CANCEL",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3581,
+    "name": "A-CALL32.PCT",
+    "file": "assets/SHARED/3581-A-CALL32.PCT.png"
+   }
+  },
+  {
+   "n": 33,
+   "text": "SIGNATURE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3582,
+    "name": "A-CALL33.PCT",
+    "file": "assets/SHARED/3582-A-CALL33.PCT.png"
+   }
+  },
+  {
+   "n": 34,
+   "text": "ERASER",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3583,
+    "name": "A-CALL34.PCT",
+    "file": "assets/SHARED/3583-A-CALL34.PCT.png"
+   }
+  },
+  {
+   "n": 35,
+   "text": "UP",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3584,
+    "name": "A-CALL35.PCT",
+    "file": "assets/SHARED/3584-A-CALL35.PCT.png"
+   }
+  },
+  {
+   "n": 36,
+   "text": "DOWN",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3585,
+    "name": "A-CALL36.PCT",
+    "file": "assets/SHARED/3585-A-CALL36.PCT.png"
+   }
+  },
+  {
+   "n": 37,
+   "text": "FIELDS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3586,
+    "name": "A-CALL37.PCT",
+    "file": "assets/SHARED/3586-A-CALL37.PCT.png"
+   }
+  },
+  {
+   "n": 38,
+   "text": "CONSTRUCTION",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3587,
+    "name": "A-CALL38.PCT",
+    "file": "assets/SHARED/3587-A-CALL38.PCT.png"
+   }
+  },
+  {
+   "n": 39,
+   "text": "SELL CROPS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3588,
+    "name": "A-CALL39.PCT",
+    "file": "assets/SHARED/3588-A-CALL39.PCT.png"
+   }
+  },
+  {
+   "n": 40,
+   "text": "PLOW",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3590,
+    "name": "A-CALL40.PCT",
+    "file": "assets/SHARED/3590-A-CALL40.PCT.png"
+   }
+  },
+  {
+   "n": 41,
+   "text": "PLANT",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3591,
+    "name": "A-CALL41.PCT",
+    "file": "assets/SHARED/3591-A-CALL41.PCT.png"
+   }
+  },
+  {
+   "n": 42,
+   "text": "HARVEST",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3592,
+    "name": "A-CALL42.PCT",
+    "file": "assets/SHARED/3592-A-CALL42.PCT.png"
+   }
+  },
+  {
+   "n": 43,
+   "text": "AMOUNT OF LOAN",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3593,
+    "name": "A-CALL43.PCT",
+    "file": "assets/SHARED/3593-A-CALL43.PCT.png"
+   }
+  },
+  {
+   "n": 44,
+   "text": "REPAYMENT DATE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3594,
+    "name": "A-CALL44.PCT",
+    "file": "assets/SHARED/3594-A-CALL44.PCT.png"
+   }
+  },
+  {
+   "n": 45,
+   "text": "PAYMENT AMOUNT",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3595,
+    "name": "A-CALL45.PCT",
+    "file": "assets/SHARED/3595-A-CALL45.PCT.png"
+   }
+  },
+  {
+   "n": 46,
+   "text": "WORKERS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3596,
+    "name": "A-CALL46.PCT",
+    "file": "assets/SHARED/3596-A-CALL46.PCT.png"
+   }
+  },
+  {
+   "n": 47,
+   "text": "TRACTOR",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3597,
+    "name": "A-CALL47.PCT",
+    "file": "assets/SHARED/3597-A-CALL47.PCT.png"
+   }
+  },
+  {
+   "n": 48,
+   "text": "FIX OLD PLOW",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3598,
+    "name": "A-CALL48.PCT",
+    "file": "assets/SHARED/3598-A-CALL48.PCT.png"
+   }
+  },
+  {
+   "n": 49,
+   "text": "BUY NEW PLOW",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3599,
+    "name": "A-CALL49.PCT",
+    "file": "assets/SHARED/3599-A-CALL49.PCT.png"
+   }
+  },
+  {
+   "n": 50,
+   "text": "WINTER WHEAT",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3601,
+    "name": "A-CALL50.PCT",
+    "file": "assets/SHARED/3601-A-CALL50.PCT.png"
+   }
+  },
+  {
+   "n": 51,
+   "text": "SPRING WHEAT",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3602,
+    "name": "A-CALL51.PCT",
+    "file": "assets/SHARED/3602-A-CALL51.PCT.png"
+   }
+  },
+  {
+   "n": 52,
+   "text": "OATS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3603,
+    "name": "A-CALL52.PCT",
+    "file": "assets/SHARED/3603-A-CALL52.PCT.png"
+   }
+  },
+  {
+   "n": 53,
+   "text": "CORN",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3604,
+    "name": "A-CALL53.PCT",
+    "file": "assets/SHARED/3604-A-CALL53.PCT.png"
+   }
+  },
+  {
+   "n": 54,
+   "text": "BARN",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3605,
+    "name": "A-CALL54.PCT",
+    "file": "assets/SHARED/3605-A-CALL54.PCT.png"
+   }
+  },
+  {
+   "n": 55,
+   "text": "WELL",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3606,
+    "name": "A-CALL55.PCT",
+    "file": "assets/SHARED/3606-A-CALL55.PCT.png"
+   }
+  },
+  {
+   "n": 56,
+   "text": "FENCE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3607,
+    "name": "A-CALL56.PCT",
+    "file": "assets/SHARED/3607-A-CALL56.PCT.png"
+   }
+  },
+  {
+   "n": 57,
+   "text": "HORSE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3608,
+    "name": "A-CALL57.PCT",
+    "file": "assets/SHARED/3608-A-CALL57.PCT.png"
+   }
+  },
+  {
+   "n": 58,
+   "text": "HOG",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3609,
+    "name": "A-CALL58.PCT",
+    "file": "assets/SHARED/3609-A-CALL58.PCT.png"
+   }
+  },
+  {
+   "n": 59,
+   "text": "DAIRY COW",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3610,
+    "name": "A-CALL59.PCT",
+    "file": "assets/SHARED/3610-A-CALL59.PCT.png"
+   }
+  },
+  {
+   "n": 60,
+   "text": "CATTLE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3612,
+    "name": "A-CALL60.PCT",
+    "file": "assets/SHARED/3612-A-CALL60.PCT.png"
+   }
+  },
+  {
+   "n": 61,
+   "text": "DEALER",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3613,
+    "name": "A-CALL61.PCT",
+    "file": "assets/SHARED/3613-A-CALL61.PCT.png"
+   }
+  },
+  {
+   "n": 62,
+   "text": "ACCEPT OFFER",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3614,
+    "name": "A-CALL62.PCT",
+    "file": "assets/SHARED/3614-A-CALL62.PCT.png"
+   }
+  },
+  {
+   "n": 63,
+   "text": "FAMILY ALBUM",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3615,
+    "name": "A-CALL63.PCT",
+    "file": "assets/SHARED/3615-A-CALL63.PCT.png"
+   }
+  },
+  {
+   "n": 64,
+   "text": "LOGBOOK",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3616,
+    "name": "A-CALL64.PCT",
+    "file": "assets/SHARED/3616-A-CALL64.PCT.png"
+   }
+  },
+  {
+   "n": 65,
+   "text": "NEWSPAPERS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3617,
+    "name": "A-CALL65.PCT",
+    "file": "assets/SHARED/3617-A-CALL65.PCT.png"
+   }
+  },
+  {
+   "n": 66,
+   "text": "SAVINGS BOX",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3618,
+    "name": "A-CALL66.PCT",
+    "file": "assets/SHARED/3618-A-CALL66.PCT.png"
+   }
+  },
+  {
+   "n": 67,
+   "text": "NEXT PAGE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3619,
+    "name": "A-CALL67.PCT",
+    "file": "assets/SHARED/3619-A-CALL67.PCT.png"
+   }
+  },
+  {
+   "n": 68,
+   "text": "WRITE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3620,
+    "name": "A-CALL68.PCT",
+    "file": "assets/SHARED/3620-A-CALL68.PCT.png"
+   }
+  },
+  {
+   "n": 69,
+   "text": "THIS PAGE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3621,
+    "name": "A-CALL69.PCT",
+    "file": "assets/SHARED/3621-A-CALL69.PCT.png"
+   }
+  },
+  {
+   "n": 70,
+   "text": "ALL PAGES",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3623,
+    "name": "A-CALL70.PCT",
+    "file": "assets/SHARED/3623-A-CALL70.PCT.png"
+   }
+  },
+  {
+   "n": 71,
+   "text": "VIEW BY DATE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3624,
+    "name": "A-CALL71.PCT",
+    "file": "assets/SHARED/3624-A-CALL71.PCT.png"
+   }
+  },
+  {
+   "n": 72,
+   "text": "DONE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3625,
+    "name": "A-CALL72.PCT",
+    "file": "assets/SHARED/3625-A-CALL72.PCT.png"
+   }
+  },
+  {
+   "n": 73,
+   "text": "CLOSE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3626,
+    "name": "A-CALL73.PCT",
+    "file": "assets/SHARED/3626-A-CALL73.PCT.png"
+   }
+  },
+  {
+   "n": 74,
+   "text": "READ ARTICLE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3627,
+    "name": "A-CALL74.PCT",
+    "file": "assets/SHARED/3627-A-CALL74.PCT.png"
+   }
+  },
+  {
+   "n": 75,
+   "text": "PUT IN",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3628,
+    "name": "A-CALL75.PCT",
+    "file": "assets/SHARED/3628-A-CALL75.PCT.png"
+   }
+  },
+  {
+   "n": 76,
+   "text": "TAKE OUT",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3629,
+    "name": "A-CALL76.PCT",
+    "file": "assets/SHARED/3629-A-CALL76.PCT.png"
+   }
+  },
+  {
+   "n": 77,
+   "text": "SEEDS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3630,
+    "name": "A-CALL77.PCT",
+    "file": "assets/SHARED/3630-A-CALL77.PCT.png"
+   }
+  },
+  {
+   "n": 78,
+   "text": "CATALOG",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3631,
+    "name": "A-CALL78.PCT",
+    "file": "assets/SHARED/3631-A-CALL78.PCT.png"
+   }
+  },
+  {
+   "n": 79,
+   "text": "PREVIOUS PAGE",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3632,
+    "name": "A-CALL79.PCT",
+    "file": "assets/SHARED/3632-A-CALL79.PCT.png"
+   }
+  },
+  {
+   "n": 80,
+   "text": "WELL AND WINDMILL",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3634,
+    "name": "A-CALL80.PCT",
+    "file": "assets/SHARED/3634-A-CALL80.PCT.png"
+   }
+  },
+  {
+   "n": 81,
+   "text": "START A NEW GAME",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3635,
+    "name": "A-CALL81.PCT",
+    "file": "assets/SHARED/3635-A-CALL81.PCT.png"
+   }
+  },
+  {
+   "n": 82,
+   "text": "CONTINUE SAVED GAME",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3636,
+    "name": "A-CALL82.PCT",
+    "file": "assets/SHARED/3636-A-CALL82.PCT.png"
+   }
+  },
+  {
+   "n": 83,
+   "text": "PROPERTY",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3637,
+    "name": "A-CALL83.PCT",
+    "file": "assets/SHARED/3637-A-CALL83.PCT.png"
+   }
+  },
+  {
+   "n": 84,
+   "text": "FIXED EXPENSES",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3638,
+    "name": "A-CALL84.PCT",
+    "file": "assets/SHARED/3638-A-CALL84.PCT.png"
+   }
+  },
+  {
+   "n": 85,
+   "text": "COW",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3639,
+    "name": "A-CALL85.PCT",
+    "file": "assets/SHARED/3639-A-CALL85.PCT.png"
+   }
+  },
+  {
+   "n": 86,
+   "text": "BACKWARD",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3640,
+    "name": "A-CALL86.PCT",
+    "file": "assets/SHARED/3640-A-CALL86.PCT.png"
+   }
+  },
+  {
+   "n": 87,
+   "text": "FORWARD",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3641,
+    "name": "A-CALL87.PCT",
+    "file": "assets/SHARED/3641-A-CALL87.PCT.png"
+   }
+  },
+  {
+   "n": 88,
+   "text": "SAVINGS BOOK",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3642,
+    "name": "A-CALL88.PCT",
+    "file": "assets/SHARED/3642-A-CALL88.PCT.png"
+   }
+  },
+  {
+   "n": 90,
+   "text": "CHOOSE CAPTIONS",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3648,
+    "name": "A-CALL90.PCT",
+    "file": "assets/SHARED/3648-A-CALL90.PCT.png"
+   }
+  },
+  {
+   "n": 91,
+   "text": "INFO",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3644,
+    "name": "A-CALL91.PCT",
+    "file": "assets/SHARED/3644-A-CALL91.PCT.png"
+   }
+  },
+  {
+   "n": 92,
+   "text": "LOAN INFO",
+   "source": "transcribed",
+   "bitmap": {
+    "movie": "SHARED",
+    "castId": 3645,
+    "name": "A-CALL92. PCT",
+    "file": "assets/SHARED/3645-A-CALL92. PCT.png"
+   }
+  }
+ ]
+}

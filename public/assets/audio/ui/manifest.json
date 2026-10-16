@@ -1,0 +1,94 @@
+{
+ "version": 1,
+ "sfx": {
+  "paper": {
+   "files": {
+    "ogg": "ui/paper.ogg",
+    "m4a": "ui/paper.m4a"
+   },
+   "duration": 0.44,
+   "peakDb": -12.0,
+   "momentaryLufs": -24.2,
+   "gainDb": 0,
+   "desc": "Letter page turn: soft swish with a few crinkles."
+  },
+  "paper_soft": {
+   "files": {
+    "ogg": "ui/paper_soft.ogg",
+    "m4a": "ui/paper_soft.m4a"
+   },
+   "duration": 0.34,
+   "peakDb": -12.0,
+   "momentaryLufs": -27.1,
+   "gainDb": 0,
+   "desc": "Smaller, darker page turn (secondary pages, closing letters)."
+  },
+  "coin": {
+   "files": {
+    "ogg": "ui/coin.ogg",
+    "m4a": "ui/coin.m4a"
+   },
+   "duration": 0.465,
+   "peakDb": -13.6,
+   "momentaryLufs": -23.0,
+   "gainDb": 0,
+   "desc": "Two small coins clinking: cash gain."
+  },
+  "coin_small": {
+   "files": {
+    "ogg": "ui/coin_small.ogg",
+    "m4a": "ui/coin_small.m4a"
+   },
+   "duration": 0.403,
+   "peakDb": -14.6,
+   "momentaryLufs": -25.0,
+   "gainDb": 0,
+   "desc": "Single soft coin tick: small amounts."
+  },
+  "tick": {
+   "files": {
+    "ogg": "ui/tick.ogg",
+    "m4a": "ui/tick.m4a"
+   },
+   "duration": 0.11,
+   "peakDb": -9.0,
+   "momentaryLufs": -29.5,
+   "gainDb": 0,
+   "desc": "Soft wooden confirm tick."
+  },
+  "chime": {
+   "files": {
+    "ogg": "ui/chime.ogg",
+    "m4a": "ui/chime.m4a"
+   },
+   "duration": 1.72,
+   "peakDb": -13.5,
+   "momentaryLufs": -22.0,
+   "gainDb": 0,
+   "desc": "Goal progress: gentle two-note chime, Eb5 then Bb5."
+  },
+  "store_bell": {
+   "files": {
+    "ogg": "ui/store_bell.ogg",
+    "m4a": "ui/store_bell.m4a"
+   },
+   "duration": 1.62,
+   "peakDb": -15.2,
+   "momentaryLufs": -22.0,
+   "gainDb": 0,
+   "desc": "Shop door spring bell, on entering the store."
+  },
+  "stamp": {
+   "files": {
+    "ogg": "ui/stamp.ogg",
+    "m4a": "ui/stamp.m4a"
+   },
+   "duration": 0.27,
+   "peakDb": -9.0,
+   "momentaryLufs": -28.2,
+   "gainDb": 0,
+   "desc": "Rubber stamp on paper: deed, claim and loan signed."
+  }
+ },
+ "note": "Procedurally synthesized by tools/audio/ui_sfx.py (mono). Peaks <= -12 dBFS; momentary loudness about -26..-22 LUFS. No hover/plot-click/plowing sounds by design."
+}

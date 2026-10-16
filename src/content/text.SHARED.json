@@ -1,0 +1,780 @@
+{
+ "movie": "SHARED",
+ "origin": "assets/SHARED/",
+ "members": [
+  {
+   "castId": 3000,
+   "name": "CurrentDate",
+   "type": "text",
+   "text": "APR. 12, 1880"
+  },
+  {
+   "castId": 3001,
+   "name": "NewDate",
+   "type": "text",
+   "text": "APR.\n12\n1880"
+  },
+  {
+   "castId": 3002,
+   "name": "CurSeason",
+   "type": "text",
+   "text": "APR. 12,1880,4,12,4"
+  },
+  {
+   "castId": 3003,
+   "name": "Propet",
+   "type": "text",
+   "text": "0,Tractors,0,0,0\n2,2,1,Horses,Pigs,Cows\n1,Plows,0\n20,LifePrice\n1,Number of Fields\n0,0,0,0,0,seeds\n7,0,0,0,0,0,Barn,Fence,WindWell,house\n8,1,1700,Land\n9,0,0,loan,Yearreturn\n10,500,500,0,Total,Cash,Save\n11,0,0,0,car,video,oven\n12,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,Variables\n13,0,Score\n14,1,a,a,a,Family\n15,0,0,0,0,0,0,0,0,0,0,Ach.file\n16,0,0,0,0,Check plot\n17,1,0,0,1,Barn,Fence,WindWell,House(Shopping)\n18,0,0,0,0,0,Buisness\n0,0,0,0"
+  },
+  {
+   "castId": 3004,
+   "name": "CurSituation",
+   "type": "text",
+   "text": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6-7-Bush-Price-tot,9-Church\n0,0,Year,Month\n0,0,Neighb,Family\n0,0,0,NCount,NCicle,NWor\n0,0,0,0,Bush\n0,0,0,0,Price\n0,0,0,0\n0,0,Reserv\n0,FirstHarv"
+  },
+  {
+   "castId": 3005,
+   "name": "Begin",
+   "type": "text",
+   "text": "1,Prev Game\n0,Begin\n0,Inside\n0,1000,2000,3000,Goals"
+  },
+  {
+   "castId": 3007,
+   "name": "AllEvents",
+   "type": "text",
+   "text": "1880,12,0,1,Baby1,2,DBox0,Sound,name\n1881,2,0,2,DL1,Had4,Sig1,11,0,0,0,1\n1881,12,0,3,Da1,1,DBox2,5,5\n1882,3,0,4,Doc1,Doc2\n1882,8,0,5,Sop1,DBox9,3,6,1890\n1883,2,0,7,AL50,Had5,Sig50,0,0,0,0\n1883,7,0,7,AL27,0,Sig27,0,0,0,0,1\n1884,2,0,1,Baby2,2,DBox0,Sound,name\n1884,3,0,4,Doc3,Doc4\n1884,6,0,2,DL8,Had7,Sig8,11,0,0,0,1\n1885,3,0,7,AL43,0,Sig2,0,0,0,0,1\n1887,7,0,5,Sop2,DBox9,0.5,6,1898\n1888,3,0,3,DaW1,7,DBox2,0,-2\n1889,2,0,1,Baby3,2,DBox0,Sound,name\n1889,3,0,4,Doc5,Doc6\n1890,2,0,3,DaW5,9,DBox13,0,2,-5\n1890,7,0,2,DL9,Had4,Sig9,11\n1892,3,0,3,DaW7,8,DBox32,0,-2,0\n1892,8,0,5,Sop3,DBox9,1,6,1900\n1893,6,0,10,Wed1,WL1,DBox13,100,200,550,3,6,14\n1893,8,0,7,AL60,Had5,Sig50,0,0,0,0\n1894,7,0,6,DL10,0,Sig10,12,-150,6,0,1\n1897,8,0,5,Sop4,DBox9,1,6,1907\n1898,3,0,3,DaW3,8,DBox01,0,4,-2\n1899,1,0,2,DL16,Had4,Sig9,11\n1900,6,0,2,DL17,Had4,Sig6,11\n1900,7,0,3,DaW8,9,DBox12,0,6,-5,-2,0\n1901,2,0,2,DL18,Had4,Sig18,11\n1901,11,1,7,AL19,Had8,Sig11,0,0,0,0,1\n1902,6,0,10,Wed2,WL1,DBox01,125,225,575,3,6,14\n1902,8,0,5,Son21,DBox01,-5\n1905,6,0,5,Dat5,DBox12,0\n1905,7,0,3,Da3,10,DBox12,480,15,0\n1906,3,0,5,DMail,DBox5,0\n1907,6,0,15,Son1,10,DBox23,0,0,-5\n1910,3,0,2,DL24,Had4,Sig18,11,0,0,0,0\n1917,5,0,7,AL33,Had9,Sig60,0,0,0,0,1\n1917,7,0,7,AL34,0,Sig10,0,0,0,0,1\n1918,6,0,7,AL37,0,Sig11,0,0,0,0,1\n1918,7,0,7,AL38,0,Sig20,0,0,0,0,1\n1919,6,0,7,AL39,Had9,0,0,0,0,0,1\n1919,11,0,7,AL40,0,Sig10,0,0,0,0,1"
+  },
+  {
+   "castId": 3008,
+   "name": "Random",
+   "type": "text",
+   "text": "10,17,Winter,month,day\n5,22,Summer\n19,74,Cents/Bush,TransPrice\n15,8,3,13,4,2,16,1,9,12,10,14,6,11,5,7"
+  },
+  {
+   "castId": 3010,
+   "name": "Seasons",
+   "type": "text",
+   "text": "1111,2,1,1,3,5,6,6,6,8,8,1,1\n1886,2,1,1,3,5,6,6,6,8,8,2,2\n1887,2,2,2,3,5,7,7,7,7,8,2,2\n1888,2,2,2,3,5,7,7,7,7,8,1,1"
+  },
+  {
+   "castId": 3011,
+   "name": "TTalk",
+   "type": "text",
+   "text": "[[1880, 4, 0, 101, \"TTalk1\"], [1880, 9, 0, 102, \"TTalk1\"], [1881, 4, 0, 103, \"TTalk1\"], [1881, 9, 0, 104, \"TTalk2\"], [1882, 4, 0, 105, \"TTalk2\"], [1882, 9, 0, 106, \"TTalk2\"], [1887, 4, 0, 107, \"TTalk2\"], [1887, 9, 0, 108, \"TTalk3\"], [1888, 9, 0, 109, \"TTalk3\"], [1890, 4, 0, 110, \"TTalk3\"], [1893, 9, 17, 111, \"TTalk3\"], [1894, 6, 0, 112, \"TTalk4\"], [1895, 4, 0, 113, \"TTalk4\"], [1905, 6, 0, 114, \"TTalk4\"], [1909, 4, 8, 115, \"TTalk4\"], [1914, 8, 5, 116, \"TTalk5\"], [1917, 4, 6, 117, \"TTalk5\"], [1918, 11, 11, 118, \"TTalk5\"], [1919, 4, 0, 119, \"TTalk5\"],[1919, 12, 0, 120, \"TTalk6\"], [1886, 4, 0, 121, \"TTalk6\"]]"
+  },
+  {
+   "castId": 3012,
+   "name": "LocDate",
+   "type": "text",
+   "text": "APR.\n12\n1880"
+  },
+  {
+   "castId": 3013,
+   "name": "MyGoal",
+   "type": "text",
+   "text": "To be a successful farmer."
+  },
+  {
+   "castId": 3014,
+   "name": "defCatalogItems",
+   "type": "text",
+   "text": "[#type: #seedsMenu, #name: #seedsMenu, #year: 0, #month: 0, #cast: \"seeds menu\", #loc: point(329, 203)], [#type: #seeds, #name: #winterWheat, #year: 0, #month: 0, #cast: \"winter wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #springWheat, #year: 0, #month: 0, #cast: \"spring wheat\", #loc: point(329, 203)], [#type: #seeds, #name: #oats, #year: 0, #month: 0, #cast: \"oats\", #loc: point(329, 203)], [#type: #seeds, #name: #corn, #year: 0, #month: 0, #cast: \"corn\", #loc: point(329, 203)], [#type: #products, #name: #windMill, #year: 0, #month: 0, #cast: \"windmill\", #loc: point(328, 143), #num: 3, #price: 80], [#type: #products, #name: #wireFence, #year: 1883, #month: 4, #cast: \"wire fence\", #loc: point(328, 143), #num: 1, #price: 100], [#type: #products, #name: #kodakCamera, #year: 1888, #month: 4, #cast: \"kodak camera\", #loc: point(328, 143), #num: 1, #price: 25], [#type: #products, #name: #tractor, #year: 1887, #month: 4, #cast: \"tractor\", #loc: point(328, 143), #num: 3, #price: 400], [#type: #products, #name: #car, #year: 1909, #month: 4, #cast: \"car\", #loc: point(328, 143), #num: 1, #price: 900]"
+  },
+  {
+   "castId": 3015,
+   "name": "STTalks",
+   "type": "text",
+   "text": "[#102 :[#7 : [8],#DEF : [8]], #103 :[#2 : [5],#9 : [7,8],#DEF : [5,7,8]], #104 :[#2 : [5],#6:[8,7],#DEF : [3,5,8,7,9]],#105 :[#1 : [3],#2 : [5],#8 : [7],#DEF : [3,5,7]],#106 :[#1 : [5,2],#9 : [7,8],#DEF : [2,5,7,8]],#107 :[#1 : [5],#7 : [8],#DEF : [5,8]],#108 :[#3 : [2,6,5],#8 : [7],#4 : [9],#DEF : [2,9,6,5,7]],#109 :[#1 : [5],#2 : [4],#7 : [8],#DEF : [5,4,8]],#110 :[#4 : [9],#7 : [8],#DEF : [1,5,6,9,8]],#111 :[#6 : [9],#7 : [8],#DEF : [8,9]],#113 :[#2 : [4],#DEF : [3,4]],#116 :[#2 : [6],#DEF : [6]],#119 :[#2 : [4,9],#DEF : [4,9]],#301 :[#1 : [2],#5 : [4],#6 : [9],#DEF : [2,4,9]],#303 :[#9 : [2],#5 : [4],#DEF : [2,4]],#121 :[#5 : [1,6],#DEF : [2,3,4,1,6,7,8,9]]]"
+  },
+  {
+   "castId": 3017,
+   "name": "All",
+   "type": "text",
+   "text": "[188012 ,18812 ,188112 ,18823 ,18828 ,18832 ,18837 ,18842 ,18843 ,18846 ,18853 ,18877 ,18883 ,18892 ,18893 ,18902 ,18907 ,18923 ,18928 ,18936 ,18938 ,18947 ,18978 ,18983 ,18991 ,19006 ,19007 ,19012 ,190111 ,19026 ,19028 ,19056 ,19057 ,19063 ,19076 ,19103 ,19175 ,19177 ,19186 ,19187 ,19196 ,191911 ]  "
+  },
+  {
+   "castId": 3018,
+   "name": "SaveIt",
+   "type": "text",
+   "text": "[[3000, 3005], 3007,  3008,  3011,  3013, 3014, 3017, [3026, 3038], 3063, 3065, [3112, 3166]]"
+  },
+  {
+   "castId": 3019,
+   "name": "Goals",
+   "type": "text",
+   "text": "To be a successful farmer.\nTo be a successful businessperson.\nTo be a successful politician.\n\n"
+  },
+  {
+   "castId": 3026,
+   "name": "LogBook",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 3027,
+   "name": "LogBank",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3028,
+   "name": "MyLoan",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 3029,
+   "name": "MyDate",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 3030,
+   "name": "MyName",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 3031,
+   "name": "MyRecieve",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 3032,
+   "name": "Interest",
+   "type": "text",
+   "text": "7%"
+  },
+  {
+   "castId": 3033,
+   "name": "MyReturn",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 3034,
+   "name": "Savings",
+   "type": "text",
+   "text": "\"\"Apr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\nApr.6, 1881,In,$30,$100\"\""
+  },
+  {
+   "castId": 3035,
+   "name": "Save",
+   "type": "text",
+   "text": "0"
+  },
+  {
+   "castId": 3036,
+   "name": "MyCash",
+   "type": "text",
+   "text": "$500.00"
+  },
+  {
+   "castId": 3037,
+   "name": "FirstName",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 3038,
+   "name": "LastName",
+   "type": "text",
+   "text": " "
+  },
+  {
+   "castId": 3041,
+   "name": "PlowDate",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3042,
+   "name": "AcresPl",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3043,
+   "name": "PlowTime",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3044,
+   "name": "DateFin",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3045,
+   "name": "NumWork",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3046,
+   "name": "PriceWor",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3047,
+   "name": "PriceDay",
+   "type": "text",
+   "text": "$4 daily"
+  },
+  {
+   "castId": 3048,
+   "name": "AcresHv",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3049,
+   "name": "HarvTime",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3050,
+   "name": "HireWor",
+   "type": "text",
+   "text": "APR. 7, 1910"
+  },
+  {
+   "castId": 3051,
+   "name": "LandValue",
+   "type": "text",
+   "text": "1879,1600\n1880,1600\n1881,1700\n1882,1700\n1883,1800\n1884,2000\n1885,2200\n1886,2500\n1887,2700\n1888,2800\n1889,2900\n1890,3000\n1891,3000\n1892,3000\n1893,3000\n1894,3200\n1895,3600\n1896,3600\n1897,3600\n1898,3700\n1899,3700\n1900,3800\n1901,4000\n1902,4500\n1903,5000\n1904,5000\n1905,5500\n1906,6000\n1907,7000\n1908,8500\n1909,9000\n1910,9500\n1911,10500\n1912,11000\n1913,11000\n1914,12000\n1915,14000\n1916,14500\n1917,15000\n1918,16000\n1919,16500\n1920,17000\n"
+  },
+  {
+   "castId": 3052,
+   "name": "Lst",
+   "type": "text",
+   "text": "1879,17.00,04.40,053.74\n1880,17.00,04.40,053.74\n1881,18.67,04.80,057.91\n1882,20.93,06.00,058.75\n1883,23.87,06.74,069.92\n1884,25.26,05.64,073.80\n1885,24.40,05.06,072.94\n1886,22.20,04.30,070.62\n1887,21.18,04.60,071.59\n1888,19.39,05.12,072.00\n1889,18.77,05.80,072.39\n1890,16.95,04.80,069.27\n1891,16.49,04.24,067.19\n1892,16.81,04.65,064.56\n1893,17.00,06.37,060.72\n1894,16.84,06.06,046.73\n1895,16.56,05.09,035.57\n1896,17.86,04.50,032.34\n1897,18.62,04.36,030.92\n1898,22.79,04.70,033.35\n1899,24.53,04.67,036.61\n1900,26.50,05.36,043.56\n1901,22.68,06.08,053.03\n1902,21.48,06.95,058.52\n1903,21.55,07.69,062.27\n1904,19.69,06.08,067.60\n1905,18.39,05.89,069.70\n1906,19.65,06.07,080.00\n1907,20.91,07.54,093.00\n1908,20.92,05.99,092.80\n1909,21.99,06.45,095.10\n1910,24.54,09.05,107.70\n1911,27.22,09.33,111.11\n1912,27.68,07.99,105.60\n1913,33.07,09.89,110.60\n1914,38.97,10.51,109.00\n1915,40.67,09.95,109.30\n1916,40.10,08.48,103.20\n1917,43.34,11.82,101.40\n1918,50.01,19.69,102.60\n1919,54.65,22.18,104.00\n1920,52.64,20.00,096.40\n"
+  },
+  {
+   "castId": 3053,
+   "name": "BuAc2",
+   "type": "text",
+   "text": "    Wheat\nyear|P/A  |B/A  |P/B\n1879,12.52,13.18,0.45\n1880,12.52,13.18,0.45\n1881,13.24,11.03,0.96\n1882,13.46,15.12,0.37\n1883,11.23,12.34,0.44\n1884,9.64 ,14.84,0.25\n1885,8.78 ,11.40,0.34\n1886,9.77 ,14.16,0.22\n1887,9.05 ,13.32,2.00\n1888,11.28,12.13,2.00\n1889,9.77 ,13.96,2.00\n1890,10.28,12.24,2.00\n1891,13.70,16.50,0.30\n1892,8.83 ,14.24,0.19\n1893,6.57 ,12.41,0.14\n1894,6.61 ,13.49,0.09\n1895,7.09 ,13.90,0.11\n1896,9.22 ,12.81,0.28\n1897,11.31,13.96,0.31\n1898,8.82 ,15.21,0.24\n1899,7.38 ,12.51,0.29\n1900,7.55 ,12.17,0.33\n1901,9.45 ,15.01,0.33\n1902,9.36 ,14.86,0.36\n1903,9.44 ,13.68,0.38\n1904,11.98,12.88,0.53\n1905,11.43,15.25,0.54\n1906,10.58,16.03,0.51\n1907,12.40,14.25,0.58\n1908,13.83,14.26,0.68\n1909,15.30,15.45,0.73\n1910,12.42,13.65,0.71\n1911,10.78,12.39,0.70\n1912,12.21,15.08,0.71\n1913,11.41,14.44,0.69\n1914,15.81,16.13,0.85\n1915,16.06,16.73,0.95\n1916,16.97,11.87,1.13\n1917,27.17,13.25,2.05\n1918,30.35,14.80,2.05\n1919,27.90,12.92,2.16\n1920,24.74,13.52,1.83\n"
+  },
+  {
+   "castId": 3054,
+   "name": "BuAc3",
+   "type": "text",
+   "text": "      oats\nYear|P/A  |B/A  |P/B\n1879,8.91 ,25.47,0.10\n1880,8.91 ,25.47,0.09\n1881,12.13,26.37,0.14\n1882,10.47,28.31,0.09\n1883,9.40 ,29.39,0.09\n1884,7.88 ,29.17,0.08\n1885,8.08 ,28.86,0.08\n1886,8.10 ,27.92,0.09\n1887,7.95 ,26.49,1.88\n1888,7.51 ,27.80,1.98\n1889,6.37 ,28.96,2.00\n1890,9.05 ,21.54,2.00\n1891,9.35 ,30.16,0.10\n1892,8.20 ,25.63,0.10\n1893,7.01 ,24.16,0.09\n1894,8.12 ,25.38,0.10\n1895,5.69 ,29.93,0.07\n1896,4.61 ,25.62,0.08\n1897,6.05 ,28.79,0.09\n1898,7.18 ,28.71,0.12\n1899,8.33 ,32.03,0.14\n1900,7.61 ,30.44,0.13\n1901,10.36,25.90,0.16\n1902,10.65,34.35,0.18\n1903,9.35 ,27.50,0.19\n1904,9.58 ,30.90,0.18\n1905,9.58 ,33.03,0.17\n1906,9.72 ,30.37,0.18\n1907,10.23,23.26,0.20\n1908,11.84,24.16,0.22\n1909,12.44,28.92,0.21\n1910,10.81,30.02,0.20\n1911,10.73,23.85,0.26\n1912,12.35,36.33,0.24\n1913,10.88,27.90,0.29\n1914,12.60,28.65,0.34\n1915,14.05,36.98,0.38\n1916,14.27,29.13,0.39\n1917,24.28,34.68,0.70\n1918,23.22,33.65,0.69\n1919,21.52,27.95,0.77\n1920,18.25,33.79,0.54\n"
+  },
+  {
+   "castId": 3055,
+   "name": "BuAc4",
+   "type": "text",
+   "text": "corn\nYear|P/A  |B/A  |P/B\n1879,10.64,27.29,0.11\n1880,10.64,27.29,0.11\n1881,12.44,19.75,0.18\n1882,12.73,26.53,0.13\n1883,10.18,24.23,0.13\n1884,9.90 ,28.30,0.11\n1885,9.17 ,28.64,0.11\n1886,8.68 ,24.12,0.12\n1887,9.42 ,21.90,1.78\n1888,9.59 ,29.05,1,67\n1889,8.27 ,29.54,2.00\n1890,11.03,22.06,2.00\n1891,11.85,29.62,0.15\n1892,9.62 ,24.66,0.13\n1893,8.57 ,23.80,0.12\n1894,9.08 ,20.17,0.14\n1895,7.00 ,28.02,0.10\n1896,6.30 ,29.99,0.09\n1897,6.61 ,25.43,0.09\n1898,7.77 ,26.78,0.10\n1899,8.39 ,27.97,0.12\n1900,9.82 ,28.06,0.11\n1901,10.90,18.17,0.18\n1902,11.42,28.55,0.16\n1903,11.29,26.88,0.16\n1904,12.42,28.22,0.17\n1905,12.65,30.85,0.16\n1906,12.37,31.72,0.15\n1907,13.87,27.20,0.19\n1908,17.51,26.94,0.26\n1909,16.16,26.06,0.34\n1910,14.51,27.90,0.32\n1911,16.60,24.41,0.49\n1912,15.98,29.06,0.55\n1913,15.88,22.68,0.60\n1914,18.32,25.81,0.61\n1915,19.12,28.11,0.58\n1916,27.49,24.11,1.04\n1917,38.29,26.22,1.46\n1918,36.31,23.89,1.52\n1919,41.22,27.30,1.51\n1920,19.39,30.30,0.64\n"
+  },
+  {
+   "castId": 3056,
+   "name": "Destroied",
+   "type": "text",
+   "text": "1,1\n2,1\n3,1\n4,2\n5,2\n6,3\n7,3\n8,4\n9,4\n10,5\n11,5\n12,6\n13,6\n14,7\n15,7\n16,8"
+  },
+  {
+   "castId": 3057,
+   "name": "YearGB",
+   "type": "text",
+   "text": "JAN.\nFEB.\nMAR.\nAPR.\nMAY\nJUNE\nJULY\nAUG.\nSEPT.\nOCT.\nNOV.\nDEC."
+  },
+  {
+   "castId": 3058,
+   "name": "Year",
+   "type": "text",
+   "text": "Jan.\nFeb.\nMar.\nApr.\nMay\nJune\nJuly\nAug.\nSept.\nOct.\nNov.\nDec."
+  },
+  {
+   "castId": 3059,
+   "name": "Actions",
+   "type": "text",
+   "text": "Receive\nTake\nReturn\nPay  Interest\nInfo.\nSell\nPlow\nPlant\nHarvest\nBuild\nWorkers\nTrivia\nSurprise\nBuy\nSell\nPut Away\nTake Out\nBuy"
+  },
+  {
+   "castId": 3060,
+   "name": "Locations",
+   "type": "text",
+   "text": "Bank\nFarm house\nFields\nStore\nGame board\nDealer\nLivestock market"
+  },
+  {
+   "castId": 3061,
+   "name": "Coord",
+   "type": "text",
+   "text": "[#DL1:206,#DL8:248,#DL9:213,#DL10:289,#DL11:289,#DL16:246,#DL17:266,#DL18:244,#DL19:309,#DL20:248,#DL21:289,#DL22:296,#DL24:258,#DL28:289,#ALM1:195,#ALM2:244,#ALM3:195,#ALM4:227,#ALM5:211,#ALM6:241,#ALM7:260,#ALM9:250,#AL14:304,#AL15:289,#AL19:343,#AL21:257,#AL25:221,#AL27:289,#AL29:241,#AL30:259,#AL31:241,#AL32:241,#AL33:221,#AL34:289,#AL35:319,#AL36:289,#AL37:289,#AL38:317,#AL39:209,#AL40:318,#AL41:318,#AL43:244,#AL50:260,#AL51:290,#AL52:290,#AL53:290,#AL54:225,#AL60:298,#AL62:289]"
+  },
+  {
+   "castId": 3063,
+   "name": "AllNotes",
+   "type": "text",
+   "text": "\n\n\n \n\n\n \n\n"
+  },
+  {
+   "castId": 3065,
+   "name": "NumbPage",
+   "type": "text",
+   "text": "2,2\n8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+  },
+  {
+   "castId": 3080,
+   "name": "NOM1",
+   "type": "text",
+   "text": "\nYou folks are very brave, but no one can survive out here without money to buy food and supplies. I collected $100.00 from your neighbors to help you through the winter. I'm sure you would do the same for us.\n"
+  },
+  {
+   "castId": 3081,
+   "name": "NoM2",
+   "type": "text",
+   "text": "\nTake money out of the box under your bed."
+  },
+  {
+   "castId": 3082,
+   "name": "NoM3",
+   "type": "text",
+   "text": " \nAfter all your hard work, it's a shame not to sell your crops. It's no wonder that you ran out of money. I think you should sell your crops right away.\n"
+  },
+  {
+   "castId": 3083,
+   "name": "NoM4",
+   "type": "text",
+   "text": "Hello, neighbor. You look as though you could use some advice. You can use your homestead claim as security to borrow money from the bank.\n\n"
+  },
+  {
+   "castId": 3084,
+   "name": "NOM5",
+   "type": "text",
+   "text": "\nI'm sorry to hear that you're heading back east. We heard that you ran out of money. I collected $50.00 from your neighbors to help pay for your journey. I hope you'll come back next year and try again. "
+  },
+  {
+   "castId": 3085,
+   "name": "NOM6",
+   "type": "text",
+   "text": "\nI'm sorry to hear that you're heading back east. We heard that you ran out of money. I hope you'll come back next year and try again. "
+  },
+  {
+   "castId": 3110,
+   "name": "",
+   "type": "text",
+   "text": "March, 1880\nWe're ready to say good-bye to city life on the\nEast Coast.  We'll travel first by train and then \nby covered wagon to the High Plains of Kansas.\nOnce we're there, we'll  stake a claim for a \nhomestead of 160 acres. Our family is ready to\ngo west and make a new start!"
+  },
+  {
+   "castId": 3111,
+   "name": "",
+   "type": "text",
+   "text": "March, 1880\nWe're ready to say good-bye to city life on the\nEast Coast.  We'll travel first by train and then \nby covered wagon to the High Plains of Kansas.\nOnce we're there, we'll  stake a claim for a \nhomestead of 160 acres. Our family is ready to\ngo west and make a new start!"
+  },
+  {
+   "castId": 3112,
+   "name": "MyText",
+   "type": "text",
+   "text": "March, 1880\nWe're ready to say good-bye to city life on the East Coast.  We'll travel first by train and then by covered wagon to the High Plains of Kansas. Once we're there, we'll stake a claim for a homestead of 160 acres. Our family is ready to go west and make a new start!"
+  },
+  {
+   "castId": 3113,
+   "name": "",
+   "type": "text",
+   "text": "April, 1880\nWe've finally made it to Kansas!  We've found a  good spot for our homestead, not far from a creek  and a small town.  Until we build a house, we're  living in a tent made from the top of our covered wagon.  Once we get settled, we'll get ready to farm our homestead."
+  },
+  {
+   "castId": 3114,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3115,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3116,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3117,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3118,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3119,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3120,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3121,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3122,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3123,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3124,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3125,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3126,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3127,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3128,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3129,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3130,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3131,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3132,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3133,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3134,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3135,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3136,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3137,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3138,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3139,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3140,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3141,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3142,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3143,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3144,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3145,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3146,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3147,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3148,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3149,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3150,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3151,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3152,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3153,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3154,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3155,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3156,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3157,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3158,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3159,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3160,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3161,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3162,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3163,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3164,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3165,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3166,
+   "name": "",
+   "type": "text",
+   "text": ""
+  },
+  {
+   "castId": 3257,
+   "name": "NewHouse",
+   "type": "text",
+   "text": "Hi, neighbor. Did you know that you can afford some new furniture for your house? It will help make even the plainest sod house prettier. New furniture costs $200.00. Would you like to buy it?\n"
+  },
+  {
+   "castId": 3263,
+   "name": "NH1",
+   "type": "text",
+   "text": "Hi, neighbor. Did you know that you can afford some new furniture for your house? It will help make even the plainest sod house prettier. New furniture costs $200.00. Would you like to buy it?\n"
+  },
+  {
+   "castId": 3264,
+   "name": "NH2",
+   "type": "text",
+   "text": "Hi, neighbor. Did you know that you can afford a ready-made wooden house? It is more comfortable and spacious than a sod house. A ready-made wooden house costs $1,000.00. Would you like to buy it?\n"
+  },
+  {
+   "castId": 3265,
+   "name": "PutIn",
+   "type": "text",
+   "text": "You have $0.00\nin your savings box.\nHow much money \ndo you want to put in?\n\n"
+  },
+  {
+   "castId": 3266,
+   "name": "TakeOut",
+   "type": "text",
+   "text": "You have $0.00\nin your savings box.\n How much money \ndo you want to take out?\n"
+  },
+  {
+   "castId": 3282,
+   "name": "psApi",
+   "type": "text",
+   "text": "This is the standalone API object."
+  },
+  {
+   "castId": 3283,
+   "name": "psEdunetics",
+   "type": "text",
+   "text": "2. Class: Edunetics\nThis is the root of the Edunetics class library. It is an abstract class that gives it’s offspring the following capabilities: \n· Self documentation (describe)\n· Self destruction (dispose)\n· Self name (getName)\n2.1. Cardinality: 0\n\n2.2.  Attributes:\n\n2.2.1.  Symbol psyName \nObject identity.\n2.3. Methods:\n\n2.3.1. birth\nLingo constructor\n2.3.1.1. Return Value: Object\nThe new object\n2.3.1.2. Parameters:\n2.3.1.2.1. me\nSelf pointer Lingo style\n2.3.1.2.2. Symbol syName\nThe identity of the new object\n2.3.2. vDescribe\nPrint the description text on the message window (Director)\n2.3.2.1. Return Value: Void\n<Description>\n2.3.2.2. Parameters:\n2.3.2.2.1. me\nLingo syntax.\n2.3.3. plObjectToList\nReturn the current state of the instance propeties as a property list where each property of the object is a property in the list and the same goes for values. If one of the values is an object by itself, it will be also replaced with such a property lis\n2.3.3.1. Return Value: PropertyList\nA property list with the current instance propeties' values.\n2.3.3.2. Parameters:\n2.3.3.2.1. LingoObject oMe\nLingo syntax.\n2.3.4. syListToProperties\nUpdate an instance properties value from a propety list.\n2.3.4.1. Return Value: Symbol\n#OK or #ERR_ListToProperties_PropertyNotExist:XX or #ERR_ListToProperties_WrongValue:XX\n2.3.4.2. Parameters:\n2.3.4.2.1. LingoObject oMe\nThe object to update.\n2.3.4.2.2. PropertyList plNewValues\nEach property must have a property in the object. The values will be stored in the matching property of the object.\n2.3.5. vDispose\nDo the clean-up of the object. User should assign it to the object for disposing.\n2.3.5.1. Return Value: Void\n<Description>\n2.3.5.2. Parameters:\n2.3.5.2.1. me\nLingo syntax.\nEnd of Class 'Edunetics'\n"
+  },
+  {
+   "castId": 3448,
+   "name": "Credits",
+   "type": "text",
+   "text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExecutive Producers\nSHIMON DEMBINSKY\nNOAM ZIV\n\nProducer\nBENNY CHUKRUN\n\nConcept and Design\nBENNY CHUKRUN\n\nContent Supervision\nJUNE FLANDERS, PH.D.\nJUDY MAISELS-TAL, PH.D.\nBEN COLLINS\n\nLead Software Engineer\nALLA LADIZANSKY\n\nArt Directors\nHARRIET GOITEIN\nBENNY TESSLER\n\nEditor\nJENNIFER PATON\n\nScriptwriters\nBENNY CHUKRUN\nLAURA FINK\nYAEL TZARFATI\nJENNIFER PATON\n\nResearch\nBEN COLLINS\nLAURA FINK\nMARY WRIGHT\nBROOKE WYNKOOP\n\n3-D Art, Scenes, \nand 3-D Animation\nBENNY TESSLER\n\n2-D Graphics, Character Design\nand Animation\nHARRIET GOITEIN\n\nSoftware Development\nALLA LADIZANSKY\nRAZ YALOV\nALICIA LAZAROVSKY\n\nGraphic Artists\nROMAN LINETSKY\nADRIANA CARMEL\n\nQuality and Integration Manager\nARIEL STEINFELD\n\nQuality Assurance\nOLGA ALEXSANDROVICH\nORLY HOUMINER\nANDREA SABTY\n\nOriginal Music\nVYACHESLAV GANELIN\n\nSound Production\nDOVIS  MILLER  (Studio DM)\n\n Music Composing\nJON GILLESPIE'S\n\nVice President, Publishing and Curriculum\nRITA FORMICA\n\nMarket Research and \nProduct Management\nBONNIE H. HOBSON\n\nDeveloped in conjunction with the Plano \nIndependent School District, Plano, Texas\n\nCoordinator of Teacher Development \nTeam and Field Testing\nSARA JALALI\n\nPhoto Resources\nLIBRARY OF CONGRESS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+   "castId": 3449,
+   "name": "ActivCR",
+   "type": "text",
+   "text": "\n\n\n\n\n\n\n\n\n\n\n\nExecutive Producers\nSHIMON DEMBINSKY\nNOAM ZIV\n\nProducer\nBENNY CHUKRUN"
+  },
+  {
+   "castId": 3540,
+   "name": "Year1",
+   "type": "text",
+   "text": "Feb. 5, 1887"
+  },
+  {
+   "castId": 3541,
+   "name": "",
+   "type": "text",
+   "text": "Feb. 5, 1887"
+  },
+  {
+   "castId": 3542,
+   "name": "",
+   "type": "text",
+   "text": "Sept. 20, 1881"
+  },
+  {
+   "castId": 3543,
+   "name": "",
+   "type": "text",
+   "text": "Aug. 1, 1880"
+  }
+ ]
+}

@@ -1,0 +1,1605 @@
+{
+ "note": "Every prose-like string literal in the decompiled Lingo (decompiled/lingo/*). Most are code; curated player-facing ones are copied into dialogs.json.",
+ "strings": [
+  {
+   "text": " compound device",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 14
+    }
+   ]
+  },
+  {
+   "text": " days. Will you help me?",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 265",
+     "line": 8
+    }
+   ]
+  },
+  {
+   "text": " Installed paths",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3206 - paths functions",
+     "line": 15
+    }
+   ]
+  },
+  {
+   "text": "-bit color depth.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 7
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 9
+    }
+   ]
+  },
+  {
+   "text": ". You need it to be ",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 22
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 17
+    }
+   ]
+  },
+  {
+   "text": "1  Acre",
+   "refs": [
+    {
+     "movie": "FIELD",
+     "script": "MovieScript 55",
+     "line": 59
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 32",
+     "line": 20
+    }
+   ]
+  },
+  {
+   "text": "All rights reserved to the Library of Congress.",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 36
+    }
+   ]
+  },
+  {
+   "text": "animation object script",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3200",
+     "line": 70
+    }
+   ]
+  },
+  {
+   "text": "Animation Object Script",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "CastScript 102 - baloon parent script",
+     "line": 8
+    }
+   ]
+  },
+  {
+   "text": "baloon ancestor script",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "CastScript 102 - baloon parent script",
+     "line": 15
+    }
+   ]
+  },
+  {
+   "text": "Baloon Object creation error:",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 37",
+     "line": 40
+    }
+   ]
+  },
+  {
+   "text": "baloon parent script",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 37",
+     "line": 29
+    }
+   ]
+  },
+  {
+   "text": "Bookmark.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3276 - scNewBookMarkSaveAndLoad",
+     "line": 173
+    }
+   ]
+  },
+  {
+   "text": "Can't create the object for the dirver's hand animation:",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 123",
+     "line": 16
+    }
+   ]
+  },
+  {
+   "text": "Can't create the object for the dirver's head animation:",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 123",
+     "line": 6
+    }
+   ]
+  },
+  {
+   "text": "Can't create the preloader object. Error:",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "CastScript 118 - slideShow control parent script",
+     "line": 17
+    }
+   ]
+  },
+  {
+   "text": "Can't find window:",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 2 - scLoginBtnsScripts",
+     "line": 77
+    }
+   ]
+  },
+  {
+   "text": "Can't open the 'INI' xObject.",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 20 - INI functions -- written by Raz Yalov 16-May-95",
+     "line": 36
+    }
+   ]
+  },
+  {
+   "text": "Can't open the INI xObject.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3287 - old -- INI files handaling for BookMarking -- written by Raz Yalov 23-2-95",
+     "line": 156
+    }
+   ]
+  },
+  {
+   "text": "capability QTWVideo compound device",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 13
+    }
+   ]
+  },
+  {
+   "text": "capability Sequencer compound device",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 25
+    }
+   ]
+  },
+  {
+   "text": "capability WaveAudio compound device",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 34
+    }
+   ]
+  },
+  {
+   "text": "courier new",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 32
+    }
+   ]
+  },
+  {
+   "text": "cur closedHand,msk",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 7 - general movie functions and handlers",
+     "line": 89
+    },
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 8 - init handlers",
+     "line": 10
+    }
+   ]
+  },
+  {
+   "text": "cur closedHand,pic",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 7 - general movie functions and handlers",
+     "line": 89
+    },
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 8 - init handlers",
+     "line": 10
+    }
+   ]
+  },
+  {
+   "text": "cur fingerPoint,msk",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 7 - general movie functions and handlers",
+     "line": 87
+    },
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 8 - init handlers",
+     "line": 8
+    }
+   ]
+  },
+  {
+   "text": "cur fingerPoint,pic",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 7 - general movie functions and handlers",
+     "line": 87
+    },
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 8 - init handlers",
+     "line": 8
+    }
+   ]
+  },
+  {
+   "text": "cur openHand,msk",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 7 - general movie functions and handlers",
+     "line": 88
+    },
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 8 - init handlers",
+     "line": 9
+    }
+   ]
+  },
+  {
+   "text": "cur openHand,pic",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 7 - general movie functions and handlers",
+     "line": 88
+    },
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 8 - init handlers",
+     "line": 9
+    }
+   ]
+  },
+  {
+   "text": "curCast = ",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3200",
+     "line": 51
+    },
+    {
+     "movie": "STORE",
+     "script": "MovieScript 43 - utils",
+     "line": 5
+    }
+   ]
+  },
+  {
+   "text": "Date : ",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 28
+    }
+   ]
+  },
+  {
+   "text": "Dec. ,",
+   "refs": [
+    {
+     "movie": "BANK09",
+     "script": "ScoreScript 29",
+     "line": 13
+    },
+    {
+     "movie": "BANK09",
+     "script": "ScoreScript 55",
+     "line": 20
+    }
+   ]
+  },
+  {
+   "text": "Do you want to save your game?",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 57",
+     "line": 18
+    },
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 80",
+     "line": 34
+    }
+   ]
+  },
+  {
+   "text": "edInitGlobals: Can't create the instance of gXSysObj, (mNew)!!!",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 8 - init handlers",
+     "line": 35
+    }
+   ]
+  },
+  {
+   "text": "edInitGlobals: Can't open the",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 8 - init handlers",
+     "line": 30
+    }
+   ]
+  },
+  {
+   "text": "Edunetics Bookmark File",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3276 - scNewBookMarkSaveAndLoad",
+     "line": 169
+    }
+   ]
+  },
+  {
+   "text": "FixPalette: Can't create xObject instance.",
+   "refs": [
+    {
+     "movie": "OPEN",
+     "script": "MovieScript 14 - scPalettePatch",
+     "line": 12
+    }
+   ]
+  },
+  {
+   "text": "form btns script",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 45",
+     "line": 12
+    }
+   ]
+  },
+  {
+   "text": "form's firstName",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 52
+    },
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 64
+    },
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 68
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 14
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 14
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 16
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 18
+    }
+   ]
+  },
+  {
+   "text": "form's FirstName",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 58 - the script of the name fields",
+     "line": 16
+    }
+   ]
+  },
+  {
+   "text": "form's lastName",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 52
+    },
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 65
+    },
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 69
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 58 - the script of the name fields",
+     "line": 17
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 15
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 15
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 17
+    },
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 18
+    }
+   ]
+  },
+  {
+   "text": "G_Lines = ",
+   "refs": [
+    {
+     "movie": "HOUSE3",
+     "script": "ScoreScript 3",
+     "line": 12
+    },
+    {
+     "movie": "SHARED",
+     "script": "ScoreScript 3245 - 13",
+     "line": 9
+    }
+   ]
+  },
+  {
+   "text": "gp.mid length",
+   "refs": [
+    {
+     "movie": "NEWS",
+     "script": "MovieScript 1",
+     "line": 14
+    }
+   ]
+  },
+  {
+   "text": "gp.mid position",
+   "refs": [
+    {
+     "movie": "NEWS",
+     "script": "MovieScript 1",
+     "line": 25
+    }
+   ]
+  },
+  {
+   "text": "I try to print",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 27",
+     "line": 15
+    }
+   ]
+  },
+  {
+   "text": "I will haul your crops to O'Grady for ",
+   "refs": [
+    {
+     "movie": "TSTREET1",
+     "script": "ScoreScript 14",
+     "line": 17
+    }
+   ]
+  },
+  {
+   "text": "I'll give",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 52",
+     "line": 10
+    }
+   ]
+  },
+  {
+   "text": "info QTWVideo version",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 20
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 15
+    }
+   ]
+  },
+  {
+   "text": "It will take ",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 265",
+     "line": 8
+    }
+   ]
+  },
+  {
+   "text": "leave buy",
+   "refs": [
+    {
+     "movie": "STORE",
+     "script": "MovieScript 9 - leaveSeeds,CheckTotal,LeaveBuy",
+     "line": 39
+    },
+    {
+     "movie": "STORE",
+     "script": "MovieScript 9 - leaveSeeds,CheckTotal,LeaveBuy",
+     "line": 45
+    }
+   ]
+  },
+  {
+   "text": "Lilly Mae",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 26",
+     "line": 19
+    },
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 51",
+     "line": 23
+    }
+   ]
+  },
+  {
+   "text": "linked picts list",
+   "refs": [
+    {
+     "movie": "STORE",
+     "script": "MovieScript 1 - startMovie",
+     "line": 108
+    }
+   ]
+  },
+  {
+   "text": "Name : ",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 26
+    }
+   ]
+  },
+  {
+   "text": "New Times Roman",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3203",
+     "line": 18
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3203",
+     "line": 24
+    }
+   ]
+  },
+  {
+   "text": "pict path",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3206 - paths functions",
+     "line": 17
+    }
+   ]
+  },
+  {
+   "text": "Please wait. Printing...",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 7
+    }
+   ]
+  },
+  {
+   "text": "preload list",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 29
+    }
+   ]
+  },
+  {
+   "text": "preload list2",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 38 - the ballons scripts",
+     "line": 71
+    }
+   ]
+  },
+  {
+   "text": "preload list3",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 38
+    }
+   ]
+  },
+  {
+   "text": "products frame",
+   "refs": [
+    {
+     "movie": "STORE",
+     "script": "MovieScript 6 - doTheIconsInTheCatalogue",
+     "line": 137
+    }
+   ]
+  },
+  {
+   "text": "QT path",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3206 - paths functions",
+     "line": 23
+    }
+   ]
+  },
+  {
+   "text": "return #ERR_syListToObject_PropertyNotExist:",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "CastScript 23 - psEdunetics",
+     "line": 49
+    },
+    {
+     "movie": "SHARED",
+     "script": "CastScript 3283 - psEdunetics",
+     "line": 49
+    }
+   ]
+  },
+  {
+   "text": "SCORE :  ",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 1",
+     "line": 9
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 11",
+     "line": 39
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 2",
+     "line": 98
+    }
+   ]
+  },
+  {
+   "text": "seed price 1",
+   "refs": [
+    {
+     "movie": "STORE",
+     "script": "ScoreScript 5 - startCatalogue",
+     "line": 42
+    }
+   ]
+  },
+  {
+   "text": "seeds frame",
+   "refs": [
+    {
+     "movie": "STORE",
+     "script": "MovieScript 6 - doTheIconsInTheCatalogue",
+     "line": 134
+    }
+   ]
+  },
+  {
+   "text": "seeds menu",
+   "refs": [
+    {
+     "movie": "STORE",
+     "script": "MovieScript 6 - doTheIconsInTheCatalogue",
+     "line": 131
+    }
+   ]
+  },
+  {
+   "text": "set syStatus = #ERR_ExitCode-",
+   "refs": [
+    {
+     "movie": "LOGIN",
+     "script": "MovieScript 4 - scFileIOFunctions",
+     "line": 32
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3281 - scFileIOFunctions",
+     "line": 32
+    }
+   ]
+  },
+  {
+   "text": "slideShow control parent script",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 28
+    }
+   ]
+  },
+  {
+   "text": "SND claim form clerk",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 45",
+     "line": 20
+    }
+   ]
+  },
+  {
+   "text": "sound path",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3206 - paths functions",
+     "line": 20
+    }
+   ]
+  },
+  {
+   "text": "sound stop 1",
+   "refs": [
+    {
+     "movie": "TSTREET1",
+     "script": "ScoreScript 18",
+     "line": 9
+    }
+   ]
+  },
+  {
+   "text": "Spring Wheat",
+   "refs": [
+    {
+     "movie": "STORE",
+     "script": "ScoreScript 10 - startSeeds",
+     "line": 4
+    }
+   ]
+  },
+  {
+   "text": "Text casts",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3274 - INI files handaling for BookMarking -- written by Raz Yalov. Last updated  23-4-96",
+     "line": 45
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3287 - old -- INI files handaling for BookMarking -- written by Raz Yalov 23-2-95",
+     "line": 5
+    }
+   ]
+  },
+  {
+   "text": "Text casts saved in files",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3274 - INI files handaling for BookMarking -- written by Raz Yalov. Last updated  23-4-96",
+     "line": 46
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3287 - old -- INI files handaling for BookMarking -- written by Raz Yalov 23-2-95",
+     "line": 6
+    }
+   ]
+  },
+  {
+   "text": "the ballons scripts",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 37",
+     "line": 13
+    }
+   ]
+  },
+  {
+   "text": "The O'Grady grain elevator is offering ",
+   "refs": [
+    {
+     "movie": "TSTREET1",
+     "script": "ScoreScript 14",
+     "line": 16
+    }
+   ]
+  },
+  {
+   "text": "the que frames field",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 29
+    }
+   ]
+  },
+  {
+   "text": "the que frames field2",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 38 - the ballons scripts",
+     "line": 71
+    }
+   ]
+  },
+  {
+   "text": "the que frames field3",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 38
+    }
+   ]
+  },
+  {
+   "text": "the queue field",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 29
+    }
+   ]
+  },
+  {
+   "text": "the queue field2",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 38 - the ballons scripts",
+     "line": 71
+    }
+   ]
+  },
+  {
+   "text": "the queue field3",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 38
+    }
+   ]
+  },
+  {
+   "text": "The QuickTime version is ",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 22
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 17
+    }
+   ]
+  },
+  {
+   "text": "the script of the name fields",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 45",
+     "line": 40
+    }
+   ]
+  },
+  {
+   "text": "the stage",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 53",
+     "line": 19
+    }
+   ]
+  },
+  {
+   "text": "The stage",
+   "refs": [
+    {
+     "movie": "BANK09",
+     "script": "ScoreScript 33",
+     "line": 14
+    }
+   ]
+  },
+  {
+   "text": "There is not enough memory to run this movie.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 4
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 5
+    }
+   ]
+  },
+  {
+   "text": "There's a letter in your mailbox.",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 42",
+     "line": 35
+    }
+   ]
+  },
+  {
+   "text": "This computer is running in ",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 7
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 9
+    }
+   ]
+  },
+  {
+   "text": "This version of the product can't save or load your work.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3274 - INI files handaling for BookMarking -- written by Raz Yalov. Last updated  23-4-96",
+     "line": 83
+    }
+   ]
+  },
+  {
+   "text": "ticks.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3274 - INI files handaling for BookMarking -- written by Raz Yalov. Last updated  23-4-96",
+     "line": 9
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3274 - INI files handaling for BookMarking -- written by Raz Yalov. Last updated  23-4-96",
+     "line": 19
+    }
+   ]
+  },
+  {
+   "text": "Times new roman",
+   "refs": [
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 22
+    },
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 38
+    },
+    {
+     "movie": "ALBUM",
+     "script": "MovieScript 28",
+     "line": 43
+    }
+   ]
+  },
+  {
+   "text": "Times New Roman",
+   "refs": [
+    {
+     "movie": "BHOUSE1",
+     "script": "MovieScript 2",
+     "line": 28
+    },
+    {
+     "movie": "BHOUSE1",
+     "script": "MovieScript 2",
+     "line": 32
+    },
+    {
+     "movie": "BHOUSE1",
+     "script": "MovieScript 2",
+     "line": 34
+    },
+    {
+     "movie": "BHOUSE1",
+     "script": "MovieScript 2",
+     "line": 38
+    },
+    {
+     "movie": "BHOUSE1",
+     "script": "MovieScript 2",
+     "line": 42
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 45
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 52
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 53
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 54
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 59
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 61
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 82
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 83
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 84
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 85
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 104
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 105
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 106
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 107
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 108
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 109
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 111
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 117
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 119
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 125
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 127
+    },
+    {
+     "movie": "CALEND",
+     "script": "MovieScript 4",
+     "line": 129
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 46",
+     "line": 60
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 46",
+     "line": 61
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 46",
+     "line": 62
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 46",
+     "line": 63
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 69",
+     "line": 152
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 69",
+     "line": 153
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 69",
+     "line": 154
+    },
+    {
+     "movie": "FIELD",
+     "script": "ScoreScript 69",
+     "line": 155
+    },
+    {
+     "movie": "HOUSE1",
+     "script": "MovieScript 2",
+     "line": 29
+    },
+    {
+     "movie": "HOUSE1",
+     "script": "MovieScript 2",
+     "line": 37
+    },
+    {
+     "movie": "HOUSE1",
+     "script": "MovieScript 2",
+     "line": 43
+    },
+    {
+     "movie": "HOUSE1",
+     "script": "MovieScript 2",
+     "line": 51
+    },
+    {
+     "movie": "HOUSE1",
+     "script": "MovieScript 2",
+     "line": 59
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3204",
+     "line": 16
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3222",
+     "line": 28
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3222",
+     "line": 32
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3222",
+     "line": 34
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3222",
+     "line": 38
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3222",
+     "line": 42
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 105
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 106
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 107
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 108
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 121
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 122
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 123
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 124
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 129
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 130
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 131
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 132
+    },
+    {
+     "movie": "TSTREET1",
+     "script": "MovieScript 12",
+     "line": 141
+    }
+   ]
+  },
+  {
+   "text": "Txt file",
+   "refs": [
+    {
+     "movie": "FIELD",
+     "script": "MovieScript 1",
+     "line": 54
+    }
+   ]
+  },
+  {
+   "text": "unload list",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "MovieScript 91 - startMovie and other general handlers",
+     "line": 29
+    }
+   ]
+  },
+  {
+   "text": "unload list2",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 38 - the ballons scripts",
+     "line": 71
+    }
+   ]
+  },
+  {
+   "text": "unload list3",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 60 - form btns script",
+     "line": 38
+    }
+   ]
+  },
+  {
+   "text": "vDeleteFile: Can't open the fileIO xObject.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3276 - scNewBookMarkSaveAndLoad",
+     "line": 178
+    }
+   ]
+  },
+  {
+   "text": "vOpenFile: Can't open the fileIO xObject.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3276 - scNewBookMarkSaveAndLoad",
+     "line": 123
+    }
+   ]
+  },
+  {
+   "text": "vReadBookMark: Can't open the FILEIO xObject. Can't read bokkmark.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3276 - scNewBookMarkSaveAndLoad",
+     "line": 7
+    }
+   ]
+  },
+  {
+   "text": "whatIsYourGoal?",
+   "refs": [
+    {
+     "movie": "INTRO",
+     "script": "ScoreScript 37",
+     "line": 21
+    }
+   ]
+  },
+  {
+   "text": "Winter wheat",
+   "refs": [
+    {
+     "movie": "STORE",
+     "script": "ScoreScript 10 - startSeeds",
+     "line": 4
+    }
+   ]
+  },
+  {
+   "text": "writeTime =",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3274 - INI files handaling for BookMarking -- written by Raz Yalov. Last updated  23-4-96",
+     "line": 9
+    },
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3274 - INI files handaling for BookMarking -- written by Raz Yalov. Last updated  23-4-96",
+     "line": 19
+    }
+   ]
+  },
+  {
+   "text": "You don't have the ",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3211 - Check1",
+     "line": 16
+    }
+   ]
+  },
+  {
+   "text": "You don't have the Audio device",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 36
+    }
+   ]
+  },
+  {
+   "text": "You don't have the midi device. You can play without background music.",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 27
+    }
+   ]
+  },
+  {
+   "text": "You don't have the QuickTime device",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "MovieScript 3212 - Chech2",
+     "line": 20
+    }
+   ]
+  },
+  {
+   "text": "You have ",
+   "refs": [
+    {
+     "movie": "SHARED",
+     "script": "ScoreScript 3224 - PressIn",
+     "line": 7
+    },
+    {
+     "movie": "SHARED",
+     "script": "ScoreScript 3225 - PressOut",
+     "line": 7
+    }
+   ]
+  },
+  {
+   "text": "Your game is over.",
+   "refs": [
+    {
+     "movie": "CALEND",
+     "script": "ScoreScript 8",
+     "line": 46
+    }
+   ]
+  }
+ ]
+}

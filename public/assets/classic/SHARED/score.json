@@ -1,0 +1,41 @@
+{
+ "movie": "SHARED",
+ "source": "SHARED.DIR",
+ "stage": {
+  "w": 640,
+  "h": 480,
+  "rect": {
+   "top": 0,
+   "left": 0,
+   "bottom": 480,
+   "right": 640
+  },
+  "bgColor": 255,
+  "tempo": 6,
+  "palette": {
+   "id": 100,
+   "unresolved": true,
+   "extractorResolved": "missing:100->member:3426:Cred (most common palette in movie)"
+  },
+  "bitDepth": 8
+ },
+ "movieInfo": {
+  "flags": 2048,
+  "changedBy": "Alla - ",
+  "createdBy": "alicia - edunetics",
+  "origDirectory": "Q:\\ECOSIM\\MOV_BACK\\",
+  "preload": 1
+ },
+ "castLibs": [
+  "SHARED"
+ ],
+ "castArray": [
+  3000,
+  3648
+ ],
+ "scoreHeader": {},
+ "labels": {},
+ "frameCount": 0,
+ "frames": [],
+ "note": "shared cast only; no score"
+}

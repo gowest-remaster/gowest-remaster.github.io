@@ -1,0 +1,84 @@
+{
+ "movie": "GOWEST",
+ "origin": "GOWEST.EXE (embedded startup movie)",
+ "members": [
+  {
+   "castId": 7,
+   "name": "psApi",
+   "type": "text",
+   "text": "This is the standalone API object."
+  },
+  {
+   "castId": 8,
+   "name": "psEdunetics",
+   "type": "text",
+   "text": "2. Class: Edunetics\nThis is the root of the Edunetics class library. It is an abstract class that gives it’s offspring the following capabilities: \n· Self documentation (describe)\n· Self destruction (dispose)\n· Self name (getName)\n2.1. Cardinality: 0\n\n2.2.  Attributes:\n\n2.2.1.  Symbol psyName \nObject identity.\n2.3. Methods:\n\n2.3.1. birth\nLingo constructor\n2.3.1.1. Return Value: Object\nThe new object\n2.3.1.2. Parameters:\n2.3.1.2.1. me\nSelf pointer Lingo style\n2.3.1.2.2. Symbol syName\nThe identity of the new object\n2.3.2. vDescribe\nPrint the description text on the message window (Director)\n2.3.2.1. Return Value: Void\n<Description>\n2.3.2.2. Parameters:\n2.3.2.2.1. me\nLingo syntax.\n2.3.3. plObjectToList\nReturn the current state of the instance propeties as a property list where each property of the object is a property in the list and the same goes for values. If one of the values is an object by itself, it will be also replaced with such a property lis\n2.3.3.1. Return Value: PropertyList\nA property list with the current instance propeties' values.\n2.3.3.2. Parameters:\n2.3.3.2.1. LingoObject oMe\nLingo syntax.\n2.3.4. syListToProperties\nUpdate an instance properties value from a propety list.\n2.3.4.1. Return Value: Symbol\n#OK or #ERR_ListToProperties_PropertyNotExist:XX or #ERR_ListToProperties_WrongValue:XX\n2.3.4.2. Parameters:\n2.3.4.2.1. LingoObject oMe\nThe object to update.\n2.3.4.2.2. PropertyList plNewValues\nEach property must have a property in the object. The values will be stored in the matching property of the object.\n2.3.5. vDispose\nDo the clean-up of the object. User should assign it to the object for disposing.\n2.3.5.1. Return Value: Void\n<Description>\n2.3.5.2. Parameters:\n2.3.5.2.1. me\nLingo syntax.\nEnd of Class 'Edunetics'\n"
+  },
+  {
+   "castId": 9,
+   "name": "psStack",
+   "type": "text",
+   "text": "The stack object."
+  },
+  {
+   "castId": 11,
+   "name": "psCursorsStack",
+   "type": "text",
+   "text": "Cursors stack object.\nTo use it use the functions in the movie script \"scCursorStackFunctions\""
+  },
+  {
+   "castId": 60,
+   "name": "txtColorDepth",
+   "type": "text",
+   "text": "Your video card is set to 256 colors. In order ro run this program, it must be set to 16 colors. For further details, please refer to Windows setup instructions or your video card guide."
+  },
+  {
+   "castId": 61,
+   "name": "txtNoSound",
+   "type": "text",
+   "text": "You cannot run this program because you do not have an audio card installed."
+  },
+  {
+   "castId": 62,
+   "name": "txtNoVideoForWindows",
+   "type": "text",
+   "text": "No Video for Windows driver was found. Please install the Video for Windows driver from this application's CD. For further details, please refer to the installation guide."
+  },
+  {
+   "castId": 63,
+   "name": "txtOldVideoForWindows",
+   "type": "text",
+   "text": "An earlier version of the Video for Windows driver is installed. You can install a newer version of the Video for Windows driver from this application's CD. For further details, refer the installation guide."
+  },
+  {
+   "castId": 64,
+   "name": "txtNoQuickTime",
+   "type": "text",
+   "text": "No QuickTime driver was found. Please install the QuickTime driver from this application's CD. For further details, please refer to the installation guide."
+  },
+  {
+   "castId": 65,
+   "name": "txtOldQuicktime",
+   "type": "text",
+   "text": "An earlier version of the QuickTime driver is installed. You can install a newer version of the QuickTime driver from this application's CD. For further details, refer the installation guide."
+  },
+  {
+   "castId": 66,
+   "name": "txtNoMidi",
+   "type": "text",
+   "text": "Your MIDI driver is disabled or not installed, so you cannot run this program. Please consult your audio card guide for details."
+  },
+  {
+   "castId": 73,
+   "name": "txtColorDepthOriginal",
+   "type": "text",
+   "text": "Your video card is set to %_ colors. In order ro run this program, it must be set to %_ colors. For further details, please refer to Windows setup instructions or your video card guide."
+  },
+  {
+   "castId": 74,
+   "name": "chkboxDontDisplayMessage",
+   "type": "button",
+   "text": "Don't show this message again."
+  }
+ ]
+}
