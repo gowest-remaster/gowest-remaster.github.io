@@ -1,9 +1,13 @@
 # Go West! — The Homesteader’s Challenge (remake)
 
 A browser remake of *Go West! The Homesteader’s Challenge* (Edunetics, 1996), the Kansas-homesteading
-game. It runs entirely in the browser and comes in two looks that share one simulation and one save:
+game. It runs entirely in the browser.
 
-- **Remastered** (default): a real-time 3D homestead and town with a new interface.
+**Play it:** https://gowest-remaster.github.io/
+
+It comes in two looks that share one simulation and one save:
+
+- **Remastered** (default): a pre-rendered 3D homestead and town with a new interface.
 - **Classic**: a replica of the original 1996 screens. Open it with `?look=classic`, or switch at New Game.
 
 Saves stay in your browser (IndexedDB/localStorage). Nothing is sent anywhere.
@@ -31,10 +35,10 @@ bun run build      # type-check + production build into dist/
 bun run preview    # serve dist/
 ```
 
-To build for a sub-path (as GitHub Pages does for a project site), set the base:
+The site is served from the root. To build for a sub-path instead (a GitHub Pages project site), set the base:
 
 ```sh
-BASE_PATH=/go-west/ bun run build
+BASE_PATH=/<repo>/ bun run build
 ```
 
 The `pages` workflow in `.github/workflows/` builds and deploys to GitHub Pages on every push to `main`.
