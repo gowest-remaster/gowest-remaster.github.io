@@ -40,6 +40,28 @@ const plateLift = (k?: { sunDir?: number[]; sunIntensity?: number }): number =>
   // sunless keys (overcast, snow) are graded bright already: lifted like the sunny ones, skies and snow blew out
   k?.sunIntensity === 0 ? 1.08 : k?.sunDir ? THREE.MathUtils.lerp(PLATE_EXPOSURE_LIFT, 1.3, THREE.MathUtils.smoothstep(k.sunDir[1], 0.12, 0.4)) : PLATE_EXPOSURE_LIFT;
 const INTERIORS: Place[] = ['house', 'store', 'bank'];
+
+/** Low-memory profile (phones, small tablets, low deviceMemory; ?mobile=1 / ?mobile=0 to force). iOS Safari
+ *  reloads a tab that goes over ~1-1.5 GB, which looked like an endless loading screen: half-resolution plates,
+ *  lighting keys loaded on demand, at most two outdoor views kept, no prefetch, 1024 shadows, DPR <= 1.5. */
+export const LOW_MEMORY = (() => {
+  const q = new URLSearchParams(location.search).get('mobile');
+  if (q === '1') return true;
+  if (q === '0') return false;
+  try {
+    // set by the boot splash after a start that ran out of memory, or by a lost GPU device (see WorldImpl.fatal)
+    if (localStorage.getItem('gw-lowmem') === '1') return true;
+  } catch {
+    /* storage blocked */
+  }
+  const coarse = typeof matchMedia === 'function' && matchMedia('(pointer: coarse)').matches;
+  const small = Math.min(screen.width, screen.height) <= 820;
+  const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const mem = (navigator as Navigator & { deviceMemory?: number }).deviceMemory;
+  return (coarse && small) || ios || (mem !== undefined && mem <= 4);
+})();
+/** outdoor plate views kept loaded at once in the low-memory profile (the current one + the last) */
+const LOW_MEMORY_VIEWS = 2;
 /** lighting audit (2026-10-17): rooms that read too dark at their baked exposure, per key */
 const INTERIOR_LIFT: Record<string, Record<string, number>> = {
   house_sodFurnished: { evening: 1.12 },
@@ -157,6 +179,30 @@ export class WorldImpl implements World3D {
     return { backend: this.backend, place: this.place, quality: this.quality_, fps: this.fps_ };
   }
 
+  /** remember to start in the low-memory profile next time (touch devices) */
+  private lowMemoryNextTime(): void {
+    try {
+      if (matchMedia('(pointer: coarse)').matches) localStorage.setItem('gw-lowmem', '1');
+    } catch {
+      /* storage blocked */
+    }
+  }
+
+  /** The renderer can't continue: a message on the boot splash if it is still up, else over the world. */
+  private fatal(text: string): void {
+    console.error('[world]', text);
+    this.lowMemoryNextTime();
+    const splash = (window as unknown as { __gwFatal?: (t: string) => void }).__gwFatal;
+    if (splash && document.getElementById('gw-boot')) return splash(text);
+    if (!this.host || this.host.querySelector('.world-fatal')) return;
+    const d = document.createElement('div');
+    d.className = 'world-fatal';
+    d.style.cssText = 'position:absolute;inset:0;display:grid;place-items:center;background:rgba(28,20,12,.86);color:#f4ead6;font:16px/1.5 Georgia,serif;text-align:center;padding:24px;z-index:50';
+    d.innerHTML = `<div><p style="margin:0 0 12px">${text}<br>The game is saved; reloading continues where you left off.</p><button style="font:inherit;padding:10px 18px;min-height:44px">Reload</button></div>`;
+    d.querySelector('button')!.addEventListener('click', () => location.reload());
+    this.host.appendChild(d);
+  }
+
   // ------------------------------------------------------------------ mount / scene build
   async mount(host: HTMLElement): Promise<void> {
     this.host = host;
@@ -183,7 +229,21 @@ export class WorldImpl implements World3D {
         };
         setTimeout(check, 600);
       });
+    // a lost GPU device (out of memory, a driver reset) leaves a frozen canvas: say so and offer a way on
+    r.onDeviceLost = (info: { message?: string; reason?: string | null }) => this.fatal(`The graphics device stopped (${info.reason ?? info.message ?? 'unknown'}).`);
+    const rr = r as unknown as { onError: (e: { type?: string; message?: string }) => void };
+    const onErr = rr.onError.bind(r);
+    rr.onError = (e) => {
+      if (e?.type === 'GPUOutOfMemoryError') this.lowMemoryNextTime();
+      onErr(e);
+    };
     PlateView.initTexture = (t) => r.initTexture(t);
+    PlateView.releaseAfterUpload = !(r.backend as unknown as { isWebGLBackend?: boolean }).isWebGLBackend;
+    if (LOW_MEMORY) {
+      PlateView.lowRes = true;
+      PlateView.streamAll = false;
+      this.qualityCap = QORDER[Math.min(QORDER.indexOf(this.qualityCap), QORDER.indexOf('med'))];
+    }
     this.scene.matrixWorldAutoUpdate = false; // updated once per frame in frame()
     r.info.autoReset = false; // per-frame totals across all passes (reset in frame())
     this.backend = (r.backend as unknown as { isWebGPUBackend?: boolean }).isWebGPUBackend ? 'WebGPU' : 'WebGL2';
@@ -206,7 +266,10 @@ export class WorldImpl implements World3D {
       this.pointer.set(9, 9);
       this.pointerDirty = true;
     });
+    this.canvas.addEventListener('pointerdown', (e) => (this.lastPointerType = e.pointerType));
     this.canvas.addEventListener('click', (e) => this.onClick(e));
+    // the game surface handles its own taps: no browser pan / pinch-zoom / double-tap zoom on it
+    this.canvas.style.touchAction = 'none';
     await this.env.ready();
     this.rig = new CameraRig(this.camera, outdoorShot('title', 8)!);
     this.applyView(true);
@@ -349,7 +412,8 @@ export class WorldImpl implements World3D {
   private applyQuality(): void {
     if (!this.env) return; // setQuality before init: init applies it
     const q = QUALITY[this.quality_];
-    this.env.sun.shadow.mapSize.set(q.shadow, q.shadow);
+    const sm = LOW_MEMORY ? Math.min(q.shadow, 1024) : q.shadow;
+    this.env.sun.shadow.mapSize.set(sm, sm);
     this.buildPost();
     this.resize();
   }
@@ -636,21 +700,7 @@ export class WorldImpl implements World3D {
     }
     await Promise.all(jobs);
     for (const [o, v] of vis) o.visible = v;
-    // upload every image now, a few per task: left to the first frame, the town's ~30 layers (colour + EXR data)
-    // uploaded in one go stalled the cut by ~1 s
-    let px = 0;
-    for (const t of pv.textures) {
-      if (this.uploaded.has(t)) continue;
-      this.uploaded.add(t);
-      this.renderer.initTexture(t);
-      // ~one full-size plate image per frame
-      const img = t.image as { width?: number; height?: number } | null;
-      px += (img?.width ?? 512) * (img?.height ?? 512);
-      if (px > 3e6) {
-        px = 0;
-        await this.nextFrame();
-      }
-    }
+    await this.uploadPlate(pv);
     // the world state may have changed while compiling (saved visibility is stale): re-derive it for the live plate
     if (pv === this.plate) this.applySetVisibility();
   }
@@ -748,7 +798,10 @@ export class WorldImpl implements World3D {
           // a pre-rendered room needs no live-room shader compile (its meshes are hidden): just the plate
           const pv = await this.loadInteriorPlate(place, set);
           if (!pv) await this.compileInterior(place, set);
-          else await this.ensurePlateKeys(pv);
+          else {
+            await this.ensurePlateKeys(pv);
+            await this.uploadPlate(pv);
+          }
         } else {
           // build the plate's own pipelines now (one material per layer and key), not on its first frame mid-dissolve
           const t0 = performance.now();
@@ -780,6 +833,38 @@ export class WorldImpl implements World3D {
       clearInterval(iv);
       if (shown) emit(1, true);
     });
+  }
+
+  /** Upload every image of a plate now, about one full-size image per frame (left to the first frame, the town's
+   *  ~30 layers stalled the cut by ~1 s), then drop the decoded CPU copies (WebGPU). */
+  private async uploadPlate(pv: PlateView): Promise<void> {
+    let px = 0;
+    for (const t of pv.textures) {
+      if (this.uploaded.has(t)) continue;
+      this.uploaded.add(t);
+      this.renderer.initTexture(t);
+      const img = t.image as { width?: number; height?: number } | null;
+      px += (img?.width ?? 512) * (img?.height ?? 512);
+      if (px > 3e6) {
+        px = 0;
+        await this.nextFrame();
+      }
+    }
+    if (PlateView.releaseAfterUpload) pv.releaseImages();
+  }
+
+  /** Low-memory profile: keep the current outdoor view and the last one; dispose the rest (GPU textures and
+   *  pipelines' materials) and forget their preparation so a revisit loads them again. */
+  private recentViews: string[] = [];
+  private trimPlates(current: string): void {
+    this.recentViews = [current, ...this.recentViews.filter((v) => v !== current)];
+    if (!LOW_MEMORY) return;
+    for (const v of this.recentViews.splice(LOW_MEMORY_VIEWS)) {
+      const p = this.plates.get(v);
+      this.plates.delete(v);
+      for (const [k] of this.placeReady) if (k === v || (v === 'homestead' && k === 'homestead')) this.placeReady.delete(k);
+      void p?.then((pv) => pv && pv !== this.plate && pv.dispose());
+    }
   }
 
   /** the lighting keys the current hour / weather show on this plate, loaded now (the rest stream when idle) */
@@ -907,6 +992,7 @@ export class WorldImpl implements World3D {
    *  Main Street and the house, from Main Street the store, bank and elevator. One at a time, idle only. */
   private prefetchGen = 0;
   private prefetchAround(place: Place): void {
+    if (LOW_MEMORY) return; // (each prefetched view is ~50-200 MB of textures on a phone)
     const next: Partial<Record<Place, Place[]>> = {
       title: ['mainStreet', 'house'],
       homestead: ['mainStreet', 'house'],
@@ -986,6 +1072,7 @@ export class WorldImpl implements World3D {
     const pv = await this.plateFor(place);
     if (gen !== this.goGen) return; // a newer goTo superseded this one: don't install a stale plate
     this.setPlate(pv);
+    this.trimPlates(this.plateName(place));
   }
 
   private setPlate(pv: PlateView | null): void {
@@ -1156,9 +1243,23 @@ export class WorldImpl implements World3D {
     this.pointerDirty = true;
   }
 
+  /** Touch has no hover: the first tap on a target shows its label (the hover callbacks), a second tap on the same
+   *  target acts. Bare ground / a different target just moves the "hover". Mouse clicks act at once, as before. */
+  private lastPointerType = 'mouse';
+  private armed: string | null = null;
   private onClick(e: MouseEvent): void {
     this.onPointer(e as PointerEvent);
     const t = this.pickAt(this.pointer);
+    if (this.lastPointerType === 'touch') {
+      const k = t ? key(t) : null;
+      // squares act on the first tap (selecting squares is the action)
+      if (k !== this.armed && t?.kind !== 'square') {
+        this.armed = k;
+        this.setHover(t);
+        return;
+      }
+      this.armed = null;
+    }
     if (t) for (const f of this.pickFns) f(t);
   }
 

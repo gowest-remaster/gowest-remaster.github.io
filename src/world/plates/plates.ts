@@ -36,6 +36,8 @@ export interface PlateJson {
   size?: [number, number];
   /** baked field squares (sets.md): crop bbox in full-plate px, variant images at `scale` */
   squares?: { bbox: [number, number, number, number]; scale?: number; variants: string[]; /** per-variant RGBM range (default 8) */ range?: Record<string, number> };
+  /** half-resolution variants exist (`*.half.webp`, scripts/plates/pack.ts) */
+  half?: number;
   /** 'logdepth8': data images packed by scripts/plates/pack.ts (else EXR) */
   data?: string;
   dataDepth?: { d0: number; lnRange: number };
@@ -122,6 +124,31 @@ export class PlateView {
   static whenQuiet: () => Promise<void> = () => new Promise((r) => setTimeout(r, 250));
   /** upload a texture to the GPU now (set by the world: renderer.initTexture) */
   static initTexture: ((t: THREE.Texture) => void) | null = null;
+  /** low-memory profile (phones): load the packer's half-resolution images (plate.json "half") */
+  static lowRes = false;
+  /** stream every lighting key in the background once idle (off in the low-memory profile: keys load on demand) */
+  static streamAll = true;
+  /** image url for this plate's resolution */
+  private res(url: string): string {
+    return PlateView.lowRes && this.json?.half ? url.replace(/\.webp$/, '.half.webp') : url;
+  }
+
+  /** Drop the decoded CPU copies of every uploaded image (beauty, layers, depth): once on the GPU they are never
+   *  read again, and holding both doubled the memory (WebGPU only: WebGL re-uploads on context restore). */
+  releaseImages(): void {
+    PlateView.release(this.textures);
+  }
+  /** set by the world: on WebGPU an uploaded image's CPU copy can go */
+  static releaseAfterUpload = false;
+  static release(list: Iterable<THREE.Texture>): void {
+    for (const t of list) {
+      const im = t.image as { width: number; height: number; close?: () => void } | null;
+      if (!im || typeof ImageBitmap === 'undefined' || !(im instanceof ImageBitmap)) continue;
+      const stub = { width: im.width, height: im.height };
+      im.close?.();
+      t.image = stub as never;
+    }
+  }
 
   json: PlateJson | null = null;
   keys: string[] = [];
@@ -375,7 +402,7 @@ export class PlateView {
       if (!sc) return null;
       this.sqTex.set(
         id,
-        loadImage(`${BASE}${this.view}/squares/${key}/${variant}.webp`)
+        loadImage(this.res(`${BASE}${this.view}/squares/${key}/${variant}.webp`))
           .then((t) => {
             prepRGBM(t);
             this.sqReady.set(id, t);
@@ -494,10 +521,14 @@ export class PlateView {
   }
 
   dispose(): void {
-    this.quad.geometry.dispose();
+    this.quad.removeFromParent();
+    this.proxy?.removeFromParent();
     (this.quad.material as THREE.Material).dispose();
-    for (const t of this.src.beauty) t.dispose();
+    for (const t of this.textures) t.dispose();
     for (const l of this.layers) for (const q of l.keyQuads) if (q) (q.material as THREE.Material).dispose();
+    for (const q of this.squareQuads) (q.material as THREE.Material).dispose();
+    for (const t of this.sqReady.values()) t.dispose();
+    for (const list of this.sqClones.values()) for (const t of list) t.dispose();
     this.src.depth.dispose();
   }
 
@@ -507,6 +538,7 @@ export class PlateView {
   static async load(view: string, keys?: string[], heldKeys: string[] = [], first?: string[]): Promise<PlateView | null> {
     try {
       const json = (await (await fetch(`${BASE}${view}/plate.json`)).json()) as PlateJson;
+      const res = (url: string) => (PlateView.lowRes && json.half ? url.replace(/\.webp$/, '.half.webp') : url);
       for (const k of heldKeys) delete json.keys[k];
       const ks = keys ?? Object.keys(json.keys);
       const firstKs = (first ?? ks).filter((k) => ks.includes(k));
@@ -515,7 +547,7 @@ export class PlateView {
       const exr = new EXRLoader().setDataType(THREE.HalfFloatType);
       const loadData = (url: string): Promise<THREE.Texture> =>
         packed
-          ? loadImage(url.replace(/\.exr$/, '.data.webp')).then((t) => {
+          ? loadImage(res(url.replace(/\.exr$/, '.data.webp'))).then((t) => {
               t.flipY = false;
               t.colorSpace = THREE.NoColorSpace;
               t.generateMipmaps = false;
@@ -535,12 +567,12 @@ export class PlateView {
       /** one key: beauty + every layer's colour/data */
       const loadKey = async (k: string): Promise<void> => {
         const i = ks.indexOf(k);
-        const jobs: Promise<unknown>[] = [loadImage(`${BASE}${view}/${k}/beauty.webp`).then((t) => (beauty[i] = prepRGBM(t)))];
+        const jobs: Promise<unknown>[] = [loadImage(res(`${BASE}${view}/${k}/beauty.webp`)).then((t) => (beauty[i] = prepRGBM(t)))];
         for (const L of json.layers ?? []) {
           if (!colour.has(L.id)) colour.set(L.id, []);
           if (!data.has(L.id)) data.set(L.id, []);
           jobs.push(
-            Promise.all([loadImage(`${BASE}${view}/layers/${L.id}/${k}.webp`).then(prepRGBM), loadData(`${BASE}${view}/layers/${L.id}/${k}.exr`)])
+            Promise.all([loadImage(res(`${BASE}${view}/layers/${L.id}/${k}.webp`)).then(prepRGBM), loadData(`${BASE}${view}/layers/${L.id}/${k}.exr`)])
               .then(([c, d]) => {
                 colour.get(L.id)![i] = c;
                 data.get(L.id)![i] = d;
@@ -603,6 +635,7 @@ export class PlateView {
               PlateView.initTexture?.(up[n]);
               if (n % 3 === 2) await new Promise((r) => setTimeout(r, 0));
             }
+            if (PlateView.releaseAfterUpload) PlateView.release(up);
             pv.src.beauty[i] = beauty[i];
             pv.textures.add(beauty[i]);
             for (const l of pv.layers) pv.setLayerKey(l, i, colour.get(l.id)![i], data.get(l.id)![i], json.layers?.find((L) => L.id === l.id)?.cropByKey?.[k]);
@@ -617,6 +650,7 @@ export class PlateView {
         for (const k of ks) {
           if (pv.loadedKeys.has(k)) continue;
           // never while a transition / load is running: EXR decode is main-thread work that would hitch it
+          if (!PlateView.streamAll) return;
           await PlateView.whenQuiet();
           await pv.ensureKey(k);
         }

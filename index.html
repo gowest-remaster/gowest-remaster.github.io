@@ -28,6 +28,8 @@
       #gw-boot .gw-bar i { display: block; height: 100%; width: 4%; background: #e3b965; transition: width 0.4s ease; }
       #gw-boot .gw-msg { margin-top: 0.8rem; font-size: 0.95rem; opacity: 0.75; min-height: 1.3em; }
       #gw-boot.gw-out { opacity: 0; pointer-events: none; }
+      #gw-boot .gw-note { margin-top: 1rem; max-width: 30rem; font-size: 0.95rem; line-height: 1.4; background: rgba(28, 20, 12, 0.7); padding: 0.6rem 0.8rem; border-radius: 6px; }
+      #gw-boot .gw-note a { color: #e3b965; }
       @media (prefers-reduced-motion: reduce) { #gw-boot, #gw-boot .gw-bar i { transition: none; } }
     </style>
   </head>
@@ -55,6 +57,45 @@
           window.__gwLoad(1);
           boot.classList.add('gw-out');
           setTimeout(function () { boot.remove(); }, 700);
+          try { sessionStorage.removeItem('gw-booting'); sessionStorage.removeItem('gw-boot-crashes'); } catch (e) {}
+          clearTimeout(dog);
+        };
+        // Boot robustness. A phone browser that runs out of memory reloads the tab, which looked like an endless
+        // loading screen: a boot that never reached the title counts as a crash. After one, the next boot uses the
+        // low-detail profile; after two, the painted (no 3D) world, with a note and a way back.
+        var note = function (html) {
+          var d = document.createElement('div');
+          d.className = 'gw-note';
+          d.innerHTML = html;
+          boot.querySelector('.gw-b').appendChild(d);
+        };
+        var crashes = 0;
+        // (touch devices only: on a desktop an early manual reload must not degrade the next start)
+        var touch = window.matchMedia && matchMedia('(pointer: coarse)').matches;
+        if (touch) try {
+          crashes = +(sessionStorage.getItem('gw-boot-crashes') || 0);
+          if (sessionStorage.getItem('gw-booting')) sessionStorage.setItem('gw-boot-crashes', String(++crashes));
+          sessionStorage.setItem('gw-booting', '1');
+          if (crashes >= 1) localStorage.setItem('gw-lowmem', '1');
+        } catch (e) {}
+        if (crashes >= 2 && !/[?&]world=stub/.test(location.search)) {
+          var u = new URL(location.href);
+          u.searchParams.set('world', 'stub');
+          location.replace(u.toString());
+        } else if (crashes >= 1) {
+          note(crashes >= 2
+            ? 'The 3D view kept running out of memory, so this time the game starts with painted scenery. <a href="' + location.pathname + '">Try 3D again</a>'
+            : 'The last start ran out of memory, so the game is loading in low-detail mode.');
+        }
+        // watchdog: if the title has not appeared after 45 s, say where it is stuck instead of spinning forever
+        var dog = setTimeout(function () {
+          if (!document.body.contains(boot)) return;
+          note('Still loading (stuck at: <b>' + (msg.textContent || 'starting') + '</b>). ' +
+            '<a href="#" onclick="location.reload();return false">Reload</a> · ' +
+            '<a href="?world=stub">Painted scenery (no 3D)</a> · <a href="?classic">Classic edition</a>');
+        }, 45000);
+        window.__gwFatal = function (text) {
+          note(text + ' <a href="#" onclick="location.reload();return false">Reload</a> · <a href="?world=stub">Painted scenery (no 3D)</a>');
         };
         // until the app reports in, creep forward slowly so the page never looks stuck
         var t = setInterval(function () {

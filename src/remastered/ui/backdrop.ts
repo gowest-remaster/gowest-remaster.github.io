@@ -20,9 +20,10 @@ let video: HTMLVideoElement | null = null;
 let shown = false;
 let fading: gsap.core.Tween | null = null;
 
-/** HEVC or AV1 for title.mp4 when the browser plays it; H.264 otherwise. */
+/** title.mp4 is AV1 (10-bit main): only when the browser says it plays that; H.264 otherwise. (HEVC support used
+ *  to count too, which sent iPhones without AV1 to a file they cannot decode first.) */
 function sources(v: HTMLVideoElement): string[] {
-  const best = ['video/mp4; codecs="av01.0.08M.08"', 'video/mp4; codecs="hvc1.1.6.L120.90"', 'video/mp4; codecs="hev1.1.6.L120.90"'].some((t) => v.canPlayType(t) === 'probably');
+  const best = v.canPlayType('video/mp4; codecs="av01.0.08M.10"') === 'probably';
   const h264 = v.canPlayType('video/mp4; codecs="avc1.640028"') !== '';
   const list = best ? [`${DIR}title.mp4`, `${DIR}title-h264.mp4`] : [`${DIR}title-h264.mp4`, `${DIR}title.mp4`];
   return h264 || best ? list : [];
