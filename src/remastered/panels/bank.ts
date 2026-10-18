@@ -11,7 +11,8 @@ import { registerPanel } from '../core/registry.ts';
 import { session } from '../core/session.ts';
 import { loanInfo, loanSchedule } from '../core/simapi.ts';
 import { badge } from '../ui/badges.ts';
-import { btn, drawer, segmented, slider, toast } from '../ui/kit.ts';
+import { btn, drawer, segmented, slider, tabs, toast } from '../ui/kit.ts';
+import { isCompact, onCompact } from '../ui/compact.ts';
 import type { PanelEnv } from './index.ts';
 import { blockedReason, payWithFetch, say } from './town-common.ts';
 import { devcutContent } from '../core/text.ts';
@@ -91,6 +92,18 @@ function chart(s: GameState, amount: number, years: number) {
 function mount(app: App) {
   const d = drawer({ title: "Farmers' Bank", eyebrow: 'Main Street, Longview', wide: true, cls: 'bank-drawer' });
   const el = h('div', { class: 'bank' }, d.el);
+  // phones: one thing at a time (the loan, or the cashier's window) so each fits without scrolling
+  const paneHost = h('div', { class: 'bank-panes', hidden: true });
+  d.head.append(paneHost);
+  let pane: 'loan' | 'cashier' | null = null;
+  let offCompact: (() => void) | null = null;
+  queueMicrotask(() =>
+    (offCompact = onCompact((on) => {
+      paneHost.hidden = !on;
+      stamp = '';
+      if (session.state) render(session.s);
+    })),
+  );
   let amount = 500;
   let years = 3;
   let stamp = '';
@@ -212,7 +225,12 @@ function mount(app: App) {
     if (key === stamp) return;
     stamp = key;
     const li = loanInfo(s);
-    put(d.body, telegram !== null ? h('div', { class: 'tg-inline' }, telegramCard(s, telegram)) : null, cashierCard(s), li.has ? loanFile(s) : visualizer(s));
+    const tg = telegram !== null ? h('div', { class: 'tg-inline' }, telegramCard(s, telegram)) : null;
+    if (isCompact()) {
+      pane ??= s.myRecieve > 0 || telegram !== null ? 'cashier' : 'loan';
+      put(paneHost, tabs<'loan' | 'cashier'>({ tabs: [{ id: 'loan', label: li.has ? 'Your loan' : 'Loan' }, { id: 'cashier', label: 'Cashier', badge: s.myRecieve > 0 ? money(s.myRecieve) : null }], value: pane, onChange: (v) => ((pane = v), (stamp = ''), render(session.s)) }).el);
+      put(d.body, ...(pane === 'cashier' ? [tg, cashierCard(s)] : [li.has ? loanFile(s) : visualizer(s)]));
+    } else put(d.body, tg, cashierCard(s), li.has ? loanFile(s) : visualizer(s));
     app.setLabels([
       { target: { kind: 'prop', id: 'teller' }, text: 'Cashier', badge: s.myRecieve > 0 ? money(s.myRecieve) : null, tone: s.myRecieve > 0 ? 'good' : 'info' },
       { target: { kind: 'prop', id: 'loans' }, text: 'Loans', badge: li.has ? `Due Dec ${li.dueYear}` : null },
@@ -231,7 +249,7 @@ function mount(app: App) {
       render(session.s);
     } else say(session.s.devcut?.enabled ? 'BANK09.Cashier' : 'BANK09.ECO005');
   });
-  return { el, update: (s: GameState) => render(s), crumb: () => (session.state && loanInfo(session.s).has ? 'Loan file' : 'Loans') };
+  return { el, update: (s: GameState) => render(s), destroy: () => offCompact?.(), crumb: () => (session.state && loanInfo(session.s).has ? 'Loan file' : 'Loans') };
 }
 
 export function register(_env: PanelEnv) {

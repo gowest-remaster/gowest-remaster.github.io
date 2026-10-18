@@ -17,7 +17,8 @@ import { rm, setRm } from '../core/settings.ts';
 import { devcutContent, ensureDevcut } from '../core/text.ts';
 import { mountGramophone } from '../devcut/index.ts';
 import { badge, unavailable } from '../ui/badges.ts';
-import { btn, drawer, toast } from '../ui/kit.ts';
+import { btn, drawer, tabs, toast } from '../ui/kit.ts';
+import { isCompact } from '../ui/compact.ts';
 import { familyRoster } from './ledger.ts';
 import { savingsHint, savingsRule } from '../core/simapi.ts';
 import type { PanelEnv } from './index.ts';
@@ -45,6 +46,15 @@ export function register({ app }: PanelEnv) {
       const d = drawer({ title: 'Home', eyebrow: '' });
       if (params.focus === 'savings') queueMicrotask(() => requestAnimationFrame(() => d.body.querySelector('.savings')?.scrollIntoView({ block: 'start' })));
       let hintsOn = false;
+      // phones: three short pages (the house, the savings box, the family) instead of one long scroll
+      let pane: 'home' | 'savings' | 'family' = params.focus === 'savings' ? 'savings' : 'home';
+      const showSavings = () => {
+        if (isCompact()) {
+          pane = 'savings';
+          d.el.classList.remove('folded');
+          render(session.s);
+        } else d.body.querySelector('.savings')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
       let box = session.s.propet.savings;
       let gramUnmount: (() => void) | null = null;
       let recordPlaying = false;
@@ -156,33 +166,32 @@ export function register({ app }: PanelEnv) {
       function render(s: GameState) {
         const p = s.propet;
         const n = newspaperIssues(s);
-        put(d.head, h('div', { class: 'eyebrow' }, `${monthName(s.date.mon)} ${s.date.year}`), h('h2', { class: 'drawer-title' }, HOUSE_NAME[s.globals.whatHouse] ?? 'Home'));
+        put(d.head, h('div', { class: 'eyebrow' }, `${monthName(s.date.mon)} ${s.date.year}`), h('h2', { class: 'drawer-title' }, HOUSE_NAME[s.globals.whatHouse] ?? 'Home'),
+          isCompact() ? tabs<typeof pane>({ tabs: [{ id: 'home', label: 'The house' }, { id: 'savings', label: 'Savings box' }, { id: 'family', label: 'Family' }], value: pane, onChange: (v) => ((pane = v), render(session.s)) }).el : null);
         const things = h('div', { class: 'house-things' },
           // phones: the box under the bed can hide behind this card, so it gets a button of its own
-          h('button', { type: 'button', class: 'thing thing-savings', onclick: () => d.body.querySelector('.savings')?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }, icon(ICONS.box), h('b', null, 'Savings box'), h('span', { class: 'small muted' }, money(p.savings))),
+          h('button', { type: 'button', class: 'thing thing-savings', onclick: showSavings }, icon(ICONS.box), h('b', null, 'Savings box'), h('span', { class: 'small muted' }, money(p.savings))),
           h('button', { type: 'button', class: 'thing', onclick: () => void app.go('ledger') }, icon(ICONS.ledger), h('b', null, 'The Ledger'), h('span', { class: 'small muted' }, `${s.logbook.length} entries`)),
           h('button', { type: 'button', class: 'thing', onclick: () => void app.go('album') }, icon(ICONS.album), h('b', null, 'Family Album'), h('span', { class: 'small muted' }, 'diary & keepsakes')),
           h('button', { type: 'button', class: 'thing', disabled: n === 0, 'data-tip': n ? '' : 'The first Gazette comes out in August 1880.', onclick: () => void app.go('newspaper') }, icon(ICONS.news), h('b', null, 'Newspapers'), h('span', { class: 'small muted' }, n ? `${n} ${n === 1 ? 'issue' : 'issues'}` : 'none yet')),
           gramophoneAvailable(s) ? h('button', { type: 'button', class: 'thing', onclick: openGramophone }, icon(ICONS.volume), h('b', null, 'Gramophone'), h('span', { class: 'small muted' }, 'play a record')) : null);
         const fam = familyRoster(s);
-        put(d.body,
-          things,
-          hint(0), hint(1), hint(2),
-          savingsCard(s),
-          h('section', { class: 'fam-mini' },
+        const family = h('section', { class: 'fam-mini' },
             h('h3', { class: 'alm-h' }, icon(ICONS.people), 'The family'),
             h('div', { class: 'fam-row' }, ...fam.map((m) => {
               const por = m.dbox ? portrait(m.dbox) : null;
               return h('button', { type: 'button', class: 'fam-m', title: m.who, onclick: () => void app.go('ledger', { tab: 'family' }) }, por ? h('div', { class: 'portrait', style: { backgroundImage: `url("${por}")` } }) : h('div', { class: 'portrait you' }, icon(ICONS.people)), h('span', { class: 'small' }, m.name.split(' ')[0]), m.age !== null ? h('span', { class: 'tiny muted' }, m.age <= 0 ? 'baby' : `${m.age} yrs`) : null);
             })),
             p.stove ? h('p', { class: 'small' }, icon(ICONS.kettle), ' The cooking stove keeps the family warm and healthy.') : null,
-            h('p', { class: 'small muted' }, `Upkeep ${money(p.lifePrice)} a month · ${p.familyWorkers} family ${p.familyWorkers === 1 ? 'helper' : 'helpers'} in the field`)));
-        d.foot.hidden = false;
+            h('p', { class: 'small muted' }, `Upkeep ${money(p.lifePrice)} a month · ${p.familyWorkers} family ${p.familyWorkers === 1 ? 'helper' : 'helpers'} in the field`));
+        if (isCompact()) put(d.body, ...(pane === 'savings' ? [savingsCard(s)] : pane === 'family' ? [family] : [things, hint(0), hint(1), hint(2)]));
+        else put(d.body, things, hint(0), hint(1), hint(2), savingsCard(s), family);
+        d.foot.hidden = isCompact() && pane !== 'home';
         put(d.foot, btn(hintsOn ? 'Hide the neighbor’s tips' : 'Ask a neighbor', { kind: 'ghost', small: true, icon: 'help', onClick: () => ((hintsOn = !hintsOn), render(session.s)) }));
         app.setLabels([
           { target: prop('ledger'), text: 'Ledger', onClick: () => void app.go('ledger') },
           { target: prop('album'), text: 'Family Album', onClick: () => void app.go('album') },
-          { target: prop('savings'), text: 'Savings box', sub: money(p.savings), onClick: () => d.body.querySelector('.savings')?.scrollIntoView({ behavior: 'smooth' }) },
+          { target: prop('savings'), text: 'Savings box', sub: money(p.savings), onClick: showSavings },
           ...(n ? [{ target: prop('newspaper'), text: 'Newspapers', badge: n > session.journal.papers.length ? 'new' : null, onClick: () => void app.go('newspaper') }] : []),
           ...(gramophoneAvailable(s) ? [{ target: prop('gramophone'), text: 'Gramophone', onClick: openGramophone }] : []),
         ]);
@@ -205,7 +214,7 @@ export function register({ app }: PanelEnv) {
           else if (t.id === 'album') void app.go('album');
           else if (t.id === 'newspaper' && newspaperIssues(session.s)) void app.go('newspaper');
           else if (t.id === 'gramophone' && gramophoneAvailable(session.s)) openGramophone();
-          else if (t.id === 'savings') d.body.querySelector('.savings')?.scrollIntoView({ behavior: 'smooth' });
+          else if (t.id === 'savings') showSavings();
           else return false;
           return true;
         },

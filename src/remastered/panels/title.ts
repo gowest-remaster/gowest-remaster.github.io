@@ -19,6 +19,7 @@ import { aboutSheet } from './about.ts';
 import { loadView } from './load.ts';
 import { showBackdrop } from '../ui/backdrop.ts';
 import { notify } from '../ui/notify.ts';
+import { installHint } from '../ui/compact.ts';
 
 export const ORNAMENT = `<svg viewBox="0 0 400 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M10 12h140M250 12h140"/><path d="M150 12c10-10 24-10 30 0s-14 12-14 4 14-14 34-4c20-10 34-4 34 4s-20 6-14-4 20-10 30 0"/><circle cx="200" cy="12" r="3" fill="currentColor"/><path d="M40 12c4-4 8-4 10 0M350 12c-4-4-8-4-10 0"/></svg>`;
 
@@ -106,6 +107,7 @@ export function register(app: App) {
         h('div', { class: 'title-sub' }, 'Forty years on the Kansas prairie · ', h('b', null, 'Remastered')),
         h('div', { class: 'title-orn', html: ORNAMENT }),
         h('div', { class: 'title-years' }, 'MDCCCLXXX — MCMXIX'),
+        installHint(),
       );
 
       const root = h('div', { class: 'fs title-screen' }, h('div', { class: 'title-shade' }), h('div', { class: 'fs-grain' }), h('div', { class: 'title-col' }, logo, menu));

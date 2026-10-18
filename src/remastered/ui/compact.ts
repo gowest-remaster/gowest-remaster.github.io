@@ -35,6 +35,7 @@ function apply() {
   d.classList.toggle('rm-touch', isTouch());
   if (c !== last) {
     last = c;
+    window.dispatchEvent(new Event('resize'));
     for (const cb of listeners) cb(c);
   }
 }
@@ -94,4 +95,43 @@ export function initCompactTopRow(root: HTMLElement) {
   mo.observe(root, { attributes: true, attributeFilter: ['class'] });
   window.addEventListener('resize', queue);
   onCompact(queue);
+}
+
+const A2HS_KEY = 'gowest.a2hs.dismissed';
+/** iPhone/iPad Safari outside a home-screen app: Safari has no Fullscreen API, but a home-screen web app runs full screen. */
+export function wantsInstallHint(): boolean {
+  if (q.get('a2hs') === '1') return true;
+  if (typeof navigator === 'undefined') return false;
+  const ios = /iP(hone|od|ad)/.test(navigator.userAgent) || (navigator.userAgent.includes('Macintosh') && navigator.maxTouchPoints > 1);
+  const standalone = (navigator as Navigator & { standalone?: boolean }).standalone === true || !!mq('(display-mode: standalone)')?.matches || !!mq('(display-mode: fullscreen)')?.matches;
+  if (!ios || standalone) return false;
+  try {
+    return localStorage.getItem(A2HS_KEY) !== '1';
+  } catch {
+    return true;
+  }
+}
+/** The small, one-time "Add to Home Screen" note for the title screen (null when not wanted). */
+export function installHint(): HTMLElement | null {
+  if (!wantsInstallHint()) return null;
+  const el = document.createElement('div');
+  el.className = 'a2hs';
+  el.setAttribute('role', 'note');
+  const share = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>';
+  el.innerHTML = `<span class="a2hs-t">For full screen: <b>Share</b> <span class="a2hs-ico">${share}</span> → <b>Add to Home Screen</b></span>`;
+  const x = document.createElement('button');
+  x.type = 'button';
+  x.className = 'a2hs-x';
+  x.setAttribute('aria-label', 'Dismiss');
+  x.textContent = '×';
+  x.addEventListener('click', () => {
+    try {
+      localStorage.setItem(A2HS_KEY, '1');
+    } catch {
+      /* private mode: it just comes back next time */
+    }
+    el.remove();
+  });
+  el.append(x);
+  return el;
 }

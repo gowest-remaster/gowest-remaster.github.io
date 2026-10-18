@@ -8,6 +8,9 @@
 .hud-stats-toggle, .hud-more, .drawer-fold, .thing-savings, .store-pane-back { display: none; }
 
 /* ================================================================ compact layout */
+html.rm-touch { --tap: 44px; }
+/* phones: denser, as the player asked (36–40 px targets with spacing, nothing under 12 px) */
+html.rm-compact { --tap: 40px; }
 html.rm-compact {
   --gut-l: max(0.5rem, var(--safe-l, 0px));
   --gut-r: max(0.5rem, var(--safe-r, 0px));
@@ -25,29 +28,29 @@ html.rm-compact {
 
 /* ---------------------------------------------------------------- top row */
 .rm-compact .rm-crumb { left: var(--gut-l); top: var(--gut-t); max-width: 38vw; gap: 0.3rem; }
-.rm-compact .crumb-back { width: 44px; height: 44px; flex: none; padding: 0.6rem; }
-.rm-compact .rm-crumb ol { min-height: 44px; min-width: 0; flex-wrap: nowrap; overflow: hidden; padding: 0 0.85rem; font-size: 0.95rem; }
+.rm-compact .crumb-back { width: var(--tap, 44px); height: var(--tap, 44px); flex: none; padding: 0.6rem; }
+.rm-compact .rm-crumb ol { min-height: var(--tap, 44px); min-width: 0; flex-wrap: nowrap; overflow: hidden; padding: 0 0.85rem; font-size: 0.95rem; }
 .rm-compact .rm-crumb li { min-width: 0; white-space: nowrap; }
 .rm-compact .rm-crumb li:not(:nth-last-child(-n + 2)) { display: none; }
 .rm-compact .rm-crumb li + li::before { margin: 0 0.35rem; }
 .rm-compact .rm-crumb li:nth-last-child(2)::before { display: none; }
 .rm-compact .rm-crumb li[aria-current] { display: block; overflow: hidden; text-overflow: ellipsis; }
-.rm-compact .rm-crumb li button { min-height: 44px; min-width: 44px; padding: 0 0.1rem; white-space: nowrap; }
+.rm-compact .rm-crumb li button { min-height: var(--tap, 44px); min-width: var(--tap, 44px); padding: 0 0.1rem; white-space: nowrap; }
 .rm-compact .rm-app.has-sheet .rm-crumb { z-index: 6; }
 
 .rm-compact .hud-top { top: var(--gut-t); right: var(--gut-r); gap: 0.35rem; }
-.rm-compact .goal-ribbon { min-height: 44px; padding: 0.2rem 0.75rem 0.2rem 0.6rem; }
+.rm-compact .goal-ribbon { min-height: var(--tap, 44px); padding: 0.2rem 0.75rem 0.2rem 0.6rem; }
 .rm-compact .gr-text { display: none; }
-.rm-compact .hud-round { width: 44px; height: 44px; padding: 0.62rem !important; }
-.rm-compact .hud-chipbtn { min-height: 44px; }
+.rm-compact .hud-round { width: var(--tap, 44px); height: var(--tap, 44px); padding: 0.62rem !important; }
+.rm-compact .hud-chipbtn { min-height: var(--tap, 44px); }
 
 .rm-compact .rm-objective { top: var(--gut-t); left: max(var(--gut-l), calc(var(--crumb-r, 0px) + 0.4rem)); max-width: calc(var(--top-l, 100vw) - max(var(--gut-l), calc(var(--crumb-r, 0px) + 0.4rem)) - 0.4rem); }
-html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35rem); left: var(--gut-l); max-width: calc(100vw - var(--gut-l) - var(--gut-r)); }
+html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + var(--tap, 44px) + 0.35rem); left: var(--gut-l); max-width: calc(100vw - var(--gut-l) - var(--gut-r)); }
 .rm-compact .obj-row { max-width: 100%; min-width: 0; }
-.rm-compact .obj-pill { min-height: 44px; min-width: 0; flex: 0 1 auto; padding: 0.2rem 0.75rem 0.2rem 0.45rem; }
+.rm-compact .obj-pill { min-height: var(--tap, 44px); min-width: 0; flex: 0 1 auto; padding: 0.2rem 0.75rem 0.2rem 0.45rem; }
 .rm-compact .obj-text { font-size: 0.95rem; }
 .rm-compact .obj-k { font-size: 0.72rem; }
-.rm-compact .obj-more { width: 44px; height: 44px; flex: none; padding: 0.65rem; }
+.rm-compact .obj-more { width: var(--tap, 44px); height: var(--tap, 44px); flex: none; padding: 0.65rem; }
 .rm-compact .obj-hint { font-size: 0.92rem; }
 .rm-compact .obj-list { max-height: calc(100dvh - var(--ctop, 6rem) - var(--hud-h)); }
 
@@ -64,7 +67,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .leaf-y { font-size: 0.78rem; line-height: 1.1; }
 .rm-compact .hud-mid { display: contents; }
 .rm-compact .hud-stats-toggle {
-  display: inline-flex; align-items: center; gap: 0.35rem; flex: none; min-height: 44px; padding: 0 0.65rem; font: inherit; font-size: 1rem; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 0.35rem; flex: none; min-height: var(--tap, 44px); padding: 0 0.65rem; font: inherit; font-size: 1rem; cursor: pointer;
   border-radius: 999px; background: rgba(0, 0, 0, 0.24); border: 1px solid rgba(199, 154, 75, 0.55); color: var(--parch-hi);
 }
 .rm-compact .hud-stats-toggle .ico { width: 1.15rem; height: 1.15rem; color: var(--brass); }
@@ -75,13 +78,13 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .hud-stats-toggle.on .ico, .rm-compact .hud-stats-toggle.on .hst-chev, .rm-compact .hud-stats-toggle.on b { color: var(--wood-lo); }
 .rm-compact .hud-stats-toggle.on .hst-chev { transform: rotate(180deg); }
 .rm-compact .hud-controls { flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; }
-.rm-compact .adv-btn { flex: 1 1 auto; min-width: 0; max-width: 17rem; min-height: 44px; padding: 0.2rem 0.75rem 0.2rem 0.6rem; gap: 0.45rem; }
+.rm-compact .adv-btn { flex: 1 1 auto; min-width: 0; max-width: 17rem; min-height: var(--tap, 44px); padding: 0.2rem 0.75rem 0.2rem 0.6rem; gap: 0.45rem; }
 .rm-compact .adv-text { min-width: 0; }
 .rm-compact .adv-label { font-size: 1.02rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .rm-compact .adv-sub { display: none; }
 .rm-compact .hotbar { flex: none; flex-wrap: nowrap; gap: 3px; justify-content: flex-end; max-width: 62vw; overflow-x: auto; overflow-y: visible; scrollbar-width: none; padding-top: 0.5rem; margin-top: -0.5rem; }
 .rm-compact .hotbar::-webkit-scrollbar { display: none; }
-.rm-compact .hot { min-width: 44px; width: 44px; height: 44px; padding: 0; align-content: center; flex: none; }
+.rm-compact .hot { min-width: var(--tap, 44px); width: var(--tap, 44px); height: var(--tap, 44px); padding: 0; align-content: center; flex: none; }
 @media (max-width: 700px) { .rm-compact .hot { min-width: 42px; width: 42px; } }
 .rm-compact .hot-l { display: none; }
 .rm-compact .hot-ico { width: 1.4rem; height: 1.4rem; }
@@ -100,19 +103,19 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
   border: 1px solid var(--brass-lo); box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(241, 211, 141, 0.25);
 }
 .rm-compact .hud-more .hud-money { display: grid; gap: 0; font-size: 1rem; }
-.rm-compact .hud-more .stat { display: grid; grid-template-columns: 1.15rem auto 1fr auto; column-gap: 0.5rem; align-items: center; min-height: 44px; padding: 0.35rem 0.1rem; border-bottom: 1px solid rgba(199, 154, 75, 0.22); }
+.rm-compact .hud-more .stat { display: grid; grid-template-columns: 1.15rem auto 1fr auto; column-gap: 0.5rem; align-items: center; min-height: var(--tap, 44px); padding: 0.35rem 0.1rem; border-bottom: 1px solid rgba(199, 154, 75, 0.22); }
 .rm-compact .hud-more .stat-l { font-size: 0.95rem; }
 .rm-compact .hud-more .stat b { font-size: 1.08rem; justify-self: end; }
 .rm-compact .hud-more .stat .pips { grid-column: 4; }
 .rm-compact .hud-more .stat.linky .stat-l::after { content: ' ›'; color: var(--brass-hi); }
 /* the tips a mouse would hover for, written out */
 .rm-compact .hud-more .stat[data-tip]:not([data-tip=''])::after { content: attr(data-tip); grid-column: 1 / -1; margin-top: 0.15rem; font-size: 0.86rem; line-height: 1.35; color: var(--parch-edge); white-space: normal; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.rm-compact .hud-more .bank-chip { justify-self: start; min-height: 44px; margin-top: 0.3rem; font-size: 0.9rem; }
+.rm-compact .hud-more .bank-chip { justify-self: start; min-height: var(--tap, 44px); margin-top: 0.3rem; font-size: 0.9rem; }
 .rm-compact .hud-more-time { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; padding-top: 0.2rem; }
 .rm-compact .hud-more-time::before { content: 'Time'; flex-basis: 100%; font-family: var(--engraved); letter-spacing: 0.12em; color: var(--brass-hi); font-size: 0.9rem; }
-.rm-compact .hud-more-time .btn { min-height: 44px; font-size: 0.95rem; }
-.rm-compact .hud-more-time .speed { min-height: 44px; font-size: 0.95rem; }
-.rm-compact .hud-more-time .speed-arrow { width: 44px; height: 44px; font-size: 1rem; }
+.rm-compact .hud-more-time .btn { min-height: var(--tap, 44px); font-size: 0.95rem; }
+.rm-compact .hud-more-time .speed { min-height: var(--tap, 44px); font-size: 0.95rem; }
+.rm-compact .hud-more-time .speed-arrow { width: var(--tap, 44px); height: var(--tap, 44px); font-size: 1rem; }
 
 /* the HUD's own pop-ups */
 .rm-compact .digest-host { left: var(--gut-l); max-width: min(34rem, calc(100vw - var(--gut-l) - var(--gut-r))); }
@@ -145,7 +148,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .sheet-head { padding: 0.45rem 0.6rem 0 1rem; gap: 0.6rem; align-items: center; }
 .rm-compact .sheet-title { font-size: 1.45rem; }
 .rm-compact .sheet-sub { font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.rm-compact .sheet-close { width: 44px; height: 44px; padding: 0.7rem; align-self: center; }
+.rm-compact .sheet-close { width: var(--tap, 44px); height: var(--tap, 44px); padding: 0.7rem; align-self: center; }
 .rm-compact .sheet-tabs { padding: 0.3rem 1rem 0; }
 .rm-compact .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-bottom: 0.5rem; }
 .rm-compact .tabs::-webkit-scrollbar { display: none; }
@@ -166,7 +169,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .speech.big .portrait.lg { width: 4.2rem; height: 4.2rem; }
 .rm-compact .speech-text, .rm-compact .letter-text { font-size: 1.02rem; line-height: 1.5; }
 .rm-compact .paper-letter .lh { max-width: 45%; }
-.rm-compact .letter-dock { top: var(--ctop, 3.6rem); min-height: 44px; }
+.rm-compact .letter-dock { top: var(--ctop, 3.6rem); min-height: var(--tap, 44px); }
 .rm-compact .vignettes { gap: 0.4rem; }
 
 /* ---------------------------------------------------------------- full-screen flows */
@@ -203,7 +206,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .ng-page > .title-orn { display: none; }
 .rm-compact .ng-h { font-size: 1.6rem; }
 .rm-compact .ng-lede { margin: 0.3rem auto 0.8rem; font-size: 0.95rem; }
-.rm-compact .ng-nav .btn { min-width: 7.5rem; min-height: 44px; }
+.rm-compact .ng-nav .btn { min-width: 7.5rem; min-height: var(--tap, 44px); }
 .rm-compact .ng-nav-hint { font-size: 0.86rem; padding: 0.25rem 0.75rem; }
 .rm-compact .choice-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
 .rm-compact .ccard { min-height: 0; padding: 0.75rem 0.85rem 0.7rem; gap: 0.3rem; }
@@ -260,12 +263,12 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 /* ---------------------------------------------------------------- field: jobs in a column on the left */
 .rm-compact .verbs { padding: 0.4rem; }
 .rm-compact .verb-row { flex-direction: column; gap: 0.35rem; }
-.rm-compact .verb { min-width: 0; width: min(12.5rem, 30vw); min-height: 44px; padding: 0.35rem 0.6rem; column-gap: 0.45rem; }
+.rm-compact .verb { min-width: 0; width: min(12.5rem, 30vw); min-height: var(--tap, 44px); padding: 0.35rem 0.6rem; column-gap: 0.45rem; }
 .rm-compact .verb-ico { width: 1.5rem; height: 1.5rem; }
 .rm-compact .verb-l { font-size: 1.05rem; }
 .rm-compact .verb-s { font-size: 0.86rem; max-width: none; }
 .rm-compact .jobcard { width: min(25rem, 46vw); }
-.rm-compact .msq { aspect-ratio: auto; min-height: 44px; }
+.rm-compact .msq { aspect-ratio: auto; min-height: var(--tap, 44px); }
 .rm-compact .sq-legend { font-size: 0.82rem; }
 .rm-compact .sack-c { font-size: 0.8rem; }
 
@@ -283,28 +286,28 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .ad-agent, .rm-compact .ad-figs small, .rm-compact .lf-grid small { font-size: 0.76rem; }
 
 /* ================================================================ touch: 44 px targets, no key hints */
-.rm-touch .btn, .rm-touch .btn-sm { min-height: 44px; min-width: 44px; }
+.rm-touch .btn, .rm-touch .btn-sm { min-height: var(--tap, 44px); min-width: var(--tap, 44px); }
 .rm-touch .rm-app { -webkit-touch-callout: none; }
 .rm-touch .gloss { padding: 0.4em 0; }
-.rm-touch .slate-t { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; }
-.rm-touch .note-in { min-height: 44px; }
-.rm-touch .btn-link, .rm-touch .btn-plain { min-height: 44px; min-width: 44px; }
-.rm-touch .sig-clear { display: inline-flex; min-height: 44px; }
-.rm-touch .step-btn { width: 44px; height: 44px; padding: 0.7rem; }
-.rm-touch .seg button { min-height: 44px; padding-left: 0.9rem; padding-right: 0.9rem; }
-.rm-touch .tabs button { min-height: 44px; }
-.rm-touch .sheet-close, .rm-touch .crumb-back, .rm-touch .obj-more, .rm-touch .hud-round, .rm-touch .rb-collapse { width: 44px; height: 44px; }
-.rm-touch .rm-crumb li button { min-height: 44px; }
-.rm-touch .speed-arrow { width: 44px; height: 44px; }
-.rm-touch .digest-more, .rm-touch .digest-x { min-height: 44px; min-width: 44px; }
-.rm-touch .tr-act { min-height: 44px; padding: 0 0.8rem; }
-.rm-touch .bank-chip, .rm-touch .profile-chip, .rm-touch .name-chip, .rm-touch .trivia-tab, .rm-touch .ribbon-mini, .rm-touch .goal-ribbon, .rm-touch .obj-pill, .rm-touch .hud-chipbtn { min-height: 44px; }
-.rm-touch .msq, .rm-touch .sack, .rm-touch .check-row, .rm-touch .dir-row, .rm-touch .lp, .rm-touch .toggle-row, .rm-touch .stat.linky { min-height: 44px; }
-.rm-touch .hot { min-height: 44px; min-width: 42px; }
-.rm-touch .rm-app input[type='text'], .rm-touch .rm-app input[type='number'], .rm-touch .rm-app textarea { min-height: 44px; font-size: max(16px, 1rem); }
+.rm-touch .slate-t { display: inline-flex; align-items: center; gap: 0.35rem; min-height: var(--tap, 44px); }
+.rm-touch .note-in { min-height: var(--tap, 44px); }
+.rm-touch .btn-link, .rm-touch .btn-plain { min-height: var(--tap, 44px); min-width: var(--tap, 44px); }
+.rm-touch .sig-clear { display: inline-flex; min-height: var(--tap, 44px); }
+.rm-touch .step-btn { width: var(--tap, 44px); height: var(--tap, 44px); padding: 0.7rem; }
+.rm-touch .seg button { min-height: var(--tap, 44px); padding-left: 0.9rem; padding-right: 0.9rem; }
+.rm-touch .tabs button { min-height: var(--tap, 44px); }
+.rm-touch .sheet-close, .rm-touch .crumb-back, .rm-touch .obj-more, .rm-touch .hud-round, .rm-touch .rb-collapse { width: var(--tap, 44px); height: var(--tap, 44px); }
+.rm-touch .rm-crumb li button { min-height: var(--tap, 44px); }
+.rm-touch .speed-arrow { width: var(--tap, 44px); height: var(--tap, 44px); }
+.rm-touch .digest-more, .rm-touch .digest-x { min-height: var(--tap, 44px); min-width: var(--tap, 44px); }
+.rm-touch .tr-act { min-height: var(--tap, 44px); padding: 0 0.8rem; }
+.rm-touch .bank-chip, .rm-touch .profile-chip, .rm-touch .name-chip, .rm-touch .trivia-tab, .rm-touch .ribbon-mini, .rm-touch .goal-ribbon, .rm-touch .obj-pill, .rm-touch .hud-chipbtn { min-height: var(--tap, 44px); }
+.rm-touch .msq, .rm-touch .sack, .rm-touch .check-row, .rm-touch .dir-row, .rm-touch .lp, .rm-touch .toggle-row, .rm-touch .stat.linky { min-height: var(--tap, 44px); }
+.rm-touch .hot { min-height: var(--tap, 44px); min-width: 42px; }
+.rm-touch .rm-app input[type='text'], .rm-touch .rm-app input[type='number'], .rm-touch .rm-app textarea { min-height: var(--tap, 44px); font-size: max(16px, 1rem); }
 .rm-touch .rm-app input[type='checkbox'], .rm-touch .rm-app input[type='radio'] { width: 1.45rem; height: 1.45rem; }
-.rm-touch .slider input[type='range'] { height: 44px; }
-.rm-touch .radio-row label { min-height: 44px; }
+.rm-touch .slider input[type='range'] { height: var(--tap, 44px); }
+.rm-touch .radio-row label { min-height: var(--tap, 44px); }
 .rm-touch .btn kbd, .rm-touch .hot kbd, .rm-touch .tm-btn kbd, .rm-touch .adv-btn kbd, .rm-touch .tm-foot, .rm-touch .alt-nod { display: none; }
 /* hover lifts would stick after a tap */
 .rm-touch .tm-btn:hover, .rm-touch .ccard:hover:not(:disabled), .rm-touch .hot:hover, .rm-touch .dir-row:hover, .rm-touch .leaf:hover, .rm-touch .verb:hover, .rm-touch .save-card:hover { transform: none; }
@@ -348,7 +351,7 @@ html.rm-compact .rm-app:has(.rm-place .drawer, .rm-place .jobcard) .digest-host 
   .rm-compact .rm-crumb { max-width: 30vw; }
 }
 .rm-compact .hud-chipbtn .btn-label { display: none; }
-.rm-compact .hud-chipbtn { min-width: 44px; padding: 0.35rem 0.7rem !important; }
+.rm-compact .hud-chipbtn { min-width: var(--tap, 44px); padding: 0.35rem 0.7rem !important; }
 /* a place's own card already says what to do: the Next pill's hint line steps aside */
 html.rm-compact .rm-app:has(.rm-place .drawer, .rm-place .jobcard, .rm-place .float.card) .obj-hint { display: none; }
 /* badges sit over their own button, never over the neighbor's */
@@ -356,12 +359,12 @@ html.rm-compact .rm-app:has(.rm-place .drawer, .rm-place .jobcard, .rm-place .fl
 .rm-compact .hot .badge.tone-urgent { animation: none; }
 .rm-compact .tt-grid > .tt-side { overflow: auto; overscroll-behavior: contain; }
 
-/* world labels on touch: a 44px tap target (rendering lead, 2026-10-17) */
-html.rm-touch .wlabel { min-height: 44px; padding-top: 0.45rem; padding-bottom: 0.45rem; }
+/* world labels on touch: a var(--tap, 44px) tap target (rendering lead, 2026-10-17) */
+html.rm-touch .wlabel { min-height: var(--tap, 44px); padding-top: 0.45rem; padding-bottom: 0.45rem; }
 
 /* ---------------------------------------------------------------- fold a place card down to its title */
 .rm-compact .drawer-fold {
-  display: grid; place-items: center; position: absolute; z-index: 3; top: 0.15rem; right: 0.15rem; width: 44px; height: 44px; padding: 0.7rem;
+  display: grid; place-items: center; position: absolute; z-index: 3; top: 0.15rem; right: 0.15rem; width: var(--tap, 44px); height: var(--tap, 44px); padding: 0.7rem;
   border: 0; border-radius: 50%; background: none; color: var(--brass-lo); cursor: pointer;
 }
 .rm-compact .drawer-fold svg { width: 100%; height: 100%; transition: transform 0.15s; }
@@ -421,7 +424,7 @@ html.rm-touch .wlabel { min-height: 44px; padding-top: 0.45rem; padding-bottom: 
   .rm-compact .cat-intro, .rm-compact .cat-main .small.muted { display: none; }
   /* title: the menu loses its sub-lines; the logo shrinks */
   .rm-compact .tm-s, .rm-compact .tm-head { display: none; }
-  .rm-compact .tm-btn { min-height: 44px; padding: 0.3rem 0.7rem; }
+  .rm-compact .tm-btn { min-height: var(--tap, 44px); padding: 0.3rem 0.7rem; }
   .rm-compact .title-col .title-menu { padding: 0.45rem; gap: 0.3rem; }
   .rm-compact .title-col .title-word { font-size: clamp(2.6rem, 8vw, 3.8rem); }
   .rm-compact .title-sub { font-size: 0.95rem; }
@@ -431,8 +434,77 @@ html.rm-touch .wlabel { min-height: 44px; padding-top: 0.45rem; padding-bottom: 
   .rm-compact .ng-lede { margin-bottom: 0.5rem; }
   .rm-compact .store-cat .drawer-title, .rm-compact .slip > .spread .card-title { display: none; }
   .rm-compact .slip-total .big { font-size: 1.3rem; }
-  /* a counter open (store, bank, elevator, pen): it gets the whole height; Back (top row) or the fold brings the bar back */
-  html.rm-compact .rm-app:has(.rm-place .drawer.wide:not(.folded), .rm-place .store.show-slip) .hud-plank { visibility: hidden; transform: translateY(150%); }
-  html.rm-compact .rm-app:has(.rm-place .drawer.wide:not(.folded), .rm-place .store.show-slip) :is(.drawer.wide, .store .slip) { bottom: var(--gut-b); max-height: none; }
-  html.rm-compact .rm-app:has(.rm-place .drawer.wide:not(.folded), .rm-place .store.show-slip) :is(.rm-transient, .rm-captions) { bottom: calc(var(--gut-b) + 0.4rem); }
+  /* a place card open (not the field's strip): it gets the whole height; Back (top row) or the fold brings the bar back */
+  html.rm-compact .rm-app:has(.rm-place .drawer:not(.folded):not(.jobcard), .rm-place .store.show-slip) .hud-plank { visibility: hidden; transform: translateY(150%); }
+  html.rm-compact .rm-app:has(.rm-place .drawer:not(.folded):not(.jobcard), .rm-place .store.show-slip) :is(.drawer:not(.jobcard), .store .slip) { bottom: var(--gut-b); max-height: none; }
+  html.rm-compact .rm-app:has(.rm-place .drawer:not(.folded):not(.jobcard), .rm-place .store.show-slip) .drawer:not(.jobcard):not(.wide) { width: min(34rem, 62vw); }
+  html.rm-compact .rm-app:has(.rm-place .drawer:not(.folded):not(.jobcard), .rm-place .store.show-slip) :is(.rm-transient, .rm-captions) { bottom: calc(var(--gut-b) + 0.4rem); }
 }
+
+/* ---------------------------------------------------------------- iOS: "Add to Home Screen" for full screen (title only, once) */
+.a2hs { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.8rem; padding: 0.15rem 0.2rem 0.15rem 0.75rem; border-radius: 999px; background: rgba(20, 12, 4, 0.72); border: 1px solid var(--brass-lo); color: var(--parch); font-size: 0.9rem; line-height: 1.3; pointer-events: auto; }
+.a2hs b { font-weight: 600; color: var(--brass-hi); }
+.a2hs-ico { display: inline-block; width: 1.05em; height: 1.05em; vertical-align: -0.15em; color: var(--brass-hi); }
+.a2hs-ico svg { width: 100%; height: 100%; }
+.a2hs-x { flex: none; width: 36px; height: 36px; border: 0; border-radius: 50%; background: none; color: var(--parch-edge); font: inherit; font-size: 1.3rem; cursor: pointer; }
+
+/* ================================================================ round 3: one scroller per screen, denser */
+/* nothing scrolls inside something that scrolls: lists grow, the sheet or card around them scrolls */
+.rm-compact :is(.mail-list, .cap-list, .pic-grid, .standing-log, .ledger-scroll, .tt-transcript, .load-profiles, .load-saves, .digest-list) { max-height: none; overflow: visible; }
+.rm-compact .tt-live-body p { max-height: none; overflow: visible; }
+.rm-compact .load-wrap { display: block; height: auto; }
+.rm-compact .load-profiles { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.7rem; }
+.rm-compact .drawer > .drawer-body, .rm-compact .sheet-body, .rm-compact .pcard, .rm-compact .ng-stage, .rm-compact .rm-place .float.card { -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+.rm-compact .drawer-title { font-size: 1.12rem; }
+.rm-compact .sheet-title { font-size: 1.3rem; }
+.rm-compact .card-title { font-size: 1.08rem; }
+
+/* town talk: one page that scrolls: townsfolk, the line being said, then the transcript */
+.rm-compact .rm-sheet.sheet-talk .sheet-body { overflow: auto; display: block; }
+.rm-compact .tt-grid { display: block; height: auto; }
+.rm-compact .tt-grid > .tt-boardwalk { overflow: visible; margin-bottom: 0.5rem; padding: 0.5rem 0.5rem 1.3rem; }
+.rm-compact .tt-grid > .tt-live { margin-bottom: 0.5rem; }
+.rm-compact .tt-grid > .tt-side { overflow: visible; display: block; padding-top: 0.2rem; }
+.rm-compact .tt-stage { grid-template-columns: repeat(auto-fill, minmax(5.4rem, 1fr)); }
+
+/* field: a slim toolbar (jobs, and the seed when planting) and a one-line job strip; the squares get the rest */
+.rm-compact .verbs { padding: 0.3rem; }
+.rm-compact .verb-row { flex-direction: row; gap: 0.3rem; }
+.rm-compact .verb { width: auto; min-width: 0; min-height: var(--tap, 44px); padding: 0.2rem 0.65rem 0.2rem 0.45rem; grid-template-columns: auto auto; }
+.rm-compact .verb-ico { grid-row: auto; width: 1.3rem; height: 1.3rem; }
+.rm-compact .verb-l { font-size: 1rem; }
+.rm-compact .verb-s { display: none; }
+.rm-compact .verbs .seed-tray { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.3rem 0 0; }
+.rm-compact .verbs .sack { min-height: var(--tap, 44px); padding: 0.15rem 0.5rem; }
+.rm-compact .jobcard .seed-tray, .rm-compact .jobcard .eyebrow:has(+ .seed-tray) { display: none; }
+.rm-compact .jobcard.folded { top: auto; bottom: calc(var(--hud-h) + 0.25rem); left: var(--gut-l); right: var(--gut-r); width: auto; flex-direction: row; align-items: center; padding: 0; }
+.rm-compact .jobcard.folded > .drawer-head { flex: 1 1 auto; min-width: 0; padding: 0.25rem 0.4rem 0.25rem 0.85rem; }
+.rm-compact .jobcard.folded > .drawer-head .eyebrow { display: none; }
+.rm-compact .jobcard.folded .drawer-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02rem; }
+.rm-compact .jobcard.folded > .drawer-foot { flex: none; border: 0; background: none; padding: 0.25rem 2.9rem 0.25rem 0.3rem; flex-wrap: nowrap; }
+.rm-compact .jobcard.folded > .drawer-foot .btn-wide { width: auto; }
+.rm-compact .jobcard.folded .drawer-fold { top: 50%; transform: translateY(-50%); }
+.rm-compact .jobcard:not(.folded) { width: min(22rem, 46vw); }
+
+/* bank: the numbers say it; the chart waits for a bigger screen */
+.rm-compact .bank-drawer .chart-host { display: none; }
+.rm-compact .bank-drawer .drawer-head .tabs { margin: 0.3rem 0 -0.35rem; border-bottom: 0; }
+.rm-compact .house-panel .drawer-head .tabs { margin: 0.3rem 0 -0.35rem; border-bottom: 0; }
+.rm-compact .house-things { gap: 0.35rem; }
+.rm-compact .thing { padding: 0.35rem 0.55rem; }
+.rm-compact .thing .ico { width: 1.4rem; height: 1.4rem; }
+
+/* nothing under 12 px (the root is 13.6 px on phones) */
+.rm-compact :is(.title-kicker, .title-years, .intro-chapter, .ng-nav-hint, .ribbon-mini, .leaf-m, .eyebrow, .obj-k, .pill, .tm-s, .small, .tiny, .chip, .recent-when, .mail-item small, .gr-sub, .stat-l, .kv, .legend, .slip-l small, .sack-c, .tt-role, .dir-badge, .tab-badge, .wl-sub) { font-size: max(0.88rem, 12px); }
+.rm-compact .hot .badge { font-size: max(0.84rem, 11.5px); line-height: 1.25rem; padding: 0 0.3rem; }
+.rm-compact .hot .badge { font-size: 12px; }
+.rm-compact :is(table.ledger-t th, .tm-head, .leaf-y) { font-size: max(0.88rem, 12px); }
+.rm-compact .note-in { min-height: var(--tap, 44px); }
+.rm-compact .savings input[type='range'] { height: var(--tap, 44px); }
+.rm-compact .jobcard.folded { min-height: calc(var(--tap, 44px) + 0.6rem); }
+/* one surface at a time: a book covers the place, a book opened from a book covers the first */
+.rm-compact .rm-app.has-sheet .rm-place { visibility: hidden; }
+.rm-compact .rm-sheet-wrap:not(:last-child) { visibility: hidden; }
+/* house savings page: the tab says what it is; the coin stacks wait for a bigger screen */
+.rm-compact .house-panel .savings > .alm-h, .rm-compact .house-panel .coins { display: none; }
+.rm-compact .house-panel .savings { margin: 0; }

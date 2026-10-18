@@ -54,7 +54,7 @@ function mount(app: App) {
   const paneFoot = h('div', { class: 'store-pane-foot' });
   const backToCat = btn('Catalogue', { kind: 'ghost', small: true, icon: 'back', cls: 'store-pane-back', onClick: () => showSlip(false) });
   const showSlip = (on: boolean) => el.classList.toggle('show-slip', on);
-  onCompact((on) => {
+  const offCompact = onCompact((on) => {
     cat.foot.hidden = !on;
     if (on) put(cat.foot, paneFoot);
     else showSlip(false);
@@ -257,7 +257,7 @@ function mount(app: App) {
   greetState.visits++;
   greetState.month = monthKey;
   if (greet) say('STORE.SEG66', 'Harriet');
-  return { el, update: (s: GameState) => render(s), crumb: () => (tab === 'seeds' ? 'Seeds' : 'Catalogue') };
+  return { el, update: (s: GameState) => render(s), destroy: () => offCompact(), crumb: () => (tab === 'seeds' ? 'Seeds' : 'Catalogue') };
 }
 
 const greetState = { visits: 0, month: -1 };

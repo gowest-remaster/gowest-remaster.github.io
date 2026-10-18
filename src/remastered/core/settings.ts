@@ -1,6 +1,7 @@
 // Remastered settings (per device, localStorage). Game state never lives here.
 // Applies presentation classes/vars to <html> so CSS can react (text size, motion, fonts, palettes).
 import type { Quality } from '../../world/api.ts';
+import { isCompact } from '../ui/compact.ts';
 
 export type Speed = 'stroll' | 'trot' | 'gallop' | 'instant';
 export type ChipDetail = 'story' | 'clear' | 'detailed' | 'off';
@@ -133,6 +134,8 @@ export const SPEEDS: Speed[] = ['stroll', 'trot', 'gallop', 'instant'];
 
 /** UI scale from the window size: bigger on QHD screens, slightly tighter on 720p. */
 function viewportScale() {
+  // phones in landscape (ui/compact.ts): a denser overlay, body text about 13.6 px
+  if (isCompact()) return 0.85;
   const k = Math.min(window.innerWidth / 1440, window.innerHeight / 900);
   return Math.max(0.9, Math.min(1.35, k));
 }
