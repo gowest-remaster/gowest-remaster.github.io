@@ -9,6 +9,7 @@ import { Environment } from './engine/environment';
 import { Post } from './engine/post';
 import { Weather } from './env/weather';
 import { PlateView } from './plates/plates';
+import { LOW_MEMORY, memStats } from '../lowmem';
 import { texture as tslTexture, uv as tslUV, vec4 as tslVec4 } from 'three/tsl';
 import { FieldCrew } from './places/fieldCrew';
 import { SquareMarks } from './places/squareMarks';
@@ -42,27 +43,8 @@ const plateLift = (k?: { sunDir?: number[]; sunIntensity?: number }): number =>
   k?.sunIntensity === 0 ? 1.08 : k?.sunDir ? THREE.MathUtils.lerp(PLATE_EXPOSURE_LIFT, 1.3, THREE.MathUtils.smoothstep(k.sunDir[1], 0.12, 0.4)) : PLATE_EXPOSURE_LIFT;
 const INTERIORS: Place[] = ['house', 'store', 'bank'];
 
-/** Low-memory profile (phones, small tablets, low deviceMemory; ?mobile=1 / ?mobile=0 to force). iOS Safari
- *  reloads a tab that goes over ~1-1.5 GB, which looked like an endless loading screen: half-resolution plates,
- *  lighting keys loaded on demand, at most two outdoor views kept, no prefetch, 1024 shadows, DPR <= 1.5. */
-const LOW_MEMORY = (() => {
-  const q = new URLSearchParams(location.search).get('mobile');
-  if (q === '1') return true;
-  if (q === '0') return false;
-  try {
-    // set by the boot splash after a start that ran out of memory, or by a lost GPU device (see WorldImpl.fatal)
-    if (localStorage.getItem('gw-lowmem') === '1') return true;
-  } catch {
-    /* storage blocked */
-  }
-  const coarse = typeof matchMedia === 'function' && matchMedia('(pointer: coarse)').matches;
-  const small = Math.min(screen.width, screen.height) <= 820;
-  const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  const mem = (navigator as Navigator & { deviceMemory?: number }).deviceMemory;
-  return (coarse && small) || ios || (mem !== undefined && mem <= 4);
-})();
-/** outdoor plate views kept loaded at once in the low-memory profile (the current one + the last) */
-const LOW_MEMORY_VIEWS = 2;
+/** outdoor plate views kept loaded at once in the low-memory profile: only the current one */
+const LOW_MEMORY_VIEWS = 1;
 /** lighting audit (2026-10-17): rooms that read too dark at their baked exposure, per key */
 const INTERIOR_LIFT: Record<string, Record<string, number>> = {
   house_sodFurnished: { evening: 1.12 },
@@ -309,8 +291,12 @@ export class WorldImpl implements World3D {
     if (LOW_MEMORY) {
       PlateView.lowRes = true;
       PlateView.streamAll = false;
-      this.qualityCap = QORDER[Math.min(QORDER.indexOf(this.qualityCap), QORDER.indexOf('med'))];
+      // DPR 1 and 1024 shadows: at a phone's DPR 3 every full-screen target (MSAA colour + normals + resolves)
+      // is 9x the pixels for little visible gain over half-resolution plates
+      this.qualityCap = 'low';
+      this.quality_ = 'low';
     }
+    if (new URLSearchParams(location.search).get('memdebug') === '1') this.memDebug();
     this.scene.matrixWorldAutoUpdate = false; // updated once per frame in frame()
     r.info.autoReset = false; // per-frame totals across all passes (reset in frame())
     this.backend = (r.backend as unknown as { isWebGPUBackend?: boolean }).isWebGPUBackend ? 'WebGPU' : 'WebGL2';
@@ -674,7 +660,8 @@ export class WorldImpl implements World3D {
     const gen = ++this.goGen;
     // 1. everything the target needs (plate + its keys and layers, interior room, shaders) loads while the current
     //    view stays on screen and animating
-    if (!instant) await this.preparePlace(place, true);
+    // never switch to a view whose plate and images aren't ready (instant hops too; they just report no progress)
+    await this.preparePlace(place, !instant);
     if (gen !== this.goGen) return;
     const isInt = INTERIORS.includes(place);
     // (the target's current lighting keys are loaded before the cut: no key popping in after the dissolve)
@@ -704,9 +691,82 @@ export class WorldImpl implements World3D {
       this.lastDissolve = { start: t0, end: performance.now() };
     }
     this.prefetchAround(place);
+    if (LOW_MEMORY) this.trimInteriors();
+  }
+
+  /** Low-memory profile: only the current room stays loaded (its plate, pick props and post targets). */
+  private trimInteriors(): void {
+    const cur = INTERIORS.includes(this.place) ? this.interiorKey(this.place) : null;
+    for (const [k, set] of [...this.interiors]) {
+      if (k === cur) continue;
+      this.interiors.delete(k);
+      this.placeReady.delete('int:' + k);
+      const view = k === 'sod' || k === 'sodFurnished' || k === 'frame' ? `house_${k}` : k;
+      const pv = this.interiorPlates.get(view);
+      this.interiorPlates.delete(view);
+      this.interiorPlateLoads.delete(view);
+      pv?.dispose();
+      for (const [pk, post] of [...this.interiorPost]) if (String(pk).startsWith(k + ':')) (post.dispose(), this.interiorPost.delete(pk));
+      set.scene.traverse((o) => (o as THREE.Mesh).geometry?.dispose());
+    }
+  }
+
+  /** ?memdebug=1: a small overlay with the memory this page holds (GPU textures by kind, render targets, decoded
+   *  audio, JS heap where the browser reports it), updated every 2 s: real numbers from a phone. */
+  private memDebug(): void {
+    const box = document.createElement('pre');
+    box.style.cssText = 'position:fixed;right:6px;top:6px;z-index:100002;margin:0;padding:6px 8px;background:#000b;color:#cfe;font:11px/1.35 ui-monospace,monospace;pointer-events:none';
+    document.body.appendChild(box);
+    const mb = (b: number) => (b / 1048576).toFixed(0).padStart(4) + ' MB';
+    const bytes = (t: THREE.Texture) => {
+      const im = (t.image ?? null) as { width?: number; height?: number } | null;
+      const rt = this.packedRT.get(t);
+      const w = rt?.width ?? im?.width ?? 0;
+      const h = rt?.height ?? im?.height ?? 0;
+      return w * h * (t.type === THREE.HalfFloatType || t.type === THREE.FloatType ? 8 : 4);
+    };
+    setInterval(async () => {
+      const seen = new Set<THREE.Texture>();
+      let plates = 0;
+      let live = 0;
+      let geo = 0;
+      const pvs: PlateView[] = [];
+      for (const p of this.plates.values()) {
+        const pv = await p;
+        if (pv) pvs.push(pv);
+      }
+      for (const pv of this.interiorPlates.values()) if (pv) pvs.push(pv);
+      for (const pv of pvs) for (const t of pv.textures) if (!seen.has(t)) (seen.add(t), (plates += bytes(t)));
+      const scan = (root: THREE.Object3D) =>
+        root.traverse((o) => {
+          const g = (o as THREE.Mesh).geometry;
+          if (g) for (const a of Object.values(g.attributes)) geo += (a as THREE.BufferAttribute).array?.byteLength ?? 0;
+          const ms = (o as THREE.Mesh).material;
+          for (const m of Array.isArray(ms) ? ms : ms ? [ms] : []) for (const v of Object.values(m)) if ((v as THREE.Texture)?.isTexture && !seen.has(v as THREE.Texture)) (seen.add(v as THREE.Texture), (live += bytes(v as THREE.Texture)));
+        });
+      scan(this.scene);
+      for (const i of this.interiors.values()) scan(i.scene);
+      const c = this.canvas;
+      const posts = this.postCache.size + this.interiorPost.size;
+      const rt = c.width * c.height * (8 + 8 + 4) * 4 * posts + c.width * c.height * 4 * 3;
+      const sm = this.env?.sun.shadow.mapSize;
+      const heap = (performance as Performance & { memory?: { usedJSHeapSize: number } }).memory?.usedJSHeapSize;
+      box.textContent = [
+        `plates  ${mb(plates)}  (${pvs.map((p) => p.view).join(', ')})`,
+        `live tx ${mb(live)}`,
+        `geom    ${mb(geo)}`,
+        `targets ${mb(rt)}  (${posts} post, ${c.width}x${c.height})`,
+        `shadow  ${mb(sm ? sm.x * sm.y * 4 : 0)}`,
+        `audio   ${mb(memStats.audioBytes)}`,
+        `js heap ${heap ? mb(heap) : '   n/a'}`,
+        `profile ${LOW_MEMORY ? 'low-memory' : 'full'} · ${this.quality_} · ${this.backend}`,
+      ].join('\n');
+    }, 2000);
   }
 
   private compiledPlates = new WeakSet<PlateView>();
+  /** no ahead-of-time pipeline compiles (low-memory profile; ?aot=1 forces them on) */
+  private aotOff = LOW_MEMORY && new URLSearchParams(location.search).get('aot') !== '1';
   /** the shadow matte material, one per strength (built + compiled ahead, not at the cut) */
   private shadowMats = new Map<number, THREE.Material>();
   private prepProxy(pv: PlateView): void {
@@ -729,7 +789,9 @@ export class WorldImpl implements World3D {
     this.compiledPlates.add(pv);
     // WebGL2 fallback: ahead-of-time compiles are slower than just drawing (GLSL links on the main thread either
     // way, and every awaited compile adds a frame): upload the images only
-    if (this.backend !== 'WebGPU') return void (await this.uploadPlate(pv));
+    // (and on phones: Safari builds each pipeline slowly, so ahead-of-time compiles made a hop wait 8-16 s; drawing
+    // compiles what is actually on screen, once, during the dissolve)
+    if (this.backend !== 'WebGPU' || this.aotOff) return void (await this.uploadPlate(pv));
     const vis: [THREE.Object3D, boolean][] = [];
     pv.quad.traverse((o) => {
       vis.push([o, o.visible]);
@@ -929,10 +991,14 @@ export class WorldImpl implements World3D {
   private trimPlates(current: string): void {
     this.recentViews = [current, ...this.recentViews.filter((v) => v !== current)];
     if (!LOW_MEMORY) return;
-    for (const v of this.recentViews.splice(LOW_MEMORY_VIEWS)) {
+    const keep = new Set(this.recentViews.slice(0, LOW_MEMORY_VIEWS));
+    this.recentViews = [...keep];
+    // every other loaded outdoor view goes (including ones loaded before the first trim, e.g. the title's)
+    for (const v of [...this.plates.keys()]) {
+      if (keep.has(v)) continue;
       const p = this.plates.get(v);
       this.plates.delete(v);
-      for (const [k] of this.placeReady) if (k === v || (v === 'homestead' && k === 'homestead')) this.placeReady.delete(k);
+      this.placeReady.delete(v);
       void p?.then((pv) => pv && pv !== this.plate && pv.dispose());
     }
   }
@@ -950,7 +1016,7 @@ export class WorldImpl implements World3D {
    *  parts): built while the current view is still up, not at the cut. */
   private liveSig = -1;
   private async compileLive(pv: PlateView): Promise<void> {
-    if (!this.post || !pv.json?.camera || this.backend !== 'WebGPU') return;
+    if (!this.post || !pv.json?.camera || this.backend !== 'WebGPU' || this.aotOff) return;
     // the live camera itself (not a clone at the plate's shot): render state is cached per scene + camera +
     // target, so a clone built everything a second time at the cut. Frustum culling is off while compiling.
     const cam = this.camera;

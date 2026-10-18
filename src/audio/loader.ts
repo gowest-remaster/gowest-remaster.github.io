@@ -1,5 +1,6 @@
 // Manifest + buffer loading. Picks Opus/Ogg where the browser decodes it, else AAC/m4a, and falls
 // back to the other format if decoding fails. Decoded buffers are cached with a byte budget (LRU).
+import { LOW_MEMORY, memStats } from '../lowmem.ts';
 import type { AmbienceManifest, FileSet, MusicManifest, SfxManifest, VoiceManifest } from './types.ts';
 
 export const AUDIO_BASE = `${import.meta.env.BASE_URL}assets/audio/`;
@@ -54,7 +55,8 @@ export class BufferCache {
   private ctx: BaseAudioContext;
   private budgetBytes: number;
 
-  constructor(ctx: BaseAudioContext, budgetBytes = 160 * 1024 * 1024) {
+  // (decoded PCM is ~11 MB per stereo minute: a phone keeps about the current music track plus short sounds)
+  constructor(ctx: BaseAudioContext, budgetBytes = (LOW_MEMORY ? 40 : 160) * 1024 * 1024) {
     this.ctx = ctx;
     this.budgetBytes = budgetBytes;
   }
@@ -106,12 +108,14 @@ export class BufferCache {
     const size = buf.length * buf.numberOfChannels * 4;
     this.cache.set(path, buf);
     this.bytes += size;
+    memStats.audioBytes += size;
     if (pin) this.pinned.add(path);
     for (const [k, b] of this.cache) {
       if (this.bytes <= this.budgetBytes) break;
       if (this.pinned.has(k) || k === path) continue;
       this.cache.delete(k);
       this.bytes -= b.length * b.numberOfChannels * 4;
+      memStats.audioBytes -= b.length * b.numberOfChannels * 4;
     }
   }
 }

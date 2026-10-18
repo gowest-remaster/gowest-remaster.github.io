@@ -15,6 +15,7 @@ import { rm } from '../core/settings.ts';
 import { CATALOG_INFO, isNewArrival, seedPrice, SOW_WINDOW, sowable } from '../core/simapi.ts';
 import { badge } from '../ui/badges.ts';
 import { btn, drawer, stepper, tabs, toast } from '../ui/kit.ts';
+import { onCompact } from '../ui/compact.ts';
 import type { PanelEnv } from './index.ts';
 import { blockedReason, say, shortfall } from './town-common.ts';
 
@@ -49,6 +50,15 @@ function mount(app: App) {
   cat.head.append(tabBar.el);
   const slip = h('section', { class: 'card slip float br' });
   const el = h('div', { class: 'store' }, cat.el, slip);
+  // phones: one pane at a time. The catalogue's foot shows the order and Pay; the slip has a way back.
+  const paneFoot = h('div', { class: 'store-pane-foot' });
+  const backToCat = btn('Catalogue', { kind: 'ghost', small: true, icon: 'back', cls: 'store-pane-back', onClick: () => showSlip(false) });
+  const showSlip = (on: boolean) => el.classList.toggle('show-slip', on);
+  onCompact((on) => {
+    cat.foot.hidden = !on;
+    if (on) put(cat.foot, paneFoot);
+    else showSlip(false);
+  });
 
   const set = (k: Key, v: number) => {
     if (v <= 0) cart.delete(k);
@@ -144,9 +154,13 @@ function mount(app: App) {
       session.run({ type: 'withdrawSavings', amount: Math.ceil(sf.short * 100) / 100 }, `Fetched ${money2(sf.short)} from the savings box`);
       toast(`Took ${money2(sf.short)} from the savings box.`, { icon: 'box', quiet: true });
     } }) : null;
+    const n = ls.reduce((a, l) => a + l.qty, 0);
+    const orderBtn = btn(n ? `Order slip (${n}) · ${money2(total)}` : 'Order slip (empty)', { kind: 'brass', small: true, icon: 'cart', onClick: () => showSlip(true) });
+    const payMini = btn(total ? `Pay ${money2(total)}` : 'Pay', { kind: 'go', small: true, disabled: payBtn.dataset.reason ?? (payBtn.disabled ? 'Not now' : undefined), onClick: () => (sf.canFetch && ls.length ? showSlip(true) : pay()) });
+    put(paneFoot, orderBtn, ls.length ? payMini : null);
     put(
       slip,
-      h('div', { class: 'spread' }, h('h3', { class: 'card-title' }, 'Order slip'), h('label', { class: 'small slate-t', title: 'Work out the seed totals yourself; Harriet will check them.' }, (() => { const c = h('input', { type: 'checkbox', checked: slate }) as HTMLInputElement; c.addEventListener('change', () => { slate = c.checked; stamp = ''; render(session.s); }); return c; })(), ' Tally it yourself')),
+      h('div', { class: 'spread' }, backToCat, h('h3', { class: 'card-title' }, 'Order slip'), h('label', { class: 'small slate-t', title: 'Work out the seed totals yourself; Harriet will check them.' }, (() => { const c = h('input', { type: 'checkbox', checked: slate }) as HTMLInputElement; c.addEventListener('change', () => { slate = c.checked; stamp = ''; render(session.s); }); return c; })(), ' Tally it yourself')),
       ls.length ? h('ol', { class: 'slip-lines' }, ...rows) : h('div', { class: 'empty' }, 'Nothing ordered yet. Use + to add sacks or goods.'),
       h('div', { class: 'slip-total' }, h('span', { class: 'eyebrow' }, 'Total'), h('b', { class: 'big num' }, slate && seedLines.length ? '?' : money2(total))),
       h('div', { class: 'small muted num' }, `Cash ${money2(s.propet.cash)} · Savings box ${money2(s.propet.savings)}`),
@@ -203,6 +217,7 @@ function mount(app: App) {
     stamp = '';
     render(session.s);
     if (ok) {
+      if (!cart.size) showSlip(false);
       say('STORE.SEG70', 'Harriet');
       toast('Paid. Harriet wraps up your order.', { icon: 'cart', tone: 'good', quiet: true });
     }

@@ -340,5 +340,14 @@ export function drawer(o: { title: Children[number]; eyebrow?: string; side?: 'l
   const body = h('div', { class: 'drawer-body' });
   const foot = h('div', { class: 'drawer-foot', hidden: true });
   const el = h('section', { class: `card drawer ${o.side === 'left' ? 'left' : ''} ${o.wide ? 'wide' : ''} ${o.cls ?? ''}` }, head, body, foot);
+  // phones (styles/compact.css): fold the card down to its title and its main button to see the place behind it
+  const fold = h('button', { type: 'button', class: 'drawer-fold', 'aria-expanded': 'true', 'aria-label': 'Fold this card' });
+  fold.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>';
+  fold.addEventListener('click', () => {
+    const folded = el.classList.toggle('folded');
+    fold.setAttribute('aria-expanded', String(!folded));
+    fold.setAttribute('aria-label', folded ? 'Unfold this card' : 'Fold this card');
+  });
+  el.append(fold);
   return { el, head, body, foot };
 }

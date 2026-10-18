@@ -5,7 +5,7 @@
    Nothing here applies on a desktop window, so the desktop look is unchanged.
    Safe areas come from index.html (--safe-t/r/b/l = env(safe-area-inset-*)). */
 
-.hud-stats-toggle, .hud-more { display: none; }
+.hud-stats-toggle, .hud-more, .drawer-fold, .thing-savings, .store-pane-back { display: none; }
 
 /* ================================================================ compact layout */
 html.rm-compact {
@@ -49,7 +49,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .obj-k { font-size: 0.72rem; }
 .rm-compact .obj-more { width: 44px; height: 44px; flex: none; padding: 0.65rem; }
 .rm-compact .obj-hint { font-size: 0.92rem; }
-.rm-compact .obj-list { max-height: calc(100vh - var(--ctop, 6rem) - var(--hud-h)); }
+.rm-compact .obj-list { max-height: calc(100dvh - var(--ctop, 6rem) - var(--hud-h)); }
 
 /* ---------------------------------------------------------------- the slim HUD bar */
 .rm-compact .hud-plank {
@@ -94,7 +94,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 /* the money and time drawer above the bar */
 .rm-compact .hud-more:not([hidden]) {
   display: grid; gap: 0.35rem; position: absolute; left: 0; bottom: calc(100% + 0.4rem);
-  width: min(23rem, calc(100vw - var(--gut-l) - var(--gut-r))); max-height: calc(100vh - var(--hud-h) - var(--gut-t) - 0.4rem); overflow: auto; overscroll-behavior: contain;
+  width: min(23rem, calc(100vw - var(--gut-l) - var(--gut-r))); max-height: calc(100dvh - var(--hud-h) - var(--gut-t) - 0.4rem); overflow: auto; overscroll-behavior: contain;
   padding: 0.55rem 0.8rem 0.7rem; border-radius: 12px; color: var(--parch);
   background: repeating-linear-gradient(91deg, rgba(255, 255, 255, 0.022) 0 2px, transparent 2px 9px), linear-gradient(var(--wood-hi), var(--wood) 55%, var(--wood-lo));
   border: 1px solid var(--brass-lo); box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(241, 211, 141, 0.25);
@@ -133,7 +133,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .float.tc { top: var(--ctop, 3.6rem); }
 .rm-compact .float.bl { bottom: calc(var(--hud-h) + 0.25rem); left: var(--gut-l); }
 .rm-compact .float.br { bottom: calc(var(--hud-h) + 0.25rem); right: var(--gut-r); }
-.rm-compact .rm-place .float.card { max-height: calc(100vh - var(--ctop, 3.6rem) - var(--hud-h) - 0.3rem); overflow: auto; overscroll-behavior: contain; }
+.rm-compact .rm-place .float.card { max-height: calc(100dvh - var(--ctop, 3.6rem) - var(--hud-h) - 0.3rem); overflow: auto; overscroll-behavior: contain; }
 .rm-compact .card { padding: 0.7rem 0.85rem; }
 .rm-compact .card-title { font-size: 1.15rem; }
 
@@ -182,7 +182,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .title-sub { font-size: 1.05rem; }
 .rm-compact .title-orn { margin-top: 0.6rem; height: 1.1rem; }
 .rm-compact .title-years { font-size: 0.86rem; }
-.rm-compact .title-col .title-menu { max-width: none; max-height: calc(100vh - var(--gut-t) - var(--gut-b)); overflow: auto; overscroll-behavior: contain; padding: 0.75rem 0.75rem 0.65rem; gap: 0.4rem; }
+.rm-compact .title-col .title-menu { max-width: none; max-height: calc(100dvh - var(--gut-t) - var(--gut-b)); overflow: auto; overscroll-behavior: contain; padding: 0.75rem 0.75rem 0.65rem; gap: 0.4rem; }
 .rm-compact .title-menu::before { inset: 0.3rem; }
 .rm-compact .tm-head { font-size: 0.86rem; margin: 0; }
 .rm-compact .tm-btn { padding: 0.45rem 0.7rem; min-height: 48px; gap: 0.55rem; grid-template-columns: 1.8rem 1fr auto; }
@@ -234,8 +234,8 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 .rm-compact .intro-chapter { font-size: 0.86rem; }
 .rm-compact .intro-chapter b { font-size: 1.15rem; }
 .rm-compact .intro-stage { padding: 0 var(--gut-r) 0 var(--gut-l); }
-.rm-compact .intro-frame { width: min(64rem, calc(100vw - var(--gut-l) - var(--gut-r)), calc((100vh - 10.6rem) * 1.333)); }
-.rm-compact .intro-zoom:has(.drv) { width: min(100%, calc((100vh - 10.6rem) * 4 / 3)); }
+.rm-compact .intro-frame { width: min(64rem, calc(100vw - var(--gut-l) - var(--gut-r)), calc((100dvh - 10.6rem) * 1.333)); }
+.rm-compact .intro-zoom:has(.drv) { width: min(100%, calc((100dvh - 10.6rem) * 4 / 3)); }
 .rm-compact .intro-cap { min-height: 3.6rem; padding: 0.3rem var(--gut-r) calc(var(--gut-b) + 0.2rem) var(--gut-l); }
 .rm-compact .intro-cap p { font-size: 1rem; line-height: 1.4; }
 
@@ -253,7 +253,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 
 /* ---------------------------------------------------------------- homestead */
 .rm-compact .hub-ribbon { min-width: 0; width: auto; max-width: calc(100vw - var(--gut-l) - var(--gut-r)); }
-.rm-compact .today { width: min(21rem, 42vw); max-height: calc(100vh - var(--ctop, 3.6rem) - var(--hud-h) - 0.3rem); }
+.rm-compact .today { width: min(21rem, 42vw); max-height: calc(100dvh - var(--ctop, 3.6rem) - var(--hud-h) - 0.3rem); }
 .rm-compact .trivia { width: min(22rem, 46vw); }
 .rm-compact .build-host .drawer { width: min(24rem, 46vw); }
 
@@ -271,7 +271,7 @@ html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35
 
 /* ---------------------------------------------------------------- town */
 .rm-compact .drawer.store-cat { width: calc((100vw - var(--gut-l) - var(--gut-r)) * 0.58); }
-.rm-compact .slip { width: calc((100vw - var(--gut-l) - var(--gut-r)) * 0.42 - 0.5rem); max-height: calc(100vh - var(--ctop, 3.6rem) - var(--hud-h) - 0.5rem); }
+.rm-compact .slip { width: calc((100vw - var(--gut-l) - var(--gut-r)) * 0.42 - 0.5rem); max-height: calc(100dvh - var(--ctop, 3.6rem) - var(--hud-h) - 0.5rem); }
 .rm-compact .cat-item { gap: 0.55rem; padding: 0.5rem 0.55rem; }
 .rm-compact .cat-art { width: 2.5rem; height: 2.5rem; }
 .rm-compact .cat-name { font-size: 1.05rem; }
@@ -358,3 +358,81 @@ html.rm-compact .rm-app:has(.rm-place .drawer, .rm-place .jobcard, .rm-place .fl
 
 /* world labels on touch: a 44px tap target (rendering lead, 2026-10-17) */
 html.rm-touch .wlabel { min-height: 44px; padding-top: 0.45rem; padding-bottom: 0.45rem; }
+
+/* ---------------------------------------------------------------- fold a place card down to its title */
+.rm-compact .drawer-fold {
+  display: grid; place-items: center; position: absolute; z-index: 3; top: 0.15rem; right: 0.15rem; width: 44px; height: 44px; padding: 0.7rem;
+  border: 0; border-radius: 50%; background: none; color: var(--brass-lo); cursor: pointer;
+}
+.rm-compact .drawer-fold svg { width: 100%; height: 100%; transition: transform 0.15s; }
+.rm-compact .drawer > .drawer-head { padding-right: 2.9rem; }
+.rm-compact .drawer.folded { bottom: auto; }
+.rm-compact .drawer.folded > .drawer-body { display: none; }
+.rm-compact .drawer.folded .drawer-fold svg { transform: rotate(180deg); }
+.rm-compact .drawer.folded > .drawer-head { border-bottom: 0; }
+
+/* ---------------------------------------------------------------- field: the 3D field is the map */
+.rm-compact .jobcard .sqmap, .rm-compact .jobcard .sq-legend { display: none; }
+.rm-compact .jobcard { width: min(21rem, 38vw); }
+.rm-compact .verb { width: min(10.5rem, 25vw); }
+
+/* ---------------------------------------------------------------- house: the savings box has its own button */
+.rm-compact .thing-savings { display: grid; }
+
+/* ---------------------------------------------------------------- store: one pane at a time */
+.rm-compact .store .store-cat, .rm-compact .store .slip { width: min(36rem, calc(100vw - var(--gut-l) - var(--gut-r))); }
+.rm-compact .rm-place .store .slip.float { top: var(--ctop, 3.6rem); bottom: calc(var(--hud-h) + 0.25rem); max-height: none; transform: none; display: flex; flex-direction: column; }
+.rm-compact .rm-place .store:not(.show-slip) .slip.float, .rm-compact .rm-place .store.show-slip .store-cat { display: none; }
+.rm-compact .store-pane-back { display: inline-flex; flex: none; }
+.rm-compact .slip > .spread { align-items: center; gap: 0.5rem; }
+.rm-compact .slip > .spread .card-title { flex: 1; margin: 0; }
+.rm-compact .store .slip .card-actions { margin-top: auto; }
+.rm-compact .store-cat > .drawer-foot { display: flex; }
+.rm-compact .store-pane-foot { display: flex; gap: 0.5rem; align-items: center; justify-content: space-between; flex-wrap: wrap; width: 100%; }
+
+/* ---------------------------------------------------------------- bank: the deal first, the details after */
+.rm-compact .cashier { display: grid; grid-template-columns: auto 1fr; gap: 0.2rem 0.6rem; align-items: center; padding: 0.45rem 0.6rem; margin-bottom: 0.5rem; }
+.rm-compact .cashier > div:last-child { grid-column: 2; }
+.rm-compact .cashier .big { font-size: 1.35rem; }
+.rm-compact .loan-viz { gap: 0.4rem; }
+.rm-compact .loan-viz > .slider { order: 1; }
+.rm-compact .loan-viz > .row { order: 2; }
+.rm-compact .loan-viz > .loan-due { order: 3; font-size: 0.9rem; padding: 0.4rem 0.55rem; }
+.rm-compact .loan-viz > .card-actions { order: 4; position: sticky; bottom: -0.6rem; z-index: 2; margin: 0 -0.85rem; padding: 0.4rem 0.85rem 0.5rem; background: linear-gradient(rgba(244, 231, 201, 0), var(--parch) 0.5rem); }
+.rm-compact .loan-viz > .elig { order: 5; }
+.rm-compact .loan-viz > .chart-host { order: 6; }
+.rm-compact .loan-chart { max-height: 7rem; }
+.rm-compact .loan-file { padding: 0.6rem 0.7rem; gap: 0.4rem; }
+
+/* ---------------------------------------------------------------- very short (Safari with its tab and address bars) */
+@media (max-height: 340px) {
+  .rm-compact .hud-plank { padding: 0.2rem 0.4rem; }
+  .rm-compact .leaf-y { display: none; }
+  .rm-compact .leaf-d { font-size: 1.2rem; padding-bottom: 0.1rem; }
+  .rm-compact .drawer > .drawer-head { padding-top: 0.35rem; padding-bottom: 0.2rem; }
+  .rm-compact .drawer > .drawer-head .eyebrow { display: none; }
+  .rm-compact .drawer-title { font-size: 1.08rem; }
+  .rm-compact .drawer > .drawer-head .tabs { margin-top: 0.15rem; }
+  .rm-compact .drawer > .drawer-foot { padding-top: 0.3rem; padding-bottom: 0.35rem; }
+  .rm-compact .obj-hint { display: none; }
+  .rm-compact .verb-s { display: none; }
+  .rm-compact .verbs { padding: 0.3rem; }
+  .rm-compact .verb-row { gap: 0.25rem; }
+  .rm-compact .cat-intro, .rm-compact .cat-main .small.muted { display: none; }
+  /* title: the menu loses its sub-lines; the logo shrinks */
+  .rm-compact .tm-s, .rm-compact .tm-head { display: none; }
+  .rm-compact .tm-btn { min-height: 44px; padding: 0.3rem 0.7rem; }
+  .rm-compact .title-col .title-menu { padding: 0.45rem; gap: 0.3rem; }
+  .rm-compact .title-col .title-word { font-size: clamp(2.6rem, 8vw, 3.8rem); }
+  .rm-compact .title-sub { font-size: 0.95rem; }
+  .rm-compact .title-orn { margin-top: 0.35rem; }
+  .rm-compact .sheet-sub { display: none; }
+  .rm-compact .sheet-title { font-size: 1.25rem; }
+  .rm-compact .ng-lede { margin-bottom: 0.5rem; }
+  .rm-compact .store-cat .drawer-title, .rm-compact .slip > .spread .card-title { display: none; }
+  .rm-compact .slip-total .big { font-size: 1.3rem; }
+  /* a counter open (store, bank, elevator, pen): it gets the whole height; Back (top row) or the fold brings the bar back */
+  html.rm-compact .rm-app:has(.rm-place .drawer.wide:not(.folded), .rm-place .store.show-slip) .hud-plank { visibility: hidden; transform: translateY(150%); }
+  html.rm-compact .rm-app:has(.rm-place .drawer.wide:not(.folded), .rm-place .store.show-slip) :is(.drawer.wide, .store .slip) { bottom: var(--gut-b); max-height: none; }
+  html.rm-compact .rm-app:has(.rm-place .drawer.wide:not(.folded), .rm-place .store.show-slip) :is(.rm-transient, .rm-captions) { bottom: calc(var(--gut-b) + 0.4rem); }
+}

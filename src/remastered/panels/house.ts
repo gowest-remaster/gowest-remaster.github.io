@@ -158,6 +158,8 @@ export function register({ app }: PanelEnv) {
         const n = newspaperIssues(s);
         put(d.head, h('div', { class: 'eyebrow' }, `${monthName(s.date.mon)} ${s.date.year}`), h('h2', { class: 'drawer-title' }, HOUSE_NAME[s.globals.whatHouse] ?? 'Home'));
         const things = h('div', { class: 'house-things' },
+          // phones: the box under the bed can hide behind this card, so it gets a button of its own
+          h('button', { type: 'button', class: 'thing thing-savings', onclick: () => d.body.querySelector('.savings')?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }, icon(ICONS.box), h('b', null, 'Savings box'), h('span', { class: 'small muted' }, money(p.savings))),
           h('button', { type: 'button', class: 'thing', onclick: () => void app.go('ledger') }, icon(ICONS.ledger), h('b', null, 'The Ledger'), h('span', { class: 'small muted' }, `${s.logbook.length} entries`)),
           h('button', { type: 'button', class: 'thing', onclick: () => void app.go('album') }, icon(ICONS.album), h('b', null, 'Family Album'), h('span', { class: 'small muted' }, 'diary & keepsakes')),
           h('button', { type: 'button', class: 'thing', disabled: n === 0, 'data-tip': n ? '' : 'The first Gazette comes out in August 1880.', onclick: () => void app.go('newspaper') }, icon(ICONS.news), h('b', null, 'Newspapers'), h('span', { class: 'small muted' }, n ? `${n} ${n === 1 ? 'issue' : 'issues'}` : 'none yet')),
