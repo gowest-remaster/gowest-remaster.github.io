@@ -118,7 +118,7 @@ export function installHint(): HTMLElement | null {
   el.className = 'a2hs';
   el.setAttribute('role', 'note');
   const share = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4"/><path d="M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>';
-  el.innerHTML = `<span class="a2hs-t">For full screen: <b>Share</b> <span class="a2hs-ico">${share}</span> → <b>Add to Home Screen</b></span>`;
+  el.innerHTML = `<span class="a2hs-t">For full screen: <b>•••</b> → <b>Share</b> <span class="a2hs-ico">${share}</span> → <b>Add to Home Screen</b></span>`;
   const x = document.createElement('button');
   x.type = 'button';
   x.className = 'a2hs-x';
