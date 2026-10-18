@@ -5,10 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- the game is printed on cream paper by design: opt out of browser auto/forced dark modes (Brave night mode, Chrome Auto Dark) -->
     <meta name="color-scheme" content="only light" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Go West! The Homesteader’s Challenge</title>
     <link rel="preload" as="image" href="/world/title/poster.webp" />
     <style>
+      /* Phones: safe-area insets for the UI layers (notch / home bar with viewport-fit=cover), no double-tap zoom on
+         the page (scrolling still works), and a rotate prompt in portrait (the game is laid out for landscape). */
+      :root { --safe-t: env(safe-area-inset-top, 0px); --safe-r: env(safe-area-inset-right, 0px); --safe-b: env(safe-area-inset-bottom, 0px); --safe-l: env(safe-area-inset-left, 0px); }
+      html { touch-action: manipulation; -webkit-text-size-adjust: 100%; }
+      #gw-rotate { display: none; }
+      @media (pointer: coarse) and (orientation: portrait) and (max-width: 600px) {
+        #gw-rotate {
+          display: grid; place-items: center; position: fixed; inset: 0; z-index: 100000; padding: 2rem;
+          background: #2a2118; color: #f4ead6; text-align: center;
+          font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif; font-size: 1.15rem; line-height: 1.5;
+        }
+        #gw-rotate .gw-r-icon { font-size: 3rem; display: block; margin-bottom: 0.6rem; transform: rotate(90deg); }
+      }
       /* Boot splash: plain HTML/CSS so it shows before any script has downloaded.
          The app drives it with window.__gwLoad(fraction, text) and removes it with window.__gwLoadDone(). */
       #gw-boot {
@@ -104,7 +117,12 @@
         }, 250);
       })();
     </script>
+    <div id="gw-rotate" role="alert"><div><span class="gw-r-icon" aria-hidden="true">&#x1F4F1;</span>Turn your phone sideways to play.<br /><small style="opacity:.75">Go West! is laid out for landscape.</small></div></div>
     <div id="app"></div>
+    <script>
+      // iOS Safari ignores user-scalable=no: block pinch-zoom gestures on the game itself
+      document.addEventListener('gesturestart', function (e) { e.preventDefault(); }, { passive: false });
+    </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

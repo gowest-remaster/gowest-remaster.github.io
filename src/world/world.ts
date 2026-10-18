@@ -9,6 +9,7 @@ import { Environment } from './engine/environment';
 import { Post } from './engine/post';
 import { Weather } from './env/weather';
 import { PlateView } from './plates/plates';
+import { texture as tslTexture, uv as tslUV, vec4 as tslVec4 } from 'three/tsl';
 import { FieldCrew } from './places/fieldCrew';
 import { SquareMarks } from './places/squareMarks';
 import { BARN, FIELD, HOME, MAILBOX, MAX_SQUARES, STREET, WINDMILL, squareCenter, terrainHeight } from './env/layout';
@@ -44,7 +45,7 @@ const INTERIORS: Place[] = ['house', 'store', 'bank'];
 /** Low-memory profile (phones, small tablets, low deviceMemory; ?mobile=1 / ?mobile=0 to force). iOS Safari
  *  reloads a tab that goes over ~1-1.5 GB, which looked like an endless loading screen: half-resolution plates,
  *  lighting keys loaded on demand, at most two outdoor views kept, no prefetch, 1024 shadows, DPR <= 1.5. */
-export const LOW_MEMORY = (() => {
+const LOW_MEMORY = (() => {
   const q = new URLSearchParams(location.search).get('mobile');
   if (q === '1') return true;
   if (q === '0') return false;
@@ -179,6 +180,40 @@ export class WorldImpl implements World3D {
     return { backend: this.backend, place: this.place, quality: this.quality_, fps: this.fps_ };
   }
 
+  /** Re-pack split plate images into one RGBA texture on the GPU (see PlateView.packer). The images carry no alpha
+   *  (iOS Safari premultiplies alpha on decode), so the multiplier / layer alpha arrive in a second image and are
+   *  combined here; exact 8-bit copies (nearest sampling, no colour management, no tone mapping). */
+  private packedRT = new Map<THREE.Texture, THREE.RenderTarget>();
+  private packTexture(a: THREE.Texture, aux: THREE.Texture | null, mode: 'rgbm' | 'data' | 'copy'): THREE.Texture {
+    const img = (a.image ?? (a as THREE.Texture & { source: { data: { width: number; height: number } } }).source.data) as { width: number; height: number };
+    const rtSrc = this.packedRT.get(a);
+    const w = rtSrc ? rtSrc.width : img.width;
+    const h = rtSrc ? rtSrc.height : img.height;
+    const rt = new THREE.RenderTarget(w, h, { depthBuffer: false, type: THREE.UnsignedByteType, generateMipmaps: false });
+    const t = rt.texture;
+    t.colorSpace = THREE.NoColorSpace;
+    t.minFilter = t.magFilter = mode === 'data' ? THREE.NearestFilter : THREE.LinearFilter;
+    if (rtSrc) t.minFilter = t.magFilter = a.magFilter;
+    const ta = tslTexture(a, tslUV());
+    const tb = aux ? tslTexture(aux, tslUV()) : null;
+    const m = new THREE.MeshBasicNodeMaterial({ depthTest: false, depthWrite: false, blending: THREE.NoBlending });
+    m.toneMapped = false;
+    // outputNode: the raw RGBA as written (a colorNode's alpha is replaced by the material's opacity)
+    m.outputNode = (mode === 'rgbm' ? tslVec4(ta.rgb, tb!.r) : mode === 'data' ? tslVec4(ta.rgb, tb!.g) : ta) as never;
+    const quad = new THREE.QuadMesh(m);
+    const r = this.renderer as unknown as { getRenderTarget(): THREE.RenderTarget | null; setRenderTarget(t: THREE.RenderTarget | null): void; getMRT(): unknown; setMRT(m: unknown): void };
+    const prevRT = r.getRenderTarget();
+    const prevMRT = r.getMRT();
+    r.setMRT(null);
+    r.setRenderTarget(rt);
+    quad.render(this.renderer);
+    r.setRenderTarget(prevRT);
+    r.setMRT(prevMRT);
+    m.dispose();
+    this.packedRT.set(t, rt);
+    return t;
+  }
+
   /** remember to start in the low-memory profile next time (touch devices) */
   private lowMemoryNextTime(): void {
     try {
@@ -213,6 +248,30 @@ export class WorldImpl implements World3D {
     this.fade = document.createElement('div');
     this.fade.style.cssText = 'position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .35s ease';
     host.appendChild(this.fade);
+    if (new URLSearchParams(location.search).get('platetest') === '1') {
+      void import('./plates/selftest').then(async (m) => {
+        const lines = await m.plateDecodeSelfTest().catch((e) => [`self-test failed: ${e}`]);
+        // the shipping path: split images -> GPU re-pack (needs the renderer: wait for it)
+        while (!this.renderer) await new Promise((res) => setTimeout(res, 100));
+        try {
+          const base = `${import.meta.env.BASE_URL}world/plates/_selftest/split`;
+          const r = await PlateView.loadSplit(`${base}.c.webp`, `${base}.ma.webp`);
+          const rt = this.packedRT.get(r.rgbm)!;
+          const px = await (this.renderer as unknown as { readRenderTargetPixelsAsync(rt: THREE.RenderTarget, x: number, y: number, w: number, h: number): Promise<Uint8Array> }).readRenderTargetPixelsAsync(rt, 0, 0, 4, 1);
+          const want = [200, 100, 50, 255, 200, 100, 50, 128, 200, 100, 50, 32, 10, 20, 30, 1];
+          const ok = want.every((v, i) => Math.abs(v - px[i]) <= 1);
+          lines.push(`split + GPU re-pack (shipping path): ${ok ? 'ok' : 'WRONG'} [${Array.from(px).join(',')}]`);
+        } catch (e) {
+          lines.push(`split re-pack failed: ${e}`);
+        }
+        console.log('[platetest]', lines.join('\n'));
+        const d = document.createElement('pre');
+        d.id = 'platetest';
+        d.style.cssText = 'position:fixed;left:8px;top:8px;z-index:100001;background:#000c;color:#fff;font:12px/1.4 monospace;padding:8px;white-space:pre-wrap;max-width:90vw';
+        d.textContent = 'plate decode self-test\n' + lines.join('\n');
+        document.body.appendChild(d);
+      });
+    }
     const r = new THREE.WebGPURenderer({ canvas: this.canvas, antialias: false, powerPreference: 'high-performance', forceWebGL: this.debug.forceWebGL });
     r.toneMapping = THREE.ACESFilmicToneMapping;
     r.shadowMap.enabled = true;
@@ -238,6 +297,14 @@ export class WorldImpl implements World3D {
       onErr(e);
     };
     PlateView.initTexture = (t) => r.initTexture(t);
+    PlateView.packer = (a, aux, mode) => this.packTexture(a, aux, mode);
+    PlateView.freeTexture = (t) => {
+      const rt = this.packedRT.get(t);
+      if (rt) {
+        this.packedRT.delete(t);
+        rt.dispose();
+      } else t.dispose();
+    };
     PlateView.releaseAfterUpload = !(r.backend as unknown as { isWebGLBackend?: boolean }).isWebGLBackend;
     if (LOW_MEMORY) {
       PlateView.lowRes = true;
@@ -660,6 +727,9 @@ export class WorldImpl implements World3D {
   private async compilePlate(pv: PlateView): Promise<void> {
     if (this.compiledPlates.has(pv) || !this.post) return;
     this.compiledPlates.add(pv);
+    // WebGL2 fallback: ahead-of-time compiles are slower than just drawing (GLSL links on the main thread either
+    // way, and every awaited compile adds a frame): upload the images only
+    if (this.backend !== 'WebGPU') return void (await this.uploadPlate(pv));
     const vis: [THREE.Object3D, boolean][] = [];
     pv.quad.traverse((o) => {
       vis.push([o, o.visible]);
@@ -840,7 +910,7 @@ export class WorldImpl implements World3D {
   private async uploadPlate(pv: PlateView): Promise<void> {
     let px = 0;
     for (const t of pv.textures) {
-      if (this.uploaded.has(t)) continue;
+      if (this.uploaded.has(t) || (t as THREE.Texture & { isRenderTargetTexture?: boolean }).isRenderTargetTexture) continue;
       this.uploaded.add(t);
       this.renderer.initTexture(t);
       const img = t.image as { width?: number; height?: number } | null;
@@ -870,14 +940,17 @@ export class WorldImpl implements World3D {
   /** the lighting keys the current hour / weather show on this plate, loaded now (the rest stream when idle) */
   private ensurePlateKeys(pv: PlateView): Promise<unknown> {
     const [a, b, t] = INTERIORS.some((p) => this.plateName(p) === pv.view) ? pv.keyFor(this.view.hour, this.view.weather, 0) : this.plateKeys(pv);
-    return Promise.all([pv.ensureKey(a), t > 0.001 ? pv.ensureKey(b) : null]);
+    return Promise.all([pv.ensureKey(a), t > 0.001 ? pv.ensureKey(b) : null]).then(() => {
+      // low-memory profile: only the keys on screen stay loaded
+      if (LOW_MEMORY) for (const k of [...pv.loadedKeys]) if (k !== a && !(t > 0.001 && k === b)) pv.evictKey(k);
+    });
   }
 
   /** The live layer's pipelines as seen from a plate's camera (people, horses, animals, the homestead's live
    *  parts): built while the current view is still up, not at the cut. */
   private liveSig = -1;
   private async compileLive(pv: PlateView): Promise<void> {
-    if (!this.post || !pv.json?.camera) return;
+    if (!this.post || !pv.json?.camera || this.backend !== 'WebGPU') return;
     // the live camera itself (not a clone at the plate's shot): render state is cached per scene + camera +
     // target, so a clone built everything a second time at the cut. Frustum culling is off while compiling.
     const cam = this.camera;
@@ -1608,6 +1681,8 @@ export class WorldImpl implements World3D {
       if (wet !== this.postWet) this.buildPost();
       if (this.plate) {
         const [a, b, t] = this.plateKeys(this.plate);
+        // (low-memory profile: a key the hour moves into mid-month, e.g. the month pass's dusk, loads on demand)
+        if (LOW_MEMORY && t > 0.001 && !this.plate.loadedKeys.has(b)) void this.plate.ensureKey(b);
         this.plate.setKeys(a, b, t);
       }
       // one world-matrix walk per frame (the renderer would redo it for every pass: main + each shadow cascade)

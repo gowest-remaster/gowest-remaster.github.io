@@ -19,6 +19,7 @@ import { badge } from '../ui/badges.ts';
 import { btn, chip, drawer, toast } from '../ui/kit.ts';
 import { crewPicker } from './crew.ts';
 import type { PanelEnv } from './index.ts';
+import { isCompact } from '../ui/compact.ts';
 import '../styles/homestead.css';
 
 const BUILD_INFO: Record<BuildItem, { name: string; icon: keyof typeof ICONS; does: string }> = {
@@ -54,7 +55,8 @@ export function register(env: PanelEnv) {
       function renderRibbon(s: GameState) {
         const remW = window.innerWidth / (parseFloat(getComputedStyle(document.documentElement).fontSize) || 16);
         if (rm().ribbonCollapsed || remW < 84) {
-          put(ribbonHost, h('button', { type: 'button', class: 'ribbon-mini card', onclick: () => (setRm({ ribbonCollapsed: false }), renderRibbon(session.s)) }, icon(ICONS.almanac), `${monthName(s.date.mon)} ${s.date.year} · the year at a glance`));
+          // on a phone the full strip never fits: the button opens the Almanac's year instead
+          put(ribbonHost, h('button', { type: 'button', class: 'ribbon-mini card', onclick: () => (isCompact() ? void app.go('almanac') : (setRm({ ribbonCollapsed: false }), renderRibbon(session.s))) }, icon(ICONS.almanac), `${monthName(s.date.mon)} ${s.date.year} · the year at a glance`));
           return;
         }
         put(ribbonHost, seasonRibbon(s, () => void app.go('almanac'), () => (setRm({ ribbonCollapsed: true }), renderRibbon(session.s))));

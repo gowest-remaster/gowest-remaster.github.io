@@ -6,6 +6,7 @@
 // Replaces the Today card, the neighbor-tip popups, the barn-and-well gate card and the Advance
 // button's explanations.
 import type { GameState } from '../../sim/index.ts';
+import { isCompact } from './compact.ts';
 import { buildableItems } from '../../sim/index.ts';
 import type { App } from '../core/app.ts';
 import { h, icon, put } from '../core/dom.ts';
@@ -165,6 +166,9 @@ export function mountObjective(app: App) {
       label.textContent = st.ok ? `${st.label} when you’re ready` : st.reason ?? 'All quiet';
       pill.classList.add('quiet');
     }
+    // phones cut the pill's text short: press and hold reads it whole
+    if (isCompact()) pill.dataset.tip = label.textContent ?? '';
+    else delete pill.dataset.tip;
     if (!list.hidden) renderList(all);
     queueGlow();
   }

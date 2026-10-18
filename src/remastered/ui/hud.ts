@@ -17,11 +17,13 @@ import { grainWaiting } from './badges.ts';
 import { onRecent, unreadCount, notify } from './notify.ts';
 import { mailbox } from '../core/quiet.ts';
 import { audio, soundCaption } from '../core/audio.ts';
+import { onCompact } from './compact.ts';
 
 export function mountHud(app: App, cal: CalendarRunner) {
   // ---------------------------------------------------------------- top right cluster
   const goalBtn = h('button', { type: 'button', class: 'goal-ribbon pe', 'aria-label': 'Goals & Standing (G)' });
   const undoBtn = btn('Undo', { kind: 'plain', icon: 'undo', cls: 'hud-chipbtn', onClick: () => doUndo() });
+  undoBtn.setAttribute('aria-label', 'Undo');
   const helpBtn = btn('', { kind: 'plain', icon: 'help', cls: 'hud-round', title: 'Help & keys (?)', onClick: () => app.keys.help?.() });
   const menuBtn = btn('', { kind: 'plain', icon: 'menu', cls: 'hud-round', title: 'Menu (Esc)', onClick: () => app.keys.menu?.() });
   helpBtn.setAttribute('aria-label', 'Help and keyboard map');
@@ -97,7 +99,30 @@ export function mountHud(app: App, cal: CalendarRunner) {
   // ---------------------------------------------------------------- hotbar
   const hotbar = h('nav', { class: 'hotbar', 'aria-label': 'Places and books' });
 
-  const plank = h('div', { class: 'hud-plank pe' }, leaf, h('div', { class: 'hud-mid' }, money_, controls), hotbar);
+  // compact (phones): the money and the slower time controls fold into a drawer behind one button
+  const cashMini = h('b', { class: 'num' });
+  const statsToggle = h('button', { type: 'button', class: 'hud-stats-toggle', 'aria-expanded': 'false', 'aria-label': 'Money and time controls' }, icon(ICONS.coin), cashMini, h('span', { class: 'hst-chev', 'aria-hidden': 'true' }, '▴'));
+  const timeRow = h('div', { class: 'hud-more-time' });
+  const more = h('div', { class: 'hud-more', hidden: true, role: 'group', 'aria-label': 'Money and time' });
+  const setMore = (open: boolean) => {
+    more.hidden = !open;
+    statsToggle.setAttribute('aria-expanded', String(open));
+    statsToggle.classList.toggle('on', open);
+  };
+  statsToggle.addEventListener('click', () => setMore(!!more.hidden));
+  document.addEventListener('pointerdown', (e) => !more.hidden && !more.contains(e.target as Node) && !statsToggle.contains(e.target as Node) && setMore(false), true);
+  const mid = h('div', { class: 'hud-mid' }, statsToggle, money_, controls);
+  const plank = h('div', { class: 'hud-plank pe' }, leaf, mid, hotbar, more);
+  onCompact((on) => {
+    if (on) {
+      put(timeRow, oneBtn, speed);
+      more.append(money_, timeRow);
+    } else {
+      setMore(false);
+      mid.insertBefore(money_, controls);
+      controls.append(oneBtn, speed);
+    }
+  });
   const digest = h('div', { class: 'digest-host' });
   const root = h('div', { class: 'hud' }, top, digest, plank);
   app.hudHost.append(root);
@@ -210,6 +235,7 @@ export function mountHud(app: App, cal: CalendarRunner) {
     const prevBox = last?.propet.savings ?? p.savings;
     countTo(cashV, prevCash, p.cash, (n) => money(n, { cents: true }));
     countTo(boxV, prevBox, p.savings, (n) => money(n, { cents: true }));
+    cashMini.textContent = money(p.cash >= 0 ? Math.floor(p.cash) : -Math.ceil(-p.cash));
     boxStat.dataset.tip = `${savingsRule(s)} Click to open it in the house.`;
     upkeepV.textContent = `${money(p.lifePrice)}/mo`;
     if (last && p.cash !== prevCash && !app.busy) {
@@ -221,6 +247,7 @@ export function mountHud(app: App, cal: CalendarRunner) {
     runV.textContent = rw.infinite ? '∞' : `${rw.months} mo`;
     put(runPips, ...Array.from({ length: 6 }, (_, i) => h('i', { class: rw.infinite || rw.months > i * 2 ? (rw.level === 'ok' ? 'on' : `on ${rw.level}`) : '' })));
     runStat.classList.toggle('low', rw.level !== 'ok');
+    statsToggle.classList.toggle('low', rw.level !== 'ok');
     runStat.dataset.tip = rw.infinite
       ? `Your businesses earn ${money(rw.business)}/mo, more than your upkeep.`
       : `How long your money lasts. Upkeep ${money(rw.upkeep)}/mo${rw.business ? ` − businesses ${money(rw.business)}/mo` : ''}: cash covers ${rw.cashMonths} mo, the savings box ${rw.savingsMonths} more.${grainWaiting(s).bushels ? ` Plus about ${money(grainWaiting(s).value)} of grain to sell at the elevator.` : ''}`;
@@ -339,7 +366,7 @@ export function mountHud(app: App, cal: CalendarRunner) {
       else gsap.to(c, { opacity: 0, duration: 0.4, onComplete: () => put(digest) });
     }, 9000);
   }
-  app.on('nav', () => put(digest));
+  app.on('nav', () => (put(digest), setMore(false)));
   cal.on('month', (s) => {
     leafM.textContent = MONTHS_CAPS[s.date.mon - 1];
     leafY.textContent = String(s.date.year);
@@ -347,7 +374,7 @@ export function mountHud(app: App, cal: CalendarRunner) {
   app.on('nav', () => {
     if (session.state) renderHotbar(session.s);
   });
-  app.on('sheet', () => session.state && renderHotbar(session.s));
+  app.on('sheet', () => (setMore(false), session.state && renderHotbar(session.s)));
   app.on('busy', (b) => root.classList.toggle('busy', b));
   onRegistry(() => session.state && renderHotbar(session.s));
   renderSpeed();

@@ -27,6 +27,9 @@ import { initCaptions, initPresenter, initTooltips } from './ui/overlays.ts';
 import { registerAllPanels } from './panels/index.ts';
 import { applyVolumes } from './core/audio.ts';
 import { onRm } from './core/settings.ts';
+import { initCompact, initCompactTopRow } from './ui/compact.ts';
+// last, so the phone layout wins ties with every panel's own stylesheet
+import './styles/compact.css';
 
 export let app: App;
 export let calendar: CalendarRunner;
@@ -36,6 +39,7 @@ export async function bootRemastered(root: HTMLElement) {
   const fonts = h('link', { rel: 'stylesheet', href: `${import.meta.env.BASE_URL}fonts/fonts.css` });
   document.head.append(fonts);
   applyToDocument();
+  initCompact();
   const progress = (f: number, t?: string) => (window as unknown as { __gwLoad?: (f: number, t?: string) => void }).__gwLoad?.(f, t);
   progress(0.4, 'Reading the letters from home…');
   await Promise.all([loadText(), loadArt(), loadWorldViewMapper(), loadAudio()]);
@@ -58,6 +62,7 @@ export async function bootRemastered(root: HTMLElement) {
   mountLetters(app);
   initNotify(app);
   mountObjective(app);
+  initCompactTopRow(app.root);
   initActivity(app);
   // entering a place from the title or the New Game pages fades the title loop into the live world
   app.on('nav', () => {

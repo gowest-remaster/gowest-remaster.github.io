@@ -19,6 +19,7 @@ import { session } from '../core/session.ts';
 import { applyPreset, reducedMotion, rm, type AssistPreset } from '../core/settings.ts';
 import { btn, setDisabled, toast } from '../ui/kit.ts';
 import { chapterView } from './intro.ts';
+import { isTouch } from '../ui/compact.ts';
 import { ORNAMENT } from './title.ts';
 
 
@@ -128,7 +129,7 @@ export function register(app: App) {
         const why = blocker();
         setDisabled(nextBtn, why);
         nextBtn.querySelector('.btn-label')!.textContent = st.step === 'claim' ? 'Sign the claim' : st.step === 'goal' ? 'This is my goal' : 'Continue';
-        hint.textContent = why ?? (st.step === 'name' ? 'Tip: hold Alt (Option) and press Enter to skip, just like the 1996 login.' : '');
+        hint.textContent = why ?? (st.step === 'name' && !isTouch() ? 'Tip: hold Alt (Option) and press Enter to skip, just like the 1996 login.' : '');
       }
 
       // ---------------------------------------------------------------- pages

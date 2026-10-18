@@ -5,6 +5,10 @@
 // localStorage ('gowest.look') and reloads into the other app with the same save.
 // `?classic` forces the Classic app (its title is the original login); `?look=remastered` the new one.
 
+import { muteUnderAutomation } from './automation-mute.ts';
+
+muteUnderAutomation();
+
 const LOOK_KEY = 'gowest.look';
 
 function chosenLook(): 'classic' | 'remastered' {

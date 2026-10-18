@@ -221,6 +221,7 @@ export class DirPlayer {
     this.canvas.addEventListener('contextmenu', (e) => e.preventDefault());
     this.keyListener = (e) => this.onKey(e);
     window.addEventListener('keydown', this.keyListener, true);
+    this.setupSoftKeys();
     void fetch(`${CLASSIC_BASE}cursors/cursors.json`)
       .then((r) => r.json())
       .then((m) => {
@@ -238,6 +239,7 @@ export class DirPlayer {
     this.destroyed = true;
     this.running = false;
     window.removeEventListener('keydown', this.keyListener, true);
+    this.softKeys?.remove();
     for (const s of this.sprites) if (s.video instanceof HTMLVideoElement) s.video.pause();
     this.canvas.remove();
   }
@@ -1096,6 +1098,43 @@ export class DirPlayer {
   }
 
   /** Keyboard: sprite keyDown handler of the focused field (return true = pass), then editing. */
+  /** Phones have no keyboard until a text field has focus: a hidden <input> takes focus when an editable stage
+   *  field is tapped (inside the tap, as iOS requires), and its typing is fed to onKey as key presses. */
+  private softKeys: HTMLInputElement | null = null;
+  private setupSoftKeys() {
+    if (typeof matchMedia !== 'function' || !matchMedia('(pointer: coarse)').matches) return;
+    const inp = document.createElement('input');
+    inp.type = 'text';
+    inp.autocapitalize = 'off';
+    inp.autocomplete = 'off';
+    inp.spellcheck = false;
+    inp.setAttribute('aria-hidden', 'true');
+    // on screen (iOS won't focus an off-screen input) but invisible; 16px so Safari doesn't zoom in on focus
+    inp.style.cssText = 'position:fixed;left:0;bottom:0;width:1px;height:1px;opacity:0;font-size:16px;border:0;padding:0;pointer-events:none';
+    const key = (k: string) => this.onKey({ key: k, target: null, preventDefault() {}, stopPropagation() {} } as unknown as KeyboardEvent);
+    inp.addEventListener('beforeinput', (e) => {
+      const ie = e as InputEvent;
+      e.preventDefault();
+      if (ie.inputType === 'insertText' && ie.data) for (const ch of ie.data) key(ch);
+      else if (ie.inputType === 'deleteContentBackward') key('Backspace');
+      else if (ie.inputType === 'insertLineBreak' || ie.inputType === 'insertParagraph') key('Enter');
+    });
+    inp.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === 'Tab') {
+        e.preventDefault();
+        key(e.key);
+      }
+    });
+    document.body.appendChild(inp);
+    this.softKeys = inp;
+    // after the tap's own mouse compatibility events (a mousedown on the canvas would take the focus straight back)
+    this.canvas.addEventListener('click', () => {
+      const s = this.focus ? this.sprites[this.focus] : null;
+      if (s?.editable) inp.focus();
+      else if (document.activeElement === inp) inp.blur();
+    });
+  }
+
   private onKey(e: KeyboardEvent) {
     if (this.destroyed || !this.canvas.isConnected) return;
     // dialogs of the HTML overlay (if any) get their own keys

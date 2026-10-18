@@ -36,6 +36,8 @@ export interface PlateJson {
   size?: [number, number];
   /** baked field squares (sets.md): crop bbox in full-plate px, variant images at `scale` */
   squares?: { bbox: [number, number, number, number]; scale?: number; variants: string[]; /** per-variant RGBM range (default 8) */ range?: Record<string, number> };
+  /** images are split (no alpha): X.c + X.ma, data X.d.data (scripts/plates/pack.ts) */
+  split?: number;
   /** half-resolution variants exist (`*.half.webp`, scripts/plates/pack.ts) */
   half?: number;
   /** 'logdepth8': data images packed by scripts/plates/pack.ts (else EXR) */
@@ -57,6 +59,8 @@ export interface PlateLayer {
   weights: (N | undefined)[];
   /** per key index: crop rect (full-plate px) or undefined = full frame */
   crops: ([number, number, number, number] | undefined)[];
+  /** per key index: the [colour, data] images (for evicting a key) */
+  texs?: ([THREE.Texture, THREE.Texture] | undefined)[];
 }
 export interface PlateState {
   house: string;
@@ -124,6 +128,31 @@ export class PlateView {
   static whenQuiet: () => Promise<void> = () => new Promise((r) => setTimeout(r, 250));
   /** upload a texture to the GPU now (set by the world: renderer.initTexture) */
   static initTexture: ((t: THREE.Texture) => void) | null = null;
+  /** Set by the world: re-pack split images into one RGBA texture on the GPU (plate.json "split"). 'rgbm': colour
+   *  RGB + M from aux.r; 'data': depth/shadow RGB + alpha from aux.g; 'copy': a second copy of `a` (aux null). */
+  static packer: ((a: THREE.Texture, aux: THREE.Texture | null, mode: 'rgbm' | 'data' | 'copy') => THREE.Texture) | null = null;
+  /** set by the world: free a texture the packer made (its render target), else dispose */
+  static freeTexture: (t: THREE.Texture) => void = (t) => t.dispose();
+  /** a split pair: load both (no alpha anywhere), re-pack, free the sources */
+  static async loadSplit(cUrl: string, maUrl: string, ma?: Promise<THREE.Texture>): Promise<{ rgbm: THREE.Texture; ma: THREE.Texture }> {
+    const src = (t: THREE.Texture) => {
+      t.flipY = false;
+      t.colorSpace = THREE.NoColorSpace;
+      t.generateMipmaps = false;
+      t.minFilter = t.magFilter = THREE.NearestFilter;
+      return t;
+    };
+    const [c, m] = await Promise.all([loadImage(cUrl).then(src), ma ?? loadImage(maUrl).then(src)]);
+    const rgbm = PlateView.packer!(c, m, 'rgbm');
+    PlateView.dropSource(c);
+    return { rgbm, ma: m };
+  }
+  static dropSource(t: THREE.Texture): void {
+    const im = t.image as { close?: () => void } | null;
+    t.dispose();
+    im?.close?.();
+  }
+
   /** low-memory profile (phones): load the packer's half-resolution images (plate.json "half") */
   static lowRes = false;
   /** stream every lighting key in the background once idle (off in the low-memory profile: keys load on demand) */
@@ -181,8 +210,11 @@ export class PlateView {
     this.texA = texture(src.beauty[0]);
     // texB must never start as the same Texture object as texA: the node builder would share one binding between
     // them, and B (a key streamed in later) would then sample A's image forever. A clone shares the image (same size).
-    this.bSpare = src.beauty[0].clone();
-    this.bSpare.needsUpdate = true;
+    if ((src.beauty[0] as THREE.Texture & { isRenderTargetTexture?: boolean }).isRenderTargetTexture && PlateView.packer) this.bSpare = PlateView.packer(src.beauty[0], null, 'copy');
+    else {
+      this.bSpare = src.beauty[0].clone();
+      this.bSpare.needsUpdate = true;
+    }
     this.texB = texture(src.beauty[1] && src.beauty[1] !== src.beauty[0] ? src.beauty[1] : this.bSpare);
     this.texD = texture(src.depth);
     for (const t of [...src.beauty, this.bSpare, src.depth]) this.textures.add(t);
@@ -276,6 +308,7 @@ export class PlateView {
       (old.material as THREE.Material).dispose();
     }
     this.textures.add(colour).add(data);
+    (L.texs ??= [])[i] = [colour, data];
     const size = this.json?.size ?? [2560, 1440];
     const c = crop ?? [0, 0, size[0], size[1]];
     const tC = texture(colour);
@@ -333,6 +366,38 @@ export class PlateView {
 
   /** keys whose images are loaded (the others are aliased to a loaded key until they stream in) */
   loadedKeys = new Set<string>();
+  /** Low-memory profile: free a loaded lighting key's images (GPU) and quads; it reloads on demand. Never the keys
+   *  on screen (the caller passes the ones in use); at least one key always stays. */
+  evictKey(k: string): void {
+    const i = this.keys.indexOf(k);
+    if (i < 0 || !this.loadedKeys.has(k) || this.loadedKeys.size <= 1) return;
+    const keep = this.keys.findIndex((kk, j) => j !== i && this.loadedKeys.has(kk));
+    const old = this.src.beauty[i];
+    if (old && old !== this.src.beauty[keep]) {
+      if (this.texA.value === old) this.texA.value = this.src.beauty[keep];
+      if (this.texB.value === old) this.texB.value = this.bSpare;
+      this.textures.delete(old);
+      PlateView.freeTexture(old);
+    }
+    this.src.beauty[i] = this.src.beauty[keep];
+    for (const L of this.layers) {
+      const q = L.keyQuads[i];
+      if (q) {
+        q.removeFromParent();
+        (q.material as THREE.Material).dispose();
+      }
+      L.keyQuads[i] = undefined;
+      L.weights[i] = undefined;
+      const t = L.texs?.[i];
+      if (t) for (const x of t) (this.textures.delete(x), PlateView.freeTexture(x));
+      if (L.texs) L.texs[i] = undefined;
+    }
+    this.loadedKeys.delete(k);
+    this.onEvict?.(k);
+  }
+  /** (load(): forget the key's cached images so ensureKey loads them again) */
+  private onEvict: ((k: string) => void) | null = null;
+
   /** load one lighting key now (no-op once loaded): for a cinematic that needs it immediately */
   ensureKey: (key: string) => Promise<void> = async () => undefined;
   // ------------------------------------------------------------------ baked field squares (sets.md "squares")
@@ -400,9 +465,14 @@ export class PlateView {
       const sc = this.json?.squares;
       // (variants lists can be per-key subsets, e.g. snow: just try the file; misses fall back to another key)
       if (!sc) return null;
+      const url = `${BASE}${this.view}/squares/${key}/${variant}`;
+      const split = this.json?.split && PlateView.packer;
       this.sqTex.set(
         id,
-        loadImage(this.res(`${BASE}${this.view}/squares/${key}/${variant}.webp`))
+        (split
+          ? PlateView.loadSplit(this.res(url + '.c.webp'), this.res(url + '.ma.webp')).then((r) => (PlateView.dropSource(r.ma), r.rgbm))
+          : loadImage(this.res(url + '.webp'))
+        )
           .then((t) => {
             prepRGBM(t);
             this.sqReady.set(id, t);
@@ -422,8 +492,12 @@ export class PlateView {
     let list = this.sqClones.get(t);
     if (!list) this.sqClones.set(t, (list = []));
     if (!list[n]) {
-      list[n] = t.clone();
-      list[n].needsUpdate = true;
+      // (a packed square lives only on the GPU: a clone would be empty, so copy it there)
+      if ((t as THREE.Texture & { isRenderTargetTexture?: boolean }).isRenderTargetTexture && PlateView.packer) list[n] = PlateView.packer(t, null, 'copy');
+      else {
+        list[n] = t.clone();
+        list[n].needsUpdate = true;
+      }
     }
     return list[n];
   }
@@ -524,11 +598,11 @@ export class PlateView {
     this.quad.removeFromParent();
     this.proxy?.removeFromParent();
     (this.quad.material as THREE.Material).dispose();
-    for (const t of this.textures) t.dispose();
+    for (const t of this.textures) PlateView.freeTexture(t);
     for (const l of this.layers) for (const q of l.keyQuads) if (q) (q.material as THREE.Material).dispose();
     for (const q of this.squareQuads) (q.material as THREE.Material).dispose();
-    for (const t of this.sqReady.values()) t.dispose();
-    for (const list of this.sqClones.values()) for (const t of list) t.dispose();
+    for (const t of this.sqReady.values()) PlateView.freeTexture(t);
+    for (const list of this.sqClones.values()) for (const t of list) PlateView.freeTexture(t);
     this.src.depth.dispose();
   }
 
@@ -545,9 +619,10 @@ export class PlateView {
       if (!firstKs.length) firstKs.push(ks[0]);
       const packed = json.data === 'logdepth8' && json.dataDepth ? json.dataDepth : undefined;
       const exr = new EXRLoader().setDataType(THREE.HalfFloatType);
+      const split = !!json.split && !!PlateView.packer;
       const loadData = (url: string): Promise<THREE.Texture> =>
         packed
-          ? loadImage(res(url.replace(/\.exr$/, '.data.webp'))).then((t) => {
+          ? loadImage(res(url.replace(/\.exr$/, split ? '.d.data.webp' : '.data.webp'))).then((t) => {
               t.flipY = false;
               t.colorSpace = THREE.NoColorSpace;
               t.generateMipmaps = false;
@@ -567,12 +642,28 @@ export class PlateView {
       /** one key: beauty + every layer's colour/data */
       const loadKey = async (k: string): Promise<void> => {
         const i = ks.indexOf(k);
-        const jobs: Promise<unknown>[] = [loadImage(res(`${BASE}${view}/${k}/beauty.webp`)).then((t) => (beauty[i] = prepRGBM(t)))];
+        const jobs: Promise<unknown>[] = [
+          (split
+            ? PlateView.loadSplit(res(`${BASE}${view}/${k}/beauty.c.webp`), res(`${BASE}${view}/${k}/beauty.ma.webp`)).then((r) => (PlateView.dropSource(r.ma), r.rgbm))
+            : loadImage(res(`${BASE}${view}/${k}/beauty.webp`))
+          ).then((t) => (beauty[i] = prepRGBM(t))),
+        ];
         for (const L of json.layers ?? []) {
           if (!colour.has(L.id)) colour.set(L.id, []);
           if (!data.has(L.id)) data.set(L.id, []);
           jobs.push(
-            Promise.all([loadImage(res(`${BASE}${view}/layers/${L.id}/${k}.webp`)).then(prepRGBM), loadData(`${BASE}${view}/layers/${L.id}/${k}.exr`)])
+            (split
+              ? (async () => {
+                  const base = `${BASE}${view}/layers/${L.id}/${k}`;
+                  const [r, d] = await Promise.all([PlateView.loadSplit(res(base + '.c.webp'), res(base + '.ma.webp')), loadData(base + '.exr')]);
+                  const packedData = PlateView.packer!(d, r.ma, 'data');
+                  packedData.minFilter = packedData.magFilter = THREE.NearestFilter;
+                  PlateView.dropSource(d);
+                  PlateView.dropSource(r.ma);
+                  return [prepRGBM(r.rgbm), packedData] as [THREE.Texture, THREE.Texture];
+                })()
+              : Promise.all([loadImage(res(`${BASE}${view}/layers/${L.id}/${k}.webp`)).then(prepRGBM), loadData(`${BASE}${view}/layers/${L.id}/${k}.exr`)])
+            )
               .then(([c, d]) => {
                 colour.get(L.id)![i] = c;
                 data.get(L.id)![i] = d;
@@ -620,6 +711,12 @@ export class PlateView {
         }
       }
       const keyJobs = new Map<string, Promise<void>>();
+      pv.onEvict = (k) => {
+        const i = ks.indexOf(k);
+        keyJobs.delete(k);
+        delete beauty[i];
+        for (const m of [colour, data]) for (const arr of m.values()) delete arr[i];
+      };
       pv.ensureKey = (k: string) => {
         if (pv.loadedKeys.has(k) || !ks.includes(k)) return Promise.resolve();
         let j = keyJobs.get(k);

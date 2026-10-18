@@ -38,17 +38,64 @@ export function initTooltips(root: HTMLElement) {
   };
   const find = (t: EventTarget | null) => (t instanceof Element ? (t.closest('[data-tip],[data-reason]') as HTMLElement | null) : null);
   root.addEventListener('pointerover', (e) => {
+    if (e.pointerType === 'touch') return;
     const el = find(e.target);
     if (el && el !== cur) show(el);
     else if (!el) hide();
   });
-  root.addEventListener('pointerleave', hide);
+  root.addEventListener('pointerleave', (e) => e.pointerType !== 'touch' && hide());
   root.addEventListener('focusin', (e) => {
+    if (touchAt > performance.now() - 800) return; // a tap focuses too: touch has its own rules below
     const el = find(e.target);
     if (el) show(el);
   });
-  root.addEventListener('focusout', hide);
-  root.addEventListener('pointerdown', hide);
+  root.addEventListener('focusout', () => touchShown || hide());
+
+  // Touch has no hover: press and hold anything with a tip to read it (the tap that follows is
+  // swallowed), and a plain tap shows the tip of things that do nothing else (a disabled button's
+  // reason, a stat, the speed dial's note). The tip stays a few seconds or until the next touch.
+  let touchAt = 0;
+  let touchShown = false;
+  let holdTimer = 0;
+  let hideTimer = 0;
+  let swallow = false;
+  let start: { x: number; y: number; el: HTMLElement } | null = null;
+  const tipAt = (x: number, y: number, target: EventTarget | null) => find(target) ?? (document.elementsFromPoint(x, y).map((n) => find(n)).find(Boolean) as HTMLElement | undefined) ?? null;
+  const passive = (el: HTMLElement) => !el.matches('button:not(:disabled), a[href], input, select, textarea, [role="button"], .linky') || el.matches(':disabled, [aria-disabled="true"]');
+  const showTouch = (el: HTMLElement) => {
+    show(el);
+    touchShown = true;
+    window.clearTimeout(hideTimer);
+    hideTimer = window.setTimeout(() => ((touchShown = false), hide()), 4500);
+  };
+  root.addEventListener('pointerdown', (e) => {
+    window.clearTimeout(holdTimer);
+    swallow = false;
+    if (e.pointerType !== 'touch') return hide();
+    touchAt = performance.now();
+    touchShown = false;
+    hide();
+    const el = tipAt(e.clientX, e.clientY, e.target);
+    start = el ? { x: e.clientX, y: e.clientY, el } : null;
+    if (el) holdTimer = window.setTimeout(() => ((swallow = true), showTouch(el)), 480);
+  }, true);
+  const cancel = () => ((start = null), window.clearTimeout(holdTimer));
+  root.addEventListener('pointermove', (e) => start && e.pointerType === 'touch' && Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10 && cancel(), true);
+  root.addEventListener('pointercancel', cancel, true);
+  root.addEventListener('scroll', () => (cancel(), touchShown && ((touchShown = false), hide())), true);
+  root.addEventListener('pointerup', (e) => {
+    if (e.pointerType !== 'touch') return;
+    window.clearTimeout(holdTimer);
+    if (start && !swallow && passive(start.el)) showTouch(start.el);
+    start = null;
+  }, true);
+  root.addEventListener('click', (e) => {
+    if (!swallow) return;
+    swallow = false;
+    e.preventDefault();
+    e.stopPropagation();
+  }, true);
+  root.addEventListener('contextmenu', (e) => swallow && e.preventDefault(), true);
 }
 
 export function initCaptions(app: App) {

@@ -104,6 +104,7 @@ export class App extends Emitter<AppEvents> {
     ro.observe(this.placeHost);
     ro.observe(this.hudHost);
     new MutationObserver(() => this.queueSafeArea()).observe(this.placeHost, { childList: true, subtree: true, attributes: true, attributeFilter: ['hidden', 'class'] });
+    window.addEventListener('rm-ctop', () => this.queueSafeArea());
     window.addEventListener('resize', () => {
       this.queueSafeArea();
       this.labelSize = new WeakMap();
@@ -181,7 +182,10 @@ export class App extends Emitter<AppEvents> {
         else if (r.right < vw * 0.5) left = Math.max(left, r.right / vw);
       }
     }
-    const area = { left: +left.toFixed(3), right: +right.toFixed(3), top: 0, bottom: +Math.min(0.4, bottom).toFixed(3) };
+    // phones: the top row (crumb, Next, goal/mail/help/menu) covers a real slice of a short screen
+    let top = 0;
+    if (!this.screen && document.documentElement.classList.contains('rm-compact')) top = Math.min(0.25, (parseFloat(document.documentElement.style.getPropertyValue('--ctop')) || 0) / vh);
+    const area = { left: +left.toFixed(3), right: +right.toFixed(3), top: +top.toFixed(3), bottom: +Math.min(0.4, bottom).toFixed(3) };
     const key = JSON.stringify(area);
     if (key === this.lastSafe) return;
     this.lastSafe = key;
@@ -454,6 +458,22 @@ export class App extends Emitter<AppEvents> {
   private labelSize = new WeakMap<HTMLElement, { w: number; h: number }>();
   private labelsHidden = false;
   private pointer = { x: -9999, y: -9999 };
+  /** top edge labels must stay below (compact phone layout: the top row's bottom, --ctop), else 0 */
+  private ctopPx = -1;
+  private ctopWatch = false;
+  private labelTop(): number {
+    if (this.ctopPx < 0) {
+      this.ctopPx = document.documentElement.classList.contains('rm-compact') ? parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ctop')) || 0 : 0;
+      if (!this.ctopWatch) {
+        this.ctopWatch = true;
+        const reset = () => (this.ctopPx = -1);
+        window.addEventListener('rm-ctop', reset);
+        window.addEventListener('resize', reset);
+      }
+    }
+    return this.ctopPx;
+  }
+
   private positionLabels() {
     if (!this.world) return;
     if (!this.labels.length) return;
@@ -481,6 +501,9 @@ export class App extends Emitter<AppEvents> {
       let y = p.y;
       // keep the plate on screen (a building at the edge still shows its whole name)
       const x = Math.min(Math.max(p.x, w / 2 + 8), vw - w / 2 - 8);
+      // compact (phone): never under the top row (--ctop, set by ui/compact.ts)
+      const ctop = this.labelTop();
+      if (ctop && y - sz.h < ctop) y = ctop + sz.h;
       for (let k = 0; k < 6; k++) {
         const hit = placed.find((r) => Math.abs(r.x - x) < (r.w + w) / 2 && Math.abs(r.y - y) < hgt);
         if (!hit) break;

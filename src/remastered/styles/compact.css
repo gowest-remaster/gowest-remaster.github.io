@@ -1,0 +1,360 @@
+/* Phones in landscape (any window under 500 px tall) and touch screens.
+   Two switches on <html>, set by ui/compact.ts:
+     .rm-compact  slim HUD bar, one top row, sheets and screens that use the whole screen
+     .rm-touch    44 px tap targets, no keyboard hints
+   Nothing here applies on a desktop window, so the desktop look is unchanged.
+   Safe areas come from index.html (--safe-t/r/b/l = env(safe-area-inset-*)). */
+
+.hud-stats-toggle, .hud-more { display: none; }
+
+/* ================================================================ compact layout */
+html.rm-compact {
+  --gut-l: max(0.5rem, var(--safe-l, 0px));
+  --gut-r: max(0.5rem, var(--safe-r, 0px));
+  --gut-t: max(0.4rem, var(--safe-t, 0px));
+  --gut-b: max(0.35rem, calc(var(--safe-b, 0px) - 0.6rem));
+}
+/* secondary text never drops under ~12.5 px */
+.rm-compact .small { font-size: 0.88rem; }
+.rm-compact .tiny { font-size: 0.82rem; }
+.rm-compact .eyebrow { font-size: 0.82rem; }
+.rm-compact .btn-sm { font-size: 0.9rem; }
+.rm-compact .obj-k, .rm-compact .pill { letter-spacing: 0.08em; }
+.rm-compact .chip { font-size: 0.86rem; }
+.rm-compact .pill { font-size: 0.74rem; }
+
+/* ---------------------------------------------------------------- top row */
+.rm-compact .rm-crumb { left: var(--gut-l); top: var(--gut-t); max-width: 38vw; gap: 0.3rem; }
+.rm-compact .crumb-back { width: 44px; height: 44px; flex: none; padding: 0.6rem; }
+.rm-compact .rm-crumb ol { min-height: 44px; min-width: 0; flex-wrap: nowrap; overflow: hidden; padding: 0 0.85rem; font-size: 0.95rem; }
+.rm-compact .rm-crumb li { min-width: 0; white-space: nowrap; }
+.rm-compact .rm-crumb li:not(:nth-last-child(-n + 2)) { display: none; }
+.rm-compact .rm-crumb li + li::before { margin: 0 0.35rem; }
+.rm-compact .rm-crumb li:nth-last-child(2)::before { display: none; }
+.rm-compact .rm-crumb li[aria-current] { display: block; overflow: hidden; text-overflow: ellipsis; }
+.rm-compact .rm-crumb li button { min-height: 44px; min-width: 44px; padding: 0 0.1rem; white-space: nowrap; }
+.rm-compact .rm-app.has-sheet .rm-crumb { z-index: 6; }
+
+.rm-compact .hud-top { top: var(--gut-t); right: var(--gut-r); gap: 0.35rem; }
+.rm-compact .goal-ribbon { min-height: 44px; padding: 0.2rem 0.75rem 0.2rem 0.6rem; }
+.rm-compact .gr-text { display: none; }
+.rm-compact .hud-round { width: 44px; height: 44px; padding: 0.62rem !important; }
+.rm-compact .hud-chipbtn { min-height: 44px; }
+
+.rm-compact .rm-objective { top: var(--gut-t); left: max(var(--gut-l), calc(var(--crumb-r, 0px) + 0.4rem)); max-width: calc(var(--top-l, 100vw) - max(var(--gut-l), calc(var(--crumb-r, 0px) + 0.4rem)) - 0.4rem); }
+html.rm-compact.rm-obj-row2 .rm-objective { top: calc(var(--gut-t) + 44px + 0.35rem); left: var(--gut-l); max-width: calc(100vw - var(--gut-l) - var(--gut-r)); }
+.rm-compact .obj-row { max-width: 100%; min-width: 0; }
+.rm-compact .obj-pill { min-height: 44px; min-width: 0; flex: 0 1 auto; padding: 0.2rem 0.75rem 0.2rem 0.45rem; }
+.rm-compact .obj-text { font-size: 0.95rem; }
+.rm-compact .obj-k { font-size: 0.72rem; }
+.rm-compact .obj-more { width: 44px; height: 44px; flex: none; padding: 0.65rem; }
+.rm-compact .obj-hint { font-size: 0.92rem; }
+.rm-compact .obj-list { max-height: calc(100vh - var(--ctop, 6rem) - var(--hud-h)); }
+
+/* ---------------------------------------------------------------- the slim HUD bar */
+.rm-compact .hud-plank {
+  left: var(--gut-l); right: var(--gut-r); bottom: var(--gut-b); width: auto; transform: none;
+  display: flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.45rem; border-radius: 12px;
+}
+.rm-compact .hud-plank::before, .rm-compact .hud-plank::after { display: none; }
+.rm-compact .leaf { width: 3.2rem; margin-top: 0; flex: none; padding: 0 0 0.12rem; border-radius: 6px; box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4), inset 0 -2px 0 var(--parch-shade); }
+.rm-compact .leaf-rings { display: none; }
+.rm-compact .leaf-m { font-size: 0.78rem; letter-spacing: 0.12em; padding: 0.08rem 0 0.04rem; border-radius: 6px 6px 0 0; }
+.rm-compact .leaf-d { font-size: 1.3rem; line-height: 1; margin: 0; }
+.rm-compact .leaf-y { font-size: 0.78rem; line-height: 1.1; }
+.rm-compact .hud-mid { display: contents; }
+.rm-compact .hud-stats-toggle {
+  display: inline-flex; align-items: center; gap: 0.35rem; flex: none; min-height: 44px; padding: 0 0.65rem; font: inherit; font-size: 1rem; cursor: pointer;
+  border-radius: 999px; background: rgba(0, 0, 0, 0.24); border: 1px solid rgba(199, 154, 75, 0.55); color: var(--parch-hi);
+}
+.rm-compact .hud-stats-toggle .ico { width: 1.15rem; height: 1.15rem; color: var(--brass); }
+.rm-compact .hud-stats-toggle b { font-weight: 400; }
+.rm-compact .hud-stats-toggle.low b { color: #ffb39c; }
+.rm-compact .hst-chev { color: var(--brass-hi); font-size: 0.8rem; transition: transform 0.15s; }
+.rm-compact .hud-stats-toggle.on { background: linear-gradient(var(--brass-hi), var(--brass)); color: var(--wood-lo); border-color: var(--brass-lo); }
+.rm-compact .hud-stats-toggle.on .ico, .rm-compact .hud-stats-toggle.on .hst-chev, .rm-compact .hud-stats-toggle.on b { color: var(--wood-lo); }
+.rm-compact .hud-stats-toggle.on .hst-chev { transform: rotate(180deg); }
+.rm-compact .hud-controls { flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; }
+.rm-compact .adv-btn { flex: 1 1 auto; min-width: 0; max-width: 17rem; min-height: 44px; padding: 0.2rem 0.75rem 0.2rem 0.6rem; gap: 0.45rem; }
+.rm-compact .adv-text { min-width: 0; }
+.rm-compact .adv-label { font-size: 1.02rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rm-compact .adv-sub { display: none; }
+.rm-compact .hotbar { flex: none; flex-wrap: nowrap; gap: 3px; justify-content: flex-end; max-width: 62vw; overflow-x: auto; overflow-y: visible; scrollbar-width: none; padding-top: 0.5rem; margin-top: -0.5rem; }
+.rm-compact .hotbar::-webkit-scrollbar { display: none; }
+.rm-compact .hot { min-width: 44px; width: 44px; height: 44px; padding: 0; align-content: center; flex: none; }
+@media (max-width: 700px) { .rm-compact .hot { min-width: 42px; width: 42px; } }
+.rm-compact .hot-l { display: none; }
+.rm-compact .hot-ico { width: 1.4rem; height: 1.4rem; }
+.rm-compact .hot kbd { display: none; }
+.rm-compact .hot.sep { margin-left: 0.3rem; }
+.rm-compact .hot.sep::before { left: -0.25rem; }
+.rm-compact .hot .badge { top: -0.5rem; right: -0.2rem; max-width: 3.8rem; font-size: 0.74rem; padding: 0 0.3rem; line-height: 1.1rem; }
+.rm-compact .hud-plank .badge { overflow: hidden; }
+
+/* the money and time drawer above the bar */
+.rm-compact .hud-more:not([hidden]) {
+  display: grid; gap: 0.35rem; position: absolute; left: 0; bottom: calc(100% + 0.4rem);
+  width: min(23rem, calc(100vw - var(--gut-l) - var(--gut-r))); max-height: calc(100vh - var(--hud-h) - var(--gut-t) - 0.4rem); overflow: auto; overscroll-behavior: contain;
+  padding: 0.55rem 0.8rem 0.7rem; border-radius: 12px; color: var(--parch);
+  background: repeating-linear-gradient(91deg, rgba(255, 255, 255, 0.022) 0 2px, transparent 2px 9px), linear-gradient(var(--wood-hi), var(--wood) 55%, var(--wood-lo));
+  border: 1px solid var(--brass-lo); box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(241, 211, 141, 0.25);
+}
+.rm-compact .hud-more .hud-money { display: grid; gap: 0; font-size: 1rem; }
+.rm-compact .hud-more .stat { display: grid; grid-template-columns: 1.15rem auto 1fr auto; column-gap: 0.5rem; align-items: center; min-height: 44px; padding: 0.35rem 0.1rem; border-bottom: 1px solid rgba(199, 154, 75, 0.22); }
+.rm-compact .hud-more .stat-l { font-size: 0.95rem; }
+.rm-compact .hud-more .stat b { font-size: 1.08rem; justify-self: end; }
+.rm-compact .hud-more .stat .pips { grid-column: 4; }
+.rm-compact .hud-more .stat.linky .stat-l::after { content: ' ›'; color: var(--brass-hi); }
+/* the tips a mouse would hover for, written out */
+.rm-compact .hud-more .stat[data-tip]:not([data-tip=''])::after { content: attr(data-tip); grid-column: 1 / -1; margin-top: 0.15rem; font-size: 0.86rem; line-height: 1.35; color: var(--parch-edge); white-space: normal; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.rm-compact .hud-more .bank-chip { justify-self: start; min-height: 44px; margin-top: 0.3rem; font-size: 0.9rem; }
+.rm-compact .hud-more-time { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; padding-top: 0.2rem; }
+.rm-compact .hud-more-time::before { content: 'Time'; flex-basis: 100%; font-family: var(--engraved); letter-spacing: 0.12em; color: var(--brass-hi); font-size: 0.9rem; }
+.rm-compact .hud-more-time .btn { min-height: 44px; font-size: 0.95rem; }
+.rm-compact .hud-more-time .speed { min-height: 44px; font-size: 0.95rem; }
+.rm-compact .hud-more-time .speed-arrow { width: 44px; height: 44px; font-size: 1rem; }
+
+/* the HUD's own pop-ups */
+.rm-compact .digest-host { left: var(--gut-l); max-width: min(34rem, calc(100vw - var(--gut-l) - var(--gut-r))); }
+.rm-compact .rm-transient { max-width: min(36rem, calc(100vw - var(--gut-l) - var(--gut-r))); }
+.rm-compact .rm-captions { bottom: calc(var(--hud-h) + 0.4rem); width: min(40rem, calc(100vw - var(--gut-l) - var(--gut-r))); }
+.rm-compact .caption { font-size: 0.98rem; padding: 0.35rem 0.75rem; }
+
+/* ---------------------------------------------------------------- place panels: under the top row, over the bar */
+.rm-compact .drawer { top: var(--ctop, 3.6rem); bottom: calc(var(--hud-h) + 0.25rem); right: var(--gut-r); width: min(26rem, 46vw); }
+.rm-compact .drawer.left { left: var(--gut-l); right: auto; top: var(--ctop, 3.6rem); }
+.rm-compact .drawer.wide { width: min(46rem, 64vw); }
+.rm-compact .drawer > .drawer-head { padding: 0.5rem 0.85rem 0.3rem; }
+.rm-compact .drawer > .drawer-body { padding: 0.5rem 0.85rem 0.6rem; overscroll-behavior: contain; }
+.rm-compact .drawer > .drawer-foot { padding: 0.4rem 0.85rem 0.5rem; }
+.rm-compact .drawer-title { font-size: 1.2rem; }
+.rm-compact .float.tl { top: var(--ctop, 3.6rem); left: var(--gut-l); }
+.rm-compact .float.tr { top: var(--ctop, 3.6rem); right: var(--gut-r); }
+.rm-compact .float.tc { top: var(--ctop, 3.6rem); }
+.rm-compact .float.bl { bottom: calc(var(--hud-h) + 0.25rem); left: var(--gut-l); }
+.rm-compact .float.br { bottom: calc(var(--hud-h) + 0.25rem); right: var(--gut-r); }
+.rm-compact .rm-place .float.card { max-height: calc(100vh - var(--ctop, 3.6rem) - var(--hud-h) - 0.3rem); overflow: auto; overscroll-behavior: contain; }
+.rm-compact .card { padding: 0.7rem 0.85rem; }
+.rm-compact .card-title { font-size: 1.15rem; }
+
+/* ---------------------------------------------------------------- sheets (books): the whole screen */
+.rm-compact .rm-sheet, .rm-compact .rm-sheet.size-md, .rm-compact .rm-sheet.size-xl, .rm-compact .rm-sheet.size-full {
+  top: var(--gut-t); bottom: var(--gut-b); left: var(--gut-l); right: var(--gut-r); width: auto; transform: none;
+}
+.rm-compact .rm-sheet-backdrop { background: rgba(10, 5, 0, 0.55); }
+.rm-compact .sheet-head { padding: 0.45rem 0.6rem 0 1rem; gap: 0.6rem; align-items: center; }
+.rm-compact .sheet-title { font-size: 1.45rem; }
+.rm-compact .sheet-sub { font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rm-compact .sheet-close { width: 44px; height: 44px; padding: 0.7rem; align-self: center; }
+.rm-compact .sheet-tabs { padding: 0.3rem 1rem 0; }
+.rm-compact .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-bottom: 0.5rem; }
+.rm-compact .tabs::-webkit-scrollbar { display: none; }
+.rm-compact .tabs button { flex: none; white-space: nowrap; padding: 0.4rem 0.8rem; }
+.rm-compact .sheet-body { padding: 0.6rem 1rem 0.9rem; overscroll-behavior: contain; }
+.rm-compact .sheet-foot { padding: 0.4rem 1rem; }
+.rm-compact .modal-wrap { padding: var(--gut-t) var(--gut-r) var(--gut-b) var(--gut-l); }
+.rm-compact .modal, .rm-compact .modal.wide { max-height: 100%; width: min(34rem, 100%); }
+.rm-compact .modal.wide { width: min(46rem, 100%); }
+.rm-compact .ledger-scroll { max-height: none; }
+
+/* ---------------------------------------------------------------- letters, speech cards, certificates */
+.rm-compact .rm-prompt .pwrap { padding: var(--gut-t) var(--gut-r) var(--gut-b) var(--gut-l); }
+.rm-compact .pcard { padding: 0.9rem 1.2rem 0; max-height: 100%; overscroll-behavior: contain; }
+.rm-compact .pcard-letter { width: min(40rem, 100%); }
+.rm-compact .pc-title { font-size: 1.5rem; margin-bottom: 0.4rem; }
+.rm-compact .pc-actions { position: sticky; bottom: 0; z-index: 2; margin: 0.6rem -1.2rem 0; padding: 0.5rem 1.2rem 0.65rem; background: linear-gradient(rgba(236, 222, 188, 0), #ecdcb4 0.6rem); }
+.rm-compact .speech.big .portrait.lg { width: 4.2rem; height: 4.2rem; }
+.rm-compact .speech-text, .rm-compact .letter-text { font-size: 1.02rem; line-height: 1.5; }
+.rm-compact .paper-letter .lh { max-width: 45%; }
+.rm-compact .letter-dock { top: var(--ctop, 3.6rem); min-height: 44px; }
+.rm-compact .vignettes { gap: 0.4rem; }
+
+/* ---------------------------------------------------------------- full-screen flows */
+.rm-compact .fs-overlay { padding: var(--gut-t) var(--gut-r) var(--gut-b) var(--gut-l); }
+.rm-compact .fs-overlay > .sheet-card { width: 100%; height: 100%; }
+
+/* title: the logo on the left, the menu on the right (it scrolls if it must) */
+.rm-compact .title-screen { grid-template-columns: 1fr; padding: var(--gut-t) var(--gut-r) var(--gut-b) var(--gut-l); }
+.rm-compact .title-col { grid-template-columns: minmax(0, 1fr) minmax(17rem, 24rem); gap: 1.2rem; align-items: center; height: 100%; }
+.rm-compact .title-col .title-word { font-size: clamp(3rem, 9.5vw, 5rem); margin: 0.35rem 0 0.25rem; }
+.rm-compact .title-kicker { font-size: 0.86rem; letter-spacing: 0.24em; }
+.rm-compact .title-kicker::before, .rm-compact .title-kicker::after { flex-basis: 1.6rem; }
+.rm-compact .title-sub { font-size: 1.05rem; }
+.rm-compact .title-orn { margin-top: 0.6rem; height: 1.1rem; }
+.rm-compact .title-years { font-size: 0.86rem; }
+.rm-compact .title-col .title-menu { max-width: none; max-height: calc(100vh - var(--gut-t) - var(--gut-b)); overflow: auto; overscroll-behavior: contain; padding: 0.75rem 0.75rem 0.65rem; gap: 0.4rem; }
+.rm-compact .title-menu::before { inset: 0.3rem; }
+.rm-compact .tm-head { font-size: 0.86rem; margin: 0; }
+.rm-compact .tm-btn { padding: 0.45rem 0.7rem; min-height: 48px; gap: 0.55rem; grid-template-columns: 1.8rem 1fr auto; }
+.rm-compact .tm-btn .ico { width: 1.35rem; height: 1.35rem; }
+.rm-compact .tm-l { font-size: 1.15rem; }
+.rm-compact .tm-s { font-size: 0.86rem; }
+
+/* new game */
+.rm-compact .ng { padding: var(--gut-t) var(--gut-r) var(--gut-b) var(--gut-l); gap: 0.35rem; }
+.rm-compact .ng-rail { padding: 0.2rem 0.7rem; }
+.rm-compact .ng-seal { width: 1.6rem; height: 1.6rem; font-size: 0.82rem; }
+.rm-compact .ng-step .lbl { display: none; }
+.rm-compact .ng-step.on .lbl { display: inline; font-size: 0.88rem; }
+.rm-compact .ng-step + .ng-step::before { width: 1rem; }
+.rm-compact .ng-stage { place-items: start center; padding: 0; overscroll-behavior: contain; }
+.rm-compact .ng-page { padding: 0.9rem clamp(0.9rem, 3vw, 1.6rem) 1rem; }
+.rm-compact .ng-page::before { inset: 0.35rem; }
+.rm-compact .ng-page > .title-orn { display: none; }
+.rm-compact .ng-h { font-size: 1.6rem; }
+.rm-compact .ng-lede { margin: 0.3rem auto 0.8rem; font-size: 0.95rem; }
+.rm-compact .ng-nav .btn { min-width: 7.5rem; min-height: 44px; }
+.rm-compact .ng-nav-hint { font-size: 0.86rem; padding: 0.25rem 0.75rem; }
+.rm-compact .choice-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
+.rm-compact .ccard { min-height: 0; padding: 0.75rem 0.85rem 0.7rem; gap: 0.3rem; }
+.rm-compact .ccard .cc-ico { width: 1.8rem; height: 1.8rem; }
+.rm-compact .ccard h3 { font-size: 1.22rem; }
+.rm-compact .ccard p { font-size: 0.92rem; }
+.rm-compact .ccard ul { font-size: 0.88rem; }
+.rm-compact .assist-grid, .rm-compact .goal-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; }
+.rm-compact .goal-card { min-height: 0; }
+.rm-compact .goal-card .balloon { height: 3.4rem; }
+.rm-compact .goal-card .gc-check { font-size: 0.82rem; }
+.rm-compact .toggles { margin-top: 0.7rem; gap: 0.4rem; }
+.rm-compact .toggle-row { padding: 0.45rem 0.7rem; }
+.rm-compact .toggle-row small { font-size: 0.86rem; }
+.rm-compact .big-input { font-size: 1.5rem !important; }
+.rm-compact .claim-eagle { font-size: 1.4rem; }
+.rm-compact .claim-eagle small { font-size: 0.78rem; letter-spacing: 0.2em; }
+.rm-compact .claim-certifies { margin: 0.5rem 0; }
+.rm-compact .claim-certifies .lead { font-size: 1.2rem; }
+.rm-compact .claim-field input { font-size: 1.2rem !important; width: 10rem; }
+.rm-compact .claim-field small { font-size: 0.78rem; }
+.rm-compact .claim-text { font-size: 0.94rem; line-height: 1.5; }
+.rm-compact .claim-sigs { gap: 0.7rem; margin-top: 0.8rem; }
+.rm-compact .claim-sigs small { font-size: 0.8rem; }
+
+/* intro chapters */
+.rm-compact .intro-top { padding: var(--gut-t) var(--gut-r) 0.25rem var(--gut-l); }
+.rm-compact .intro-chapter { font-size: 0.86rem; }
+.rm-compact .intro-chapter b { font-size: 1.15rem; }
+.rm-compact .intro-stage { padding: 0 var(--gut-r) 0 var(--gut-l); }
+.rm-compact .intro-frame { width: min(64rem, calc(100vw - var(--gut-l) - var(--gut-r)), calc((100vh - 10.6rem) * 1.333)); }
+.rm-compact .intro-zoom:has(.drv) { width: min(100%, calc((100vh - 10.6rem) * 4 / 3)); }
+.rm-compact .intro-cap { min-height: 3.6rem; padding: 0.3rem var(--gut-r) calc(var(--gut-b) + 0.2rem) var(--gut-l); }
+.rm-compact .intro-cap p { font-size: 1rem; line-height: 1.4; }
+
+/* load, settings, about */
+.rm-compact .load-wrap { grid-template-columns: 12rem 1fr; gap: 0.8rem; }
+.rm-compact .set-row { grid-template-columns: 11rem 1fr; gap: 0.7rem; }
+.rm-compact .set-row small { font-size: 0.86rem; }
+.rm-compact .set-grid { gap: 0.8rem; }
+
+/* epilogue */
+.rm-compact .epi-scene { padding: var(--gut-t) var(--gut-r) var(--gut-b) var(--gut-l); gap: 0.5rem; }
+.rm-compact .epi-h h1 { font-size: clamp(1.7rem, 4.5vw, 2.6rem); }
+.rm-compact .epi-h .k { font-size: 0.8rem; }
+.rm-compact .history-book { width: calc(100vw - var(--gut-l) - var(--gut-r)); margin: 0.5rem auto; padding: 1.2rem clamp(0.9rem, 3vw, 2rem); }
+
+/* ---------------------------------------------------------------- homestead */
+.rm-compact .hub-ribbon { min-width: 0; width: auto; max-width: calc(100vw - var(--gut-l) - var(--gut-r)); }
+.rm-compact .today { width: min(21rem, 42vw); max-height: calc(100vh - var(--ctop, 3.6rem) - var(--hud-h) - 0.3rem); }
+.rm-compact .trivia { width: min(22rem, 46vw); }
+.rm-compact .build-host .drawer { width: min(24rem, 46vw); }
+
+/* ---------------------------------------------------------------- field: jobs in a column on the left */
+.rm-compact .verbs { padding: 0.4rem; }
+.rm-compact .verb-row { flex-direction: column; gap: 0.35rem; }
+.rm-compact .verb { min-width: 0; width: min(12.5rem, 30vw); min-height: 44px; padding: 0.35rem 0.6rem; column-gap: 0.45rem; }
+.rm-compact .verb-ico { width: 1.5rem; height: 1.5rem; }
+.rm-compact .verb-l { font-size: 1.05rem; }
+.rm-compact .verb-s { font-size: 0.86rem; max-width: none; }
+.rm-compact .jobcard { width: min(25rem, 46vw); }
+.rm-compact .msq { aspect-ratio: auto; min-height: 44px; }
+.rm-compact .sq-legend { font-size: 0.82rem; }
+.rm-compact .sack-c { font-size: 0.8rem; }
+
+/* ---------------------------------------------------------------- town */
+.rm-compact .drawer.store-cat { width: calc((100vw - var(--gut-l) - var(--gut-r)) * 0.58); }
+.rm-compact .slip { width: calc((100vw - var(--gut-l) - var(--gut-r)) * 0.42 - 0.5rem); max-height: calc(100vh - var(--ctop, 3.6rem) - var(--hud-h) - 0.5rem); }
+.rm-compact .cat-item { gap: 0.55rem; padding: 0.5rem 0.55rem; }
+.rm-compact .cat-art { width: 2.5rem; height: 2.5rem; }
+.rm-compact .cat-name { font-size: 1.05rem; }
+.rm-compact .slip-l small { font-size: 0.82rem; }
+/* the Pay button stays in reach while the slip scrolls */
+.rm-compact .slip .card-actions { position: sticky; bottom: -0.7rem; z-index: 2; margin: 0.6rem -0.85rem -0.7rem; padding: 0.5rem 0.85rem 0.6rem; background: linear-gradient(rgba(246, 236, 210, 0), #f6ecd2 0.5rem); }
+.rm-compact .dir-t small { font-size: 0.86rem; }
+.rm-compact .tt-role { font-size: 0.78rem; }
+.rm-compact .ad-agent, .rm-compact .ad-figs small, .rm-compact .lf-grid small { font-size: 0.76rem; }
+
+/* ================================================================ touch: 44 px targets, no key hints */
+.rm-touch .btn, .rm-touch .btn-sm { min-height: 44px; min-width: 44px; }
+.rm-touch .rm-app { -webkit-touch-callout: none; }
+.rm-touch .gloss { padding: 0.4em 0; }
+.rm-touch .slate-t { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; }
+.rm-touch .note-in { min-height: 44px; }
+.rm-touch .btn-link, .rm-touch .btn-plain { min-height: 44px; min-width: 44px; }
+.rm-touch .sig-clear { display: inline-flex; min-height: 44px; }
+.rm-touch .step-btn { width: 44px; height: 44px; padding: 0.7rem; }
+.rm-touch .seg button { min-height: 44px; padding-left: 0.9rem; padding-right: 0.9rem; }
+.rm-touch .tabs button { min-height: 44px; }
+.rm-touch .sheet-close, .rm-touch .crumb-back, .rm-touch .obj-more, .rm-touch .hud-round, .rm-touch .rb-collapse { width: 44px; height: 44px; }
+.rm-touch .rm-crumb li button { min-height: 44px; }
+.rm-touch .speed-arrow { width: 44px; height: 44px; }
+.rm-touch .digest-more, .rm-touch .digest-x { min-height: 44px; min-width: 44px; }
+.rm-touch .tr-act { min-height: 44px; padding: 0 0.8rem; }
+.rm-touch .bank-chip, .rm-touch .profile-chip, .rm-touch .name-chip, .rm-touch .trivia-tab, .rm-touch .ribbon-mini, .rm-touch .goal-ribbon, .rm-touch .obj-pill, .rm-touch .hud-chipbtn { min-height: 44px; }
+.rm-touch .msq, .rm-touch .sack, .rm-touch .check-row, .rm-touch .dir-row, .rm-touch .lp, .rm-touch .toggle-row, .rm-touch .stat.linky { min-height: 44px; }
+.rm-touch .hot { min-height: 44px; min-width: 42px; }
+.rm-touch .rm-app input[type='text'], .rm-touch .rm-app input[type='number'], .rm-touch .rm-app textarea { min-height: 44px; font-size: max(16px, 1rem); }
+.rm-touch .rm-app input[type='checkbox'], .rm-touch .rm-app input[type='radio'] { width: 1.45rem; height: 1.45rem; }
+.rm-touch .slider input[type='range'] { height: 44px; }
+.rm-touch .radio-row label { min-height: 44px; }
+.rm-touch .btn kbd, .rm-touch .hot kbd, .rm-touch .tm-btn kbd, .rm-touch .adv-btn kbd, .rm-touch .tm-foot, .rm-touch .alt-nod { display: none; }
+/* hover lifts would stick after a tap */
+.rm-touch .tm-btn:hover, .rm-touch .ccard:hover:not(:disabled), .rm-touch .hot:hover, .rm-touch .dir-row:hover, .rm-touch .leaf:hover, .rm-touch .verb:hover, .rm-touch .save-card:hover { transform: none; }
+/* press-and-hold tips (ui/overlays.ts) */
+.rm-touch .rm-tip { max-width: min(22rem, calc(100vw - 1rem)); font-size: 0.92rem; }
+
+/* ---------------------------------------------------------------- town talk: townsfolk left, the words right */
+.rm-compact .rm-sheet.sheet-talk .sheet-head { padding-top: 0.35rem; }
+.rm-compact .rm-sheet.sheet-talk .sheet-title { font-size: 1.3rem; }
+.rm-compact .rm-sheet.sheet-talk .sheet-body { padding-top: 0.4rem; padding-bottom: 0.5rem; }
+.rm-compact .tt-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); grid-auto-flow: column; gap: 0.5rem 0.7rem; }
+.rm-compact .tt-grid > .tt-boardwalk { grid-column: 1; grid-row: 1 / span 2; min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 0.55rem 0.5rem 1.3rem; }
+.rm-compact .tt-grid > .tt-live, .rm-compact .tt-grid > .tt-side { grid-column: 2; }
+.rm-compact .tt-grid > .tt-side { grid-row: 2; border-top: 0; padding-top: 0; }
+.rm-compact .tt-grid > .tt-live { grid-row: 1; }
+.rm-compact .tt-stage { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem 0.4rem; }
+.rm-compact .tt-frame { height: 3.9rem; }
+.rm-compact .tt-name { font-size: 0.95rem; }
+.rm-compact .tt-ico { width: 1.45rem; height: 1.45rem; }
+.rm-compact .tt-live-body p { font-size: 1rem; }
+.rm-compact .tt-grid > .tt-side { min-height: 0; overflow: hidden; }
+
+/* ---------------------------------------------------------------- one surface at a time */
+/* the year strip steps aside for the letter waiting at the top, for a build plan and for the trivia card */
+.rm-compact .hub-ribbon { left: var(--gut-l); transform: none; }
+html.rm-compact .rm-app:has(.letter-dock:not([hidden])) .hub-ribbon,
+html.rm-compact .hub:has(.build-host .drawer) .hub-ribbon,
+html.rm-compact .hub:has(.trivia) .hub-ribbon { display: none; }
+html.rm-compact .hub:has(.build-host .drawer) .trivia-host { display: none; }
+/* passing notes never block a tap on the panel under them (their own button still works) */
+.rm-compact .tr-line { pointer-events: none; }
+.rm-compact .tr-act { pointer-events: auto; }
+/* a panel or a book open: the end-of-run digest and its notes step aside */
+html.rm-compact .rm-app:has(.rm-place .drawer, .rm-place .jobcard) .digest-host { display: none; }
+
+/* ---------------------------------------------------------------- short screens (Safari's bars showing) */
+/* narrow: the crumb keeps only where you are; Undo is just its arrow */
+@media (max-width: 760px) {
+  .rm-compact .rm-crumb li:not(:last-child) { display: none; }
+  .rm-compact .rm-crumb li:last-child::before { display: none; }
+  .rm-compact .rm-crumb { max-width: 30vw; }
+}
+.rm-compact .hud-chipbtn .btn-label { display: none; }
+.rm-compact .hud-chipbtn { min-width: 44px; padding: 0.35rem 0.7rem !important; }
+/* a place's own card already says what to do: the Next pill's hint line steps aside */
+html.rm-compact .rm-app:has(.rm-place .drawer, .rm-place .jobcard, .rm-place .float.card) .obj-hint { display: none; }
+/* badges sit over their own button, never over the neighbor's */
+.rm-compact .hot .badge { left: 50%; right: auto; transform: translateX(-50%); max-width: 46px; text-overflow: ellipsis; }
+.rm-compact .hot .badge.tone-urgent { animation: none; }
+.rm-compact .tt-grid > .tt-side { overflow: auto; overscroll-behavior: contain; }
+
+/* world labels on touch: a 44px tap target (rendering lead, 2026-10-17) */
+html.rm-touch .wlabel { min-height: 44px; padding-top: 0.45rem; padding-bottom: 0.45rem; }
