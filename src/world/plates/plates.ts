@@ -107,13 +107,25 @@ export interface PlateSource {
 /** Images load as ImageBitmaps: decoded off the main thread, raw (no premultiply / colour conversion, which RGBM and
  *  packed data need), so the GPU upload is a plain copy (an <img> upload decoded synchronously: 200+ ms tasks). */
 const bitmaps = new THREE.ImageBitmapLoader().setOptions({ premultiplyAlpha: 'none', colorSpaceConversion: 'none', imageOrientation: 'none' });
-const loadImage = (url: string): Promise<THREE.Texture> =>
+const loadOnce = (url: string): Promise<THREE.Texture> =>
   bitmaps.loadAsync(url).then((img) => {
     const t = new THREE.Texture(img as ImageBitmap);
     t.premultiplyAlpha = false;
     t.needsUpdate = true;
     return t;
   });
+
+/** a phone under memory pressure can fail a fetch or a decode now and then: two more tries before giving up */
+const loadImage = async (url: string): Promise<THREE.Texture> => {
+  for (let i = 0; ; i++) {
+    try {
+      return await loadOnce(url);
+    } catch (e) {
+      if (i >= 2) throw e;
+      await new Promise((r) => setTimeout(r, 300 * (i + 1)));
+    }
+  }
+};
 
 const prepRGBM = (t: THREE.Texture): THREE.Texture => {
   t.colorSpace = THREE.NoColorSpace;
@@ -128,6 +140,8 @@ export class PlateView {
   static whenQuiet: () => Promise<void> = () => new Promise((r) => setTimeout(r, 250));
   /** upload a texture to the GPU now (set by the world: renderer.initTexture) */
   static initTexture: ((t: THREE.Texture) => void) | null = null;
+  /** set by the world: plate problems worth a crash breadcrumb */
+  static onWarn: ((m: string) => void) | null = null;
   /** Set by the world: re-pack split images into one RGBA texture on the GPU (plate.json "split"). 'rgbm': colour
    *  RGB + M from aux.r; 'data': depth/shadow RGB + alpha from aux.g; 'copy': a second copy of `a` (aux null). */
   static packer: ((a: THREE.Texture, aux: THREE.Texture | null, mode: 'rgbm' | 'data' | 'copy') => THREE.Texture) | null = null;
@@ -594,7 +608,10 @@ export class PlateView {
     return [m, g, THREE.MathUtils.smoothstep(hour, 14.5, 17.5)];
   }
 
+  /** set once disposed (a hop that waited on this plate loads it again) */
+  disposed = false;
   dispose(): void {
+    this.disposed = true;
     this.quad.removeFromParent();
     this.proxy?.removeFromParent();
     (this.quad.material as THREE.Material).dispose();
@@ -676,8 +693,12 @@ export class PlateView {
       const [depth] = await Promise.all([loadData(`${BASE}${view}/depth.exr`), ...firstKs.map(loadKey)]);
       // a plate whose state layers can't all be composited would leave holes (e.g. a missing house): stay live
       if (missing.size) {
-        console.warn('[plates] not using', view, '- missing layers:', [...missing].join(', '));
-        return null;
+        // a building missing is better than no picture at all: drop just those layers
+        const msg = `${view}: ${missing.size} layer(s) failed to load (${[...missing].slice(0, 3).join(', ')})`;
+        console.warn('[plates]', msg);
+        PlateView.onWarn?.(msg);
+        json.layers = (json.layers ?? []).filter((L) => !missing.has(L.id));
+        missing.clear();
       }
       const c = json.camera;
       const cam = new THREE.PerspectiveCamera(c.fovY, c.aspect, c.near ?? 0.3, c.far ?? 9000);

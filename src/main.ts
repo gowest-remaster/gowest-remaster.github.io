@@ -6,8 +6,10 @@
 // `?classic` forces the Classic app (its title is the original login); `?look=remastered` the new one.
 
 import { muteUnderAutomation } from './automation-mute.ts';
+import { installCrashLog, sessionStarted } from './crashlog.ts';
 
 muteUnderAutomation();
+installCrashLog();
 
 const LOOK_KEY = 'gowest.look';
 
@@ -93,7 +95,10 @@ async function bootClassic() {
 
 type BootUi = { __gwLoad?: (f: number, t?: string) => void; __gwLoadDone?: () => void };
 export const bootProgress = (f: number, t?: string) => (window as unknown as BootUi).__gwLoad?.(f, t);
-export const bootDone = () => (window as unknown as BootUi).__gwLoadDone?.();
+export const bootDone = () => {
+  (window as unknown as BootUi).__gwLoadDone?.();
+  sessionStarted();
+};
 
 async function boot() {
   bootProgress(0.3, 'Unpacking the trunk…');

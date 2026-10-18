@@ -10,6 +10,7 @@ import { Post } from './engine/post';
 import { Weather } from './env/weather';
 import { PlateView } from './plates/plates';
 import { LOW_MEMORY, memStats } from '../lowmem';
+import { crumb, crashError, setMemProvider } from '../crashlog';
 import { texture as tslTexture, uv as tslUV, vec4 as tslVec4 } from 'three/tsl';
 import { FieldCrew } from './places/fieldCrew';
 import { SquareMarks } from './places/squareMarks';
@@ -271,13 +272,19 @@ export class WorldImpl implements World3D {
         setTimeout(check, 600);
       });
     // a lost GPU device (out of memory, a driver reset) leaves a frozen canvas: say so and offer a way on
-    r.onDeviceLost = (info: { message?: string; reason?: string | null }) => this.fatal(`The graphics device stopped (${info.reason ?? info.message ?? 'unknown'}).`);
+    r.onDeviceLost = (info: { message?: string; reason?: string | null }) => {
+      crashError('gpu-lost', `${info.reason ?? ''} ${info.message ?? ''}`);
+      this.fatal(`The graphics device stopped (${info.reason ?? info.message ?? 'unknown'}).`);
+    };
+    setMemProvider(() => this.memLine());
     const rr = r as unknown as { onError: (e: { type?: string; message?: string }) => void };
     const onErr = rr.onError.bind(r);
     rr.onError = (e) => {
       if (e?.type === 'GPUOutOfMemoryError') this.lowMemoryNextTime();
+      crashError(`gpu ${e?.type ?? 'error'}`, e?.message ?? '');
       onErr(e);
     };
+    PlateView.onWarn = (m) => crumb('plate', m);
     PlateView.initTexture = (t) => r.initTexture(t);
     PlateView.packer = (a, aux, mode) => this.packTexture(a, aux, mode);
     PlateView.freeTexture = (t) => {
@@ -546,6 +553,8 @@ export class WorldImpl implements World3D {
   // ------------------------------------------------------------------ view
   setView(view: WorldView, opts?: { instant?: boolean }): void {
     const prevWet = this.view.weather === 'rain' || this.view.weather === 'storm';
+    const v0 = this.view;
+    if (v0.house !== view.house || v0.barn !== view.barn || v0.windmill !== view.windmill || v0.fence !== view.fence || v0.year !== view.year) crumb('state', `${view.year}/${view.month} ${view.house}${view.barn ? '+barn' : ''}${view.windmill ? '+windmill' : ''} fence${view.fence}`);
     this.view = structuredClone(view);
     this.squareOverride.clear();
     this.applyView(!!opts?.instant);
@@ -661,11 +670,28 @@ export class WorldImpl implements World3D {
     // 1. everything the target needs (plate + its keys and layers, interior room, shaders) loads while the current
     //    view stays on screen and animating
     // never switch to a view whose plate and images aren't ready (instant hops too; they just report no progress)
-    await this.preparePlace(place, !instant);
+    this.hopping.add(this.plateName(place));
+    try {
+      await this.preparePlace(place, !instant);
+    } finally {
+      this.hopping.delete(this.plateName(place));
+    }
     if (gen !== this.goGen) return;
     const isInt = INTERIORS.includes(place);
     // (the target's current lighting keys are loaded before the cut: no key popping in after the dissolve)
-    const tpv = isInt ? await this.loadInteriorPlate(place, await this.ensureInterior(place)) : await this.plateFor(place);
+    crumb('hop', `${this.place} -> ${place}`);
+    this.hopping.add(this.plateName(place));
+    let tpv: PlateView | null;
+    try {
+      tpv = isInt ? await this.loadInteriorPlate(place, await this.ensureInterior(place)) : await this.plateForRetry(place);
+    } finally {
+      this.hopping.delete(this.plateName(place));
+    }
+    if (!tpv && !isInt) {
+      // never switch to an outdoor view without its picture: stay on the current one (the UI keeps working)
+      crumb('hop-aborted', `${place}: no plate after 3 tries`);
+      return;
+    }
     if (tpv) await this.ensurePlateKeys(tpv);
     if (gen !== this.goGen) return;
     // 2. freeze the outgoing frame on an overlay, switch everything underneath in one go, and cross-dissolve.
@@ -988,6 +1014,8 @@ export class WorldImpl implements World3D {
   /** Low-memory profile: keep the current outdoor view and the last one; dispose the rest (GPU textures and
    *  pipelines' materials) and forget their preparation so a revisit loads them again. */
   private recentViews: string[] = [];
+  /** plate views an in-flight goTo is waiting for (never evicted under it) */
+  private hopping = new Set<string>();
   private trimPlates(current: string): void {
     this.recentViews = [current, ...this.recentViews.filter((v) => v !== current)];
     if (!LOW_MEMORY) return;
@@ -995,7 +1023,7 @@ export class WorldImpl implements World3D {
     this.recentViews = [...keep];
     // every other loaded outdoor view goes (including ones loaded before the first trim, e.g. the title's)
     for (const v of [...this.plates.keys()]) {
-      if (keep.has(v)) continue;
+      if (keep.has(v) || this.hopping.has(v)) continue; // (another hop is waiting for it)
       const p = this.plates.get(v);
       this.plates.delete(v);
       this.placeReady.delete(v);
@@ -1202,8 +1230,47 @@ export class WorldImpl implements World3D {
   private plateFor(place: Place): Promise<PlateView | null> {
     const name = this.plateName(place);
     let p = this.plates.get(name);
-    if (!p) this.plates.set(name, (p = PlateView.load(name, undefined, [], this.neededKeys())));
+    if (!p) {
+      p = PlateView.load(name, undefined, [], this.neededKeys()).then((pv) => {
+        // a failed load (a fetch / decode / upload that failed on a phone under memory pressure) is not cached: the
+        // next request loads it again instead of showing an empty view until something else evicts it
+        if (!pv) {
+          crumb('plate-failed', name);
+          if (this.plates.get(name) === p) this.plates.delete(name);
+        }
+        return pv;
+      });
+      this.plates.set(name, p);
+    }
     return p;
+  }
+
+  /** the plate for an outdoor place, retried (with a short back-off) until one loads; null after 3 failures */
+  private async plateForRetry(place: Place): Promise<PlateView | null> {
+    for (let i = 0; i < 3; i++) {
+      const pv = await this.plateFor(place);
+      if (pv && !pv.disposed) return pv;
+      if (pv?.disposed) this.plates.delete(this.plateName(place)); // evicted while this hop waited: load it again
+      await new Promise((r) => setTimeout(r, 400 * (i + 1)));
+    }
+    return null;
+  }
+
+  /** short memory line for the crash breadcrumbs (MB): plates, audio, render size */
+  private memLine(): string {
+    let tex = 0;
+    const seen = new Set<THREE.Texture>();
+    for (const pv of [this.plate, ...this.interiorPlates.values()]) {
+      if (!pv) continue;
+      for (const t of pv.textures) {
+        if (seen.has(t)) continue;
+        seen.add(t);
+        const rt = this.packedRT.get(t);
+        const im = t.image as { width?: number; height?: number } | null;
+        tex += (rt?.width ?? im?.width ?? 0) * (rt?.height ?? im?.height ?? 0) * 4;
+      }
+    }
+    return `plates ${Math.round(tex / 1048576)} MB · audio ${Math.round(memStats.audioBytes / 1048576)} MB · ${this.canvas?.width}x${this.canvas?.height} ${this.quality_}`;
   }
 
   private async usePlate(place: Place, gen: number): Promise<void> {
