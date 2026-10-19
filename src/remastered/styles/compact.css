@@ -5,7 +5,7 @@
    Nothing here applies on a desktop window, so the desktop look is unchanged.
    Safe areas come from index.html (--safe-t/r/b/l = env(safe-area-inset-*)). */
 
-.hud-stats-toggle, .hud-more, .drawer-fold, .thing-savings, .store-pane-back { display: none; }
+.hud-stats-toggle, .hud-more, .thing-savings, .store-pane-back { display: none; }
 
 /* ================================================================ compact layout */
 html.rm-touch { --tap: 44px; }
@@ -362,17 +362,6 @@ html.rm-compact .rm-app:has(.rm-place .drawer, .rm-place .jobcard, .rm-place .fl
 /* world labels on touch: a var(--tap, 44px) tap target (rendering lead, 2026-10-17) */
 html.rm-touch .wlabel { min-height: var(--tap, 44px); padding-top: 0.45rem; padding-bottom: 0.45rem; }
 
-/* ---------------------------------------------------------------- fold a place card down to its title */
-.rm-compact .drawer-fold {
-  display: grid; place-items: center; position: absolute; z-index: 3; top: 0.15rem; right: 0.15rem; width: var(--tap, 44px); height: var(--tap, 44px); padding: 0.7rem;
-  border: 0; border-radius: 50%; background: none; color: var(--brass-lo); cursor: pointer;
-}
-.rm-compact .drawer-fold svg { width: 100%; height: 100%; transition: transform 0.15s; }
-.rm-compact .drawer > .drawer-head { padding-right: 2.9rem; }
-.rm-compact .drawer.folded { bottom: auto; }
-.rm-compact .drawer.folded > .drawer-body { display: none; }
-.rm-compact .drawer.folded .drawer-fold svg { transform: rotate(180deg); }
-.rm-compact .drawer.folded > .drawer-head { border-bottom: 0; }
 
 /* ---------------------------------------------------------------- field: the 3D field is the map */
 .rm-compact .jobcard .sqmap, .rm-compact .jobcard .sq-legend { display: none; }
@@ -434,11 +423,6 @@ html.rm-touch .wlabel { min-height: var(--tap, 44px); padding-top: 0.45rem; padd
   .rm-compact .ng-lede { margin-bottom: 0.5rem; }
   .rm-compact .store-cat .drawer-title, .rm-compact .slip > .spread .card-title { display: none; }
   .rm-compact .slip-total .big { font-size: 1.3rem; }
-  /* a place card open (not the field's strip): it gets the whole height; Back (top row) or the fold brings the bar back */
-  html.rm-compact .rm-app:has(.rm-place .drawer:not(.folded):not(.jobcard), .rm-place .store.show-slip) .hud-plank { visibility: hidden; transform: translateY(150%); }
-  html.rm-compact .rm-app:has(.rm-place .drawer:not(.folded):not(.jobcard), .rm-place .store.show-slip) :is(.drawer:not(.jobcard), .store .slip) { bottom: var(--gut-b); max-height: none; }
-  html.rm-compact .rm-app:has(.rm-place .drawer:not(.folded):not(.jobcard), .rm-place .store.show-slip) .drawer:not(.jobcard):not(.wide) { width: min(34rem, 62vw); }
-  html.rm-compact .rm-app:has(.rm-place .drawer:not(.folded):not(.jobcard), .rm-place .store.show-slip) :is(.rm-transient, .rm-captions) { bottom: calc(var(--gut-b) + 0.4rem); }
 }
 
 /* ---------------------------------------------------------------- iOS: "Add to Home Screen" for full screen (title only, once) */
@@ -477,14 +461,6 @@ html.rm-touch .wlabel { min-height: var(--tap, 44px); padding-top: 0.45rem; padd
 .rm-compact .verbs .seed-tray { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.3rem 0 0; }
 .rm-compact .verbs .sack { min-height: var(--tap, 44px); padding: 0.15rem 0.5rem; }
 .rm-compact .jobcard .seed-tray, .rm-compact .jobcard .eyebrow:has(+ .seed-tray) { display: none; }
-.rm-compact .jobcard.folded { top: auto; bottom: calc(var(--hud-h) + 0.25rem); left: var(--gut-l); right: var(--gut-r); width: auto; flex-direction: row; align-items: center; padding: 0; }
-.rm-compact .jobcard.folded > .drawer-head { flex: 1 1 auto; min-width: 0; padding: 0.25rem 0.4rem 0.25rem 0.85rem; }
-.rm-compact .jobcard.folded > .drawer-head .eyebrow { display: none; }
-.rm-compact .jobcard.folded .drawer-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02rem; }
-.rm-compact .jobcard.folded > .drawer-foot { flex: none; border: 0; background: none; padding: 0.25rem 2.9rem 0.25rem 0.3rem; flex-wrap: nowrap; }
-.rm-compact .jobcard.folded > .drawer-foot .btn-wide { width: auto; }
-.rm-compact .jobcard.folded .drawer-fold { top: 50%; transform: translateY(-50%); }
-.rm-compact .jobcard:not(.folded) { width: min(22rem, 46vw); }
 
 /* bank: the numbers say it; the chart waits for a bigger screen */
 .rm-compact .bank-drawer .chart-host { display: none; }
@@ -501,10 +477,80 @@ html.rm-touch .wlabel { min-height: var(--tap, 44px); padding-top: 0.45rem; padd
 .rm-compact :is(table.ledger-t th, .tm-head, .leaf-y) { font-size: max(0.88rem, 12px); }
 .rm-compact .note-in { min-height: var(--tap, 44px); }
 .rm-compact .savings input[type='range'] { height: var(--tap, 44px); }
-.rm-compact .jobcard.folded { min-height: calc(var(--tap, 44px) + 0.6rem); }
 /* one surface at a time: a book covers the place, a book opened from a book covers the first */
 .rm-compact .rm-app.has-sheet .rm-place { visibility: hidden; }
 .rm-compact .rm-sheet-wrap:not(:last-child) { visibility: hidden; }
 /* house savings page: the tab says what it is; the coin stacks wait for a bigger screen */
 .rm-compact .house-panel .savings > .alm-h, .rm-compact .house-panel .coins { display: none; }
 .rm-compact .house-panel .savings { margin: 0; }
+
+/* ================================================================ round 4: one-screen phone tasks
+   Every phone panel is a sheet: a header, a body that scrolls only if it must, and its actions in a
+   footer that is always on screen. Nothing folds away; the bottom bar is always there to travel. */
+
+/* dialogs, letters and events: the buttons never scroll away */
+.rm-compact .modal { display: flex; flex-direction: column; overflow: hidden; }
+.rm-compact .modal > .modal-body { flex: 1 1 auto; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.rm-compact .modal > .card-actions { flex: none; }
+.rm-compact .pcard { display: flex; flex-direction: column; overflow: hidden; padding-bottom: 0.7rem; }
+.rm-compact .pcard > :is(.pc-eyebrow, .pc-title, .peek) { flex: none; }
+.rm-compact .pcard > .pc-body { flex: 1 1 auto; min-height: 2.5rem; overflow: auto; overscroll-behavior: contain; margin-top: 0.2rem; }
+.rm-compact .pcard > .pc-actions { flex: 0 0 auto; position: static; margin: 0.55rem 0 0; padding: 0.5rem 0 0; background: none; border-top: 1px solid var(--parch-edge); max-height: 55%; overflow: auto; }
+.rm-compact .pcard > .peek { margin-top: 0.4rem; padding-top: 0.3rem; }
+
+/* trivia: the question scrolls, the answers (or "Pin it back") stay put */
+.rm-compact .trivia-host { top: var(--ctop, 3.6rem); bottom: calc(var(--hud-h) + 0.25rem); right: var(--gut-r); display: flex; flex-direction: column; align-items: flex-end; pointer-events: none; }
+.rm-compact .trivia-host > * { pointer-events: auto; }
+.rm-compact .trivia { width: min(32rem, 62vw); max-height: 100%; display: flex; flex-direction: column; overflow: hidden; transform: none; }
+.rm-compact .trivia > * { flex: none; }
+.rm-compact .trivia > p { flex: 1 1 auto; min-height: 2.4rem; overflow: auto; overscroll-behavior: contain; margin: 0.3rem 0 0.5rem; }
+.rm-compact .trivia-q { font-size: 1rem; }
+.rm-compact .trivia-a { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.35rem; }
+.rm-compact .trivia-btn { min-height: var(--tap, 44px); font-size: 0.95rem; }
+.rm-compact .trivia > .btn { align-self: flex-start; }
+
+/* the field: one sheet on the right, jobs on top, crew steppers, the estimate, Start at the bottom */
+.rm-compact .jobcard { width: min(27rem, max(46vw, 21rem)); }
+.rm-compact .jobcard > .drawer-head .eyebrow { display: none; }
+.rm-compact .jobcard > .drawer-head { padding-top: 0.4rem; padding-bottom: 0.25rem; }
+.rm-compact .jobcard .eyebrow:has(+ .crew) { display: none; }
+.rm-compact .jobcard .map-hint { margin-bottom: 0.3rem; }
+.rm-compact .jobcard > .drawer-body { padding-top: 0.35rem; }
+.rm-compact .jobcard > .drawer-foot { flex: none; }
+.rm-compact .jobcard .callout.est { padding: 0.35rem 0.55rem; font-size: 0.92rem; }
+.rm-compact .jobcard .radio-row { margin-bottom: 0.2rem; }
+.rm-compact .crew-steps { margin-bottom: 0.4rem; }
+.rm-compact .crew-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.35rem; }
+.rm-compact .crew-step { display: grid; justify-items: center; gap: 0.05rem; padding: 0.25rem 0.15rem 0.3rem; border: 1px solid var(--parch-edge); border-radius: 8px; background: rgba(255, 255, 255, 0.42); min-width: 0; }
+.rm-compact .crew-step.off { opacity: 0.55; }
+.rm-compact .cs-l { font-weight: 700; font-size: 0.92rem; }
+.rm-compact .cs-s { font-size: 12px; text-align: center; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.rm-compact .crew-step .stepper { gap: 0.15rem; }
+.rm-compact .crew-step .stepper-v { min-width: 1.6em; }
+.rm-compact .crew-note:empty { display: none; }
+
+/* bank: everything fits on the Loan tab, so the button sits in line (a sticky bar covered the term) */
+.rm-compact .loan-viz > .card-actions { position: static; margin: 0; padding: 0; background: none; }
+.rm-compact .crew-step .step-btn { width: 36px; height: 36px; padding: 0.55rem; }
+.rm-compact .build-host .drawer { width: min(27rem, max(46vw, 21rem)); }
+.rm-compact :is(.gc-check, .sack-n, .lf-grid small, .digest-why, .digest-more, .pc-eyebrow, .trivia-open, .cs-s) { font-size: max(0.88rem, 12px); }
+/* trivia is a question to answer now: it may sit over the bar, from the top row to the bottom edge */
+html.rm-compact .rm-app:has(.rm-place .trivia) .rm-place { z-index: 8; }
+.rm-compact .trivia-host:has(.trivia) { bottom: var(--gut-b); }
+.rm-compact .trivia > .tiny { display: none; }
+@media (max-height: 340px) {
+  /* a card with tabs: the tabs say where you are */
+  .rm-compact .drawer-head:has(.tabs) .drawer-title { display: none; }
+  .rm-compact .trivia-q { font-size: 0.95rem; }
+}
+@media (max-height: 340px) {
+  .rm-compact .pcard { padding-top: 0.6rem; }
+  .rm-compact .pc-title { font-size: 1.25rem; margin-bottom: 0.2rem; }
+  .rm-compact .speech.big .portrait.lg { width: 3.2rem; height: 3.2rem; }
+}
+.rm-compact .goal-card .gc-check, .rm-compact .btn-link, .rm-compact .sig-clear { font-size: max(0.88rem, 12px); }
+@media (max-height: 340px) {
+  .rm-compact .drawer-head .tabs button { min-height: 36px; padding-top: 0.25rem; padding-bottom: 0.25rem; }
+  .rm-compact .bank-drawer .loan-viz > .spread, .rm-compact .drawer-foot .card-actions > .small { display: none; }
+  .rm-compact .jobcard .map-hint { display: none; }
+}

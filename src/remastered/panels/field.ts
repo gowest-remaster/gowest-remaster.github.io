@@ -59,8 +59,6 @@ export function register(env: PanelEnv) {
       const verbsEl = h('section', { class: 'card verbs float tl' });
       const d = drawer({ title: 'Field work', eyebrow: 'Job card' });
       d.el.classList.add('jobcard');
-      // phones: start as a one-line strip (title + Start); the chevron opens the details (crew, estimate)
-      if (isCompact()) d.el.classList.add('folded');
       root.append(verbsEl, d.el);
 
       /** null = no job picked: the card shows the field's state (and what was just done) */
@@ -74,7 +72,8 @@ export function register(env: PanelEnv) {
       let crop: Crop = 2;
       let helpers: Helpers = { workers: 0, neighbors: 0, family: 0 };
       /** the crew last used for a job, remembered per job (calm-ui: no re-sliding every time) */
-      const crewFor = (v: Verb): Helpers => (v === 'plant' ? helpers : { ...{ workers: 0, neighbors: 0, family: 0 }, ...(prefs().crew?.[v] ?? {}) });
+      // phones: with no crew remembered for a job, the whole family turns out (free); neighbors and hands stay opt-in
+      const crewFor = (v: Verb): Helpers => (v === 'plant' ? helpers : { ...{ workers: 0, neighbors: 0, family: isCompact() ? 99 : 0 }, ...(prefs().crew?.[v] ?? {}) });
       let breakChoice: 'repair' | 'newSteel' = 'repair';
       let dragMode: boolean | null = null;
       /** the square under the pointer in 3D (mirrored on the map, named in a small tip) */

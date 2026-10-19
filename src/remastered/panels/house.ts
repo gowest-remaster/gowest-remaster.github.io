@@ -18,7 +18,7 @@ import { devcutContent, ensureDevcut } from '../core/text.ts';
 import { mountGramophone } from '../devcut/index.ts';
 import { badge, unavailable } from '../ui/badges.ts';
 import { btn, drawer, tabs, toast } from '../ui/kit.ts';
-import { isCompact } from '../ui/compact.ts';
+import { isCompact, liftToFoot } from '../ui/compact.ts';
 import { familyRoster } from './ledger.ts';
 import { savingsHint, savingsRule } from '../core/simapi.ts';
 import type { PanelEnv } from './index.ts';
@@ -51,7 +51,6 @@ export function register({ app }: PanelEnv) {
       const showSavings = () => {
         if (isCompact()) {
           pane = 'savings';
-          d.el.classList.remove('folded');
           render(session.s);
         } else d.body.querySelector('.savings')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       };
@@ -158,7 +157,7 @@ export function register({ app }: PanelEnv) {
             h('div', { class: 'sv-side' }, h('span', { class: 'small muted' }, 'In your pocket'), pocketV, pocketStack),
             h('div', { class: 'sv-side right' }, h('span', { class: 'small muted' }, 'In the box'), boxV, boxStack)),
           range,
-          h('div', { class: 'sv-exact' }, h('label', { class: 'small' }, 'Exactly $', exact), apply),
+          h('div', { class: 'sv-exact phone-foot' }, h('label', { class: 'small' }, 'Exactly $', exact), apply),
           h('p', { class: 'small muted' }, savingsRule(s)),
           savingsHint(s) ? h('div', { class: 'callout' }, icon(ICONS.help), ' ', savingsHint(s)) : null);
       }
@@ -188,6 +187,7 @@ export function register({ app }: PanelEnv) {
         else put(d.body, things, hint(0), hint(1), hint(2), savingsCard(s), family);
         d.foot.hidden = isCompact() && pane !== 'home';
         put(d.foot, btn(hintsOn ? 'Hide the neighbor’s tips' : 'Ask a neighbor', { kind: 'ghost', small: true, icon: 'help', onClick: () => ((hintsOn = !hintsOn), render(session.s)) }));
+        liftToFoot(d.body, d.foot);
         app.setLabels([
           { target: prop('ledger'), text: 'Ledger', onClick: () => void app.go('ledger') },
           { target: prop('album'), text: 'Family Album', onClick: () => void app.go('album') },

@@ -7,15 +7,23 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { clone as cloneSkinned } from 'three/addons/utils/SkeletonUtils.js';
 import { texture, uv, float, vec3, positionLocal, smoothstep, mix, uniform } from 'three/tsl';
 import { weatherColor } from '../../engine/tsl';
+import { getSharedDraco, shrinkTextures } from '../../engine/gltf';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 type N = any;
 
 export const BASE = `${import.meta.env.BASE_URL}world/assets/life/`;
-const draco = new DRACOLoader();
-draco.setDecoderPath(`${import.meta.env.BASE_URL}world/libs/draco/`);
+// one Draco decoder pool for the whole game (engine/gltf.ts): a second pool doubled the decoder workers, each with
+// its own WASM heap (rendering lead, memory pass 2026-10-18)
 const gltfLoader = new GLTFLoader();
-gltfLoader.setDRACOLoader(draco);
+let dracoSet = false;
+const withDraco = () => {
+  if (dracoSet) return;
+  const shared = getSharedDraco();
+  const draco = shared ?? new DRACOLoader().setDecoderPath(`${import.meta.env.BASE_URL}world/libs/draco/`);
+  gltfLoader.setDRACOLoader(draco);
+  dracoSet = true;
+};
 
 export interface Template {
   scene: THREE.Object3D;
@@ -32,7 +40,9 @@ const cache = new Map<string, Promise<Template>>();
 export function loadTemplate(path: string, opts: { fur?: boolean } = {}): Promise<Template> {
   let p = cache.get(path);
   if (!p) {
-    p = gltfLoader.loadAsync(`${BASE}${path}.glb`).then((g: GLTF) => {
+    withDraco();
+    p = gltfLoader.loadAsync(`${BASE}${path}.glb`).then(async (g: GLTF) => {
+      await shrinkTextures(g.scene); // (phones: model textures capped at 512 px)
       const extras = (g.scene.userData ?? {}) as { walkSpeed?: number; height?: number };
       g.scene.traverse((o) => {
         const m = o as THREE.Mesh;

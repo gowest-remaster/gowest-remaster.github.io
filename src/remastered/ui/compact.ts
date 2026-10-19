@@ -138,3 +138,16 @@ export function installHint(): HTMLElement | null {
   el.append(x);
   return el;
 }
+
+/**
+ * Phones: a panel's main buttons (marked .phone-foot inside its body) move into the panel's footer, which
+ * never scrolls away. Returns true when something was lifted. Desktop leaves the panel as it is.
+ */
+export function liftToFoot(body: HTMLElement, foot: HTMLElement): boolean {
+  if (!isCompact()) return false;
+  const els = [...body.querySelectorAll<HTMLElement>('.phone-foot')];
+  if (!els.length) return false;
+  foot.replaceChildren(...els);
+  foot.hidden = false;
+  return true;
+}

@@ -13,6 +13,7 @@ type N = any;
 const BASE = `${import.meta.env.BASE_URL}world/assets/homestead/`;
 const gltf = new GLTFLoader();
 gltf.setMeshoptDecoder(MeshoptDecoder);
+import { shrinkTextures } from '../../engine/gltf';
 const cache = new Map<string, Promise<THREE.Object3D>>();
 
 /** LOD switch distances in metres: LOD1 beyond [0], LOD2 beyond [1]. */
@@ -166,7 +167,8 @@ function prepare(root: THREE.Object3D, weather: boolean): void {
 export async function loadGLB(name: string, lodDist: [number, number] = LOD_DIST, weather = !name.startsWith('interior')): Promise<THREE.Object3D> {
   let p = cache.get(name);
   if (!p) {
-    p = gltf.loadAsync(`${BASE}${name}.glb`).then((g) => {
+    p = gltf.loadAsync(`${BASE}${name}.glb`).then(async (g) => {
+      await shrinkTextures(g.scene); // (phones: model textures capped at 512 px)
       prepare(g.scene, weather);
       return toLOD(g.scene, lodDist);
     });

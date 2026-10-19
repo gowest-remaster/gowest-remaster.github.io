@@ -3,7 +3,8 @@
 import type { Helpers } from '../../sim/index.ts';
 import { h } from '../core/dom.ts';
 import { money } from '../core/format.ts';
-import { slider } from '../ui/kit.ts';
+import { slider, stepper } from '../ui/kit.ts';
+import { isCompact } from '../ui/compact.ts';
 
 export interface CrewOpts {
   family: number;
@@ -47,9 +48,20 @@ export function crewPicker(o: CrewOpts) {
         o.onChange({ ...cur });
       },
     });
-  const sFam = mk('family', 'Family', o.family, o.family ? null : '(none old enough)');
-  const sNb = mk('neighbors', 'Neighbors', o.neighbors, o.neighbors ? o.neighborsLabel ?? 'free, but you owe them help' : o.neighborsNote ?? '(none free today)');
-  const sHire = mk('workers', 'Hired hands', o.workers ?? 5, o.wageLabel ?? `${money(o.wage)}/day each`);
+  // phones: big − / + steppers in one row instead of three sliders (styles/compact.css .crew-steps)
+  const mkStep = (key: keyof Helpers, label: string, max: number, sub: string) => {
+    const st = stepper({ value: cur[key], min: 0, max, label, onChange: (v) => {
+      cur[key] = v;
+      refresh();
+      o.onChange({ ...cur });
+    } });
+    const cell = h('div', { class: `crew-step${max === 0 ? ' off' : ''}` }, h('span', { class: 'cs-l' }, label), st.el, h('small', { class: 'cs-s muted' }, sub));
+    return { el: cell, refresh: () => undefined };
+  };
+  const mk2 = (key: keyof Helpers, label: string, max: number, extra: string | null, sub: string) => (isCompact() ? mkStep(key, label, max, max === 0 ? (extra ?? 'none') : sub) : mk(key, label, max, extra));
+  const sFam = mk2('family', 'Family', o.family, o.family ? null : '(none old enough)', 'free');
+  const sNb = mk2('neighbors', 'Neighbors', o.neighbors, o.neighbors ? o.neighborsLabel ?? 'free, but you owe them help' : o.neighborsNote ?? '(none free today)', 'you owe help back');
+  const sHire = mk2('workers', 'Hired hands', o.workers ?? 5, o.wageLabel ?? `${money(o.wage)}/day each`, o.wageLabel ?? `${money(o.wage)}/day each`);
   function refresh() {
     sFam.refresh();
     sNb.refresh();
@@ -63,6 +75,8 @@ export function crewPicker(o: CrewOpts) {
   }
   refresh();
   o.onChange({ ...cur });
-  const el = h('div', { class: 'crew' }, h('div', { class: 'crew-you small' }, '● You'), sFam.el, sNb.el, sHire.el, note);
+  const el = isCompact()
+    ? h('div', { class: 'crew crew-steps' }, h('div', { class: 'crew-row' }, sFam.el, sNb.el, sHire.el), note)
+    : h('div', { class: 'crew' }, h('div', { class: 'crew-you small' }, '● You'), sFam.el, sNb.el, sHire.el, note);
   return { el, get value() { return { ...cur }; } };
 }

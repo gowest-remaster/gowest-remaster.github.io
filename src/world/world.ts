@@ -15,8 +15,8 @@ import { texture as tslTexture, uv as tslUV, vec4 as tslVec4 } from 'three/tsl';
 import { FieldCrew } from './places/fieldCrew';
 import { SquareMarks } from './places/squareMarks';
 import { BARN, FIELD, HOME, MAILBOX, MAX_SQUARES, STREET, WINDMILL, squareCenter, terrainHeight } from './env/layout';
-import { LifeLivestock, LifeFamily, LifeTownCrowd, updateLifeKit } from './places/life';
-import { initGltf } from './engine/gltf';
+import { LifeLivestock, LifeFamily, LifeTownCrowd, updateLifeKit, type LiveJob } from './places/life';
+import { initGltf, getSharedDraco } from './engine/gltf';
 import { TownExtras } from './places/town';
 import { Disasters, type DisasterHost } from './fx/disasters';
 import { makeGhost, massingGhost, uGhostHover } from './fx/ghosts';
@@ -43,6 +43,9 @@ const plateLift = (k?: { sunDir?: number[]; sunIntensity?: number }): number =>
   // sunless keys (overcast, snow) are graded bright already: lifted like the sunny ones, skies and snow blew out
   k?.sunIntensity === 0 ? 1.08 : k?.sunDir ? THREE.MathUtils.lerp(PLATE_EXPOSURE_LIFT, 1.3, THREE.MathUtils.smoothstep(k.sunDir[1], 0.12, 0.4)) : PLATE_EXPOSURE_LIFT;
 const INTERIORS: Place[] = ['house', 'store', 'bank'];
+/** places that show the homestead's live layer / the town crowd */
+const HOME_SIDE: Place[] = ['title', 'homestead', 'pen', 'field'];
+const TOWN_SIDE: Place[] = ['mainStreet', 'elevator'];
 
 /** outdoor plate views kept loaded at once in the low-memory profile: only the current one */
 const LOW_MEMORY_VIEWS = 1;
@@ -566,13 +569,36 @@ export class WorldImpl implements World3D {
   private applyView(instant: boolean): void {
     const v = this.view;
     if (instant) this.snap = true;
-    this.home.apply(v);
-    this.livestock.setCounts(v.animals, v.barn || v.fence >= 1);
-    this.family.setCount(v.family, [v.year - 1880, v.year - 1884, v.year - 1889].filter((a) => a >= 0));
-    this.townCrowd.setGrowth(v.townGrowth);
+    // Phones: the homestead's live layer (windmill, fences, animals, family) and the town crowd only change while
+    // they are on screen. A purchase in the store used to load and build homestead models for a view nobody saw
+    // (the last thing before an iPhone memory kill); now that waits until the player is back.
+    const home = !LOW_MEMORY || HOME_SIDE.includes(this.place);
+    const town = !LOW_MEMORY || TOWN_SIDE.includes(this.place);
+    if (home) {
+      const sig = JSON.stringify([v.house, v.barn, v.windmill, v.fence, v.year, v.field.length, v.animals, v.family, v.extras, v.mail]);
+      const changed = sig !== this.liveSigHome;
+      this.liveSigHome = sig;
+      if (changed) crumb('liveRebuild start', `@${this.place} homestead ${v.house}${v.barn ? '+barn' : ''}${v.windmill ? '+windmill' : ''} fence${v.fence}`);
+      this.home.apply(v);
+      const jobs = [
+        this.livestock.setCounts(v.animals, v.barn || v.fence >= 1),
+        this.family.setCount(v.family, [v.year - 1880, v.year - 1884, v.year - 1889].filter((a) => a >= 0)),
+      ].filter((j): j is LiveJob => !!j);
+      if (jobs.length) crumb('liveRebuild load', jobs.map((j) => j.what).join(' · '));
+      if (changed || jobs.length) {
+        const t0 = performance.now();
+        void Promise.all(jobs.map((j) => j.done.catch(() => undefined))).then(() => crumb('liveRebuild end', `${Math.round(performance.now() - t0)} ms`));
+      }
+    } else this.liveDeferred = true;
+    if (town) this.townCrowd.setGrowth(v.townGrowth);
+    else this.liveDeferred = true;
     for (const i of this.interiors.values()) (i as InteriorSet & { setExtras(e: string[], stove?: boolean): void }).setExtras(v.extras, v.stove);
     this.applySetVisibility();
   }
+
+  private liveSigHome = '';
+  /** a live-layer change waited for the player to come back (phones) */
+  private liveDeferred = false;
 
   // ------------------------------------------------------------------ environment
   private applyEnvironment(dt: number): void {
@@ -698,6 +724,10 @@ export class WorldImpl implements World3D {
     //    No camera flights: with pre-rendered views a 3D flight shows the live world, then pops to the plate.
     const snap = instant ? null : await this.snapshot();
     this.place = place;
+    if (this.liveDeferred) {
+      this.liveDeferred = false;
+      this.applyView(false);
+    }
     this.setHover(null);
     if (!isInt) {
       await this.usePlate(place, gen);
@@ -1270,7 +1300,9 @@ export class WorldImpl implements World3D {
         tex += (rt?.width ?? im?.width ?? 0) * (rt?.height ?? im?.height ?? 0) * 4;
       }
     }
-    return `plates ${Math.round(tex / 1048576)} MB · audio ${Math.round(memStats.audioBytes / 1048576)} MB · ${this.canvas?.width}x${this.canvas?.height} ${this.quality_}`;
+    const mem = (this.renderer?.info as unknown as { memory?: { textures: number; geometries: number } })?.memory;
+    const workers = (getSharedDraco() as unknown as { workerPool?: unknown[] } | null)?.workerPool?.length ?? 0;
+    return `plates ${Math.round(tex / 1048576)} MB · audio ${Math.round(memStats.audioBytes / 1048576)} MB · ${mem?.textures ?? '?'} tex ${mem?.geometries ?? '?'} geo · ${workers} decoders · ${this.canvas?.width}x${this.canvas?.height} ${this.quality_}`;
   }
 
   private async usePlate(place: Place, gen: number): Promise<void> {

@@ -12,6 +12,11 @@ const PEN = { x0: BARN.x - 6.5 + 1.5, x1: BARN.x + 9.5 - 1.5, z0: BARN.z + 7 + 1
 const STY = { x0: BARN.x - 5, x1: BARN.x - 1, z0: BARN.z + 8.5, z1: BARN.z + 12.5 };
 const YARD = { center: { x: HOME.x - 1, z: HOME.z + 6 }, radius: 5.5 };
 
+export interface LiveJob {
+  what: string;
+  done: Promise<void>;
+}
+
 interface Disposable {
   root: THREE.Object3D;
   dispose(): void;
@@ -23,13 +28,14 @@ export class LifeLivestock {
   private gen = 0;
   private live: Disposable[] = [];
 
-  setCounts(c: { cows: number; horses: number; pigs: number; chickens: number }, penAvailable: boolean): void {
+  /** Returns what it starts loading (for the crash breadcrumbs), or null when nothing changes. */
+  setCounts(c: { cows: number; horses: number; pigs: number; chickens: number }, penAvailable: boolean): LiveJob | null {
     const want = { cows: penAvailable ? Math.min(c.cows, 9) : 0, horses: Math.min(c.horses, 5), pigs: penAvailable ? Math.min(c.pigs, 6) : 0, chickens: Math.min(c.chickens, 14), dog: c.chickens > 0 || c.cows > 0 ? 1 : 0 };
     const key = JSON.stringify(want);
-    if (key === this.key) return;
+    if (key === this.key) return null;
     this.key = key;
     const gen = ++this.gen;
-    void kit().then(async (k) => {
+    const done = kit().then(async (k) => {
       const ground = terrainHeight;
       const made = await Promise.all([
         want.cows ? k.spawnHerd(['cow_hereford', 'cow_hereford', 'cow_brown', 'cow'], want.cows, PEN, { seed: 11, ground }) : null,
@@ -50,6 +56,7 @@ export class LifeLivestock {
       this.live = ok;
       for (const h of ok) this.group.add(h.root);
     });
+    return { what: `animals ${Object.entries(want).filter(([, n]) => n).map(([k, n]) => `${n} ${k}`).join(', ') || 'none'}`, done };
   }
 
   update(): void {}
@@ -72,14 +79,14 @@ export class LifeFamily {
   private gen = 0;
   private members: { c: import('../kits/life').Creature; timer: number; busy: boolean; goal?: THREE.Vector3 }[] = [];
 
-  setCount(n: number, kidsAges: number[] = [10, 6, 3]): void {
+  setCount(n: number, kidsAges: number[] = [10, 6, 3]): LiveJob | null {
     n = Math.max(0, Math.min(6, n));
-    if (n === this.n) return;
+    if (n === this.n) return null;
     this.n = n;
     const gen = ++this.gen;
     const roles: string[] = ['father', 'mother'];
     for (const age of kidsAges) roles.push(age < 6 ? 'toddler' : age < 10 ? 'girl' : 'boy');
-    void kit().then(async (k) => {
+    const done = kit().then(async (k) => {
       const spots = CHORES();
       const made = await Promise.all(roles.slice(0, n).map((r, i) => k.loadPerson(r as never, { seed: 100 + i })));
       if (gen !== this.gen) {
@@ -100,6 +107,7 @@ export class LifeFamily {
         return { c, timer: 2 + i * 3, busy: false };
       });
     });
+    return { what: `family ${roles.slice(0, n).join('+') || 'none'}`, done };
   }
 
   update(_t: number, dt: number): void {

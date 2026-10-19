@@ -12,7 +12,7 @@ import { session } from '../core/session.ts';
 import { loanInfo, loanSchedule } from '../core/simapi.ts';
 import { badge } from '../ui/badges.ts';
 import { btn, drawer, segmented, slider, tabs, toast } from '../ui/kit.ts';
-import { isCompact, onCompact } from '../ui/compact.ts';
+import { isCompact, liftToFoot, onCompact } from '../ui/compact.ts';
 import type { PanelEnv } from './index.ts';
 import { blockedReason, payWithFetch, say } from './town-common.ts';
 import { devcutContent } from '../core/text.ts';
@@ -177,7 +177,7 @@ function mount(app: App) {
         h('div', null, h('small', null, 'Due'), h('b', null, dueText(p0(), li.dueYear))),
         h('div', null, h('small', null, 'Your rate'), h('b', null, `${contract}%`), h('small', { class: 'muted' }, ` (today ${s.interest}%)`))),
       h('div', { class: 'small muted' }, `Repaid all at once. Cash in hand ${money2(p.cash)} · savings box ${money2(p.savings)}.`),
-      action,
+      (action.classList.add('phone-foot'), action),
     );
   }
 
@@ -216,7 +216,7 @@ function mount(app: App) {
       h('div', { class: 'row' }, h('span', { class: 'small' }, 'Repay in'), term.el),
       chartHost,
       dueLine,
-      h('div', { class: 'card-actions' }, takeBtn, h('span', { class: 'small muted' }, eligible ? 'Interest is added once, when you sign.' : li.needsHarvest ? 'Come back after your first plowing or harvest.' : 'Repay your loan before taking another.')),
+      h('div', { class: 'card-actions phone-foot' }, takeBtn, h('span', { class: 'small muted' }, eligible ? 'Interest is added once, when you sign.' : li.needsHarvest ? 'Come back after your first plowing or harvest.' : 'Repay your loan before taking another.')),
     );
   }
 
@@ -230,6 +230,7 @@ function mount(app: App) {
       pane ??= s.myRecieve > 0 || telegram !== null ? 'cashier' : 'loan';
       put(paneHost, tabs<'loan' | 'cashier'>({ tabs: [{ id: 'loan', label: li.has ? 'Your loan' : 'Loan' }, { id: 'cashier', label: 'Cashier', badge: s.myRecieve > 0 ? money(s.myRecieve) : null }], value: pane, onChange: (v) => ((pane = v), (stamp = ''), render(session.s)) }).el);
       put(d.body, ...(pane === 'cashier' ? [tg, cashierCard(s)] : [li.has ? loanFile(s) : visualizer(s)]));
+      if (!liftToFoot(d.body, d.foot)) d.foot.hidden = true;
     } else put(d.body, tg, cashierCard(s), li.has ? loanFile(s) : visualizer(s));
     app.setLabels([
       { target: { kind: 'prop', id: 'teller' }, text: 'Cashier', badge: s.myRecieve > 0 ? money(s.myRecieve) : null, tone: s.myRecieve > 0 ? 'good' : 'info' },
