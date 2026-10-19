@@ -20,7 +20,7 @@ import { quietDialogs } from '../ui/overlays.ts';
 import { crewPicker } from './crew.ts';
 import type { PanelEnv } from './index.ts';
 import '../styles/field.css';
-import { isCompact } from '../ui/compact.ts';
+import { isCompact, isTouch } from '../ui/compact.ts';
 
 const VERBS: { id: Verb; label: string; icon: keyof typeof ICONS; ing: string }[] = [
   { id: 'plow', label: 'Plow', icon: 'plow', ing: 'plowing' },
@@ -336,7 +336,7 @@ export function register(env: PanelEnv) {
         const last = verb === 'plow' ? (prefs().plow ?? []) : verb === 'plant' ? (prefs().plant ?? []).map(([n]) => n) : [];
         const same = last.length && last.join(',') !== [...sel].sort((a, b) => a - b).join(',') ? h('button', { type: 'button', class: 'btn btn-link btn-sm same-last' }, `Same as last time (${plural(last.length, 'square')})`) : null;
         same?.addEventListener('click', sameAsLast);
-        body.push(h('div', { class: 'small muted map-hint' }, verb === 'harvest' ? 'All ripe squares are harvested together.' : `${verb === 'plant' ? 'Every plowed square is marked with seed you have. ' : ''}Click or drag across squares to change it. Each square is 20 acres.`, same ? ' ' : null, same));
+        body.push(h('div', { class: 'small muted map-hint' }, verb === 'harvest' ? 'All ripe squares are harvested together.' : `${verb === 'plant' ? 'Every plowed square is marked with seed you have. ' : ''}${isTouch() ? 'Tap or drag' : 'Click or drag'} across squares to change it. Each square is 20 acres.`, same ? ' ' : null, same));
         body.push(squareMap(s), legend(s));
         if (verb === 'plant') body.push(h('div', { class: 'eyebrow' }, 'Seed'), seedTray(s));
         let est: ReturnType<typeof jobEstimate> | null = null;
