@@ -90,25 +90,45 @@ export function sessionStarted(): void {
   if (crashed || new URLSearchParams(location.search).get('crashlog') === '1') showCard(crashed);
 }
 
-function showCard(afterCrash: boolean): void {
-  const crumbs = read(CRUMBS).slice(-14);
-  const errors = read(ERRORS).slice(-5);
+/** Diagnostics (the in-game menu): the same card any time, with the full log, the memory right now and every
+ *  plate / load problem, so a player can send it after something went wrong that wasn't a crash. */
+export function showDiagnostics(): void {
+  showCard(false, true);
+}
+
+let open: HTMLElement | null = null;
+function showCard(afterCrash: boolean, full = false): void {
+  open?.remove();
+  const crumbs = read(CRUMBS).slice(full ? -MAX_CRUMBS : -14);
+  const errors = read(ERRORS).slice(full ? -MAX_ERRORS : -5);
+  const fmt = (c: Entry) => `${c.t} ${c.k}${c.d ? ' — ' + c.d : ''}`;
+  let now = '';
+  try {
+    now = memProvider?.() ?? '';
+  } catch {
+    /* */
+  }
+  const problems = crumbs.filter((c) => /^(plate|hop-aborted|prepare|error)/.test(c.k));
   const text = [
-    afterCrash ? 'The last session ended unexpectedly.' : 'Session log',
+    afterCrash ? 'The last session ended unexpectedly.' : full ? 'Diagnostics' : 'Session log',
+    ...(full ? [`${new Date().toISOString()} · ${navigator.userAgent}`, `screen ${screen.width}x${screen.height} @${devicePixelRatio} · window ${innerWidth}x${innerHeight}`, now ? `memory now: ${now}` : ''] : []),
     '',
     'Last steps:',
-    ...crumbs.map((c) => `${c.t} ${c.k}${c.d ? ' — ' + c.d : ''}`),
+    ...crumbs.map(fmt),
     '',
     errors.length ? 'Errors:' : 'No errors recorded.',
     ...errors.map((e) => `${e.t} ${e.k}: ${e.d}`),
-  ].join('\n');
+    ...(full ? ['', problems.length ? 'Plate / load problems:' : 'No plate or load problems recorded.', ...problems.map(fmt)] : []),
+  ]
+    .filter((l, i, a) => l !== '' || a[i - 1] !== '')
+    .join('\n');
   const card = document.createElement('div');
   card.setAttribute('role', 'dialog');
   card.style.cssText =
     'position:fixed;left:calc(var(--safe-l, 0px) + 8px);bottom:calc(var(--safe-b, 0px) + 8px);z-index:100003;max-width:min(560px,92vw);max-height:70vh;display:flex;flex-direction:column;background:#2a2118f2;color:#f4ead6;border:1px solid #c79a4b;border-radius:8px;font:12px/1.4 ui-monospace,Menlo,monospace;box-shadow:0 8px 24px #0008';
   const pre = document.createElement('pre');
   pre.style.cssText = 'margin:0;padding:10px 12px;overflow:auto;white-space:pre-wrap';
-  pre.textContent = text + '\n\nPlease take a screenshot of this and send it to us.';
+  pre.textContent = text + `\n\nPlease ${full ? 'copy this' : 'take a screenshot of this'} and send it to us.`;
   const row = document.createElement('div');
   row.style.cssText = 'display:flex;gap:8px;padding:8px 12px;border-top:1px solid #c79a4b55;justify-content:flex-end';
   const btn = (label: string, fn: () => void) => {
@@ -118,8 +138,27 @@ function showCard(afterCrash: boolean): void {
     b.addEventListener('click', fn);
     row.appendChild(b);
   };
-  btn('Copy', () => void navigator.clipboard?.writeText(text));
-  btn('Close', () => card.remove());
+  btn('Copy', () => {
+    const done = () => (row.firstElementChild!.textContent = 'Copied');
+    // (the async clipboard can be missing outside a secure context: fall back to selecting the text)
+    if (navigator.clipboard?.writeText) void navigator.clipboard.writeText(text).then(done, () => selectAll(pre));
+    else selectAll(pre);
+  });
+  btn('Close', () => (card.remove(), (open = null)));
   card.append(pre, row);
   document.body.appendChild(card);
+  open = card;
+}
+
+function selectAll(el: HTMLElement): void {
+  const r = document.createRange();
+  r.selectNodeContents(el);
+  const sel = getSelection();
+  sel?.removeAllRanges();
+  sel?.addRange(r);
+  try {
+    document.execCommand('copy');
+  } catch {
+    /* the selection stays for a manual copy */
+  }
 }

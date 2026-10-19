@@ -169,6 +169,20 @@ export class Post {
     this.pipeline.render();
   }
   dispose(): void {
+    // A render target that was sampled but never rendered into (the outline's buffers while nothing is selected)
+    // has no renderer-side dispose listener: RenderTarget.dispose() alone left its 1x1 GPU textures behind, one set
+    // per interior post built and dropped (low-memory profile). Free the textures themselves first.
+    for (const n of [this.aoNode, this.ssrNode, this.bloomNode, this.outlineNode, this.taaNode, this.fxaaNode, this.dofNode, this.scenePass]) {
+      if (!n) continue;
+      for (const v of Object.values(n as Record<string, unknown>)) {
+        for (const rt of Array.isArray(v) ? v : [v]) {
+          const r = rt as THREE.RenderTarget | null;
+          if (!r?.isRenderTarget) continue;
+          for (const t of r.textures) t.dispose();
+          r.depthTexture?.dispose();
+        }
+      }
+    }
     this.pipeline.dispose();
     this.aoNode?.dispose?.();
     this.ssrNode?.dispose?.();

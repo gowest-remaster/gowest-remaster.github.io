@@ -8,6 +8,8 @@ import {
   fract, varying, mod,
 } from 'three/tsl';
 import { hash2i, terrainH, uTime, uWindDir, uLightning } from '../engine/tsl';
+import { LOW_MEMORY } from '../../lowmem';
+import { ScreenWeather } from './screenWeather';
 
 
 const quad = (): THREE.InstancedBufferGeometry => {
@@ -31,6 +33,10 @@ export class Weather {
   readonly maxRain = 60000;
   readonly maxSplash = 5000;
   readonly maxSnow = 40000;
+  /** phones: one full-screen overlay per effect instead of the particle boxes (see screenWeather.ts) */
+  private screen: ScreenWeather | null = LOW_MEMORY ? new ScreenWeather(this.uLight) : null;
+  private fx = { hail: 0, dust: 0 };
+  private fwd = new THREE.Vector3();
 
   constructor() {
     const box = vec3(70, 36, 70);
@@ -146,9 +152,26 @@ export class Weather {
       this.group.add(this.snow);
     }
     void mix;
+    if (this.screen) this.group.add(this.screen.group);
+  }
+
+  /** disaster precipitation that the phone overlay draws (hail pellets, blowing dust); 0..1 */
+  setScreenFx(hail: number, dust: number): void {
+    this.fx.hail = hail;
+    this.fx.dust = dust;
   }
 
   update(_dt: number, _t: number, _cam: THREE.Camera, rain: number, snow: number, wind: number, storm: boolean): void {
+    if (this.screen) {
+      // the wind's lean on screen: its component across the view direction
+      const fwd = _cam.getWorldDirection(this.fwd);
+      const wd = uWindDir.value as THREE.Vector2;
+      const across = wd.x * -fwd.z + wd.y * fwd.x;
+      const slant = across * (0.08 + wind * (storm ? 0.35 : 0.22));
+      this.screen.update(_cam, rain, snow, this.fx.hail, this.fx.dust, slant);
+      this.rain.visible = this.splash.visible = this.snow.visible = false;
+      return;
+    }
     this.uRain.value = rain;
     this.uSnowFall.value = snow;
     this.uWindSpeed.value = 1 + wind * (storm ? 9 : 6);

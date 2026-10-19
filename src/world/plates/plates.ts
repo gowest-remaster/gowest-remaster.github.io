@@ -127,6 +127,12 @@ const loadImage = async (url: string): Promise<THREE.Texture> => {
   }
 };
 
+/** readable text for a load failure (fetch / decode errors are Errors, Events or strings) */
+export const errText = (e: unknown): string => {
+  const x = e as { message?: string; type?: string; target?: { src?: string } } | null;
+  return String(x?.message || (x?.type ? `${x.type} event` : '') || e).slice(0, 160);
+};
+
 const prepRGBM = (t: THREE.Texture): THREE.Texture => {
   t.colorSpace = THREE.NoColorSpace;
   t.flipY = false;
@@ -430,10 +436,12 @@ export class PlateView {
     const uvP = this.uvNode();
     const cropUV = vec2(uvP.x.mul(size[0]).sub(x0).div(x1 - x0), uvP.y.mul(size[1]).sub(y0).div(y1 - y0));
     const maskS = texture(mask, cropUV);
+    this.sqFixed.push(mask);
     // four distinct placeholders: slots built on one shared Texture would share one binding (see setKeys)
     const ph = [0, 1, 2, 3].map(() => {
       const t = new THREE.DataTexture(new Uint8Array([0, 0, 0, 0]), 1, 1);
       t.needsUpdate = true;
+      this.sqFixed.push(t);
       return t;
     });
     for (let i = 0; i < 16; i++) {
@@ -489,10 +497,16 @@ export class PlateView {
         )
           .then((t) => {
             prepRGBM(t);
+            if (this.disposed) {
+              PlateView.freeTexture(t);
+              return null;
+            }
             this.sqReady.set(id, t);
             return t;
           })
-          .catch(() => {
+          .catch((e) => {
+            // (per-key subsets 404 by design; a real failure retries after the next trimSquares)
+            if (!/404|Not Found/i.test(errText(e))) PlateView.onWarn?.(`${this.view} square ${id}: ${errText(e)}`);
             this.sqMissing.add(id);
             return null;
           }),
@@ -501,6 +515,25 @@ export class PlateView {
     return null;
   }
   private sqMissing = new Set<string>();
+  /** the squares' mask + slot placeholders (freed with the plate) */
+  private sqFixed: THREE.Texture[] = [];
+  /** Low-memory profile: free every loaded square image no slot shows right now (month passes walk the field through
+   *  dozens of crop / stage variants per lighting key; they reload on demand), and let failed ones try again. */
+  trimSquares(): void {
+    const used = new Set<THREE.Texture>();
+    for (const st of this.sqState) for (const u of [st.a, st.b, st.w, st.w2]) used.add(u.value as THREE.Texture);
+    for (const [id, t] of [...this.sqReady]) {
+      const clones = this.sqClones.get(t) ?? [];
+      if (used.has(t) || clones.some((c) => used.has(c))) continue;
+      this.sqReady.delete(id);
+      this.sqTex.delete(id);
+      PlateView.freeTexture(t);
+      for (const c of clones) if (c) PlateView.freeTexture(c);
+      this.sqClones.delete(t);
+    }
+    for (const id of this.sqMissing) this.sqTex.delete(id);
+    this.sqMissing.clear();
+  }
   private sqClones = new Map<THREE.Texture, THREE.Texture[]>();
   private sqClone(t: THREE.Texture, n: number): THREE.Texture {
     let list = this.sqClones.get(t);
@@ -615,11 +648,17 @@ export class PlateView {
     this.quad.removeFromParent();
     this.proxy?.removeFromParent();
     (this.quad.material as THREE.Material).dispose();
+    // (one geometry per plate, shared by its layer + square quads: left undisposed, every reload of a view added one)
+    this.quad.geometry.dispose();
     for (const t of this.textures) PlateView.freeTexture(t);
     for (const l of this.layers) for (const q of l.keyQuads) if (q) (q.material as THREE.Material).dispose();
     for (const q of this.squareQuads) (q.material as THREE.Material).dispose();
     for (const t of this.sqReady.values()) PlateView.freeTexture(t);
-    for (const list of this.sqClones.values()) for (const t of list) PlateView.freeTexture(t);
+    for (const list of this.sqClones.values()) for (const t of list) if (t) PlateView.freeTexture(t);
+    for (const t of this.sqFixed) t.dispose();
+    this.sqReady.clear();
+    this.sqClones.clear();
+    this.textures.clear();
     this.src.depth.dispose();
   }
 
@@ -656,8 +695,11 @@ export class PlateView {
       const colour = new Map<string, THREE.Texture[]>();
       const data = new Map<string, THREE.Texture[]>();
       const missing = new Set<string>();
-      /** one key: beauty + every layer's colour/data */
-      const loadKey = async (k: string): Promise<void> => {
+      /** one key: beauty + every layer's colour/data. Every job settles before it returns (a failed beauty used to
+       *  leave the layers' images loading into nothing); a failed beauty frees the key's layer images and throws.
+       *  Returns the layers that failed for this key. */
+      const loadKey = async (k: string): Promise<Set<string>> => {
+        const miss = new Set<string>();
         const i = ks.indexOf(k);
         const jobs: Promise<unknown>[] = [
           (split
@@ -685,12 +727,34 @@ export class PlateView {
                 colour.get(L.id)![i] = c;
                 data.get(L.id)![i] = d;
               })
-              .catch(() => missing.add(L.id)),
+              .catch((e) => {
+                miss.add(L.id);
+                PlateView.onWarn?.(`${view} layer ${L.id}/${k}: ${errText(e)}`);
+              }),
           );
         }
-        await Promise.all(jobs);
+        const [b] = await Promise.allSettled(jobs);
+        if (b.status === 'rejected') {
+          for (const m of [colour, data])
+            for (const arr of m.values()) {
+              if (arr[i]) PlateView.freeTexture(arr[i]);
+              delete arr[i];
+            }
+          throw new Error(`${view}/${k} beauty: ${errText(b.reason)}`);
+        }
+        return miss;
       };
-      const [depth] = await Promise.all([loadData(`${BASE}${view}/depth.exr`), ...firstKs.map(loadKey)]);
+      const loaded = await Promise.allSettled([loadData(`${BASE}${view}/depth.exr`), ...firstKs.map(loadKey)]);
+      const bad = loaded.find((r) => r.status === 'rejected') as PromiseRejectedResult | undefined;
+      if (bad) {
+        // free what did load (a failed first visit used to leak the rest of its images on the GPU)
+        for (const r of loaded) if (r.status === 'fulfilled' && r.value instanceof THREE.Texture) r.value.dispose();
+        for (const t of beauty) if (t) PlateView.freeTexture(t);
+        for (const m of [colour, data]) for (const arr of m.values()) for (const t of arr) if (t) PlateView.freeTexture(t);
+        throw bad.reason;
+      }
+      const depth = (loaded[0] as PromiseFulfilledResult<THREE.Texture>).value;
+      for (const r of loaded.slice(1)) for (const id of (r as PromiseFulfilledResult<Set<string>>).value) missing.add(id);
       // a plate whose state layers can't all be composited would leave holes (e.g. a missing house): stay live
       if (missing.size) {
         // a building missing is better than no picture at all: drop just those layers
@@ -743,12 +807,28 @@ export class PlateView {
         let j = keyJobs.get(k);
         if (!j) {
           j = (async () => {
-            await loadKey(k);
             const i = ks.indexOf(k);
-            if (missing.size || !beauty[i]) return; // keep using the fallback key
+            let miss: Set<string>;
+            try {
+              miss = await loadKey(k);
+            } catch (e) {
+              // keep showing the key on screen; the next visit / hour change asks again
+              keyJobs.delete(k);
+              PlateView.onWarn?.(`key ${errText(e)}`);
+              return;
+            }
+            const mine = [beauty[i], ...pv.layers.flatMap((l) => [colour.get(l.id)![i], data.get(l.id)![i]])].filter(Boolean) as THREE.Texture[];
+            if (pv.disposed || !beauty[i]) {
+              // evicted / disposed while it loaded: its images belong to nobody
+              for (const t of mine) PlateView.freeTexture(t);
+              delete beauty[i];
+              for (const m of [colour, data]) for (const arr of m.values()) delete arr[i];
+              keyJobs.delete(k);
+              return;
+            }
             // upload before the first bind: a bind group built while a streamed texture had no GPU copy yet kept
             // sampling the old key (the snow key never showed as the B side of a blend)
-            const up = [beauty[i], ...pv.layers.flatMap((l) => [colour.get(l.id)![i], data.get(l.id)![i]])];
+            const up = mine;
             for (let n = 0; n < up.length; n++) {
               PlateView.initTexture?.(up[n]);
               if (n % 3 === 2) await new Promise((r) => setTimeout(r, 0));
@@ -756,7 +836,8 @@ export class PlateView {
             if (PlateView.releaseAfterUpload) PlateView.release(up);
             pv.src.beauty[i] = beauty[i];
             pv.textures.add(beauty[i]);
-            for (const l of pv.layers) pv.setLayerKey(l, i, colour.get(l.id)![i], data.get(l.id)![i], json.layers?.find((L) => L.id === l.id)?.cropByKey?.[k]);
+            // (a layer that failed for this key keeps compositing from another loaded key: setKeys' fallback)
+            for (const l of pv.layers) if (!miss.has(l.id) && colour.get(l.id)![i] && data.get(l.id)![i]) pv.setLayerKey(l, i, colour.get(l.id)![i], data.get(l.id)![i], json.layers?.find((L) => L.id === l.id)?.cropByKey?.[k]);
             pv.loadedKeys.add(k);
           })();
           keyJobs.set(k, j);
@@ -768,8 +849,9 @@ export class PlateView {
         for (const k of ks) {
           if (pv.loadedKeys.has(k)) continue;
           // never while a transition / load is running: EXR decode is main-thread work that would hitch it
-          if (!PlateView.streamAll) return;
+          if (!PlateView.streamAll || pv.disposed) return;
           await PlateView.whenQuiet();
+          if (pv.disposed) return;
           await pv.ensureKey(k);
         }
       })();
@@ -784,7 +866,8 @@ export class PlateView {
         }
       return pv;
     } catch (e) {
-      console.info('[plates] no plate for', view, (e as Error)?.message ?? e);
+      console.info('[plates] no plate for', view, errText(e));
+      PlateView.onWarn?.(`${view} failed: ${errText(e)}`);
       return null;
     }
   }

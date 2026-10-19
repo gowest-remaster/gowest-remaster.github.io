@@ -2,6 +2,7 @@
 import * as THREE from 'three/webgpu';
 import { Fn, float, vec2, vec3, int, ivec2, uniform, instanceIndex, positionGeometry, cameraPosition, uv, smoothstep, normalize, cross, varying } from 'three/tsl';
 import { hash2i } from './tsl';
+import { LOW_MEMORY } from '../../lowmem';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 type N = any;
@@ -19,7 +20,8 @@ const quadGeo = (): THREE.InstancedBufferGeometry => {
 /** Camera-facing particle system whose instance placement is a TSL function of (id, r1..r3, time). */
 export function particles(n: number, place: (id: N, r: N[], t: N) => { pos: N; size: N; alpha: N; color: N }, additive: boolean): { mesh: THREE.Mesh; uT: N } {
   const g = quadGeo();
-  g.instanceCount = n;
+  // phones: a quarter of the particles (the disaster effects stay legible; overdraw is what costs there)
+  g.instanceCount = LOW_MEMORY ? Math.ceil(n / 4) : n;
   const m = new THREE.MeshBasicNodeMaterial({ transparent: true, depthWrite: false, side: THREE.DoubleSide, blending: additive ? THREE.AdditiveBlending : THREE.NormalBlending });
   // fog on an additive particle adds the (bright) fog colour per layer: distant flames turned into a white haze
   if (additive) m.fog = false;

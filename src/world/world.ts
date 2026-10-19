@@ -8,7 +8,7 @@ import { pending, setMaxAnisotropy } from './engine/tex';
 import { Environment } from './engine/environment';
 import { Post } from './engine/post';
 import { Weather } from './env/weather';
-import { PlateView } from './plates/plates';
+import { errText, PlateView } from './plates/plates';
 import { LOW_MEMORY, memStats } from '../lowmem';
 import { crumb, crashError, setMemProvider } from '../crashlog';
 import { texture as tslTexture, uv as tslUV, vec4 as tslVec4 } from 'three/tsl';
@@ -287,7 +287,7 @@ export class WorldImpl implements World3D {
       crashError(`gpu ${e?.type ?? 'error'}`, e?.message ?? '');
       onErr(e);
     };
-    PlateView.onWarn = (m) => crumb('plate', m);
+    PlateView.onWarn = (m) => crashError('plate', m);
     PlateView.initTexture = (t) => r.initTexture(t);
     PlateView.packer = (a, aux, mode) => this.packTexture(a, aux, mode);
     PlateView.freeTexture = (t) => {
@@ -558,6 +558,8 @@ export class WorldImpl implements World3D {
     const prevWet = this.view.weather === 'rain' || this.view.weather === 'storm';
     const v0 = this.view;
     if (v0.house !== view.house || v0.barn !== view.barn || v0.windmill !== view.windmill || v0.fence !== view.fence || v0.year !== view.year) crumb('state', `${view.year}/${view.month} ${view.house}${view.barn ? '+barn' : ''}${view.windmill ? '+windmill' : ''} fence${view.fence}`);
+    // low-memory: a month pass walks the squares through new variants: drop the images no square shows any more
+    if (LOW_MEMORY && (v0.month !== view.month || v0.year !== view.year)) this.plate?.trimSquares();
     this.view = structuredClone(view);
     this.squareOverride.clear();
     this.applyView(!!opts?.instant);
@@ -709,16 +711,17 @@ export class WorldImpl implements World3D {
     this.hopping.add(this.plateName(place));
     let tpv: PlateView | null;
     try {
-      tpv = isInt ? await this.loadInteriorPlate(place, await this.ensureInterior(place)) : await this.plateForRetry(place);
+      tpv = isInt ? await this.interiorPlateRetry(place, await this.ensureInterior(place)) : await this.plateForRetry(place);
     } finally {
       this.hopping.delete(this.plateName(place));
     }
-    if (!tpv && !isInt) {
-      // never switch to an outdoor view without its picture: stay on the current one (the UI keeps working)
+    if (!tpv) {
+      // never switch to a view without its picture: stay on the current one (the UI keeps working; a later visit
+      // tries again)
       crumb('hop-aborted', `${place}: no plate after 3 tries`);
       return;
     }
-    if (tpv) await this.ensurePlateKeys(tpv);
+    if (tpv) await this.ensurePlateKeys(tpv).catch((e) => crumb('plate', `keys ${place}: ${errText(e)}`));
     if (gen !== this.goGen) return;
     // 2. freeze the outgoing frame on an overlay, switch everything underneath in one go, and cross-dissolve.
     //    No camera flights: with pre-rendered views a 3D flight shows the live world, then pops to the plate.
@@ -747,7 +750,10 @@ export class WorldImpl implements World3D {
       this.lastDissolve = { start: t0, end: performance.now() };
     }
     this.prefetchAround(place);
-    if (LOW_MEMORY) this.trimInteriors();
+    if (LOW_MEMORY) {
+      this.trimInteriors();
+      for (const p of this.plates.values()) void p.then((pv) => pv?.trimSquares());
+    }
   }
 
   /** Low-memory profile: only the current room stays loaded (its plate, pick props and post targets). */
@@ -984,9 +990,10 @@ export class WorldImpl implements World3D {
         if (INTERIORS.includes(place)) {
           const set = await this.ensureInterior(place);
           // a pre-rendered room needs no live-room shader compile (its meshes are hidden): just the plate
-          const pv = await this.loadInteriorPlate(place, set);
-          if (!pv) await this.compileInterior(place, set);
-          else {
+          const pv = await this.interiorPlateRetry(place, set);
+          if (!pv) {
+            if (this.placeReady.get(key) === p) this.placeReady.delete(key);
+          } else {
             await this.ensurePlateKeys(pv);
             await this.uploadPlate(pv);
           }
@@ -994,7 +1001,9 @@ export class WorldImpl implements World3D {
           // build the plate's own pipelines now (one material per layer and key), not on its first frame mid-dissolve
           const t0 = performance.now();
           const pv = await this.plateFor(place);
-          if (pv) {
+          if (!pv) {
+            if (this.placeReady.get(key) === p) this.placeReady.delete(key);
+          } else {
             await this.ensurePlateKeys(pv);
             const t1 = performance.now();
             await this.compilePlate(pv);
@@ -1003,7 +1012,11 @@ export class WorldImpl implements World3D {
             this.prepTimes.set(place, { load: Math.round(t1 - t0), compile: Math.round(t2 - t1), live: Math.round(performance.now() - t2) });
           }
         }
-      })().catch((e) => console.warn('prepare failed', place, e));
+      })().catch((e) => {
+        console.warn('prepare failed', place, e);
+        crashError('prepare', `${place}: ${errText(e)}`);
+        if (this.placeReady.get(key) === p) this.placeReady.delete(key);
+      });
       this.placeReady.set(key, p);
     }
     let settled = false;
@@ -1087,10 +1100,6 @@ export class WorldImpl implements World3D {
     // hidden parts included (LOD levels: three LODs and the life kit's per-distance meshes show one level at a
     // time; the others were built at the first switch, ~6 ms per figure, 100 ms at the cut to town)
     await this.compileWith(this.post, this.scene, cam, roots, true);
-  }
-
-  private async compileInterior(place: Place, set: InteriorSet): Promise<void> {
-    await this.compileWith(this.interiorPostFor(place, set), set.scene, set.camera);
   }
 
   /** `hidden`: also compile invisible objects (made visible only around each synchronous compile call, so no frame
@@ -1307,8 +1316,13 @@ export class WorldImpl implements World3D {
 
   private async usePlate(place: Place, gen: number): Promise<void> {
     if (INTERIORS.includes(place)) return;
-    const pv = await this.plateFor(place);
+    const pv = await this.plateForRetry(place);
     if (gen !== this.goGen) return; // a newer goTo superseded this one: don't install a stale plate
+    // never swap the picture for nothing: a plate that failed keeps the old view up (the next visit retries)
+    if (!pv) {
+      crumb('plate-kept', `${place}: kept ${this.plate?.view ?? 'none'}`);
+      return;
+    }
     this.setPlate(pv);
     this.trimPlates(this.plateName(place));
   }
@@ -1342,6 +1356,12 @@ export class WorldImpl implements World3D {
     let p = this.interiorPlateLoads.get(name);
     if (!p) {
       p = PlateView.load(name, undefined, [], [this.view.hour >= 16.5 ? 'evening' : 'day']).then((pv) => {
+        if (!pv) {
+          // every room has a plate: one that failed to load (memory pressure) is not remembered, the next try loads it
+          crumb('plate-failed', name);
+          if (this.interiorPlateLoads.get(name) === p) this.interiorPlateLoads.delete(name);
+          return pv;
+        }
         this.interiorPlates.set(name, pv);
         if (pv) {
           set.scene.traverse((o) => {
@@ -1354,6 +1374,15 @@ export class WorldImpl implements World3D {
       this.interiorPlateLoads.set(name, p);
     }
     return p;
+  }
+
+  private async interiorPlateRetry(place: Place, set: InteriorSet): Promise<PlateView | null> {
+    for (let i = 0; i < 3; i++) {
+      const pv = await this.loadInteriorPlate(place, set);
+      if (pv && !pv.disposed) return pv;
+      await new Promise((r) => setTimeout(r, 400 * (i + 1)));
+    }
+    return null;
   }
 
   /** square variant name for the baked-square images (sets.md) */
@@ -1837,6 +1866,7 @@ export class WorldImpl implements World3D {
       // the squares are baked images (no live terrain wash): every selected / hovered square gets the edge glow
       this.marks.set(this.selected, this.hoverSquare, this.place === 'field', () => true);
       this.home.update(t, dt, wind, wd);
+      this.weather.setScreenFx(this.disasters.screenFx.hail, this.disasters.screenFx.dust);
       this.weather.update(dt, t, this.camera, this.env.live.rain, this.env.live.snowFall, wind, (this.envOv?.weather ?? this.view.weather) === 'storm');
       updateLifeKit(dt, this.camera);
       this.family.update(t, dt);

@@ -12,6 +12,7 @@ import { btn, confirm, sheetFrame, tabs, toast } from '../ui/kit.ts';
 import type { PanelEnv } from './index.ts';
 import '../styles/menu.css';
 import { GLOSSARY, onOpenGlossary } from '../core/glossary.ts';
+import { showDiagnostics } from '../../crashlog.ts';
 
 const KEYS: [string, string][] = [
   ['Space', 'Advance the calendar (again to pause)'],
@@ -107,6 +108,8 @@ export function register(env: PanelEnv) {
         h('h3', { class: 'card-title' }, 'Save'),
         h('p', { class: 'small muted' }, 'The game saves itself every month and whenever you act. Keep a copy in a slot to come back to a moment.'),
         slots,
+        // small and out of the way: the session log + memory for a bug report (Home Screen apps have no URL bar)
+        h('div', { class: 'menu-diag' }, btn('Diagnostics', { kind: 'ghost', small: true, onClick: () => showDiagnostics() })),
       );
       return { el: f.el };
     },

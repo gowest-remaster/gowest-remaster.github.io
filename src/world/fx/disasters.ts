@@ -6,6 +6,7 @@ import { float, vec2, vec3, uniform, smoothstep, sin, cos, mix, fract, positionW
 import type { DisasterKind, Place } from '../api';
 import { terrainH, tnoise, uTime } from '../engine/tsl';
 import { particles } from '../engine/particles';
+import { LOW_MEMORY } from '../../lowmem';
 import { BARN, FIELD, FIELD_D, HOME, squareCenter, terrainHeight } from '../env/layout';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -31,6 +32,8 @@ export class Disasters {
   private fireLight = new THREE.PointLight(0xff6a20, 0, 260, 1.5);
   private flood: THREE.Mesh;
   private uFloodLevel = uniform(-6);
+  /** phones draw hail and blowing dust as screen overlays (World feeds these to Weather.setScreenFx) */
+  screenFx = { hail: 0, dust: 0 };
 
   constructor(host: DisasterHost) {
     this.host = host;
@@ -177,6 +180,7 @@ export class Disasters {
     this.active = null;
     a.end();
     for (const f of Object.values(this.fx)) f.mesh.visible = false;
+    this.screenFx.hail = this.screenFx.dust = 0;
     this.fireLight.intensity = 0;
     this.flood.visible = false;
     this.host.envOverride(null);
@@ -253,14 +257,16 @@ export class Disasters {
       }
       case 'drought': {
         dur = 8;
-        this.fx.dust.mesh.visible = true;
+        if (LOW_MEMORY) this.screenFx.dust = 1;
+        else this.fx.dust.mesh.visible = true;
         tick = (k) => h.envOverride({ weather: 'clear', hour: 14, drought: Math.min(1, k * 1.6), wind: 0.5 });
         break;
       }
       case 'hail': {
         dur = 7;
         h.envOverride({ weather: 'storm', darken: 0.15, wind: 0.8 });
-        this.fx.hail.mesh.visible = true;
+        if (LOW_MEMORY) this.screenFx.hail = 1;
+        else this.fx.hail.mesh.visible = true;
         tick = (k) => {
           for (let i = 0; i < n; i++) if (k > 0.35 + (i / n) * 0.4) h.setSquareStage(i, 1);
         };
